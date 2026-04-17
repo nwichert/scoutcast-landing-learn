@@ -12,6 +12,8 @@
   },
   "iconLibrary": "lucide",
   "rtl": false,
+  "menuColor": "default",
+  "menuAccent": "subtle",
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils",
@@ -19,7 +21,13 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
-  "menuColor": "default",
-  "menuAccent": "subtle",
-  "registries": {}
+  "registries": {
+    "@tailark-pro": {
+      "url": "https://pro.tailark.com/registry/{name}",
+      "headers": {
+        "Authorization": "Bearer ${TAILARK_API_KEY}"
+      }
+    },
+    "@ai-elements": "https://ai-sdk.dev/elements/api/registry/{name}.json"
+  }
 }
