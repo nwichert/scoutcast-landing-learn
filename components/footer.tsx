@@ -82,7 +82,7 @@ export default function Footer() {
                             </svg>
                         </SocialLink>
                         <SocialLink
-                            href="https://x.com"
+                            href="https://x.com/scoutcastAI"
                             label="X">
                             <svg
                                 width="20"

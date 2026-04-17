@@ -4,6 +4,7 @@ import LogoCloud from "@/components/logo-cloud";
 import FeaturesSection from "@/components/features-2";
 import ComparatorSection from "@/components/comparator-7";
 import DownloadSection from "@/components/contact";
+import FAQs from "@/components/faqs-1";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <FeaturesSection />
       <ComparatorSection />
       <DownloadSection />
+      <FAQs />
       <Footer />
     </>
   );
