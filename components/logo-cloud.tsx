@@ -1,76 +1,65 @@
-import { Beacon } from '@/components/ui/svgs/beacon'
-import { Bolt } from '@/components/ui/svgs/bolt'
-import { Cisco } from '@/components/ui/svgs/cisco'
-import { Hulu } from '@/components/ui/svgs/hulu'
-import { OpenAIFull } from '@/components/ui/svgs/open-ai'
-import { Primevideo } from '@/components/ui/svgs/prime'
-import { Stripe } from '@/components/ui/svgs/stripe'
-import { VisualStudioCode } from '@/components/ui/svgs/vs-code'
-import { InfiniteSlider } from '@/components/ui/infinite-slider'
-import { Button } from '@/components/ui/button'
-import { ChevronRight } from 'lucide-react'
-import Link from 'next/link'
+import Image from "next/image"
+import { InfiniteSlider } from "@/components/ui/infinite-slider"
+
+type League = {
+    name: string
+    src: string
+    width: number
+    height: number
+    className?: string
+}
+
+const leagues: League[] = [
+    { name: "NFL", src: "/logos/nfl.png", width: 52, height: 52 },
+    { name: "NBA", src: "/logos/nba.png", width: 52, height: 52 },
+    { name: "MLB", src: "/logos/mlb.png", width: 52, height: 52 },
+    { name: "NHL", src: "/logos/nhl.png", width: 52, height: 52 },
+    { name: "MLS", src: "/logos/mls.png", width: 52, height: 52 },
+    { name: "Premier League", src: "/logos/premier-league.svg", width: 86, height: 86, className: "h-[86px]" },
+    { name: "PGA Tour", src: "/logos/pga.png", width: 52, height: 52 },
+    { name: "UEFA Champions League", src: "/logos/champions-league.png", width: 70, height: 70, className: "h-[70px]" },
+    { name: "La Liga", src: "/logos/la-liga.png", width: 52, height: 52 },
+    { name: "Bundesliga", src: "/logos/bundesliga.svg", width: 60, height: 60 },
+    { name: "Serie A", src: "/logos/serie-a.svg", width: 60, height: 60 },
+    { name: "Ligue 1", src: "/logos/ligue-1.svg", width: 60, height: 60 },
+    { name: "NCAA", src: "/logos/ncaa.svg", width: 60, height: 60 },
+    { name: "WNBA", src: "/logos/wnba.png", width: 52, height: 52 },
+    { name: "ATP", src: "/logos/atp.svg", width: 60, height: 60 },
+    { name: "WTA", src: "/logos/wta.svg", width: 60, height: 60 },
+    { name: "LIV Golf", src: "/logos/LIVgolf.png", width: 60, height: 60 },
+]
 
 export default function LogoCloud() {
     return (
-        <section className="overflow-hidden py-16">
-            <div className="group relative m-auto max-w-5xl px-6">
-                <div className="text-center">
-                    <div className="mx-auto max-w-xl text-balance">
-                        <h2 className="text-4xl font-semibold">You're in good company</h2>
-                        <p className="text-muted-foreground mt-4 text-lg">Tailark is trusted by innovative companies worldwide to deliver exceptional products and services that drive business growth.</p>
-                    </div>
+        <section className="dark bg-background">
+            <div className="mx-auto flex max-w-5xl flex-col items-center px-6 py-24">
+                <div className="mb-12 flex max-w-2xl flex-col items-center gap-4">
+                    <h2 className="text-balance text-center text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">Global Sports Coverage</h2>
+                    <p className="max-w-xl text-balance text-center text-lg leading-7 text-foreground/55">
+                        Scoutcast.ai is an agentic media company that turns raw sports data like scores, news, and highlights, and turns them into engaging two-minute audio briefings.
+                    </p>
+                </div>
 
-                    <div className="mask-x-from-90% relative py-12">
-                        <div
-                            aria-hidden
-                            className="mask-r-from-50% backdrop-grayscale-200 absolute inset-y-0 left-0 z-10 w-16"
-                        />
-                        <div
-                            aria-hidden
-                            className="mask-l-from-50% backdrop-grayscale-200 absolute inset-y-0 right-0 z-10 w-16"
-                        />
-                        <InfiniteSlider
-                            speedOnHover={20}
-                            speed={40}
-                            className="*:gap-12! md:*:gap-24! lg:*:gap-32! items-center">
-                            <Hulu
-                                height={24}
-                                width="auto"
-                            />
-                            <Beacon
-                                height={24}
-                                width="auto"
-                            />
-                            <Cisco
-                                height={24}
-                                width="auto"
-                            />
-                            <Primevideo
-                                height={32}
-                                width="auto"
-                            />
-                            <Stripe
-                                height={24}
-                                width="auto"
-                            />
-                            <OpenAIFull
-                                height={24}
-                                width="auto"
-                            />
-                            <VisualStudioCode
-                                height={24}
-                                width="auto"
-                            />
-
-                            <Bolt
-                                height={24}
-                                width="auto"
-                            />
-                        </InfiniteSlider>
-                    </div>
-                    <Button variant="outline" size="sm" className="pr-2" render={<Link href="#" />} nativeButton={false}>Read customer stories
-                                                <ChevronRight className="size-3.5!" /></Button>
+                <div className="mask-x-from-80% mask-x-to-100% relative w-full">
+                    <InfiniteSlider
+                        speed={40}
+                        speedOnHover={20}
+                        gap={56}
+                        className="items-center">
+                        {leagues.map((league) => (
+                            <div
+                                key={league.name}
+                                className="flex h-[86px] shrink-0 items-center justify-center">
+                                <Image
+                                    src={league.src}
+                                    alt={league.name}
+                                    width={league.width}
+                                    height={league.height}
+                                    className={`${league.className ?? "h-13"} w-auto object-contain opacity-75 grayscale brightness-[1.8]`}
+                                />
+                            </div>
+                        ))}
+                    </InfiniteSlider>
                 </div>
             </div>
         </section>
