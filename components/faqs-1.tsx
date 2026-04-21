@@ -51,7 +51,7 @@ const faqGroups: FaqGroup[] = [
 
 export default function FAQs() {
     return (
-        <section className="dark bg-background">
+        <section id="faq" className="dark bg-background scroll-mt-20">
             <div className="mx-auto max-w-6xl px-6 py-24">
                 <div className="grid gap-12 md:grid-cols-5 md:gap-24">
                     <div className="flex flex-col gap-6 md:col-span-2">

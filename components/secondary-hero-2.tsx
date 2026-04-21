@@ -10,7 +10,7 @@ export default function HeroSection() {
                     className="pointer-events-none absolute -top-60 left-1/2 h-[720px] w-[1200px] -translate-x-1/2"
                     style={{
                         backgroundImage:
-                            "radial-gradient(circle farthest-corner at 50% 50%, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.04) 40%, transparent 70%)",
+                            "radial-gradient(circle farthest-corner at 50% 50%, rgba(10,177,123,0.18) 0%, rgba(10,177,123,0.04) 40%, transparent 70%)",
                     }}
                 />
 

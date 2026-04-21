@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "scoutcast-landing",
+    "react-app": "scoutcast-8d5fa"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -1,19 +1,59 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { ChevronUp, MessageSquare, Mic, X as XIcon } from "lucide-react"
 
 const activeBars = [6, 14, 22, 10, 18, 28, 16, 24, 32, 20, 12, 22, 28, 18, 26, 10, 30]
 const highlightBar = 36
 const idleBars = [14, 22, 10, 18, 24, 14, 20, 28, 16, 22, 10, 26, 18, 14, 22, 8]
 
+const SOURCE_HANDLE = "@cbssports"
+
+function useTypewriter(target: string, { typeMs = 110, holdMs = 1800, blankMs = 600 } = {}) {
+    const [text, setText] = useState("")
+
+    useEffect(() => {
+        let cancelled = false
+        const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+
+        const loop = async () => {
+            while (!cancelled) {
+                for (let i = 0; i <= target.length; i++) {
+                    if (cancelled) return
+                    setText(target.slice(0, i))
+                    await sleep(typeMs)
+                }
+                await sleep(holdMs)
+                if (cancelled) return
+                setText("")
+                await sleep(blankMs)
+            }
+        }
+
+        loop()
+        return () => {
+            cancelled = true
+        }
+    }, [target, typeMs, holdMs, blankMs])
+
+    return text
+}
+
 export default function FeaturesSection() {
+    const typed = useTypewriter(SOURCE_HANDLE)
+
     return (
-        <section className="dark bg-background">
+        <section id="product" className="dark bg-background scroll-mt-20">
             <div className="mx-auto max-w-5xl px-6 py-24">
                 <h2 className="mx-auto mb-14 max-w-3xl text-balance text-center text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">Powerful Tools. Easy to Use.</h2>
 
                 <div className="grid overflow-hidden rounded-[20px] border border-white/[0.08] bg-white/[0.03] lg:grid-cols-2">
                     <div className="flex flex-col gap-8 border-b border-white/[0.08] p-10 lg:border-b-0 lg:border-r">
                         <div className="mx-auto flex h-30 w-full max-w-[320px] flex-col rounded-[14px] border border-white/10 bg-black/50 px-4 pt-4">
-                            <span className="text-sm text-foreground/35">e.g. Milwaukee Bucks, focus on Giannis</span>
+                            <span className="flex items-center text-sm text-foreground/35">
+                                e.g. Milwaukee Bucks, focus on Giannis
+                                <span className="scoutcast-cursor ml-px inline-block h-[14px] w-[1.5px] translate-y-[1px] bg-foreground/55" />
+                            </span>
                         </div>
                         <div className="mx-auto flex max-w-[320px] flex-col items-center gap-3 text-center">
                             <h3 className="text-lg font-semibold leading-6 text-foreground">What do you want to hear about?</h3>
@@ -30,8 +70,8 @@ export default function FeaturesSection() {
                             </div>
                             <div className="flex h-12 items-center justify-between gap-3 rounded-[10px] border border-white/[0.14] bg-black/60 px-4">
                                 <div className="flex grow items-center">
-                                    <span className="text-[15px] text-foreground">@cbssports</span>
-                                    <span className="ml-px h-[18px] w-0.5 animate-pulse bg-foreground" />
+                                    <span className="text-[15px] text-foreground" aria-live="polite">{typed}</span>
+                                    <span className="scoutcast-cursor ml-px h-[18px] w-0.5 bg-foreground" />
                                 </div>
                                 <span className="text-sm font-semibold text-emerald-500">Add</span>
                             </div>
@@ -78,13 +118,13 @@ export default function FeaturesSection() {
                             {activeBars.map((h, i) => (
                                 <span
                                     key={`active-${i}`}
-                                    className="w-[2.5px] rounded-full bg-emerald-400"
-                                    style={{ height: `${h}px` }}
+                                    className="scoutcast-bar w-[2.5px] rounded-full bg-emerald-400"
+                                    style={{ height: `${h}px`, animationDelay: `${i * 90}ms` }}
                                 />
                             ))}
                             <span
-                                className="w-[3.5px] rounded-full bg-gradient-to-b from-emerald-300 to-emerald-500 shadow-[0_0_12px_rgba(52,211,153,0.65)]"
-                                style={{ height: `${highlightBar}px` }}
+                                className="scoutcast-bar w-[3.5px] rounded-full bg-gradient-to-b from-emerald-300 to-emerald-500 shadow-[0_0_12px_rgba(52,211,153,0.65)]"
+                                style={{ height: `${highlightBar}px`, animationDelay: `${activeBars.length * 90}ms`, animationDuration: "0.9s" }}
                             />
                             {idleBars.map((h, i) => (
                                 <span

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { CheckCircle2 } from "lucide-react"
+import { APP_STORE_URL } from "@/lib/urls"
 
 const benefits = ["Hands-free listening", "Personalized to your teams", "Finite daily briefing — no doom scroll", "Ad-free"]
 
@@ -9,7 +10,11 @@ export function DownloadCard() {
             <div className="flex flex-col gap-6 border-b border-white/[0.08] p-12 lg:border-b-0 lg:border-r">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground/50">Download Scoutcast.AI</span>
                 <h2 className="text-4xl font-semibold leading-[1.1] tracking-tight text-foreground">Your daily brief, in your ears.</h2>
-                <p className="text-base leading-6 text-foreground/60">Scan the code with your iPhone to install Scoutcast from the App Store. Your personalized sports audio, ready wherever you are.</p>
+                <p className="text-base leading-6 text-foreground/60">
+                    <span className="hidden sm:inline">Scan the code with your iPhone to install Scoutcast from the App Store. </span>
+                    <span className="sm:hidden">Tap below to install Scoutcast from the App Store. </span>
+                    Your personalized sports audio, ready wherever you are.
+                </p>
                 <ul className="mt-2 flex flex-col gap-3">
                     {benefits.map((benefit) => (
                         <li
@@ -23,8 +28,8 @@ export function DownloadCard() {
             </div>
 
             <div className="flex flex-col items-center gap-6 p-12">
-                <h3 className="text-[22px] font-semibold tracking-tight text-foreground">iPhone</h3>
-                <div className="rounded-2xl bg-white p-4">
+                <h3 className="hidden text-[22px] font-semibold tracking-tight text-foreground sm:block">iPhone</h3>
+                <div className="hidden rounded-2xl bg-white p-4 sm:block">
                     <Image
                         src="/scoutcast-qr.png"
                         alt="Scan to download Scoutcast on the App Store"
@@ -34,7 +39,9 @@ export function DownloadCard() {
                     />
                 </div>
                 <a
-                    href="#"
+                    href={APP_STORE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex h-[52px] items-center gap-2.5 rounded-[10px] border border-white/20 bg-black pl-4 pr-[18px] transition hover:bg-zinc-900">
                     <AppleGlyph />
                     <div className="flex flex-col leading-tight">

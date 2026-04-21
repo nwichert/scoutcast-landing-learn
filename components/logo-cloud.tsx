@@ -6,7 +6,7 @@ type League = {
     src: string
     width: number
     height: number
-    className?: string
+    invert?: boolean
 }
 
 const leagues: League[] = [
@@ -15,18 +15,19 @@ const leagues: League[] = [
     { name: "MLB", src: "/logos/mlb.png", width: 52, height: 52 },
     { name: "NHL", src: "/logos/nhl.png", width: 52, height: 52 },
     { name: "MLS", src: "/logos/mls.png", width: 52, height: 52 },
-    { name: "Premier League", src: "/logos/premier-league.svg", width: 86, height: 86, className: "h-[86px]" },
+    { name: "Premier League", src: "/logos/premier-league.svg", width: 140, height: 56 },
     { name: "PGA Tour", src: "/logos/pga.png", width: 52, height: 52 },
-    { name: "UEFA Champions League", src: "/logos/champions-league.png", width: 70, height: 70, className: "h-[70px]" },
+    { name: "UEFA Champions League", src: "/logos/champions-league.png", width: 110, height: 70, invert: true },
     { name: "La Liga", src: "/logos/la-liga.png", width: 52, height: 52 },
-    { name: "Bundesliga", src: "/logos/bundesliga.svg", width: 60, height: 60 },
+    { name: "Bundesliga", src: "/logos/bundesliga.svg", width: 130, height: 60 },
     { name: "Serie A", src: "/logos/serie-a.svg", width: 60, height: 60 },
     { name: "Ligue 1", src: "/logos/ligue-1.svg", width: 60, height: 60 },
     { name: "NCAA", src: "/logos/ncaa.svg", width: 60, height: 60 },
     { name: "WNBA", src: "/logos/wnba.png", width: 52, height: 52 },
     { name: "ATP", src: "/logos/atp.svg", width: 60, height: 60 },
     { name: "WTA", src: "/logos/wta.svg", width: 60, height: 60 },
-    { name: "LIV Golf", src: "/logos/LIVgolf.png", width: 60, height: 60 },
+    { name: "LIV Golf", src: "/logos/LIVgolf.png", width: 160, height: 28, invert: true },
+    { name: "Formula 1", src: "/logos/f1.png", width: 120, height: 30 },
 ]
 
 export default function LogoCloud() {
@@ -55,7 +56,12 @@ export default function LogoCloud() {
                                     alt={league.name}
                                     width={league.width}
                                     height={league.height}
-                                    className={`${league.className ?? "h-13"} w-auto object-contain opacity-75 grayscale brightness-[1.8]`}
+                                    className="h-auto w-auto object-contain"
+                                    style={{
+                                        maxHeight: `${league.height}px`,
+                                        maxWidth: `${league.width}px`,
+                                        filter: league.invert ? "invert(1) brightness(1.1)" : undefined,
+                                    }}
                                 />
                             </div>
                         ))}

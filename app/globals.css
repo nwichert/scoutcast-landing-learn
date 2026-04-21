@@ -125,6 +125,26 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply scroll-smooth font-sans;
   }
 }
+
+@keyframes scoutcast-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes scoutcast-waveform {
+  0%, 100% { transform: scaleY(0.35); }
+  50% { transform: scaleY(1); }
+}
+
+.scoutcast-cursor {
+  animation: scoutcast-blink 1s steps(1) infinite;
+}
+
+.scoutcast-bar {
+  transform-origin: center;
+  animation: scoutcast-waveform 1.1s ease-in-out infinite;
+}
+

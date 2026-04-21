@@ -1,4 +1,5 @@
-import { CheckCircle2, Clock, Flame, Menu, Mic, Play, Settings, Share2, Users, Wifi } from "lucide-react"
+import Image from "next/image"
+import { CheckCircle2, Clock, Flame, Menu, Mic, Play, Share2, Users, Wifi } from "lucide-react"
 
 type Episode = {
     id: string
@@ -17,45 +18,27 @@ type Episode = {
 }
 
 const MLB_ICON = (
-    <div
-        className="flex size-7 items-center justify-center rounded-full"
-        style={{ backgroundImage: "linear-gradient(135deg, #1E3A8A 0%, #EF4444 100%)" }}>
-        <span className="text-[10px] font-extrabold tracking-tighter text-white">MLB</span>
+    <div className="flex size-8 items-center justify-center overflow-hidden rounded-md bg-white">
+        <Image
+            src="/logos/mlb.png"
+            alt="MLB"
+            width={32}
+            height={32}
+            className="size-7 object-contain"
+        />
     </div>
 )
 
 const PGA_ICON = (
-    <svg
-        width="28"
-        height="30"
-        viewBox="0 0 24 26"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M12 0L2 4v10c0 7 5 11 10 12 5-1 10-5 10-12V4L12 0z"
-            fill="#1E3A8A"
+    <div className="flex size-8 items-center justify-center">
+        <Image
+            src="/logos/pga.svg"
+            alt="PGA Tour"
+            width={32}
+            height={32}
+            className="size-8 object-contain"
         />
-        <path
-            d="M12 2L4 5v9c0 6 4 9 8 10 4-1 8-4 8-10V5L12 2z"
-            fill="#1D4ED8"
-        />
-        <text
-            x="12"
-            y="13"
-            textAnchor="middle"
-            fontFamily="inherit"
-            fontSize="5"
-            fontWeight="800"
-            fill="#FAFAFA">
-            PGA
-        </text>
-        <circle
-            cx="12"
-            cy="18"
-            r="2"
-            fill="#EF4444"
-        />
-    </svg>
+    </div>
 )
 
 const episodes: Episode[] = [
@@ -155,7 +138,7 @@ export const PhoneIllustration = () => (
         </div>
 
         <div
-            className="absolute inset-x-0 bottom-0 flex items-start justify-around px-4 pb-9 pt-3.5"
+            className="absolute inset-x-0 bottom-0 flex items-start justify-center gap-12 px-4 pb-9 pt-3.5"
             style={{ backgroundImage: "linear-gradient(180deg, rgba(5,5,5,0) 0%, #050505 40%, #050505 100%)" }}>
             <TabItem
                 label="Feed"
@@ -194,10 +177,6 @@ export const PhoneIllustration = () => (
                 label="Crews"
                 icon={<Users className="size-[22px] text-foreground" />}
             />
-            <TabItem
-                label="Admin"
-                icon={<Settings className="size-[22px] text-foreground" />}
-            />
         </div>
     </div>
 )
@@ -207,15 +186,17 @@ const EpisodeGroup = ({ episode }: { episode: Episode }) => (
         <span className="pl-1 text-[11px] font-semibold uppercase tracking-widest text-foreground/45">{episode.date}</span>
         <div className="relative flex flex-col gap-3.5 overflow-hidden rounded-2xl border border-white/[0.06] bg-[#101828]/70 py-4 pl-[18px] pr-4">
             <span className="absolute inset-y-0 left-0 w-[3px] bg-emerald-500" />
-            {episode.badge && (
-                <span className="absolute right-[60px] top-3.5 flex items-center justify-center rounded-full border border-teal-400/35 bg-teal-400/15 px-2.5 py-[3px]">
-                    <span className="text-[11px] font-semibold text-teal-300">{episode.badge}</span>
-                </span>
-            )}
             <div className="relative flex items-start gap-3">
                 <div className="flex size-[52px] shrink-0 items-center justify-center rounded-[10px] bg-[#0F1A2E]">{episode.league.icon}</div>
                 <div className="flex min-w-0 flex-1 flex-col gap-1">
-                    <p className="text-[17px] font-bold leading-[22px] tracking-tight text-foreground">{episode.title}</p>
+                    <div className="flex min-w-0 items-center gap-2">
+                        <p className="min-w-0 flex-1 truncate text-[17px] font-bold leading-[22px] tracking-tight text-foreground">{episode.title}</p>
+                        {episode.badge && (
+                            <span className="inline-flex shrink-0 items-center rounded-full border border-teal-400/35 bg-teal-400/15 px-2.5 py-[3px]">
+                                <span className="text-[11px] font-semibold text-teal-300">{episode.badge}</span>
+                            </span>
+                        )}
+                    </div>
                     <p className="text-[13px] text-foreground/50">{episode.subtitle}</p>
                 </div>
                 <div className="flex size-[38px] shrink-0 items-center justify-center rounded-[10px] border border-emerald-500/35 bg-emerald-500/10">
