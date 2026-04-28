@@ -2,5 +2,13 @@
   "enabledPlugins": {
     "vercel@claude-plugins-official": true,
     "paper-desktop@paper": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(firebase deploy:*)",
+      "Bash(npx firebase deploy:*)"
+    ]
   }
 }

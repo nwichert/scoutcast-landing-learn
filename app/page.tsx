@@ -143,6 +143,20 @@ const faqPageLd = {
   ],
 };
 
+const comparisonDatasetLd = {
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  name: "Scoutcast.ai vs The Athletic vs theScore vs BriefingAM — feature comparison",
+  description:
+    "Side-by-side feature comparison of Scoutcast.ai, The Athletic, theScore, and BriefingAM across 10 dimensions of personalized sports media.",
+  url: "https://scoutcast.ai/#compare",
+  creator: { "@type": "Organization", name: "Scoutcast.ai, Inc." },
+  dateModified: "2026-04-28",
+  license: "https://scoutcast.ai/terms",
+  keywords:
+    "sports app comparison, AI sports briefing, The Athletic alternative, theScore alternative, BriefingAM alternative, personalized sports audio",
+};
+
 function JsonLd({ data }: { data: object }) {
   return (
     <script
@@ -158,6 +172,7 @@ export default function Home() {
       <JsonLd data={mobileApplicationLd} />
       <JsonLd data={organizationLd} />
       <JsonLd data={faqPageLd} />
+      <JsonLd data={comparisonDatasetLd} />
       <Header />
       <HeroSection />
       <LogoCloud />
