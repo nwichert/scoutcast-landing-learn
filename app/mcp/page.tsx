@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import Link from "next/link"
-import { Check, Code2, Copy, Link2, X } from "lucide-react"
+import { ArrowRight, Check, Code2, Copy, X } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import { CopyUrlButton } from "@/components/copy-url-button"
 
 export const metadata: Metadata = {
     title: "MCP Access · Scoutcast.ai",
@@ -272,24 +272,12 @@ function FlowConnector({ label }: { label: string }) {
                 viewBox="0 0 140 24"
                 fill="none">
                 <path
-                    d="M0 12 L120 12"
-                    stroke="#1E2733"
+                    d="M0 12 L140 12"
+                    stroke="rgba(10,177,123,0.55)"
                     strokeWidth="2"
-                    strokeDasharray="4 4"
-                />
-                <path
-                    d="M60 12 L100 12"
-                    stroke="#0AB17B"
-                    strokeWidth="2.5"
                     strokeLinecap="round"
-                />
-                <path
-                    d="M120 5 L132 12 L120 19"
-                    stroke="#0AB17B"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
+                    strokeDasharray="6 6"
+                    className="scoutcast-dash-flow"
                 />
             </svg>
             <svg
@@ -299,24 +287,12 @@ function FlowConnector({ label }: { label: string }) {
                 viewBox="0 0 24 48"
                 fill="none">
                 <path
-                    d="M12 0 L12 36"
-                    stroke="#1E2733"
+                    d="M12 0 L12 48"
+                    stroke="rgba(10,177,123,0.55)"
                     strokeWidth="2"
-                    strokeDasharray="4 4"
-                />
-                <path
-                    d="M12 18 L12 32"
-                    stroke="#0AB17B"
-                    strokeWidth="2.5"
                     strokeLinecap="round"
-                />
-                <path
-                    d="M5 36 L12 48 L19 36"
-                    stroke="#0AB17B"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
+                    strokeDasharray="6 6"
+                    className="scoutcast-dash-flow"
                 />
             </svg>
         </div>
@@ -605,36 +581,16 @@ function FinalCta() {
             <p className="relative max-w-md text-base leading-7 text-[#7D8693] sm:text-lg">Wire Scoutcast into the assistant you already have open. Five minutes from now you&rsquo;ll be asking your sports brief anything.</p>
             <div className="relative mt-3 flex flex-col gap-3 sm:flex-row">
                 <a
-                    href={CONNECTOR_URL}
-                    className="inline-flex h-14 items-center justify-center gap-2.5 rounded-[14px] bg-[#0AB17B] px-6 text-base font-semibold text-[#0A0E14] transition hover:bg-[#0BC189]">
-                    <Check
-                        className="size-3.5"
-                        strokeWidth={2.5}
-                    />
-                    Add to Claude
-                </a>
-                <a
-                    href={CONNECTOR_URL}
-                    className="inline-flex h-14 items-center justify-center gap-2.5 rounded-[14px] bg-[#E6EDF3] px-6 text-base font-semibold text-[#0A0E14] transition hover:bg-white">
-                    <Check
-                        className="size-3.5"
-                        strokeWidth={2.5}
-                    />
-                    Add to ChatGPT
-                </a>
-                <a
                     href="#setup"
-                    className="inline-flex h-14 items-center justify-center gap-2.5 rounded-[14px] border border-[#1E2733] bg-[#0F1620]/60 px-[22px] text-[#E6EDF3] transition hover:bg-[#0F1620]">
-                    <Code2 className="size-3.5 text-[#5DE0A6]" />
-                    <span className="font-mono text-sm font-medium">Read the docs</span>
+                    className="inline-flex h-14 items-center justify-center gap-2.5 rounded-[14px] bg-[#0AB17B] px-6 text-base font-semibold text-[#0A0E14] transition hover:bg-[#0BC189]">
+                    Get setup
+                    <ArrowRight
+                        className="size-4"
+                        strokeWidth={2.5}
+                    />
                 </a>
+                <CopyUrlButton url={CONNECTOR_URL} />
             </div>
-            <Link
-                href={CONNECTOR_URL}
-                className="relative mt-2 inline-flex items-center gap-2.5 rounded-[10px] border border-[#1E2733] bg-[#0F1620] px-4 py-2.5">
-                <Link2 className="size-3 text-[#5DE0A6]" />
-                <span className="break-all font-mono text-[13px] tracking-[0.02em] text-[#5DE0A6]">{CONNECTOR_URL}</span>
-            </Link>
         </section>
     )
 }

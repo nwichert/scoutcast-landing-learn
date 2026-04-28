@@ -7,6 +7,8 @@ import DownloadSection from "@/components/contact";
 import Pricing from "@/components/pricing";
 import FAQs from "@/components/faqs-1";
 import Footer from "@/components/footer";
+import LastUpdated from "@/components/last-updated";
+import Link from "next/link";
 
 const mobileApplicationLd = {
   "@context": "https://schema.org",
@@ -181,9 +183,17 @@ export default function Home() {
       <DownloadSection />
       <Pricing />
       <FAQs />
-      <p className="dark bg-background text-center text-sm text-foreground/55 pb-8">
-        Last updated April 27, 2026
-      </p>
+      <div className="dark bg-background pb-2 text-center text-sm">
+        <Link
+          href="/blog/why-we-built-scoutcast/"
+          className="text-foreground/55 hover:text-foreground"
+        >
+          Latest from the blog:{" "}
+          <span className="text-foreground/85">Why we built Scoutcast.ai</span>{" "}
+          →
+        </Link>
+      </div>
+      <LastUpdated />
       <Footer />
     </>
   );

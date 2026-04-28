@@ -4,6 +4,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { DownloadDialog } from "@/components/download-dialog"
 import { CoverageTimeline } from "@/components/fantasy-coverage-timeline"
+import { SeasonCountdown } from "@/components/season-countdown"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export const metadata: Metadata = {
@@ -517,10 +518,7 @@ function FinalCta() {
                         "radial-gradient(circle farthest-corner at 50% 50%, rgba(10,177,123,0.22) 0%, rgba(10,177,123,0.06) 35%, transparent 70%)",
                 }}
             />
-            <div className="relative inline-flex items-center gap-2 rounded-full border border-[#30363D] bg-[#161B22] px-3 py-1.5">
-                <span className="size-1.5 shrink-0 rounded-full bg-[#0AB17B]" />
-                <span className="text-xs font-medium uppercase tracking-[0.04em] text-[#C9D1D9]">Season starts in 47 days</span>
-            </div>
+            <SeasonCountdown />
             <h2 className="relative text-balance text-[44px] font-bold leading-[1.05] tracking-[-0.02em] text-[#F0F6FC] sm:text-[56px] lg:text-[72px]">
                 Stop scrolling.
                 <br />

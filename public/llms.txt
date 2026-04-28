@@ -36,4 +36,7 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - LinkedIn: https://www.linkedin.com/company/109072371
 - X: https://x.com/scoutcastAI
 
-Last updated: 2026-04-27
+## Recent posts
+- Why we built Scoutcast.ai (2026-04-28): https://scoutcast.ai/blog/why-we-built-scoutcast — A personalized 2-minute AI sports briefing for your morning, and the morning with my son that started it.
+
+Last updated: 2026-04-28
