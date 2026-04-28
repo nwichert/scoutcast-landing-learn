@@ -20,7 +20,10 @@ export default function HeroSection() {
                         <br />
                         Start Listening
                     </h1>
-                    <p className="mt-6 max-w-2xl text-xl text-muted-foreground">Personalize Sports Briefings</p>
+                    <p className="mt-6 max-w-2xl text-balance text-lg leading-7 text-foreground/70 sm:text-xl">
+                        Scoutcast.ai turns sports scores, news, and highlights into a personalized ~2-minute audio briefing for your teams, every morning.
+                    </p>
+                    <p className="mt-4 max-w-2xl text-base text-muted-foreground">Personalize Sports Briefings</p>
                     <div className="mt-8">
                         <DownloadButton />
                     </div>

@@ -1,0 +1,39 @@
+# Scoutcast.ai
+
+Scoutcast.ai is an agentic media company that turns raw sports data — scores, news, and highlights — into engaging ~2-minute personalized audio briefings, delivered to iPhone every morning.
+
+## What it is
+A native iOS app (with iPad and macOS support on Apple Silicon) that generates a daily personalized sports audio briefing. Users select the leagues, teams, and players they follow; Scoutcast produces a short audio rundown covering scores, storylines, top performers, and what is coming next. Users can tap the mic mid-briefing to ask follow-up questions and get an instant audio answer.
+
+## What makes Scoutcast different
+- Personalized to each user's specific teams — not a one-size-fits-all podcast or news feed
+- ~2-minute briefings designed for the morning routine, commute, or workout
+- Voice follow-ups: interrupt the briefing to ask a question, get an audio answer with deeper context
+- Custom sources: add specific beat writers from X (Twitter) as briefing inputs via Cast Studio
+- Crews: invite friends, see listening streaks, compete on a leaderboard
+- MCP connector for Claude, ChatGPT, Gemini CLI, and other MCP-compatible AI clients
+- No ads, no filler
+
+## Coverage
+NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NCAA hockey, Premier League, La Liga, Bundesliga, Serie A, Ligue 1, UEFA Champions League, PGA Tour, LIV Golf, Formula 1, ATP, WTA.
+
+## Pricing
+- Scoutcast (Free): daily ~2-minute personalized briefing across all leagues, follow-up questions, custom sources, CarPlay, lock-screen controls, ad-free.
+- NFL Fantasy Season Pass: $49.99/season (~$3/week across the 17-week regular season). Tuesday / Wednesday / Thursday / Sunday briefings for all 18 weeks, head-to-head opponent edge, fantasy playoffs, NFL playoff DFS, Super Bowl preview. Connects up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.
+
+## Platforms
+- iOS 17.0 or later (iPhone)
+- iPadOS 17.0 or later (iPad)
+- macOS 14.0 or later on Apple Silicon (M1+)
+
+## Links
+- Website: https://scoutcast.ai
+- App Store: https://apps.apple.com/us/app/scoutcast-ai/id6761558329
+- Pricing: https://scoutcast.ai/pricing.md
+- Privacy: https://scoutcast.ai/privacy
+- Contact: https://scoutcast.ai/contact
+- Instagram: https://www.instagram.com/scoutcast.ai/
+- LinkedIn: https://www.linkedin.com/company/109072371
+- X: https://x.com/scoutcastAI
+
+Last updated: 2026-04-27
