@@ -55,8 +55,8 @@ export default function FAQs() {
             <div className="mx-auto max-w-6xl px-6 py-24">
                 <div className="grid gap-12 md:grid-cols-5 md:gap-24">
                     <div className="flex flex-col gap-6 md:col-span-2">
-                        <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.1]">FAQs</h2>
-                        <p className="text-lg leading-7 text-foreground/55">Your questions answered</p>
+                        <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.1]">Sports audio briefing FAQs</h2>
+                        <p className="text-lg leading-7 text-foreground/55">Everything about how Scoutcast works</p>
                         <p className="mt-2 text-[15px] leading-6 text-foreground/55">
                             Can’t find what you’re looking for? Email us at{" "}
                             <Link

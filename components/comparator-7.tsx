@@ -179,7 +179,7 @@ export default function ComparatorSection() {
             className="dark bg-background scroll-mt-20">
             <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-24">
                 <div className="flex max-w-3xl flex-col gap-3">
-                    <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">See how we stack up</h2>
+                    <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">Scoutcast vs The Athletic, theScore &amp; BriefingAM</h2>
                     <p className="text-[13px] leading-5 text-foreground/55">Honest comparison of personalized sports apps. Last updated April 2026.</p>
                     <p className="text-[17px] leading-[26px] text-foreground/55">Personalized, on-demand audio briefings — built for sports fans, not feed scrollers or productivity dashboards.</p>
                 </div>

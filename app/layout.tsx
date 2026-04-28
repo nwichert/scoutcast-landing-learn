@@ -13,8 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Scoutcast.ai",
-  description: "Agentic sports media — two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster.",
+  metadataBase: new URL("https://scoutcast.ai"),
+  title: {
+    default: "Scoutcast.ai — Personalized AI Sports Audio Briefings, Daily",
+    template: "%s · Scoutcast.ai",
+  },
+  description:
+    "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "https://scoutcast.ai",
+    siteName: "Scoutcast.ai",
+    title: "Scoutcast.ai — Personalized AI Sports Audio Briefings, Daily",
+    description:
+      "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone.",
+    images: [{ url: "/scoutcast-icon.png", width: 1200, height: 630, alt: "Scoutcast.ai" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@scoutcastAI",
+    creator: "@scoutcastAI",
+    title: "Scoutcast.ai — Personalized AI Sports Audio Briefings, Daily",
+    description:
+      "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone.",
+    images: ["/scoutcast-icon.png"],
+  },
 };
 
 export default function RootLayout({

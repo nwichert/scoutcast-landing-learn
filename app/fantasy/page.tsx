@@ -8,9 +8,10 @@ import { SeasonCountdown } from "@/components/season-countdown"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export const metadata: Metadata = {
-    title: "NFL Fantasy Season Pass · Scoutcast.ai",
+    title: "NFL Fantasy Season Pass",
     description:
-        "Three audio briefings a week, personalized to your roster and your H2H opponent. Conviction calls in five minutes — not a 90-minute podcast.",
+        "Four audio briefings a week, personalized to your roster and your H2H opponent. Conviction calls in five minutes — not a 90-minute podcast.",
+    alternates: { canonical: "/fantasy" },
 }
 
 const PALETTE = {
@@ -207,7 +208,7 @@ function Hero() {
                         Start Winning.
                     </h1>
                     <p className="max-w-xl text-[17px] leading-[1.55] text-[#8B949E] lg:text-lg">
-                        Three audio briefings a week, personalized to your roster and your H2H opponent. Conviction calls in five minutes — not a 90-minute podcast.
+                        Four audio briefings a week, personalized to your roster and your H2H opponent. Conviction calls in five minutes — not a 90-minute podcast.
                     </p>
                     <div className="mt-2 flex flex-col gap-3">
                         <DownloadDialog className="inline-flex h-13 w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[#0AB17B] px-5 text-base font-semibold text-[#0D1117] transition hover:bg-[#0BC189] sm:w-fit">
@@ -524,7 +525,7 @@ function FinalCta() {
                 <br />
                 Start listening.
             </h2>
-            <p className="relative max-w-md text-base leading-[1.55] text-[#8B949E]">Five minutes a briefing. Three a week. Personalized to your roster, ready before kickoff.</p>
+            <p className="relative max-w-md text-base leading-[1.55] text-[#8B949E]">Five minutes a briefing. Four a week. Personalized to your roster, ready before kickoff.</p>
             <a
                 href="#"
                 className="relative mt-2 inline-flex h-14 items-center gap-3 rounded-[14px] bg-[#F0F6FC] pl-3.5 pr-4 text-[#0D1117] transition hover:bg-white">

@@ -45,7 +45,7 @@ export default function FeaturesSection() {
     return (
         <section id="product" className="dark bg-background scroll-mt-20">
             <div className="mx-auto max-w-5xl px-6 py-24">
-                <h2 className="mx-auto mb-14 max-w-3xl text-balance text-center text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">Powerful Tools. Easy to Use.</h2>
+                <h2 className="mx-auto mb-14 max-w-3xl text-balance text-center text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">How Scoutcast personalizes your daily sports brief</h2>
 
                 <div className="grid overflow-hidden rounded-[20px] border border-white/[0.08] bg-white/[0.03] lg:grid-cols-2">
                     <div className="flex flex-col gap-8 border-b border-white/[0.08] p-10 lg:border-b-0 lg:border-r">

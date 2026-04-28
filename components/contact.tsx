@@ -8,7 +8,7 @@ export function DownloadCard() {
     return (
         <div className="grid w-full overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] lg:grid-cols-2">
             <div className="flex flex-col gap-6 border-b border-white/[0.08] p-12 lg:border-b-0 lg:border-r">
-                <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground/50">Download Scoutcast.AI</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground/50">Download Scoutcast.ai</span>
                 <h2 className="text-4xl font-semibold leading-[1.1] tracking-tight text-foreground">Your daily brief, in your ears.</h2>
                 <p className="text-base leading-6 text-foreground/60">
                     <span className="hidden sm:inline">Scan the code with your iPhone to install Scoutcast from the App Store. </span>

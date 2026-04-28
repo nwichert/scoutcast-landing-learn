@@ -37,7 +37,7 @@ export default function LogoCloud() {
                 <div className="mb-12 flex max-w-2xl flex-col items-center gap-4">
                     <h2 className="text-balance text-center text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">Global Sports Coverage</h2>
                     <p className="max-w-xl text-balance text-center text-lg leading-7 text-foreground/55">
-                        Scoutcast.ai is an agentic media company that turns raw sports data like scores, news, and highlights, and turns them into engaging two-minute audio briefings.
+                        Scoutcast.ai turns raw sports data — scores, news, and highlights — into engaging two-minute audio briefings.
                     </p>
                 </div>
 

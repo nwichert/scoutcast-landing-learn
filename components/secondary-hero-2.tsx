@@ -15,6 +15,9 @@ export default function HeroSection() {
                 />
 
                 <div className="relative mx-auto mb-12 flex max-w-5xl flex-col items-center px-6 text-center">
+                    <span className="mb-5 inline-block text-[11px] font-semibold uppercase tracking-[0.14em] text-[#0AB17B]">
+                        Personalized AI Sports Audio Briefings
+                    </span>
                     <h1 className="max-w-2xl text-balance text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-[56px] lg:text-[64px]">
                         Stop Scrolling
                         <br />
@@ -23,7 +26,6 @@ export default function HeroSection() {
                     <p className="mt-6 max-w-2xl text-balance text-lg leading-7 text-foreground/70 sm:text-xl">
                         Scoutcast.ai turns sports scores, news, and highlights into a personalized ~2-minute audio briefing for your teams, every morning.
                     </p>
-                    <p className="mt-4 max-w-2xl text-base text-muted-foreground">Personalize Sports Briefings</p>
                     <div className="mt-8">
                         <DownloadButton />
                     </div>
