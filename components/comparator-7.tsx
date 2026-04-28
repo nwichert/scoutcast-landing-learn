@@ -7,34 +7,59 @@ import { Logo, LogoIcon } from "@/components/logo"
 type Feature = {
     name: string
     description: string
+    matrix: [boolean, boolean, boolean, boolean]
 }
+
+const competitors = ["The Athletic", "theScore", "BriefingAM"] as const
 
 const features: Feature[] = [
     {
         name: "Hands-free listening",
         description: "Listen in the car, on a run, or while you work. No screen, no scrolling — just audio you can play through AirPods, CarPlay, or any Bluetooth device.",
+        matrix: [true, false, false, true],
     },
     {
         name: "Personalized to your teams",
         description: "Briefings focus on the teams and players you follow, not a generic national feed. Your rivalry games lead; the rest stays out of your way.",
+        matrix: [true, true, true, false],
     },
     {
         name: "Learns what you care about",
         description: "Scoutcast adapts to your listening habits. Skip a segment and it shows up less; replay one and you'll get more of that angle over time.",
+        matrix: [true, false, false, false],
     },
     {
         name: "Multi-source in one place",
         description: "Scores, news, injuries, beat-writer reporting, and highlights — all stitched into one coherent briefing so you don't tab-hop between apps.",
+        matrix: [true, false, false, false],
     },
     {
         name: "Finite daily briefing (no doom scroll)",
         description: "Every briefing has a defined start and end. No infinite feed engineered to keep you swiping. You get what you need, then you're out.",
+        matrix: [true, false, false, true],
     },
     {
         name: "Ad-free",
         description: "No pre-rolls, no mid-rolls, no sponsor reads in your briefing. The audio is the product — we're not selling your attention.",
+        matrix: [true, true, false, true],
     },
 ]
+
+function Cell({ on, i }: { on: boolean; i: number }) {
+    return (
+        <div className={`flex h-14 items-center justify-center ${i % 2 === 1 ? "bg-white/[0.03]" : ""}`}>
+            {on ? (
+                <span className="flex size-[18px] items-center justify-center rounded-full bg-emerald-500">
+                    <Check className="size-2.5 text-white" strokeWidth={3} />
+                </span>
+            ) : (
+                <span className="flex size-[18px] items-center justify-center rounded-full bg-rose-500">
+                    <X className="size-2 text-white" strokeWidth={3} />
+                </span>
+            )}
+        </div>
+    )
+}
 
 export default function ComparatorSection() {
     return (
@@ -42,23 +67,23 @@ export default function ComparatorSection() {
             <div className="mx-auto flex max-w-6xl flex-col items-start gap-12 px-6 py-24 lg:flex-row lg:items-start lg:gap-20">
                 <div className="flex max-w-[320px] flex-col gap-6 pt-14">
                     <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">See how we stack up</h2>
-                    <p className="text-[17px] leading-[26px] text-foreground/55">Scoutcast delivers personalized, on-demand audio briefs, emerging as the top choice over static websites.</p>
+                    <p className="text-[17px] leading-[26px] text-foreground/55">Personalized, on-demand audio briefings — built for sports fans, not feed scrollers or productivity dashboards.</p>
                 </div>
 
-                <div className="relative grid w-full grid-cols-[1.4fr_1fr_1fr] lg:max-w-[640px]">
+                <div className="relative grid w-full grid-cols-[1.6fr_1fr_1fr_1fr_1fr] lg:max-w-[760px]">
                     <div className="flex flex-col">
-                        <div className="flex h-14 items-end px-6 py-2">
+                        <div className="flex h-14 items-end px-4 py-2 sm:px-6">
                             <span className="text-[13px] font-medium text-foreground/55">Features</span>
                         </div>
                         {features.map((feature, i) => (
                             <div
                                 key={feature.name}
-                                className={`flex h-14 items-center gap-1 px-6 ${i === 0 ? "rounded-tl-xl" : ""} ${i === features.length - 1 ? "rounded-bl-xl" : ""} ${i % 2 === 1 ? "bg-white/[0.03]" : ""}`}>
-                                <span className="text-sm text-foreground/80">{feature.name}</span>
+                                className={`flex h-14 items-center gap-1 px-4 sm:px-6 ${i === 0 ? "rounded-tl-xl" : ""} ${i === features.length - 1 ? "rounded-bl-xl" : ""} ${i % 2 === 1 ? "bg-white/[0.03]" : ""}`}>
+                                <span className="text-xs leading-tight text-foreground/80 sm:text-sm">{feature.name}</span>
                                 <Popover.Root>
                                     <Popover.Trigger
                                         aria-label={`About ${feature.name}`}
-                                        className="ml-1 flex size-4 cursor-pointer items-center justify-center rounded-full bg-white/10 text-[10px] font-medium text-foreground/65 transition hover:bg-white/20 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30">
+                                        className="ml-1 flex size-4 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white/10 text-[10px] font-medium text-foreground/65 transition hover:bg-white/20 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30">
                                         ?
                                     </Popover.Trigger>
                                     <Popover.Portal>
@@ -83,41 +108,27 @@ export default function ComparatorSection() {
                     </div>
 
                     <div className="relative flex flex-col rounded-xl border border-white/20 bg-white/[0.04] shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
-                        <div className="flex h-14 items-center justify-center px-4">
+                        <div className="flex h-14 items-center justify-center px-2">
                             <LogoIcon className="h-7 w-auto sm:hidden" />
                             <Logo className="hidden h-6 w-auto sm:block" />
                         </div>
                         {features.map((feature, i) => (
-                            <div
-                                key={feature.name}
-                                className={`flex h-14 items-center justify-center ${i % 2 === 1 ? "bg-white/[0.03]" : ""}`}>
-                                <span className="flex size-[18px] items-center justify-center rounded-full bg-emerald-500">
-                                    <Check
-                                        className="size-2.5 text-white"
-                                        strokeWidth={3}
-                                    />
-                                </span>
-                            </div>
+                            <Cell key={feature.name} on={feature.matrix[0]} i={i} />
                         ))}
                     </div>
 
-                    <div className="flex flex-col">
-                        <div className="flex h-14 items-center justify-center px-4">
-                            <span className="text-base font-bold tracking-tight text-foreground/70">Sports Website</span>
-                        </div>
-                        {features.map((feature, i) => (
-                            <div
-                                key={feature.name}
-                                className={`flex h-14 items-center justify-center ${i % 2 === 1 ? "bg-white/[0.03]" : ""}`}>
-                                <span className="flex size-[18px] items-center justify-center rounded-full bg-rose-500">
-                                    <X
-                                        className="size-2 text-white"
-                                        strokeWidth={3}
-                                    />
+                    {competitors.map((name, col) => (
+                        <div key={name} className="flex flex-col">
+                            <div className="flex h-14 items-center justify-center px-1 sm:px-2">
+                                <span className="text-center text-[11px] font-bold leading-tight tracking-tight text-foreground/70 sm:text-sm">
+                                    {name}
                                 </span>
                             </div>
-                        ))}
-                    </div>
+                            {features.map((feature, i) => (
+                                <Cell key={feature.name} on={feature.matrix[col + 1]} i={i} />
+                            ))}
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
