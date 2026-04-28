@@ -1,8 +1,5 @@
-"use client"
-
 import { Fragment } from "react"
 import { Check, Minus, X } from "lucide-react"
-import { Popover } from "@base-ui/react/popover"
 import { Logo, LogoIcon } from "@/components/logo"
 import { cn } from "@/lib/utils"
 
@@ -180,25 +177,29 @@ export default function ComparatorSection() {
         <section
             id="compare"
             className="dark bg-background scroll-mt-20">
-            <div className="mx-auto flex max-w-6xl flex-col items-start gap-12 px-6 py-24 lg:flex-row lg:items-start lg:gap-20">
-                <div className="flex max-w-[320px] flex-col gap-4 pt-14">
+            <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-24">
+                <div className="flex max-w-3xl flex-col gap-3">
                     <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">See how we stack up</h2>
                     <p className="text-[13px] leading-5 text-foreground/55">Honest comparison of personalized sports apps. Last updated April 2026.</p>
                     <p className="text-[17px] leading-[26px] text-foreground/55">Personalized, on-demand audio briefings — built for sports fans, not feed scrollers or productivity dashboards.</p>
                 </div>
 
-                <div className="w-full overflow-x-auto lg:max-w-[760px]">
+                <div className="w-full overflow-x-auto">
                     <div
-                        className="relative grid min-w-[640px] grid-cols-[1.6fr_1fr_1fr_1fr_1fr] lg:min-w-0"
+                        className="relative min-w-[640px] lg:min-w-0"
                         role="table"
                         aria-label="Feature comparison: Scoutcast.ai vs The Athletic, theScore, and BriefingAM">
-                        {/* Scoutcast column highlight card — grid item spanning all rows in column 2 */}
+                        {/* Scoutcast column highlight card — absolutely positioned overlay, mirrors column 2 of the grid */}
                         <div
                             aria-hidden
-                            className="pointer-events-none rounded-xl border border-white/20 bg-white/[0.04] shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
-                            style={{ gridColumn: "2", gridRow: `1 / span ${features.length + 1}` }}
+                            className="pointer-events-none absolute top-0 bottom-0 rounded-xl border border-white/20 bg-white/[0.04] shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
+                            style={{
+                                left: "calc(1.6 / 5.6 * 100%)",
+                                width: "calc(1 / 5.6 * 100%)",
+                            }}
                         />
 
+                        <div className="grid grid-cols-[1.6fr_1fr_1fr_1fr_1fr]">
                         {/* Header row */}
                         <div className="relative z-10 flex h-14 items-end px-4 py-2 sm:px-6">
                             <span className="text-[13px] font-medium text-foreground/55">Features</span>
@@ -230,32 +231,7 @@ export default function ComparatorSection() {
                                             isFirst && "rounded-tl-xl",
                                             isLast && "rounded-bl-xl"
                                         )}>
-                                        <div className="flex items-center gap-1">
-                                            <span className="text-xs leading-tight text-foreground/85 sm:text-sm">{feature.label}</span>
-                                            <Popover.Root>
-                                                <Popover.Trigger
-                                                    aria-label={`About ${feature.label}`}
-                                                    className="ml-1 flex size-4 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white/10 text-[10px] font-medium text-foreground/65 transition hover:bg-white/20 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30">
-                                                    ?
-                                                </Popover.Trigger>
-                                                <Popover.Portal>
-                                                    <Popover.Positioner sideOffset={8}>
-                                                        <Popover.Popup className="data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 z-50 max-w-[280px] rounded-lg border border-white/10 bg-popover p-3 text-sm leading-relaxed text-popover-foreground shadow-[0_8px_24px_rgba(0,0,0,0.4)] outline-none">
-                                                            <Popover.Arrow className="data-[side=bottom]:top-[-6px] data-[side=top]:bottom-[-6px] [&>svg]:fill-popover [&>svg]:stroke-white/10">
-                                                                <svg
-                                                                    width={12}
-                                                                    height={6}
-                                                                    viewBox="0 0 12 6"
-                                                                    fill="currentColor">
-                                                                    <path d="M0 6 L6 0 L12 6 Z" />
-                                                                </svg>
-                                                            </Popover.Arrow>
-                                                            <p className="text-[13px] leading-[1.45] text-foreground/80">{feature.definition}</p>
-                                                        </Popover.Popup>
-                                                    </Popover.Positioner>
-                                                </Popover.Portal>
-                                            </Popover.Root>
-                                        </div>
+                                        <span className="text-xs leading-tight text-foreground/85 sm:text-sm">{feature.label}</span>
                                         <p className="text-[11px] leading-snug text-foreground/55 sm:text-xs">{feature.definition}</p>
                                     </div>
 
@@ -279,6 +255,7 @@ export default function ComparatorSection() {
                                 </Fragment>
                             )
                         })}
+                        </div>
                     </div>
                 </div>
             </div>
