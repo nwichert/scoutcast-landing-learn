@@ -1,76 +1,13 @@
-import Image from "next/image"
-import { CheckCircle2, Clock, Flame, Menu, Mic, Play, Share2, Users, Wifi } from "lucide-react"
+import { MessageSquare, Mic, Wifi } from "lucide-react"
 
-type Episode = {
-    id: string
-    date: string
-    league: {
-        label: string
-        icon: React.ReactNode
-    }
-    title: string
-    subtitle: string
-    duration: string
-    tag?: string
-    tagAlign?: "inline" | "overflow"
-    overflowText?: string
-    badge?: string
-}
+const activeBarHeights = [18, 32, 48, 24, 62, 78, 40, 54, 88, 36, 22, 46, 72, 30, 58, 42, 64, 50]
+const idleBarHeights = [48, 34, 62, 24, 50, 38, 28, 54, 42, 18, 36, 48, 30, 22, 40, 16, 26, 14]
+const playheadHeight = 108
 
-const MLB_ICON = (
-    <div className="flex size-8 items-center justify-center overflow-hidden rounded-md bg-white">
-        <Image
-            src="/logos/mlb.png"
-            alt="MLB"
-            width={32}
-            height={32}
-            className="size-7 object-contain"
-        />
-    </div>
-)
-
-const PGA_ICON = (
-    <div className="flex size-8 items-center justify-center">
-        <Image
-            src="/logos/pga.svg"
-            alt="PGA Tour"
-            width={32}
-            height={32}
-            className="size-8 object-contain"
-        />
-    </div>
-)
-
-const episodes: Episode[] = [
-    {
-        id: "mlb-streaks",
-        date: "Wednesday · April 15, 2026",
-        league: { label: "MLB", icon: MLB_ICON },
-        title: "MLB Heats Up: Streaks, Shutouts &…",
-        subtitle: "Dodgers, Yankees, and Brewer…",
-        duration: "1:56",
-        tag: "MLB",
-    },
-    {
-        id: "mcilroy-leg",
-        date: "Monday · April 13, 2026",
-        league: { label: "PGA", icon: PGA_ICON },
-        title: "McIlroy's Masters Leg…",
-        subtitle: "Rory McIlroy completes the ca…",
-        duration: "2:07",
-        tag: "The Masters",
-        badge: "Wrap-Up",
-    },
-    {
-        id: "masters-sunday",
-        date: "Sunday · April 12, 2026",
-        league: { label: "PGA", icon: PGA_ICON },
-        title: "Masters Sunday: McIlroy and Young…",
-        subtitle: "A six-shot lead is gone — the g…",
-        duration: "1:20",
-        tagAlign: "overflow",
-        overflowText: "Follow all the scores, news, highlights, and major plays of",
-    },
+const voiceChips: { text: string; align: "start" | "end" }[] = [
+    { text: "what’s his stat line?", align: "start" },
+    { text: "more on the trade", align: "end" },
+    { text: "what were his stats last week?", align: "start" },
 ]
 
 export const PhoneIllustration = () => (
@@ -101,157 +38,78 @@ export const PhoneIllustration = () => (
             </div>
         </div>
 
-        <div className="relative flex items-start justify-between px-6 pt-9">
-            <div className="flex flex-col gap-1">
-                <h3 className="text-[26px] font-bold leading-8 tracking-tight text-foreground">Good evening, Nick</h3>
-                <p className="text-sm text-foreground/55">Thursday, April 16</p>
-                <div className="mt-1.5 flex items-center gap-1.5">
-                    <Flame className="size-4 fill-amber-400 text-orange-500" />
-                    <span className="text-[13px] font-medium text-foreground/80">1 day</span>
-                </div>
-            </div>
-            <button
-                type="button"
-                aria-label="Open menu"
-                className="flex size-9 items-center justify-center rounded-full border border-white/20">
-                <Menu className="size-4 text-foreground" />
-            </button>
-        </div>
-
-        <div className="relative mx-6 mt-6 flex gap-1 rounded-full bg-white/[0.06] p-1">
-            <div className="flex h-9 flex-1 items-center justify-center rounded-full">
-                <span className="text-sm font-medium text-foreground/75">New</span>
-            </div>
-            <div className="flex h-9 flex-1 items-center justify-center rounded-full bg-white/15">
-                <span className="text-sm font-semibold text-foreground">Listened</span>
+        <div className="relative flex flex-col gap-3.5 px-7 pt-7">
+            <span className="inline-flex w-fit items-center gap-2.5 rounded-full border border-emerald-400/30 bg-emerald-500/10 py-1.5 pl-2.5 pr-3">
+                <span className="relative flex size-2 items-center justify-center">
+                    <span className="scoutcast-live-ping absolute inset-0 rounded-full bg-emerald-400/60" />
+                    <span className="relative size-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
+                </span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-emerald-300">Now Playing</span>
+            </span>
+            <h3 className="text-[26px] font-semibold leading-[1.15] tracking-tight text-foreground">Bucks Daily Brief</h3>
+            <div className="flex items-center gap-2 text-[13px] text-foreground/45">
+                <span>Monday &middot; April 13</span>
+                <span className="size-[3px] rounded-full bg-foreground/30" />
+                <span>4 min</span>
             </div>
         </div>
 
-        <div className="relative flex flex-col gap-6 px-5 pt-6">
-            {episodes.map((episode) => (
-                <EpisodeGroup
-                    key={episode.id}
-                    episode={episode}
+        <div className="relative mt-7 flex flex-col gap-3.5 px-7">
+            <div className="flex h-[120px] items-center justify-center gap-[3px]">
+                {activeBarHeights.map((h, i) => (
+                    <span
+                        key={`active-${i}`}
+                        className="scoutcast-bar w-1 rounded-[2px] bg-emerald-400"
+                        style={{ height: `${h}px`, animationDelay: `${i * 70}ms` }}
+                    />
+                ))}
+                <span
+                    className="scoutcast-bar w-1.5 rounded-[3px] bg-gradient-to-b from-emerald-300 to-emerald-500 shadow-[0_0_18px_rgba(52,211,153,0.85)]"
+                    style={{ height: `${playheadHeight}px`, animationDuration: "0.9s" }}
+                />
+                {idleBarHeights.map((h, i) => (
+                    <span
+                        key={`idle-${i}`}
+                        className="w-1 rounded-[2px] bg-white/[0.18]"
+                        style={{ height: `${h}px` }}
+                    />
+                ))}
+            </div>
+            <div className="flex items-center justify-between font-mono text-[11px]">
+                <span className="font-medium text-emerald-300">1:42</span>
+                <span className="text-foreground/40">&minus;2:18</span>
+            </div>
+        </div>
+
+        <div className="relative mt-6 flex flex-col gap-2.5 px-7">
+            {voiceChips.map((chip) => (
+                <VoiceChip
+                    key={chip.text}
+                    text={chip.text}
+                    align={chip.align}
                 />
             ))}
-            <span className="pl-1 text-[11px] font-semibold uppercase tracking-widest text-foreground/45">Saturday · April 11, 2026</span>
         </div>
 
-        <div
-            className="absolute inset-x-0 bottom-0 flex items-start justify-center gap-12 px-4 pb-9 pt-3.5"
-            style={{ backgroundImage: "linear-gradient(180deg, rgba(5,5,5,0) 0%, #050505 40%, #050505 100%)" }}>
-            <TabItem
-                label="Feed"
-                active
-                icon={
-                    <svg
-                        width="22"
-                        height="22"
-                        viewBox="0 0 24 24"
-                        fill="none">
-                        {[
-                            [3, 10, 6],
-                            [7, 6, 14],
-                            [11, 3, 20],
-                            [15, 7, 12],
-                            [19, 10, 6],
-                        ].map(([x, y, h]) => (
-                            <rect
-                                key={x}
-                                x={x}
-                                y={y}
-                                width="2.5"
-                                height={h}
-                                rx="1"
-                                fill="#22C55E"
-                            />
-                        ))}
-                    </svg>
-                }
-            />
-            <TabItem
-                label="Studio"
-                icon={<Mic className="size-[22px] text-foreground" />}
-            />
-            <TabItem
-                label="Crews"
-                icon={<Users className="size-[22px] text-foreground" />}
-            />
+        <div className="relative mt-auto flex flex-col items-center gap-3 px-7 pb-7">
+            <span className="text-[11px] font-medium uppercase tracking-[0.04em] text-foreground/45">Tap to interrupt</span>
+            <button
+                type="button"
+                aria-label="Ask"
+                className="scoutcast-pill-breathe inline-flex items-center gap-3 rounded-full border-[1.5px] border-emerald-400/55 bg-gradient-to-b from-emerald-500/30 to-emerald-900/55 py-3.5 pl-5 pr-7 shadow-[0_0_32px_rgba(52,211,153,0.35),inset_0_1px_0_rgba(255,255,255,0.12)]">
+                <MessageSquare className="size-5 text-emerald-300" />
+                <span className="text-[17px] font-semibold tracking-tight text-foreground">Ask</span>
+            </button>
         </div>
     </div>
 )
 
-const EpisodeGroup = ({ episode }: { episode: Episode }) => (
-    <div className="flex flex-col gap-2.5">
-        <span className="pl-1 text-[11px] font-semibold uppercase tracking-widest text-foreground/45">{episode.date}</span>
-        <div className="relative flex flex-col gap-3.5 overflow-hidden rounded-2xl border border-white/[0.06] bg-[#101828]/70 py-4 pl-[18px] pr-4">
-            <span className="absolute inset-y-0 left-0 w-[3px] bg-emerald-500" />
-            <div className="relative flex items-start gap-3">
-                <div className="flex size-[52px] shrink-0 items-center justify-center rounded-[10px] bg-[#0F1A2E]">{episode.league.icon}</div>
-                <div className="flex min-w-0 flex-1 flex-col gap-1">
-                    <div className="flex min-w-0 items-center gap-2">
-                        <p className="min-w-0 flex-1 truncate text-[17px] font-bold leading-[22px] tracking-tight text-foreground">{episode.title}</p>
-                        {episode.badge && (
-                            <span className="inline-flex shrink-0 items-center rounded-full border border-teal-400/35 bg-teal-400/15 px-2.5 py-[3px]">
-                                <span className="text-[11px] font-semibold text-teal-300">{episode.badge}</span>
-                            </span>
-                        )}
-                    </div>
-                    <p className="text-[13px] text-foreground/50">{episode.subtitle}</p>
-                </div>
-                <div className="flex size-[38px] shrink-0 items-center justify-center rounded-[10px] border border-emerald-500/35 bg-emerald-500/10">
-                    <Play className="size-3.5 fill-emerald-500 text-emerald-500" />
-                </div>
-            </div>
-            <EpisodeMeta episode={episode} />
-        </div>
-    </div>
-)
-
-const EpisodeMeta = ({ episode }: { episode: Episode }) => {
-    const metaLeft = (
-        <div className="flex items-center gap-3">
-            <div className="flex items-center gap-1">
-                <Clock className="size-3 text-foreground/55" />
-                <span className="text-xs text-foreground/55">{episode.duration}</span>
-            </div>
-            <Share2 className="size-3 text-foreground/55" />
-        </div>
-    )
-
-    const listened = (
-        <div className="flex items-center gap-1">
-            <CheckCircle2 className="size-3 fill-emerald-500 text-[#050505]" />
-            <span className="text-xs font-medium text-emerald-500">Listened</span>
-        </div>
-    )
-
-    if (episode.tagAlign === "overflow") {
-        return (
-            <div className="relative flex items-start justify-between gap-3 pl-16">
-                <div className="flex shrink-0 flex-col gap-2">
-                    {metaLeft}
-                    {listened}
-                </div>
-                <p className="max-w-40 flex-1 text-right text-[11px] leading-[15px] text-foreground/45">{episode.overflowText}</p>
-            </div>
-        )
-    }
-
+const VoiceChip = ({ text, align }: { text: string; align: "start" | "end" }) => {
+    const alignClass = align === "start" ? "self-start rounded-[20px_20px_20px_6px]" : "self-end rounded-[20px_20px_6px_20px]"
     return (
-        <div className="relative flex items-center justify-between pl-16">
-            {metaLeft}
-            <div className="flex items-center gap-2.5">
-                {listened}
-                {episode.tag && <span className="text-xs font-medium text-foreground/70">{episode.tag}</span>}
-            </div>
+        <div className={`inline-flex max-w-[88%] items-center gap-2.5 border border-emerald-400/30 bg-emerald-400/10 py-2.5 pl-3 pr-3.5 ${alignClass}`}>
+            <Mic className="size-3.5 shrink-0 text-emerald-400" />
+            <span className="text-[14px] font-medium leading-[18px] text-foreground/90">&ldquo;{text}&rdquo;</span>
         </div>
     )
 }
-
-const TabItem = ({ label, icon, active = false }: { label: string; icon: React.ReactNode; active?: boolean }) => (
-    <div className={active ? "flex flex-col items-center gap-1 rounded-2xl bg-white/[0.08] px-4 py-2" : "flex flex-col items-center gap-1 px-3.5 py-2"}>
-        {icon}
-        <span className={active ? "text-[10px] font-semibold text-emerald-500" : "text-[10px] font-medium text-foreground"}>{label}</span>
-    </div>
-)
