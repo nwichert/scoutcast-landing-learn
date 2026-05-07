@@ -169,17 +169,13 @@ export const posts: Post[] = [
       },
     ],
   },
-];
-
-// Drafts: held out of the rendered blog until ready to ship.
-export const draftPosts: Post[] = [
   {
     slug: "scoutcast-vs-huxe-vs-briefingam",
     title: "Scoutcast vs Huxe vs BriefingAM: which AI audio briefing app should you use?",
     excerpt:
       "An honest comparison of the three best AI audio briefing apps in 2026 — what each one is good at, where each one falls short, and which to pick based on what you actually care about.",
-    date: "2026-05-12",
-    updatedAt: "2026-05-12",
+    date: "2026-05-07",
+    updatedAt: "2026-05-07",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -372,6 +368,9 @@ export const draftPosts: Post[] = [
     },
   },
 ];
+
+// Drafts: held out of the rendered blog until ready to ship.
+export const draftPosts: Post[] = [];
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
