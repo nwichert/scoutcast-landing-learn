@@ -367,6 +367,129 @@ export const posts: Post[] = [
       ],
     },
   },
+  {
+    slug: "how-many-people-play-fantasy-football",
+    title: "How Many People Play Fantasy Football? (2026 Stats)",
+    excerpt:
+      "Approximately 40 million Americans play fantasy football each year. The data behind participation, time spent (6.9 hours/week), platform share, market size, and what fantasy players actually need every day.",
+    date: "2026-05-07",
+    updatedAt: "2026-05-07",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/how-many-people-play-fantasy-football/og.png",
+    body: [
+      lead(t("Approximately 40 million Americans play fantasy football each year.")),
+      p(t("That figure comes from the Fantasy Sports & Gaming Association (FSGA), which reported 53 million total US fantasy sports players in 2025. Since American football accounts for roughly 75% of all fantasy sports activity by market share, that puts fantasy football’s US player base at around 40 million — making it the most-played fantasy sport by a wide margin, and one of the most-played games of any kind in the country.")),
+
+      h2("Fantasy Football Player Count: Quick Stats"),
+      ul(
+        [b("~40 million"), t(" Americans play fantasy football annually")],
+        [b("53 million"), t(" Americans played some form of fantasy sports in the past 12 months (FSGA, 2025)")],
+        [b("74.92%"), t(" of all fantasy sports activity is American football (by market share)")],
+        [b("245 million"), t(" people play fantasy sports globally as of 2025")],
+        [t("Fantasy football is the "), b("#1 fantasy sport"), t(" in the United States by participation")]
+      ),
+
+      h2("How Fantasy Football Participation Has Grown"),
+      p(t("Fantasy football has grown from a niche hobby into one of the dominant engagement layers of the NFL. The FSGA’s 2025 research highlighted industry stability alongside accelerating next-generation participation, with the 13–20 age group showing particularly strong growth.")),
+      p(t("The broader fantasy sports market — of which football is the dominant segment — reached "), b("$42.37 billion in estimated market size in 2026"), t(", up from $37.28 billion in 2025. It’s projected to reach $80.31 billion by 2031, growing at a 13.66% CAGR. Much of that growth is driven by mobile adoption and the increasing overlap between fantasy sports and sports betting.")),
+
+      h2("Platform Breakdown: Where Fantasy Football Players Play"),
+      p(t("Fantasy football is spread across a handful of major platforms, each with distinct user bases:")),
+      p(b("ESPN Fantasy Football"), t(" holds the largest share of active US users in the fantasy category, with approximately 48% of monthly active users across fantasy platforms. Its deep integration with ESPN’s media ecosystem — SportsCenter, the ESPN app, fantasy podcasts — gives it a significant discovery advantage.")),
+      p(b("Yahoo Fantasy Football"), t(" is the other long-standing giant, holding the largest overall market share among fantasy sports services companies operating in the US.")),
+      p(b("Sleeper"), t(" has emerged as the fastest-growing platform, particularly among younger players. Approximately 15% of fantasy players use Sleeper, attracted by its group chat features, player news integration, and hybrid fantasy-betting functionality.")),
+      p(b("NFL.com"), t(" and "), b("ESPN"), t(" round out the major platforms, each with millions of active leagues during the regular season.")),
+
+      h2("How Much Time Do Fantasy Football Players Spend Per Week?"),
+      p(t("This is the number that surprises most people: "), b("the average fantasy football player spends approximately 6.9 hours per week on their team during the NFL season.")),
+      p(t("That figure comes from a nationwide survey of over 650 fantasy football players. Other studies have put the number even higher — one survey of active players found an average closer to 7.94 hours per week, including time spent during work hours.")),
+      p(t("Additional engagement data:")),
+      ul(
+        [b("65%"), t(" of fantasy players spend at least 2 hours per week researching players and matchups (ESPN, 2023)")],
+        [b("96.6%"), t(" of fantasy football players admit to devoting some work hours to managing their team")],
+        [t("Players spend time across score-checking, injury reports, waiver wire decisions, trade negotiations, and lineup research — spread across multiple apps, websites, and podcasts")]
+      ),
+      p(t("For context: that’s more weekly time than the average American spends exercising.")),
+
+      h2("Fantasy Football’s Impact on NFL Viewership"),
+      p(t("Fantasy football isn’t just a game layered on top of the NFL — it’s one of the primary reasons people watch games they’d otherwise skip.")),
+      ul(
+        [t("Fantasy players are "), b("significantly more likely"), t(" to watch out-of-market games, follow players on other teams, and consume NFL content during the week")],
+        [t("The NFL attributes a meaningful share of its TV ratings growth to the fantasy football audience, which has an incentive to watch every game rather than just their home team’s matchup")],
+        [t("Fantasy players consume "), b("more sports content overall"), t(" — scores, news, injury updates, beat writer analysis — creating a daily information habit that spans the full 18-week season")]
+      ),
+
+      h2("What Fantasy Football Players Are Actually Looking For Every Day"),
+      p(t("The 6.9 hours per week fantasy football players spend on their teams isn’t going into one app — it’s fragmented across ESPN, Yahoo, Twitter/X, Reddit (r/fantasyfootball has over 2 million members), podcasts, and beat writers’ columns.")),
+      p(t("The core daily need is simple: "), em("what happened yesterday, how does it affect my lineup, and what do I need to know before Sunday?")),
+      p(t("That’s the problem "), lk("Scoutcast", "https://scoutcast.ai/fantasy/"), t(" was built to solve. The NFL Fantasy Season Pass delivers personalized Tuesday–Sunday audio briefings focused on your specific roster — injury updates, matchup edges, waiver wire targets — in about two minutes, hands-free. For fantasy players spending 6.9 hours a week across a dozen fragmented sources, that’s a meaningful compression of the research loop.")),
+
+      h2("Summary: Fantasy Football by the Numbers (2026)"),
+      tbl(
+        [[t("Stat")], [t("Figure")]],
+        [
+          [[t("US fantasy football players")], [t("~40 million")]],
+          [[t("Total US fantasy sports players")], [t("53 million")]],
+          [[t("Global fantasy sports players")], [t("245 million")]],
+          [[t("Football’s share of fantasy sports")], [t("~75%")]],
+          [[t("Avg. hours/week spent on team")], [t("6.9 hours")]],
+          [[t("Fantasy sports market size (2026)")], [t("$42.37 billion")]],
+          [[t("Projected market size (2031)")], [t("$80.31 billion")]],
+          [[t("Market CAGR (2026–2031)")], [t("13.66%")]],
+          [[t("Largest platform by US MAUs")], [t("ESPN (48%)")]],
+        ]
+      ),
+
+      h2("Sources"),
+      ul(
+        [lk("FSGA Industry Research — Fantasy Sports & Gaming Association", "https://thefsga.org/industry-research/")],
+        [lk("FSGA: New Research Highlights Industry Stability and Next-Generation Growth", "https://thefsga.org/new-fsga-research-highlights-industry-stability-and-next-generation-growth-in-fantasy-sports-and-sports-betting/")],
+        [lk("Workers Spend 6.9 Hours Per Week On Fantasy Football — PR Newswire", "https://www.prnewswire.com/news-releases/workers-spend-6-9-hours-per-week-on-their-fantasy-football-teams-300699898.html")],
+        [lk("Fantasy Sports Market Size & Forecast — Mordor Intelligence", "https://www.mordorintelligence.com/industry-reports/fantasy-sports-market")],
+        [lk("Fantasy Sports Statistics: Market Size, Trends, and Share — Nimble AppGenie", "https://www.nimbleappgenie.com/blogs/fantasy-sports-statistics/")],
+        [lk("Inside the 2025 NFL App Ecosystem — Sensor Tower", "https://sensortower.com/blog/2025-nfl-season-betting-fantasy")],
+        [lk("How Fantasy Football Rankings Shape the NFL’s Multi-Billion Dollar Industry — CEO Today", "https://www.ceotodaymagazine.com/2025/08/how-fantasy-football-rankings-shape-the-nfls-multi-billion-dollar-industry/")]
+      ),
+
+      p(em("Last updated: May 2026. Stats are updated annually before the start of NFL training camp.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How many people play fantasy football?",
+        answer:
+          "Approximately 40 million Americans play fantasy football each year. That number is derived from the Fantasy Sports & Gaming Association’s 2025 figure of 53 million total US fantasy sports players, combined with American football’s ~75% share of fantasy sports activity by market.",
+      },
+      {
+        question: "How much time do fantasy football players spend on their team each week?",
+        answer:
+          "The average fantasy football player spends approximately 6.9 hours per week managing their team during the NFL season. Some surveys put the number as high as 7.94 hours/week. About 96.6% of players admit to devoting some work hours to their team.",
+      },
+      {
+        question: "What is the most popular fantasy football platform in 2026?",
+        answer:
+          "ESPN Fantasy Football has the largest share of monthly active US users (about 48%) thanks to its integration with ESPN’s media ecosystem. Yahoo holds the largest overall company-level market share among fantasy sports services. Sleeper is the fastest-growing platform, especially with younger players.",
+      },
+      {
+        question: "How big is the fantasy sports market?",
+        answer:
+          "The global fantasy sports market reached an estimated $42.37 billion in 2026, up from $37.28 billion in 2025, and is projected to reach $80.31 billion by 2031 at a 13.66% CAGR. Fantasy football is the dominant segment of that market.",
+      },
+      {
+        question: "Is fantasy football the most popular fantasy sport?",
+        answer:
+          "Yes. American football accounts for approximately 74.92% of all fantasy sports activity in the United States by market share, making fantasy football the most-played fantasy sport by a wide margin.",
+      },
+      {
+        question: "How many people play fantasy sports globally?",
+        answer:
+          "Approximately 245 million people play fantasy sports globally as of 2025, according to industry research. The United States accounts for 53 million of those players, with fantasy football representing the largest single sport.",
+      },
+    ],
+  },
 ];
 
 // Drafts: held out of the rendered blog until ready to ship.

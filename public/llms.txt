@@ -37,6 +37,7 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - X: https://x.com/scoutcastAI
 
 ## Recent posts
+- How Many People Play Fantasy Football? 2026 Stats (2026-05-07): https://scoutcast.ai/blog/how-many-people-play-fantasy-football — ~40 million Americans play fantasy football each year, spending an average of 6.9 hours/week on their team across fragmented sources. Full data on participation, platforms, market size, and time spent.
 - Scoutcast vs Huxe vs BriefingAM: which AI audio briefing app should you use? (2026-05-07): https://scoutcast.ai/blog/scoutcast-vs-huxe-vs-briefingam — Honest comparison of the three best AI audio briefing apps in 2026, with a decision matrix for picking based on what you care about.
 - Why we built Scoutcast.ai (2026-04-28): https://scoutcast.ai/blog/why-we-built-scoutcast — A personalized 2-minute AI sports briefing for your morning, and the morning with my son that started it.
 
