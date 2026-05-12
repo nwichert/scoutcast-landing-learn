@@ -113,7 +113,7 @@ export const posts: Post[] = [
 
       h2("The thing nobody else does"),
       p(t("Two features I’m proud of, neither of which exists in any other AI briefing app I’ve found:")),
-      p(b("Tap-to-ask follow-ups."), t(" Mid-briefing, tap the mic and ask a question. "), em("“What’s his stat line?” “Tell me more about that trade.” “Who’s he replacing?”"), t(" You get an instant audio answer, then the briefing picks up where it left off. The same pattern works on CarPlay and from the lock screen.")),
+      p(b("Tap-to-ask follow-ups."), t(" Mid-briefing, tap the mic and ask a question. "), em("“What’s his stat line?” “Tell me more about that trade.” “Who’s he replacing?”"), t(" You get an instant audio answer, then the briefing picks up where it left off. The same pattern works from the lock screen.")),
       p(b("Custom sources from beat writers."), t(" Plug in the X handles of the writers you actually trust — your team’s beat reporter, your favorite analyst — and Scoutcast blends their takes into your briefing alongside scores and league news. Your information diet, in your voice, not a national feed.")),
       p(t("There are great AI briefing apps (Huxe and BriefingAM are both excellent), but they’re built for general news with sports as one tab. Scoutcast is sports-first, and these two features only make sense in a product that knows you well enough to know who "), em("your guys"), t(" are.")),
 

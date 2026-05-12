@@ -58,7 +58,6 @@ const mobileApplicationLd = {
     "Personalized daily audio briefings",
     "Voice follow-up questions",
     "Custom sources from X writers",
-    "CarPlay support",
     "Lock-screen controls",
     "Crews and listening leaderboards",
     "MCP connector for Claude, ChatGPT, Gemini",

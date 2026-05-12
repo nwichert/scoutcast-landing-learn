@@ -45,7 +45,7 @@ export default function FeaturesSection() {
     return (
         <section id="product" className="dark bg-background scroll-mt-20">
             <div className="mx-auto max-w-5xl px-6 py-24">
-                <h2 className="mx-auto mb-14 max-w-3xl text-balance text-center text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">How Scoutcast personalizes your daily sports brief</h2>
+                <h2 className="mx-auto mb-14 max-w-3xl text-balance text-center text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">Personalized down to the player. Bounded to two minutes.</h2>
 
                 <div className="grid overflow-hidden rounded-[20px] border border-white/[0.08] bg-white/[0.03] lg:grid-cols-2">
                     <div className="flex flex-col gap-8 border-b border-white/[0.08] p-10 lg:border-b-0 lg:border-r">
@@ -57,7 +57,7 @@ export default function FeaturesSection() {
                         </div>
                         <div className="mx-auto flex max-w-[320px] flex-col items-center gap-3 text-center">
                             <h3 className="text-lg font-semibold leading-6 text-foreground">What do you want to hear about?</h3>
-                            <p className="text-sm leading-5 text-foreground/55">The more specific you are, the better the results and the more personalized it will be.</p>
+                            <p className="text-sm leading-5 text-foreground/55">Name the players, teams, and storylines you actually follow. Skip the rest.</p>
                         </div>
                     </div>
 
@@ -91,8 +91,8 @@ export default function FeaturesSection() {
                             </div>
                         </div>
                         <div className="mx-auto flex max-w-[320px] flex-col items-center gap-3 text-center">
-                            <h3 className="text-lg font-semibold leading-6 text-foreground">Add sources to your briefings</h3>
-                            <p className="text-sm leading-5 text-foreground/55">Include your preferred X writers to add more personalization to each Cast you create.</p>
+                            <h3 className="text-lg font-semibold leading-6 text-foreground">Add the writers you trust</h3>
+                            <p className="text-sm leading-5 text-foreground/55">Plug in your favorite beat writers&rsquo; X handles. Their takes shape your daily briefing — not whoever the algorithm promoted today.</p>
                         </div>
                     </div>
                 </div>

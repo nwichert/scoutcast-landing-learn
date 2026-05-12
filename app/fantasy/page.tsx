@@ -133,7 +133,7 @@ const INCLUDES = [
     "Fantasy playoffs (Wk 15–17) + H2H opponent edge",
     "NFL playoff DFS briefings + Super Bowl preview",
     "Up to 3 leagues. Yahoo, ESPN, Sleeper, NFL.com.",
-    "Offline downloads. CarPlay. AirPods controls.",
+    "Offline downloads. AirPods controls.",
 ]
 
 const FAQ = [

@@ -10,7 +10,6 @@ Last updated: 2026-04-27
   - Pick your teams, leagues, and beat writers (X handles) as sources
   - Tap-to-ask follow-up questions, hands-free
   - Ad-free
-  - CarPlay support
   - Lock-screen playback controls
   - Crews: invite friends, listening streaks, leaderboards
   - MCP connector — plug Scoutcast into Claude, ChatGPT, Gemini CLI

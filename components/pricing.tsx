@@ -6,7 +6,7 @@ const FREE_INCLUDES = [
     "Daily ~2-minute personalized briefing",
     "Pick your teams, leagues, and X writers",
     "Tap to ask follow-ups, hands-free",
-    "Ad-free. CarPlay. Lock-screen controls.",
+    "Ad-free. Lock-screen controls.",
 ]
 
 const FANTASY_INCLUDES = [
