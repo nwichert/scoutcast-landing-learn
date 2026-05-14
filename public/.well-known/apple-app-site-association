@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "DGL7GNDPRT.ai.scoutcast.ScoutcastiOS",
+        "paths": ["/invite", "/invite/*", "/listen", "/listen/*"]
+      }
+    ]
+  }
+}

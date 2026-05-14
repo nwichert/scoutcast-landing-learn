@@ -3,8 +3,17 @@
     "public": "out",
     "cleanUrls": true,
     "trailingSlash": true,
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "ignore": ["firebase.json", "**/node_modules/**"],
     "headers": [
+      {
+        "source": "/.well-known/apple-app-site-association",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      },
       {
         "source": "/_next/static/**",
         "headers": [
