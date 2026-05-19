@@ -404,7 +404,7 @@ export const posts: Post[] = [
 
       h2("How Much Time Do Fantasy Football Players Spend Per Week?"),
       p(t("This is the number that surprises most people: "), b("the average fantasy football player spends approximately 6.9 hours per week on their team during the NFL season.")),
-      p(t("That figure comes from a nationwide survey of over 650 fantasy football players. Other studies have put the number even higher — one survey of active players found an average closer to 7.94 hours per week, including time spent during work hours.")),
+      p(t("That figure comes from a nationwide survey of over 650 fantasy football players. Other studies have put the number even higher — one survey of active players found an average closer to "), lk("7.94 hours per week", "https://scoutcast.ai/blog/how-many-hours-fantasy-football-players-spend/"), t(", including time spent during work hours.")),
       p(t("Additional engagement data:")),
       ul(
         [b("65%"), t(" of fantasy players spend at least 2 hours per week researching players and matchups (ESPN, 2023)")],
@@ -424,7 +424,7 @@ export const posts: Post[] = [
       h2("What Fantasy Football Players Are Actually Looking For Every Day"),
       p(t("The 6.9 hours per week fantasy football players spend on their teams isn’t going into one app — it’s fragmented across ESPN, Yahoo, Twitter/X, Reddit (r/fantasyfootball has over 2 million members), podcasts, and beat writers’ columns.")),
       p(t("The core daily need is simple: "), em("what happened yesterday, how does it affect my lineup, and what do I need to know before Sunday?")),
-      p(t("That’s the problem "), lk("Scoutcast", "https://scoutcast.ai/fantasy/"), t(" was built to solve. The NFL Fantasy Season Pass delivers personalized Tuesday–Sunday audio briefings focused on your specific roster — injury updates, matchup edges, waiver wire targets — in about two minutes, hands-free. For fantasy players spending 6.9 hours a week across a dozen fragmented sources, that’s a meaningful compression of the research loop.")),
+      p(t("That’s the problem "), lk("Scoutcast.ai", "https://scoutcast.ai/fantasy/"), t(" was built to solve. The NFL Fantasy Season Pass delivers personalized Tuesday–Sunday audio briefings focused on your specific roster — injury updates, matchup edges, waiver wire targets — in about two minutes, hands-free. For fantasy players spending 6.9 hours a week across a dozen fragmented sources, that’s a meaningful compression of the research loop.")),
 
       h2("Summary: Fantasy Football by the Numbers (2026)"),
       tbl(
@@ -487,6 +487,568 @@ export const posts: Post[] = [
         question: "How many people play fantasy sports globally?",
         answer:
           "Approximately 245 million people play fantasy sports globally as of 2025, according to industry research. The United States accounts for 53 million of those players, with fantasy football representing the largest single sport.",
+      },
+    ],
+  },
+  {
+    slug: "how-many-hours-fantasy-football-players-spend",
+    title: "How Many Hours Do Fantasy Football Players Spend Per Week?",
+    excerpt:
+      "The average fantasy football player spends 6.9 hours per week managing their team during the NFL season — fragmented across apps, podcasts, and beat writers. The data on time spent, where it goes, and the workplace impact.",
+    date: "2026-05-19",
+    updatedAt: "2026-05-19",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/how-many-hours-fantasy-football-players-spend/og.png",
+    body: [
+      lead(t("The average fantasy football player spends 6.9 hours per week managing their team during the NFL season.")),
+      p(t("That figure comes from a nationwide survey of over 650 fantasy football players conducted by OppLoans. Other studies have put the number higher — a separate survey of active owners found an average closer to "), b("7.94 hours per week"), t(", with a significant portion of that time happening during work hours.")),
+
+      h2("Fantasy Football Time Commitment: Quick Stats"),
+      ul(
+        [b("6.9 hours/week"), t(" — average time spent per player (OppLoans, 650+ respondents)")],
+        [b("7.94 hours/week"), t(" — average in a separate nationwide study")],
+        [b("65%"), t(" of fantasy players spend at least 2 hours per week on research alone (ESPN, 2023)")],
+        [b("96.6%"), t(" of fantasy football players admit to spending some work time on their teams")],
+        [b("4.3 hours/week"), t(" is spent specifically during work hours, on average")],
+        [b("$9 billion"), t(" — estimated annual cost to US employers in lost productivity during the NFL season")]
+      ),
+      p(t("For context: 6.9 hours per week is more than the average American spends exercising, reading, or on most individual leisure activities. Fantasy football isn’t a hobby — it’s a part-time job.")),
+
+      h2("Where the Time Actually Goes"),
+      p(t("The 6.9 weekly hours don’t go into a single place. Fantasy football players fragment their research time across multiple apps, websites, and content formats:")),
+      p(b("Score and injury checking"), t(" is the most frequent activity, often done multiple times per day during the season. Most players have 3–5 different apps they consult to get a complete picture.")),
+      p(b("Waiver wire research"), t(" typically happens Tuesday through Thursday, when players drop and add to their rosters based on the previous week’s performance and upcoming matchups. This is the most time-intensive weekly task for competitive players.")),
+      p(b("Start/sit decisions"), t(" dominate Saturday and Sunday mornings, as players finalize their lineups against late injury reports and weather updates.")),
+      p(b("Trade evaluation"), t(" — negotiating, researching trade values, and scouting other teams’ rosters — adds significant time for players in competitive leagues.")),
+      p(b("News and analysis consumption"), t(" — podcasts, beat writer columns, X threads from insiders — runs throughout the week and represents a substantial share of that 6.9 hours for many players.")),
+
+      h2("Time Spent by Engagement Level"),
+      p(t("Not all "), lk("40 million fantasy football players", "https://scoutcast.ai/blog/how-many-people-play-fantasy-football/"), t(" are investing equally:")),
+      tbl(
+        [[t("Player Type")], [t("Est. Weekly Hours")]],
+        [
+          [[t("Casual (set-and-forget)")], [t("< 1 hour")]],
+          [[t("Average participant")], [t("~3–4 hours")]],
+          [[t("Competitive player")], [t("6–8 hours")]],
+          [[t("Multi-league / serious")], [t("10+ hours")]],
+        ]
+      ),
+      p(t("The 6.9-hour average is pulled up significantly by multi-league players and those in high-stakes leagues, where the financial incentive drives deeper research habits.")),
+
+      h2("The Workplace Impact"),
+      p(t("Fantasy football’s time demand has been well-documented in workplace studies:")),
+      ul(
+        [b("96.6%"), t(" of players admit to spending work time on their fantasy teams")],
+        [t("The average player spends "), b("4.3 hours of work time"), t(" per week on fantasy football during the season")],
+        [t("This translates to an estimated "), b("$9.2 billion"), t(" in annual productivity loss for US employers — a figure cited widely in HR and labor research")],
+        [t("Despite this, surveys consistently show that fantasy football also "), em("increases"), t(" coworker bonding and workplace engagement among participants")]
+      ),
+      p(t("The productivity figure is striking not because it’s alarming, but because it illustrates just how deeply embedded fantasy football is in the daily routines of American workers.")),
+
+      h2("Why 6.9 Hours Feels Like More"),
+      p(t("One reason the time commitment feels high is that it’s fragmented. A player checking injury reports over breakfast, listening to a fantasy podcast during their commute, making lineup adjustments at lunch, and watching RedZone on Sunday has easily accumulated 6+ hours without a single dedicated “research session.”")),
+      p(t("This fragmentation is the core problem "), lk("Scoutcast.ai’s NFL Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" addresses — replacing the scattered multi-app research loop with a single ~2-minute personalized audio briefing that covers injury news, matchup edges, and waiver targets for your specific roster. For the average player spending 6.9 hours across 8 different sources, that’s a meaningful compression.")),
+
+      h2("Summary: Fantasy Football Time Stats (2026)"),
+      tbl(
+        [[t("Metric")], [t("Figure")]],
+        [
+          [[t("Average weekly hours per player")], [t("6.9 hours")]],
+          [[t("Hours spent during work")], [t("4.3 hours/week")]],
+          [[t("Players spending 2+ hours on research")], [t("65%")]],
+          [[t("Players using work time for fantasy")], [t("96.6%")]],
+          [[t("Annual employer productivity cost")], [t("~$9 billion")]],
+        ]
+      ),
+
+      h2("Sources"),
+      ul(
+        [lk("Workers Spend 6.9 Hours Per Week On Their Fantasy Football Teams — PR Newswire / OppLoans", "https://www.prnewswire.com/news-releases/workers-spend-6-9-hours-per-week-on-their-fantasy-football-teams-300699898.html")],
+        [lk("Fantasy Football to Cost Employers $9B — Challenger, Gray & Christmas", "https://www.challengergray.com/blog/fantasy-football-cost-employers-9b-bring-workers-together/")],
+        [lk("Fantasy Football Study: Owners Spend 8 Hours Per Week — UPI", "https://www.upi.com/Sports_News/NFL/2017/09/11/Fantasy-Football-Study-finds-owners-spend-8-hours-per-week-on-teams/1821505145247/")],
+        [lk("FSGA Industry Demographics", "https://thefsga.org/industry-demographics/")]
+      ),
+      p(em("Last updated: May 2026. Updated annually before NFL training camp.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How many hours do fantasy football players spend per week?",
+        answer:
+          "The average fantasy football player spends about 6.9 hours per week managing their team during the NFL season, according to a survey of 650+ players by OppLoans. A separate nationwide study put the figure closer to 7.94 hours per week.",
+      },
+      {
+        question: "How much fantasy football happens during work hours?",
+        answer:
+          "About 96.6% of fantasy football players admit to spending some work time on their teams, averaging roughly 4.3 hours of work time per week during the NFL season. Challenger, Gray & Christmas estimates this costs US employers around $9 billion annually in lost productivity.",
+      },
+      {
+        question: "Do serious fantasy football players spend more time than casual ones?",
+        answer:
+          "Yes. Casual set-and-forget players spend under an hour a week, average participants 3–4 hours, competitive players 6–8 hours, and multi-league or high-stakes players 10+ hours. The 6.9-hour average is pulled up by the most committed players.",
+      },
+      {
+        question: "Why does fantasy football take so much time?",
+        answer:
+          "Because the work is fragmented across many sources — score and injury checks, waiver-wire research, start/sit decisions, trade evaluation, podcasts, beat writers, and X threads — spread across 3–5 apps and consumed in small bursts throughout the day rather than one research session.",
+      },
+      {
+        question: "How can fantasy football players spend less time on research?",
+        answer:
+          "Consolidating the fragmented research loop is the main lever. Scoutcast.ai’s NFL Fantasy Season Pass delivers a ~2-minute personalized audio briefing covering injury news, matchup edges, and waiver targets for your specific roster, compressing what would otherwise be hours across multiple apps.",
+      },
+    ],
+  },
+  {
+    slug: "what-percentage-of-nfl-fans-play-fantasy-football",
+    title: "What Percentage of NFL Fans Play Fantasy Football?",
+    excerpt:
+      "Roughly 17% of NFL fans play fantasy football — but over 60% of fans aged 18–29 do, the highest crossover rate of any major US sport. The data on participation, the age divide, and the viewership feedback loop.",
+    date: "2026-05-19",
+    updatedAt: "2026-05-19",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/what-percentage-of-nfl-fans-play-fantasy-football/og.png",
+    body: [
+      lead(t("Approximately 17% of NFL fans play fantasy football in a given year — the highest crossover rate of any major US sport.")),
+      p(t("Among younger fans the number is dramatically higher: over 60% of NFL fans aged 18–29 participate in a fantasy league, making fantasy football close to a default behavior for young male football viewers. As the fanbase ages, participation drops — just 26% of NFL fans aged 30 and older report playing — but the overall crossover remains by far the largest of any sport.")),
+
+      h2("NFL Fans & Fantasy Football: Quick Stats"),
+      ul(
+        [b("17%"), t(" of all NFL fans played fantasy football in the last 12 months")],
+        [b("60%+"), t(" of NFL fans aged 18–29 participate in fantasy football")],
+        [b("26%"), t(" of NFL fans aged 30+ play fantasy football")],
+        [b("~40 million"), t(" Americans play fantasy football annually")],
+        [b("43%"), t(" of US internet adults regularly watch NFL games")],
+        [b("70%"), t(" of American men follow the NFL")],
+        [b("18.7 million"), t(" average viewers per NFL game in the 2025 season — highest since 1989")],
+        [b("~1 in 4"), t(" fantasy sports players say they watch the NFL "), em("primarily"), t(" to follow their fantasy teams")]
+      ),
+
+      h2("How Many NFL Fans Are There?"),
+      p(t("Before calculating the crossover rate, it helps to understand the denominator. The NFL is the most-watched sports league in the United States by a wide margin:")),
+      ul(
+        [b("43%"), t(" of US internet adults say they regularly watch NFL games")],
+        [t("Roughly "), b("70% of American men"), t(" follow the NFL in some capacity")],
+        [t("The league drew an average of "), b("18.7 million viewers per game"), t(" during the 2025 regular season — a 10% jump from the prior year and the highest figure since 1989")],
+        [t("Total in-person regular season attendance exceeded "), b("18 million"), t(" in 2025")]
+      ),
+      p(t("Applying the 43% “regular viewer” figure to the US adult population of ~260 million gives a rough base of ~112 million regular NFL viewers — against which "), lk("40 million fantasy players", "https://scoutcast.ai/blog/how-many-people-play-fantasy-football/"), t(" represents a crossover rate of around 36% among engaged fans. The 17% figure from YouGov reflects a broader definition of “NFL fan” that includes casual and occasional viewers.")),
+
+      h2("Fantasy Football’s Effect on NFL Viewership"),
+      p(t("The relationship between fantasy football and NFL viewership is well-documented — and it runs in both directions. Fantasy players watch more football; and the NFL has increasingly designed its broadcast and data products around fantasy engagement.")),
+      p(t("Key findings:")),
+      ul(
+        [b("Nearly 1 in 4"), t(" fantasy sports players report watching the NFL "), em("primarily"), t(" to keep up with their fantasy teams, not out of loyalty to a specific team (CivicScience)")],
+        [t("Fantasy players are significantly more likely to watch "), b("out-of-market games"), t(" and follow players on teams they have no geographic connection to")],
+        [t("The rise of NFL RedZone — which cuts between every game in real time — tracks almost exactly with the growth of fantasy football participation, because fantasy players need visibility across all games simultaneously")],
+        [t("The NFL’s investment in real-time stats, player tracking data, and the official NFL Fantasy app is a direct response to the fantasy audience’s appetite for granular, up-to-date information")]
+      ),
+
+      h2("The Age Divide in Fantasy Participation"),
+      p(t("The 60% participation rate among 18–29-year-old NFL fans vs. 26% for fans 30+ reflects a generational pattern: fantasy football is increasingly the "), em("primary"), t(" way younger fans engage with the NFL, not a supplement to traditional fandom.")),
+      p(t("For this cohort, fantasy football drives:")),
+      ul(
+        [t("Which games they watch")],
+        [t("Which players they follow")],
+        [t("How much sports content they consume during the week")],
+        [t("Which sports apps and tools they use daily")]
+      ),
+      p(t("This has significant implications for sports media companies, app developers, and advertisers trying to reach young male audiences — the NFL fan who plays fantasy football is a substantially more engaged, more frequent consumer of sports content than the one who doesn’t.")),
+
+      h2("What Fantasy Football Fans Actually Want Every Morning"),
+      p(t("The stats above paint a consistent picture: fantasy football players are high-engagement NFL fans who need a daily flow of personalized information — not a generic news feed, and not a 45-minute podcast covering the whole league.")),
+      p(lk("Scoutcast.ai’s NFL Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" is built specifically for this audience: Tuesday–Sunday audio briefings personalized to your specific roster, covering the injury reports, matchup edges, and waiver targets that matter for your lineup. For the 60% of young NFL fans whose engagement with the league runs directly through their fantasy team, it’s the morning brief the ESPN app was never designed to deliver.")),
+
+      h2("Summary Table"),
+      tbl(
+        [[t("Metric")], [t("Figure")]],
+        [
+          [[t("NFL fans who play fantasy football")], [t("~17% overall")]],
+          [[t("NFL fans aged 18–29 who play")], [t("60%+")]],
+          [[t("NFL fans aged 30+ who play")], [t("~26%")]],
+          [[t("Fantasy players who watch NFL primarily for fantasy")], [t("~25%")]],
+          [[t("Avg. NFL viewers per game (2025 season)")], [t("18.7 million")]],
+          [[t("Total US fantasy football players")], [t("~40 million")]],
+        ]
+      ),
+
+      h2("Sources"),
+      ul(
+        [lk("Fantasy Sports in the US: Who Is Playing? — YouGov", "https://today.yougov.com/entertainment/articles/34073-fantasy-sports-us-who-playing")],
+        [lk("NFL Fantasy Football Participation — Statista", "https://www.statista.com/statistics/1174271/participation-fantasy-football-nfl/")],
+        [lk("Nearly a Quarter of Fantasy Sports Players Watch NFL Mainly for Fantasy — CivicScience", "https://civicscience.com/nearly-a-quarter-of-fantasy-sports-players-watch-the-nfl-mainly-to-keep-up-with-their-fantasy-teams/")],
+        [lk("NFL Statistics and Demographics 2026 — Quantumrun", "https://www.quantumrun.com/consulting/nfl-demographics/")],
+        [lk("The Immense Impact of Fantasy Football on the NFL — Medium / The Press Box", "https://medium.com/the-press-box/the-immense-impact-of-fantasy-football-on-the-nfl-18efe1a0ab6d")],
+        [lk("FSGA Industry Research", "https://thefsga.org/industry-research/")]
+      ),
+      p(em("Last updated: May 2026. Stats updated annually before NFL training camp.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What percentage of NFL fans play fantasy football?",
+        answer:
+          "About 17% of all NFL fans play fantasy football in a given year, the highest crossover rate of any major US sport. Among fans aged 18–29 the rate exceeds 60%, while it drops to roughly 26% for fans 30 and older.",
+      },
+      {
+        question: "Do fantasy football players watch more NFL games?",
+        answer:
+          "Yes. Fantasy players are significantly more likely to watch out-of-market games and follow players across teams, and nearly 1 in 4 fantasy sports players say they watch the NFL primarily to keep up with their fantasy teams, according to CivicScience.",
+      },
+      {
+        question: "How many people watch the NFL?",
+        answer:
+          "Roughly 43% of US internet adults regularly watch NFL games and about 70% of American men follow the league. The NFL averaged 18.7 million viewers per game in the 2025 regular season — its highest since 1989.",
+      },
+      {
+        question: "Why do younger NFL fans play fantasy football at higher rates?",
+        answer:
+          "For fans aged 18–29, fantasy football is increasingly the primary way they engage with the NFL rather than a supplement. It drives which games they watch, which players they follow, and which sports apps they use daily — over 60% of this cohort participates.",
+      },
+      {
+        question: "How does fantasy football change what fans want from sports media?",
+        answer:
+          "Fantasy players need a daily flow of personalized, roster-relevant information rather than a generic feed or a long league-wide podcast. That demand is what products like Scoutcast.ai’s NFL Fantasy Season Pass — a ~2-minute briefing tailored to your roster — are built to serve.",
+      },
+    ],
+  },
+  {
+    slug: "how-many-people-listen-to-sports-podcasts",
+    title: "How Many People Listen to Sports Podcasts?",
+    excerpt:
+      "An estimated 85+ million Americans listen to sports podcasts at least monthly — about 54% of the US podcast audience and the fastest-growing podcast genre. The data on audience size, what listeners want, and the gap no app has filled.",
+    date: "2026-05-19",
+    updatedAt: "2026-05-19",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/how-many-people-listen-to-sports-podcasts/og.png",
+    body: [
+      lead(t("An estimated 85+ million Americans listen to sports podcasts at least monthly — roughly 54% of the country’s total podcast audience, listening to the fastest-growing genre in US podcasting.")),
+      p(t("That figure is derived from Edison Research’s sports podcast listenership data combined with the broader podcast audience of 158 million monthly US listeners. Sports ranks consistently among the top five podcast categories by audience size and leads all categories in year-over-year revenue growth.")),
+
+      h2("Sports Podcast Listeners: Quick Stats"),
+      ul(
+        [b("158 million"), t(" Americans listen to podcasts monthly (55% of the US population)")],
+        [b("619 million"), t(" people listen to podcasts globally as of 2026")],
+        [b("Sports"), t(" is the fastest-growing podcast genre in the United States")],
+        [t("Sports podcasts rank in the "), b("top 5"), t(" genres by audience size alongside comedy, news, true crime, and society & culture")],
+        [t("Sports and comedy podcasts lead all genres in "), b("advertising revenue")],
+        [t("Sports podcast listenership is projected to grow at a double-digit CAGR through 2030")]
+      ),
+
+      h2("The Sports Podcast Audience in Context"),
+      p(t("Podcasting as a medium has grown steadily from a niche format into a mainstream daily habit. The US alone accounts for around 158 million monthly listeners — more than the entire population of most countries. Within that audience, sports is the genre that has grown the fastest over the past three years, driven by three converging trends:")),
+      p(b("Official league and team podcasts."), t(" Every major US sports league — the NFL, NBA, MLB, NHL, and MLS — now produces multiple official podcasts. Individual franchises have followed. This has dramatically expanded the volume of sports podcast content, which in turn drives broader listenership.")),
+      p(b("Beat writer and insider audio."), t(" The collapse of traditional sports journalism employment has pushed many former newspaper and TV reporters into independent podcasting. Shows built around team-specific insider access — injury reports, practice observations, front-office sourcing — have built loyal, subscription-willing audiences.")),
+      p(b("Fantasy and betting integration."), t(" The explosive growth of fantasy sports and legalized sports betting has created a massive appetite for analytical, data-driven sports audio. Shows that help listeners make lineup and bet decisions have become among the most-downloaded in the genre.")),
+
+      h2("What Sports Podcast Listeners Are Actually Listening For"),
+      p(t("Not all sports podcast listeners want the same thing. Edison Research’s sports podcast data identifies several distinct listener motivations:")),
+      p(b("Catch-up and recap listeners"), t(" want a fast, efficient download of what happened — scores, highlights, and the two or three things that actually matter from yesterday’s games. They’re typically consuming audio during a commute or workout and have 10–20 minutes.")),
+      p(b("Analysis and context listeners"), t(" want more depth — why a trade happened, what an injury means for a team’s playoff chances, how a performance fits a player’s career arc. This audience skews toward longer-form shows and subscribes to team-specific feeds.")),
+      p(b("Fantasy and betting listeners"), t(" need actionable information before weekly deadlines — who to start, who to drop, which matchups favor which players. This is the most time-sensitive listener segment, with clear decisions to make by specific cutoff times.")),
+      p(b("Live reaction and entertainment listeners"), t(" want the podcast equivalent of sports talk radio — takes, debates, personality. These shows drive large absolute audiences but lower engagement depth.")),
+
+      h2("The Audio Gap in Sports: No Clear Winner"),
+      p(t("Despite the size of the sports podcast audience, "), lk("no single app or product has emerged", "https://scoutcast.ai/blog/how-many-ai-sports-apps-are-there/"), t(" as the go-to destination for personalized daily sports audio. The market is fragmented:")),
+      ul(
+        [b("Spotify and Apple Podcasts"), t(" distribute sports podcasts but don’t create personalized experiences — you still have to find and subscribe to individual shows")],
+        [b("ESPN and The Athletic"), t(" produce podcasts tied to their editorial products, but coverage is team-agnostic and not personalized to your roster or team preferences")],
+        [b("SiriusXM / Pandora"), t(" have sports radio but not on-demand personalization")],
+        [t("There is currently "), b("no dominant app"), t(" that delivers a daily, personalized audio sports briefing the way a morning newspaper once delivered a personalized reading experience based on your team and city")]
+      ),
+      p(t("That gap is exactly what "), lk("Scoutcast.ai", "https://scoutcast.ai/"), t(" is built to fill — a ~2-minute daily audio briefing personalized to your specific teams, leagues, and fantasy roster, delivered every morning without any searching, subscribing, or scrolling required.")),
+
+      h2("Sports Podcast Revenue and Growth"),
+      p(t("Sports podcasting is not just growing in audience — it’s one of the most monetizable segments of the broader podcasting market:")),
+      ul(
+        [t("Sports and comedy podcasts "), b("lead all genres in advertising revenue")],
+        [t("Sports podcast ad revenue is projected to grow at a high CAGR through 2030, outpacing most other categories")],
+        [t("Brand advertisers — particularly in financial services, insurance, and consumer products — pay premium CPMs for sports podcast inventory because of the audience’s demographic profile: predominantly male, 25–45, above-average income")]
+      ),
+
+      h2("Summary: Sports Podcast Stats (2026)"),
+      tbl(
+        [[t("Metric")], [t("Figure")]],
+        [
+          [[t("US monthly podcast listeners")], [t("158 million")]],
+          [[t("Global podcast listeners")], [t("619 million")]],
+          [[t("Sports podcast genre rank (by audience)")], [t("Top 5")]],
+          [[t("Sports podcast genre rank (by ad revenue)")], [t("#1–2 (with comedy)")]],
+          [[t("Fastest-growing podcast genre in the US")], [t("Sports")]],
+          [[t("Dominant personalized sports audio app")], [t("None yet")]],
+        ]
+      ),
+
+      h2("Sources"),
+      ul(
+        [lk("Top Sports Podcasts in the United States — Edison Research at SSRS", "https://www.edisonresearch.com/top-sports-podcasts-in-the-united-states/")],
+        [lk("150+ Podcast Statistics for 2026 — New Media", "https://newmedia.com/blog/podcast-statistics")],
+        [lk("How Many Podcasts Are There in 2026? — Demand Sage", "https://www.demandsage.com/podcast-statistics/")],
+        [lk("Podcast Statistics and Trends for 2026 — Riverside", "https://riverside.com/blog/podcast-statistics")],
+        [lk("126 Podcast Statistics 2026 Report — Talks.co", "https://talks.co/p/podcast-statistics/")]
+      ),
+      p(em("Last updated: May 2026. Stats updated annually.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How many people listen to sports podcasts?",
+        answer:
+          "An estimated 85+ million Americans listen to sports podcasts at least monthly — roughly 54% of the 158 million monthly US podcast listeners. Sports is consistently a top-five podcast genre by audience and the fastest-growing genre in the US.",
+      },
+      {
+        question: "Is sports the fastest-growing podcast genre?",
+        answer:
+          "Yes. Edison Research data shows sports has grown faster than any other US podcast genre over the past three years, driven by official league and team podcasts, independent beat-writer shows, and fantasy and betting content.",
+      },
+      {
+        question: "How many people listen to podcasts overall?",
+        answer:
+          "About 158 million Americans listen to podcasts monthly — roughly 55% of the US population — and approximately 619 million people listen globally as of 2026.",
+      },
+      {
+        question: "What do sports podcast listeners want?",
+        answer:
+          "Listeners split into a few groups: recap listeners who want a fast download of what happened, analysis listeners who want depth, fantasy and betting listeners who need actionable pre-deadline info, and entertainment listeners who want takes and debate.",
+      },
+      {
+        question: "Is there an app for personalized daily sports audio?",
+        answer:
+          "No single app dominates this space yet. Spotify and Apple distribute shows but don’t personalize, and ESPN and The Athletic produce team-agnostic feeds. Scoutcast.ai is built to fill that gap with a ~2-minute daily briefing personalized to your teams, leagues, and fantasy roster.",
+      },
+    ],
+  },
+  {
+    slug: "sports-app-market-size",
+    title: "Sports App Market Size (2026)",
+    excerpt:
+      "The global sports app market is worth about $5.34 billion in 2026 and is projected to reach $13.22 billion by 2034 at a 10.64% CAGR. The data on growth drivers, regions, the iOS/Android split, and the AI sports layer.",
+    date: "2026-05-19",
+    updatedAt: "2026-05-19",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/sports-app-market-size/og.png",
+    body: [
+      lead(t("The global sports app market is valued at approximately $5.34 billion in 2026, up from $4.87 billion in 2025. It is projected to reach $13.22 billion by 2034, growing at a compound annual growth rate (CAGR) of 10.64%.")),
+
+      h2("Sports App Market: Quick Stats"),
+      ul(
+        [b("$5.34 billion"), t(" — global sports app market size in 2026")],
+        [b("$4.87 billion"), t(" — market size in 2025")],
+        [b("$13.22 billion"), t(" — projected market size by 2034")],
+        [b("10.64% CAGR"), t(" — growth rate from 2025 to 2034")],
+        [b("41.2%"), t(" — North America’s share of the global sports app market (2025)")],
+        [b("54.45%"), t(" — Google Play Store’s share of sports app distribution")],
+        [b("80%"), t(" of sports fans believe AI will have the greatest influence on how they follow sports by 2027")]
+      ),
+
+      h2("What’s Driving Sports App Market Growth"),
+      p(t("Three forces are driving the sports app market’s sustained double-digit growth:")),
+      p(b("Mobile-first sports consumption."), t(" Smartphones have displaced TV as the primary screen for checking scores, reading game recaps, and consuming sports news during the week. The rise of 5G has enabled real-time video, live stats, and interactive features that weren’t viable on mobile five years ago. Sports apps are the direct beneficiary of this shift.")),
+      p(b("AI-powered personalization."), t(" Generic sports apps that deliver the same content to every user are losing ground to products that personalize around teams, leagues, players, and — increasingly — fantasy rosters. The integration of AI into sports apps has accelerated sharply since 2024, enabling features like predictive lineup recommendations, natural-language query interfaces, and on-demand audio generation. This personalization layer commands higher engagement and better retention, which is attracting both users and investors.")),
+      p(b("Fantasy sports and sports betting overlap."), t(" The legalization of sports betting across US states has created a new category of high-engagement sports app user — someone who needs real-time data, injury news, and analytical context to make financial decisions. This user spends more time in-app, pays for premium features, and converts to subscriptions at a higher rate than casual fans. Fantasy sports apps are experiencing a similar upgrade in user intent.")),
+
+      h2("Regional Breakdown"),
+      p(b("North America"), t(" dominates the sports app market with a "), b("41.2% share"), t(" in 2025, driven by high smartphone penetration, the most-developed professional sports ecosystem in the world, and the maturity of the US fantasy sports industry. The NFL, NBA, MLB, and NHL each generate billions in media rights annually, creating downstream demand for apps that extend fan engagement beyond game broadcasts.")),
+      p(b("Asia Pacific"), t(" is the fastest-growing region, forecast to grow at over 12% CAGR from 2026 to 2035. Cricket, football (soccer), and esports are the primary drivers, with India and China representing the largest addressable markets.")),
+      p(b("Europe"), t(" is a significant and stable market, centered on football (soccer) with strong mobile sports consumption habits across the UK, Germany, Spain, and France.")),
+
+      h2("Platform Distribution: iOS vs. Android"),
+      p(t("Despite Apple’s dominance in the US premium smartphone market, "), b("Android (Google Play Store) accounts for 54.45% of sports app market share globally"), t(", reflecting the platform’s dominance in high-growth markets like India, Brazil, and Southeast Asia.")),
+      p(t("In North America specifically, iOS sports apps tend to generate higher revenue per user due to the demographic skew of iPhone users — higher income, higher willingness to pay for subscriptions — even where Android leads in raw install volume.")),
+
+      h2("The AI Sports App Layer"),
+      p(t("Within the broader sports app market, "), lk("AI-native applications", "https://scoutcast.ai/blog/how-many-ai-sports-apps-are-there/"), t(" represent the fastest-growing subsegment. The AI in sports market specifically is forecast to grow from "), b("$5.72 billion in 2025 to $54.95 billion by 2035"), t(" — a 25.39% CAGR, more than double the growth rate of the broader sports app market.")),
+      p(t("Key AI capabilities being deployed in sports apps include:")),
+      ul(
+        [b("Personalized audio briefings"), t(" (on-demand or scheduled, tailored to a user’s specific teams and roster)")],
+        [b("Natural language query"), t(" (“what’s Giannis’s stat line this week?”)")],
+        [b("Predictive analytics"), t(" for fantasy lineup optimization and matchup scoring")],
+        [b("Computer vision"), t(" for performance analysis and coaching tools")],
+        [b("Dynamic content generation"), t(" that turns raw stats and news into readable or listenable summaries")]
+      ),
+
+      h2("The Personalized Audio Gap"),
+      p(t("Despite the market’s size and growth, no dominant product has emerged in the personalized audio category for sports fans. Most major sports apps — ESPN, theScore, Yahoo Sports — are built around visual feeds: push notifications, score cards, article headlines. Audio is an afterthought.")),
+      p(t("Meanwhile, "), lk("158 million Americans listen to podcasts monthly", "https://scoutcast.ai/blog/how-many-people-listen-to-sports-podcasts/"), t(", sports is the fastest-growing podcast genre, and the average sports fan spends multiple hours per week consuming sports content across fragmented sources.")),
+      p(lk("Scoutcast.ai", "https://scoutcast.ai/"), t(" sits at the intersection of these two trends — a sports app built natively around audio and personalization, rather than retrofitting audio into a feed-first product.")),
+
+      h2("Summary: Sports App Market Size by Year"),
+      tbl(
+        [[t("Year")], [t("Estimated Market Size")]],
+        [
+          [[t("2024")], [t("~$4.42 billion")]],
+          [[t("2025")], [t("$4.87 billion")]],
+          [[b("2026")], [b("$5.34 billion")]],
+          [[t("2028")], [t("~$6.50 billion")]],
+          [[t("2030")], [t("~$8.00 billion")]],
+          [[t("2034")], [t("$13.22 billion")]],
+        ]
+      ),
+
+      h2("Sources"),
+      ul(
+        [lk("Sport App Market Size — Precedence Research", "https://www.precedenceresearch.com/sport-app-market")],
+        [lk("Sports App Market Size, Share, Trends — Market.us", "https://market.us/report/sports-app-market/")],
+        [lk("Sports App Market Size to Surpass USD 12.6 Billion by 2032 — SNS Insider / GlobeNewswire", "https://www.globenewswire.com/news-release/2025/04/11/3060134/0/en/Sports-App-Market-Size-to-Surpass-USD-12-6-Billion-by-2032-Owing-to-Growing-Mobile-Penetration-and-AI-Driven-Personalization.html")],
+        [lk("Sports App Revenue and Usage Statistics (2026) — Business of Apps", "https://www.businessofapps.com/data/sports-app-market/")],
+        [lk("Sports App Market Size & Share — Grand View Research", "https://www.grandviewresearch.com/industry-analysis/sports-app-market-report")]
+      ),
+      p(em("Last updated: May 2026. Stats updated annually.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How big is the sports app market in 2026?",
+        answer:
+          "The global sports app market is valued at approximately $5.34 billion in 2026, up from $4.87 billion in 2025. It is projected to reach $13.22 billion by 2034 at a 10.64% CAGR.",
+      },
+      {
+        question: "What is driving sports app market growth?",
+        answer:
+          "Three forces: mobile-first sports consumption (smartphones replacing TV for scores and news), AI-powered personalization around teams and rosters, and the overlap with fantasy sports and legalized sports betting, which produces higher-intent, subscription-willing users.",
+      },
+      {
+        question: "Which region has the largest sports app market?",
+        answer:
+          "North America leads with a 41.2% share in 2025, driven by high smartphone penetration and a mature fantasy sports industry. Asia Pacific is the fastest-growing region at over 12% CAGR, led by cricket, soccer, and esports.",
+      },
+      {
+        question: "How fast is the AI sports market growing?",
+        answer:
+          "The AI in sports market is forecast to grow from $5.72 billion in 2025 to $54.95 billion by 2035 — a 25.39% CAGR, more than double the growth rate of the broader sports app market.",
+      },
+      {
+        question: "Is there a gap in the sports app market?",
+        answer:
+          "Yes — personalized audio. Major apps like ESPN, theScore, and Yahoo Sports are built around visual feeds with audio as an afterthought, even though sports is the fastest-growing podcast genre. Scoutcast.ai targets this gap as an audio-first, personalized sports app.",
+      },
+    ],
+  },
+  {
+    slug: "how-many-ai-sports-apps-are-there",
+    title: "How Many AI Sports Apps Are There? (2026)",
+    excerpt:
+      "There are roughly 50 AI-native sports apps across iOS and Android as of 2026 — up from nearly zero in 2022. The data on the AI-in-sports market, app categories, notable products, and why the category is just getting started.",
+    date: "2026-05-19",
+    updatedAt: "2026-05-19",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/how-many-ai-sports-apps-are-there/og.png",
+    body: [
+      lead(t("There are currently around 50 AI-native sports apps available across iOS and Android, with the category growing rapidly from nearly zero in 2022. The broader "), lk("AI in sports market", "https://scoutcast.ai/blog/sports-app-market-size/"), t(" — which includes athlete performance tools, broadcasting technology, and fan-facing apps — is valued at $5.72 billion in 2025 and projected to reach $54.95 billion by 2035.")),
+
+      h2("AI Sports Apps: Quick Stats"),
+      ul(
+        [b("~50"), t(" AI-native sports apps currently available on major app stores")],
+        [b("$5.72 billion"), t(" — AI in sports market size in 2025")],
+        [b("$54.95 billion"), t(" — projected AI in sports market size by 2035")],
+        [b("25.39% CAGR"), t(" — AI in sports market growth rate (2025–2035)")],
+        [b("80%"), t(" of sports fans believe AI will have the greatest influence on how they follow sports by 2027")],
+        [b("56%"), t(" of fans want AI-powered insights and commentary for past, current, and future events")]
+      ),
+
+      h2("What Counts as an “AI Sports App”?"),
+      p(t("The label gets applied broadly, so it’s worth distinguishing between categories:")),
+      p(b("Fan-facing AI apps"), t(" — products built for everyday sports fans that use AI to personalize content, generate audio or text summaries, power natural-language queries, or surface relevant news. This is the fastest-growing consumer segment.")),
+      p(b("Fantasy and betting AI tools"), t(" — apps that use predictive modeling, real-time data feeds, and machine learning to help users make lineup and wagering decisions. Many established fantasy platforms (ESPN Fantasy, Sleeper) have added AI features rather than building AI-first.")),
+      p(b("Athlete performance AI"), t(" — tools for coaches, trainers, and sports scientists using computer vision, motion capture, and biometric analysis to improve training and injury prevention. These are B2B or prosumer products, not consumer apps.")),
+      p(b("Sports media AI"), t(" — technology used by broadcasters, publishers, and leagues to automatically generate highlights, captions, articles, and personalized feeds at scale. WSC Sports is the leading example.")),
+      p(t("The ~50 figure above refers specifically to consumer-facing AI sports apps available on iOS or Android — not enterprise performance tools or broadcaster technology.")),
+
+      h2("Notable AI Sports Apps (2026)"),
+      h3("Personalized Audio & Briefings"),
+      p(b("Scoutcast.ai"), t(" — Daily ~2-minute AI audio briefings personalized to your teams, leagues, and fantasy roster. Tap-to-ask follow-up questions. NFL Fantasy Season Pass available. Free on iOS. "), lk("Scoutcast.ai", "https://scoutcast.ai")),
+      p(b("Huxe"), t(" — General AI audio briefing app (not sports-specific) from former Google NotebookLM developers. Users can create sports-focused briefings among other topics.")),
+      h3("Fantasy & Betting AI"),
+      p(b("Sleeper"), t(" — Fantasy platform with built-in AI trade evaluator, waiver wire recommendations, and predictive player projections. The fastest-growing major fantasy platform.")),
+      p(b("FantasyPros"), t(" — Aggregates expert rankings and uses AI consensus modeling to surface lineup recommendations across Yahoo, ESPN, Sleeper, and NFL.com leagues.")),
+      p(b("DraftKings / FanDuel"), t(" — Both major DFS and sports betting platforms have integrated AI-powered “best lineup” and bet recommendation features.")),
+      h3("Performance & Coaching AI"),
+      p(b("UPLIFT Labs"), t(" — Computer vision app that replaces $50,000 motion-capture labs with an iPhone. Serves MLB, NBA, and NCAA teams plus youth organizations. Scaled from 12,000 to nearly 20,000 athletes in 2025.")),
+      p(b("SportAI"), t(" — Video analysis platform for coaches and players, available via mobile. API access available for enterprise integrations.")),
+      p(b("HomeCourt"), t(" — AI basketball training app that uses computer vision to track shooting form, rep counts, and performance metrics via iPhone camera.")),
+      h3("Sports Media AI"),
+      p(b("WSC Sports"), t(" — AI video platform used by leagues and broadcasters to automatically generate personalized highlight clips and social content at scale. B2B, not a consumer app.")),
+
+      h2("Why the AI Sports App Category Is Just Getting Started"),
+      p(t("Despite the ~50 apps currently available, the category is still in early innings for two reasons:")),
+      p(b("Most are feature additions, not AI-first products."), t(" The majority of “AI sports apps” are established platforms — ESPN, Yahoo, theScore — that have bolted AI features onto feed-first architectures built years ago. They weren’t designed from the ground up around AI personalization. This creates an opening for AI-native challengers.")),
+      p(b("The dominant use case hasn’t been won yet."), t(" In music, Spotify won personalized audio. In news, there’s no equivalent winner. In sports specifically — the daily personalized briefing that replaces 45 minutes of fragmented score-checking and podcast listening — there’s no clear market leader. That’s the category "), lk("Scoutcast.ai", "https://scoutcast.ai/"), t(" is competing to define.")),
+
+      h2("The Fan Demand Signal"),
+      p(t("The market opportunity is backed by explicit fan preference data:")),
+      ul(
+        [b("80%"), t(" of surveyed fans believe AI will have the greatest influence on how they follow sports by 2027")],
+        [b("56%"), t(" want AI-powered insights and commentary for past, current, and future events — not just live game coverage")],
+        [t("Fan engagement data shows rising demand for "), b("personalized, on-demand"), t(" sports content vs. scheduled broadcasts and generic feeds")],
+        [t("FOX Sports’ CTO described their 2025 strategy as moving “from one-size-fits-all broadcasts to interactive, personalized experiences” — a signal that the biggest media companies see AI personalization as the future of sports content delivery")]
+      ),
+
+      h2("AI Sports App Market Growth Forecast"),
+      tbl(
+        [[t("Year")], [t("AI in Sports Market Size")]],
+        [
+          [[t("2025")], [t("$5.72 billion")]],
+          [[t("2026")], [t("~$7.17 billion")]],
+          [[t("2028")], [t("~$11.23 billion")]],
+          [[t("2030")], [t("~$17.60 billion")]],
+          [[t("2035")], [t("$54.95 billion")]],
+        ]
+      ),
+      p(em("Based on 25.39% CAGR projection.")),
+
+      h2("Sources"),
+      ul(
+        [lk("AI in Sports: Real-World Applications — Imaginovation", "https://imaginovation.net/blog/ai-in-sports-industry/")],
+        [lk("AI in Sports Apps 2025: Benefits, Use Cases & Development Guide — Cygnis", "https://cygnis.co/blog/ai-in-sports-apps-2025/")],
+        [lk("Best Features for Sports Apps in 2026 — SportsFIRST", "https://www.sportsfirst.net/post/best-features-for-sports-apps-in-2026-ai-automation-real-time-intelligence")],
+        [lk("AI Sports Revolution: 12 Innovations Changing Everything — WSC Sports", "https://wsc-sports.com/blog/industry-insights/ai-sports-revolution-12-innovations-changing-everything/")],
+        [lk("How AI Is Used in Sports — GetStream", "https://getstream.io/blog/ai-sports/")],
+        [lk("UPLIFT Labs", "https://www.uplift.ai/")],
+        [lk("SportAI", "https://sportai.com/")]
+      ),
+      p(em("Last updated: May 2026. Updated quarterly as new apps launch.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How many AI sports apps are there?",
+        answer:
+          "As of 2026 there are roughly 50 AI-native consumer sports apps across iOS and Android, up from nearly zero in 2022. That count covers fan-facing apps, not enterprise performance tools or broadcaster technology.",
+      },
+      {
+        question: "How big is the AI in sports market?",
+        answer:
+          "The AI in sports market is valued at $5.72 billion in 2025 and projected to reach $54.95 billion by 2035, a 25.39% CAGR. It spans fan apps, fantasy and betting tools, athlete performance technology, and sports media AI.",
+      },
+      {
+        question: "What are examples of AI sports apps?",
+        answer:
+          "Scoutcast.ai (personalized AI audio briefings), Huxe (general AI audio), Sleeper and FantasyPros (fantasy AI), DraftKings and FanDuel (betting AI), UPLIFT Labs, SportAI, and HomeCourt (performance AI), and WSC Sports (media AI).",
+      },
+      {
+        question: "Why is the AI sports app category still early?",
+        answer:
+          "Most “AI sports apps” are established feed-first platforms that bolted on AI features rather than AI-native products, and no clear leader has won the core daily-personalized-briefing use case — leaving an opening for purpose-built challengers.",
+      },
+      {
+        question: "Do sports fans actually want AI features?",
+        answer:
+          "Yes. 80% of surveyed fans believe AI will have the greatest influence on how they follow sports by 2027, and 56% want AI-powered insights and commentary across past, current, and future events — not just live game coverage.",
       },
     ],
   },
