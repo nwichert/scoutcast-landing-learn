@@ -41,6 +41,12 @@ yarn-error.log*
 firebase-debug.log
 firebase-debug.*.log
 
+# search-console / API credentials (publish-and-index skill) — never commit these.
+# The IndexNow key file public/<key>.txt IS meant to be public and is NOT ignored.
+*service-account*.json
+gsc-service-account*.json
+/secrets/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
