@@ -1,3 +1,4 @@
+import Link from "next/link"
 import type { Metadata } from "next"
 import { LegalPageHeader, LegalSection, LegalSubsection, LegalList } from "@/components/legal-page"
 import Footer from "@/components/footer"
@@ -210,6 +211,14 @@ export default function PrivacyPage() {
                             legal@scoutcast.ai
                         </a>
                         .
+                    </p>
+                    <p>To delete your account and the personal data associated with it, follow the steps on our{" "}
+                        <Link
+                            href="/delete-account"
+                            className="text-blue-600 hover:underline">
+                            Account Deletion
+                        </Link>
+                        {" "}page.
                     </p>
                 </LegalSection>
 

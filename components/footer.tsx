@@ -6,6 +6,7 @@ const navLinks = [
     { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
+    { label: "Delete Account", href: "/delete-account" },
     { label: "Copyright Dispute Policy", href: "/copyright" },
 ]
 
