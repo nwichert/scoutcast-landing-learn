@@ -25,7 +25,7 @@ const mobileApplicationLd = {
   installUrl: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329",
   softwareVersion: "2.0.2",
   datePublished: "2025-01-01",
-  dateModified: "2026-04-27",
+  dateModified: "2026-05-22",
   author: {
     "@type": "Organization",
     name: "Scoutcast.ai, Inc.",
@@ -42,6 +42,28 @@ const mobileApplicationLd = {
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       category: "Free",
+      description:
+        "Free plan with one active Scoutcast. Daily ~2-minute personalized audio briefing, custom teams, leagues, and X writers, hands-free follow-up questions, ad-free.",
+    },
+    {
+      "@type": "Offer",
+      name: "Scoutcast Unlimited (Monthly)",
+      price: "4.99",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      category: "InAppPurchase",
+      description:
+        "Auto-renewing monthly subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in Apple ID settings.",
+    },
+    {
+      "@type": "Offer",
+      name: "Scoutcast Unlimited (Annual)",
+      price: "39.99",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      category: "InAppPurchase",
+      description:
+        "Auto-renewing annual subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in Apple ID settings.",
     },
     {
       "@type": "Offer",
@@ -51,7 +73,7 @@ const mobileApplicationLd = {
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "One-time, per-NFL-season pass. Tue/Wed/Thu/Sun briefings, H2H opponent edge, fantasy playoffs, NFL playoff DFS, Super Bowl preview. Up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.",
+        "Auto-renewing per-NFL-season subscription, sold separately from Scoutcast Unlimited. Tue/Wed/Thu/Sun briefings, H2H opponent edge, fantasy playoffs, NFL playoff DFS insights, Super Bowl preview. Up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.",
     },
   ],
   featureList: [
@@ -69,7 +91,7 @@ const organizationLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Scoutcast.ai",
-  legalName: "Scoutcast.ai Corporation",
+  legalName: "Scoutcast.ai, Inc.",
   alternateName: "Scoutcast",
   url: "https://scoutcast.ai",
   logo: "https://scoutcast.ai/scoutcast-icon.png",

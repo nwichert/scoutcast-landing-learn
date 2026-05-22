@@ -14,11 +14,11 @@ export default function PrivacyPage() {
 
             <main className="mx-auto max-w-3xl px-6 pb-32 pt-16">
                 <h1 className="text-balance text-5xl font-bold tracking-tight sm:text-[56px] sm:leading-[1.05]">Privacy Policy</h1>
-                <p className="mt-3 text-base text-foreground/55">Last updated: February 23, 2026</p>
+                <p className="mt-3 text-base text-foreground/55">Last updated: May 22, 2026</p>
 
                 <div className="mt-14 space-y-5 text-[17px] leading-[1.7] text-foreground/80">
                     <p>
-                        This Privacy Policy applies to the Scoutcast website (scoutcast.ai), the Scoutcast mobile application (the &ldquo;App&rdquo;), and the related services (collectively, the &ldquo;Services&rdquo;) offered by Scoutcast (&ldquo;Scoutcast,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;). By using or accessing the Services in any manner, you acknowledge that you accept the practices and policies outlined below, and you hereby consent that we will collect, use, and share your information as described in this Privacy Policy.
+                        This Privacy Policy applies to the Scoutcast website (scoutcast.ai), the Scoutcast mobile application (the &ldquo;App&rdquo;), and the related services (collectively, the &ldquo;Services&rdquo;) offered by Scoutcast.ai, Inc. (&ldquo;Scoutcast,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;). By using or accessing the Services in any manner, you acknowledge that you accept the practices and policies outlined below, and you hereby consent that we will collect, use, and share your information as described in this Privacy Policy.
                     </p>
                     <p>
                         Remember that your use of the Services is always subject to our Terms of Service, which incorporates this Privacy Policy. Any terms we use in this Privacy Policy without defining them have the definitions given to them in the Terms of Service.
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
                     <p>The following details the categories of Personal Data we collect and have collected over the past 12 months:</p>
 
                     <LegalSubsection title="Account Information">
-                        <LegalList items={["Name", "Email address", "User ID", "Account creation date", "Subscription status and purchase history (via Apple StoreKit)"]} />
+                        <LegalList items={["Name", "Email address", "User ID", "Account creation date", "Subscription, in-app purchase, and entitlement status, including purchase history (via Apple StoreKit)"]} />
                     </LegalSubsection>
 
                     <LegalSubsection title="Sports Preferences and Selections">
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
 
                 <LegalSection title="Why We Collect Personal Data">
                     <LegalSubsection title="Service Delivery and Enhancement">
-                        <LegalList items={["Managing your account and processing transactions (purchases are handled through Apple StoreKit)", "Generating personalized AI-powered sports audio briefings based on your selected teams, players, and preferences", "Providing relevant sports content, news, analysis, and insider perspectives", "Integrating publicly available content from X handles you select", "Meeting or fulfilling the reason you provided the information to us", "Providing support and assistance for the Services", "Improving the Services, including through research, testing, analytics, and AI model improvement (including to enhance content generation, audio quality, and personalization)", "Personalizing communications based on your preferences", "Ensuring security, fraud prevention, and debugging", "Carrying out other business purposes stated when collecting your Personal Data or as otherwise set forth in applicable data privacy laws"]} />
+                        <LegalList items={["Managing your account and processing transactions (purchases are handled through Apple StoreKit)", "Determining your subscription entitlements and enforcing plan limits, such as the number of active Casts available on the free and paid tiers", "Generating personalized AI-powered sports audio briefings based on your selected teams, players, and preferences", "Providing relevant sports content, news, analysis, and insider perspectives", "Integrating publicly available content from X handles you select", "Meeting or fulfilling the reason you provided the information to us", "Providing support and assistance for the Services", "Improving the Services, including through research, testing, analytics, and AI model improvement (including to enhance content generation, audio quality, and personalization)", "Personalizing communications based on your preferences", "Ensuring security, fraud prevention, and debugging", "Carrying out other business purposes stated when collecting your Personal Data or as otherwise set forth in applicable data privacy laws"]} />
                     </LegalSubsection>
 
                     <LegalSubsection title="Communicating and Marketing">
