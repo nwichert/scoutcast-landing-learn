@@ -1052,6 +1052,516 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "best-sports-news-apps",
+    title: "The 7 Best Sports News Apps in 2026 (and What Each Is Actually For)",
+    excerpt:
+      "ESPN, theScore, Apple Sports, SofaScore, Yahoo Sports, The Athletic, and Scoutcast.ai — compared honestly by the job each one is actually best at, from live highlights to a 2-minute morning catch-up.",
+    date: "2026-06-11",
+    updatedAt: "2026-06-11",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/best-sports-news-apps/og.png",
+    body: [
+      lead(
+        t(
+          "There is no single best sports news app — there’s a best app for each job. ESPN is best for watching highlights and browsing everything. theScore is best for real-time score alerts. Apple Sports is the best free minimal scoreboard. SofaScore is best for global leagues and deep stats. Yahoo Sports is best if your fantasy league lives there. The Athletic is best for long-form journalism. And if your job is “catch me up on my teams in two minutes, hands-free,” that’s the slot "
+        ),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" was built for.")
+      ),
+      p(
+        b("Disclosure:"),
+        t(" I’m a co-founder of Scoutcast.ai, so one of the seven apps on this list is mine. I’ve placed it in exactly one slot — the one it actually wins — and I’ve tried to be as straight about the other six as I’d want them to be about us. If anything here is wrong, email me at "),
+        lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
+        t(" and I’ll fix it.")
+      ),
+
+      h2("How this list is judged"),
+      p(t("Most “best sports apps” lists rank the same five apps by install count. That’s not useful, because the apps aren’t competing at the same job. This list judges each app on four things:")),
+      ul(
+        [b("The job it’s actually best at."), t(" Watching, checking, reading, or catching up are different jobs.")],
+        [b("Time cost."), t(" How long a typical session takes, and whether the app respects when you want to leave.")],
+        [b("Personalization."), t(" Whether it serves your teams or a national feed you have to filter yourself.")],
+        [b("Noise."), t(" Ads, autoplay video, betting promos, and notification spam.")],
+      ),
+
+      h2("The TL;DR — pick by job"),
+      ul(
+        [b("ESPN"), t(" — watching highlights, browsing everything, one-app convenience")],
+        [b("theScore"), t(" — real-time scores and the best notification controls")],
+        [b("Apple Sports"), t(" — a fast, free, zero-clutter scoreboard on iPhone")],
+        [b("SofaScore"), t(" — global league coverage and the deepest stats")],
+        [b("Yahoo Sports"), t(" — news plus fantasy if your league is on Yahoo")],
+        [b("The Athletic"), t(" — long-form beat reporting worth paying for")],
+        [b("Scoutcast.ai"), t(" — a personalized ~2-minute audio briefing on your teams every morning")],
+      ),
+
+      h2("1. ESPN — best for watching and browsing everything"),
+      p(t("ESPN’s app is the default for a reason: scores, news, highlights, live streaming, and fantasy in one place, with the broadest US coverage of any app on this list. If you have time to browse and you want video, it’s still the strongest all-rounder.")),
+      p(t("The trade-off is that ESPN’s feed is national, not yours. Headlines lead with the league’s biggest stories, autoplay video and ads are everywhere, and the app is optimized for session length — the longer you stay, the better it does. If you’ve ever opened ESPN for a score and surfaced 15 minutes later, that wasn’t an accident. If that’s your main complaint, the "),
+        lk("ESPN app alternatives", "/blog/espn-app-alternatives"),
+        t(" post goes deeper.")),
+
+      h2("2. theScore — best for real-time scores and alerts"),
+      p(t("theScore does one thing with real focus: fast scores and granular notifications. You can follow specific teams and players and tune alerts down to events like a player’s touchdown or a close game in the fourth quarter. For game-day monitoring while you do something else, it’s the best of the bunch.")),
+      p(t("The trade-off: theScore is owned by a sports-betting company, and odds and betting promos are woven through the experience. If you don’t bet, you’ll be stepping around it.")),
+
+      h2("3. Apple Sports — best free minimal scoreboard"),
+      p(t("Apple Sports is Apple’s own free scores app: pick your leagues and teams, get a fast scoreboard with live win probability and lineups, no ads, no news feed, no video. Live Activities on the lock screen are excellent. It’s the cleanest way to check a score on an iPhone, period.")),
+      p(t("The trade-off is that minimal is the whole product. There’s no news, no analysis, no audio — it answers “what’s the score?” and nothing else.")),
+
+      h2("4. SofaScore — best for global leagues and deep stats"),
+      p(t("If you follow leagues outside the US majors — or you want player ratings, heat maps, and stats well past the box score — SofaScore covers more competitions in more countries than anything else on this list. Soccer fans in particular get depth no US-first app matches.")),
+      p(t("The trade-off: the interface is dense, ads occupy real space on free accounts, and it’s a stats tool, not a storytelling tool.")),
+
+      h2("5. Yahoo Sports — best if your fantasy league lives on Yahoo"),
+      p(t("Yahoo Sports is a solid scores-and-news app that becomes the right answer when your fantasy league runs on Yahoo Fantasy — roster, matchups, and news integrate cleanly. With "),
+        lk("roughly 40 million Americans playing fantasy football", "/blog/how-many-people-play-fantasy-football"),
+        t(", that’s a real constituency.")),
+      p(t("The trade-off: the feed has the same national-headline, ad-supported shape as ESPN’s, without ESPN’s video depth.")),
+
+      h2("6. The Athletic — best journalism, if you’ll actually read it"),
+      p(t("The Athletic (owned by The New York Times) employs dedicated beat writers for every major team, and the quality is genuinely high. If your ideal sports diet is two or three excellent articles a day about your teams, nothing else on this list comes close.")),
+      p(t("The trade-off: it’s a paid subscription, and it demands reading time. Most lapsed sports fans don’t have a quality problem — they have a time problem, and a stack of unread articles becomes one more source of guilt.")),
+
+      h2("7. Scoutcast.ai — best for a 2-minute, hands-free morning catch-up"),
+      p(t("Every app above assumes you’ll come to it: open, scroll, filter, leave. "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" inverts that. You pick your leagues, teams, and players once, and every morning it generates a roughly 2-minute audio briefing of what happened overnight — your scores, your storylines, what’s next. You listen while making coffee or driving; your hands and eyes stay free.")),
+      p(t("Three things the others on this list don’t do: you can add the X handles of beat writers you trust as "), b("custom sources"), t(", so their takes are blended into your briefing; you can "), b("tap Ask mid-briefing"), t(" to voice a follow-up question (“what’s his stat line?”) and get an instant audio answer; and it’s the only sports app with an "), b("MCP connector"), t(", so you can plug your briefings into Claude or ChatGPT and ask questions there.")),
+      p(t("The trade-offs, honestly: it’s Apple-only (iOS, iPadOS, macOS — Android isn’t built yet), it’s a morning recap rather than live play-by-play, and there’s no video. It’s free with no ads; the one paid add-on is an NFL Fantasy Season Pass ($49.99/season) with roster-aware briefings.")),
+
+      h2("Side-by-side comparison"),
+      tbl(
+        [
+          [t("App")],
+          [t("Best for")],
+          [t("Typical session")],
+          [t("Personalized to your teams")],
+          [t("Ads / betting promos")],
+          [t("Price")],
+        ],
+        [
+          [[t("ESPN")], [t("Watching + browsing")], [t("10–20 min scroll")], [t("Partial — favorites within a national feed")], [t("Heavy")], [t("Free; ESPN+ for streaming")]],
+          [[t("theScore")], [t("Score alerts")], [t("Seconds, many times a day")], [t("✓ teams and players")], [t("Heavy (betting)")], [t("Free")]],
+          [[t("Apple Sports")], [t("Minimal scoreboard")], [t("Seconds")], [t("✓ teams")], [t("None")], [t("Free")]],
+          [[t("SofaScore")], [t("Global leagues + stats")], [t("5–15 min")], [t("✓ teams and players")], [t("Moderate")], [t("Free; paid tier")]],
+          [[t("Yahoo Sports")], [t("News + Yahoo fantasy")], [t("5–15 min scroll")], [t("Partial")], [t("Heavy")], [t("Free")]],
+          [[t("The Athletic")], [t("Long-form journalism")], [t("10–30 min reading")], [t("✓ follows your teams’ beats")], [t("None (paywalled)")], [t("Subscription")]],
+          [[t("Scoutcast.ai")], [t("2-min audio catch-up")], [t("~2 min, hands-free")], [t("✓ teams, players, and your chosen writers")], [t("None")], [t("Free; fantasy add-on $49.99/season")]],
+        ]
+      ),
+
+      h2("Which should you pick?"),
+      p(t("Stack them by how much time you actually have:")),
+      ul(
+        [t("If sports gets 20+ minutes of your day and you want video: "), b("ESPN"), t(" (plus "), b("The Athletic"), t(" if you read).")],
+        [t("If you mostly need scores in the moment: "), b("Apple Sports"), t(" (clean) or "), b("theScore"), t(" (more alerts, more betting).")],
+        [t("If you follow non-US leagues or love stats: "), b("SofaScore"), t(".")],
+        [t("If your morning sports window is two minutes between the alarm and the door: "), b("Scoutcast.ai"), t(".")],
+      ),
+      p(t("Most of these are free, so the honest move is to try the two that match your job. If the 2-minute briefing is your slot: "),
+        lk("download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What is the best sports news app in 2026?",
+        answer:
+          "It depends on the job. ESPN is best for watching highlights and browsing everything; theScore is best for real-time score alerts; Apple Sports is the best free minimal scoreboard; SofaScore is best for global leagues and stats; The Athletic is best for long-form journalism; and Scoutcast.ai is best for a personalized ~2-minute audio catch-up on your teams each morning.",
+      },
+      {
+        question: "What is the best sports app without ads or betting promos?",
+        answer:
+          "Apple Sports (free, no ads, scores only), The Athletic (paywalled journalism, no ads), and Scoutcast.ai (free personalized audio briefings, no ads) are the three apps on this list with no ad load. theScore, ESPN, Yahoo Sports, and free-tier SofaScore all carry ads, and theScore is owned by a betting company.",
+      },
+      {
+        question: "What is the best sports app for busy people?",
+        answer:
+          "Scoutcast.ai is built specifically for that case: a personalized ~2-minute audio briefing on your teams every morning, listenable hands-free while you make coffee or commute, with tap-to-ask voice follow-ups. Apple Sports is the best complement for in-the-moment score checks.",
+      },
+      {
+        question: "Is the ESPN app still worth using?",
+        answer:
+          "Yes — if you want highlights, live streaming, and the broadest US coverage in one app, ESPN is still the strongest all-rounder. Its weaknesses are a national (not personalized) feed, heavy ads and autoplay video, and a design optimized for long scrolling sessions.",
+      },
+      {
+        question: "What sports app covers international leagues best?",
+        answer:
+          "SofaScore covers more leagues and countries than any other app on this list, with deep stats like player ratings and heat maps. Scoutcast.ai also covers global competitions (Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Champions League, F1, ATP/WTA) in audio briefing form.",
+      },
+      {
+        question: "Is Scoutcast.ai free?",
+        answer:
+          "Yes. Scoutcast.ai is free with no ads — all leagues, teams, daily briefings, custom beat-writer sources, and tap-to-ask follow-ups. The one paid add-on is an NFL Fantasy Season Pass at $49.99 per season for roster-aware fantasy briefings.",
+      },
+    ],
+    comparedItems: {
+      name: "Best sports news apps compared",
+      items: [
+        { name: "ESPN", url: "https://www.espn.com/espn/apps/espn" },
+        { name: "theScore", url: "https://www.thescore.com" },
+        { name: "Apple Sports", url: "https://www.apple.com/newsroom/2024/02/introducing-apple-sports-a-new-app-for-sports-fans/" },
+        { name: "SofaScore", url: "https://www.sofascore.com" },
+        { name: "Yahoo Sports", url: "https://sports.yahoo.com" },
+        { name: "The Athletic", url: "https://www.nytimes.com/athletic/" },
+        { name: "Scoutcast.ai", url: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329" },
+      ],
+    },
+  },
+  {
+    slug: "how-to-keep-up-with-sports-when-you-dont-have-time",
+    title: "How to Keep Up With Sports When You Don’t Have Time",
+    excerpt:
+      "A system for staying a real fan on 10 minutes a day or less: shrink your roster, switch to finite formats, attach sports to a fixed slot in your day, and make every source earn its place.",
+    date: "2026-06-11",
+    updatedAt: "2026-06-11",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/how-to-keep-up-with-sports-when-you-dont-have-time/og.png",
+    body: [
+      lead(
+        t(
+          "You don’t keep up with sports by finding more time — you keep up by changing the format. The system: (1) shrink your coverage down to the teams and players you actually care about, (2) replace infinite feeds with finite formats that end on their own, (3) attach sports to one fixed slot in your day, and (4) make every source earn its place. Done right, you’re genuinely current in 5–10 minutes a day."
+        )
+      ),
+      p(t("If you used to know everything about your teams and now you’re the person asking “wait, when did we trade him?” — this is for you. Nothing here requires any particular app, though I’ll tell you where the one I built fits at the end.")),
+
+      h2("Why keeping up got so hard"),
+      p(t("It’s not that there’s more sports. It’s that sports media stopped being finite. SportsCenter was 60 minutes and then it ended. The morning paper’s sports section was eight pages and then it ended. Feeds don’t end.")),
+      p(t("Every major sports app is monetized by time-on-screen, which means every design decision optimizes for one more scroll. You open an app to answer “did we win?” — a 10-second question — and the app’s entire job is to make sure you don’t leave after 10 seconds. The work of being informed quietly became the work of filtering, and the filter is your time.")),
+      p(t("So the fix isn’t discipline. The fix is switching to formats where someone else does the filtering and the format ends on its own.")),
+
+      h2("Step 1: Shrink your roster"),
+      p(t("Write down the teams and players you’d be genuinely upset to miss news about. Be ruthless — for most people it’s two or three teams, a handful of players, and maybe a fantasy roster in season. That list is your "), em("actual"), t(" fandom. Everything else is ambient noise you can pick up from friends.")),
+      p(t("This step matters because every feed-based app serves the league’s biggest stories, not yours. A national feed is maybe 10% relevant to your roster; a personalized source is 100%. Shrinking the roster is what makes a 5-minute catch-up mathematically possible.")),
+
+      h2("Step 2: Replace infinite feeds with finite formats"),
+      p(t("A finite format is anything that ends without you deciding to stop. Here’s how the main options compare:")),
+      tbl(
+        [
+          [t("Format")],
+          [t("Time cost")],
+          [t("Personalized to your teams")],
+          [t("Hands-free")],
+          [t("Ends on its own")],
+        ],
+        [
+          [[t("Team newsletters (e.g., your beat writer’s)")], [t("5 min/day reading")], [t("✓ per team")], [t("✗")], [t("✓")]],
+          [[t("Sports podcasts")], [t("30–60 min/episode")], [t("✗ — show-level, not roster-level")], [t("✓")], [t("✓")]],
+          [[t("Score apps (Apple Sports, theScore)")], [t("Seconds, many times a day")], [t("✓ scores only — no storylines")], [t("✗")], [t("✓")]],
+          [[t("Highlight shows / YouTube")], [t("10–20 min, autoplay risk")], [t("✗")], [t("Partial")], [t("✗")]],
+          [[t("Social feeds (X, Reddit, TikTok)")], [t("Unbounded")], [t("Partial, you filter")], [t("✗")], [t("✗")]],
+          [[t("AI audio briefings (Scoutcast.ai)")], [t("~2 min/day")], [t("✓ teams, players, your writers")], [t("✓")], [t("✓")]],
+        ]
+      ),
+      p(t("Notice what the table actually says: podcasts are finite but not personal ("),
+        lk("most run 30–60 minutes", "/blog/how-many-people-listen-to-sports-podcasts"),
+        t(" and cover the show’s agenda, not your roster). Score apps are personal but storyless — you learn the Bucks won, not why it matters. Newsletters are the best reading option if you’ll reliably read them. The combination that covers everything in minimum time is one finite catch-up format in the morning plus one score app for in-the-moment checks.")),
+
+      h2("Step 3: Attach sports to one fixed slot"),
+      p(t("Pick the slot first, then choose the format that fits it — not the other way around:")),
+      ul(
+        [b("Coffee / breakfast (5 min, hands busy):"), t(" audio briefing or a newsletter you actually open.")],
+        [b("Commute (10–40 min, eyes busy):"), t(" audio briefing plus a podcast on days you want depth.")],
+        [b("Gym (30–60 min, hands busy):"), t(" audio first, then your music — don’t scroll between sets.")],
+        [b("Kids’ bedtime done, couch (15 min, screen OK):"), t(" newsletter or The Athletic; this is reading time.")],
+      ),
+      p(t("The slot is the whole trick. Sports stops being a 14-times-a-day impulse check and becomes a habit with a beginning and an end, like brushing your teeth. If a game is live and you care, watch the game — this system is for every other day.")),
+
+      h2("Step 4: Make every source earn its place"),
+      p(t("One beat writer who covers your team every day beats an entire national feed. Find the two or three writers whose judgment you actually trust — your team’s beat reporter, one good analyst — and follow "), em("them"), t(", not the platform they post on. Unfollow or mute everything that’s merely entertaining. The bar isn’t “is this good content?” It’s “would I have missed something real without it?”")),
+
+      h2("Sample setups"),
+      ul(
+        [b("The commuter:"), t(" 2-minute audio briefing at the door, podcast for the drive on big-news days, Apple Sports for live checks. ~10 min/day.")],
+        [b("The parent:"), t(" audio briefing while making breakfast, score alerts for your teams only, one newsletter at night. ~7 min/day. (Fantasy players: there’s a "), lk("10-minute-a-week fantasy system", "/blog/fantasy-football-for-busy-parents"), t(" that pairs with this.)")],
+        [b("The international fan:"), t(" audio briefing in the morning (your matches ended overnight), SofaScore for table and fixtures. ~5 min/day.")],
+        [b("The early-gym crowd:"), t(" briefing during the warm-up, ask follow-ups between sets, nothing on the screen. ~5 min/day.")],
+      ),
+
+      h2("Where Scoutcast.ai fits"),
+      p(t("Full disclosure: I co-founded "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" because steps 1–4 are exactly the system I wanted and couldn’t assemble from feeds. You pick your leagues, teams, and players once (step 1), it generates a ~2-minute audio briefing every morning (step 2), you listen in whatever slot your day has (step 3), and you can add the X handles of the beat writers you trust as custom sources (step 4). Mid-briefing, you can tap the mic and ask a follow-up — “what’s his stat line?” — and it answers and resumes.")),
+      p(t("It’s free, with no ads, on iOS, iPadOS, and macOS. If you want the longer version of why we built it, "),
+        lk("that story is here", "/blog/why-we-built-scoutcast"),
+        t(". And if you’d rather assemble the system from other apps, the "),
+        lk("best sports news apps comparison", "/blog/best-sports-news-apps"),
+        t(" maps every piece.")),
+      p(lk("Download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How can I keep up with sports if I’m busy?",
+        answer:
+          "Use a system instead of willpower: shrink your coverage to the teams and players you actually care about, replace infinite feeds with finite formats (audio briefings, newsletters, score alerts), attach sports to one fixed slot in your day like coffee or a commute, and follow individual beat writers instead of national feeds. Done right, you stay genuinely current in 5–10 minutes a day.",
+      },
+      {
+        question: "What’s the fastest way to catch up on sports every morning?",
+        answer:
+          "A personalized audio briefing is the fastest full catch-up: Scoutcast.ai generates a ~2-minute audio rundown of your teams, players, and chosen writers every morning that you can listen to hands-free. A score app like Apple Sports answers “did we win?” faster but skips the storylines.",
+      },
+      {
+        question: "Are sports podcasts good for staying up to date?",
+        answer:
+          "Partially. Podcasts are finite and hands-free, but most episodes run 30–60 minutes and cover the show’s agenda rather than your specific teams. They’re great for depth on days you have a long drive, but inefficient as a daily catch-up tool.",
+      },
+      {
+        question: "How do I stop doomscrolling sports apps?",
+        answer:
+          "Remove the trigger, not just the app: turn off all non-score notifications, move feed apps off your home screen, and give yourself a finite replacement (an audio briefing or newsletter) in a fixed daily slot. The scroll usually persists because the underlying need — knowing what happened — has no faster outlet.",
+      },
+      {
+        question: "What is Scoutcast.ai?",
+        answer:
+          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS, iPadOS, and macOS. You pick your leagues, teams, players, and optionally the X handles of beat writers you trust, and every morning it generates a ~2-minute audio briefing. You can tap the mic mid-briefing to ask follow-up questions. It’s free with no ads.",
+      },
+    ],
+  },
+  {
+    slug: "fantasy-football-for-busy-parents",
+    title: "Fantasy Football for Busy Parents: The 10-Minute-a-Week System",
+    excerpt:
+      "The average fantasy player spends 6.9 hours a week on their team. Here’s a fixed Tuesday/Thursday/Sunday routine that keeps you competitive in about 10 minutes — built for parents whose research window is a school pickup line.",
+    date: "2026-06-11",
+    updatedAt: "2026-06-11",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/fantasy-football-for-busy-parents/og.png",
+    body: [
+      lead(
+        t(
+          "You can run a competitive fantasy football team in about 10 minutes a week if you stop treating it as a research hobby and start treating it as three small, scheduled decisions: waivers on Tuesday (~4 minutes), a lineup check on Thursday (~2 minutes), and a final call on Sunday morning (~4 minutes). The trick isn’t finding more time — it’s never letting fantasy become open-ended browsing."
+        )
+      ),
+      p(t("This is the system I actually use as a parent of a sports-obsessed kid, and it’s held up in competitive leagues. It won’t out-research the league mate who treats fantasy as a part-time job. It will beat everyone who manages their team through guilt and panic — which, in most leagues, is the majority.")),
+
+      h2("The real problem: fantasy demands attention at the worst times"),
+      p(t("Fantasy football’s schedule is almost perfectly designed to conflict with parenting. Waivers clear overnight Tuesday into Wednesday morning — school-run chaos. Thursday Night Football locks players at dinner-and-bath time. Sunday inactives drop about 90 minutes before kickoff, right in the middle of pancakes, sports practice, or church.")),
+      p(t("The "),
+        lk("average fantasy player spends 6.9 hours a week", "/blog/how-many-hours-fantasy-football-players-spend"),
+        t(" on their team. Parents don’t lose leagues because they’re worse at fantasy — they lose because the standard way of playing assumes hours of browsing they don’t have. With "),
+        lk("roughly 40 million Americans playing", "/blog/how-many-people-play-fantasy-football"),
+        t(", a huge share of every league is quietly fighting this exact battle.")),
+
+      h2("The 10-minute week"),
+      tbl(
+        [
+          [t("When")],
+          [t("Time")],
+          [t("Decision")],
+          [t("Rule")],
+        ],
+        [
+          [[t("Tuesday evening")], [t("~4 min")], [t("Waivers")], [t("Check one consensus waiver list, claim a max of two players, prioritize your thinnest position. Done.")]],
+          [[t("Thursday, before TNF kickoff")], [t("~2 min")], [t("Lineup lock check")], [t("Anyone in your lineup playing Thursday? Confirm they’re active. Anyone on bye or injured anywhere in the lineup? Fix it now, not Sunday.")]],
+          [[t("Sunday morning")], [t("~4 min")], [t("Final call")], [t("Scan injury designations on your starters, make pre-decided swaps only, close the app before kickoff.")]],
+        ]
+      ),
+      p(t("Ten minutes total. Everything else — trade rumors, film breakdowns, six mock-draft podcasts — is entertainment, not management. Fine if you enjoy it, but never required.")),
+
+      h2("The three rules that make it work"),
+      h3("1. Pre-commit your decisions"),
+      p(t("Sunday morning is for executing decisions, not making them. When you set your lineup Thursday, also decide your pivot: “If Player X is out, Player Y starts.” Then Sunday is a 30-second check of injury statuses against a decision you already made — instead of a panicked scroll through three Reddit threads while the toaster burns.")),
+      h3("2. Consume verdicts, not debates"),
+      p(t("A consensus ranking (FantasyPros aggregates dozens of analysts) or a single trusted analyst’s start/sit call is a verdict — 30 seconds to consume. A subreddit thread arguing both sides of the same call is a debate — 20 minutes, and you come out less sure than you went in. Busy managers need verdicts. Save the debates for the group chat.")),
+      h3("3. Batch your information"),
+      p(t("Fourteen check-ins a day, 30 seconds each, doesn’t cost 7 minutes — it costs the attention residue of 14 interruptions. One briefing at a set time beats continuous monitoring. You don’t need to know about an injury the minute it’s reported; you need to know before your decision point.")),
+
+      h2("Tools that respect your time"),
+      ul(
+        [b("Your league app (Sleeper, Yahoo, ESPN, NFL.com)"), t(" — for executing moves. Set notifications to “my players only” and mute the league chat’s game threads.")],
+        [b("FantasyPros consensus rankings"), t(" — one page of verdicts for waivers and start/sit. The whole Tuesday step lives here.")],
+        [b("Scoutcast.ai with the NFL Fantasy Season Pass"), t(" — this is the audio layer of the system, and yes, it’s the app I co-founded. It syncs to your actual roster on Yahoo, ESPN, Sleeper, or NFL.com and delivers short audio briefings on Tuesday (waiver picks), Wednesday and Thursday (start/sit calls, injury news on your players), and Sunday morning (a final-call briefing with inactives). You listen during breakfast — hands on the pancakes, not the phone. The pass is $49.99 per NFL season, about $3 a week; the rest of "),
+          lk("Scoutcast.ai", "https://scoutcast.ai"),
+          t(" is free, including daily briefings on your real teams.")],
+      ),
+      p(t("Each briefing also supports tap-to-ask follow-ups — mid-briefing, ask “who should I start, Pollard or Gibbs?” out loud and get an audio answer that knows your roster. That’s the Sunday-morning panic scroll, replaced.")),
+
+      h2("What to ignore (this is the actual edge)"),
+      ul(
+        [t("Daily trade rumors — irrelevant until a trade actually happens, and your briefing will tell you when it does.")],
+        [t("Preseason and practice reports after your draft — beat writers need content daily; you don’t need to read it daily.")],
+        [t("Other managers’ trash talk economics — engagement bait. Reply once, on Monday, when you’ve won.")],
+        [t("Any analysis of games that don’t involve your players or your opponent’s.")],
+      ),
+      p(t("Remember the baseline: the average manager spends "),
+        lk("6.9 hours a week", "/blog/how-many-hours-fantasy-football-players-spend"),
+        t(" mostly consuming content about players they don’t roster. You’re not competing against their best 10 minutes — you’re competing against their distracted 414.")),
+
+      h2("The honest pitch"),
+      p(t("If you’re a parent who loves fantasy but keeps finishing 8th because Sunday mornings belong to your kids: the system above is free and works with any apps. If you want the information to come to you as audio, timed to the decision points, aware of your actual roster — that’s exactly what we built the "),
+        lk("Fantasy Season Pass", "/fantasy"),
+        t(" for.")),
+      p(lk("Download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How much time does fantasy football take per week?",
+        answer:
+          "The average fantasy player spends about 6.9 hours per week on their team. But the actual decisions — waivers, lineup setting, and a Sunday injury check — can be done in about 10 minutes a week with a fixed Tuesday/Thursday/Sunday routine. The rest is optional entertainment.",
+      },
+      {
+        question: "How do I play fantasy football with kids and no free time?",
+        answer:
+          "Schedule three short decision windows instead of browsing continuously: ~4 minutes Tuesday for waivers using a consensus ranking, ~2 minutes Thursday to check lineup locks and byes, and ~4 minutes Sunday morning to verify injury designations and execute pre-decided swaps. Pre-commit your pivots (“if X is out, Y starts”) so Sunday is execution, not research.",
+      },
+      {
+        question: "What’s the best fantasy football tool for busy managers?",
+        answer:
+          "Use your league app (Sleeper, Yahoo, ESPN, NFL.com) for moves, FantasyPros consensus rankings for fast verdicts, and Scoutcast.ai’s NFL Fantasy Season Pass ($49.99/season) for roster-aware audio briefings on Tuesday, Wednesday, Thursday, and Sunday — including waiver picks, start/sit calls, and a Sunday-morning final-call briefing you can listen to hands-free.",
+      },
+      {
+        question: "What is the Scoutcast.ai NFL Fantasy Season Pass?",
+        answer:
+          "A $49.99-per-season add-on to the free Scoutcast.ai app that syncs to your fantasy roster on Yahoo, ESPN, Sleeper, or NFL.com (up to 3 leagues) and delivers audio briefings on Tue/Wed/Thu/Sun all season: personalized waiver picks, start/sit calls, head-to-head opponent analysis, and a Sunday-morning final call. It’s a one-time purchase per season, not a subscription.",
+      },
+      {
+        question: "Can I win my fantasy league spending only 10 minutes a week?",
+        answer:
+          "You can be consistently competitive. A disciplined 10-minute routine covers the decisions that actually move win probability — waivers, lineup locks, and injury-driven swaps. You won’t out-research a league mate treating fantasy as a part-time job, but you’ll beat managers who rely on unstructured scrolling, which is most of them.",
+      },
+    ],
+  },
+  {
+    slug: "espn-app-alternatives",
+    title: "ESPN App Alternatives for Fans Tired of Doomscrolling (2026)",
+    excerpt:
+      "The best ESPN app alternative depends on what’s driving you away: Apple Sports for a clean scoreboard, theScore for alerts, SofaScore for global leagues, The Athletic for journalism, and Scoutcast.ai for a 2-minute audio catch-up instead of a 20-minute scroll.",
+    date: "2026-06-11",
+    updatedAt: "2026-06-11",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/espn-app-alternatives/og.png",
+    body: [
+      lead(
+        t(
+          "The best alternative to the ESPN app depends on what’s pushing you away. If it’s the ads and clutter: Apple Sports. If it’s notification quality: theScore. If it’s shallow coverage of non-US leagues: SofaScore. If it’s the quality of the writing: The Athletic. And if the real problem is that you open ESPN for a 10-second answer and lose 20 minutes — that’s the doomscroll problem, and the alternative is a finite format like the ~2-minute audio briefings from Scoutcast.ai."
+        )
+      ),
+      p(
+        b("Disclosure:"),
+        t(" I co-founded "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(", one of the six alternatives below. It’s listed for exactly one use case — replacing the morning scroll — and the other five are apps I’d genuinely recommend for theirs. Corrections: "),
+        lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
+        t(".")
+      ),
+
+      h2("First, diagnose why you’re leaving"),
+      p(t("“I hate the ESPN app” usually means one of five specific things:")),
+      ul(
+        [b("Noise:"), t(" autoplay video, ads, and betting odds around every score.")],
+        [b("Notification spam:"), t(" alerts about national stories you never asked for.")],
+        [b("Generic feed:"), t(" headlines for the league’s audience, not your teams — you do the filtering.")],
+        [b("Shallow international coverage:"), t(" your club gets a wire-service paragraph.")],
+        [b("The time sink:"), t(" you go in for a score and surface 20 minutes later.")],
+      ),
+      p(t("Different complaints, different alternatives. Match yours below.")),
+
+      h2("Apple Sports — if the problem is noise"),
+      p(t("Apple’s free scores app is everything the ESPN scoreboard screen should be: your teams, live scores, win probability, lineups, lock-screen Live Activities — and no ads, no video, no news feed at all. It’s iPhone-only and it answers exactly one question (“what’s the score?”), but it answers it instantly.")),
+      p(b("Keep ESPN if:"), t(" you also want highlights and stories in the same app — Apple Sports has neither, by design.")),
+
+      h2("theScore — if the problem is notifications"),
+      p(t("theScore has the most granular alert controls of any mainstream sports app: follow teams and players individually, get notified about exactly the events you choose, nothing else. For tracking games you can’t watch, it’s the best tool on this list.")),
+      p(b("The honest catch:"), t(" theScore is owned by a sports-betting company, so you’re trading ESPN’s ads for betting promos. If noise was your complaint, pick Apple Sports instead.")),
+
+      h2("SofaScore — if the problem is international coverage"),
+      p(t("ESPN covers the Premier League; it does not cover your Championship side, your Serie B club, or the Eredivisie the way it covers the SEC. SofaScore does — more leagues, more countries, and deeper stats (player ratings, heat maps, momentum graphs) than any US-first app.")),
+      p(b("Keep ESPN if:"), t(" your teams are all US majors and you mostly want stories — SofaScore is a stats instrument, not a newsroom.")),
+
+      h2("The Athletic — if the problem is the writing"),
+      p(t("ESPN’s app serves headlines and video; The Athletic (a New York Times company) serves actual beat reporting — a dedicated writer per team, long-form, no ads. If what you miss is good sports "), em("writing"), t(", this is the alternative, and it’s worth the subscription.")),
+      p(b("The honest catch:"), t(" it’s paid, and it asks for reading time. If your problem is too little time rather than too little quality, a stack of excellent unread articles won’t fix it.")),
+
+      h2("Yahoo Sports — if you’re only there for fantasy"),
+      p(t("If the main reason you open ESPN is your fantasy team, and your league could live anywhere, Yahoo Sports bundles solid scores and news with Yahoo Fantasy in one app. It’s not less noisy than ESPN — same ad-supported feed shape — but it consolidates two apps into one.")),
+
+      h2("Scoutcast.ai — if the problem is the time sink"),
+      p(t("Every app above still assumes the same posture: you open it, you scroll, you decide when to stop. If your actual complaint is the 20-minute morning scroll, the fix isn’t a better feed — it’s no feed.")),
+      p(lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" flips the posture: you pick your leagues, teams, and players once, and every morning it generates a ~2-minute audio briefing — your scores, your storylines, what’s next — that you listen to while making coffee. It ends on its own. You can add the X handles of beat writers you trust as custom sources, tap the mic mid-briefing to ask follow-ups (“what’s his stat line?”), and even plug your briefings into Claude or ChatGPT via its MCP connector. Free, no ads, with one optional add-on (an NFL Fantasy Season Pass, $49.99/season).")),
+      p(b("Keep ESPN if:"), t(" you want video highlights or live streaming — Scoutcast.ai is audio-first morning catch-up, not play-by-play, and it’s Apple-only for now.")),
+
+      h2("Side-by-side"),
+      tbl(
+        [
+          [t("If your complaint is…")],
+          [t("Switch to")],
+          [t("Price")],
+          [t("What you give up vs ESPN")],
+        ],
+        [
+          [[t("Ads, autoplay, clutter")], [t("Apple Sports")], [t("Free")], [t("News, highlights, video")]],
+          [[t("Notification spam")], [t("theScore")], [t("Free")], [t("Ad-free experience (betting promos instead)")]],
+          [[t("Weak international coverage")], [t("SofaScore")], [t("Free / paid tier")], [t("US-style storytelling")]],
+          [[t("Headline-depth writing")], [t("The Athletic")], [t("Subscription")], [t("Free access, video")]],
+          [[t("Two apps for fantasy + news")], [t("Yahoo Sports")], [t("Free")], [t("ESPN’s video depth")]],
+          [[t("The 20-minute doomscroll")], [t("Scoutcast.ai")], [t("Free (fantasy add-on $49.99/season)")], [t("Video, browsing — by design")]],
+        ]
+      ),
+
+      h2("You probably want two apps, not one"),
+      p(t("The pattern that actually replaces ESPN for most people is a pair: one finite catch-up format for the morning (an audio briefing or a newsletter) plus one clean scoreboard for in-the-moment checks (Apple Sports or theScore). Catch-up and live checking are different jobs; ESPN’s all-in-one design is exactly what made it a time sink. For the full landscape, see "),
+        lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"),
+        t(", and if you want the whole low-time system, "),
+        lk("here’s how to keep up with sports when you don’t have time", "/blog/how-to-keep-up-with-sports-when-you-dont-have-time"),
+        t(".")),
+      p(lk("Download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What is the best alternative to the ESPN app?",
+        answer:
+          "It depends on your complaint. Apple Sports is the best alternative for a clean, ad-free scoreboard; theScore for granular score notifications; SofaScore for international leagues and deep stats; The Athletic for long-form journalism; Yahoo Sports for fantasy integration; and Scoutcast.ai if the problem is doomscrolling — it replaces the feed with a personalized ~2-minute audio briefing each morning.",
+      },
+      {
+        question: "Is there a sports app without ads or betting promos?",
+        answer:
+          "Yes. Apple Sports (free scoreboard), The Athletic (paid journalism), and Scoutcast.ai (free personalized audio briefings) all have zero ads and zero betting content. theScore and SofaScore are free but carry betting promos or ads.",
+      },
+      {
+        question: "How do I stop wasting time on the ESPN app?",
+        answer:
+          "Separate the two jobs ESPN bundles: in-the-moment score checks and daily catch-up. Use a minimal scoreboard app (Apple Sports) for checks, and a finite format that ends on its own — like Scoutcast.ai’s ~2-minute personalized audio briefing — for the morning catch-up. Then turn off ESPN’s notifications or delete the app.",
+      },
+      {
+        question: "What’s the best ESPN alternative for international soccer fans?",
+        answer:
+          "SofaScore covers more leagues and countries than any mainstream US app, with player ratings and advanced stats. Scoutcast.ai also covers Premier League, La Liga, Bundesliga, Serie A, Ligue 1, and the Champions League in its personalized audio briefings — useful when your club’s matches finish overnight in your time zone.",
+      },
+      {
+        question: "Is Scoutcast.ai a full replacement for ESPN?",
+        answer:
+          "No — and it isn’t trying to be. Scoutcast.ai replaces the morning catch-up scroll with a ~2-minute personalized audio briefing on your teams. It has no video highlights or live streaming, and it’s Apple-only (iOS, iPadOS, macOS). Most people pair it with a scoreboard app like Apple Sports for live checks.",
+      },
+    ],
+    comparedItems: {
+      name: "ESPN app alternatives compared",
+      items: [
+        { name: "Apple Sports", url: "https://www.apple.com/newsroom/2024/02/introducing-apple-sports-a-new-app-for-sports-fans/" },
+        { name: "theScore", url: "https://www.thescore.com" },
+        { name: "SofaScore", url: "https://www.sofascore.com" },
+        { name: "The Athletic", url: "https://www.nytimes.com/athletic/" },
+        { name: "Yahoo Sports", url: "https://sports.yahoo.com" },
+        { name: "Scoutcast.ai", url: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329" },
+      ],
+    },
+  },
 ];
 
 // Drafts: held out of the rendered blog until ready to ship.
