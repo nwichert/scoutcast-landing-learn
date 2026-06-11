@@ -1162,7 +1162,7 @@ export const posts: Post[] = [
         [t("If you follow non-US leagues or love stats: "), b("SofaScore"), t(".")],
         [t("If your morning sports window is two minutes between the alarm and the door: "), b("Scoutcast.ai"), t(".")],
       ),
-      p(t("Most of these are free, so the honest move is to try the two that match your job. If the 2-minute briefing is your slot: "),
+      p(t("Most of these are free, so the honest move is to try the two that match your job. (Following the tournament this summer? There’s a "), lk("World Cup-specific version of this list", "/blog/best-apps-for-following-the-2026-world-cup"), t(".) If the 2-minute briefing is your slot: "),
         lk("download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
       hr(),
@@ -1280,7 +1280,7 @@ export const posts: Post[] = [
       ul(
         [b("The commuter:"), t(" 2-minute audio briefing at the door, podcast for the drive on big-news days, Apple Sports for live checks. ~10 min/day.")],
         [b("The parent:"), t(" audio briefing while making breakfast, score alerts for your teams only, one newsletter at night. ~7 min/day. (Fantasy players: there’s a "), lk("10-minute-a-week fantasy system", "/blog/fantasy-football-for-busy-parents"), t(" that pairs with this.)")],
-        [b("The international fan:"), t(" audio briefing in the morning (your matches ended overnight), SofaScore for table and fixtures. ~5 min/day.")],
+        [b("The international fan:"), t(" audio briefing in the morning (your matches ended overnight), SofaScore for table and fixtures. ~5 min/day. (During the tournament, there’s a "), lk("World Cup edition of this system", "/blog/how-to-follow-the-2026-world-cup-when-you-work"), t(".)")],
         [b("The early-gym crowd:"), t(" briefing during the warm-up, ask follow-ups between sets, nothing on the screen. ~5 min/day.")],
       ),
 
@@ -1558,6 +1558,326 @@ export const posts: Post[] = [
         { name: "SofaScore", url: "https://www.sofascore.com" },
         { name: "The Athletic", url: "https://www.nytimes.com/athletic/" },
         { name: "Yahoo Sports", url: "https://sports.yahoo.com" },
+        { name: "Scoutcast.ai", url: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329" },
+      ],
+    },
+  },
+  {
+    slug: "how-to-follow-the-2026-world-cup-when-you-work",
+    title: "How to Follow the 2026 World Cup When You Have a Job",
+    excerpt:
+      "104 matches in 39 days, most kicking off between noon and 9 p.m. ET on workdays. A triage system for working fans: pick your ~10 must-watch matches, claim the lunch window, and catch up on everything else in minutes a day.",
+    date: "2026-06-11",
+    updatedAt: "2026-06-11",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/how-to-follow-the-2026-world-cup-when-you-work/og.png",
+    body: [
+      lead(
+        t(
+          "You cannot watch the 2026 World Cup. Nobody can — it’s 104 matches in 39 days, more than four a day during the group stage, and most of them kick off between noon and 9 p.m. ET while you’re at work. What you can do is triage: pick the roughly 10 matches you’ll actually watch live, claim your lunch hour for one more, and use a finite catch-up format for the other ninety. Here’s the system."
+        )
+      ),
+      p(t("This is the World Cup edition of a system I’ve written about before — "), lk("how to keep up with sports when you don’t have time", "/blog/how-to-keep-up-with-sports-when-you-dont-have-time"), t(" — compressed for the most match-dense tournament ever played.")),
+
+      h2("The math you’re up against"),
+      p(t("The 2026 tournament is the biggest World Cup in history: 48 teams, 12 groups, and 104 matches — up from 64 in Qatar. The group stage alone packs 72 matches into June 11–27, an average of more than four per day. ("), lk("Full numbers here", "/blog/world-cup-2026-by-the-numbers"), t(".)")),
+      p(t("And because the hosts are the US, Mexico, and Canada, the kickoff times are — for once — in your time zone. That’s great for the ten matches you’ll watch live and brutal for the rest, because they happen during your workday instead of while you sleep:")),
+      tbl(
+        [[t("Kickoff slot (ET)")], [t("Where it lands in your day")]],
+        [
+          [[t("12 p.m.")], [t("Lunch — the one slot a working fan can actually claim")]],
+          [[t("3–4 p.m.")], [t("Mid-afternoon meetings; highlights territory")]],
+          [[t("6 p.m.")], [t("Commute / dinner / kids")]],
+          [[t("9 p.m.")], [t("Genuinely watchable — the USA’s opener lives here")]],
+          [[t("12 a.m.")], [t("West-coast-only territory")]],
+        ]
+      ),
+      p(t("A fan during Qatar 2022 missed matches because of time zones and felt fine about it. In 2026 every match is theoretically watchable, which is exactly what makes the tournament a guilt machine. The fix is deciding in advance what you’ll watch — and how you’ll stay current on what you won’t.")),
+
+      h2("Step 1: Pick your ten"),
+      p(t("Before the group stage gets rolling, write down the matches you will actually watch live. Be honest about your calendar. A realistic working-fan list:")),
+      ul(
+        [t("Your team’s three group matches (the US opens against Paraguay on June 12 at 9 p.m. ET — a Friday night; Mexico opened the whole tournament June 11 at Estadio Azteca; Canada starts June 12 at 3 p.m. ET)")],
+        [t("Two or three marquee group matches that land on evenings or weekends")],
+        [t("Your team’s knockout matches — every one, no exceptions")],
+        [t("The semifinals (July 14–15) and the final (Sunday, July 19, 3 p.m. ET — mercifully a weekend afternoon)")],
+      ),
+      p(t("That’s about ten commitments. Put them on your actual calendar, the one with your meetings in it. Everything not on the list, you are — by prior agreement with yourself — not watching live.")),
+
+      h2("Step 2: Claim the noon window"),
+      p(t("The 12 p.m. ET slot is the working fan’s secret weapon: it’s lunch. Once or twice a week, pick the best noon kickoff, block the hour, and watch the first half while you eat. All 104 matches stream on FOX’s apps in English and on Peacock (via Telemundo) in Spanish, so it’s on your phone wherever lunch happens. You won’t see the second half — accept it, and let the catch-up system in step 3 tell you how it ended.")),
+
+      h2("Step 3: A finite catch-up for the other ninety matches"),
+      p(t("Here’s where most fans lose the tournament. The default catch-up — open an app, scroll highlights, check the group tables, read three reactions — takes 20 minutes, and you’ll feel obliged to do it daily for five and a half weeks. The alternative is a finite format that ends on its own:")),
+      ul(
+        [b("A morning audio briefing."), t(" This is the slot "), lk("Scoutcast.ai", "https://scoutcast.ai"), t(" was built for: pick the teams you care about and get a ~2-minute audio rundown each morning — yesterday’s results, what mattered, who plays today — while you make coffee. Tap the mic mid-briefing to ask follow-ups (“how did the group finish?”) and it answers and resumes.")],
+        [b("A nightly highlights ritual with a hard edge."), t(" One match’s highlights, chosen in advance — not autoplay roulette.")],
+        [b("A scores app for in-the-moment checks."), t(" Apple Sports or SofaScore answers “what’s the score?” in seconds without pulling you into a feed. (The full toolkit is in "), lk("the best apps for following the 2026 World Cup", "/blog/best-apps-for-following-the-2026-world-cup"), t(".)")],
+      ),
+      p(t("The principle is the same one that applies to regular-season sports, just at tournament intensity: infinite feeds expand to fill whatever time you give them; finite formats hand the filtering to someone else and then "), em("end"), t(".")),
+
+      h2("Step 4: Protect the knockouts"),
+      p(t("The group stage is volume; the knockouts are appointment viewing. From the round of 32 (June 28 – July 3) onward, every match is an elimination. Two practical notes. First, the quarterfinals onward (July 9–19) cluster around weekends and evenings — the schedule gets kinder exactly when the stakes get higher. Second, decide your rooting interests for the bracket "), em("before"), t(" your team is eliminated. A neutral fan with a plan watches the final five matches of a World Cup; a deflated fan without one quietly stops.")),
+
+      h2("The honest summary"),
+      p(t("Ten matches live. One lunch kickoff a week. Two minutes of audio catch-up every morning. That’s a working fan’s World Cup — fully current for five and a half weeks, no 20-minute scroll, no guilt about the 90 matches you didn’t see. If the morning-briefing slot is the piece you’re missing, "), lk("Scoutcast.ai is free on the App Store", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"), t(".")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How many matches are in the 2026 World Cup?",
+        answer:
+          "104 matches across 39 days (June 11 – July 19, 2026) — the most in World Cup history, up from 64 in Qatar 2022. The group stage alone has 72 matches in 17 days, an average of more than four per day.",
+      },
+      {
+        question: "What time are 2026 World Cup matches in the US?",
+        answer:
+          "Kickoffs are announced in Eastern Time and run from roughly 12 p.m. to midnight ET, with the main slots at noon, 3–4 p.m., 6 p.m., and 9 p.m. Because the hosts are the US, Mexico, and Canada, most matches happen during US daytime and evening hours rather than overnight.",
+      },
+      {
+        question: "How can I watch the World Cup at work?",
+        answer:
+          "The 12 p.m. ET kickoff lands on lunch in the Eastern and Central time zones. All 104 matches stream on FOX’s apps in English and on Peacock via Telemundo in Spanish, so a phone and headphones cover the first half. For matches you can’t watch, a personalized audio briefing like Scoutcast.ai’s (~2 minutes each morning) keeps you current.",
+      },
+      {
+        question: "What’s the fastest way to catch up on World Cup results every day?",
+        answer:
+          "A finite format beats scrolling: Scoutcast.ai generates a ~2-minute personalized audio briefing every morning covering the teams you follow — results, storylines, and who plays today — and you can tap the mic to ask follow-up questions mid-briefing. A scores app like Apple Sports handles in-the-moment checks.",
+      },
+      {
+        question: "When is the 2026 World Cup final?",
+        answer:
+          "Sunday, July 19, 2026, at MetLife Stadium in East Rutherford, New Jersey, with a 3 p.m. ET kickoff — a weekend afternoon slot that’s easy to watch live in the US.",
+      },
+    ],
+  },
+  {
+    slug: "world-cup-2026-by-the-numbers",
+    title: "World Cup 2026 by the Numbers: 104 Matches, 48 Teams, 3 Countries (2026 Stats)",
+    excerpt:
+      "The 2026 FIFA World Cup is the largest ever: 48 teams, 104 matches in 39 days, 16 host cities, a projected 5+ million attendance, and roughly 6 billion people expected to engage worldwide. Every key stat, sourced.",
+    date: "2026-06-11",
+    updatedAt: "2026-06-11",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/world-cup-2026-by-the-numbers/og.png",
+    body: [
+      lead(
+        t(
+          "The 2026 FIFA World Cup is the largest in the tournament’s history: 48 teams playing 104 matches across 39 days (June 11 – July 19, 2026) in 16 host cities spread over the United States, Mexico, and Canada. FIFA projects more than 5 million fans in stadiums — which would shatter Qatar 2022’s record of 3.4 million — and roughly 6 billion people engaging with the tournament worldwide."
+        )
+      ),
+
+      h2("World Cup 2026: Quick Stats"),
+      ul(
+        [b("48"), t(" teams — up from 32 at every World Cup from 1998 through 2022")],
+        [b("104"), t(" matches — up from 64 in Qatar 2022, a 62% increase")],
+        [b("39"), t(" days of play, June 11 – July 19, 2026")],
+        [b("16"), t(" host cities: 11 in the US, 3 in Mexico, 2 in Canada")],
+        [b("12"), t(" groups of 4, feeding a new round of 32")],
+        [b("4"), t(" World Cup debutants: Cape Verde, Curaçao, Jordan, and Uzbekistan")],
+        [b("5+ million"), t(" projected in-stadium attendance (the record is 3.4 million, Qatar 2022)")],
+        [b("~6 billion"), t(" people projected to engage with the tournament globally")],
+        [b("$60 to $10,990"), t(" — the range of official ticket prices under FIFA’s dynamic pricing")],
+      ),
+
+      h2("The new format, explained in one paragraph"),
+      p(t("The 48 teams are drawn into 12 groups of four. Each team plays three group matches (72 group-stage matches total, June 11–27). The top two in each group advance, joined by the eight best third-place teams — 32 teams move on, meaning two-thirds of the field survives the groups. From there it’s a straight knockout: a new round of 32 (June 28 – July 3), round of 16 (July 4–7), quarterfinals (July 9–11), semifinals (July 14–15), and the final on Sunday, July 19 at MetLife Stadium in East Rutherford, New Jersey.")),
+
+      h2("How 2026 compares to recent World Cups"),
+      tbl(
+        [[t("")], [t("2026 (US/MEX/CAN)")], [t("2022 (Qatar)")], [t("2018 (Russia)")]],
+        [
+          [[t("Teams")], [b("48")], [t("32")], [t("32")]],
+          [[t("Matches")], [b("104")], [t("64")], [t("64")]],
+          [[t("Days")], [b("39")], [t("29")], [t("32")]],
+          [[t("Host cities")], [b("16")], [t("8")], [t("11")]],
+          [[t("Total attendance")], [b("5M+ (projected)")], [t("3.4M")], [t("3.0M")]],
+        ]
+      ),
+      p(t("The jump from 64 to 104 matches is the single biggest expansion in World Cup history — bigger than the move from 24 to 32 teams in 1998. No previous tournament has asked fans to follow this much soccer in this little time.")),
+
+      h2("Attendance and tickets"),
+      p(t("FIFA is targeting more than 5 million in-person spectators across the 104 matches, which would break Qatar 2022’s all-time record of 3.4 million. Official ticket prices have ranged from $60 to $10,990 under FIFA’s dynamic pricing model — a system that drew enough criticism that FIFA released a limited number of $60 tickets for every match in the tournament.")),
+
+      h2("The viewership projection"),
+      p(t("FIFA projects roughly 6 billion people will engage with the 2026 tournament in some form — broadcasts, streaming, or highlights — which would make it the most-watched sporting event in history. For US viewers, every match airs on FOX or FS1 in English (streaming on the FOX apps), while Telemundo (92 matches) and Universo (12) carry the Spanish broadcasts, all of which also stream on Peacock.")),
+
+      h2("The number nobody says out loud: 200+ hours"),
+      p(t("Here’s the stat that matters for an actual fan with an actual job: watching every match of this World Cup — at roughly two hours per match including stoppage time — would take more than 200 hours of live viewing in 39 days. That’s over five hours a day, for five and a half weeks, mostly between noon and 9 p.m. ET on workdays.")),
+      p(t("Nobody does that. The real question of this World Cup isn’t “will you watch?” — it’s “how will you stay current on the 90+ matches you don’t watch?” That’s the problem "), lk("Scoutcast.ai", "https://scoutcast.ai"), t(" exists for: a personalized ~2-minute audio briefing every morning covering the teams and matches you care about, with tap-to-ask follow-up questions mid-briefing. The "), lk("working fan’s guide to following this World Cup", "/blog/how-to-follow-the-2026-world-cup-when-you-work"), t(" lays out the full system.")),
+
+      h2("Summary table"),
+      tbl(
+        [[t("Stat")], [t("Figure")]],
+        [
+          [[t("Dates")], [t("June 11 – July 19, 2026")]],
+          [[t("Teams / matches")], [t("48 / 104")]],
+          [[t("Group stage")], [t("72 matches, June 11–27")]],
+          [[t("Knockout rounds")], [t("32 matches, June 28 – July 19")]],
+          [[t("Host cities")], [t("16 (11 US, 3 Mexico, 2 Canada)")]],
+          [[t("Final")], [t("July 19, MetLife Stadium, 3 p.m. ET")]],
+          [[t("Projected attendance")], [t("5+ million")]],
+          [[t("Projected global engagement")], [t("~6 billion")]],
+          [[t("US broadcasters")], [t("FOX/FS1 (EN); Telemundo/Universo + Peacock (ES)")]],
+        ]
+      ),
+
+      h2("Sources"),
+      ul(
+        [lk("2026 FIFA World Cup — Wikipedia", "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup")],
+        [lk("How to Watch the 2026 FIFA World Cup — FOX Sports", "https://www.foxsports.com/stories/soccer/2026-world-cup-schedule-all-games-dates-matchups-how-watch")],
+        [lk("Stream Telemundo’s Spanish-language World Cup Coverage on Peacock — NBCUniversal", "https://www.nbcuniversal.com/article/stream-telemundos-spanish-language-coverage-fifa-world-cup-2026tm-peacock-including-live-matches")],
+        [lk("FIFA World Cup 2026 explained in maps and charts — Al Jazeera", "https://www.aljazeera.com/sports/2026/6/10/fifa-world-cup-2026-explained-in-maps-and-charts")],
+        [lk("2026 World Cup: The Most-Watched Sporting Event in History? — Sports Illustrated", "https://www.si.com/soccer/2026-world-cup-the-most-watched-sporting-event-history")],
+        [lk("World Cup 2026 fixture schedule — Sky Sports", "https://www.skysports.com/football/news/11095/13481245/world-cup-2026-fixture-schedule-and-uk-kick-off-times-day-by-day-breakdown-of-all-104-matches-including-england-scotland")],
+      ),
+      p(em("Last updated: June 2026. Figures marked “projected” will be updated as FIFA releases official tournament numbers.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How many teams are in the 2026 World Cup?",
+        answer:
+          "48 teams — the largest field in World Cup history, expanded from the 32-team format used at every tournament from 1998 through 2022. They’re drawn into 12 groups of four, and 32 teams advance to the knockout rounds.",
+      },
+      {
+        question: "How many matches are in the 2026 World Cup?",
+        answer:
+          "104 matches: 72 in the group stage (June 11–27) and 32 across the knockout rounds (June 28 – July 19). That’s a 62% increase over the 64 matches played at Qatar 2022 and the biggest expansion in tournament history.",
+      },
+      {
+        question: "Where is the 2026 World Cup being played?",
+        answer:
+          "In 16 host cities across three countries: 11 in the United States, 3 in Mexico, and 2 in Canada. The opening match was at Estadio Azteca in Mexico City, and the final is at MetLife Stadium in East Rutherford, New Jersey on July 19, 2026.",
+      },
+      {
+        question: "How many people will watch the 2026 World Cup?",
+        answer:
+          "FIFA projects roughly 6 billion people will engage with the tournament globally across broadcasts, streaming, and highlights — which would make it the most-watched sporting event in history. In-stadium attendance is projected to exceed 5 million, beating Qatar 2022’s record of 3.4 million.",
+      },
+      {
+        question: "How much do 2026 World Cup tickets cost?",
+        answer:
+          "Official ticket prices have ranged from $60 to $10,990 depending on the match, seat category, and FIFA’s dynamic pricing. After criticism of the pricing model, FIFA released a limited number of $60 tickets for every one of the 104 matches.",
+      },
+      {
+        question: "Who broadcasts the 2026 World Cup in the US?",
+        answer:
+          "FOX and FS1 carry all 104 matches in English, with streaming on the FOX apps. Telemundo (92 matches) and Universo (12 matches) carry the Spanish-language broadcasts, all of which also stream on Peacock.",
+      },
+    ],
+  },
+  {
+    slug: "best-apps-for-following-the-2026-world-cup",
+    title: "The 6 Best Apps for Following the 2026 World Cup (and What Each Is For)",
+    excerpt:
+      "FIFA’s official app, FOX Sports, Peacock/Telemundo, Apple Sports, SofaScore, and Scoutcast.ai — matched to the six jobs a World Cup fan actually has, from streaming all 104 matches to catching up in 2 minutes a day.",
+    date: "2026-06-11",
+    updatedAt: "2026-06-11",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/best-apps-for-following-the-2026-world-cup/og.png",
+    body: [
+      lead(
+        t(
+          "There’s no single best World Cup app — there’s a best app for each job. FOX Sports is how you watch in English (all 104 matches). Peacock with Telemundo is how you watch in Spanish. FIFA’s official app is for schedules and tickets. Apple Sports is the cleanest live scoreboard. SofaScore has the deepest stats. And if your job is “keep me current on a 104-match tournament in two minutes a day,” that’s the slot "
+        ),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" was built for.")
+      ),
+      p(
+        b("Disclosure:"),
+        t(" I co-founded Scoutcast.ai, so one of the six apps here is mine. It’s placed in exactly one slot — the one it actually wins — and I’d genuinely recommend the other five for theirs. Corrections: "),
+        lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
+        t(".")
+      ),
+
+      h2("The six jobs"),
+      p(t("With "), lk("104 matches in 39 days", "/blog/world-cup-2026-by-the-numbers"), t(", a World Cup fan has distinct jobs: watch the matches you can, check scores during the ones you can’t, go deep on stats, navigate the schedule — and, the one most lists skip, stay current on the ninety-plus matches you’ll never see. One app per job:")),
+
+      h2("1. FOX Sports — watching in English"),
+      p(t("FOX and FS1 carry every match of the 2026 World Cup in English, and the FOX apps are where they stream. The opening pair of matches (Mexico–South Africa and USA–Paraguay) even streamed free on Tubi.")),
+      p(b("The catch:"), t(" it’s a broadcaster app — built for watching, with a national highlights feed around it. Fine for matches; not built around your specific teams.")),
+
+      h2("2. Peacock + the Telemundo app — watching in Spanish"),
+      p(t("Telemundo carries 92 matches and Universo the other 12, and every one of the 104 streams on Peacock. The Spanish-language broadcast culture around the World Cup — the call, the passion, the “¡gooool!” — is reason enough for plenty of bilingual fans to default here. The first three days of the tournament streamed free on the Telemundo app.")),
+
+      h2("3. FIFA’s official app — schedule, brackets, and tickets"),
+      p(t("The canonical source for fixtures, kickoff times, group tables, and bracket state, plus ticketing if you’re going in person. Every fan needs it open at least once a day during the group stage just to answer “who plays today?”")),
+      p(b("The catch:"), t(" it’s FIFA’s marketing channel too, and notifications skew promotional. Treat it as a reference, not a feed.")),
+
+      h2("4. Apple Sports — the clean scoreboard"),
+      p(t("Apple’s free scores app does World Cup duty beautifully: pick the teams you care about, get live scores with win probability and lineups, plus lock-screen Live Activities for matches you’re half-following during the workday. No ads, no feed, no rabbit hole. The best “what’s the score?” app on iPhone, period.")),
+
+      h2("5. SofaScore — the stats instrument"),
+      p(t("Player ratings, heat maps, momentum graphs, lineups, and coverage depth that extends to every qualified nation — including debutants like Cape Verde and Curaçao that US-first apps cover thinly. If you’re the person in the group chat explaining "), em("why"), t(" a team is overperforming, this is your app.")),
+      p(b("The catch:"), t(" dense interface, ads on the free tier, and it’s a tool for analysis, not storytelling.")),
+
+      h2("6. Scoutcast.ai — the 2-minute daily catch-up"),
+      p(t("Every app above assumes you’ll come to it and scroll. "), lk("Scoutcast.ai", "https://scoutcast.ai"), t(" inverts that: pick the teams you follow once, and every morning you get a ~2-minute personalized audio briefing — yesterday’s results, what actually mattered, who plays today — that you listen to while making coffee. Tap the mic mid-briefing to ask a follow-up (“so who advances if they draw?”) and it answers and resumes. You can even plug your briefings into Claude or ChatGPT via its MCP connector.")),
+      p(b("The honest trade-offs:"), t(" it’s an audio recap, not a streaming app — you’ll never watch a match in it; and it’s Apple-only (iOS, iPadOS, macOS). It’s free with no ads. For a tournament where "), lk("the average day has more matches than your evening has hours", "/blog/how-to-follow-the-2026-world-cup-when-you-work"), t(", the two-minute format is the point.")),
+
+      h2("Side-by-side"),
+      tbl(
+        [[t("App")], [t("The job")], [t("Typical session")], [t("Price")]],
+        [
+          [[t("FOX Sports")], [t("Watch in English")], [t("90+ min")], [t("TV provider / FOX One")]],
+          [[t("Peacock + Telemundo")], [t("Watch in Spanish")], [t("90+ min")], [t("Peacock subscription")]],
+          [[t("FIFA official app")], [t("Schedule, brackets, tickets")], [t("1–2 min")], [t("Free")]],
+          [[t("Apple Sports")], [t("Live scores")], [t("Seconds")], [t("Free")]],
+          [[t("SofaScore")], [t("Stats depth")], [t("5–15 min")], [t("Free; paid tier")]],
+          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("~2 min")], [t("Free")]],
+        ]
+      ),
+
+      h2("The two-app answer"),
+      p(t("Most working fans need exactly two: a way to watch the matches they’ve chosen (FOX Sports or Peacock) and a finite way to stay current on everything else (a morning briefing plus a glance at Apple Sports). That pairing — and the triage system that goes with it — is laid out in "), lk("how to follow the 2026 World Cup when you have a job", "/blog/how-to-follow-the-2026-world-cup-when-you-work"), t(". For the non-tournament version of this list, see "), lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"), t(".")),
+      p(lk("Download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What is the best app for following the 2026 World Cup?",
+        answer:
+          "It depends on the job: FOX Sports for watching in English (all 104 matches), Peacock with Telemundo for Spanish, FIFA’s official app for schedules and brackets, Apple Sports for clean live scores, SofaScore for deep stats, and Scoutcast.ai for a personalized ~2-minute audio catch-up each morning on the matches you didn’t watch.",
+      },
+      {
+        question: "What app streams every 2026 World Cup match?",
+        answer:
+          "In the US, two: the FOX apps stream all 104 matches in English (FOX and FS1 broadcasts), and Peacock streams all 104 in Spanish via the Telemundo and Universo feeds.",
+      },
+      {
+        question: "Is there a free way to follow the World Cup without cable?",
+        answer:
+          "The opening matches streamed free on Tubi, and the first three days streamed free on the Telemundo app. Beyond that, scores and stats apps (Apple Sports, SofaScore, FIFA’s app) are free, and Scoutcast.ai’s personalized daily audio briefings are free — but live streaming of most matches requires FOX One or a Peacock subscription.",
+      },
+      {
+        question: "How do I keep up with the World Cup if I can’t watch the matches?",
+        answer:
+          "Use a finite catch-up format instead of scrolling: Scoutcast.ai delivers a ~2-minute personalized audio briefing every morning covering your teams’ results, the storylines that mattered, and who plays today, with tap-to-ask voice follow-ups. Pair it with a scores app for live checks during the workday.",
+      },
+      {
+        question: "What’s the best World Cup app with no ads?",
+        answer:
+          "Apple Sports (free live scores, no ads) and Scoutcast.ai (free personalized audio briefings, no ads) are the two ad-free options on this list. SofaScore carries ads on its free tier, and the broadcaster apps are ad-supported by nature.",
+      },
+    ],
+    comparedItems: {
+      name: "World Cup apps compared",
+      items: [
+        { name: "FOX Sports", url: "https://www.foxsports.com/mobile" },
+        { name: "Peacock (Telemundo)", url: "https://www.peacocktv.com" },
+        { name: "FIFA official app", url: "https://www.fifa.com/fifaplus/en/mobile-app" },
+        { name: "Apple Sports", url: "https://www.apple.com/newsroom/2024/02/introducing-apple-sports-a-new-app-for-sports-fans/" },
+        { name: "SofaScore", url: "https://www.sofascore.com" },
         { name: "Scoutcast.ai", url: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329" },
       ],
     },
