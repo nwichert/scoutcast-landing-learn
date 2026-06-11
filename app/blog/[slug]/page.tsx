@@ -28,7 +28,7 @@ export async function generateMetadata({
   if (!post) return {};
   const canonical = `${SITE_URL}/blog/${post.slug}`;
   return {
-    title: `${post.title} · Scoutcast.ai`,
+    title: post.title,
     description: post.excerpt,
     alternates: { canonical },
     openGraph: {
