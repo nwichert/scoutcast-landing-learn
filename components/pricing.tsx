@@ -11,10 +11,10 @@ const FREE_INCLUDES = [
 ]
 
 const UNLIMITED_INCLUDES = [
-    "Unlimited active Scoutcasts",
+    "Follow your NFL team, NBA team, and fantasy leagues in separate daily briefings",
+    "Unlimited active Scoutcasts — no cap on what you track",
+    "Switch between casts anytime, on the fly",
     "Everything in the free plan",
-    "Create and run as many casts as you want",
-    "Switch between casts anytime",
 ]
 
 const FANTASY_INCLUDES = [

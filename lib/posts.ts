@@ -1568,7 +1568,7 @@ export const posts: Post[] = [
     excerpt:
       "104 matches in 39 days, most kicking off between noon and 9 p.m. ET on workdays. A triage system for working fans: pick your ~10 must-watch matches, claim the lunch window, and catch up on everything else in minutes a day.",
     date: "2026-06-11",
-    updatedAt: "2026-06-11",
+    updatedAt: "2026-06-15",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1580,6 +1580,7 @@ export const posts: Post[] = [
         )
       ),
       p(t("This is the World Cup edition of a system I’ve written about before — "), lk("how to keep up with sports when you don’t have time", "/blog/how-to-keep-up-with-sports-when-you-dont-have-time"), t(" — compressed for the most match-dense tournament ever played.")),
+      p(em("Updated June 15, 2026: The group stage is live. We’re four days into a 17-day first round; 56 group-stage matches remain before the knockout rounds begin June 28. The triage system below applies to every remaining day of the tournament.")),
 
       h2("The math you’re up against"),
       p(t("The 2026 tournament is the biggest World Cup in history: 48 teams, 12 groups, and 104 matches — up from 64 in Qatar. The group stage alone packs 72 matches into June 11–27, an average of more than four per day. ("), lk("Full numbers here", "/blog/world-cup-2026-by-the-numbers"), t(".)")),
@@ -1620,6 +1621,7 @@ export const posts: Post[] = [
 
       h2("Step 4: Protect the knockouts"),
       p(t("The group stage is volume; the knockouts are appointment viewing. From the round of 32 (June 28 – July 3) onward, every match is an elimination. Two practical notes. First, the quarterfinals onward (July 9–19) cluster around weekends and evenings — the schedule gets kinder exactly when the stakes get higher. Second, decide your rooting interests for the bracket "), em("before"), t(" your team is eliminated. A neutral fan with a plan watches the final five matches of a World Cup; a deflated fan without one quietly stops.")),
+      p(t("If you're reading this during the group stage: the round of 32 begins June 28 — 13 days from now. Use the rest of the group stage to finalize which of those knockout matches make your must-watch list before the bracket locks.")),
 
       h2("The honest summary"),
       p(t("Ten matches live. One lunch kickoff a week. Two minutes of audio catch-up every morning. That’s a working fan’s World Cup — fully current for five and a half weeks, no 20-minute scroll, no guilt about the 90 matches you didn’t see. If the morning-briefing slot is the piece you’re missing, "), lk("Scoutcast.ai is free on the App Store", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"), t(".")),
@@ -1881,6 +1883,272 @@ export const posts: Post[] = [
         { name: "Scoutcast.ai", url: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329" },
       ],
     },
+  },
+  {
+    slug: "best-world-cup-apps-us-soccer-fans",
+    title: "Best Apps for US Soccer Fans at the 2026 World Cup",
+    excerpt:
+      "The USMNT is playing on home soil for the first time since 1994. Five apps matched to each job a US fan actually has — watching in English, live scores, stats depth, and catching up on 104 matches in two minutes a day.",
+    date: "2026-06-15",
+    updatedAt: "2026-06-15",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "US soccer fans have one home-tournament advantage that comes around once a generation: the matches are in your time zone. The USMNT opened against Paraguay on June 12 at 9 p.m. ET — a Friday-night primetime slot. Here are the five apps to follow them all the way through."
+        )
+      ),
+      p(t("This is the US-focused version of "), lk("the full guide to the best 2026 World Cup apps", "/blog/best-apps-for-following-the-2026-world-cup"), t(". Each app covers one specific job.")),
+
+      h2("1. FOX Sports — watch every USMNT match in English"),
+      p(t("FOX and FS1 carry all 104 matches in English. The FOX Sports app streams every one, and the opening pair of matches streamed free on Tubi. For USMNT games — landing in primetime or near-primetime — this is where you watch.")),
+      p(b("The trade-off:"), t(" it's a broadcaster app built for watching, not for staying current between matches.")),
+
+      h2("2. Apple Sports — live scores without a feed"),
+      p(t("Apple Sports is free, has no ads, and surfaces World Cup scores with win probability, live lineups, and lock-screen Live Activities for matches you're half-following during the workday. US fans on iPhone — which is most US fans — will find this the cleanest score-check on the market.")),
+
+      h2("3. SofaScore — USMNT stats and lineup depth"),
+      p(t("If you want heat maps, detailed xG numbers, or to track a specific player through the tournament, SofaScore has it. It covers every qualified nation in depth, including the matchup analysis the national-TV apps skip.")),
+      p(b("The trade-off:"), t(" dense interface, ads on the free tier.")),
+
+      h2("4. FIFA's official app — schedule and bracket"),
+      p(t("Every US fan needs this for one thing: knowing when the next match is. The FIFA app is the canonical source for fixtures, kickoff times, and bracket state as the tournament moves into the knockouts.")),
+      p(b("The trade-off:"), t(" treat it as a reference, not a feed — notifications skew promotional.")),
+
+      h2("5. Scoutcast.ai — 2-minute morning catch-up on your teams"),
+      p(
+        t("With "),
+        lk("four-plus matches a day during the group stage", "/blog/world-cup-2026-by-the-numbers"),
+        t(", you won't watch most of them. Scoutcast.ai covers the ones you missed: set the USMNT — and any other teams you follow — and every morning you get a ~2-minute personalized audio briefing covering yesterday's results, what mattered, and who plays today, while you make coffee. Tap the mic to ask a follow-up (\"did Pulisic start?\") and it answers and resumes.")
+      ),
+      p(t("Free, no ads, iOS only. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      h2("Quick comparison"),
+      tbl(
+        [[t("App")], [t("Job")], [t("Price")]],
+        [
+          [[t("FOX Sports")], [t("Watch every match in English")], [t("TV provider / FOX One")]],
+          [[t("Apple Sports")], [t("Live scores, no ads")], [t("Free")]],
+          [[t("SofaScore")], [t("USMNT stats depth")], [t("Free; paid tier")]],
+          [[t("FIFA official app")], [t("Schedule and bracket")], [t("Free")]],
+          [[t("Scoutcast.ai")], [t("2-min daily audio catch-up")], [t("Free")]],
+        ]
+      ),
+
+      p(
+        t("For the full six-app breakdown and cord-cutter streaming options, see "),
+        lk("the complete guide to the best 2026 World Cup apps", "/blog/best-apps-for-following-the-2026-world-cup"),
+        t(". For the working-fan triage system, see "),
+        lk("how to follow the World Cup when you have a job", "/blog/how-to-follow-the-2026-world-cup-when-you-work"),
+        t(".")
+      ),
+      p(em("Last updated: June 15, 2026. Updated as the tournament progresses.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What app can I watch the US team on at the 2026 World Cup?",
+        answer:
+          "FOX and FS1 carry every match of the 2026 World Cup in English, including all USMNT games, streaming on the FOX Sports app. The opening matches also streamed free on Tubi. For Spanish-language coverage, Telemundo and Peacock carry all 104 matches.",
+      },
+      {
+        question: "What's the best app for following the USMNT?",
+        answer:
+          "It depends on the job: FOX Sports for watching, Apple Sports for ad-free live scores, SofaScore for player stats and heat maps, FIFA's official app for the fixture schedule, and Scoutcast.ai for a personalized ~2-minute morning audio briefing covering the teams you follow.",
+      },
+      {
+        question: "Can I watch the World Cup for free in the US?",
+        answer:
+          "The opening matches streamed free on Tubi. FOX broadcasts are free with a cable or satellite subscription or live-TV streaming service. Scores and schedule apps (Apple Sports, SofaScore, FIFA app) are free, and Scoutcast.ai's daily audio briefings are free.",
+      },
+      {
+        question: "How do I keep up with USMNT results if I can't watch?",
+        answer:
+          "Scoutcast.ai delivers a ~2-minute personalized audio briefing every morning covering your teams' results and who plays today, with tap-to-ask voice follow-ups. For score checks during the day, Apple Sports has live scores and lock-screen Live Activities with no ads.",
+      },
+    ],
+  },
+  {
+    slug: "best-world-cup-apps-mexico-fans",
+    title: "Best Apps for Mexico Fans at the 2026 World Cup",
+    excerpt:
+      "El Tri opened the 2026 World Cup at Estadio Azteca — the most iconic World Cup venue in history. Five apps for Mexico fans: Spanish-language streaming, live scores, stats, and a two-minute morning briefing on El Tri's run.",
+    date: "2026-06-15",
+    updatedAt: "2026-06-15",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "Mexico opened the 2026 World Cup on June 11 at Estadio Azteca — the most historic World Cup venue on the planet — and will play their group matches across the three Mexican host cities before the knockout bracket begins June 28. Here are the five apps for following El Tri through to July 19."
+        )
+      ),
+      p(t("This is the Mexico-fan version of "), lk("the full guide to the best 2026 World Cup apps", "/blog/best-apps-for-following-the-2026-world-cup"), t(". Each app covers one specific job.")),
+
+      h2("1. Peacock + Telemundo — Spanish-language streaming for all 104 matches"),
+      p(t("Telemundo carries 92 of the 104 matches and Universo the other 12 — all in Spanish, all streaming on Peacock. For Mexico fans who want the Telemundo call and the \"¡Goool!\" the way it was meant to sound, this is the primary pair. The first three days of the tournament streamed free on the Telemundo app; after that a Peacock subscription covers everything.")),
+
+      h2("2. FIFA's official app — El Tri's fixtures and group table"),
+      p(t("Mexico's group matches are spread across Mexico City, Guadalajara, and Monterrey. The FIFA app is the quickest way to find kickoff times, check El Tri's group standing, and track the bracket as the tournament moves into the knockout rounds.")),
+      p(b("Trade-off:"), t(" treat it as a schedule reference, not a news feed.")),
+
+      h2("3. Apple Sports — clean live scoreboard"),
+      p(t("Apple Sports is free, ad-free, and gives you live scorelines, lineups, and win probability at a glance. Add Mexico (and any other teams you follow) and the app surfaces them automatically. Lock-screen Live Activities let you check the score without ever opening an app.")),
+
+      h2("4. Marca or AS — Mexican football journalism in Spanish"),
+      p(t("For match analysis, El Tri squad news, and player profiles, Marca and AS are the most-read Spanish-language football publications covering the team's World Cup run. Both have free apps updated throughout each match day.")),
+
+      h2("5. Scoutcast.ai — 2-minute El Tri catch-up every morning"),
+      p(
+        t("104 matches over 39 days means most end while you're asleep or at work. Scoutcast.ai picks up the ones you missed: set El Tri — and any other teams you follow — and every morning you get a ~2-minute personalized audio briefing covering yesterday's results, what mattered, and who plays today, while you make coffee. Tap the mic for a follow-up and it answers and resumes.")
+      ),
+      p(t("Free, no ads, iOS only. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      h2("Quick comparison"),
+      tbl(
+        [[t("App")], [t("Job")], [t("Price")]],
+        [
+          [[t("Peacock + Telemundo")], [t("Spanish-language streaming (all 104 matches)")], [t("Peacock subscription")]],
+          [[t("FIFA official app")], [t("Schedule, fixtures, group table")], [t("Free")]],
+          [[t("Apple Sports")], [t("Live scores, no ads")], [t("Free")]],
+          [[t("Marca / AS")], [t("Mexican football news in Spanish")], [t("Free")]],
+          [[t("Scoutcast.ai")], [t("2-min morning audio catch-up on El Tri")], [t("Free")]],
+        ]
+      ),
+
+      p(
+        t("For the full six-app breakdown including English-language streaming options, see "),
+        lk("the complete guide to the best 2026 World Cup apps", "/blog/best-apps-for-following-the-2026-world-cup"),
+        t(". For the triage system to stay current on 104 matches without spending your whole day on it, see "),
+        lk("how to follow the World Cup when you have a job", "/blog/how-to-follow-the-2026-world-cup-when-you-work"),
+        t(".")
+      ),
+      p(em("Last updated: June 15, 2026. Updated as the tournament progresses.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "Where can I watch Mexico play in the 2026 World Cup?",
+        answer:
+          "In Spanish: Telemundo (92 matches) and Universo (12 matches), both streaming on Peacock. In English: FOX Sports and FS1, streaming on the FOX apps. The first three days of Telemundo coverage streamed free on the Telemundo app.",
+      },
+      {
+        question: "What app has Spanish-language World Cup coverage?",
+        answer:
+          "The Telemundo app and Peacock carry all 104 matches in Spanish — Telemundo broadcasting 92, Universo the remaining 12. For Spanish-language sports journalism, Marca and AS both have apps with in-depth coverage of El Tri's World Cup run.",
+      },
+      {
+        question: "Where is Mexico playing in the 2026 World Cup?",
+        answer:
+          "Mexico's group matches are in their three host cities: Mexico City (Estadio Azteca), Guadalajara, and Monterrey. Mexico opened the entire 2026 tournament on June 11 at Estadio Azteca.",
+      },
+      {
+        question: "What is the best app for keeping up with El Tri?",
+        answer:
+          "For streaming in Spanish: Peacock with Telemundo. For live scores: Apple Sports. For Spanish football journalism: Marca or AS. For a personalized morning audio catch-up on Mexico's results: Scoutcast.ai (free, iOS).",
+      },
+    ],
+  },
+  {
+    slug: "best-world-cup-apps-england-fans",
+    title: "Best Apps for England Fans at the 2026 World Cup",
+    excerpt:
+      "England are at the 2026 World Cup. Whether you're watching from the UK or the US, these are the five apps for following the Three Lions — free UK streaming, live scores, stats, and a two-minute morning briefing on England's run.",
+    date: "2026-06-15",
+    updatedAt: "2026-06-15",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "England fans have two distinct setups depending on where you're watching from: in the UK, ITV and BBC carry the matches for free; in the US, FOX Sports is the broadcast home. Either way, these five apps cover every job a Three Lions fan has across a 39-day, 104-match tournament."
+        )
+      ),
+      p(t("This is the England-fan version of "), lk("the full guide to the best 2026 World Cup apps", "/blog/best-apps-for-following-the-2026-world-cup"), t(". Each app covers one specific job.")),
+
+      h2("For UK-based England fans"),
+
+      h3("1. ITVX and BBC iPlayer — free live streaming in the UK"),
+      p(t("ITV and BBC share World Cup broadcast rights in the UK, and both stream free via ITVX and BBC iPlayer. This is one of the best deals in international sports broadcasting: England's matches, free, on your phone or TV. No subscription required.")),
+      p(b("Note:"), t(" geo-restricted to UK IP addresses. If you're traveling during the tournament, a VPN or one of the options below will be needed.")),
+
+      h3("2. BBC Sport app — live text, scores, and England squad news"),
+      p(t("The BBC Sport app combines live text commentary, match notifications, and editorial coverage of England's squad in one clean package. It's the best UK-native option for following the team between matches without burning through data.")),
+
+      h2("For US-based England fans"),
+
+      h3("3. FOX Sports — all 104 matches in English"),
+      p(t("FOX and FS1 carry every match of the 2026 World Cup in English in the US, streaming on the FOX Sports app. England fans in the US on cable or a live-TV streaming service will find all their matches here.")),
+
+      h2("For all England fans"),
+
+      h3("4. SofaScore — deep England and Premier League player stats"),
+      p(t("England fans tend to follow individual Premier League players closely even at tournament level — the debate over who should start, who's performing, who's being underused. SofaScore gives you heat maps, player ratings, and detailed stats for every England player across every match, alongside coverage of every other qualified nation.")),
+
+      h3("5. Scoutcast.ai — 2-minute morning catch-up on England"),
+      p(
+        t("With "),
+        lk("most World Cup matches kicking off between noon and 9 p.m. ET", "/blog/how-to-follow-the-2026-world-cup-when-you-work"),
+        t(" — that's 5 p.m. to 2 a.m. UK time — some England matches finish at a reasonable hour for UK fans, others much later. Scoutcast.ai covers the overnight gap: set England (and any other teams you follow) and every morning you get a ~2-minute personalized audio briefing — results, what mattered, who plays today — with tap-to-ask follow-ups.")
+      ),
+      p(t("Free, no ads, iOS only. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      h2("Quick comparison"),
+      tbl(
+        [[t("App")], [t("Who it's for")], [t("Job")], [t("Price")]],
+        [
+          [[t("ITVX + BBC iPlayer")], [t("UK fans")], [t("Free live streaming")], [t("Free")]],
+          [[t("BBC Sport app")], [t("UK fans")], [t("Live text and England news")], [t("Free")]],
+          [[t("FOX Sports")], [t("US-based fans")], [t("Watch every match")], [t("TV subscription")]],
+          [[t("SofaScore")], [t("All fans")], [t("Player stats and heat maps")], [t("Free; paid tier")]],
+          [[t("Scoutcast.ai")], [t("All fans")], [t("2-min daily audio catch-up")], [t("Free")]],
+        ]
+      ),
+
+      p(
+        t("For the full six-app comparison including Spanish-language streaming options, see "),
+        lk("the complete guide to the best 2026 World Cup apps", "/blog/best-apps-for-following-the-2026-world-cup"),
+        t(". For the triage system to stay current without spending your whole day on it, see "),
+        lk("how to follow the World Cup when you have a job", "/blog/how-to-follow-the-2026-world-cup-when-you-work"),
+        t(".")
+      ),
+      p(em("Last updated: June 15, 2026. Updated as the tournament progresses.")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How can I watch England at the World Cup in the UK?",
+        answer:
+          "For free: ITV and BBC share UK broadcast rights, streamed live on ITVX and BBC iPlayer respectively — no subscription needed. The BBC Sport app provides live text commentary and England squad news between matches.",
+      },
+      {
+        question: "How can I watch England at the World Cup in the US?",
+        answer:
+          "FOX and FS1 carry all 104 matches in English in the US, with streaming on the FOX Sports app. All England matches are included. For Spanish-language coverage, Telemundo and Peacock stream all 104 matches.",
+      },
+      {
+        question: "What is the best app for England fans at the World Cup?",
+        answer:
+          "It depends on where you're watching. UK fans: ITVX or BBC iPlayer for free streaming, BBC Sport app for news and live text. US-based fans: FOX Sports for streaming. All fans: SofaScore for player stats and heat maps, and Scoutcast.ai for a free personalized morning audio briefing covering England's results.",
+      },
+      {
+        question: "What time are England's World Cup matches in UK time?",
+        answer:
+          "The 2026 World Cup is hosted in North America, so kickoffs run roughly 5 p.m. to 2 a.m. UK time. The main slots are 5 p.m. (noon ET), 8–9 p.m. (3–4 p.m. ET), 11 p.m. (6 p.m. ET), and 2 a.m. (9 p.m. ET). Check the FIFA app or BBC Sport for England's specific fixture schedule.",
+      },
+      {
+        question: "Is there an app to catch up on England results without scrolling?",
+        answer:
+          "Scoutcast.ai delivers a ~2-minute personalized audio briefing each morning covering the teams you follow — results, what mattered, who plays today — with tap-to-ask voice follow-ups. Free, no ads, iOS.",
+      },
+    ],
   },
 ];
 

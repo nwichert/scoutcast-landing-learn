@@ -8,12 +8,12 @@ const idleBarHeights = [48, 34, 62, 24, 50, 38, 28, 54, 42, 18, 36, 48, 30, 22, 
 const playheadHeight = 108
 
 const voiceChips: { text: string; align: "start" | "end" }[] = [
-    { text: "what’s his stat line?", align: "start" },
-    { text: "more on the trade", align: "end" },
-    { text: "what were his stats last week?", align: "start" },
+    { text: "who scored for the USA?", align: "start" },
+    { text: "what’s the Group B table?", align: "end" },
+    { text: "when does Brazil play next?", align: "start" },
 ]
 
-const ASK_QUESTION = "who are the head coaches being considered to replace Doc?"
+const ASK_QUESTION = "who starts in goal for Portugal tonight?"
 
 type Phase = "idle" | "opening" | "typing" | "submitting" | "closing"
 
@@ -107,11 +107,15 @@ export const PhoneIllustration = () => {
                         {isPaused ? "Paused" : "Now Playing"}
                     </span>
                 </span>
-                <h3 className="text-[26px] font-semibold leading-[1.15] tracking-tight text-foreground">Bucks Daily Brief</h3>
+                <div className="flex items-center gap-2">
+                    <span className="text-base leading-none">🏆</span>
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-foreground/45">FIFA World Cup 2026</span>
+                </div>
+                <h3 className="text-[26px] font-semibold leading-[1.15] tracking-tight text-foreground">USA · Group Stage Brief</h3>
                 <div className="flex items-center gap-2 text-[13px] text-foreground/45">
-                    <span>Monday &middot; April 13</span>
+                    <span>🇺🇸 🇵🇹 🇧🇷 🇫🇷</span>
                     <span className="size-[3px] rounded-full bg-foreground/30" />
-                    <span>4 min</span>
+                    <span>2 min</span>
                 </div>
             </div>
 

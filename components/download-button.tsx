@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 const buttonClass = "inline-flex h-9 items-center gap-2 rounded-lg border border-white/15 bg-white/[0.04] px-3.5 text-sm font-medium text-foreground transition hover:bg-white/[0.08]"
 
-export function DownloadButton({ label = "iPhone", className }: { label?: string; className?: string }) {
+export function DownloadButton({ label = "Download Free", className }: { label?: string; className?: string }) {
     return (
         <>
             <a

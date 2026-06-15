@@ -60,10 +60,10 @@ export default function RootLayout({
           src="https://app.humblytics.com/hmbl.min.js?id=9f5baa3"
           strategy="afterInteractive"
         />
-        {/* Scoutcast site intelligence tracker — set NEXT_PUBLIC_TRACKER_URL to activate */}
+        {/* Scoutcast site intelligence tracker (heatmap + scroll depth) — set NEXT_PUBLIC_TRACKER_URL to activate */}
         {process.env.NEXT_PUBLIC_TRACKER_URL ? (
           <Script id="scoutcast-tracker" strategy="afterInteractive">
-            {`(function(){var T="${process.env.NEXT_PUBLIC_TRACKER_URL}";if(!T)return;function s(p){try{if(navigator.sendBeacon){navigator.sendBeacon(T+"/track",new Blob([JSON.stringify(p)],{type:"application/json"}))}else{fetch(T+"/track",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(p),keepalive:true}).catch(function(){})}}catch(e){}}s({event:"pageview",url:location.href,referrer:document.referrer||void 0,ts:Date.now()});document.addEventListener("click",function(e){var el=e.target;while(el&&el.tagName!=="A"&&el.tagName!=="BUTTON"){el=el.parentElement;}if(!el)return;s({event:"click",url:location.href,label:el.innerText?el.innerText.trim().slice(0,100):void 0,href:el.href||void 0,ts:Date.now()});},{passive:true});})();`}
+            {`(function(){var T="${process.env.NEXT_PUBLIC_TRACKER_URL}";if(!T)return;function s(p){try{var b=JSON.stringify(p);if(navigator.sendBeacon){navigator.sendBeacon(T+"/track",new Blob([b],{type:"application/json"}))}else{fetch(T+"/track",{method:"POST",headers:{"Content-Type":"application/json"},body:b,keepalive:true}).catch(function(){})}}catch(e){}}s({event:"pageview",url:location.href,referrer:document.referrer||void 0,ts:Date.now()});document.addEventListener("click",function(e){var x=Math.round(e.clientX/window.innerWidth*100),y=Math.round(e.clientY/window.innerHeight*100),el=e.target;while(el&&el.tagName!=="A"&&el.tagName!=="BUTTON"){el=el.parentElement;}s({event:"click",url:location.href,x:x,y:y,label:el&&el.innerText?el.innerText.trim().slice(0,100):void 0,href:el&&el.href?el.href:void 0,ts:Date.now()});},{passive:true});var df={};window.addEventListener("scroll",function(){var el=document.documentElement,pct=Math.round((el.scrollTop+window.innerHeight)/el.scrollHeight*100);[25,50,75,100].forEach(function(m){if(pct>=m&&!df[m]){df[m]=1;s({event:"scroll",url:location.href,depth:m,ts:Date.now()});}});},{passive:true});})();`}
           </Script>
         ) : null}
       </body>

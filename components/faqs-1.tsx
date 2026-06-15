@@ -11,6 +11,16 @@ const faqGroups: FaqGroup[] = [
         group: "Product",
         items: [
             {
+                id: "free",
+                question: "Do I need to pay to try Scoutcast?",
+                answer: "No. Scoutcast is free with one active cast — no credit card, no trial period. Just download and set up your first briefing tonight; it drops tomorrow morning. Upgrade to Unlimited whenever you want to run more than one cast at a time.",
+            },
+            {
+                id: "vs-espn",
+                question: "How is this different from checking ESPN or theScore?",
+                answer: "ESPN and theScore show you everything — you scroll until you find what matters. Scoutcast flips that: you tell it your teams and players once, and every morning it delivers a ~2-minute audio brief covering only those. No feed to scroll, no scores from sports you don't follow, no ads. Tap Ask if you want to dig deeper on anything.",
+            },
+            {
                 id: "personalize",
                 question: "How does Scoutcast personalize my briefings?",
                 answer: "Pick your teams, sports, and preferred X writers. Scoutcast learns what you care about over time — focusing on the players, stats, and storylines you actually listen to, and skipping the rest.",
@@ -24,6 +34,11 @@ const faqGroups: FaqGroup[] = [
                 id: "leagues",
                 question: "Which sports and leagues does Scoutcast cover?",
                 answer: "NFL, NBA, MLB, NHL, MLS, Premier League, Champions League, PGA Tour, and more. New leagues are added based on listener demand.",
+            },
+            {
+                id: "android",
+                question: "Does Scoutcast work on Android?",
+                answer: "Not yet. Scoutcast is currently available for iPhone, iPad, and Mac. Android is coming soon.",
             },
         ],
     },
