@@ -8,6 +8,7 @@ const navLinks = [
     { label: "Terms of Service", href: "/terms" },
     { label: "Delete Account", href: "/delete-account" },
     { label: "Copyright Dispute Policy", href: "/copyright" },
+    { label: "Unsubscribe", href: "/unsubscribe" },
 ]
 
 export default function Footer({ variant = "dark" }: { variant?: "dark" | "light" }) {

@@ -21,6 +21,7 @@ const navLinks: NavLink[] = [
     { name: 'Compare', href: '#compare' },
     { name: 'FAQ', href: '#faq' },
     { name: 'NFL Fantasy', href: '/fantasy' },
+    { name: 'Schedules', href: '/schedules' },
     { name: 'MCP Access', href: '/mcp' },
     { name: 'Blog', href: '/blog' },
 ]

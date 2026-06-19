@@ -11,6 +11,7 @@
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { posts } from "../lib/posts.ts";
+import { EVENTS } from "../lib/events.ts";
 
 const SITE = "https://scoutcast.ai";
 
@@ -25,7 +26,9 @@ const STATIC_ROUTES = [
   "/listen/",
   "/mcp/",
   "/privacy/",
+  "/schedules/",
   "/terms/",
+  "/unsubscribe/",
 ];
 
 const sitemapPath = new URL("../public/sitemap.xml", import.meta.url);
@@ -57,6 +60,12 @@ for (const route of STATIC_ROUTES) {
 }
 for (const p of sortedPosts) {
   entries.push({ loc: `${SITE}/blog/${p.slug}/`, lastmod: p.updatedAt ?? p.date });
+}
+// Schedule event detail pages — no per-event source date, so preserve a
+// recorded lastmod if we have one, else fall back to the newest post date.
+for (const e of EVENTS) {
+  const loc = `${SITE}/schedules/${e.slug}/`;
+  entries.push({ loc, lastmod: existingLastmod.get(loc) ?? newestPostDate });
 }
 
 const sitemapXml =
