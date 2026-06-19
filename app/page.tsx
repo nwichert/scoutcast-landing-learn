@@ -206,11 +206,11 @@ export default function Home() {
       <FAQs />
       <div className="dark bg-background pb-2 text-center text-sm">
         <Link
-          href="/blog/why-we-built-scoutcast/"
+          href="/blog/best-apps-for-following-the-2026-world-cup/"
           className="text-foreground/55 hover:text-foreground"
         >
           Latest from the blog:{" "}
-          <span className="text-foreground/85">Why we built Scoutcast.ai</span>{" "}
+          <span className="text-foreground/85">Best Apps for Following the 2026 World Cup</span>{" "}
           →
         </Link>
       </div>

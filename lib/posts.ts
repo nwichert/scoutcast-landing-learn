@@ -175,7 +175,7 @@ export const posts: Post[] = [
     excerpt:
       "An honest comparison of the three best AI audio briefing apps in 2026 — what each one is good at, where each one falls short, and which to pick based on what you actually care about.",
     date: "2026-05-07",
-    updatedAt: "2026-05-07",
+    updatedAt: "2026-06-16",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -191,6 +191,17 @@ export const posts: Post[] = [
         t(" I’m a co-founder of Scoutcast.ai. I’ve tried to write this comparison the same way I’d want a competitor to write one about my product. If anything here is wrong about Huxe or BriefingAM, email me at "),
         lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
         t(" and I’ll fix it — and credit you in the changelog at the bottom.")
+      ),
+
+      h2("How to choose an AI audio briefing app"),
+      p(t("Before comparing specific apps, here are the six axes that actually differentiate this category. Run through them once and the decision matrix at the bottom of this post will be obvious.")),
+      ul(
+        [b("1. Platform."), t(" Huxe is the only one that runs on Android. Scoutcast.ai and BriefingAM are Apple-only (iOS, iPadOS, macOS — BriefingAM also covers visionOS). If you're on Android, the choice is made for you.")],
+        [b("2. What you want briefed."), t(" Scoutcast is sports-first — with team, player, and beat-writer granularity. BriefingAM is general-purpose with sports as a secondary tab. Huxe is general-purpose with a live topic-station layer on top. Trying to use Scoutcast as a news briefing, or Huxe as a fantasy football tool, will both disappoint.")],
+        [b("3. Format length."), t(" Scoutcast delivers ~2-minute briefings; Huxe runs ~5 minutes. If your morning window is tight, that gap matters.")],
+        [b("4. Interactivity."), t(" Scoutcast (tap-to-ask) and Huxe (tap-and-hold) both let you interrupt mid-briefing to ask follow-up questions. BriefingAM is listen-only.")],
+        [b("5. Integrations."), t(" If you live inside an AI assistant (Claude, ChatGPT, Gemini), only Scoutcast has an MCP connector. If you want a briefing that pulls your calendar and email, Huxe and BriefingAM both do that — Scoutcast doesn't.")],
+        [b("6. Output quality."), t(" Voice naturalness, summarization accuracy, source transparency, and behavior on a slow-news day vary. The best test is to install all three free tiers and listen on the same morning.")],
       ),
 
       h2("What is an AI audio briefing app?"),
@@ -263,6 +274,18 @@ export const posts: Post[] = [
       p(t("Of every row in the comparison table, the one that no other product matches is the "), b("MCP connector"), t(" — Settings → MCP Connector inside Scoutcast gives you a server URL you can paste into Claude, ChatGPT, Gemini CLI, or any other MCP-compatible client. From there you can ask the AI directly about your briefings, your teams, and your roster, and have it pipe that context into whatever else you’re working on.")),
       p(t("If you live inside an AI assistant during the day, this is the row that matters. None of the general-purpose briefing apps advertises an MCP server.")),
 
+      h2("Pricing, clearly"),
+      p(t("All three apps have free tiers. Here's what you get at each level:")),
+      tbl(
+        [[t("")], [t("Free tier includes")], [t("Paid tier")], [t("Paid price")]],
+        [
+          [[t("Scoutcast.ai")], [t("Full app — all leagues, teams, beat-writer sources, MCP connector, tap-to-ask, no ads")], [t("NFL Fantasy Season Pass")], [t("$49.99/season")]],
+          [[t("Huxe")], [t("Everything — Huxe has no paid tier as of this writing")], [t("—")], [t("Free")]],
+          [[t("BriefingAM")], [t("Core briefing (news, weather, calendar, sports)")], [t("Premium features")], [t("See current App Store listing")]],
+        ]
+      ),
+      p(t("The only upsell in this field is Scoutcast's Fantasy Season Pass, which is sports-specific. If fantasy football isn't your use case, all three apps are effectively free.")),
+
       h2("Decision matrix — which one should you pick?"),
       tbl(
         [[t("If you…")], [t("Pick")]],
@@ -277,6 +300,15 @@ export const posts: Post[] = [
           [[t("Want to track an arbitrary topic on demand (a company, a portfolio, a school district)")], [t("Huxe (Live Stations)")]],
           [[t("Want the longest briefing")], [t("Huxe (~5 min)")]],
           [[t("Want the shortest briefing")], [t("Scoutcast.ai (~2 min)")]],
+        ]
+      ),
+
+      h2("Also considered — and why not in the main three"),
+      p(t("One adjacent product worth knowing about:")),
+      tbl(
+        [[t("App")], [t("What it is")], [t("Why excluded")]],
+        [
+          [[t("NotebookLM Audio Overviews")], [t("Google's tool for generating podcast-style audio discussions of documents you upload")], [t("Not a briefing app — a research tool. No daily schedule, no ongoing personalization, no sports or calendar awareness. Excellent for going deep on a document; not designed for a morning briefing.")]],
         ]
       ),
 
@@ -303,7 +335,7 @@ export const posts: Post[] = [
       p(t("I’m Nick, co-founder of Scoutcast.ai. I tried to write this comparison the way I’d want a competitor to write one about us. If anything here is wrong about Huxe or BriefingAM, email me at "), lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"), t(" and I’ll fix it — and credit you in the changelog below.")),
 
       h2("Changelog"),
-      p(em("No corrections logged yet. When something here changes, the date and the change will appear here.")),
+      p(em("June 16, 2026 — Added: buyer's guide intro (\"How to choose\"), pricing table, \"also considered\" section (NotebookLM Audio Overviews), and two new FAQ entries. No changes to the three-app comparison or win/loss assessments.")),
 
       hr(),
     ],
@@ -347,6 +379,16 @@ export const posts: Post[] = [
         question: "Do any of these apps work with Claude or ChatGPT?",
         answer:
           "Only Scoutcast.ai. Inside the app, Settings → MCP Connector gives you a server URL you can add to Claude, ChatGPT, Gemini CLI, or any other MCP-compatible client. Neither Huxe nor BriefingAM advertises an MCP connector.",
+      },
+      {
+        question: "What should I look for in an AI audio briefing app?",
+        answer:
+          "Six things: (1) platform — Huxe is the only one on Android; (2) primary content — sports-first, general, or both; (3) format length — ~2 minutes (Scoutcast) vs ~5 minutes (Huxe); (4) interactivity — Scoutcast and Huxe both allow mid-briefing questions, BriefingAM doesn't; (5) integrations — email/calendar (Huxe, BriefingAM) or MCP for AI assistants (Scoutcast only); (6) output quality — the only real way to judge is to run all three free tiers on the same morning.",
+      },
+      {
+        question: "Is NotebookLM Audio Overviews a competitor to these apps?",
+        answer:
+          "Adjacent, not a direct competitor. Google's NotebookLM Audio Overviews generates a podcast-style discussion of documents you upload — excellent for going deep on a research topic. It is not a daily personalized briefing: there's no schedule, no sports scores, no calendar awareness, and no ongoing personalization. The use cases don't overlap much.",
       },
     ],
     comparedItems: {
@@ -1054,11 +1096,11 @@ export const posts: Post[] = [
   },
   {
     slug: "best-sports-news-apps",
-    title: "The 7 Best Sports News Apps in 2026 (and What Each Is Actually For)",
+    title: "Best Sports News Apps in 2026 (No-Ad Picks Included)",
     excerpt:
-      "ESPN, theScore, Apple Sports, SofaScore, Yahoo Sports, The Athletic, and Scoutcast.ai — compared honestly by the job each one is actually best at, from live highlights to a 2-minute morning catch-up.",
+      "Seven sports news apps compared by job — and two are completely ad-free. From live highlights to a 2-minute morning audio catch-up, updated for 2026.",
     date: "2026-06-11",
-    updatedAt: "2026-06-11",
+    updatedAt: "2026-06-18",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1077,6 +1119,7 @@ export const posts: Post[] = [
         lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
         t(" and I’ll fix it.")
       ),
+      p(t("Two of the seven apps on this list are completely ad-free in their free tier: Apple Sports and Scoutcast.ai. If that is your main filter, those two sections are the ones to read first.")),
 
       h2("How this list is judged"),
       p(t("Most “best sports apps” lists rank the same five apps by install count. That’s not useful, because the apps aren’t competing at the same job. This list judges each app on four things:")),
@@ -1108,7 +1151,7 @@ export const posts: Post[] = [
       p(t("theScore does one thing with real focus: fast scores and granular notifications. You can follow specific teams and players and tune alerts down to events like a player’s touchdown or a close game in the fourth quarter. For game-day monitoring while you do something else, it’s the best of the bunch.")),
       p(t("The trade-off: theScore is owned by a sports-betting company, and odds and betting promos are woven through the experience. If you don’t bet, you’ll be stepping around it.")),
 
-      h2("3. Apple Sports — best free minimal scoreboard"),
+      h2("3. Apple Sports — best free scoreboard, no ads"),
       p(t("Apple Sports is Apple’s own free scores app: pick your leagues and teams, get a fast scoreboard with live win probability and lineups, no ads, no news feed, no video. Live Activities on the lock screen are excellent. It’s the cleanest way to check a score on an iPhone, period.")),
       p(t("The trade-off is that minimal is the whole product. There’s no news, no analysis, no audio — it answers “what’s the score?” and nothing else.")),
 
@@ -1154,6 +1197,14 @@ export const posts: Post[] = [
         ]
       ),
 
+      h2("Sports news apps with no ads"),
+      p(t("Of the seven apps above, only two are free and ad-free:")),
+      ul(
+        [b("Apple Sports"), t(" — no ads, no news feed, just live scores and standings. Trade-off: Apple-only and minimal by design.")],
+        [b("Scoutcast.ai"), t(" — no ads, personalized 2-minute audio briefing every morning. Trade-off: Apple-only, morning recap rather than live scores.")],
+      ),
+      p(t("Every other free option carries some ad load. ESPN and Yahoo Sports are the heaviest. SofaScore runs display ads on free accounts. theScore is lighter on banners but saturated with betting promos since it is owned by a gaming company. The Athletic has no ads because it is a paid subscription, not a free tier.")),
+
       h2("Which should you pick?"),
       p(t("Stack them by how much time you actually have:")),
       ul(
@@ -1162,7 +1213,7 @@ export const posts: Post[] = [
         [t("If you follow non-US leagues or love stats: "), b("SofaScore"), t(".")],
         [t("If your morning sports window is two minutes between the alarm and the door: "), b("Scoutcast.ai"), t(".")],
       ),
-      p(t("Most of these are free, so the honest move is to try the two that match your job. (Following the tournament this summer? There’s a "), lk("World Cup-specific version of this list", "/blog/best-apps-for-following-the-2026-world-cup"), t(".) If the 2-minute briefing is your slot: "),
+      p(t("Most of these are free, so the honest move is to try the two that match your job. (Following the tournament this summer? There’s a "), lk("World Cup-specific version of this list", "/blog/best-apps-for-following-the-2026-world-cup"), t(".) For an NBA-only breakdown, see "), lk("the best free NBA news apps in 2026", "/blog/best-free-nba-news-apps-2026"), t(". If the 2-minute briefing is your slot: "),
         lk("download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
       hr(),
@@ -1208,6 +1259,279 @@ export const posts: Post[] = [
         { name: "SofaScore", url: "https://www.sofascore.com" },
         { name: "Yahoo Sports", url: "https://sports.yahoo.com" },
         { name: "The Athletic", url: "https://www.nytimes.com/athletic/" },
+        { name: "Scoutcast.ai", url: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329" },
+      ],
+    },
+  },
+  {
+    slug: "best-free-nba-news-apps-2026",
+    title: "Best Free NBA News Apps in 2026",
+    excerpt:
+      "Seven free NBA news apps compared by job: highlights, score alerts, a clean scoreboard, or a 2-minute personalized audio catch-up. Two have no ads at all.",
+    date: "2026-06-18",
+    updatedAt: "2026-06-18",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/best-free-nba-news-apps-2026/og.png",
+    body: [
+      lead(
+        t(
+          "The best free NBA news app depends on the job. ESPN is best for highlights. theScore is best for score alerts. Apple Sports is the best free scoreboard with no ads. Yahoo Sports is best if your fantasy league lives there. The NBA App is best for official content. Bleacher Report is best for short-form news. And if your job is to stay current on the NBA in two minutes, hands-free, with no ads, that slot is what "
+        ),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" was built for.")
+      ),
+      p(
+        b("Disclosure:"),
+        t(" I co-founded Scoutcast.ai, which is on this list. It's placed in exactly one slot — the one it actually wins — and I've tried to be as straight about the others as I'd want them to be about us. Corrections: "),
+        lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
+        t(".")
+      ),
+
+      h2("The TL;DR — pick by job"),
+      ul(
+        [b("ESPN"), t(" — highlights, live streaming (ESPN+), one-app convenience")],
+        [b("theScore"), t(" — granular NBA score alerts and the best notification controls")],
+        [b("Apple Sports"), t(" — free, no ads, clean NBA scoreboard on iPhone")],
+        [b("Yahoo Sports"), t(" — NBA news plus fantasy if your league is on Yahoo")],
+        [b("NBA App"), t(" — official content, official stats, League Pass gateway")],
+        [b("Bleacher Report"), t(" — fast NBA news and short-form video")],
+        [b("Scoutcast.ai"), t(" — free, no ads, personalized 2-minute NBA audio briefing every morning")],
+      ),
+
+      h2("Side-by-side comparison"),
+      tbl(
+        [
+          [t("App")],
+          [t("Best for")],
+          [t("Ads?")],
+          [t("Personalized to your teams?")],
+          [t("Free tier")],
+          [t("Platforms")],
+        ],
+        [
+          [[t("ESPN")], [t("Highlights + browsing")], [t("Heavy")], [t("Partial — favorites in a national feed")], [t("Full access")], [t("iOS, Android, web")]],
+          [[t("theScore")], [t("Score alerts")], [t("Heavy (betting promos)")], [t("Yes — teams and players")], [t("Full access")], [t("iOS, Android")]],
+          [[t("Apple Sports")], [t("Clean scoreboard")], [b("None")], [t("Yes — teams")], [t("Full access")], [t("iOS, iPadOS, macOS only")]],
+          [[t("Yahoo Sports")], [t("News + Yahoo fantasy")], [t("Heavy")], [t("Partial")], [t("Full access")], [t("iOS, Android, web")]],
+          [[t("NBA App")], [t("Official content + League Pass")], [t("Moderate")], [t("Yes — teams")], [t("Free; League Pass is paid")], [t("iOS, Android, web")]],
+          [[t("Bleacher Report")], [t("Fast news + short-form video")], [t("Moderate")], [t("Yes — teams")], [t("Full access")], [t("iOS, Android")]],
+          [[t("Scoutcast.ai")], [t("2-min audio briefing")], [b("None")], [t("Yes — teams, players, and your chosen beat writers")], [t("Full access")], [t("iOS, iPadOS, macOS only")]],
+        ]
+      ),
+
+      h2("1. ESPN — best for NBA highlights and browsing"),
+      p(t("ESPN covers the NBA more broadly than any other free app on this list: scores, news, highlights, live streaming via ESPN+, and fantasy all in one place. If you have 15 minutes to browse and want video, it's the strongest all-rounder.")),
+      p(t("The trade-off: ESPN's feed is national, not personalized. NBA headlines lead with the league's biggest stories, autoplay video and ads are everywhere, and the app is optimized for long sessions. If you've ever opened ESPN to check a score and surfaced 20 minutes later, that's by design. For alternatives to that pattern, see "),
+        lk("ESPN app alternatives for fans tired of doomscrolling", "/blog/espn-app-alternatives"),
+        t(".")),
+
+      h2("2. theScore — best for NBA score alerts"),
+      p(t("theScore's strongest feature is its notification controls. You can follow specific NBA teams and players and tune alerts to events like a player's first basket, a close fourth quarter, or a game going to overtime — not just game start and final score. For passive monitoring during the workday, it's the most configurable option on this list.")),
+      p(t("The trade-off: theScore is owned by a sports-betting company (PENN Entertainment), and betting odds and promos are embedded throughout the app. If you don't bet, you'll be navigating around it constantly.")),
+
+      h2("3. Apple Sports — best free NBA scoreboard, no ads"),
+      p(t("Apple Sports is Apple's own free scores app. Pick your NBA teams and it surfaces live scores, win probability, box scores, and play-by-play with no ads, no feed to scroll, and no video. Lock-screen Live Activities show real-time scores without unlocking your phone.")),
+      p(t("The trade-off: minimal is the whole product. It answers 'what's the score?' and nothing else. No news, no analysis, no audio. iOS, iPadOS, and macOS only — no Android version.")),
+
+      h2("4. Yahoo Sports — best if your fantasy league is on Yahoo"),
+      p(t("Yahoo Sports is a solid NBA news and scores app that becomes the right answer specifically when your fantasy basketball league runs on Yahoo Fantasy — roster moves, player news, and matchup data integrate cleanly. If your league isn't on Yahoo, it's a heavier app than the job requires.")),
+      p(t("The trade-off: national feed, heavy ads, and less NBA depth than ESPN without ESPN's video quality.")),
+
+      h2("5. NBA App — best for official NBA content"),
+      p(t("The official NBA app is the authoritative source for standings, schedules, and official stats. League Pass subscribers can watch every out-of-market game here. For non-subscribers, the free tier includes official NBA content — press conferences, team social feeds, highlight packages — that third-party apps don't have access to.")),
+      p(t("The trade-off: if you follow teams across multiple sports, the NBA App covers nothing outside basketball. League Pass is a paid subscription layered on top of the free news-and-scores tier.")),
+
+      h2("6. Bleacher Report — best for fast NBA news"),
+      p(t("Bleacher Report (part of Warner Bros. Discovery's sports portfolio) is optimized for quick-hit NBA coverage: breaking news cards, highlight clips, and short takes. Its breaking-news alerts are fast and the format is easy to scan in under a minute.")),
+      p(t("The trade-off: heavier on takes and entertainment than on depth. For beat-writer analysis or tactical context, The Athletic is the better (paid) option.")),
+
+      h2("7. Scoutcast.ai — best free NBA briefing, no ads"),
+      p(
+        t("Every app above assumes you come to it and scroll. "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" inverts that: you pick your NBA teams and players once — and optionally add the X handles of beat writers you trust — and every morning you get a personalized ~2-minute audio briefing covering last night's scores, what actually mattered, injury news, and what's coming up. You listen while making coffee. No screen, no scroll, no ads.")
+      ),
+      p(t("Two things others on this list don't do: you can "), b("tap Ask mid-briefing"), t(" to voice a follow-up ("), em("what's Giannis's stat line?"), t(") and get an instant audio answer; and it has an "), b("MCP connector"), t(" so you can query your briefings from Claude or ChatGPT.")),
+      p(t("The honest trade-offs: it's a morning recap, not live play-by-play. Apple-only (iOS, iPadOS, macOS). No scoreboard or highlights. Free with no ads. For the broader sports-news comparison beyond NBA, see "), lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"), t(".")),
+
+      h2("The two no-ad options"),
+      p(t("Of the seven apps above, only two carry zero ads in their free tier: "), b("Apple Sports"), t(" and "), b("Scoutcast.ai"), t(". They cover different jobs — Apple Sports is your real-time score check, Scoutcast.ai is your morning audio catch-up — and they complement each other well.")),
+      p(t("Every other free option carries ad load. ESPN and Yahoo Sports are the heaviest. The NBA App and Bleacher Report are moderate. theScore is lighter on display ads but saturated with betting promos.")),
+
+      h2("Which free NBA app should you pick?"),
+      ul(
+        [t("Need highlights and video: "), b("ESPN")],
+        [t("Need granular score alerts: "), b("theScore"), t(" (or "), b("Apple Sports"), t(" if betting promos bother you)")],
+        [t("Want a zero-ads clean scoreboard: "), b("Apple Sports")],
+        [t("Your fantasy basketball league is on Yahoo: "), b("Yahoo Sports")],
+        [t("Want official NBA content and stats: "), b("NBA App")],
+        [t("Want fast NBA breaking news: "), b("Bleacher Report")],
+        [t("Want a 2-minute NBA audio brief every morning, free, no ads: "), b("Scoutcast.ai")],
+      ),
+      p(t("For the NBA Draft specifically, see "), lk("how to follow the 2026 NBA Draft", "/blog/nba-draft-2026"), t(" — including a results section updated after draft night.")),
+      p(lk("Download Scoutcast.ai on the App Store ->", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What's the best free NBA news app in 2026?",
+        answer:
+          "It depends on the job. ESPN is best for highlights and browsing everything. theScore is best for score alerts. Apple Sports is the best free no-ads scoreboard. Yahoo Sports is best if your fantasy league is on Yahoo. The NBA App is best for official content and stats. Bleacher Report is best for fast news. And Scoutcast.ai is best for a free, ad-free 2-minute personalized audio briefing on your NBA teams each morning.",
+      },
+      {
+        question: "Is there a free NBA app with no ads?",
+        answer:
+          "Two: Apple Sports (free live NBA scores, no ads, iOS and macOS only) and Scoutcast.ai (free personalized NBA audio briefings, no ads, iOS and macOS only). Every other major free NBA app -- ESPN, theScore, Yahoo Sports, the NBA App, and Bleacher Report -- carries ad load in their free tier. theScore also includes betting promos.",
+      },
+      {
+        question: "What is the best free NBA score alert app?",
+        answer:
+          "theScore has the most granular NBA notification controls of any free app -- you can set alerts for specific teams and players, tuned to events like overtime or a player's first basket. Apple Sports is the best alternative if you want real-time scores without betting promos.",
+      },
+      {
+        question: "What's the best NBA app with no paywall?",
+        answer:
+          "All seven apps on this list give full free access to their core NBA news and scores. ESPN, theScore, Apple Sports, Yahoo Sports, the NBA App, Bleacher Report, and Scoutcast.ai are all free with no article paywall. The NBA App's League Pass is the one paid tier -- that covers live game streaming, not the news-and-scores layer, which is free.",
+      },
+      {
+        question: "Is Scoutcast.ai a good app for NBA fans?",
+        answer:
+          "Yes, for one specific job: a personalized morning audio briefing. You pick your NBA teams and players, optionally add beat-writer X handles as sources, and every morning get a 2-minute audio rundown covering last night's results and what matters today. Free, no ads, tap-to-ask voice follow-ups. The trade-off: audio-only, Apple-only, morning recap rather than live play-by-play.",
+      },
+    ],
+    comparedItems: {
+      name: "Best free NBA news apps compared",
+      items: [
+        { name: "ESPN", url: "https://www.espn.com/espn/apps/espn" },
+        { name: "theScore", url: "https://www.thescore.com" },
+        { name: "Apple Sports", url: "https://www.apple.com/newsroom/2024/02/introducing-apple-sports-a-new-app-for-sports-fans/" },
+        { name: "Yahoo Sports", url: "https://sports.yahoo.com" },
+        { name: "NBA App", url: "https://www.nba.com/watch/nba-app" },
+        { name: "Bleacher Report", url: "https://bleacherreport.com" },
+        { name: "Scoutcast.ai", url: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329" },
+      ],
+    },
+  },
+  {
+    slug: "nba-draft-2026",
+    title: "How to Follow the 2026 NBA Draft",
+    excerpt:
+      "2026 NBA Draft: how to follow live, get pick alerts, or catch up in 2 minutes the next morning. Results by team updated after draft night.",
+    date: "2026-06-19",
+    updatedAt: "2026-06-19",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    ogImage: "/blog/nba-draft-2026/og.png",
+    body: [
+      lead(
+        t("You do not need to watch three or four hours of ESPN to know what your teams did in the 2026 NBA Draft. There are three ways to follow: stream it live, set pick-by-pick alerts on your phone, or get a personalized audio recap of your teams' picks the next morning. Here is how each works and which app does each job best.")
+      ),
+
+      h2("When is the 2026 NBA Draft?"),
+      p(
+        t("The 2026 NBA Draft is in late June. Round 1 and Round 2 both air the same night on ESPN and ABC. Check "),
+        lk("nba.com/draft", "https://www.nba.com/draft"),
+        t(" for the confirmed date and start time.")
+      ),
+      tbl(
+        [[t("Detail")], [t("Info")]],
+        [
+          [[t("Networks")], [t("ESPN and ABC")]],
+          [[t("Streaming")], [t("ESPN app (TV login required)")]],
+          [[t("Round 1")], [t("Picks 1-30")]],
+          [[t("Round 2")], [t("Picks 31-60, same night")]],
+          [[t("Total picks")], [t("60")]],
+        ]
+      ),
+
+      h2("How to follow the 2026 NBA Draft"),
+      p(t("Three modes, depending on how much time you have:")),
+      ul(
+        [b("Watch live."), t(" ESPN app or ABC. The only option with real-time commentary, prospect interviews, and picks announced on stage. Requires a TV provider login to stream.")],
+        [b("Pick-by-pick push alerts."), t(" theScore and the official NBA app both send a push notification the moment each pick is made. Set your teams in either app before draft night and your lock screen covers it in real time. No commentary, just the pick.")],
+        [b("Next-morning audio recap."), t(" If draft night is not an option, "), lk("Scoutcast.ai", "https://scoutcast.ai"), t(" generates a personalized 2-minute audio briefing covering your teams' picks, what analysts said about each selection, and what the moves mean for next season. Free, no ads.")],
+      ),
+
+      h2("Best apps for draft-night alerts and catch-up"),
+      tbl(
+        [
+          [t("App")],
+          [t("Best for")],
+          [t("Live streaming")],
+          [t("Per-pick push alerts")],
+          [t("Morning recap")],
+          [t("Free")],
+        ],
+        [
+          [[t("ESPN app")], [t("Watching live")], [t("Yes (TV login)")], [t("Yes")], [t("No")], [t("Free w/ TV login")]],
+          [[t("theScore")], [t("Lock-screen pick alerts")], [t("No")], [t("Yes")], [t("No")], [t("Free")]],
+          [[t("NBA app")], [t("Official clips and picks")], [t("No")], [t("Yes")], [t("No")], [t("Free")]],
+          [[t("Scoutcast.ai")], [t("Morning audio recap")], [t("No")], [t("No")], [t("Yes (2 min, no ads)")], [t("Free")]],
+        ]
+      ),
+
+      h2("2026 NBA Draft results"),
+      p(
+        t("This section will be updated the morning after the draft with full pick-by-pick results. To get results delivered to you automatically, set up "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" with your NBA teams now — the next morning briefing after the draft will cover every pick your teams made, analyst reaction, and what the selections mean for the roster.")
+      ),
+      p(t("Coming after draft night:")),
+      ul(
+        [t("First-round results, picks 1-30")],
+        [t("Second-round results, picks 31-60")],
+        [t("Team-by-team breakdown")],
+        [t("Notable trades and draft-night moves")],
+      ),
+
+      h2("What to do if you miss the draft"),
+      p(
+        t("Open "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" the morning after. Pick your NBA teams once, and the briefing covers what each team did — picks, analyst takes, and roster implications — in about two minutes. No scrolling, no autoplay, no ads. For the full breakdown of NBA apps beyond draft season, see "),
+        lk("the best free NBA news apps in 2026", "/blog/best-free-nba-news-apps-2026"),
+        t(".")
+      ),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "When is the 2026 NBA Draft?",
+        answer:
+          "The 2026 NBA Draft is in late June 2026. Round 1 and Round 2 both air the same night on ESPN and ABC. Check nba.com/draft for the confirmed date and start time.",
+      },
+      {
+        question: "What channel is the 2026 NBA Draft on?",
+        answer:
+          "The 2026 NBA Draft airs on ESPN and ABC. You can stream it on the ESPN app with a TV provider login.",
+      },
+      {
+        question: "How many picks are in the 2026 NBA Draft?",
+        answer:
+          "The 2026 NBA Draft has 60 total picks: 30 in the first round and 30 in the second round. Both rounds air the same night.",
+      },
+      {
+        question: "How can I get 2026 NBA Draft results without watching live?",
+        answer:
+          "theScore and the NBA app both send real-time push notifications per pick. For a next-morning recap covering your specific teams' picks with analyst context, Scoutcast.ai sends a personalized 2-minute audio briefing the morning after the draft. Free, no ads.",
+      },
+      {
+        question: "What are the 2026 NBA Draft results?",
+        answer:
+          "The 2026 NBA Draft takes place in late June. This page will be updated with full first and second-round results, team by team, the morning after the draft.",
+      },
+    ],
+    comparedItems: {
+      name: "Best apps for following the 2026 NBA Draft",
+      items: [
+        { name: "ESPN app", url: "https://www.espn.com/espn/apps/espn" },
+        { name: "theScore", url: "https://www.thescore.com" },
+        { name: "NBA app", url: "https://www.nba.com/watch/nba-app" },
         { name: "Scoutcast.ai", url: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329" },
       ],
     },
@@ -1777,11 +2101,11 @@ export const posts: Post[] = [
   },
   {
     slug: "best-apps-for-following-the-2026-world-cup",
-    title: "The 6 Best Apps for Following the 2026 World Cup (and What Each Is For)",
+    title: "Best Apps for Following the 2026 World Cup",
     excerpt:
-      "FIFA’s official app, FOX Sports, Peacock/Telemundo, Apple Sports, SofaScore, and Scoutcast.ai — matched to the six jobs a World Cup fan actually has, from streaming all 104 matches to catching up in 2 minutes a day.",
+      "The 2026 World Cup is live. Six apps matched to each job: streaming, live scores, deep stats, and catching up on every match in two minutes a day.",
     date: "2026-06-11",
-    updatedAt: "2026-06-11",
+    updatedAt: "2026-06-17",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1789,7 +2113,7 @@ export const posts: Post[] = [
     body: [
       lead(
         t(
-          "There’s no single best World Cup app — there’s a best app for each job. FOX Sports is how you watch in English (all 104 matches). Peacock with Telemundo is how you watch in Spanish. FIFA’s official app is for schedules and tickets. Apple Sports is the cleanest live scoreboard. SofaScore has the deepest stats. And if your job is “keep me current on a 104-match tournament in two minutes a day,” that’s the slot "
+          "The 2026 World Cup is underway — and there’s no single best app for following it. There’s a best app for each job. FOX Sports is how you watch in English (all 104 matches). Peacock with Telemundo is how you watch in Spanish. FIFA’s official app is for schedules and tickets. Apple Sports is the cleanest live scoreboard. SofaScore has the deepest stats. And if your job is “keep me current on a 104-match tournament in two minutes a day,” that’s the slot "
         ),
         lk("Scoutcast.ai", "https://scoutcast.ai"),
         t(" was built for.")
@@ -1828,28 +2152,72 @@ export const posts: Post[] = [
 
       h2("Side-by-side"),
       tbl(
-        [[t("App")], [t("The job")], [t("Typical session")], [t("Price")]],
+        [[t("App")], [t("The job")], [t("Price")], [t("Platform")], [t("Notifications")], [t("Languages")]],
         [
-          [[t("FOX Sports")], [t("Watch in English")], [t("90+ min")], [t("TV provider / FOX One")]],
-          [[t("Peacock + Telemundo")], [t("Watch in Spanish")], [t("90+ min")], [t("Peacock subscription")]],
-          [[t("FIFA official app")], [t("Schedule, brackets, tickets")], [t("1–2 min")], [t("Free")]],
-          [[t("Apple Sports")], [t("Live scores")], [t("Seconds")], [t("Free")]],
-          [[t("SofaScore")], [t("Stats depth")], [t("5–15 min")], [t("Free; paid tier")]],
-          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("~2 min")], [t("Free")]],
+          [[t("FOX Sports")], [t("Watch in English")], [t("TV provider / FOX One")], [t("iOS, Android, web")], [t("Match start, score updates")], [t("English")]],
+          [[t("Peacock + Telemundo")], [t("Watch in Spanish")], [t("Peacock subscription")], [t("iOS, Android, web")], [t("Match start")], [t("Spanish")]],
+          [[t("FIFA official app")], [t("Schedule, brackets, tickets")], [t("Free")], [t("iOS, Android")], [t("Match start (skew promotional)")], [t("Multiple")]],
+          [[t("Apple Sports")], [t("Live scores")], [t("Free")], [t("iOS, iPadOS, macOS only")], [t("Live Activities, lock-screen scores")], [t("Device language")]],
+          [[t("SofaScore")], [t("Stats depth")], [t("Free; paid tier")], [t("iOS, Android, web")], [t("Goals, match start, match end")], [t("Multiple")]],
+          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("Free")], [t("iOS, iPadOS, macOS only")], [t("Daily briefing")], [t("English")]],
         ]
       ),
 
+      h2("On Android?"),
+      p(t("The list above skews Apple-heavy — Apple Sports and Scoutcast.ai are both iOS-only. Here’s how to cover each job on Android:")),
+      tbl(
+        [[t("Job")], [t("Apple pick")], [t("Android alternative")]],
+        [
+          [[t("Watch in English")], [t("FOX Sports")], [t("FOX Sports (also on Android)")]],
+          [[t("Watch in Spanish")], [t("Peacock + Telemundo")], [t("Peacock + Telemundo (also on Android)")]],
+          [[t("Schedule & brackets")], [t("FIFA official app")], [t("FIFA official app (also on Android)")]],
+          [[t("Live scores")], [t("Apple Sports")], [t("FotMob or OneFootball — both free")]],
+          [[t("Stats depth")], [t("SofaScore")], [t("SofaScore (also on Android)")]],
+          [[t("Daily audio catch-up")], [t("Scoutcast.ai")], [t("Scoutcast.ai is iOS-only — Android is on the roadmap")]],
+        ]
+      ),
+      p(t("For Android users, FotMob is the strongest substitute for Apple Sports — fast live score tiles, lineups, key events, and push alerts with no subscription required.")),
+
+      h2("Honorable mentions — and why they’re not here"),
+      p(t("These are real apps that didn’t make the main six:")),
+      ul(
+        [b("ESPN / ESPN+"), t(" — Covers the World Cup in highlights and studio content, but doesn’t stream any 2026 matches in the US (Fox and Telemundo hold the rights). Worth having for broader sports context, not for the tournament itself.")],
+        [b("OneFootball"), t(" — Good free highlights and news for European leagues; weaker on live US-market World Cup coverage and notifications. Android-friendly.")],
+        [b("FotMob"), t(" — Excellent live score app with strong Android support. The closest Android alternative to Apple Sports for non-iPhone users. Only missing from the main list because Apple Sports is marginally cleaner for passive score-checking on iPhone.")],
+        [b("365Scores"), t(" — Multi-sport scores tracker with a loyal following; interface is cluttered and notifications are aggressive compared to SofaScore.")],
+        [b("FlashScore"), t(" — Fastest raw score updates of any app here; presentation is spartan to the point of being hostile to casual fans. A power-user tool, not a general recommendation.")],
+        [b("BBC Sport"), t(" — Best free editorial World Cup coverage in the UK: text match reports, highlights, analysis. Geo-restricted; not a general recommendation for US fans.")],
+      ),
+
+      h2("Watching from the UK?"),
+      p(t("BBC and ITV are splitting the 2026 World Cup broadcast rights in the UK, with free streaming on BBC iPlayer and ITVX respectively — no subscription required. For live scores, BBC Sport and FotMob are both strong free options. The rest of the app lineup is largely the same: FIFA’s official app for the fixture schedule, SofaScore for stats depth, and Scoutcast.ai (iOS) for a daily two-minute audio catch-up on the teams you follow.")),
+      p(t("For Mexico fans, see "), lk("the best apps for Mexico fans at the 2026 World Cup", "/blog/best-world-cup-apps-mexico-fans"), t(". For US fans specifically, see "), lk("the best apps for US soccer fans at the 2026 World Cup", "/blog/best-world-cup-apps-us-soccer-fans"), t(".")),
+
       h2("The two-app answer"),
-      p(t("Most working fans need exactly two: a way to watch the matches they’ve chosen (FOX Sports or Peacock) and a finite way to stay current on everything else (a morning briefing plus a glance at Apple Sports). That pairing — and the triage system that goes with it — is laid out in "), lk("how to follow the 2026 World Cup when you have a job", "/blog/how-to-follow-the-2026-world-cup-when-you-work"), t(". For the non-tournament version of this list, see "), lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"), t(".")),
+      p(t("Most working fans need exactly two: a way to watch the matches they’ve chosen (FOX Sports or Peacock) and a finite way to stay current on everything else (a morning briefing plus a glance at Apple Sports). That pairing — and the triage system that goes with it — is laid out in "), lk("how to follow the 2026 World Cup when you have a job", "/blog/how-to-follow-the-2026-world-cup-when-you-work"), t(". For the year-round version of that system, see "), lk("how to keep up with sports when you don’t have time", "/blog/how-to-keep-up-with-sports-when-you-dont-have-time"), t(". For the non-tournament app rundown, see "), lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"), t(".")),
       p(lk("Download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+
+      h2("Changelog"),
+      p(em("June 17, 2026 — Title and meta shortened for desktop CTR; tournament-live framing added; FAQs rewritten as direct AEO queries; added link to year-round sports-following guide.")),
+      p(em("June 16, 2026 — Added Android alternatives table, honorable mentions section, UK coverage section, and a new FAQ on Android. Expanded the comparison table with Platform, Notifications, and Languages columns. No changes to the six-app recommendations.")),
 
       hr(),
     ],
     faqs: [
       {
-        question: "What is the best app for following the 2026 World Cup?",
+        question: "What’s the best app to follow the 2026 World Cup?",
         answer:
-          "It depends on the job: FOX Sports for watching in English (all 104 matches), Peacock with Telemundo for Spanish, FIFA’s official app for schedules and brackets, Apple Sports for clean live scores, SofaScore for deep stats, and Scoutcast.ai for a personalized ~2-minute audio catch-up each morning on the matches you didn’t watch.",
+          "The best app depends on what you need: FOX Sports to watch in English, Peacock with Telemundo to watch in Spanish, FIFA’s official app for the fixture schedule, Apple Sports for live scores with no ads, SofaScore for deep player stats, and Scoutcast.ai for a personalized ~2-minute audio catch-up each morning on the matches you missed. No single app does all six jobs well.",
+      },
+      {
+        question: "How can I keep up with the World Cup at work?",
+        answer:
+          "Use a morning briefing plus a scoreboard app during the day. Scoutcast.ai delivers a ~2-minute personalized audio briefing before you leave for work — covering yesterday’s results, what mattered, and who plays today — so you arrive already caught up. For live checks during the day, Apple Sports shows scores on your lock screen with no scrolling required.",
+      },
+      {
+        question: "Is there a free app to follow the 2026 World Cup?",
+        answer:
+          "Yes — several. Apple Sports (free live scores, no ads), FIFA’s official app (schedule and brackets), SofaScore (free tier with deep stats), and Scoutcast.ai (free personalized daily audio briefings, no ads) are all free. Watching live matches in the US requires a FOX One or Peacock subscription, but following the tournament doesn’t.",
       },
       {
         question: "What app streams every 2026 World Cup match?",
@@ -1857,19 +2225,14 @@ export const posts: Post[] = [
           "In the US, two: the FOX apps stream all 104 matches in English (FOX and FS1 broadcasts), and Peacock streams all 104 in Spanish via the Telemundo and Universo feeds.",
       },
       {
-        question: "Is there a free way to follow the World Cup without cable?",
-        answer:
-          "The opening matches streamed free on Tubi, and the first three days streamed free on the Telemundo app. Beyond that, scores and stats apps (Apple Sports, SofaScore, FIFA’s app) are free, and Scoutcast.ai’s personalized daily audio briefings are free — but live streaming of most matches requires FOX One or a Peacock subscription.",
-      },
-      {
-        question: "How do I keep up with the World Cup if I can’t watch the matches?",
-        answer:
-          "Use a finite catch-up format instead of scrolling: Scoutcast.ai delivers a ~2-minute personalized audio briefing every morning covering your teams’ results, the storylines that mattered, and who plays today, with tap-to-ask voice follow-ups. Pair it with a scores app for live checks during the workday.",
-      },
-      {
         question: "What’s the best World Cup app with no ads?",
         answer:
           "Apple Sports (free live scores, no ads) and Scoutcast.ai (free personalized audio briefings, no ads) are the two ad-free options on this list. SofaScore carries ads on its free tier, and the broadcaster apps are ad-supported by nature.",
+      },
+      {
+        question: "What’s the best World Cup app for Android?",
+        answer:
+          "For watching: FOX Sports and Peacock/Telemundo both have full Android apps. For live scores: FotMob is the strongest Android pick — fast score tiles, lineups, and goal alerts without a subscription. SofaScore also has a complete Android app for stats depth. Apple Sports is the one notable omission: it’s iOS and macOS only, with no Android version.",
       },
     ],
     comparedItems: {
