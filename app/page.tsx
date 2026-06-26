@@ -206,11 +206,11 @@ export default function Home() {
       <FAQs />
       <div className="dark bg-background pb-2 text-center text-sm">
         <Link
-          href="/blog/nba-draft-2026/"
+          href="/blog/world-cup-bracket-2026/"
           className="text-foreground/55 hover:text-foreground"
         >
           Latest from the blog:{" "}
-          <span className="text-foreground/85">How to Follow the 2026 NBA Draft</span>{" "}
+          <span className="text-foreground/85">The 2026 FIFA World Cup Bracket</span>{" "}
           →
         </Link>
       </div>
