@@ -2,6 +2,7 @@ import Link from "next/link"
 import type { Metadata } from "next"
 import { LegalPageHeader } from "@/components/legal-page"
 import Footer from "@/components/footer"
+import AndroidWaitlistForm from "./AndroidWaitlistForm"
 
 export const metadata: Metadata = {
     title: "Contact & Support · Scoutcast.ai",
@@ -18,6 +19,12 @@ export default function ContactPage() {
                 <p className="mt-3 text-base text-foreground/55">Last updated: February 23, 2026</p>
 
                 <p className="mt-14 text-lg leading-7 text-foreground/80">Have a question, found a bug, or just want to share feedback? Reach out to us anytime.</p>
+
+                <h2 className="mt-16 text-2xl font-bold tracking-tight">Android Waitlist</h2>
+                <p className="mt-4 text-base leading-7 text-foreground/80">
+                    Scoutcast is iOS-only right now. Leave your email and we&rsquo;ll notify you the moment Android launches.
+                </p>
+                <AndroidWaitlistForm />
 
                 <h2 className="mt-16 text-2xl font-bold tracking-tight">Email Us</h2>
                 <p className="mt-4 text-base leading-7 text-foreground/80">

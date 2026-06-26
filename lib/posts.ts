@@ -411,11 +411,11 @@ export const posts: Post[] = [
   },
   {
     slug: "how-many-people-play-fantasy-football",
-    title: "How Many People Play Fantasy Football? (2026 Stats)",
+    title: "How Many People Play Fantasy Football? (2026 Breakdown)",
     excerpt:
-      "Approximately 40 million Americans play fantasy football each year. The data behind participation, time spent (6.9 hours/week), platform share, market size, and what fantasy players actually need every day.",
+      "40M US players, 6.9 hrs/week, $653 in annual spending. Sourced breakdown of fantasy football participation — who plays, how much, and on which platform.",
     date: "2026-05-07",
-    updatedAt: "2026-05-07",
+    updatedAt: "2026-06-19",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -496,6 +496,12 @@ export const posts: Post[] = [
       ),
 
       p(em("Last updated: May 2026. Stats are updated annually before the start of NFL training camp.")),
+      p(
+        t("If you play fantasy football, "),
+        lk("Scoutcast.ai", "https://scoutcast.ai/fantasy/"),
+        t(" compresses the research loop into a personalized 2-minute audio briefing — injury updates, waiver wire targets, and matchup edges for your exact roster, Tuesday through Sunday. Free, no ads. "),
+        lk("Try it on the App Store ->", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")
+      ),
 
       hr(),
     ],
@@ -529,6 +535,11 @@ export const posts: Post[] = [
         question: "How many people play fantasy sports globally?",
         answer:
           "Approximately 245 million people play fantasy sports globally as of 2025, according to industry research. The United States accounts for 53 million of those players, with fantasy football representing the largest single sport.",
+      },
+      {
+        question: "How do fantasy football players keep up with news without spending hours on it?",
+        answer:
+          "Most players spend 6.9 hours a week fragmented across ESPN, Yahoo, Reddit, and beat writers. A more efficient pattern: a 2-minute personalized audio briefing covering your roster each morning (Scoutcast.ai delivers injury updates, waiver wire targets, and matchup edges for your specific players), paired with Apple Sports for live score checks. That covers the core daily need in under 3 minutes.",
       },
     ],
   },
@@ -871,11 +882,11 @@ export const posts: Post[] = [
   },
   {
     slug: "sports-app-market-size",
-    title: "Sports App Market Size (2026)",
+    title: "Sports App Market Size (2026): $5.34B and Growing",
     excerpt:
-      "The global sports app market is worth about $5.34 billion in 2026 and is projected to reach $13.22 billion by 2034 at a 10.64% CAGR. The data on growth drivers, regions, the iOS/Android split, and the AI sports layer.",
+      "$5.34B in 2026, growing to $13.22B by 2034 at 10.64% CAGR. Breakdown by growth driver, region, iOS vs Android, and the emerging AI sports layer.",
     date: "2026-05-19",
-    updatedAt: "2026-05-19",
+    updatedAt: "2026-06-19",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -947,6 +958,10 @@ export const posts: Post[] = [
         [lk("Sports App Market Size & Share — Grand View Research", "https://www.grandviewresearch.com/industry-analysis/sports-app-market-report")]
       ),
       p(em("Last updated: May 2026. Stats updated annually.")),
+      p(
+        t("Scoutcast.ai is the audio-first AI layer in this market — a personalized sports briefing app built for the next wave of mobile-first sports fans. "),
+        lk("Try it free on the App Store ->", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")
+      ),
 
       hr(),
     ],
@@ -1215,6 +1230,7 @@ export const posts: Post[] = [
       ),
       p(t("Most of these are free, so the honest move is to try the two that match your job. (Following the tournament this summer? There’s a "), lk("World Cup-specific version of this list", "/blog/best-apps-for-following-the-2026-world-cup"), t(".) For an NBA-only breakdown, see "), lk("the best free NBA news apps in 2026", "/blog/best-free-nba-news-apps-2026"), t(". If the 2-minute briefing is your slot: "),
         lk("download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+      p(t("Scoutcast.ai is iOS-only for now. On Android? "), lk("Get notified when Android launches", "/contact"), t(".")),
 
       hr(),
     ],
@@ -1371,6 +1387,7 @@ export const posts: Post[] = [
         [t("Want a 2-minute NBA audio brief every morning, free, no ads: "), b("Scoutcast.ai")],
       ),
       p(t("For the NBA Draft specifically, see "), lk("how to follow the 2026 NBA Draft", "/blog/nba-draft-2026"), t(" — including a results section updated after draft night.")),
+      p(t("Scoutcast.ai is iOS-only for now. On Android? "), lk("Get notified when Android launches", "/contact"), t(".")),
       p(lk("Download Scoutcast.ai on the App Store ->", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
       hr(),
@@ -1761,9 +1778,9 @@ export const posts: Post[] = [
     slug: "espn-app-alternatives",
     title: "ESPN App Alternatives for Fans Tired of Doomscrolling (2026)",
     excerpt:
-      "The best ESPN app alternative depends on what’s driving you away: Apple Sports for a clean scoreboard, theScore for alerts, SofaScore for global leagues, The Athletic for journalism, and Scoutcast.ai for a 2-minute audio catch-up instead of a 20-minute scroll.",
+      "Apple Sports for noise, theScore for alerts, SofaScore for global leagues, The Athletic for depth — and Scoutcast.ai if ESPN just eats your morning.",
     date: "2026-06-11",
-    updatedAt: "2026-06-11",
+    updatedAt: "2026-06-19",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1843,7 +1860,8 @@ export const posts: Post[] = [
         t(", and if you want the whole low-time system, "),
         lk("here’s how to keep up with sports when you don’t have time", "/blog/how-to-keep-up-with-sports-when-you-dont-have-time"),
         t(".")),
-      p(lk("Download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+      p(t("Scoutcast.ai is iOS-only right now (iPhone, iPad, Mac). On Android? "), lk("Get notified when Android launches", "/contact"), t(".")),
+      p(lk("Replace your morning ESPN scroll — try Scoutcast.ai free ->", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
       hr(),
     ],
@@ -2513,10 +2531,1115 @@ export const posts: Post[] = [
       },
     ],
   },
+
+  {
+    slug: "best-fantasy-football-apps-2026",
+    title: "Best Fantasy Football Apps in 2026",
+    excerpt:
+      "ESPN, Yahoo, and Sleeper run your league. The best research apps are different. Seven apps compared by job — including AI audio briefings for your roster.",
+    date: "2026-06-24",
+    updatedAt: "2026-06-24",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "Fantasy football apps fall into two categories: the platform your league runs on, and the research tools you use to win it. They're different products, and the best answer in each category is different."
+        )
+      ),
+      p(
+        b("Disclosure:"),
+        t(
+          " I'm a co-founder of Scoutcast.ai. I've written this the way I'd want a competitor to write it — honest about where each tool is stronger and where it falls short. If something's wrong, email me at "
+        ),
+        lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
+        t(".")
+      ),
+
+      h2("League management apps"),
+      p(
+        t(
+          "These are the apps where your actual league lives. Your commissioner picks the platform; you usually don't have a choice unless you're the commissioner."
+        )
+      ),
+
+      h3("ESPN Fantasy Football"),
+      p(
+        t(
+          "The largest platform by monthly active users (~48% market share). Deep media integration gives it the best real-time injury push notifications in the category. The ESPN app's main feed, SportsCenter, and your fantasy league share one roof — a natural home if you're already an ESPN subscriber."
+        )
+      ),
+      p(
+        t(
+          "The weakness: the interface is dense on mobile. Waiver and trade flows have improved but still lag Sleeper's UX."
+        )
+      ),
+
+      h3("Yahoo Fantasy Football"),
+      p(
+        t(
+          "The oldest major platform, and the overall market share leader. Yahoo has refined its product for 25+ years. Draft interfaces are clean, live scoring is reliable, and the in-app news integration (via Rotoworld / NBC Sports) is genuinely useful."
+        )
+      ),
+      p(
+        t(
+          "Yahoo's Best Ball product — a snake-draft season-long format with automated lineups — has built a strong following among players who want the draft without the weekly management grind."
+        )
+      ),
+
+      h3("Sleeper"),
+      p(
+        t(
+          "The fastest-growing platform, particularly with younger managers. About 15% of fantasy players use Sleeper. Its differentiator is a chat-first experience: every league has built-in group chat with emoji reactions, trade discussion, and player news in one feed."
+        )
+      ),
+      p(
+        t(
+          "Sleeper has expanded into sports-betting overlays and Best Ball. For commissioners who want a more modern, social feel, Sleeper is the default recommendation."
+        )
+      ),
+
+      h3("NFL Fantasy"),
+      p(
+        t(
+          "The official NFL product. Strongest for players who want the simplest experience and live inside the NFL app ecosystem. Reliable, with better official stats integration than third-party platforms."
+        )
+      ),
+
+      h2("Research and intel apps"),
+      p(
+        t(
+          "These are the tools you use to win — injury news, waiver targets, start/sit advice, matchup analysis. Your league platform doesn't matter here."
+        )
+      ),
+
+      h3("Rotoworld / NBC Sports Edge"),
+      p(
+        t(
+          "The standard for real-time NFL injury and transaction news. Beat writers post direct updates during practice windows. The floor for any serious fantasy manager. Free to use; some premium features require a subscription."
+        )
+      ),
+
+      h3("The Athletic"),
+      p(
+        t(
+          "Long-form analysis from some of the best football writers in the business. Not a daily injury tracker — more of a weekly depth read for team dynamics, role changes, and context behind the news. A subscription ($7.99–$11.99/month) is worth it if you have time to read; less useful if you're optimizing for speed."
+        )
+      ),
+
+      h3("Scoutcast.ai (NFL Fantasy Season Pass)"),
+      p(
+        t(
+          "Scoutcast.ai is an AI sports briefing app that generates a personalized ~2-minute audio brief each morning. The "
+        ),
+        b("NFL Fantasy Season Pass ($49.99/season)"),
+        t(
+          " adds a roster-aware layer: Tuesday through Sunday briefings tailored to your specific lineup — injury news for your players, waiver targets your roster needs, head-to-head matchup edges for the current week, and a Sunday morning final call."
+        )
+      ),
+      p(
+        t(
+          "The core difference from Rotoworld or The Athletic: Scoutcast knows your roster. It doesn't surface 60 injury updates — it surfaces the four that affect your lineup. And it delivers them in two minutes of audio, not a dashboard you have to open and scan."
+        )
+      ),
+      p(
+        t(
+          "iOS only. Free tier includes daily briefings for every league you follow. Fantasy Season Pass is the paid add-on."
+        )
+      ),
+
+      h2("Comparison at a glance"),
+      tbl(
+        [
+          [t("App")],
+          [t("Category")],
+          [t("Best for")],
+          [t("Ads?")],
+          [t("Price")],
+        ],
+        [
+          [
+            [t("ESPN Fantasy")],
+            [t("League platform")],
+            [t("ESPN subscribers, biggest leagues")],
+            [t("Yes")],
+            [t("Free")],
+          ],
+          [
+            [t("Yahoo Fantasy")],
+            [t("League platform")],
+            [t("Best Ball, veteran managers")],
+            [t("Yes")],
+            [t("Free")],
+          ],
+          [
+            [t("Sleeper")],
+            [t("League platform")],
+            [t("Social leagues, modern UX")],
+            [t("No")],
+            [t("Free")],
+          ],
+          [
+            [t("NFL Fantasy")],
+            [t("League platform")],
+            [t("Simplest experience")],
+            [t("Yes")],
+            [t("Free")],
+          ],
+          [
+            [t("Rotoworld")],
+            [t("Research")],
+            [t("Real-time injury news")],
+            [t("Yes")],
+            [t("Free / $8/mo premium")],
+          ],
+          [
+            [t("The Athletic")],
+            [t("Research")],
+            [t("Long-form analysis")],
+            [t("No")],
+            [t("$7.99–$11.99/mo")],
+          ],
+          [
+            [t("Scoutcast.ai")],
+            [t("Research")],
+            [t("Roster-specific audio brief")],
+            [t("No")],
+            [t("Free + $49.99/season pass")],
+          ],
+        ]
+      ),
+
+      h2("Which app should you use?"),
+      p(
+        t(
+          "For your league platform: use whatever your commissioner picks. If you "
+        ),
+        em("are"),
+        t(
+          " the commissioner — Sleeper for modern UX, Yahoo for reliability, ESPN if your group wants media integration."
+        )
+      ),
+      p(
+        t(
+          "For research: Rotoworld is the baseline for injury news. Add Scoutcast if you want that news contextualized for your roster in audio format. Add The Athletic if you want depth beyond the injury wire."
+        )
+      ),
+      p(
+        t(
+          "The time problem most managers have isn't a lack of information — it's too much of it, most of it irrelevant to their team. The real edge goes to managers who get the right information quickly and act before their opponents."
+        )
+      ),
+      p(
+        lk(
+          "Try the NFL Fantasy Season Pass on Scoutcast.ai →",
+          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+        )
+      ),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What is the best fantasy football app in 2026?",
+        answer:
+          "It depends on what you mean. For running your league: Sleeper (modern UX, chat-first), Yahoo (reliable, best Best Ball product), or ESPN (best media integration). For winning your league: Rotoworld for real-time injury news, Scoutcast.ai for a personalized daily audio brief tailored to your roster, The Athletic for long-form analysis.",
+      },
+      {
+        question: "Is Sleeper better than ESPN for fantasy football?",
+        answer:
+          "Sleeper has a better mobile interface, cleaner UX, no ads, and built-in group chat. ESPN has stronger media integration and better real-time injury push notifications. For new leagues, Sleeper is the better choice. For established leagues, switching platforms requires commissioner effort and manager buy-in.",
+      },
+      {
+        question: "Are there AI fantasy football apps?",
+        answer:
+          "Scoutcast.ai uses AI to generate personalized daily audio briefings for your exact roster — injury updates, waiver targets, matchup edges, and a Sunday morning final call. The NFL Fantasy Season Pass ($49.99) is the dedicated fantasy add-on. It's the only audio-first, roster-aware product in the category.",
+      },
+      {
+        question: "What fantasy football app has the best injury news?",
+        answer:
+          "Rotoworld (NBC Sports Edge) is the standard for speed and coverage on NFL injury updates. ESPN also has strong push notifications. For personalized injury news filtered to your specific roster, Scoutcast.ai's Fantasy Season Pass surfaces only the updates that affect your lineup.",
+      },
+    ],
+    comparedItems: {
+      name: "Fantasy football apps compared",
+      items: [
+        {
+          name: "ESPN Fantasy Football",
+          url: "https://www.espn.com/fantasy/football/",
+        },
+        {
+          name: "Yahoo Fantasy Football",
+          url: "https://sports.yahoo.com/fantasy/football/",
+        },
+        { name: "Sleeper", url: "https://sleeper.com" },
+        {
+          name: "Rotoworld",
+          url: "https://www.nbcsports.com/fantasy/football",
+        },
+        { name: "The Athletic", url: "https://theathletic.com" },
+        { name: "Scoutcast.ai", url: "https://scoutcast.ai" },
+      ],
+    },
+  },
+
+  // ─── World Cup 2026 knockout coverage ────────────────────────────────────
+  {
+    slug: "world-cup-bracket-2026",
+    title: "2026 FIFA World Cup Bracket: Round of 32 Results, Schedule & Scores",
+    excerpt:
+      "The knockout stage starts June 28. Here's the full 2026 World Cup bracket — Round of 32 through the Final — with results updated each round.",
+    date: "2026-06-27",
+    updatedAt: "2026-06-27",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "The 2026 FIFA World Cup knockout stage begins June 28. For the first time, 32 teams compete in a Round of 32 before the field narrows to 16, then 8, then the Final on July 19 in New York/New Jersey. Here's the full bracket — updated each round."
+        )
+      ),
+      p(
+        t("For live audio coverage of every knockout match, follow along on "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(
+          " — personalized briefings surface the matchups and storylines relevant to the teams you follow."
+        )
+      ),
+
+      h2("How the 2026 World Cup bracket works"),
+      p(
+        t(
+          "The 2026 tournament expanded from 32 to 48 teams across 12 groups (A–L). In each group, the top two finishers advance automatically. The eight best third-place finishers across all 12 groups also advance — giving 32 teams in the knockout bracket."
+        )
+      ),
+      p(
+        t(
+          "Unlike previous World Cups, there is no round of 16 as the first knockout stage. The Round of 32 is the new entry point, and a team must now win four matches — not three — to reach the Final."
+        )
+      ),
+
+      h2("Knockout schedule"),
+      tbl(
+        [[t("Round")], [t("Dates")], [t("Matches")]],
+        [
+          [[t("Round of 32")], [t("June 28 – July 2")], [t("16 matches")]],
+          [[t("Round of 16")], [t("July 4 – July 5")], [t("8 matches")]],
+          [[t("Quarterfinals")], [t("July 8 – July 9")], [t("4 matches")]],
+          [[t("Semifinals")], [t("July 12 – July 13")], [t("2 matches")]],
+          [[t("Third-place match")], [t("July 16")], [t("1 match")]],
+          [[t("Final")], [t("July 19")], [t("MetLife Stadium, NJ")]],
+        ]
+      ),
+
+      h2("Round of 32 results"),
+      p(
+        t(
+          "The 32-team bracket is seeded based on group stage finishing positions. Group winners face third-place qualifiers; group runners-up face other third-place qualifiers. Results will be added as each match is played (June 28 – July 2)."
+        )
+      ),
+      p(
+        t(
+          "Check "),
+        lk(
+          "Scoutcast's World Cup schedule page",
+          "https://scoutcast.ai/schedules/fifa-world-cup-2026/"
+        ),
+        t(" for daily match times and venue details.")
+      ),
+
+      h2("Round of 16"),
+      p(
+        t(
+          "The Round of 16 runs July 4–5. Winners of each Round of 32 pairing advance. Results updated after July 5."
+        )
+      ),
+
+      h2("Quarterfinals"),
+      p(
+        t(
+          "Four matches on July 8–9 determine the semifinalists. The bracket half that contained the Group A/B/C/D side plays separately from the Group E–L side through to the semifinal."
+        )
+      ),
+
+      h2("Semifinals"),
+      p(
+        t(
+          "July 12 and July 13. The two winners meet in the Final; the two losers play for third place on July 16."
+        )
+      ),
+
+      h2("2026 World Cup Final"),
+      p(
+        t(
+          "July 19 at MetLife Stadium in East Rutherford, New Jersey — the largest-capacity stadium in the tournament. Kickoff is 6 PM ET. Coverage on Fox (English) and Telemundo (Spanish)."
+        )
+      ),
+      p(
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(
+          " will publish a match-day audio briefing the morning of the Final covering both squads' paths through the bracket, key absences, and what to watch. "
+        ),
+        lk(
+          "Follow on the app →",
+          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+        )
+      ),
+
+      hr(),
+      p(
+        t("Want the best app for following the World Cup? See our roundup: "),
+        lk(
+          "Best sports apps for the 2026 World Cup",
+          "https://scoutcast.ai/blog/best-apps-for-following-the-2026-world-cup/"
+        ),
+        t(".")
+      ),
+    ],
+    faqs: [
+      {
+        question: "When does the 2026 World Cup knockout stage start?",
+        answer:
+          "The Round of 32 — the first knockout round — begins June 28, 2026. The bracket runs through the Final on July 19 at MetLife Stadium in New Jersey.",
+      },
+      {
+        question: "How does the 2026 World Cup bracket work?",
+        answer:
+          "48 teams competed in 12 groups. The top two from each group (24 teams) plus the eight best third-place finishers (8 teams) advanced to the Round of 32 — the new first knockout stage in the expanded format. From there it's single-elimination: Round of 32 → Round of 16 → Quarterfinals → Semifinals → Final.",
+      },
+      {
+        question: "How many teams are in the 2026 World Cup bracket?",
+        answer:
+          "32 teams enter the knockout bracket. The 2026 tournament expanded from 32 to 48 total participants, with a group stage that whittles the field to 32 for the single-elimination bracket.",
+      },
+      {
+        question: "Where is the 2026 World Cup Final?",
+        answer:
+          "The Final is July 19 at MetLife Stadium in East Rutherford, New Jersey — the largest venue in the tournament at roughly 82,000 capacity.",
+      },
+      {
+        question: "Where can I watch the 2026 World Cup knockout rounds?",
+        answer:
+          "Fox Sports carries English-language broadcast rights in the US; Telemundo carries Spanish-language rights. Streaming is available via Fox Sports app and Peacock (Telemundo matches). Scoutcast.ai delivers a morning audio briefing on match days covering team news and what to watch.",
+      },
+    ],
+  },
 ];
 
 // Drafts: held out of the rendered blog until ready to ship.
-export const draftPosts: Post[] = [];
+export const draftPosts: Post[] = [
+  // ─── Fantasy Football Cluster (draft season 2026) ────────────────────────
+  {
+    slug: "fantasy-football-draft-strategy-2026",
+    title: "Fantasy Football Draft Strategy 2026: What Actually Works",
+    excerpt:
+      "Position scarcity, ADP exploitation, and draft-night tactics that separate winners from also-rans — updated for the 2026 NFL season.",
+    date: "2026-06-24",
+    updatedAt: "2026-06-24",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "Your fantasy football draft is the single highest-leverage decision you make all season. The waiver wire matters, but it rarely compensates for a catastrophic round 1 pick. This guide covers the principles that hold up year over year — plus how to apply them specifically in 2026."
+        )
+      ),
+
+      h2("The draft is about scarcity, not upside"),
+      p(
+        t(
+          "Most fantasy players draft for ceiling — they chase projected points. The better framework is scarcity: draft the positions where there's a steep drop-off between picks, and wait on the positions where value extends deep."
+        )
+      ),
+      p(
+        t(
+          "In standard scoring, elite tight ends and running backs are scarce. Wide receiver value runs deep. Quarterback value (in 1-QB leagues) extends into round 8 or 9 without meaningful penalty. Kicker and defense in round 15."
+        )
+      ),
+      p(
+        t(
+          "This means your round 1 pick should almost always be a running back or elite tight end — not because they're exciting, but because the replacement value drops fast. The difference between the 3rd receiver off the board and the 12th is small. The difference between the 3rd running back and the 12th is the season."
+        )
+      ),
+
+      h2("Draft tiers by position"),
+      h3("Running backs"),
+      p(
+        t(
+          "Tier 1 (rounds 1–2): Workhorse backs with bell-cow roles, clear depth chart leads, and offenses that run. Missing this tier often means chasing depth all season."
+        )
+      ),
+      p(
+        t(
+          "Tier 2 (rounds 3–5): High-volume backs with some committee risk. Good value — but know who their handcuffs are before you draft them."
+        )
+      ),
+      p(
+        t(
+          "Tier 3 (rounds 6–9): Situation-dependent upside. Worth a few picks here, not your whole strategy."
+        )
+      ),
+      h3("Wide receivers"),
+      p(
+        t(
+          "WR1s (rounds 1–4): True high-volume targets in efficient offenses with quarterbacks they can trust. Elite route runners. The backbone of most winning rosters."
+        )
+      ),
+      p(
+        t(
+          "Upside WRs (rounds 8–12): High-ceiling players with some role uncertainty. Excellent at this range in PPR formats. Draft at least 2–3 here."
+        )
+      ),
+      h3("Tight ends"),
+      p(
+        t(
+          "Tier 1 (rounds 1–3): The five or six elite tight ends who provide real positional advantage. In a 12-team league, most managers won't land one. If you miss here, commit to the streaming tier — don't draft a mediocre TE in round 8 when the gap between him and a waiver find is minimal."
+        )
+      ),
+      p(
+        t(
+          "Streaming tier (round 12+): If you missed tiers 1 and 2, grab upside here and plan to waiver-manage the position all season."
+        )
+      ),
+
+      h2("Zero RB: when to use it"),
+      p(
+        t(
+          "Zero RB — loading up on wide receivers in the first 4–5 rounds and finding running backs on waivers — works best when the WR class is significantly deeper than the RB class at the top of the draft."
+        )
+      ),
+      p(
+        t(
+          "It's not a universal strategy. It requires finding 2–3 viable running backs on the wire, which demands early-season attention and willingness to make quick adds. If your league has aggressive waiver bidding, Zero RB carries more risk."
+        )
+      ),
+      p(
+        t(
+          "The best version: take 3–4 wide receivers in rounds 1–5, grab a top-10 projected TE if one falls, then load rounds 6–10 with high-upside backs in good offenses. In PPR, a committee back who catches 6 passes per game often outscores a bell-cow who doesn't."
+        )
+      ),
+
+      h2("ADP exploitation: where value hides"),
+      ul(
+        [
+          b("Overvalued — aging veterans. "),
+          t(
+            "Players drafted at career reputation, not current trajectory. A 32-year-old back going at his peak-year ADP is a place to fade."
+          ),
+        ],
+        [
+          b("Overvalued — receivers on new teams. "),
+          t(
+            "A lot of optimism gets priced into a receiver who just changed quarterbacks. Buy the situation, not the name."
+          ),
+        ],
+        [
+          b("Undervalued — second-year players. "),
+          t(
+            "The NFL is a second-year-player league at skill positions. Breakouts happen at 23–24 at receiver; fantasy ADP often lags."
+          ),
+        ],
+        [
+          b("Undervalued — backs returning from injury. "),
+          t(
+            "Markets over-discount recoverable injuries. Know the injury type and timeline; if the situation is otherwise unchanged, ADP is often 2–3 rounds cheap."
+          ),
+        ],
+        [
+          b("Undervalued — post-hype sleepers. "),
+          t(
+            "Players highly drafted last year who underperformed and now go rounds 10–12. If the role hasn't changed, the discount is usually overdone."
+          ),
+        ]
+      ),
+
+      h2("Draft-night tactics"),
+      h3("Spot and respond to position runs"),
+      p(
+        t(
+          "A position run happens when several managers draft the same position back-to-back, depleting a tier faster than ADP predicted. Decide quickly: join (reach slightly for a player you already wanted) or let it play out and target the next tier. Never panic-run into a position you weren't planning to take."
+        )
+      ),
+      h3("Mock your specific slot"),
+      p(
+        t(
+          "Run 5–10 mocks before your real draft at your exact draft position in your exact scoring format. The player available at pick 4 in 12-team PPR is different from pick 4 in 10-team standard. Know which players consistently fall to your slot — that's your real plan, not a ranked list."
+        )
+      ),
+      h3("Handcuff your bell-cow backs"),
+      p(
+        t(
+          "If you drafted a top-15 back who carries real injury risk, spend a late-round pick on his backup. Only worth it if: the starter is genuinely good, the backup would inherit meaningful volume, and you can afford the roster spot."
+        )
+      ),
+
+      h2("The week after the draft"),
+      p(
+        t(
+          "Your draft isn't done until you've set up your intel for the season. The managers who win leagues aren't usually better drafters — they're better at the Tuesday waiver add, the injury catch six hours before the deadline, the trade made from a position of strength."
+        )
+      ),
+      p(
+        t(
+          "Winning fantasy football is a daily information problem. The managers who get injury updates, practice reports, and waiver targets before everyone else — and act on them — win. That's the same research problem we built "
+        ),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(
+          " to solve: a personalized 2-minute audio briefing each morning with the news that matters for your exact roster. The NFL Fantasy Season Pass ($49.99) runs Tuesday through Sunday during the NFL season."
+        )
+      ),
+      p(
+        lk(
+          "Try the NFL Fantasy Season Pass →",
+          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+        )
+      ),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What is the best fantasy football draft strategy in 2026?",
+        answer:
+          "Draft for positional scarcity rather than raw projected points. Take running backs and elite tight ends early when the quality drop-off is steepest. Exploit ADP by identifying where consensus overvalues (aging veterans, receiver-on-new-team hype) and undervalues (second-year breakouts, post-injury backs). Run 5–10 mock drafts at your specific draft position before the real thing.",
+      },
+      {
+        question: "Should I use Zero RB strategy in 2026?",
+        answer:
+          "Zero RB (loading up on receivers in early rounds, finding backs on waivers) works best when the WR class is deep relative to RB. It requires active waiver management all season and is better suited for PPR leagues where pass-catching backs hold more value. If your league has aggressive waiver bidding, factor that into the risk.",
+      },
+      {
+        question: "When should I draft my quarterback in fantasy football?",
+        answer:
+          "In standard 1-QB leagues, quarterback value is deep enough to wait until rounds 7–10 without meaningful penalty. The exception: Superflex (2-QB) leagues, where QBs should be prioritized much earlier — sometimes round 1.",
+      },
+      {
+        question: "How many mock drafts should I do before my real draft?",
+        answer:
+          "At least 5–10, specifically at your draft position and in your exact scoring format. Mock results vary significantly between PPR and standard, and between 10-team and 12-team leagues. The goal isn't to memorize rankings — it's to know which players consistently fall to your picks so you have a real plan for every round.",
+      },
+      {
+        question: "How do I stay on top of fantasy football news during the season?",
+        answer:
+          "The biggest in-season edge is getting injury news, practice reports, and waiver targets before the rest of your league. Scoutcast.ai delivers a personalized 2-minute audio briefing each morning with news specific to your roster — no scrolling national headlines for updates that don't apply to your team.",
+      },
+    ],
+  },
+
+  {
+    slug: "how-to-research-fantasy-football",
+    title: "How to Research Fantasy Football in Under 10 Minutes a Day",
+    excerpt:
+      "Fantasy players average 6.9 hours a week on research. Here's a system for cutting that to 10 minutes daily without losing your competitive edge.",
+    date: "2026-06-24",
+    updatedAt: "2026-06-24",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "The average fantasy football player spends 6.9 hours per week on their team during the NFL season. Most of that time isn't well spent — it's scrolling through national headlines that don't apply to your roster, refreshing the injury report on players you don't own, and watching highlight reels that don't tell you anything about next week's matchup."
+        )
+      ),
+      p(t("Here's a system that cuts that to 10 minutes a day without losing your edge.")),
+
+      h2("Why most research is wasted"),
+      p(
+        t(
+          "Fantasy football research has the same problem as social media: the apps are designed to keep you there, not to get you what you need and let you go. ESPN surfaces national stories. The full injury report shows all 32 teams. Fantasy podcasts run 60–90 minutes."
+        )
+      ),
+      p(
+        t(
+          "None of that is calibrated to your roster. The manager spending 6.9 hours per week is doing enormous filtering — processing information irrelevant to their specific team."
+        )
+      ),
+      p(
+        t(
+          "The solution isn't more information. It's a system that filters for your lineup automatically."
+        )
+      ),
+
+      h2("The 10-minute daily system"),
+      h3("Monday: 3 minutes — damage assessment"),
+      p(
+        t(
+          "After the final Sunday game, you need one thing: which of your players got hurt? Monday morning, identify which injuries are serious and which are week-to-week."
+        )
+      ),
+      p(
+        t(
+          "Check: injury designations for your players, estimated return timelines, and whether the backup in the same backfield is worth claiming before anyone else does."
+        )
+      ),
+      p(
+        b("Action: "),
+        t(
+          "queue waivers for the backup of any serious injury. If you wait until Wednesday, you're behind."
+        )
+      ),
+
+      h3("Tuesday: 2 minutes — waiver priority"),
+      p(
+        t(
+          "Tuesday's waiver wire is where leagues are won. Know the three players you want before the wire opens — not by browsing the whole list when it does."
+        )
+      ),
+      p(
+        t(
+          "Focus on: players whose role expanded due to last week's injuries, breakout candidates who got unexpected volume, handcuffs to backs you own who had injury scares."
+        )
+      ),
+
+      h3("Wednesday–Thursday: 2 minutes — practice designations"),
+      p(
+        t(
+          "Practice designations (limited, full, did not practice) come out Wednesday and Thursday. You only need to track players on your roster and your opponent's roster."
+        )
+      ),
+      p(
+        t(
+          "Key read: a player who goes from limited Wednesday to full Thursday is likely playing. A player who misses two consecutive practices is at real risk. Friday is the final tell."
+        )
+      ),
+
+      h3("Friday–Saturday: 1 minute — final injury status"),
+      p(
+        t(
+          "Game-time decisions settle Friday night for early games, sometimes not until Sunday morning for the 1 PM slate. Have your backup starter ready before Sunday. Don't make lineup decisions Sunday morning without checking the final injury report."
+        )
+      ),
+
+      h3("Sunday morning: 2 minutes — final call"),
+      p(
+        t(
+          "Last scratch check, weather check for dome vs. outdoor games, one final look at projected point totals for flex decisions. Then lock your lineup and stop refreshing."
+        )
+      ),
+
+      h2("How to make this automatic"),
+      p(
+        t(
+          "The system above takes discipline because it requires checking multiple sources at specific times without getting pulled into the scroll. The easier version: let a tool do the filtering for you."
+        )
+      ),
+      p(
+        t(
+          "Scoutcast.ai's "
+        ),
+        b("NFL Fantasy Season Pass"),
+        t(
+          " delivers a roster-specific audio brief every morning from Tuesday through Sunday. Instead of checking 4 apps at the right times, you open Scoutcast and get a 2-minute audio rundown of: which of your players have injury news, who to target on waivers, your head-to-head matchup edges this week, and a Sunday morning final call."
+        )
+      ),
+      p(
+        t(
+          "It's what the system looks like when it runs automatically — filtered to your roster, delivered in audio you can absorb hands-free on your commute."
+        )
+      ),
+      p(
+        lk(
+          "Try the NFL Fantasy Season Pass →",
+          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+        )
+      ),
+
+      h2("What to stop doing"),
+      ul(
+        [
+          b("Stop watching fantasy YouTube for general tips. "),
+          t("Aggregate advice doesn't improve your specific lineup decisions."),
+        ],
+        [
+          b("Stop reading the full injury report. "),
+          t("You only need the ones for players you own or are targeting."),
+        ],
+        [
+          b("Stop refreshing ADP after draft day. "),
+          t("In-season ADP is noise, not signal."),
+        ],
+        [
+          b("Stop listening to 60-minute fantasy podcasts. "),
+          t(
+            "Unless a podcast is specifically about your matchup or your players, it's entertainment — not research."
+          ),
+        ]
+      ),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How much time should you spend on fantasy football research?",
+        answer:
+          "The average player spends 6.9 hours per week — far more than necessary. A focused 10 minutes per day (injury check, waiver targeting, practice report review, lineup finalization) covers the information that actually moves outcomes. The key is filtering for your roster specifically, not consuming general fantasy content.",
+      },
+      {
+        question:
+          "What is the most important fantasy football research to do each week?",
+        answer:
+          "In order of impact: (1) injury monitoring for your rostered players, (2) waiver moves triggered by injury or unexpected usage, (3) practice designations Wednesday through Friday, (4) lineup finalization with Sunday morning scratch checks. Everything else is secondary.",
+      },
+      {
+        question:
+          "What is the best way to track fantasy football injuries?",
+        answer:
+          "Rotoworld (NBC Sports Edge) posts real-time updates from beat reporters. ESPN sends push notifications for significant injuries. For a roster-filtered approach, Scoutcast.ai's Fantasy Season Pass surfaces injury news only for the players on your team, delivered as a personalized daily audio brief.",
+      },
+      {
+        question:
+          "Is there an app that tells me who to start in fantasy football?",
+        answer:
+          "Most league platforms (ESPN, Yahoo, Sleeper) include start/sit tools. For a personalized approach, Scoutcast.ai's Fantasy Season Pass delivers weekly matchup edges and start/sit guidance tailored to your exact roster — not generic rankings.",
+      },
+    ],
+  },
+
+  {
+    slug: "fantasy-football-sleeper-picks-2026",
+    title: "Fantasy Football Sleeper Picks 2026",
+    excerpt:
+      "Best-value picks in rounds 5–12: players with clear paths to volume whose ADP hasn't caught up yet. Updated through training camp.",
+    date: "2026-06-24",
+    updatedAt: "2026-06-24",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "A sleeper is a player whose production potential exceeds what their average draft position reflects. The best sleepers share a common profile: a defined role, a clear opportunity path, and an ADP that lags because the market hasn't yet processed the situation."
+        )
+      ),
+      p(
+        t(
+          "This post covers the sleeper archetypes to target in rounds 5–12 for 2026, plus how to identify them as training camp opens in late July. Specific player names will be updated as ADP matures through August."
+        )
+      ),
+
+      h2("What actually makes a sleeper"),
+      p(
+        t(
+          "Sleepers don't come from guessing at upside. They come from finding players where the market is wrong about opportunity."
+        )
+      ),
+      ul(
+        [
+          b("A clear path to volume. "),
+          t(
+            "The best sleepers have a specific reason to get more touches — a starter vacancy, a role change, a schematic shift, a feature role in a new offense. Vague 'upside' without a volume path is a prayer, not a sleeper."
+          ),
+        ],
+        [
+          b("An underpriced ADP. "),
+          t(
+            "If everyone already knows about the opportunity, the ADP has caught up. Real sleepers go in rounds 5–12, not rounds 1–3."
+          ),
+        ],
+        [
+          b("A concrete catalyst. "),
+          t(
+            "The best sleepers have an identifiable reason for the ADP gap — usually recency bias against last year's performance, or a team situation change that happened too close to draft season for the market to price in."
+          ),
+        ]
+      ),
+
+      h2("Running back sleeper archetypes"),
+      h3("The lead back in waiting"),
+      p(
+        t(
+          "Look for teams where the current starter is aging, injury-prone, or a clear short-term bridge. The backup who's the long-term answer — and who may be promoted mid-season or upon injury — often goes 30–40 spots later than his true value."
+        )
+      ),
+      p(
+        t(
+          "What to watch in camp: is the backup getting first-team reps? Is the starter managing a lingering injury? Coaching comments about 'competition at the position' usually signal the backup is closer to a role than ADP reflects."
+        )
+      ),
+
+      h3("The pass-catching back in a new role"),
+      p(
+        t(
+          "Backs who catch passes are dramatically more valuable in PPR formats than their rushing volume alone suggests. A back who transitions to a receiving role in a pass-heavy offense can deliver WR2 numbers at RB3 ADP."
+        )
+      ),
+
+      h3("The post-injury starter"),
+      p(
+        t(
+          "If a top-12 fantasy back missed most of last season with a known, recoverable injury — ACL, high ankle, hamstring — his ADP often depresses 2–3 rounds more than the injury merits. Managers who burned a pick on him last year are reluctant to invest again, which creates value."
+        )
+      ),
+
+      h2("Wide receiver sleeper archetypes"),
+      h3("The second-year receiver in a good offense"),
+      p(
+        t(
+          "NFL receivers typically take until their second or third year to break out. The market often still prices them at last year's disappointing ADP — but if their route tree expanded, quarterback rapport deepened, or a veteran left, the second-year ceiling is often dramatically higher."
+        )
+      ),
+
+      h3("The new number one in a depleted corps"),
+      p(
+        t(
+          "When a team loses its lead receiver to injury, free agency, or trade, the second receiver on the depth chart becomes the alpha target. The position change is obvious — but the ADP sometimes takes weeks to catch up, especially if the receiver's name recognition is lower."
+        )
+      ),
+
+      h3("The beneficiary of a new quarterback"),
+      p(
+        t(
+          "A receiver working with a below-average quarterback has ADP that reflects last year's production — production that was limited by bad ball placement and poor scheme fit. When a better quarterback arrives, the receiver's output often jumps in ways that were predictable but underpriced."
+        )
+      ),
+
+      h2("Tight end sleeper archetype"),
+      h3("The new lead TE in a high-target offense"),
+      p(
+        t(
+          "Tight end markets are efficient at the top but inefficient in the middle. When a team that historically targets the TE heavily loses its starter, the new starter inherits a massive target share that the market doesn't price in until Week 3."
+        )
+      ),
+      p(
+        t(
+          "In the offseason, look for TE depth chart shakeups at teams known for TE-first offenses. The new starter's ADP is often rounds 8–10; the production can be rounds 4–5."
+        )
+      ),
+
+      h2("How to find your own sleepers"),
+      p(
+        t(
+          "Go through every team's depth chart once in late July, after the first week of training camp. Ask: who is in a better situation than their ADP reflects? Who has a clear role the market hasn't priced in?"
+        )
+      ),
+      p(
+        t(
+          "Then track those situations daily through training camp. By August, the situations that were speculative in June are either confirmed or denied. The managers who did the work in July are ready to act when the news breaks."
+        )
+      ),
+      p(
+        t("Scoutcast.ai tracks practice reports and depth chart moves daily. During the NFL season, the "),
+        lk(
+          "Fantasy Season Pass",
+          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+        ),
+        t(
+          " ($49.99) delivers this as a roster-specific audio brief every morning — so when your sleeper's situation changes, you hear it first."
+        )
+      ),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "What is a fantasy football sleeper pick?",
+        answer:
+          "A sleeper is a player whose production potential is higher than their average draft position (ADP) reflects. The best sleepers have a clear path to volume (a starter vacancy, a role change, a new scheme) and an ADP that lags because the market hasn't processed the opportunity. True sleepers go in rounds 5–12, not rounds 1–3.",
+      },
+      {
+        question:
+          "When should I look for sleeper picks in fantasy football?",
+        answer:
+          "The best window for identifying sleepers is late July through mid-August, when training camp reporting reveals role changes, injury situations, and depth chart battles. ADP in early July often doesn't reflect camp news. The gap between your informed read and the market price is widest in this window.",
+      },
+      {
+        question:
+          "Are running backs or wide receivers better sleeper targets?",
+        answer:
+          "Both have good sleeper opportunities, but the archetypes differ. RB sleepers are usually situation-dependent (lead-back vacancy, post-injury undervaluation). WR sleepers often come from second-year breakouts, new quarterback upgrades, and vacated target share. In PPR, WR sleepers carry more consistent production once they hit.",
+      },
+      {
+        question:
+          "How do I track fantasy football sleeper situations in real time?",
+        answer:
+          "Depth chart changes and role shifts emerge through training camp reporting and practice designations. Rotoworld posts real-time updates from beat reporters. Scoutcast.ai tracks these situations automatically and delivers a personalized daily brief each morning so you hear about your sleepers' situations without checking multiple sources.",
+      },
+    ],
+  },
+
+  {
+    slug: "fantasy-football-mock-draft-2026",
+    title: "Fantasy Football Mock Draft 2026: How to Prepare",
+    excerpt:
+      "Why mock drafts matter, how many to run, what to learn from each round, and the tools that make mock-draft prep actually useful.",
+    date: "2026-06-24",
+    updatedAt: "2026-06-24",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t(
+          "Mock drafts are the most underused preparation tool in fantasy football. Most managers do one or two the week before their draft and walk away with fuzzy confidence that doesn't survive contact with a position run in round 3. Done right, mock drafts give you a concrete plan for every round — not just a ranked list."
+        )
+      ),
+
+      h2("What a mock draft actually teaches you"),
+      p(
+        t(
+          "The point isn't to predict your draft exactly. It's to map the landscape: which players are available at which picks, where position runs tend to happen, and which positions have deeper value than the consensus rankings suggest."
+        )
+      ),
+      p(
+        t(
+          "After 10 mocks at your specific draft position, you know which players consistently fall to you, which ones get sniped one spot before your pick, and where the ADP range for each tier actually lands. That's real data, not theory."
+        )
+      ),
+
+      h2("How many mocks to run"),
+      p(
+        t(
+          "Minimum: 5–7 mocks, all at your actual draft position. Ideally, 10–15 across the three weeks before your real draft."
+        )
+      ),
+      p(
+        t(
+          "The first few mocks are orientation — you're learning how the draft flows. By mock 6–8, patterns emerge: this player is always gone by pick 18, that position group runs in rounds 4–5, this tier extends deeper than the rankings suggest. Mock 10+ is for stress-testing specific strategies."
+        )
+      ),
+      p(
+        t("More importantly: run them at your "),
+        em("exact"),
+        t(
+          " draft slot. Drafting from pick 4 and pick 10 in a 12-team league produce fundamentally different rosters. A mock at pick 7 doesn't prepare you for pick 4."
+        )
+      ),
+
+      h2("What to learn from each round"),
+      h3("Round 1"),
+      p(
+        t(
+          "Who falls? In the back half of the draft, there are usually 2–3 players from the top-8 consensus who consistently slip due to injury concerns or manager biases. Know who they are and decide in advance whether you'd take them."
+        )
+      ),
+      p(
+        t(
+          "Picking in the top 3: map all three scenarios — RB, WR, or elite TE — and trace what your round 2 looks like under each."
+        )
+      ),
+
+      h3("Rounds 2–3"),
+      p(
+        t(
+          "This is where positional value gets real. Running back tier 2 is typically rounds 2–4. Wide receiver tier 1 is rounds 1–4. Do you come out of round 3 with RB/RB, RB/WR, or WR/WR? Each creates a different priority for rounds 4–6."
+        )
+      ),
+
+      h3("Rounds 4–6"),
+      p(
+        t(
+          "The most instructive mock-draft window. This is where position runs happen, where tight end tier 1 disappears, and where managers panic or stay disciplined. Track how often QBs get drafted in round 5 — and how many quality players remain in round 6 as a result."
+        )
+      ),
+
+      h3("Rounds 7–10"),
+      p(
+        t(
+          "Upside WRs, handcuffs, high-upside TEs, and your quarterback. Know which tier your league consensus tends to draft QBs. If everyone is waiting until round 9, drafting at round 7 gains you nothing — but costs you a round 7 pick."
+        )
+      ),
+
+      h3("Rounds 11–15"),
+      p(
+        t(
+          "Know which stashes are still available late: players returning from injury at weeks 6–8, first-year players with back-half schedules, handcuffs to backs you already own. These rounds reward preparation more than drafting instinct."
+        )
+      ),
+
+      h2("Where to run mock drafts"),
+      ul(
+        [
+          b("ESPN Fantasy: "),
+          t("Mock drafts in the draft lobby. Mix of real users and CPU."),
+        ],
+        [
+          b("Yahoo Fantasy: "),
+          t("Best for Best Ball mock experience. Good ADP accuracy."),
+        ],
+        [
+          b("Sleeper: "),
+          t("Mock draft feature with real managers."),
+        ],
+        [
+          b("FantasyPros: "),
+          t(
+            "Overlays consensus ADP data during the draft — useful for seeing when you're reaching or finding value."
+          ),
+        ],
+        [
+          b("Underdog Fantasy: "),
+          t("Best Ball–specific mocks, excellent for PPR format prep."),
+        ]
+      ),
+
+      h2("Getting smarter between mocks"),
+      p(
+        t(
+          "Mocks give you draft-day data. But the best draft prep also includes knowing the season-long arc of the players you're targeting — schedule, bye weeks, handcuff situations."
+        )
+      ),
+      p(
+        t(
+          "During training camp, injury news and role changes happen fast. The managers who know their sleepers' situations in real time make better decisions when things break differently than the consensus predicted."
+        )
+      ),
+      p(
+        t(
+          "Scoutcast.ai tracks daily practice reports, depth chart moves, and injury designations. During the NFL season, the "
+        ),
+        lk(
+          "Fantasy Season Pass",
+          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+        ),
+        t(
+          " ($49.99) delivers roster-specific audio briefings from Tuesday through Sunday. But even pre-season, the free daily briefing keeps you current on the training camp situations that affect your target list."
+        )
+      ),
+      p(
+        lk(
+          "Download Scoutcast free →",
+          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+        )
+      ),
+
+      hr(),
+    ],
+    faqs: [
+      {
+        question: "How do I do a fantasy football mock draft?",
+        answer:
+          "Most league platforms (ESPN, Yahoo, Sleeper) have mock draft tools in their draft lobby. Run the mock at your actual draft position in your league's scoring format (PPR vs. standard). Treat each mock as a learning exercise: track which players consistently fall to your slot, where position runs happen, and what your roster looks like at the end.",
+      },
+      {
+        question:
+          "How many fantasy football mock drafts should I do?",
+        answer:
+          "At least 5–7 at your specific draft position. 10–15 is ideal. The first few are orientation; by mock 6–10, real patterns emerge. The marginal value of each additional mock decreases, but the first 10 are genuinely informative — especially for understanding where position runs happen in your specific format.",
+      },
+      {
+        question: "Do mock drafts help in fantasy football?",
+        answer:
+          "Yes, significantly. Managers who run 10+ mocks at their exact draft position walk in knowing which players to expect at each slot, where position runs tend to happen, and how different round-1 choices cascade through the rest of the draft. That preparation replaces gut-feel decisions with real data.",
+      },
+      {
+        question:
+          "When should I start mock drafting for fantasy football?",
+        answer:
+          "Start about 3–4 weeks before your real draft — typically late July or early August. Earlier mocks use pre-camp ADP that doesn't reflect injuries and depth chart changes. Mocks run in the last 10 days before your draft use the most accurate data. Space them out rather than doing all 10 in one weekend.",
+      },
+      {
+        question:
+          "What is the best mock draft tool for fantasy football?",
+        answer:
+          "FantasyPros is useful because it overlays consensus ADP data during the draft so you can see when you're reaching or finding value. For platform-specific prep, run mocks on the platform your league uses (ESPN, Yahoo, Sleeper). Underdog Fantasy offers the best Best Ball mock experience if you play that format.",
+      },
+    ],
+  },
+];
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);

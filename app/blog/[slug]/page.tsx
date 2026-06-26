@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import {
   posts,
+  draftPosts,
   getPost,
   formatPostDate,
   type Post,
@@ -14,8 +15,17 @@ import {
 
 const SITE_URL = "https://scoutcast.ai";
 
+// In dev, also render unpublished drafts so they can be previewed at their real
+// URL before shipping. Production (static export) only generates published posts.
+const previewDrafts = process.env.NODE_ENV !== "production";
+const renderablePosts = previewDrafts ? [...posts, ...draftPosts] : posts;
+
+function findPost(slug: string): Post | undefined {
+  return getPost(slug) ?? (previewDrafts ? draftPosts.find((p) => p.slug === slug) : undefined);
+}
+
 export function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }));
+  return renderablePosts.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
@@ -24,7 +34,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getPost(slug);
+  const post = findPost(slug);
   if (!post) return {};
   const canonical = `${SITE_URL}/blog/${post.slug}`;
   return {
@@ -261,7 +271,7 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getPost(slug);
+  const post = findPost(slug);
   if (!post) notFound();
 
   const articleLd = buildArticleLd(post);
