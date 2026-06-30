@@ -1111,11 +1111,11 @@ export const posts: Post[] = [
   },
   {
     slug: "best-sports-news-apps",
-    title: "Best Sports News Apps in 2026 (No-Ad Picks Included)",
+    title: "7 Best Sport News Apps (2026): Ranked & Compared",
     excerpt:
-      "Seven sports news apps compared by job — and two are completely ad-free. From live highlights to a 2-minute morning audio catch-up, updated for 2026.",
+      "We compared the 7 best sport news apps by job, time cost, and ad load — two are completely ad-free. See which one wins for how you follow sports in 2026.",
     date: "2026-06-11",
-    updatedAt: "2026-06-18",
+    updatedAt: "2026-06-30",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1128,6 +1128,19 @@ export const posts: Post[] = [
         lk("Scoutcast.ai", "https://scoutcast.ai"),
         t(" was built for.")
       ),
+      p(b("Updated June 2026."), t(" We re-checked every sport news app on this list for current pricing, ad load, and core features.")),
+
+      h2("The TL;DR — the 7 apps ranked by job"),
+      ul(
+        [b("ESPN"), t(" — watching highlights, browsing everything, one-app convenience")],
+        [b("theScore"), t(" — real-time scores and the best notification controls")],
+        [b("Apple Sports"), t(" — a fast, free, zero-clutter scoreboard on iPhone")],
+        [b("SofaScore"), t(" — global league coverage and the deepest stats")],
+        [b("Yahoo Sports"), t(" — news plus fantasy if your league is on Yahoo")],
+        [b("The Athletic"), t(" — long-form beat reporting worth paying for")],
+        [b("Scoutcast.ai"), t(" — a personalized ~2-minute audio briefing on your teams every morning")],
+      ),
+
       p(
         b("Disclosure:"),
         t(" I’m a co-founder of Scoutcast.ai, so one of the seven apps on this list is mine. I’ve placed it in exactly one slot — the one it actually wins — and I’ve tried to be as straight about the other six as I’d want them to be about us. If anything here is wrong, email me at "),
@@ -1143,17 +1156,6 @@ export const posts: Post[] = [
         [b("Time cost."), t(" How long a typical session takes, and whether the app respects when you want to leave.")],
         [b("Personalization."), t(" Whether it serves your teams or a national feed you have to filter yourself.")],
         [b("Noise."), t(" Ads, autoplay video, betting promos, and notification spam.")],
-      ),
-
-      h2("The TL;DR — pick by job"),
-      ul(
-        [b("ESPN"), t(" — watching highlights, browsing everything, one-app convenience")],
-        [b("theScore"), t(" — real-time scores and the best notification controls")],
-        [b("Apple Sports"), t(" — a fast, free, zero-clutter scoreboard on iPhone")],
-        [b("SofaScore"), t(" — global league coverage and the deepest stats")],
-        [b("Yahoo Sports"), t(" — news plus fantasy if your league is on Yahoo")],
-        [b("The Athletic"), t(" — long-form beat reporting worth paying for")],
-        [b("Scoutcast.ai"), t(" — a personalized ~2-minute audio briefing on your teams every morning")],
       ),
 
       h2("1. ESPN — best for watching and browsing everything"),
