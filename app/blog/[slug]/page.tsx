@@ -248,7 +248,11 @@ function buildItemListLd(post: Post) {
       "@type": "ListItem",
       position: i + 1,
       item: {
-        "@type": "MobileApplication",
+        // Generic Thing, not MobileApplication: this is a ranked list of apps
+        // referenced in an article, not a software catalog. Typing as
+        // MobileApplication triggers Google's Software App rich-result rules,
+        // which require offers/aggregateRating/etc. we intentionally don't claim.
+        "@type": "Thing",
         name: item.name,
         url: item.url,
       },
