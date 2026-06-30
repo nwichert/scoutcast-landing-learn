@@ -2926,11 +2926,7 @@ export const posts: Post[] = [
       },
     ],
   },
-];
 
-// Drafts: held out of the rendered blog until ready to ship.
-export const draftPosts: Post[] = [
-  // ─── Fantasy Football Cluster (draft season 2026) ────────────────────────
   {
     slug: "fantasy-football-draft-strategy-2026",
     title: "Fantasy Football Draft Strategy 2026: What Actually Works",
@@ -3128,7 +3124,11 @@ export const draftPosts: Post[] = [
       },
     ],
   },
+];
 
+// Drafts: held out of the rendered blog until ready to ship.
+export const draftPosts: Post[] = [
+  // ─── Fantasy Football Cluster (draft season 2026) ────────────────────────
   {
     slug: "how-to-research-fantasy-football",
     title: "How to Research Fantasy Football in Under 10 Minutes a Day",
