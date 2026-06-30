@@ -1243,6 +1243,11 @@ export const posts: Post[] = [
           "It depends on the job. ESPN is best for watching highlights and browsing everything; theScore is best for real-time score alerts; Apple Sports is the best free minimal scoreboard; SofaScore is best for global leagues and stats; The Athletic is best for long-form journalism; and Scoutcast.ai is best for a personalized ~2-minute audio catch-up on your teams each morning.",
       },
       {
+        question: "What’s the best free sport news app?",
+        answer:
+          "The two best free sport news apps are Apple Sports and Scoutcast.ai — the only two on this list that are free with no ads. Apple Sports is the best free scoreboard on iPhone; Scoutcast.ai is the best free pick for a personalized ~2-minute audio catch-up on your teams. ESPN, theScore, Yahoo Sports, and free-tier SofaScore are also free but carry ads.",
+      },
+      {
         question: "What is the best sports app without ads or betting promos?",
         answer:
           "Apple Sports (free, no ads, scores only), The Athletic (paywalled journalism, no ads), and Scoutcast.ai (free personalized audio briefings, no ads) are the three apps on this list with no ad load. theScore, ESPN, Yahoo Sports, and free-tier SofaScore all carry ads, and theScore is owned by a betting company.",
