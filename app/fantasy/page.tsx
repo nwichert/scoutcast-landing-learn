@@ -153,7 +153,7 @@ const INCLUDES = [
     "Tue / Wed / Thu / Sun briefings, all 18 weeks",
     "Fantasy playoffs (Wk 15–17) + H2H opponent edge",
     "NFL playoff DFS briefings + Super Bowl preview",
-    "Up to 3 leagues. Yahoo, ESPN, Sleeper, NFL.com.",
+    "Add up to 3 of your leagues — any platform.",
     "Offline downloads. AirPods controls.",
 ]
 
