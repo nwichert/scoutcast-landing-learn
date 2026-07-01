@@ -392,7 +392,7 @@ function HeadToHead() {
                 <div className="mt-3 flex items-start gap-3 rounded-2xl border border-[#0AB17B]/30 bg-[#0AB17B]/[0.06] p-5">
                     <ArrowRight className="mt-0.5 size-5 shrink-0 text-[#0AB17B]" />
                     <p className="text-[15px] leading-[1.6] text-[#C9D1D9]">
-                        <span className="font-semibold text-[#F0F6FC]">Where it&rsquo;s won: FLEX.</span> Start Conner over Pollard — their run defense is 31st since Week 4, and Conner&rsquo;s red-zone share is 71%. That&rsquo;s the call your H2H briefing makes, every week.
+                        <span className="font-semibold text-[#F0F6FC]">Where it&rsquo;s won: FLEX.</span>{" "}Start Conner over Pollard — their run defense is 31st since Week 4, and Conner&rsquo;s red-zone share is 71%. That&rsquo;s the call your H2H briefing makes, every week.
                     </p>
                 </div>
             </div>
