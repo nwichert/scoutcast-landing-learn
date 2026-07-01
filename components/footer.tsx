@@ -3,6 +3,7 @@ import { Logo, LogoIcon } from "@/components/logo"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
+    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },

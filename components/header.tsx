@@ -23,7 +23,6 @@ const navLinks: NavLink[] = [
     { name: 'NFL Fantasy', href: '/fantasy' },
     { name: 'Schedules', href: '/schedules' },
     { name: 'MCP Access', href: '/mcp' },
-    { name: 'Blog', href: '/blog' },
 ]
 
 export default function HeaderEight() {
