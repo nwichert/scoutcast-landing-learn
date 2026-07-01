@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Check, Play } from "lucide-react"
+import { Check, Play, Camera, ArrowRight } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { DownloadDialog } from "@/components/download-dialog"
@@ -133,6 +133,22 @@ const VS = [
     },
 ]
 
+const H2H_YOU = [
+    { pos: "QB", name: "J. Allen", pts: "24.6" },
+    { pos: "RB", name: "J. Cook", pts: "17.2" },
+    { pos: "WR", name: "A. St. Brown", pts: "19.1" },
+    { pos: "TE", name: "T. McBride", pts: "11.8" },
+    { pos: "FLEX", name: "J. Conner", pts: "15.4" },
+]
+
+const H2H_OPP = [
+    { pos: "QB", name: "L. Jackson", pts: "23.9" },
+    { pos: "RB", name: "B. Robinson", pts: "18.7" },
+    { pos: "WR", name: "CeeDee Lamb", pts: "20.3" },
+    { pos: "TE", name: "G. Kittle", pts: "13.2" },
+    { pos: "FLEX", name: "T. Pollard", pts: "12.1" },
+]
+
 const INCLUDES = [
     "Tue / Wed / Thu / Sun briefings, all 18 weeks",
     "Fantasy playoffs (Wk 15–17) + H2H opponent edge",
@@ -176,6 +192,7 @@ export default function FantasyPage() {
             <main>
                 <Hero />
                 <Rhythm />
+                <HeadToHead />
                 <HowItWorks />
                 <BriefingSample />
                 <Coverage />
@@ -308,6 +325,75 @@ function Rhythm() {
                             <FantasyDropPlayer src={card.audio} label={card.title} accent={card.accent} />
                         </article>
                     ))}
+                </div>
+            </div>
+        </section>
+    )
+}
+
+function LineupCard({
+    who,
+    rows,
+    accent,
+}: {
+    who: string
+    rows: { pos: string; name: string; pts: string }[]
+    accent: boolean
+}) {
+    return (
+        <div
+            className={`flex-1 rounded-2xl border bg-[#161B22] p-5 ${
+                accent ? "border-[#0AB17B]/40" : "border-[#30363D]"
+            }`}>
+            <div className="mb-3 flex items-center justify-between gap-2">
+                <span className={`text-sm font-semibold ${accent ? "text-[#0AB17B]" : "text-[#F0F6FC]"}`}>{who}</span>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-[#30363D] bg-[#0D1117] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.06em] text-[#8B949E]">
+                    <Camera className="size-3" />
+                    Screenshot
+                </span>
+            </div>
+            <ul className="flex flex-col divide-y divide-[#30363D]/70">
+                {rows.map((r) => (
+                    <li key={r.name} className="flex items-center gap-3 py-2">
+                        <span className="w-11 shrink-0 rounded-md bg-[#0D1117] px-1.5 py-1 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.04em] text-[#8B949E]">
+                            {r.pos}
+                        </span>
+                        <span className="grow text-sm text-[#F0F6FC]">{r.name}</span>
+                        <span className="shrink-0 font-mono text-xs text-[#8B949E]">{r.pts}</span>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
+function HeadToHead() {
+    return (
+        <section className="px-6 py-16 lg:px-12 lg:py-24">
+            <div className="mx-auto max-w-5xl">
+                <SectionHeading
+                    eyebrow="Head-to-head edge"
+                    title="Screenshot both lineups. We call the matchup."
+                />
+                <p className="mt-4 max-w-2xl text-[17px] leading-[1.55] text-[#8B949E]">
+                    Snap your lineup and your opponent&rsquo;s — straight from Yahoo, ESPN, Sleeper, or NFL.com. Your Thursday briefing pinpoints exactly where the week is won or lost, player for player.
+                </p>
+
+                <div className="mt-8 flex flex-col gap-3 lg:flex-row lg:items-center">
+                    <LineupCard who="Your lineup" rows={H2H_YOU} accent />
+                    <div className="flex shrink-0 items-center justify-center">
+                        <span className="flex size-9 items-center justify-center rounded-full border border-[#30363D] bg-[#0D1117] text-[11px] font-bold uppercase tracking-[0.04em] text-[#C9D1D9]">
+                            vs
+                        </span>
+                    </div>
+                    <LineupCard who="Opponent's lineup" rows={H2H_OPP} accent={false} />
+                </div>
+
+                <div className="mt-3 flex items-start gap-3 rounded-2xl border border-[#0AB17B]/30 bg-[#0AB17B]/[0.06] p-5">
+                    <ArrowRight className="mt-0.5 size-5 shrink-0 text-[#0AB17B]" />
+                    <p className="text-[15px] leading-[1.6] text-[#C9D1D9]">
+                        <span className="font-semibold text-[#F0F6FC]">Where it&rsquo;s won: FLEX.</span> Start Conner over Pollard — their run defense is 31st since Week 4, and Conner&rsquo;s red-zone share is 71%. That&rsquo;s the call your H2H briefing makes, every week.
+                    </p>
                 </div>
             </div>
         </section>
