@@ -13,7 +13,7 @@ export function DownloadCard() {
                 <p className="text-base leading-6 text-foreground/60">
                     <span className="hidden sm:inline">Scan the code with your iPhone to install Scoutcast from the App Store. </span>
                     <span className="sm:hidden">Tap below to install Scoutcast from the App Store. </span>
-                    Pick your teams tonight; your first briefing drops tomorrow morning.
+                    Pick your teams and your first briefing drops within a couple of minutes.
                 </p>
                 <ul className="mt-2 flex flex-col gap-3">
                     {benefits.map((benefit) => (

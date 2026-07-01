@@ -13,7 +13,7 @@ const faqGroups: FaqGroup[] = [
             {
                 id: "free",
                 question: "Do I need to pay to try Scoutcast?",
-                answer: "No. Scoutcast is free with one active cast — no credit card, no trial period. Just download and set up your first briefing tonight; it drops tomorrow morning. Upgrade to Unlimited whenever you want to run more than one cast at a time.",
+                answer: "No. Scoutcast is free with one active cast — no credit card, no trial period. Just download and set up your first cast — it drops within a couple of minutes. Upgrade to Unlimited whenever you want to run more than one cast at a time.",
             },
             {
                 id: "vs-espn",
