@@ -4,6 +4,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { DownloadDialog } from "@/components/download-dialog"
 import { CoverageTimeline } from "@/components/fantasy-coverage-timeline"
+import { FantasyDropPlayer } from "@/components/fantasy-drop-player"
 import { SeasonCountdown } from "@/components/season-countdown"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -65,6 +66,7 @@ const RHYTHM = [
         meta: "3–4 min · The Monday-night dust settles",
         body: "How your roster did — stat lines, own the swing-call hit or miss, name league-wide role changes, set the waiver mindset.",
         accent: false,
+        audio: "/fantasy/audio/fantasy-recap.mp3",
     },
     {
         day: "Wed",
@@ -73,6 +75,7 @@ const RHYTHM = [
         meta: "3–5 min · FAAB bids included",
         body: "Adds personalized to your roster and your H2H opponent's. No \"could be a good play\" — every pickup gets a specific bid.",
         accent: false,
+        audio: "/fantasy/audio/waiver-wednesday.mp3",
     },
     {
         day: "Thu",
@@ -81,6 +84,7 @@ const RHYTHM = [
         meta: "4–6 min · The swing call gets oxygen",
         body: "Locks compressed. One featured swing call with layered reasoning. Your H2H edge — where this week is actually won or lost.",
         accent: false,
+        audio: "/fantasy/audio/start-sit-thursday.mp3",
     },
     {
         day: "Sun",
@@ -89,6 +93,7 @@ const RHYTHM = [
         meta: "2–3 min · 90 minutes before kickoff",
         body: "Last-minute changes only. Inactives, weather, beat-writer pings — the late news that actually moves your lineup.",
         accent: true,
+        audio: "/fantasy/audio/final-call-sunday.mp3",
     },
 ]
 
@@ -300,6 +305,7 @@ function Rhythm() {
                                 </div>
                             </div>
                             <p className="text-sm leading-[1.55] text-[#C9D1D9]">{card.body}</p>
+                            <FantasyDropPlayer src={card.audio} label={card.title} accent={card.accent} />
                         </article>
                     ))}
                 </div>
