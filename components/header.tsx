@@ -17,9 +17,9 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-    { name: 'Product', href: '#product' },
-    { name: 'Compare', href: '#compare' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Product', href: '/#product' },
+    { name: 'Compare', href: '/#compare' },
+    { name: 'FAQ', href: '/#faq' },
     { name: 'NFL Fantasy', href: '/fantasy' },
     { name: 'Schedules', href: '/schedules' },
     { name: 'MCP Access', href: '/mcp' },
