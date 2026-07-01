@@ -101,7 +101,7 @@ const STEPS = [
     {
         n: "01",
         title: "Upload your roster",
-        body: "Screenshot or paste from Yahoo, ESPN, Sleeper, or NFL.com. Add your H2H opponent if you want the edge analysis.",
+        body: "Screenshot or paste your lineup from any fantasy platform. Add your H2H opponent if you want the edge analysis.",
     },
     {
         n: "02",
@@ -164,7 +164,7 @@ const FAQ = [
     },
     {
         q: "What leagues and platforms do you support?",
-        a: "Yahoo, ESPN, Sleeper, and NFL.com out of the box. Standard, half-PPR, and full-PPR scoring. Up to 3 leagues per account.",
+        a: "Any fantasy platform — just screenshot or paste your lineup. Standard, half-PPR, and full-PPR scoring. Up to 3 leagues per account.",
     },
     {
         q: "Do I have to upload my roster?",
@@ -376,7 +376,7 @@ function HeadToHead() {
                     title="Screenshot both lineups. We call the matchup."
                 />
                 <p className="mt-4 max-w-2xl text-[17px] leading-[1.55] text-[#8B949E]">
-                    Snap your lineup and your opponent&rsquo;s — straight from Yahoo, ESPN, Sleeper, or NFL.com. Your Thursday briefing pinpoints exactly where the week is won or lost, player for player.
+                    Snap your lineup and your opponent&rsquo;s — from any fantasy platform. Your Thursday briefing pinpoints exactly where the week is won or lost, player for player.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 lg:flex-row lg:items-center">
