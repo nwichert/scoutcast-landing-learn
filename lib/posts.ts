@@ -104,6 +104,7 @@ export const posts: Post[] = [
       p(t("We have AI that writes code, generates video, drafts legal contracts, and runs entire customer support orgs. But the morning sports check-in — the most predictable, most personal, most repeatable five minutes of my day — is still a manual scroll across four apps.")),
       p(t("That’s the gap.")),
       p(t("The same technology that lets a model summarize a 200-page report in 30 seconds should be able to read every game recap, every box score, every beat-writer thread overnight, and hand me a 2-minute audio rundown about "), em("my"), t(" teams by the time I’m pouring coffee.")),
+      p(t("And I’m clearly not the only one who’d rather listen — there’s a "), lk("huge and fast-growing sports podcast audience", "/blog/how-many-people-listen-to-sports-podcasts"), t(" that already consumes sports by ear.")),
       p(t("So Trevor and I built that.")),
 
       h2("What Scoutcast actually does"),
@@ -206,6 +207,7 @@ export const posts: Post[] = [
 
       h2("What is an AI audio briefing app?"),
       p(t("An AI audio briefing app generates a short, personalized audio summary on a schedule you choose — usually each morning. You tell it what you care about (news, calendar, email, sports, weather), and it produces a 2–5 minute audio segment you can listen to hands-free. The category emerged in 2025; until then, the closest thing was a smart speaker reading you canned headlines.")),
+      p(t("Sports is one of the most natural fits for the format — "), lk("the sports podcast audience", "/blog/how-many-people-listen-to-sports-podcasts"), t(" is already large and the fastest-growing in podcasting, but almost none of it is personalized to your teams.")),
       p(t("This post compares the three apps that have separated from the pack: Huxe, BriefingAM, and Scoutcast.ai. Adjacent apps like DayStart AI and Daily Brief – InfoDrizzle exist but are out of scope here.")),
 
       h2("The TL;DR"),
@@ -773,11 +775,11 @@ export const posts: Post[] = [
   },
   {
     slug: "how-many-people-listen-to-sports-podcasts",
-    title: "How Many People Listen to Sports Podcasts?",
+    title: "Sports Podcast Statistics (2026): How Many People Listen?",
     excerpt:
       "An estimated 85+ million Americans listen to sports podcasts at least monthly — about 54% of the US podcast audience and the fastest-growing podcast genre. The data on audience size, what listeners want, and the gap no app has filled.",
     date: "2026-05-19",
-    updatedAt: "2026-05-19",
+    updatedAt: "2026-07-02",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -826,6 +828,7 @@ export const posts: Post[] = [
         [t("Sports podcast ad revenue is projected to grow at a high CAGR through 2030, outpacing most other categories")],
         [t("Brand advertisers — particularly in financial services, insurance, and consumer products — pay premium CPMs for sports podcast inventory because of the audience’s demographic profile: predominantly male, 25–45, above-average income")]
       ),
+      p(t("That monetization mirrors the broader "), lk("sports app market", "https://scoutcast.ai/blog/sports-app-market-size/"), t(" — roughly $5.34 billion in 2026 and growing at a double-digit CAGR — where personalized audio remains one of the least-contested segments.")),
 
       h2("Summary: Sports Podcast Stats (2026)"),
       tbl(
@@ -1189,7 +1192,9 @@ export const posts: Post[] = [
       h2("7. Scoutcast.ai — best for a 2-minute, hands-free morning catch-up"),
       p(t("Every app above assumes you’ll come to it: open, scroll, filter, leave. "),
         lk("Scoutcast.ai", "https://scoutcast.ai"),
-        t(" inverts that. You pick your leagues, teams, and players once, and every morning it generates a roughly 2-minute audio briefing of what happened overnight — your scores, your storylines, what’s next. You listen while making coffee or driving; your hands and eyes stay free.")),
+        t(" inverts that. You pick your leagues, teams, and players once, and every morning it generates a roughly 2-minute audio briefing of what happened overnight — your scores, your storylines, what’s next. You listen while making coffee or driving; your hands and eyes stay free. Audio isn’t a fringe habit, either — "),
+        lk("sports is the fastest-growing podcast genre", "/blog/how-many-people-listen-to-sports-podcasts"),
+        t(", with 85+ million Americans listening monthly.")),
       p(t("Three things the others on this list don’t do: you can add the X handles of beat writers you trust as "), b("custom sources"), t(", so their takes are blended into your briefing; you can "), b("tap Ask mid-briefing"), t(" to voice a follow-up question (“what’s his stat line?”) and get an instant audio answer; and it’s the only sports app with an "), b("MCP connector"), t(", so you can plug your briefings into Claude or ChatGPT and ask questions there.")),
       p(t("The trade-offs, honestly: it’s Apple-only (iOS, iPadOS, macOS — Android isn’t built yet), it’s a morning recap rather than live play-by-play, and there’s no video. It’s free with no ads; the one paid add-on is an NFL Fantasy Season Pass ($49.99/season) with roster-aware briefings.")),
 
@@ -1838,7 +1843,7 @@ export const posts: Post[] = [
       p(t("If the main reason you open ESPN is your fantasy team, and your league could live anywhere, Yahoo Sports bundles solid scores and news with Yahoo Fantasy in one app. It’s not less noisy than ESPN — same ad-supported feed shape — but it consolidates two apps into one.")),
 
       h2("Scoutcast.ai — if the problem is the time sink"),
-      p(t("Every app above still assumes the same posture: you open it, you scroll, you decide when to stop. If your actual complaint is the 20-minute morning scroll, the fix isn’t a better feed — it’s no feed.")),
+      p(t("Every app above still assumes the same posture: you open it, you scroll, you decide when to stop. If your actual complaint is the 20-minute morning scroll, the fix isn’t a better feed — it’s no feed. Plenty of fans already get their sports by ear: "), lk("85+ million Americans listen to sports podcasts every month", "/blog/how-many-people-listen-to-sports-podcasts"), t(", yet no app has claimed the personalized-audio slot.")),
       p(lk("Scoutcast.ai", "https://scoutcast.ai"),
         t(" flips the posture: you pick your leagues, teams, and players once, and every morning it generates a ~2-minute audio briefing — your scores, your storylines, what’s next — that you listen to while making coffee. It ends on its own. You can add the X handles of beat writers you trust as custom sources, tap the mic mid-briefing to ask follow-ups (“what’s his stat line?”), and even plug your briefings into Claude or ChatGPT via its MCP connector. Free, no ads, with one optional add-on (an NFL Fantasy Season Pass, $49.99/season).")),
       p(b("Keep ESPN if:"), t(" you want video highlights or live streaming — Scoutcast.ai is audio-first morning catch-up, not play-by-play, and it’s Apple-only for now.")),
