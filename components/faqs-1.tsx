@@ -36,6 +36,11 @@ const faqGroups: FaqGroup[] = [
                 answer: "NFL, NBA, MLB, NHL, MLS, Premier League, Champions League, PGA Tour, and more. New leagues are added based on listener demand.",
             },
             {
+                id: "fantasy",
+                question: "Does Scoutcast work for fantasy football?",
+                answer: "Yes. The NFL Fantasy Season Pass ($49.99/season) adds four audio briefings a week personalized to your roster and your head-to-head opponent — waiver bids on Wednesday, start/sit calls on Thursday, and a final call Sunday morning before kickoff. It works with any fantasy platform and with the free app.",
+            },
+            {
                 id: "android",
                 question: "Does Scoutcast work on Android?",
                 answer: "Not yet. Scoutcast is currently available for iPhone, iPad, and Mac. Android is coming soon.",

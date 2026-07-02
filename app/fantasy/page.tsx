@@ -9,10 +9,23 @@ import { SeasonCountdown } from "@/components/season-countdown"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export const metadata: Metadata = {
-    title: "NFL Fantasy Season Pass",
+    title: "NFL Fantasy Season Pass — Fantasy Football Audio Briefings",
     description:
-        "Four audio briefings a week, personalized to your roster and your H2H opponent. Conviction calls in five minutes — not a 90-minute podcast.",
+        "Four audio briefings a week, personalized to your roster and your H2H opponent. Waiver bids, start/sit calls, and a Sunday final call — in five minutes, not a 90-minute podcast.",
     alternates: { canonical: "/fantasy" },
+    openGraph: {
+        type: "website",
+        url: "https://scoutcast.ai/fantasy",
+        title: "NFL Fantasy Season Pass — Fantasy Football Audio Briefings",
+        description:
+            "Four audio briefings a week, personalized to your roster and your H2H opponent. Waiver bids, start/sit calls, and a Sunday final call — in five minutes, not a 90-minute podcast.",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "NFL Fantasy Season Pass — Fantasy Football Audio Briefings",
+        description:
+            "Four audio briefings a week, personalized to your roster and your H2H opponent. Waiver bids, start/sit calls, and a Sunday final call — in five minutes, not a 90-minute podcast.",
+    },
 }
 
 const PALETTE = {
@@ -220,9 +233,12 @@ function Hero() {
             />
             <div className="relative mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
                 <div className="flex flex-col gap-6">
-                    <div className="inline-flex w-fit items-center gap-2 rounded-full border border-[#30363D] bg-[#161B22] px-3 py-1.5">
-                        <span className="size-1.5 shrink-0 rounded-full bg-[#0AB17B]" />
-                        <span className="text-xs font-medium uppercase tracking-[0.04em] text-[#C9D1D9]">NFL Fantasy · Season Pass</span>
+                    <div className="flex flex-wrap items-center gap-2">
+                        <div className="inline-flex w-fit items-center gap-2 rounded-full border border-[#30363D] bg-[#161B22] px-3 py-1.5">
+                            <span className="size-1.5 shrink-0 rounded-full bg-[#0AB17B]" />
+                            <span className="text-xs font-medium uppercase tracking-[0.04em] text-[#C9D1D9]">NFL Fantasy · Season Pass</span>
+                        </div>
+                        <SeasonCountdown />
                     </div>
                     <h1 className="text-balance text-[44px] font-bold leading-[1.05] tracking-[-0.02em] text-[#F0F6FC] sm:text-[56px] lg:text-[72px]">
                         Stop Scrolling.
@@ -618,15 +634,13 @@ function FinalCta() {
                 Start listening.
             </h2>
             <p className="relative max-w-md text-base leading-[1.55] text-[#8B949E]">Five minutes a briefing. Four a week. Personalized to your roster, ready before kickoff.</p>
-            <a
-                href="#"
-                className="relative mt-2 inline-flex h-14 items-center gap-3 rounded-[14px] bg-[#F0F6FC] pl-3.5 pr-4 text-[#0D1117] transition hover:bg-white">
+            <DownloadDialog className="relative mt-2 inline-flex h-14 cursor-pointer items-center gap-3 rounded-[14px] bg-[#F0F6FC] pl-3.5 pr-4 text-[#0D1117] transition hover:bg-white">
                 <AppleGlyph size={22} />
                 <div className="flex flex-col items-start text-left">
                     <span className="text-[10px] font-medium leading-none tracking-[0.02em] text-[#57606A]">Download on the</span>
                     <span className="text-lg font-bold leading-tight tracking-[-0.01em] text-[#0D1117]">App Store</span>
                 </div>
-            </a>
+            </DownloadDialog>
         </section>
     )
 }

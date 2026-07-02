@@ -3,6 +3,7 @@ import HeroSection from "@/components/secondary-hero-2";
 import LogoCloud from "@/components/logo-cloud";
 import FeaturesSection from "@/components/features-2";
 import ComparatorSection from "@/components/comparator-7";
+import FantasyStrip from "@/components/fantasy-strip";
 import DownloadSection from "@/components/contact";
 import Pricing from "@/components/pricing";
 import FAQs from "@/components/faqs-1";
@@ -25,7 +26,7 @@ const mobileApplicationLd = {
   installUrl: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329",
   softwareVersion: "2.0.2",
   datePublished: "2025-01-01",
-  dateModified: "2026-05-22",
+  dateModified: "2026-07-02",
   author: {
     "@type": "Organization",
     name: "Scoutcast.ai, Inc.",
@@ -141,6 +142,14 @@ const faqPageLd = {
     },
     {
       "@type": "Question",
+      name: "Does Scoutcast work for fantasy football?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The NFL Fantasy Season Pass ($49.99/season) adds four audio briefings a week personalized to your roster and your head-to-head opponent — waiver bids on Wednesday, start/sit calls on Thursday, and a final call Sunday morning before kickoff. It works with any fantasy platform and with the free app.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Can I interrupt the briefing to ask a question?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -201,6 +210,7 @@ export default function Home() {
       <LogoCloud />
       <FeaturesSection />
       <ComparatorSection />
+      <FantasyStrip />
       <DownloadSection />
       <Pricing />
       <FAQs />
