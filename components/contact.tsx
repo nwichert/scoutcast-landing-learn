@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { CheckCircle2 } from "lucide-react"
-import { APP_STORE_URL } from "@/lib/urls"
+import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/urls"
 
 const benefits = ["Only your teams and players", "About two minutes — not twenty-five", "Tap to ask follow-ups, hands-free", "Ad-free and ends when the news ends"]
 
@@ -11,8 +11,8 @@ export function DownloadCard() {
                 <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-foreground/50">Download Scoutcast.ai</span>
                 <h2 className="text-4xl font-semibold leading-[1.1] tracking-tight text-foreground">Your roster. Your league. Your two minutes.</h2>
                 <p className="text-base leading-6 text-foreground/60">
-                    <span className="hidden sm:inline">Scan the code with your iPhone to install Scoutcast from the App Store. </span>
-                    <span className="sm:hidden">Tap below to install Scoutcast from the App Store. </span>
+                    <span className="hidden sm:inline">Scan the code for your phone — App Store on iPhone, Google Play on Android. </span>
+                    <span className="sm:hidden">Tap below to install Scoutcast — App Store on iPhone, Google Play on Android. </span>
                     Pick your teams and your first briefing drops within a couple of minutes.
                 </p>
                 <ul className="mt-2 flex flex-col gap-3">
@@ -27,28 +27,54 @@ export function DownloadCard() {
                 </ul>
             </div>
 
-            <div className="flex flex-col items-center gap-6 p-12">
-                <h3 className="hidden text-[22px] font-semibold tracking-tight text-foreground sm:block">iPhone</h3>
-                <div className="hidden rounded-2xl bg-white p-4 sm:block">
-                    <Image
-                        src="/scoutcast-qr.png"
-                        alt="Scan to download Scoutcast on the App Store"
-                        width={220}
-                        height={220}
-                        className="size-[220px]"
-                    />
-                </div>
-                <a
-                    href={APP_STORE_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex h-[52px] items-center gap-2.5 rounded-[10px] border border-white/20 bg-black pl-4 pr-[18px] transition hover:bg-zinc-900">
-                    <AppleGlyph />
-                    <div className="flex flex-col leading-tight">
-                        <span className="text-[10px] tracking-[0.01em] text-white">Download on the</span>
-                        <span className="text-lg font-semibold tracking-tight text-white">App Store</span>
+            <div className="flex flex-col items-center justify-center gap-8 p-12 sm:flex-row sm:items-start">
+                <div className="flex flex-col items-center gap-5">
+                    <h3 className="hidden text-[22px] font-semibold tracking-tight text-foreground sm:block">iPhone</h3>
+                    <div className="hidden rounded-2xl bg-white p-3 sm:block">
+                        <Image
+                            src="/scoutcast-qr.png"
+                            alt="Scan to download Scoutcast on the App Store"
+                            width={150}
+                            height={150}
+                            className="size-[150px]"
+                        />
                     </div>
-                </a>
+                    <a
+                        href={APP_STORE_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex h-[52px] items-center gap-2.5 rounded-[10px] border border-white/20 bg-black pl-4 pr-[18px] transition hover:bg-zinc-900">
+                        <AppleGlyph />
+                        <div className="flex flex-col leading-tight">
+                            <span className="text-[10px] tracking-[0.01em] text-white">Download on the</span>
+                            <span className="text-lg font-semibold tracking-tight text-white">App Store</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div className="flex flex-col items-center gap-5">
+                    <h3 className="hidden text-[22px] font-semibold tracking-tight text-foreground sm:block">Android</h3>
+                    <div className="hidden rounded-2xl bg-white p-3 sm:block">
+                        <Image
+                            src="/scoutcast-play-qr.png"
+                            alt="Scan to download Scoutcast on Google Play"
+                            width={150}
+                            height={150}
+                            className="size-[150px]"
+                        />
+                    </div>
+                    <a
+                        href={PLAY_STORE_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex h-[52px] items-center gap-2.5 rounded-[10px] border border-white/20 bg-black pl-4 pr-[18px] transition hover:bg-zinc-900">
+                        <PlayGlyph />
+                        <div className="flex flex-col leading-tight">
+                            <span className="text-[10px] tracking-[0.01em] text-white">Get it on</span>
+                            <span className="text-lg font-semibold tracking-tight text-white">Google Play</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     )
@@ -67,6 +93,20 @@ export default function DownloadSection() {
         </section>
     )
 }
+
+const PlayGlyph = () => (
+    <svg
+        aria-hidden
+        width="24"
+        height="26"
+        viewBox="0 0 100 100"
+        fill="none">
+        <path d="M10 5 L10 95 L58 50 Z" fill="#4285F4" />
+        <path d="M10 5 L70.6 38.2 L58 50 Z" fill="#34A853" />
+        <path d="M70.6 38.2 L92 50 L70.6 61.8 L58 50 Z" fill="#FBBC04" />
+        <path d="M58 50 L70.6 61.8 L10 95 Z" fill="#EA4335" />
+    </svg>
+)
 
 const AppleGlyph = () => (
     <svg

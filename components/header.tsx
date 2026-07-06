@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Logo } from '@/components/logo'
 import { DownloadButton } from '@/components/download-button'
+import { PlayStoreButton } from '@/components/play-store-button'
 import { AnnouncementBanner } from '@/components/announcement-banner'
 import React from 'react'
 import { useScroll, useMotionValueEvent } from 'motion/react'
@@ -70,7 +71,8 @@ export default function HeaderEight() {
 
                                 <div className="max-lg:in-data-[state=active]:mt-6 in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
                                     <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                        <DownloadButton label="Download" />
+                                        <DownloadButton label="iOS" />
+                                        <PlayStoreButton label="Android" />
                                     </div>
                                 </div>
                             </div>

@@ -43,7 +43,7 @@ const faqGroups: FaqGroup[] = [
             {
                 id: "android",
                 question: "Does Scoutcast work on Android?",
-                answer: "Not yet. Scoutcast is currently available for iPhone, iPad, and Mac. Android is coming soon.",
+                answer: "Yes. Scoutcast is now on Google Play for Android, alongside iPhone, iPad, and Mac.",
             },
         ],
     },
