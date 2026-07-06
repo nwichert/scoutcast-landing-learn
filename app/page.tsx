@@ -18,7 +18,7 @@ const mobileApplicationLd = {
   alternateName: "Scoutcast",
   applicationCategory: "SportsApplication",
   applicationSubCategory: "News",
-  operatingSystem: "iOS 17.0, iPadOS 17.0, macOS 14.0",
+  operatingSystem: "iOS 17.0, iPadOS 17.0, macOS 14.0, Android",
   description:
     "Personalized AI sports audio briefings. Pick your teams and leagues, and Scoutcast generates a ~2-minute daily audio rundown of scores, storylines, and top performers. Tap to ask follow-up questions and get instant audio answers.",
   url: "https://scoutcast.ai",
@@ -26,7 +26,7 @@ const mobileApplicationLd = {
   installUrl: "https://apps.apple.com/us/app/scoutcast-ai/id6761558329",
   softwareVersion: "2.0.2",
   datePublished: "2025-01-01",
-  dateModified: "2026-07-02",
+  dateModified: "2026-07-06",
   author: {
     "@type": "Organization",
     name: "Scoutcast.ai, Inc.",
@@ -54,7 +54,7 @@ const mobileApplicationLd = {
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing monthly subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in Apple ID settings.",
+        "Auto-renewing monthly subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in your App Store or Google Play settings.",
     },
     {
       "@type": "Offer",
@@ -64,7 +64,7 @@ const mobileApplicationLd = {
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing annual subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in Apple ID settings.",
+        "Auto-renewing annual subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in your App Store or Google Play settings.",
     },
     {
       "@type": "Offer",

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s · Scoutcast.ai",
   },
   description:
-    "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone.",
+    "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone and Android.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Scoutcast.ai",
     title: "Scoutcast.ai — Personalized AI Sports Audio Briefings, Daily",
     description:
-      "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone.",
+      "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone and Android.",
     images: [{ url: "/scoutcast-icon.png", width: 1200, height: 630, alt: "Scoutcast.ai" }],
   },
   twitter: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     creator: "@scoutcastAI",
     title: "Scoutcast.ai — Personalized AI Sports Audio Briefings, Daily",
     description:
-      "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone.",
+      "Two-minute audio briefings personalized to your teams, your leagues, and your fantasy roster. Free on iPhone and Android.",
     images: ["/scoutcast-icon.png"],
   },
 };

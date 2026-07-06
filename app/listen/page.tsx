@@ -8,7 +8,7 @@ import { APP_STORE_URL } from "@/lib/urls"
 export const metadata: Metadata = {
     title: "Listen on Scoutcast.ai",
     description:
-        "Open your briefing in the Scoutcast app. Two-minute audio rundowns personalized to your teams, your leagues, and your fantasy roster. Free on iPhone.",
+        "Open your briefing in the Scoutcast app. Two-minute audio rundowns personalized to your teams, your leagues, and your fantasy roster. Free on iPhone and Android.",
     alternates: { canonical: "/listen" },
     itunes: {
         appId: "6761558329",
@@ -20,7 +20,7 @@ const POINTS = [
     "Your briefing, ready to play the moment you open the app",
     "About two minutes — your teams, your players, nothing else",
     "Tap to ask follow-ups, hands-free",
-    "Free on iPhone — no account needed to start",
+    "Free on iPhone and Android — no account needed to start",
 ]
 
 export default function ListenPage() {

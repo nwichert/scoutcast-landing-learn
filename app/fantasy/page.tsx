@@ -3,6 +3,7 @@ import { Check, Play, Camera, ArrowRight } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { DownloadDialog } from "@/components/download-dialog"
+import { PLAY_STORE_URL } from "@/lib/urls"
 import { CoverageTimeline } from "@/components/fantasy-coverage-timeline"
 import { FantasyDropPlayer } from "@/components/fantasy-drop-player"
 import { SeasonCountdown } from "@/components/season-countdown"
@@ -256,7 +257,7 @@ function Hero() {
                         <div className="flex items-center gap-2 text-[13px] text-[#8B949E]">
                             <span>About $3 a week in-season</span>
                             <span className="size-[3px] rounded-full bg-[#30363D]" />
-                            <span>Cancel anytime in iOS</span>
+                            <span>iOS &amp; Android · Cancel anytime</span>
                         </div>
                     </div>
                 </div>
@@ -582,9 +583,9 @@ function Pricing() {
                     </ul>
                     <DownloadDialog className="inline-flex h-13 cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[#0AB17B] px-5 text-base font-semibold text-[#0D1117] transition hover:bg-[#0BC189]">
                         <AppleGlyph />
-                        Buy on the App Store
+                        Get the Season Pass
                     </DownloadDialog>
-                    <p className="self-center text-center text-xs text-[#8B949E]">One-time charge per season. Auto-renews each August unless you cancel.</p>
+                    <p className="self-center text-center text-xs text-[#8B949E]">One-time charge per season on the App Store or Google Play. Auto-renews each August unless you cancel.</p>
                 </article>
             </div>
         </section>
@@ -634,13 +635,27 @@ function FinalCta() {
                 Start listening.
             </h2>
             <p className="relative max-w-md text-base leading-[1.55] text-[#8B949E]">Five minutes a briefing. Four a week. Personalized to your roster, ready before kickoff.</p>
-            <DownloadDialog className="relative mt-2 inline-flex h-14 cursor-pointer items-center gap-3 rounded-[14px] bg-[#F0F6FC] pl-3.5 pr-4 text-[#0D1117] transition hover:bg-white">
-                <AppleGlyph size={22} />
-                <div className="flex flex-col items-start text-left">
-                    <span className="text-[10px] font-medium leading-none tracking-[0.02em] text-[#57606A]">Download on the</span>
-                    <span className="text-lg font-bold leading-tight tracking-[-0.01em] text-[#0D1117]">App Store</span>
-                </div>
-            </DownloadDialog>
+            <div className="relative mt-2 flex flex-col items-center gap-3 sm:flex-row">
+                <DownloadDialog className="inline-flex h-14 cursor-pointer items-center gap-3 rounded-[14px] bg-[#F0F6FC] pl-3.5 pr-4 text-[#0D1117] transition hover:bg-white">
+                    <AppleGlyph size={22} />
+                    <div className="flex flex-col items-start text-left">
+                        <span className="text-[10px] font-medium leading-none tracking-[0.02em] text-[#57606A]">Download on the</span>
+                        <span className="text-lg font-bold leading-tight tracking-[-0.01em] text-[#0D1117]">App Store</span>
+                    </div>
+                </DownloadDialog>
+                <a
+                    href={PLAY_STORE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex h-14 items-center transition hover:opacity-90">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                        src="/google-play-badge.svg"
+                        alt="Get it on Google Play"
+                        className="h-14 w-auto"
+                    />
+                </a>
+            </div>
         </section>
     )
 }

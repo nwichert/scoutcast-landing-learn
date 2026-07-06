@@ -65,7 +65,7 @@ export const posts: Post[] = [
     excerpt:
       "A personalized 2-minute AI sports briefing for your morning — and the morning with my son that started it.",
     date: "2026-04-28",
-    updatedAt: "2026-04-28",
+    updatedAt: "2026-07-06",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -73,7 +73,7 @@ export const posts: Post[] = [
     body: [
       lead(
         t(
-          "Scoutcast.ai is a personalized AI sports audio briefing for iOS. You pick your leagues, teams, and players, and every morning you get a ~2-minute audio rundown of exactly what matters to you. You can tap the mic mid-briefing to ask a follow-up question and get an instant audio answer."
+          "Scoutcast.ai is a personalized AI sports audio briefing for iOS and Android. You pick your leagues, teams, and players, and every morning you get a ~2-minute audio rundown of exactly what matters to you. You can tap the mic mid-briefing to ask a follow-up question and get an instant audio answer."
         )
       ),
       p(t("This is the story of why my co-founder Trevor Mason and I built it.")),
@@ -126,8 +126,9 @@ export const posts: Post[] = [
       p(t("We’re also live as an "), lk("MCP connector", "https://modelcontextprotocol.io"), t(" — meaning if you use Claude, ChatGPT, or Gemini CLI, you can plug your Scoutcast account in and ask the AI directly about your briefings. Settings → MCP Connector inside the app.")),
 
       h2("Try it"),
-      p(t("Scoutcast.ai is live on iOS, iPadOS, and macOS (Apple Silicon). Free download:")),
+      p(t("Scoutcast.ai is live on iOS, iPadOS, macOS (Apple Silicon), and Android. Free download:")),
       p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+      p(lk("Get Scoutcast on Google Play →", "https://play.google.com/store/apps/details?id=ai.scoutcast.android")),
       p(t("If you’ve ever spent 20 minutes catching up on sports before your coffee was cool — try it. I’d love to hear what you think. You can reach me at "), lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"), t(" or "), lk("@scoutcastAI", "https://x.com/scoutcastAI"), t(" on X.")),
 
       hr(),
@@ -136,7 +137,7 @@ export const posts: Post[] = [
       {
         question: "What is Scoutcast.ai?",
         answer:
-          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS. You pick the leagues, teams, and players you follow, and every morning Scoutcast generates a ~2-minute audio rundown of scores, storylines, and what’s next. You can interrupt the briefing to ask follow-up questions and get instant audio answers.",
+          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS and Android. You pick the leagues, teams, and players you follow, and every morning Scoutcast generates a ~2-minute audio rundown of scores, storylines, and what’s next. You can interrupt the briefing to ask follow-up questions and get instant audio answers.",
       },
       {
         question: "How is Scoutcast different from BriefingAM, Huxe, or DayStart AI?",
@@ -161,7 +162,7 @@ export const posts: Post[] = [
       {
         question: "What platforms is Scoutcast on?",
         answer:
-          "iOS 17+, iPadOS 17+, and macOS 14+ on Apple Silicon. Android is on the roadmap but not yet available.",
+          "iOS 17+, iPadOS 17+, macOS 14+ on Apple Silicon, and Android via Google Play.",
       },
       {
         question: "Can I use Scoutcast with Claude or ChatGPT?",
@@ -176,7 +177,7 @@ export const posts: Post[] = [
     excerpt:
       "An honest comparison of the three best AI audio briefing apps in 2026 — what each one is good at, where each one falls short, and which to pick based on what you actually care about.",
     date: "2026-05-07",
-    updatedAt: "2026-06-16",
+    updatedAt: "2026-07-06",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -197,7 +198,7 @@ export const posts: Post[] = [
       h2("How to choose an AI audio briefing app"),
       p(t("Before comparing specific apps, here are the six axes that actually differentiate this category. Run through them once and the decision matrix at the bottom of this post will be obvious.")),
       ul(
-        [b("1. Platform."), t(" Huxe is the only one that runs on Android. Scoutcast.ai and BriefingAM are Apple-only (iOS, iPadOS, macOS — BriefingAM also covers visionOS). If you're on Android, the choice is made for you.")],
+        [b("1. Platform."), t(" Huxe and Scoutcast.ai both run on iOS and Android. BriefingAM is Apple-only (iOS, iPadOS, macOS, and visionOS). If you're on Android, you're choosing between Huxe and Scoutcast.ai.")],
         [b("2. What you want briefed."), t(" Scoutcast is sports-first — with team, player, and beat-writer granularity. BriefingAM is general-purpose with sports as a secondary tab. Huxe is general-purpose with a live topic-station layer on top. Trying to use Scoutcast as a news briefing, or Huxe as a fantasy football tool, will both disappoint.")],
         [b("3. Format length."), t(" Scoutcast delivers ~2-minute briefings; Huxe runs ~5 minutes. If your morning window is tight, that gap matters.")],
         [b("4. Interactivity."), t(" Scoutcast (tap-to-ask) and Huxe (tap-and-hold) both let you interrupt mid-briefing to ask follow-up questions. BriefingAM is listen-only.")],
@@ -213,7 +214,7 @@ export const posts: Post[] = [
       h2("The TL;DR"),
       p(t("Don’t want to read the table? Pick by use case:")),
       ul(
-        [b("Huxe"), t(" — if you want one app for everything (email, calendar, news, sports, weather) and you’re on Android, or want the broadest topic coverage.")],
+        [b("Huxe"), t(" — if you want one app for everything (email, calendar, news, sports, weather) or want the broadest topic coverage.")],
         [b("BriefingAM"), t(" — if you’re Apple-ecosystem-only and want a focused morning briefing with email, calendar, and team-level sports.")],
         [b("Scoutcast.ai"), t(" — if sports is the primary thing you want briefed, especially if you follow specific players, plug in beat-writer sources, play fantasy football, or want to query your briefings from Claude or ChatGPT.")]
       ),
@@ -231,7 +232,7 @@ export const posts: Post[] = [
         [
           [[t("Category")], [t("Sports-first")], [t("General-purpose")], [t("General-purpose")]],
           [[t("Built by")], [t("Independent (Scoutcast.ai, Inc.)")], [t("Ex-NotebookLM founders; $4.6M from Conviction, Dylan Field, Jeff Dean")], [t("Prepd LLC (independent)")]],
-          [[t("Platform")], [t("iOS, iPadOS, macOS")], [t("iOS, Android")], [t("iOS, iPadOS, macOS, visionOS")]],
+          [[t("Platform")], [t("iOS, iPadOS, macOS, Android")], [t("iOS, Android")], [t("iOS, iPadOS, macOS, visionOS")]],
           [[t("Refreshes daily")], [t("✓")], [t("✓")], [t("✓")]],
           [[t("Personalized to specific sports teams")], [t("✓")], [t("Partial — sports as a topic/category")], [t("✓ — leagues and teams")]],
           [[t("Custom sources from beat writers (X handles)")], [t("✓")], [t("✗")], [t("✗")]],
@@ -252,7 +253,7 @@ export const posts: Post[] = [
         [b("Breadth across information types."), t(" Sports is one tab among many — politics, science, AI, finance, life, X, Reddit.")],
         [b("Live Stations."), t(" Public stations across a dozen-plus categories let you track an arbitrary topic (a company, a portfolio, your kid’s school district) and refresh on demand. Nothing else in the category does this.")],
         [b("Real interactivity."), t(" Tap-and-hold to interrupt the hosts mid-briefing and ask follow-ups. (The feature this post’s first draft incorrectly listed as Scoutcast-only.)")],
-        [b("Cross-platform."), t(" The only one of the three with both iOS and Android.")],
+        [b("Cross-platform."), t(" Runs on both iOS and Android.")],
         [b("Pedigree."), t(" Built by ex-NotebookLM founders (Raiza Martin, Jason Spielman, Stephen Hughes), with $4.6M from Conviction, Figma’s Dylan Field, and Google Research’s Jeff Dean.")],
       ),
 
@@ -294,7 +295,7 @@ export const posts: Post[] = [
         [
           [[t("Want a single morning brief covering email, calendar, news, and a bit of sports")], [t("Huxe or BriefingAM")]],
           [[t("Want a brief that fits the Apple ecosystem (iPad, Mac, Vision Pro)")], [t("BriefingAM")]],
-          [[t("Are on Android")], [t("Huxe")]],
+          [[t("Are on Android")], [t("Huxe (general) or Scoutcast.ai (sports-first)")]],
           [[t("Want sports as the "), em("primary"), t(" thing in your morning")], [t("Scoutcast.ai")]],
           [[t("Follow specific NFL/NBA/MLB beat writers and want their takes in your briefing")], [t("Scoutcast.ai")]],
           [[t("Play fantasy football and want a roster-aware briefing")], [t("Scoutcast.ai")]],
@@ -319,7 +320,7 @@ export const posts: Post[] = [
       ul(
         [t("No app currently delivers genuine live-game audio updates — short bursts during big moments, not just the morning recap.")],
         [t("All three are mobile-first; none has a desktop web app for browser listening.")],
-        [t("Of the three, only Huxe runs on Android; Scoutcast and BriefingAM are Apple-only.")],
+        [t("BriefingAM remains Apple-only; Huxe and Scoutcast.ai both cover Android.")],
         [t("No app is doing real conversational continuous audio yet — they’re all read-aloud briefings with optional Q&A interrupts, not flowing dialogue.")],
         [t("None has a meaningfully large social or community layer.")],
       ),
@@ -328,6 +329,7 @@ export const posts: Post[] = [
       p(t("All three have free tiers. The honest move is to install all three for a week and pick what fits your morning.")),
       ul(
         [lk("Scoutcast.ai on the App Store", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")],
+        [lk("Scoutcast.ai on Google Play (Android)", "https://play.google.com/store/apps/details?id=ai.scoutcast.android")],
         [lk("Huxe on the App Store (iOS)", "https://apps.apple.com/us/app/huxe/id6743417504")],
         [lk("Huxe on Google Play (Android)", "https://play.google.com/store/apps/details?id=com.huxe.android.apps.huxe")],
         [lk("BriefingAM on the App Store", "https://apps.apple.com/us/app/briefingam-ai-audio-briefing/id6743698762")],
@@ -345,7 +347,7 @@ export const posts: Post[] = [
       {
         question: "What is the best AI audio briefing app in 2026?",
         answer:
-          "There isn’t a single best app — it depends on what you want briefed. Huxe is best for breadth and is the only one with an Android app. BriefingAM is best for an Apple-ecosystem general briefing. Scoutcast.ai is best if sports is the primary thing you want covered, especially with custom beat-writer sources or fantasy football.",
+          "There isn’t a single best app — it depends on what you want briefed. Huxe is best for breadth across topics. BriefingAM is best for an Apple-ecosystem general briefing. Scoutcast.ai is best if sports is the primary thing you want covered, especially with custom beat-writer sources or fantasy football.",
       },
       {
         question: "Is Huxe sports-specific?",
@@ -360,7 +362,7 @@ export const posts: Post[] = [
       {
         question: "What is Scoutcast.ai?",
         answer:
-          "Scoutcast.ai is a personalized AI sports audio briefing for iOS, iPadOS, and macOS. You pick your leagues, teams, and players, and every morning you get a ~2-minute audio rundown. You can tap the mic mid-briefing to ask follow-up questions, plug in beat-writer X handles as custom sources, and connect briefings to Claude or ChatGPT via MCP.",
+          "Scoutcast.ai is a personalized AI sports audio briefing for iOS, iPadOS, macOS, and Android. You pick your leagues, teams, and players, and every morning you get a ~2-minute audio rundown. You can tap the mic mid-briefing to ask follow-up questions, plug in beat-writer X handles as custom sources, and connect briefings to Claude or ChatGPT via MCP.",
       },
       {
         question: "Are these apps free?",
@@ -375,7 +377,7 @@ export const posts: Post[] = [
       {
         question: "Is there an Android version of any of these apps?",
         answer:
-          "Only Huxe. Huxe runs on iOS and Android, both publicly launched in September 2025. Scoutcast.ai is iOS, iPadOS, and macOS only — Android is on the roadmap. BriefingAM is Apple-only (iOS, iPadOS, macOS, and visionOS).",
+          "Two of the three: Huxe and Scoutcast.ai both run on Android. Huxe launched on iOS and Android in September 2025; Scoutcast.ai added Android via Google Play in July 2026. BriefingAM is Apple-only (iOS, iPadOS, macOS, and visionOS).",
       },
       {
         question: "Do any of these apps work with Claude or ChatGPT?",
@@ -385,7 +387,7 @@ export const posts: Post[] = [
       {
         question: "What should I look for in an AI audio briefing app?",
         answer:
-          "Six things: (1) platform — Huxe is the only one on Android; (2) primary content — sports-first, general, or both; (3) format length — ~2 minutes (Scoutcast) vs ~5 minutes (Huxe); (4) interactivity — Scoutcast and Huxe both allow mid-briefing questions, BriefingAM doesn't; (5) integrations — email/calendar (Huxe, BriefingAM) or MCP for AI assistants (Scoutcast only); (6) output quality — the only real way to judge is to run all three free tiers on the same morning.",
+          "Six things: (1) platform — BriefingAM is Apple-only, while Huxe and Scoutcast.ai also run on Android; (2) primary content — sports-first, general, or both; (3) format length — ~2 minutes (Scoutcast) vs ~5 minutes (Huxe); (4) interactivity — Scoutcast and Huxe both allow mid-briefing questions, BriefingAM doesn't; (5) integrations — email/calendar (Huxe, BriefingAM) or MCP for AI assistants (Scoutcast only); (6) output quality — the only real way to judge is to run all three free tiers on the same morning.",
       },
       {
         question: "Is NotebookLM Audio Overviews a competitor to these apps?",
@@ -1118,7 +1120,7 @@ export const posts: Post[] = [
     excerpt:
       "We compared the 7 best sport news apps by job, time cost, and ad load — two are completely ad-free. See which one wins for how you follow sports in 2026.",
     date: "2026-06-11",
-    updatedAt: "2026-06-30",
+    updatedAt: "2026-07-06",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1196,7 +1198,7 @@ export const posts: Post[] = [
         lk("sports is the fastest-growing podcast genre", "/blog/how-many-people-listen-to-sports-podcasts"),
         t(", with 85+ million Americans listening monthly.")),
       p(t("Three things the others on this list don’t do: you can add the X handles of beat writers you trust as "), b("custom sources"), t(", so their takes are blended into your briefing; you can "), b("tap Ask mid-briefing"), t(" to voice a follow-up question (“what’s his stat line?”) and get an instant audio answer; and it’s the only sports app with an "), b("MCP connector"), t(", so you can plug your briefings into Claude or ChatGPT and ask questions there.")),
-      p(t("The trade-offs, honestly: it’s Apple-only (iOS, iPadOS, macOS — Android isn’t built yet), it’s a morning recap rather than live play-by-play, and there’s no video. It’s free with no ads; the one paid add-on is an NFL Fantasy Season Pass ($49.99/season) with roster-aware briefings.")),
+      p(t("The trade-offs, honestly: it’s a morning recap rather than live play-by-play, and there’s no video. It runs on iOS, iPadOS, macOS, and Android. It’s free with no ads; the one paid add-on is an NFL Fantasy Season Pass ($49.99/season) with roster-aware briefings.")),
 
       h2("Side-by-side comparison"),
       tbl(
@@ -1223,7 +1225,7 @@ export const posts: Post[] = [
       p(t("Of the seven apps above, only two are free and ad-free:")),
       ul(
         [b("Apple Sports"), t(" — no ads, no news feed, just live scores and standings. Trade-off: Apple-only and minimal by design.")],
-        [b("Scoutcast.ai"), t(" — no ads, personalized 2-minute audio briefing every morning. Trade-off: Apple-only, morning recap rather than live scores.")],
+        [b("Scoutcast.ai"), t(" — no ads, personalized 2-minute audio briefing every morning. Trade-off: morning recap rather than live scores.")],
       ),
       p(t("Every other free option carries some ad load. ESPN and Yahoo Sports are the heaviest. SofaScore runs display ads on free accounts. theScore is lighter on banners but saturated with betting promos since it is owned by a gaming company. The Athletic has no ads because it is a paid subscription, not a free tier.")),
 
@@ -1297,7 +1299,7 @@ export const posts: Post[] = [
     excerpt:
       "Seven free NBA news apps compared by job: highlights, score alerts, a clean scoreboard, or a 2-minute personalized audio catch-up. Two have no ads at all.",
     date: "2026-06-18",
-    updatedAt: "2026-06-18",
+    updatedAt: "2026-07-06",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1345,7 +1347,7 @@ export const posts: Post[] = [
           [[t("Yahoo Sports")], [t("News + Yahoo fantasy")], [t("Heavy")], [t("Partial")], [t("Full access")], [t("iOS, Android, web")]],
           [[t("NBA App")], [t("Official content + League Pass")], [t("Moderate")], [t("Yes — teams")], [t("Free; League Pass is paid")], [t("iOS, Android, web")]],
           [[t("Bleacher Report")], [t("Fast news + short-form video")], [t("Moderate")], [t("Yes — teams")], [t("Full access")], [t("iOS, Android")]],
-          [[t("Scoutcast.ai")], [t("2-min audio briefing")], [b("None")], [t("Yes — teams, players, and your chosen beat writers")], [t("Full access")], [t("iOS, iPadOS, macOS only")]],
+          [[t("Scoutcast.ai")], [t("2-min audio briefing")], [b("None")], [t("Yes — teams, players, and your chosen beat writers")], [t("Full access")], [t("iOS, iPadOS, macOS, Android")]],
         ]
       ),
 
@@ -1382,7 +1384,7 @@ export const posts: Post[] = [
         t(" inverts that: you pick your NBA teams and players once — and optionally add the X handles of beat writers you trust — and every morning you get a personalized ~2-minute audio briefing covering last night's scores, what actually mattered, injury news, and what's coming up. You listen while making coffee. No screen, no scroll, no ads.")
       ),
       p(t("Two things others on this list don't do: you can "), b("tap Ask mid-briefing"), t(" to voice a follow-up ("), em("what's Giannis's stat line?"), t(") and get an instant audio answer; and it has an "), b("MCP connector"), t(" so you can query your briefings from Claude or ChatGPT.")),
-      p(t("The honest trade-offs: it's a morning recap, not live play-by-play. Apple-only (iOS, iPadOS, macOS). No scoreboard or highlights. Free with no ads. For the broader sports-news comparison beyond NBA, see "), lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"), t(".")),
+      p(t("The honest trade-offs: it's a morning recap, not live play-by-play. No scoreboard or highlights. Free with no ads, on iOS, iPadOS, macOS, and Android. For the broader sports-news comparison beyond NBA, see "), lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"), t(".")),
 
       h2("The two no-ad options"),
       p(t("Of the seven apps above, only two carry zero ads in their free tier: "), b("Apple Sports"), t(" and "), b("Scoutcast.ai"), t(". They cover different jobs — Apple Sports is your real-time score check, Scoutcast.ai is your morning audio catch-up — and they complement each other well.")),
@@ -1428,7 +1430,7 @@ export const posts: Post[] = [
       {
         question: "Is Scoutcast.ai a good app for NBA fans?",
         answer:
-          "Yes, for one specific job: a personalized morning audio briefing. You pick your NBA teams and players, optionally add beat-writer X handles as sources, and every morning get a 2-minute audio rundown covering last night's results and what matters today. Free, no ads, tap-to-ask voice follow-ups. The trade-off: audio-only, Apple-only, morning recap rather than live play-by-play.",
+          "Yes, for one specific job: a personalized morning audio briefing. You pick your NBA teams and players, optionally add beat-writer X handles as sources, and every morning get a 2-minute audio rundown covering last night's results and what matters today. Free, no ads, tap-to-ask voice follow-ups, on iOS and Android. The trade-off: audio-only, morning recap rather than live play-by-play.",
       },
     ],
     comparedItems: {
@@ -1571,7 +1573,7 @@ export const posts: Post[] = [
     excerpt:
       "A system for staying a real fan on 10 minutes a day or less: shrink your roster, switch to finite formats, attach sports to a fixed slot in your day, and make every source earn its place.",
     date: "2026-06-11",
-    updatedAt: "2026-06-11",
+    updatedAt: "2026-07-06",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1641,7 +1643,7 @@ export const posts: Post[] = [
       p(t("Full disclosure: I co-founded "),
         lk("Scoutcast.ai", "https://scoutcast.ai"),
         t(" because steps 1–4 are exactly the system I wanted and couldn’t assemble from feeds. You pick your leagues, teams, and players once (step 1), it generates a ~2-minute audio briefing every morning (step 2), you listen in whatever slot your day has (step 3), and you can add the X handles of the beat writers you trust as custom sources (step 4). Mid-briefing, you can tap the mic and ask a follow-up — “what’s his stat line?” — and it answers and resumes.")),
-      p(t("It’s free, with no ads, on iOS, iPadOS, and macOS. If you want the longer version of why we built it, "),
+      p(t("It’s free, with no ads, on iOS, iPadOS, macOS, and Android. If you want the longer version of why we built it, "),
         lk("that story is here", "/blog/why-we-built-scoutcast"),
         t(". And if you’d rather assemble the system from other apps, the "),
         lk("best sports news apps comparison", "/blog/best-sports-news-apps"),
@@ -1674,7 +1676,7 @@ export const posts: Post[] = [
       {
         question: "What is Scoutcast.ai?",
         answer:
-          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS, iPadOS, and macOS. You pick your leagues, teams, players, and optionally the X handles of beat writers you trust, and every morning it generates a ~2-minute audio briefing. You can tap the mic mid-briefing to ask follow-up questions. It’s free with no ads.",
+          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS, iPadOS, macOS, and Android. You pick your leagues, teams, players, and optionally the X handles of beat writers you trust, and every morning it generates a ~2-minute audio briefing. You can tap the mic mid-briefing to ask follow-up questions. It’s free with no ads.",
       },
     ],
   },
@@ -1792,7 +1794,7 @@ export const posts: Post[] = [
     excerpt:
       "Apple Sports for noise, theScore for alerts, SofaScore for global leagues, The Athletic for depth — and Scoutcast.ai if ESPN just eats your morning.",
     date: "2026-06-11",
-    updatedAt: "2026-06-19",
+    updatedAt: "2026-07-06",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1846,7 +1848,7 @@ export const posts: Post[] = [
       p(t("Every app above still assumes the same posture: you open it, you scroll, you decide when to stop. If your actual complaint is the 20-minute morning scroll, the fix isn’t a better feed — it’s no feed. Plenty of fans already get their sports by ear: "), lk("85+ million Americans listen to sports podcasts every month", "/blog/how-many-people-listen-to-sports-podcasts"), t(", yet no app has claimed the personalized-audio slot.")),
       p(lk("Scoutcast.ai", "https://scoutcast.ai"),
         t(" flips the posture: you pick your leagues, teams, and players once, and every morning it generates a ~2-minute audio briefing — your scores, your storylines, what’s next — that you listen to while making coffee. It ends on its own. You can add the X handles of beat writers you trust as custom sources, tap the mic mid-briefing to ask follow-ups (“what’s his stat line?”), and even plug your briefings into Claude or ChatGPT via its MCP connector. Free, no ads, with one optional add-on (an NFL Fantasy Season Pass, $49.99/season).")),
-      p(b("Keep ESPN if:"), t(" you want video highlights or live streaming — Scoutcast.ai is audio-first morning catch-up, not play-by-play, and it’s Apple-only for now.")),
+      p(b("Keep ESPN if:"), t(" you want video highlights or live streaming — Scoutcast.ai is audio-first morning catch-up, not play-by-play.")),
 
       h2("Side-by-side"),
       tbl(
@@ -1901,7 +1903,7 @@ export const posts: Post[] = [
       {
         question: "Is Scoutcast.ai a full replacement for ESPN?",
         answer:
-          "No — and it isn’t trying to be. Scoutcast.ai replaces the morning catch-up scroll with a ~2-minute personalized audio briefing on your teams. It has no video highlights or live streaming, and it’s Apple-only (iOS, iPadOS, macOS). Most people pair it with a scoreboard app like Apple Sports for live checks.",
+          "No — and it isn’t trying to be. Scoutcast.ai replaces the morning catch-up scroll with a ~2-minute personalized audio briefing on your teams. It has no video highlights or live streaming. It runs on iOS, iPadOS, macOS, and Android; most people pair it with a scoreboard app for live checks.",
       },
     ],
     comparedItems: {
@@ -2135,7 +2137,7 @@ export const posts: Post[] = [
     excerpt:
       "The 2026 World Cup is live. Six apps matched to each job: streaming, live scores, deep stats, and catching up on every match in two minutes a day.",
     date: "2026-06-11",
-    updatedAt: "2026-06-17",
+    updatedAt: "2026-07-06",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -2178,7 +2180,7 @@ export const posts: Post[] = [
 
       h2("6. Scoutcast.ai — the 2-minute daily catch-up"),
       p(t("Every app above assumes you’ll come to it and scroll. "), lk("Scoutcast.ai", "https://scoutcast.ai"), t(" inverts that: pick the teams you follow once, and every morning you get a ~2-minute personalized audio briefing — yesterday’s results, what actually mattered, who plays today — that you listen to while making coffee. Tap the mic mid-briefing to ask a follow-up (“so who advances if they draw?”) and it answers and resumes. You can even plug your briefings into Claude or ChatGPT via its MCP connector.")),
-      p(b("The honest trade-offs:"), t(" it’s an audio recap, not a streaming app — you’ll never watch a match in it; and it’s Apple-only (iOS, iPadOS, macOS). It’s free with no ads. For a tournament where "), lk("the average day has more matches than your evening has hours", "/blog/how-to-follow-the-2026-world-cup-when-you-work"), t(", the two-minute format is the point.")),
+      p(b("The honest trade-offs:"), t(" it’s an audio recap, not a streaming app — you’ll never watch a match in it. It runs on iOS, iPadOS, macOS, and Android, free with no ads. For a tournament where "), lk("the average day has more matches than your evening has hours", "/blog/how-to-follow-the-2026-world-cup-when-you-work"), t(", the two-minute format is the point.")),
 
       h2("Side-by-side"),
       tbl(
@@ -2189,12 +2191,12 @@ export const posts: Post[] = [
           [[t("FIFA official app")], [t("Schedule, brackets, tickets")], [t("Free")], [t("iOS, Android")], [t("Match start (skew promotional)")], [t("Multiple")]],
           [[t("Apple Sports")], [t("Live scores")], [t("Free")], [t("iOS, iPadOS, macOS only")], [t("Live Activities, lock-screen scores")], [t("Device language")]],
           [[t("SofaScore")], [t("Stats depth")], [t("Free; paid tier")], [t("iOS, Android, web")], [t("Goals, match start, match end")], [t("Multiple")]],
-          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("Free")], [t("iOS, iPadOS, macOS only")], [t("Daily briefing")], [t("English")]],
+          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("Free")], [t("iOS, iPadOS, macOS, Android")], [t("Daily briefing")], [t("English")]],
         ]
       ),
 
       h2("On Android?"),
-      p(t("The list above skews Apple-heavy — Apple Sports and Scoutcast.ai are both iOS-only. Here’s how to cover each job on Android:")),
+      p(t("Most of the list covers Android natively — Apple Sports is the one exception. Here’s how to cover each job on Android:")),
       tbl(
         [[t("Job")], [t("Apple pick")], [t("Android alternative")]],
         [
@@ -2203,7 +2205,7 @@ export const posts: Post[] = [
           [[t("Schedule & brackets")], [t("FIFA official app")], [t("FIFA official app (also on Android)")]],
           [[t("Live scores")], [t("Apple Sports")], [t("FotMob or OneFootball — both free")]],
           [[t("Stats depth")], [t("SofaScore")], [t("SofaScore (also on Android)")]],
-          [[t("Daily audio catch-up")], [t("Scoutcast.ai")], [t("Scoutcast.ai is iOS-only — Android is on the roadmap")]],
+          [[t("Daily audio catch-up")], [t("Scoutcast.ai")], [t("Scoutcast.ai (also on Android via Google Play)")]],
         ]
       ),
       p(t("For Android users, FotMob is the strongest substitute for Apple Sports — fast live score tiles, lineups, key events, and push alerts with no subscription required.")),
@@ -2220,7 +2222,7 @@ export const posts: Post[] = [
       ),
 
       h2("Watching from the UK?"),
-      p(t("BBC and ITV are splitting the 2026 World Cup broadcast rights in the UK, with free streaming on BBC iPlayer and ITVX respectively — no subscription required. For live scores, BBC Sport and FotMob are both strong free options. The rest of the app lineup is largely the same: FIFA’s official app for the fixture schedule, SofaScore for stats depth, and Scoutcast.ai (iOS) for a daily two-minute audio catch-up on the teams you follow.")),
+      p(t("BBC and ITV are splitting the 2026 World Cup broadcast rights in the UK, with free streaming on BBC iPlayer and ITVX respectively — no subscription required. For live scores, BBC Sport and FotMob are both strong free options. The rest of the app lineup is largely the same: FIFA’s official app for the fixture schedule, SofaScore for stats depth, and Scoutcast.ai (iOS and Android) for a daily two-minute audio catch-up on the teams you follow.")),
       p(t("For Mexico fans, see "), lk("the best apps for Mexico fans at the 2026 World Cup", "/blog/best-world-cup-apps-mexico-fans"), t(". For US fans specifically, see "), lk("the best apps for US soccer fans at the 2026 World Cup", "/blog/best-world-cup-apps-us-soccer-fans"), t(".")),
 
       h2("The two-app answer"),
@@ -2228,6 +2230,7 @@ export const posts: Post[] = [
       p(lk("Download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
       h2("Changelog"),
+      p(em("July 6, 2026 — Updated platform availability: Scoutcast.ai is now on Android via Google Play. Android alternatives table and Android FAQ updated accordingly.")),
       p(em("June 17, 2026 — Title and meta shortened for desktop CTR; tournament-live framing added; FAQs rewritten as direct AEO queries; added link to year-round sports-following guide.")),
       p(em("June 16, 2026 — Added Android alternatives table, honorable mentions section, UK coverage section, and a new FAQ on Android. Expanded the comparison table with Platform, Notifications, and Languages columns. No changes to the six-app recommendations.")),
 
@@ -2262,7 +2265,7 @@ export const posts: Post[] = [
       {
         question: "What’s the best World Cup app for Android?",
         answer:
-          "For watching: FOX Sports and Peacock/Telemundo both have full Android apps. For live scores: FotMob is the strongest Android pick — fast score tiles, lineups, and goal alerts without a subscription. SofaScore also has a complete Android app for stats depth. Apple Sports is the one notable omission: it’s iOS and macOS only, with no Android version.",
+          "For watching: FOX Sports and Peacock/Telemundo both have full Android apps. For live scores: FotMob is the strongest Android pick — fast score tiles, lineups, and goal alerts without a subscription. SofaScore also has a complete Android app for stats depth, and Scoutcast.ai’s daily audio catch-up is on Google Play. Apple Sports is the one notable omission: it’s iOS and macOS only, with no Android version.",
       },
     ],
     comparedItems: {

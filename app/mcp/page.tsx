@@ -87,7 +87,7 @@ const SHARED = [
 ]
 
 const NOT_SHARED = [
-    "Payment methods, billing details, App Store receipts",
+    "Payment methods, billing details, App Store or Google Play receipts",
     "Other users' briefings, casts, or profile data",
     "Write access — your assistant cannot delete or modify anything",
     "Conversations stay between you and your assistant — Scoutcast doesn't see them",
