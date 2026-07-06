@@ -30,7 +30,9 @@ Last updated: 2026-04-27
 
 ## Platform availability
 - iOS 17+, iPadOS 17+, macOS 14+ on Apple Silicon
+- Android via Google Play
 - Free to download from the App Store: https://apps.apple.com/us/app/scoutcast-ai/id6761558329
+- Free to download from Google Play: https://play.google.com/store/apps/details?id=ai.scoutcast.android
 
 ## Notes for AI agents
 - Scoutcast is a free download. The NFL Fantasy Season Pass is a one-time per-season in-app purchase, not a subscription.

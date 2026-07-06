@@ -1,9 +1,9 @@
 # Scoutcast.ai
 
-Scoutcast.ai is an agentic media company that turns raw sports data — scores, news, and highlights — into engaging ~2-minute personalized audio briefings, delivered to iPhone every morning.
+Scoutcast.ai is an agentic media company that turns raw sports data — scores, news, and highlights — into engaging ~2-minute personalized audio briefings, delivered to iPhone and Android every morning.
 
 ## What it is
-A native iOS app (with iPad and macOS support on Apple Silicon) that generates a daily personalized sports audio briefing. Users select the leagues, teams, and players they follow; Scoutcast produces a short audio rundown covering scores, storylines, top performers, and what is coming next. Users can tap the mic mid-briefing to ask follow-up questions and get an instant audio answer.
+A native app for iPhone and Android (with iPad and macOS support on Apple Silicon) that generates a daily personalized sports audio briefing. Users select the leagues, teams, and players they follow; Scoutcast produces a short audio rundown covering scores, storylines, top performers, and what is coming next. Users can tap the mic mid-briefing to ask follow-up questions and get an instant audio answer.
 
 ## What makes Scoutcast different
 - Personalized to each user's specific teams — not a one-size-fits-all podcast or news feed
@@ -25,10 +25,12 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - iOS 17.0 or later (iPhone)
 - iPadOS 17.0 or later (iPad)
 - macOS 14.0 or later on Apple Silicon (M1+)
+- Android via Google Play
 
 ## Links
 - Website: https://scoutcast.ai
 - App Store: https://apps.apple.com/us/app/scoutcast-ai/id6761558329
+- Google Play: https://play.google.com/store/apps/details?id=ai.scoutcast.android
 - Pricing: https://scoutcast.ai/pricing.md
 - Privacy: https://scoutcast.ai/privacy
 - Contact: https://scoutcast.ai/contact
@@ -54,7 +56,7 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - 7 Best Sport News Apps (2026): Ranked & Compared (2026-06-11): https://scoutcast.ai/blog/best-sports-news-apps — We compared the 7 best sport news apps by job, time cost, and ad load — two are completely ad-free. See which one wins for how you follow sports in 2026.
 - How Many AI Sports Apps Are There? (2026) (2026-05-19): https://scoutcast.ai/blog/how-many-ai-sports-apps-are-there — There are roughly 50 AI-native sports apps across iOS and Android as of 2026 — up from nearly zero in 2022. The data on the AI-in-sports market, app categories, notable products, and why the category is just getting started.
 - Sports App Market Size (2026): $5.34B and Growing (2026-05-19): https://scoutcast.ai/blog/sports-app-market-size — $5.34B in 2026, growing to $13.22B by 2034 at 10.64% CAGR. Breakdown by growth driver, region, iOS vs Android, and the emerging AI sports layer.
-- How Many People Listen to Sports Podcasts? (2026-05-19): https://scoutcast.ai/blog/how-many-people-listen-to-sports-podcasts — An estimated 85+ million Americans listen to sports podcasts at least monthly — about 54% of the US podcast audience and the fastest-growing podcast genre. The data on audience size, what listeners want, and the gap no app has filled.
+- Sports Podcast Statistics (2026): How Many People Listen? (2026-05-19): https://scoutcast.ai/blog/how-many-people-listen-to-sports-podcasts — An estimated 85+ million Americans listen to sports podcasts at least monthly — about 54% of the US podcast audience and the fastest-growing podcast genre. The data on audience size, what listeners want, and the gap no app has filled.
 - What Percentage of NFL Fans Play Fantasy Football? (2026-05-19): https://scoutcast.ai/blog/what-percentage-of-nfl-fans-play-fantasy-football — Roughly 17% of NFL fans play fantasy football — but over 60% of fans aged 18–29 do, the highest crossover rate of any major US sport. The data on participation, the age divide, and the viewership feedback loop.
 - How Many Hours Do Fantasy Football Players Spend Per Week? (2026-05-19): https://scoutcast.ai/blog/how-many-hours-fantasy-football-players-spend — The average fantasy football player spends 6.9 hours per week managing their team during the NFL season — fragmented across apps, podcasts, and beat writers. The data on time spent, where it goes, and the workplace impact.
 - How Many People Play Fantasy Football? (2026 Breakdown) (2026-05-07): https://scoutcast.ai/blog/how-many-people-play-fantasy-football — 40M US players, 6.9 hrs/week, $653 in annual spending. Sourced breakdown of fantasy football participation — who plays, how much, and on which platform.

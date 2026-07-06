@@ -54,7 +54,7 @@ const mobileApplicationLd = {
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing monthly subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in Apple ID settings.",
+        "Auto-renewing monthly subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in your App Store or Google Play settings.",
     },
     {
       "@type": "Offer",
@@ -64,7 +64,7 @@ const mobileApplicationLd = {
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing annual subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in Apple ID settings.",
+        "Auto-renewing annual subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in your App Store or Google Play settings.",
     },
     {
       "@type": "Offer",
