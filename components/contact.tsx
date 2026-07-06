@@ -27,8 +27,8 @@ export function DownloadCard() {
                 </ul>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-8 p-12 sm:flex-row sm:items-start">
-                <div className="flex flex-col items-center gap-5">
+            <div className="flex flex-col items-center justify-center gap-6 p-8 sm:flex-row sm:items-start lg:p-10">
+                <div className="flex flex-col items-center gap-4">
                     <h3 className="hidden text-[22px] font-semibold tracking-tight text-foreground sm:block">iPhone</h3>
                     <div className="hidden rounded-2xl bg-white p-3 sm:block">
                         <Image
@@ -43,16 +43,16 @@ export function DownloadCard() {
                         href={APP_STORE_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex h-[52px] items-center gap-2.5 rounded-[10px] border border-white/20 bg-black pl-4 pr-[18px] transition hover:bg-zinc-900">
+                        className="flex h-12 w-[176px] items-center justify-center gap-2.5 rounded-[10px] border border-white/20 bg-black transition hover:bg-zinc-900">
                         <AppleGlyph />
                         <div className="flex flex-col leading-tight">
-                            <span className="text-[10px] tracking-[0.01em] text-white">Download on the</span>
-                            <span className="text-lg font-semibold tracking-tight text-white">App Store</span>
+                            <span className="whitespace-nowrap text-[9px] tracking-[0.01em] text-white">Download on the</span>
+                            <span className="whitespace-nowrap text-base font-semibold tracking-tight text-white">App Store</span>
                         </div>
                     </a>
                 </div>
 
-                <div className="flex flex-col items-center gap-5">
+                <div className="flex flex-col items-center gap-4">
                     <h3 className="hidden text-[22px] font-semibold tracking-tight text-foreground sm:block">Android</h3>
                     <div className="hidden rounded-2xl bg-white p-3 sm:block">
                         <Image
@@ -67,12 +67,14 @@ export function DownloadCard() {
                         href={PLAY_STORE_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex h-[52px] items-center gap-2.5 rounded-[10px] border border-white/20 bg-black pl-4 pr-[18px] transition hover:bg-zinc-900">
-                        <PlayGlyph />
-                        <div className="flex flex-col leading-tight">
-                            <span className="text-[10px] tracking-[0.01em] text-white">Get it on</span>
-                            <span className="text-lg font-semibold tracking-tight text-white">Google Play</span>
-                        </div>
+                        className="flex h-12 items-center transition hover:opacity-90">
+                        <Image
+                            src="/google-play-badge.svg"
+                            alt="Get it on Google Play"
+                            width={162}
+                            height={48}
+                            className="h-12 w-auto"
+                        />
                     </a>
                 </div>
             </div>
@@ -93,20 +95,6 @@ export default function DownloadSection() {
         </section>
     )
 }
-
-const PlayGlyph = () => (
-    <svg
-        aria-hidden
-        width="24"
-        height="26"
-        viewBox="0 0 100 100"
-        fill="none">
-        <path d="M10 5 L10 95 L58 50 Z" fill="#4285F4" />
-        <path d="M10 5 L70.6 38.2 L58 50 Z" fill="#34A853" />
-        <path d="M70.6 38.2 L92 50 L70.6 61.8 L58 50 Z" fill="#FBBC04" />
-        <path d="M58 50 L70.6 61.8 L10 95 Z" fill="#EA4335" />
-    </svg>
-)
 
 const AppleGlyph = () => (
     <svg

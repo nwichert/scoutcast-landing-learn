@@ -1,5 +1,6 @@
 import { PhoneIllustration } from "@/components/ui/illustrations/phone-illustration"
 import { DownloadButton } from "@/components/download-button"
+import { PlayStoreButton } from "@/components/play-store-button"
 
 export default function HeroSection() {
     return (
@@ -26,8 +27,9 @@ export default function HeroSection() {
                     <p className="mt-6 max-w-2xl text-balance text-lg leading-7 text-foreground/70 sm:text-xl">
                         A personalized audio briefing on the leagues, teams, and players you actually follow — generated fresh every morning. Tap to ask follow-ups, hands-free.
                     </p>
-                    <div className="mt-8">
-                        <DownloadButton />
+                    <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+                        <DownloadButton label="App Store" />
+                        <PlayStoreButton label="Google Play" />
                     </div>
                 </div>
 

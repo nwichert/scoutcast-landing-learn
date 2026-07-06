@@ -69,20 +69,6 @@ const AppleGlyph = ({ size = 16 }: { size?: number }) => (
     </svg>
 )
 
-const PlayGlyph = ({ size = 16 }: { size?: number }) => (
-    <svg
-        aria-hidden
-        width={size}
-        height={size}
-        viewBox="0 0 100 100"
-        fill="none">
-        <path d="M10 5 L10 95 L58 50 Z" fill="#4285F4" />
-        <path d="M10 5 L70.6 38.2 L58 50 Z" fill="#34A853" />
-        <path d="M70.6 38.2 L92 50 L70.6 61.8 L58 50 Z" fill="#FBBC04" />
-        <path d="M58 50 L70.6 61.8 L10 95 Z" fill="#EA4335" />
-    </svg>
-)
-
 const HEAT_BARS = [8, 14, 22, 12, 18, 26, 16, 22, 10, 18, 14, 24, 8, 20, 12, 26, 14, 18, 10, 22]
 const SAMPLE_BARS = [8, 14, 22, 10, 18, 28, 16, 24, 32, 20, 12, 22, 36, 18, 26, 10, 30, 14, 22, 10, 18, 24, 14, 20, 28, 16, 22]
 
@@ -661,12 +647,13 @@ function FinalCta() {
                     href={PLAY_STORE_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex h-14 items-center gap-3 rounded-[14px] bg-[#F0F6FC] pl-3.5 pr-4 text-[#0D1117] transition hover:bg-white">
-                    <PlayGlyph size={22} />
-                    <div className="flex flex-col items-start text-left">
-                        <span className="text-[10px] font-medium leading-none tracking-[0.02em] text-[#57606A]">Get it on</span>
-                        <span className="text-lg font-bold leading-tight tracking-[-0.01em] text-[#0D1117]">Google Play</span>
-                    </div>
+                    className="inline-flex h-14 items-center transition hover:opacity-90">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                        src="/google-play-badge.svg"
+                        alt="Get it on Google Play"
+                        className="h-14 w-auto"
+                    />
                 </a>
             </div>
         </section>
