@@ -3139,18 +3139,16 @@ export const posts: Post[] = [
       },
     ],
   },
-];
 
-// Drafts: held out of the rendered blog until ready to ship.
-export const draftPosts: Post[] = [
-  // ─── Fantasy Football Cluster (draft season 2026) ────────────────────────
+
+  // ─── Fantasy Football Cluster (published 2026-07-07) ─────────────────────
   {
     slug: "how-to-research-fantasy-football",
     title: "How to Research Fantasy Football in Under 10 Minutes a Day",
     excerpt:
       "Fantasy players average 6.9 hours a week on research. Here's a system for cutting that to 10 minutes daily without losing your competitive edge.",
     date: "2026-06-24",
-    updatedAt: "2026-06-24",
+    updatedAt: "2026-07-07",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -3243,9 +3241,8 @@ export const draftPosts: Post[] = [
         )
       ),
       p(
-        t(
-          "Scoutcast.ai's "
-        ),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t("'s "),
         b("NFL Fantasy Season Pass"),
         t(
           " delivers a roster-specific audio brief every morning from Tuesday through Sunday. Instead of checking 4 apps at the right times, you open Scoutcast and get a 2-minute audio rundown of: which of your players have injury news, who to target on waivers, your head-to-head matchup edges this week, and a Sunday morning final call."
@@ -3259,7 +3256,7 @@ export const draftPosts: Post[] = [
       p(
         lk(
           "Try the NFL Fantasy Season Pass →",
-          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+          "https://scoutcast.ai/fantasy/"
         )
       ),
 
@@ -3320,7 +3317,7 @@ export const draftPosts: Post[] = [
     excerpt:
       "Best-value picks in rounds 5–12: players with clear paths to volume whose ADP hasn't caught up yet. Updated through training camp.",
     date: "2026-06-24",
-    updatedAt: "2026-06-24",
+    updatedAt: "2026-07-07",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -3437,10 +3434,11 @@ export const draftPosts: Post[] = [
         )
       ),
       p(
-        t("Scoutcast.ai tracks practice reports and depth chart moves daily. During the NFL season, the "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(" tracks practice reports and depth chart moves daily. During the NFL season, the "),
         lk(
           "Fantasy Season Pass",
-          "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+          "https://scoutcast.ai/fantasy/"
         ),
         t(
           " ($49.99) delivers this as a roster-specific audio brief every morning — so when your sleeper's situation changes, you hear it first."
@@ -3475,7 +3473,10 @@ export const draftPosts: Post[] = [
       },
     ],
   },
+];
 
+// Drafts: held out of the rendered blog until ready to ship.
+export const draftPosts: Post[] = [
   {
     slug: "fantasy-football-mock-draft-2026",
     title: "Fantasy Football Mock Draft 2026: How to Prepare",
