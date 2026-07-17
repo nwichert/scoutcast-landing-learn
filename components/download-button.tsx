@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 const buttonClass = "inline-flex h-9 items-center gap-2 rounded-lg border border-white/15 bg-white/[0.04] px-3.5 text-sm font-medium text-foreground transition hover:bg-white/[0.08]"
 
-export function DownloadButton({ label = "Download Free", className }: { label?: string; className?: string }) {
+export function DownloadButton({ label = "Download Free", className, showIcon = true }: { label?: string; className?: string; showIcon?: boolean }) {
     return (
         <>
             <a
@@ -16,7 +16,7 @@ export function DownloadButton({ label = "Download Free", className }: { label?:
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(buttonClass, "sm:hidden", className)}>
-                <AppleGlyph />
+                {showIcon && <AppleGlyph />}
                 {label}
             </a>
             <div className="hidden sm:contents">
@@ -28,7 +28,7 @@ export function DownloadButton({ label = "Download Free", className }: { label?:
                                 className={cn(buttonClass, className)}
                             />
                         }>
-                        <AppleGlyph />
+                        {showIcon && <AppleGlyph />}
                         {label}
                     </DialogTrigger>
                     <DialogContent

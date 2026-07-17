@@ -7,7 +7,6 @@ type SupportState = true | false | "partial"
 
 type ComparisonFeature = {
     label: string
-    definition: string
     scoutcast: SupportState
     theAthletic: SupportState
     theScore: SupportState
@@ -18,26 +17,16 @@ type ComparisonFeature = {
 const features: ComparisonFeature[] = [
     {
         label: "Hands-free audio briefing",
-        definition: "Listen to your daily sports update without looking at a screen — while driving, working out, or making coffee.",
         scoutcast: true,
         theAthletic: "partial",
         theScore: false,
         briefingAM: true,
         footnotes: {
-            theAthletic: "Podcasts and AI-narrated articles, but not personalized to your teams.",
+            theAthletic: "Podcasts and AI-narrated articles, not personalized to your teams.",
         },
     },
     {
-        label: "Personalized to your specific teams",
-        definition: "Pick the leagues, teams, and players you follow; the briefing focuses on those, not the league at large.",
-        scoutcast: true,
-        theAthletic: true,
-        theScore: true,
-        briefingAM: true,
-    },
-    {
         label: "AI-generated, refreshed daily",
-        definition: "A new briefing is produced every morning by an AI from the previous day’s scores and news — not pre-recorded human podcasts.",
         scoutcast: true,
         theAthletic: false,
         theScore: false,
@@ -45,7 +34,6 @@ const features: ComparisonFeature[] = [
     },
     {
         label: "Tap-to-ask follow-up questions",
-        definition: "Interrupt the briefing mid-play to ask a question and get an instant audio answer with deeper context.",
         scoutcast: true,
         theAthletic: false,
         theScore: false,
@@ -53,7 +41,6 @@ const features: ComparisonFeature[] = [
     },
     {
         label: "Add custom sources (e.g., X writers)",
-        definition: "Plug in specific beat writers’ X handles so their takes shape your personalized briefing.",
         scoutcast: true,
         theAthletic: false,
         theScore: false,
@@ -61,51 +48,29 @@ const features: ComparisonFeature[] = [
     },
     {
         label: "Finite daily briefing (no doom scroll)",
-        definition: "A bounded ~2-minute briefing that ends when the day’s news is covered, instead of an infinite feed.",
         scoutcast: true,
         theAthletic: false,
         theScore: false,
         briefingAM: true,
     },
     {
-        label: "Live scores & real-time alerts",
-        definition: "Push notifications and a constantly updating scoreboard during games.",
-        scoutcast: false,
-        theAthletic: "partial",
-        theScore: true,
-        briefingAM: false,
-        footnotes: {
-            scoutcast: "Coming soon — Scoutcast is a morning briefing, not a live tracker (yet).",
-        },
-    },
-    {
-        label: "Long-form editorial & feature writing",
-        definition: "In-depth articles, columns, and investigative reporting from staff journalists.",
-        scoutcast: false,
-        theAthletic: true,
-        theScore: false,
-        briefingAM: false,
-    },
-    {
         label: "Sports-first focus",
-        definition: "The product is built for sports fans; sports isn’t one tag among many topics.",
         scoutcast: true,
         theAthletic: true,
         theScore: true,
         briefingAM: false,
         footnotes: {
-            briefingAM: "BriefingAM is a general AI briefing app — sports is one topic among news, calendar, weather, and email.",
+            briefingAM: "BriefingAM covers sports as one topic among news, calendar, weather, and email.",
         },
     },
     {
         label: "Ad-free",
-        definition: "No advertising in the listening experience.",
         scoutcast: true,
         theAthletic: true,
         theScore: false,
         briefingAM: true,
         footnotes: {
-            theAthletic: "Subscription-required to remove ads and unlock content.",
+            theAthletic: "Subscription required to remove ads.",
         },
     },
 ]
@@ -180,7 +145,7 @@ export default function ComparatorSection() {
             <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-24">
                 <div className="flex max-w-3xl flex-col gap-3">
                     <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-[44px] sm:leading-[1.15]">Scoutcast vs The Athletic, theScore &amp; BriefingAM</h2>
-                    <p className="text-[13px] leading-5 text-foreground/55">Honest comparison of personalized sports apps. Last updated April 2026.</p>
+                    <p className="text-[13px] leading-5 text-foreground/55">Honest comparison of personalized sports apps. Last updated July 2026.</p>
                     <p className="text-[17px] leading-[26px] text-foreground/55">Personalized, on-demand audio briefings — built for sports fans, not feed scrollers or productivity dashboards.</p>
                 </div>
 
@@ -223,16 +188,14 @@ export default function ComparatorSection() {
                             const isLast = i === features.length - 1
                             return (
                                 <Fragment key={feature.label}>
-                                    {/* Label cell with definition */}
                                     <div
                                         className={cn(
-                                            "relative z-10 flex flex-col gap-1 px-4 py-3 sm:px-6",
+                                            "relative z-10 flex items-center px-4 py-3 sm:px-6",
                                             striped && "bg-white/[0.03]",
                                             isFirst && "rounded-tl-xl",
                                             isLast && "rounded-bl-xl"
                                         )}>
                                         <span className="text-xs leading-tight text-foreground/85 sm:text-sm">{feature.label}</span>
-                                        <p className="text-[11px] leading-snug text-foreground/55 sm:text-xs">{feature.definition}</p>
                                     </div>
 
                                     {/* Scoutcast cell — transparent so highlight card shows through */}

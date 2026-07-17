@@ -78,7 +78,7 @@ const faqGroups: FaqGroup[] = [
             {
                 id: "refresh",
                 question: "When does my daily brief refresh?",
-                answer: "A fresh brief drops every morning based on overnight scores and news. You can also trigger an on-demand refresh after a game ends.",
+                answer: "A fresh brief drops every morning based on overnight scores and news.",
             },
         ],
     },

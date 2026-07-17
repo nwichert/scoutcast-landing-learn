@@ -61,6 +61,7 @@ export default function Pricing() {
                         </ul>
                         <DownloadButton
                             label="Start free trial"
+                            showIcon={false}
                             className="h-12 justify-center rounded-xl border-white/15 bg-white/[0.06] px-5 text-base hover:bg-white/[0.1]"
                         />
                     </article>
@@ -97,6 +98,7 @@ export default function Pricing() {
                         </ul>
                         <DownloadButton
                             label="Try free for 7 days"
+                            showIcon={false}
                             className="h-12 justify-center rounded-xl border-transparent bg-[#0AB17B] px-5 text-base font-semibold text-[#0D1117] hover:bg-[#0BC189]"
                         />
                     </article>

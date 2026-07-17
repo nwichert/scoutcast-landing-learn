@@ -149,7 +149,7 @@ const faqPageLd = {
       name: "When does my daily brief refresh?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A fresh brief drops every morning based on overnight scores and news. You can also trigger an on-demand refresh after a game ends.",
+        text: "A fresh brief drops every morning based on overnight scores and news.",
       },
     },
     {
