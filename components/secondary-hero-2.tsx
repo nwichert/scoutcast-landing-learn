@@ -22,7 +22,7 @@ export default function HeroSection() {
                     <h1 className="max-w-2xl text-balance text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-[56px] lg:text-[64px]">
                         Only your teams.
                         <br />
-                        Two minutes, every morning.
+                        No scrolling.
                     </h1>
                     <p className="mt-6 max-w-2xl text-balance text-lg leading-7 text-foreground/70 sm:text-xl">
                         A personalized audio briefing on the leagues, teams, and players you actually follow — generated fresh every morning. Tap to ask follow-ups, hands-free.

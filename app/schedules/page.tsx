@@ -7,7 +7,7 @@ import { upcomingEvents, sportsList } from "@/lib/events"
 const SITE_URL = "https://scoutcast.ai"
 const TITLE = "Sports Schedules 2026 — Majors, Finals & Marquee Events"
 const DESCRIPTION =
-  "The marquee sports events worth your time in 2026 — World Cup, the majors, Grand Slams, openers and finals. Filter by sport and get any of them as a 2-minute Scoutcast briefing."
+  "The marquee sports events worth your time in 2026 — the NFL season, the majors, Grand Slams, openers and finals. Filter by sport and get any of them as a 2-minute Scoutcast briefing."
 
 export const metadata: Metadata = {
   title: TITLE,

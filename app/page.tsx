@@ -38,33 +38,13 @@ const mobileApplicationLd = {
   offers: [
     {
       "@type": "Offer",
-      name: "Scoutcast Free",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      category: "Free",
-      description:
-        "Free plan with one active Scoutcast. Daily ~2-minute personalized audio briefing, custom teams, leagues, and X writers, hands-free follow-up questions, ad-free.",
-    },
-    {
-      "@type": "Offer",
-      name: "Scoutcast Unlimited (Monthly)",
-      price: "4.99",
+      name: "Scoutcast Plus",
+      price: "5.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing monthly subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in your App Store or Google Play settings.",
-    },
-    {
-      "@type": "Offer",
-      name: "Scoutcast Unlimited (Annual)",
-      price: "39.99",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      category: "InAppPurchase",
-      description:
-        "Auto-renewing annual subscription. Removes the free-tier limit for unlimited active Scoutcasts. Cancel anytime in your App Store or Google Play settings.",
+        "Auto-renewing monthly subscription. Includes up to 7 active Scoutcasts, daily ~2-minute personalized audio briefings, scores/injuries/odds/storylines, and tap-to-ask audio follow-ups. Starts with a free 7-day trial — no credit card required. Cancel anytime.",
     },
     {
       "@type": "Offer",
@@ -74,7 +54,7 @@ const mobileApplicationLd = {
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing per-NFL-season subscription, sold separately from Scoutcast Unlimited. Tue/Wed/Thu/Sun briefings, H2H opponent edge, fantasy playoffs, NFL playoff DFS insights, Super Bowl preview. Up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.",
+        "Auto-renewing per-NFL-season subscription, sold separately from Scoutcast Plus. Tue/Wed/Thu/Sun briefings, H2H opponent edge, fantasy playoffs, NFL playoff DFS insights, Super Bowl preview. Up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.",
     },
   ],
   featureList: [
@@ -145,7 +125,7 @@ const faqPageLd = {
       name: "Does Scoutcast work for fantasy football?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. The NFL Fantasy Season Pass ($49.99/season) adds four audio briefings a week personalized to your roster and your head-to-head opponent — waiver bids on Wednesday, start/sit calls on Thursday, and a final call Sunday morning before kickoff. It works with any fantasy platform and with the free app.",
+        text: "Yes. The NFL Fantasy Season Pass ($49.99/season) adds four audio briefings a week personalized to your roster and your head-to-head opponent — waiver bids on Wednesday, start/sit calls on Thursday, and a final call Sunday morning before kickoff. It works with any fantasy platform and requires Scoutcast Plus.",
       },
     },
     {
@@ -170,6 +150,30 @@ const faqPageLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "A fresh brief drops every morning based on overnight scores and news. You can also trigger an on-demand refresh after a game ends.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does Scoutcast cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Everyone starts with a free 7-day trial — no credit card required. After the trial, Scoutcast Plus is $5.99/month and includes up to 7 active casts. The NFL Fantasy Season Pass is a separate $49.99/season add-on.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need a credit card to try Scoutcast?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. The 7-day trial requires no payment information. You only subscribe if you decide to continue after the trial ends.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What happens after the free trial?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Your briefings pause until you subscribe to Scoutcast Plus ($5.99/month). Nothing is deleted — your casts, sources, and settings are all saved.",
       },
     },
   ],
@@ -216,11 +220,11 @@ export default function Home() {
       <FAQs />
       <div className="dark bg-background pb-2 text-center text-sm">
         <Link
-          href="/blog/world-cup-bracket-2026/"
+          href="/blog/fantasy-football-mock-draft-2026/"
           className="text-foreground/55 hover:text-foreground"
         >
           Latest from the blog:{" "}
-          <span className="text-foreground/85">The 2026 FIFA World Cup Bracket</span>{" "}
+          <span className="text-foreground/85">Fantasy Football Mock Draft 2026: How to Prepare</span>{" "}
           →
         </Link>
       </div>

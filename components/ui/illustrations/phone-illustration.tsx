@@ -8,12 +8,12 @@ const idleBarHeights = [48, 34, 62, 24, 50, 38, 28, 54, 42, 18, 36, 48, 30, 22, 
 const playheadHeight = 108
 
 const voiceChips: { text: string; align: "start" | "end" }[] = [
-    { text: "who scored for the USA?", align: "start" },
-    { text: "what’s the Group B table?", align: "end" },
-    { text: "when does Brazil play next?", align: "start" },
+    { text: "am I projected to win this week?", align: "start" },
+    { text: "who’s my opponent starting?", align: "end" },
+    { text: "should I start my flex or bench him?", align: "start" },
 ]
 
-const ASK_QUESTION = "who starts in goal for Portugal tonight?"
+const ASK_QUESTION = "is my RB2 a start or sit tonight?"
 
 type Phase = "idle" | "opening" | "typing" | "submitting" | "closing"
 
@@ -108,12 +108,12 @@ export const PhoneIllustration = () => {
                     </span>
                 </span>
                 <div className="flex items-center gap-2">
-                    <span className="text-base leading-none">🏆</span>
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-foreground/45">FIFA World Cup 2026</span>
+                    <span className="text-base leading-none">🏈</span>
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-foreground/45">NFL Fantasy · Week 1</span>
                 </div>
-                <h3 className="text-[26px] font-semibold leading-[1.15] tracking-tight text-foreground">USA · Group Stage Brief</h3>
+                <h3 className="text-[26px] font-semibold leading-[1.15] tracking-tight text-foreground">You vs. Marcus · H2H Brief</h3>
                 <div className="flex items-center gap-2 text-[13px] text-foreground/45">
-                    <span>🇺🇸 🇵🇹 🇧🇷 🇫🇷</span>
+                    <span>🏈 Head-to-Head</span>
                     <span className="size-[3px] rounded-full bg-foreground/30" />
                     <span>2 min</span>
                 </div>

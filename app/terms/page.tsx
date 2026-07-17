@@ -85,18 +85,18 @@ export default function TermsPage() {
                     <p>These Terms become effective when you first use the App or register and activate your account with us, whichever happens first.</p>
 
                     <LegalSubsection title="Plans and Tiers">
-                        <p>Scoutcast offers a free tier and paid options. The features and current pricing for each are shown in the App at the point of purchase.</p>
+                        <p>Scoutcast offers a free 7-day trial and paid subscriptions. The features and current pricing for each are shown in the App at the point of purchase.</p>
                         <LegalList
                             items={[
-                                "Scoutcast (Free): available at no cost and limited to one (1) active Cast at a time. To start a different Cast on the free tier, you can pause or delete your current active Cast. If your account has more than one active Cast (for example, certain legacy accounts), we may automatically pause all but your earliest-created active Cast to keep your account within the free-tier limit.",
-                                "Scoutcast Unlimited (Monthly and Annual): a paid, auto-renewing subscription that removes the active-Cast limit, offered on a monthly or annual term.",
-                                "NFL Fantasy (Season): a separate, paid, auto-renewing seasonal subscription for fantasy-football content. It is sold separately and is required to access fantasy features whether or not you also subscribe to Scoutcast Unlimited.",
+                                "Free Trial: all new accounts receive a 7-day free trial of Scoutcast Plus at no cost and with no credit card required. During the trial, you have full access to up to 7 active Casts. If you do not subscribe before the trial ends, your briefings pause and no charge is made.",
+                                "Scoutcast Plus (Monthly): a paid, auto-renewing monthly subscription. Includes up to 7 active Casts, daily personalized audio briefings, and tap-to-ask audio follow-ups.",
+                                "NFL Fantasy (Season): a separate, paid, auto-renewing seasonal subscription for fantasy-football content. It is sold separately and is required to access fantasy features. Requires an active Scoutcast Plus subscription.",
                             ]}
                         />
                     </LegalSubsection>
 
                     <LegalSubsection title="Billing, Auto-Renewal, and Cancellation">
-                        <p>Paid subscriptions are billed through Apple&rsquo;s App Store via StoreKit. Each paid subscription &mdash; Scoutcast Unlimited (Monthly and Annual) and NFL Fantasy (Season) &mdash; automatically renews at the then-current price for an additional period of the same length (monthly, annual, or per season, respectively) unless you cancel at least 24 hours before the end of the current period. Your payment method will be charged for renewal within 24 hours before the current period ends. You can view, manage, or cancel any subscription, and turn off auto-renewal, in your Apple ID account settings. Cancellation takes effect at the end of the current billing period, and you will keep access until then. If the price of a subscription increases, Apple will notify you and, where required, will request your consent before the new price takes effect; if you do not provide consent where it is required, the subscription will not automatically renew at the increased price.</p>
+                        <p>Paid subscriptions are billed through Apple&rsquo;s App Store via StoreKit. Each paid subscription &mdash; Scoutcast Plus (Monthly) and NFL Fantasy (Season) &mdash; automatically renews at the then-current price for an additional period of the same length (monthly, annual, or per season, respectively) unless you cancel at least 24 hours before the end of the current period. Your payment method will be charged for renewal within 24 hours before the current period ends. You can view, manage, or cancel any subscription, and turn off auto-renewal, in your Apple ID account settings. Cancellation takes effect at the end of the current billing period, and you will keep access until then. If the price of a subscription increases, Apple will notify you and, where required, will request your consent before the new price takes effect; if you do not provide consent where it is required, the subscription will not automatically renew at the increased price.</p>
                     </LegalSubsection>
 
                     <LegalSubsection title="NFL Fantasy Content">
@@ -110,7 +110,7 @@ export default function TermsPage() {
                 </LegalSection>
 
                 <LegalSection title="Fees and Payment">
-                    <p>Scoutcast offers a free tier with limited features and paid subscriptions for additional access, as described under &ldquo;Your Subscription&rdquo; above. All purchases and subscription payments are processed through Apple&rsquo;s App Store. The current price, billing period, and included features for each plan are displayed in the App at the point of purchase, and those in-App details govern. Prices may vary by region and may change over time. Apple&rsquo;s standard terms and refund policies apply to all purchases. We reserve the right to change pricing, plans, or subscription terms on a going-forward basis, with advance notice through the App, email, or our website where required by applicable law.</p>
+                    <p>Scoutcast offers a free 7-day trial and paid subscriptions, as described under &ldquo;Your Subscription&rdquo; above. All purchases and subscription payments are processed through Apple&rsquo;s App Store. The current price, billing period, and included features for each plan are displayed in the App at the point of purchase, and those in-App details govern. Prices may vary by region and may change over time. Apple&rsquo;s standard terms and refund policies apply to all purchases. We reserve the right to change pricing, plans, or subscription terms on a going-forward basis, with advance notice through the App, email, or our website where required by applicable law.</p>
                 </LegalSection>
 
                 <LegalSection title="Gambling, Wagering, and Betting Disclaimer">

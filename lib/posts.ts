@@ -367,7 +367,7 @@ export const posts: Post[] = [
       {
         question: "Are these apps free?",
         answer:
-          "Scoutcast.ai is free with no ads, plus one optional in-app purchase: an NFL Fantasy Season Pass at $49.99 per season. Huxe is entirely free. BriefingAM has a free tier and a paid tier; the vendor describes the paid tier as roughly the price of a daily Starbucks run.",
+          "Scoutcast.ai offers a 7-day free trial (no credit card required), then $5.99/month for Scoutcast Plus, plus an optional NFL Fantasy Season Pass at $49.99 per season. Huxe is entirely free. BriefingAM has a free tier and a paid tier; the vendor describes the paid tier as roughly the price of a daily Starbucks run.",
       },
       {
         question: "Which AI audio briefing app has the best fantasy football coverage?",
@@ -415,11 +415,11 @@ export const posts: Post[] = [
   },
   {
     slug: "how-many-people-play-fantasy-football",
-    title: "How Many People Play Fantasy Football? (2026 Breakdown)",
+    title: "40M+ Players: How Many People Play Fantasy Football? (2026)",
     excerpt:
       "40M US players, 6.9 hrs/week, $653 in annual spending. Sourced breakdown of fantasy football participation — who plays, how much, and on which platform.",
     date: "2026-05-07",
-    updatedAt: "2026-06-19",
+    updatedAt: "2026-07-16",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -505,6 +505,13 @@ export const posts: Post[] = [
         lk("Scoutcast.ai", "https://scoutcast.ai/fantasy/"),
         t(" compresses the research loop into a personalized 2-minute audio briefing — injury updates, waiver wire targets, and matchup edges for your exact roster, Tuesday through Sunday. Free, no ads. "),
         lk("Try it on the App Store ->", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")
+      ),
+      p(
+        t("Looking for the right apps to manage your team? See "),
+        lk("the best fantasy football apps in 2026", "/blog/best-fantasy-football-apps-2026"),
+        t(" — seven options ranked by job. Prepping for your draft? "),
+        lk("Run a mock draft", "/blog/fantasy-football-mock-draft-2026"),
+        t(" before your league's draft day to lock in your board.")
       ),
 
       hr(),
@@ -887,9 +894,9 @@ export const posts: Post[] = [
   },
   {
     slug: "sports-app-market-size",
-    title: "Sports App Market Size (2026): $5.34B and Growing",
+    title: "Sports App Market Size (2026–2034): $5.34B Growing to $13.22B",
     excerpt:
-      "$5.34B in 2026, growing to $13.22B by 2034 at 10.64% CAGR. Breakdown by growth driver, region, iOS vs Android, and the emerging AI sports layer.",
+      "$5.34B in 2026, $13.22B by 2034 (10.64% CAGR). AI sports apps are the fastest-growing segment. Breakdown by driver, region, iOS vs Android, and the emerging AI layer.",
     date: "2026-05-19",
     updatedAt: "2026-06-19",
     author: "Nick Wichert",
@@ -1116,11 +1123,11 @@ export const posts: Post[] = [
   },
   {
     slug: "best-sports-news-apps",
-    title: "7 Best Sport News Apps (2026): Ranked & Compared",
+    title: "7 Best Sports News Apps (2026): Ranked & Compared",
     excerpt:
-      "We compared the 7 best sport news apps by job, time cost, and ad load — two are completely ad-free. See which one wins for how you follow sports in 2026.",
+      "Stop doomscrolling. We ranked 7 sports news apps by job: score alerts, highlights, long reads, or a 2-minute daily briefing. Two have no ads at all.",
     date: "2026-06-11",
-    updatedAt: "2026-07-06",
+    updatedAt: "2026-07-16",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -1152,7 +1159,7 @@ export const posts: Post[] = [
         lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
         t(" and I’ll fix it.")
       ),
-      p(t("Two of the seven apps on this list are completely ad-free in their free tier: Apple Sports and Scoutcast.ai. If that is your main filter, those two sections are the ones to read first.")),
+      p(t("Two of the seven apps on this list are completely ad-free: Apple Sports and Scoutcast.ai. If that is your main filter, those two sections are the ones to read first.")),
 
       h2("How this list is judged"),
       p(t("Most “best sports apps” lists rank the same five apps by install count. That’s not useful, because the apps aren’t competing at the same job. This list judges each app on four things:")),
@@ -1239,7 +1246,8 @@ export const posts: Post[] = [
       ),
       p(t("Most of these are free, so the honest move is to try the two that match your job. (Following the tournament this summer? There’s a "), lk("World Cup-specific version of this list", "/blog/best-apps-for-following-the-2026-world-cup"), t(".) For an NBA-only breakdown, see "), lk("the best free NBA news apps in 2026", "/blog/best-free-nba-news-apps-2026"), t(". If the 2-minute briefing is your slot: "),
         lk("download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
-      p(t("Scoutcast.ai is iOS-only for now. On Android? "), lk("Get notified when Android launches", "/contact"), t(".")),
+      p(t("Scoutcast.ai is available on iPhone and Android.")),
+      p(t("Heading into NFL season? "), lk("The best fantasy football apps in 2026", "/blog/best-fantasy-football-apps-2026"), t(" breaks down seven options ranked by what job they do for your roster.")),
 
       hr(),
     ],
@@ -1295,7 +1303,7 @@ export const posts: Post[] = [
   },
   {
     slug: "best-free-nba-news-apps-2026",
-    title: "Best Free NBA News Apps in 2026",
+    title: "7 Best Free NBA News Apps in 2026 (Two Have No Ads)",
     excerpt:
       "Seven free NBA news apps compared by job: highlights, score alerts, a clean scoreboard, or a 2-minute personalized audio catch-up. Two have no ads at all.",
     date: "2026-06-18",
@@ -1387,7 +1395,7 @@ export const posts: Post[] = [
       p(t("The honest trade-offs: it's a morning recap, not live play-by-play. No scoreboard or highlights. Free with no ads, on iOS, iPadOS, macOS, and Android. For the broader sports-news comparison beyond NBA, see "), lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"), t(".")),
 
       h2("The two no-ad options"),
-      p(t("Of the seven apps above, only two carry zero ads in their free tier: "), b("Apple Sports"), t(" and "), b("Scoutcast.ai"), t(". They cover different jobs — Apple Sports is your real-time score check, Scoutcast.ai is your morning audio catch-up — and they complement each other well.")),
+      p(t("Of the seven apps above, only two carry zero ads: "), b("Apple Sports"), t(" and "), b("Scoutcast.ai"), t(". They cover different jobs — Apple Sports is your real-time score check, Scoutcast.ai is your morning audio catch-up — and they complement each other well.")),
       p(t("Every other free option carries ad load. ESPN and Yahoo Sports are the heaviest. The NBA App and Bleacher Report are moderate. theScore is lighter on display ads but saturated with betting promos.")),
 
       h2("Which free NBA app should you pick?"),
@@ -1415,7 +1423,7 @@ export const posts: Post[] = [
       {
         question: "Is there a free NBA app with no ads?",
         answer:
-          "Two: Apple Sports (free live NBA scores, no ads, iOS and macOS only) and Scoutcast.ai (free personalized NBA audio briefings, no ads, iOS and macOS only). Every other major free NBA app -- ESPN, theScore, Yahoo Sports, the NBA App, and Bleacher Report -- carries ad load in their free tier. theScore also includes betting promos.",
+          "Two: Apple Sports (free live NBA scores, no ads, iOS and macOS only) and Scoutcast.ai (personalized NBA audio briefings, no ads, 7-day free trial, iOS and Android). Every other major free NBA app -- ESPN, theScore, Yahoo Sports, the NBA App, and Bleacher Report -- carries ad load in their free tier. theScore also includes betting promos.",
       },
       {
         question: "What is the best free NBA score alert app?",
@@ -2133,7 +2141,7 @@ export const posts: Post[] = [
   },
   {
     slug: "best-apps-for-following-the-2026-world-cup",
-    title: "Best Apps for Following the 2026 World Cup",
+    title: "6 Best Apps to Follow the 2026 World Cup: Live Scores & Updates",
     excerpt:
       "The 2026 World Cup is live. Six apps matched to each job: streaming, live scores, deep stats, and catching up on every match in two minutes a day.",
     date: "2026-06-11",
@@ -2250,7 +2258,7 @@ export const posts: Post[] = [
       {
         question: "Is there a free app to follow the 2026 World Cup?",
         answer:
-          "Yes — several. Apple Sports (free live scores, no ads), FIFA’s official app (schedule and brackets), SofaScore (free tier with deep stats), and Scoutcast.ai (free personalized daily audio briefings, no ads) are all free. Watching live matches in the US requires a FOX One or Peacock subscription, but following the tournament doesn’t.",
+          "Yes — several. Apple Sports (free live scores, no ads), FIFA’s official app (schedule and brackets), SofaScore (free tier with deep stats), and Scoutcast.ai (personalized daily audio briefings, no ads, 7-day free trial) are all free to try. Watching live matches in the US requires a FOX One or Peacock subscription, but following the tournament doesn’t.",
       },
       {
         question: "What app streams every 2026 World Cup match?",
@@ -2260,7 +2268,7 @@ export const posts: Post[] = [
       {
         question: "What’s the best World Cup app with no ads?",
         answer:
-          "Apple Sports (free live scores, no ads) and Scoutcast.ai (free personalized audio briefings, no ads) are the two ad-free options on this list. SofaScore carries ads on its free tier, and the broadcaster apps are ad-supported by nature.",
+          "Apple Sports (free live scores, no ads) and Scoutcast.ai (personalized audio briefings, no ads, 7-day free trial) are the two ad-free options on this list. SofaScore carries ads on its free tier, and the broadcaster apps are ad-supported by nature.",
       },
       {
         question: "What’s the best World Cup app for Android?",
@@ -2549,11 +2557,11 @@ export const posts: Post[] = [
 
   {
     slug: "best-fantasy-football-apps-2026",
-    title: "Best Fantasy Football Apps in 2026",
+    title: "7 Best Fantasy Football Apps in 2026, Ranked by Job",
     excerpt:
       "ESPN, Yahoo, and Sleeper run your league. The best research apps are different. Seven apps compared by job — including AI audio briefings for your roster.",
     date: "2026-06-24",
-    updatedAt: "2026-06-24",
+    updatedAt: "2026-07-16",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -2751,6 +2759,17 @@ export const posts: Post[] = [
           "Try the NFL Fantasy Season Pass on Scoutcast.ai →",
           "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
         )
+      ),
+      p(
+        t("Planning your draft? See the "),
+        lk("2026 fantasy football rankings", "/blog/fantasy-football-rankings-2026"),
+        t(", "),
+        lk("2026 mock draft guide", "/blog/fantasy-football-mock-draft-2026"),
+        t(", and "),
+        lk("sleeper picks for 2026", "/blog/fantasy-football-sleeper-picks-2026"),
+        t(". New to ADP? "),
+        lk("What ADP means and how to use it in your draft", "/blog/what-is-adp-fantasy-football"),
+        t(".")
       ),
 
       hr(),
@@ -3473,10 +3492,6 @@ export const posts: Post[] = [
       },
     ],
   },
-];
-
-// Drafts: held out of the rendered blog until ready to ship.
-export const draftPosts: Post[] = [
   {
     slug: "fantasy-football-mock-draft-2026",
     title: "Fantasy Football Mock Draft 2026: How to Prepare",
@@ -3655,6 +3670,1058 @@ export const draftPosts: Post[] = [
       },
     ],
   },
+{
+  slug: "fantasy-football-rankings-2026",
+  title: "Fantasy Football Rankings 2026: PPR, Standard, and Half-PPR",
+  excerpt: "Updated fantasy football rankings for 2026 by position and scoring format, with tier breakdowns to help you find value at every pick.",
+  date: "2026-07-08",
+  updatedAt: "2026-07-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t("Fantasy football rankings are everywhere in July — but most are just lists. This breakdown explains how tiers work, how scoring format reshapes value at every position, and how to use rankings alongside ADP to find the picks that win leagues.")
+    ),
+
+    h2("Why Tiers Matter More Than Exact Rank"),
+    p(
+      t("A ranking is a point estimate. A tier is a range. The difference matters on draft day because the gap between picks 4 and 8 at a given position often means almost nothing, while the gap between picks 8 and 9 can represent a full talent cliff — the difference between a locked-in starter and a high-upside gamble.")
+    ),
+    p(
+      t("Tier-based drafting gives you flexibility. Instead of reaching for the player ranked 12th because you wanted the player ranked 11th, you recognize they're in the same tier and take the better positional value elsewhere. When your draft board is organized by tier rather than strict rank, you stop panicking over specific names and start optimizing for value windows.")
+    ),
+    p(
+      t("The practical rule: draft the best available player within the top tier still on the board. Only consider crossing into a lower tier when positional scarcity forces your hand — and even then, wait as long as the tiers allow.")
+    ),
+
+    h2("RB Tier Breakdown"),
+    h3("Tier 1 — Every-Down Workhorses"),
+    p(
+      t("The top running back tier is defined by three things: high carry volume, pass-catching involvement, and a strong offensive line. These are the RBs who will see the field on all three downs, absorb goalline work, and remain relevant even in games their team loses. There are rarely more than four or five backs in this tier in any given year, and their draft cost reflects it. In PPR, their floor is dramatically higher because even a mediocre rushing game is cushioned by receptions.")
+    ),
+    h3("Tier 2 — High-Ceiling Starters"),
+    p(
+      t("The second tier contains players with starter upside but a meaningful question attached — a new offensive line, a committee split, an injury history, or a new scheme. These are the backs where the ADP conversation gets interesting: if the market is pricing in the question heavily, you may be getting Tier 1 production at Tier 2 cost. In standard scoring, this tier narrows considerably because receiving work is less rewarded.")
+    ),
+    h3("Tier 3 — Handcuffs, Committee Backs, and Late-Round Lottery Tickets"),
+    p(
+      t("Tier 3 RBs are worth rostering in deeper leagues or as insurance policies, but they should not anchor a starting lineup in most formats. The exception: a back in a run-heavy scheme with genuine lead-back potential who hasn't received consensus recognition yet. Training camp is where Tier 3 backs move up — or fall off boards entirely.")
+    ),
+
+    h2("WR Tier Breakdown"),
+    h3("Tier 1 — Alpha Receivers"),
+    p(
+      t("True alpha wide receivers are defined by target share, not just yardage. A Tier 1 WR runs the majority of routes, commands targets in the red zone, and is the first read on a significant portion of his team's passing plays. In PPR formats, these are the closest thing to a guaranteed weekly floor in the entire player pool. Historically, Tier 1 WRs overlap heavily with the overall top-10 picks in PPR drafts.")
+    ),
+    h3("Tier 2 — Clear Secondaries and Breakout Candidates"),
+    p(
+      t("The second wide receiver tier includes established starters who aren't the undisputed alpha on their team, plus breakout candidates entering expanded roles. This tier produces the most interesting PPR vs. standard divergence: a slot receiver with 100+ target potential jumps dramatically in PPR relative to standard, while a bigger outside receiver with fewer routes but better yards-per-catch value holds more steady.")
+    ),
+    h3("Tier 3 — Depth and Upside Plays"),
+    p(
+      t("Tier 3 receivers are viable flex options, particularly in PPR, but drafting them as WR2 anchors is risky. The upside cases here are receivers in new situations — traded players, rookies entering feature roles, veterans on new teams — where the ranking models haven't fully priced in the opportunity. Identifying one correct Tier 3 breakout in a draft is often the difference between a playoff team and a fringe squad.")
+    ),
+
+    h2("QB Tier Breakdown"),
+    h3("Tier 1 — Weekly-Lock Quarterbacks"),
+    p(
+      t("The top QB tier is smaller than most fantasy players assume — typically four to six passers who combine high volume passing with rushing upside. Dual-threat QBs have compressed this tier upward in recent years because rushing touchdowns and yards make a weekly floor almost untenable to bench. If you land a Tier 1 QB, you essentially remove the position from your weekly decision-making.")
+    ),
+    h3("Tier 2 — Matchup-Dependent Streamers"),
+    p(
+      t("The second QB tier contains high-volume passers without the rushing upside, as well as legitimate dual-threats on less efficient offenses. In single-QB leagues, waiting until the middle rounds and landing a Tier 2 QB is a perfectly viable strategy — the value available at RB and WR in those early rounds usually outweighs the marginal QB upgrade. In Superflex or 2QB formats, the calculus inverts entirely.")
+    ),
+    h3("Tier 3 — Streamers and Handcuffs"),
+    p(
+      t("Tier 3 QBs are matchup streamers: rostered based on upcoming schedule, not expected season-long output. In single-QB leagues, most managers carry one Tier 1 or 2 starter and one Tier 3 streamer on the bench. Understanding which QBs belong here — and when their schedule makes them worth starting over a Tier 2 anchor — is a weekly edge most casual managers leave on the table.")
+    ),
+
+    h2("TE Tier Breakdown"),
+    h3("Tier 1 — Positional Advantages"),
+    p(
+      t("Elite tight ends represent one of the biggest positional advantages in fantasy football because the talent drop-off is steep and swift. A Tier 1 TE is a weekly weapon in the passing game — high target share, red zone presence, and a usage pattern that doesn't disappear in run-heavy game scripts. In PPR, elite TEs become even more valuable because their reception volume compounds with their per-catch scoring. Missing the Tier 1 TE window is often the most costly error in a PPR draft.")
+    ),
+    h3("Tier 2 — Viable Starters"),
+    p(
+      t("The second TE tier includes players with clear starting roles but some question around target floor — either from offensive scheme, quarterback reliability, or competition for targets. These are the TEs you roster with confidence but monitor weekly. In half-PPR, this tier tightens relative to full PPR, making the positional run on tight ends start slightly later in drafts.")
+    ),
+    h3("Tier 3 — Streamers and Handcuffs"),
+    p(
+      t("Beyond the top ten tight ends, the tier structure flattens dramatically. Tier 3 TEs are largely interchangeable week to week and are best streamed against favorable matchups rather than anchored as starters. In deeper leagues, rostering a speculative Tier 3 TE who is entering an expanded role — a young player in a new scheme, or a veteran on a team with a new offensive coordinator — gives you a potential upgrade before the market corrects.")
+    ),
+
+    h2("How Rankings Shift Across Scoring Formats"),
+    p(
+      t("Scoring format is the most commonly underrated variable in fantasy rankings. The same player can be a borderline starter in standard and a locked-in WR2 in PPR — and the draft capital you spend on that player should reflect the format you're actually playing.")
+    ),
+    p(
+      b("Running backs who catch passes"), t(" see the largest format-driven swings. In standard scoring, a back who gets 15 carries and 2 receptions scores materially the same as a back who gets 12 carries and 6 receptions. In PPR, the second back is worth significantly more. This is why some RBs ranked outside the top 20 in standard scoring crack the top 12 in PPR: the reception volume that makes them Tier 2 RBs in standard makes them Tier 1 in full PPR.")
+    ),
+    p(
+      b("Possession wide receivers"), t(" — slot-heavy targets who catch 8 receptions for 70 yards rather than 4 catches for 90 yards — benefit dramatically in PPR relative to standard. If your league is PPR, every receiver in your Tier 2 and Tier 3 should be re-sorted by target volume and catch rate, not just yardage.")
+    ),
+    p(
+      b("Elite tight ends become more valuable in PPR"), t(" for the same reason: the gap between a TE catching 7 balls per game and one catching 3 balls per game is amplified by the full-point-per-reception scoring. In standard, TE rankings flatten considerably because the per-catch bonus disappears.")
+    ),
+    p(
+      t("Half-PPR sits between the two extremes. The format still rewards receiving backs and slot receivers, but less dramatically. The practical effect is that standard rankings and PPR rankings are both directionally useful in half-PPR, but neither translates exactly — treat it as its own format, not a blend of the other two.")
+    ),
+
+    p(
+      t("If you want these adjustments delivered to your ears every morning during draft season — format-aware takes on your specific roster — the "),
+      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      t(" on "),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(" delivers Tuesday–Sunday audio briefings tailored to your team: waiver targets, start/sit calls, and matchup edges, hands-free in about two minutes.")
+    ),
+
+    h2("How to Use Rankings Alongside ADP"),
+    p(
+      t("Average draft position (ADP) is not the same thing as a ranking — it's a market signal. Rankings reflect talent and projected output. ADP reflects what the broader fantasy-playing public is willing to pay. The gap between the two is where value lives.")
+    ),
+    p(
+      t("A player ranked 15th at his position with an ADP implying he'll go in the 20th range is a value. A player ranked 10th who is being drafted in the top 5 is expensive. Neither of these statements requires knowing the player's name — they're structural observations about the market.")
+    ),
+    p(
+      t("The practical process: build your rankings by position and tier first, then overlay ADP to identify three categories of players:")
+    ),
+    ul(
+      [b("Overvalued:"), t(" players being drafted significantly earlier than their tier suggests. Avoid or let others overpay.")],
+      [b("Fair value:"), t(" players whose ADP roughly matches their tier position. Draft them when they're available at their expected spot.")],
+      [b("Undervalued:"), t(" players being drafted later than their tier position. These are the targets. Identify them before the draft and have a plan for how late you can wait.")],
+    ),
+    p(
+      t("You can read more about ADP — what it is, where to find it, and how to interpret it — in "),
+      lk("our guide to ADP in fantasy football", "https://scoutcast.ai/blog/what-is-adp-fantasy-football/"),
+      t(".")
+    ),
+
+    h2("Training Camp as the Final Filter"),
+    p(
+      t("Every ranking published before training camp is provisional. The preseason period from late July through mid-August is where the real signal emerges: who is commanding the first-team reps, who has lost weight or added muscle, who is nursing an injury the team is quietly managing, and whose role has quietly expanded or contracted.")
+    ),
+    p(
+      t("The three things to watch for in training camp reports:")
+    ),
+    ul(
+      [b("Backfield reps:"), t(" which RB is running with the first team in two-minute drill? Goal-line reps? That player's ADP will move, and it will move before the public catches up.")],
+      [b("Target separation:"), t(" beat writers watching practice will note which receivers are winning routes against the top cornerbacks. That separation in practice correlates with target share in the regular season.")],
+      [b("Offensive line changes:"), t(" a new starting left tackle or a returning lineman from injury can change the floor for a running back by more than any skill position swap.")],
+    ),
+    p(
+      t("Rankings published in late August, after the second or third preseason game, are substantially more reliable than anything released in June or early July. Use early rankings to understand tier structure and identify ADP gaps. Use late-camp rankings — and specifically "),
+      lk("fantasy sleeper picks", "https://scoutcast.ai/blog/fantasy-football-sleeper-picks-2026/"),
+      t(" identified through training camp reports — to finalize your draft board.")
+    ),
+
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "What is the difference between PPR and standard fantasy football rankings?",
+      answer: "In standard scoring, only touchdowns and yardage count. In PPR (points per reception), players earn one additional point for each catch, which dramatically boosts the value of pass-catching running backs, slot receivers, and volume tight ends. Rankings should be rebuilt by format rather than treated as interchangeable.",
+    },
+    {
+      question: "How do fantasy football tiers work?",
+      answer: "Tiers group players by expected production level rather than assigning every player a unique rank. Players within the same tier are roughly equivalent in projected output, which means the order within the tier matters less than staying within the tier as long as possible. Drafting with tiers prevents you from reaching for a specific name when an equivalent player is available later.",
+    },
+    {
+      question: "When do fantasy football rankings become reliable?",
+      answer: "Early-summer rankings (May–June) are useful for understanding tier structure and identifying ADP gaps. Rankings become significantly more reliable after training camp and the second preseason game in late July and August, when backfield depth charts, injury news, and target distribution from practice reports come into focus.",
+    },
+    {
+      question: "How should I use ADP alongside my own rankings?",
+      answer: "ADP reflects market consensus, not talent. Compare your tier-based rankings to ADP to find players being drafted earlier than their tier suggests (avoid or let others overpay) and players being drafted later than their tier (targets). The gap between your rankings and ADP is where draft-day value is created.",
+    },
+  ],
+},
+{
+  slug: "what-is-adp-fantasy-football",
+  title: "What Is ADP in Fantasy Football? (And How to Use It)",
+  excerpt: "ADP — Average Draft Position — is the single most useful number in fantasy football prep. Here's how it's calculated, where to find it, and how to use it to find value.",
+  date: "2026-07-08",
+  updatedAt: "2026-07-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(t("If you've spent more than five minutes preparing for your fantasy football draft, you've seen the acronym ADP. Average Draft Position is the single most actionable number in fantasy prep — and once you understand how to read it, your draft strategy changes entirely.")),
+
+    h2("What Does ADP Mean in Fantasy Football?"),
+    p(t("ADP stands for "), b("Average Draft Position"), t(". It tells you, on average, at what pick number a player gets selected across thousands of real and mock drafts. If a running back has an ADP of 14, that means the average drafter is taking him with the 14th overall pick.")),
+    p(t("Think of ADP as the market price for a player. Just like a stock's price reflects what buyers and sellers agree a company is worth right now, a player's ADP reflects what the fantasy-playing public collectively believes that player is worth entering the season.")),
+
+    h2("How Is ADP Calculated?"),
+    p(t("ADP is an aggregate of millions of drafts conducted on major platforms — ESPN, Yahoo, Sleeper, NFFC, Underdog, and more. Data providers like FantasyPros collect draft results from these platforms, filter out outliers, and compute a weighted average pick number for every draftable player.")),
+    p(t("The result is a consensus number that smooths out any single league's quirks. Because it draws from such a large sample, consensus ADP is a remarkably stable signal of how the broader fantasy community values each player heading into a given draft window.")),
+    p(t("Most ADP providers update their numbers daily throughout the preseason, which means the number you see today reflects drafts that happened in the last 24 to 72 hours — not opinions from three weeks ago.")),
+
+    h2("Where to Find Fantasy Football ADP"),
+    p(t("The most widely cited source is "), b("FantasyPros Consensus ADP"), t(", which aggregates data from multiple platforms into a single blended number. It's a reliable starting point because it removes platform-specific distortions.")),
+    p(t("Beyond consensus ADP, each major platform publishes its own internal ADP:")),
+    ul(
+      [b("ESPN ADP"), t(" — reflects the massive casual player base on ESPN. Skill positions that casual fans recognize tend to go earlier here.")],
+      [b("Yahoo ADP"), t(" — similar casual skew to ESPN, though Yahoo leagues tend to have slightly different scoring defaults that shift receiver and tight end values.")],
+      [b("Sleeper ADP"), t(" — Sleeper's user base skews more experienced and more likely to play in PPR or half-PPR formats, so you'll often see running backs drop a few spots and receivers rise compared to ESPN.")],
+      [b("Underdog ADP"), t(" — Underdog is a best-ball platform, meaning every player is at their theoretical ceiling value since the lineup sets itself. Best-ball ADP is the closest thing to pure market valuation without coaching strategy layered on top.")],
+    ),
+    p(t("Knowing which ADP source matches your league type matters. If you play in a PPR Sleeper league, ESPN ADP will mislead you on receiver tiers. Always use ADP from a source whose format mirrors yours.")),
+
+    h2("Why ADP Varies Across Platforms and Scoring Formats"),
+    p(t("ADP is not one universal number — it shifts meaningfully based on scoring format and platform culture. The three biggest drivers of variance are:")),
+    ul(
+      [b("PPR vs. standard scoring"), t(" — in PPR leagues, pass-catching running backs and slot receivers gain significant value. Their ADP in PPR drafts will be noticeably earlier than in standard leagues.")],
+      [b("Superflex and two-QB formats"), t(" — quarterbacks become the most valuable position in superflex leagues. A quarterback who sits in the fifth round of a standard draft might go in the first round of a superflex league.")],
+      [b("Platform user sophistication"), t(" — casual-heavy platforms tend to overvalue name recognition and undervalue depth-chart opportunity. Experienced-player-heavy platforms tend to price in situation more accurately.")],
+    ),
+    p(t("The takeaway: before you treat any ADP number as gospel, confirm it comes from drafts that match your league's exact format.")),
+
+    h2("How to Use ADP to Find Value in Your Draft"),
+    p(t("ADP's real power isn't telling you who to draft — it's telling you "), b("when"), t(" to draft them. The gap between your personal player ranking and a player's consensus ADP is where draft value lives.")),
+
+    h3("Finding Undervalued Players"),
+    p(t("When your ranking for a player is significantly earlier than their ADP, you have an opportunity. You can wait to draft that player until their ADP range arrives and still get them, while spending earlier picks on players at positions where you see less value gap.")),
+    p(t("Common sources of undervalued ADP include: players recovering from injury who have a clear path back to their previous role, players in a new offense that suits their skill set better than their previous team did, and players whose opportunities expanded due to a depth chart change that happened after ADP crystallized.")),
+
+    h3("Identifying Overvalued Players (Busts)"),
+    p(t("The opposite is equally useful. When consensus ADP is significantly earlier than where you'd rank a player, that's a flag. The public may be pricing in a best-case scenario, recent hype, or name recognition rather than the actual situation.")),
+    p(t("Overvalued ADP often clusters around: players coming off a career year who face tougher situations this season, veterans whose role is quietly shrinking, and players whose ADP reflects their reputation rather than their current opportunity.")),
+    p(t("When you identify a player as overvalued, you free yourself from reach pressure. You won't feel compelled to draft them early just because everyone else is — and you can use that pick on a player you actually believe in.")),
+
+    h2("How ADP Shifts Through Training Camp"),
+    p(t("ADP is not static. It moves constantly from the moment platforms open drafts in the spring through the final weekend before the regular season begins.")),
+    p(t("The general arc looks like this: early spring ADP is thin and based mostly on offseason transactions and prior-year performance. As the NFL draft concludes in late April, rookie ADP gets added to the pool. Through May and June, ADP is directionally useful but built on limited information.")),
+    p(t("The most important window is "), b("early to mid August"), t(". This is when training camp practices begin in earnest, beat reporters are filing daily updates, and depth charts start to clarify. ADP from this window is substantially more accurate than anything published in June because it prices in actual practice observations.")),
+    p(t("By late August, ADP tightens significantly and reflects the closest thing to a real consensus you'll get before the season. If you're doing mock drafts now, watch how ADP shifts from week to week — that movement tells you where the smart money is flowing.")),
+
+    h2("ADP vs. Your Personal Rankings: The Gap Is Everything"),
+    p(t("Here's the mental model that separates good drafters from great ones: "), b("ADP is the market, your rankings are your edge"), t(". You don't make money on stocks by buying what everyone already agrees is valuable at fair price. You make money by identifying where the market is wrong.")),
+    p(t("Build your own rankings before you look at ADP. Seriously — do the work first. Then overlay consensus ADP and look for every player where the two diverge by more than a round. Those players are your draft targets (if you rank them higher) and your avoids (if you rank them lower).")),
+    p(t("The fantasy managers who consistently win leagues aren't the ones who memorized ADP. They're the ones who found the gaps — and had reasons for those gaps that went beyond gut feel.")),
+    p(t("For a deeper look at which players might have the biggest ranking-versus-ADP gaps this season, see our "), lk("2026 fantasy football sleeper picks", "https://scoutcast.ai/blog/fantasy-football-sleeper-picks-2026/"), t(" and our full "), lk("fantasy football rankings for 2026", "https://scoutcast.ai/blog/fantasy-football-rankings-2026/"), t(".")),
+
+    h2("Putting ADP Into Practice in Your Draft"),
+    p(t("A few practical principles for using ADP on draft day:")),
+    ul(
+      [b("Know the ADP range, not just the number"), t(" — a player with ADP 24 might realistically go anywhere from pick 18 to pick 30. Draft within that range, not just at the number.")],
+      [b("Don't reach more than one round"), t(" — if your target has an ADP of 30 and you're picking at 20, waiting is almost always the right move. Reaching two or more rounds above ADP is how rosters get imbalanced.")],
+      [b("Use ADP to set a departure point"), t(" — if a player you want is still on the board significantly past their ADP, take them. The market already passed on that value; collect it.")],
+      [b("Check ADP the morning of your draft"), t(" — preseason news moves fast. An ADP from three days ago may not reflect an injury report or a depth chart change announced yesterday.")],
+    ),
+    p(t("For a hands-on look at how these principles play out in a live draft environment, walk through our "), lk("2026 fantasy football mock draft guide", "https://scoutcast.ai/blog/fantasy-football-mock-draft-2026/"), t(".")),
+
+    h2("How Scoutcast Makes ADP Work Harder for You"),
+    p(lk("Scoutcast.ai", "https://scoutcast.ai"), t(" tracks ADP movement and practice reports simultaneously, surfacing when a player's situation improves before their ADP catches up. When a receiver gets a significant target share bump in training camp but their ADP hasn't moved yet, that's the exact window where you gain an edge — and Scoutcast flags it in your morning briefing so you're ready before your leaguemates are.")),
+    p(t("Get the daily intelligence you need to draft with confidence this season with the "), lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(".")),
+
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "What does ADP mean in fantasy football?",
+      answer: "ADP stands for Average Draft Position. It is the average pick number at which a player gets selected across thousands of real and mock fantasy football drafts on major platforms. It tells you what the market collectively thinks a player is worth heading into the season.",
+    },
+    {
+      question: "Where can I find fantasy football ADP?",
+      answer: "FantasyPros publishes a widely used consensus ADP that aggregates data from multiple platforms. Each major platform — ESPN, Yahoo, Sleeper, and Underdog — also publishes its own internal ADP. For the most accurate number, use ADP from a source whose scoring format and draft type match your league.",
+    },
+    {
+      question: "Why is ADP different on ESPN vs. Yahoo vs. Sleeper?",
+      answer: "Each platform has a different user base and default scoring format. ESPN and Yahoo skew toward casual players who tend to overvalue name recognition, while Sleeper's more experienced user base prices in depth-chart situations more accurately. Scoring format also matters — PPR leagues shift receiver and pass-catching running back ADP significantly compared to standard leagues.",
+    },
+    {
+      question: "When is the best time to use ADP for draft prep?",
+      answer: "Early to mid August is the most valuable window for ADP research. Training camps are underway, beat reporters are filing daily observations, and depth charts are taking shape. ADP from this period reflects real information rather than offseason speculation. Always check ADP the morning of your actual draft to capture any last-minute news.",
+    },
+  ],
+},
+{
+  slug: "fantasy-football-rookie-rankings-2026",
+  title: "Fantasy Football Rookie Rankings 2026: Best Rookies to Draft",
+  excerpt: "Best rookie targets by position for the 2026 fantasy football season, with the archetypes most likely to break out and the ones to avoid despite the hype.",
+  date: "2026-07-08",
+  updatedAt: "2026-07-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(t("Every summer, fantasy managers get caught chasing rookies who are never going to produce in Year 1. The hype is real, the draft capital is real — but the fantasy value almost never arrives on schedule. Here is how to tell the difference between the rookies worth rostering and the ones who will eat your bench spot all season.")),
+
+    h2("Why Most Rookies Bust in Fantasy"),
+    p(t("The NFL learning curve is steeper than any scouting report captures. Rookies are learning new route trees, new blocking schemes, a professional playbook, and a pace of play that bears no resemblance to college. Even a first-round pick landing in a strong offense can spend most of September getting beaten on third downs while a veteran behind him handles the real snaps.")),
+    p(t("Situation compounds skill. A receiver with elite athleticism who lands behind two established starters in a run-heavy offense might not see eight targets in a game until November — if at all. Context is not an afterthought when ranking rookies; it is the whole analysis.")),
+
+    h2("The Archetypes That Actually Break Out"),
+    p(t("Rookie breakouts are not random. They cluster around a handful of conditions that repeat year after year. When multiple conditions stack, the probability of fantasy relevance in Year 1 rises dramatically.")),
+    ul(
+      [b("Immediate role with no incumbent:"), t(" When a starter leaves in free agency or gets cut and the team does not replace him externally, the vacuum is real. A rookie drafted into genuine depth-chart space is more valuable than one drafted into a crowded room, regardless of raw talent.")],
+      [b("A good quarterback:"), t(" This one is underrated in rookie WR evaluation. An accurate QB with strong pocket presence shortens a young receiver's learning curve — the ball finds him even when his route running is still rough around the edges. A bad QB environment taxes a rookie WR at every step.")],
+      [b("Efficient offense, high pass rate:"), t(" Teams that pass frequently and efficiently generate volume. A rookie logging 5 targets per game in a high-volume scheme is more valuable than one logging 7 in a scheme that converts to big plays rarely and runs frequently.")],
+      [b("Natural pass-catching profile:"), t(" College production as a receiver — not just as a route runner, but as a natural catcher under pressure — translates better than athleticism alone. Rookies with high collegiate target shares and strong catch rates at congested areas (intermediate and short) tend to sustain early fantasy relevance.")]
+    ),
+
+    h2("Running Back Rookies: Who to Target, Who to Avoid"),
+    p(t("The RB landscape for rookies is bifurcated more sharply than any other position. There are two types of situations worth drafting, and everything else is wait-and-see.")),
+    h3("Target These RB Archetypes"),
+    ul(
+      [b("Day 1 starter in a run-first offense:"), t(" If the incumbent starter left and no veteran was signed to replace him, and the offense ranked top-ten in rush attempts last year, the rookie is a real asset. These situations are rare but they exist every cycle.")],
+      [b("Receiving back with a real role:"), t(" Even in a committee, a rookie who wins the passing-down job in training camp can deliver RB2 value through targets alone. Teams that scheme their backs heavily into routes create floor for receiving specialists regardless of their rush usage.")],
+      [b("Handcuff with known injury history above him:"), t(" Drafting a handcuff is only worth it if the starter has a meaningful track record of missing time. If the starter is durable, that handcuff is a roster drain.")]
+    ),
+    h3("Avoid These RB Archetypes"),
+    ul(
+      [b("Power back drafted behind an entrenched starter:"), t(" A bulldozing between-the-tackles runner who lands as a clear backup is not getting goal-line work. Teams protect their feature backs near the end zone, and a backup power back without a passing-game role is largely useless for fantasy.")],
+      [b("Any back in a three-way committee:"), t(" Volume fragmentation kills fantasy value. When three backs are splitting carries, none of them has a defined role, and the coach will distribute based on game flow in ways that are nearly impossible to predict week to week.")],
+      [b("Hyped college star in a bad offensive line situation:"), t(" Talent does not overcome O-line deficiency at the NFL level. A team ranking in the bottom ten in run-blocking metrics will suppress even excellent rookie production.")]
+    ),
+
+    h2("Wide Receiver Rookies: Slot vs. Outside, and Target Share"),
+    p(t("The inside-outside distinction matters more in the NFL than in college because defensive scheme alignment is far more consistent. Slot receivers operate in different coverage territory than boundary receivers, and teams that run heavy slot concepts generate different target patterns.")),
+    h3("Slot Receivers"),
+    p(t("Slot rookies tend to contribute earlier. The routes are shorter and cleaner — crossers, shallow digs, quick outs — which reduces the cognitive load in a new offense. Coverage is also softer inside against zone, which is the dominant NFL defensive scheme. A rookie with elite quickness and natural hands who wins the slot role immediately is often the safest fantasy receiver in the draft class.")),
+    h3("Boundary Receivers"),
+    p(t("Outside rookies face the steepest adjustment. They are seeing press-man coverage every week, running longer developing routes, and competing for targets on throws that require precision spacing. The ones who survive this early are typically those with exceptional release techniques at the line — the ability to beat press quickly enough to run their full route rather than compromising it.")),
+    h3("What Target Share Tells You"),
+    p(t("A rookie WR who is absorbing more than 20 percent of his team's targets in Weeks 3 through 6 is a real asset. Below 15 percent in that window, and the offense is not using him as a genuine option — treat it as a likely bench-warmer unless the situation changes. Preseason target share means almost nothing; look at regular-season game film usage patterns and training camp reports as the clearest leading indicators.")),
+
+    h2("Tight End Rookies: The Position That Almost Never Produces"),
+    p(t("Tight end has the longest adjustment curve of any skill position in the NFL. The blocking demands are complex, the route tree is the most technically demanding in the passing game, and most teams use veterans in the role because of it. In any given year, the overwhelming majority of rookie tight ends are irrelevant in fantasy — not because they lack talent, but because the position structurally delays contribution.")),
+    p(t("The exceptions follow a narrow pattern: a receiving specialist who plays in an offense that already deprioritizes blocking at the position, with a proven pass-heavy coordinator, who was used heavily as a pass catcher in college and not as an inline blocker. Even then, expect inconsistency. If you draft a rookie TE as your starter, you are speculating, not projecting.")),
+    p(t("The smarter play is to identify which rookie TE has the right scheme fit, draft him late as a stash, and monitor usage through the first three weeks before deciding whether to deploy or drop.")),
+
+    h2("How Training Camp Changes Rookie Values"),
+    p(t("Preseason depth charts are projections. Training camp is where they get stress-tested and revised. Every summer there are rookies who enter camp as Day 1 starters and exit it as backups — and vice versa. A veteran has a bad camp or gets hurt; a rookie takes reps with the first team that were not expected; a coaching staff discovers a mismatch no one anticipated in the draft room. These shifts happen every year and they are significant.")),
+    p(t("The most valuable information in July is not a mock draft ADP — it is a beat reporter confirming that a rookie WR has been taking first-team reps outside opposite the team's WR1, or that a rookie RB has been the lead back in two-minute drills. That information is more predictive than anything in the draft profile.")),
+
+    h2("What to Look for in Camp Reports"),
+    ul(
+      [b("First-team reps with the starting offense:"), t(" Who is lining up with the starters, and when did that change? First reported in July, confirmed by August preseason games.")],
+      [b("Route tree usage:"), t(" Is the rookie running full-field routes, or is he being used on one-third of the route tree? A limited route tree in camp means a limited role early in the season.")],
+      [b("QB chemistry mentions:"), t(" When beat reporters mention a QB-to-receiver connection developing early, it tends to hold. Quarterbacks trust who they trust, and establishing trust in camp is a real edge.")],
+      [b("Depth chart volatility:"), t(" If a veteran above a rookie gets hurt, cut, or benched at any point in camp, the value spike is immediate. Monitor these situations daily in August.")],
+      [b("Snap count patterns in preseason games:"), t(" A rookie playing 60 percent of snaps in a preseason game while starters rest tells you almost nothing. A rookie playing alongside the first-team offense in a joint practice tells you a lot.")]
+    ),
+
+    p(lk("Scoutcast.ai", "https://scoutcast.ai"), t(" tracks camp reports and depth chart changes for rookies daily — the "), lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" surfaces every signal that matters from July through the regular season so you can update your board as situations shift, not after your draft has already locked them in.")),
+
+    p(t("For context on how rookies fit into the broader picture, see the full "), lk("fantasy football rankings 2026", "https://scoutcast.ai/blog/fantasy-football-rankings-2026/"), t(" and the deeper look at high-upside targets in the "), lk("fantasy football sleeper picks 2026", "https://scoutcast.ai/blog/fantasy-football-sleeper-picks-2026/"), t(" guide.")),
+
+    h2("Putting It Together: A Rookie Draft Framework"),
+    p(t("Draft rookies with explicit situational justification, not on talent alone. Every pick should pass a two-part test: does this rookie have a defined role on Day 1, and does the offense around him create real fantasy opportunities? If the answer to both is yes, draft aggressively. If the answer to either is no, be honest about whether you are buying into hype or into a genuine production setup.")),
+    p(t("Check the depth chart one more time before your draft. An August injury or cut can transform a backup into a starter in 48 hours. The managers who win rookie gambles are rarely smarter — they are just watching closer.")),
+
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "Which rookie position contributes most in fantasy football Year 1?",
+      answer: "Running backs in clear starter roles and slot receivers in pass-heavy offenses contribute earliest and most consistently in Year 1. Tight ends almost never produce as rookies, and outside receivers face a steeper learning curve than inside receivers. If you are looking for safe rookie production, prioritize RBs who inherited a clear starting role and WRs winning the slot job on a team with a strong passing scheme.",
+    },
+    {
+      question: "How early should I draft rookies in fantasy football?",
+      answer: "Draft rookies according to their situation, not their draft capital. A first-round NFL pick in a bad situation is less valuable than a third-round pick who lands in a clear starter role with a strong supporting cast. In general, most rookies outside the top three or four at their position should be drafted as upside picks in the later rounds — typically rounds 8 through 12 — rather than as core starters. Exceptions exist when a rookie has locked up a no-competition starter role.",
+    },
+    {
+      question: "What makes a rookie a sleeper in fantasy football?",
+      answer: "The best rookie sleepers are players whose ADP has not caught up to a quiet situation change — usually an undrafted or late-round rookie who wins a training camp battle, or a mid-round pick who moves up the depth chart after a veteran injury. Look for beat reporter confirmation of first-team reps, a specific role (especially in the passing game), and a coaching staff that has historically used young players when they earn it. Talent plus situation plus low ADP is the sleeper formula.",
+    },
+    {
+      question: "Should I start rookies in fantasy football in Week 1?",
+      answer: "Only if their role is confirmed and their situation supports it. A rookie RB who is the clear starter on a run-heavy team, or a slot receiver who has been logging first-team reps all camp, is a viable starter in Week 1. Most other rookies, even high-upside ones, need two or three games for their usage patterns to stabilize. Starting an unproven rookie in Week 1 over a veteran with a known role is usually a mistake unless the situation is truly clear.",
+    },
+  ],
+},
+{
+  slug: "fantasy-football-busts-2026",
+  title: "Fantasy Football Busts 2026: Players to Avoid at Their ADP",
+  excerpt: "Bust profiles by position for 2026 — the archetypes being overdrafted relative to their likely output, and how to spot them before your draft.",
+  date: "2026-07-08",
+  updatedAt: "2026-07-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t("The word \"bust\" gets thrown around loosely in fantasy football, but it has a precise meaning: a player whose ADP sets an expectation their situation cannot meet. Talent is rarely the issue. The issue is price versus realistic ceiling — and in 2026, several position groups are loaded with players being drafted well ahead of where their actual situation warrants.")
+    ),
+    p(
+      t("This is not a list of bad players. Most bust candidates are genuinely talented. The problem is that their drafting managers are paying for a version of them that no longer exists — or may never exist — given their current team context, role clarity, and offensive environment. Understanding the archetypes below will sharpen your ability to identify these players on your own board before draft day.")
+    ),
+    p(
+      t("For context on who is worth targeting once you've cleared the busts from your board, see our "),
+      lk("2026 fantasy football rankings", "https://scoutcast.ai/blog/fantasy-football-rankings-2026/"),
+      t(" and "),
+      lk("fantasy football sleeper picks for 2026", "https://scoutcast.ai/blog/fantasy-football-sleeper-picks-2026/"),
+      t(".")
+    ),
+    h2("What Makes a Bust: Situation vs. Price"),
+    p(
+      t("The bust equation is simple: "),
+      b("ADP reflects expectation; production reflects situation."),
+      t(" When those two diverge — when the draft community is pricing a player based on peak performance or name recognition rather than current role and opportunity — you have a bust candidate.")
+    ),
+    p(
+      t("The most common bust trigger is a change that the market has not yet fully discounted. A new team. A new coaching staff. A recovered injury. An aging curve quietly bending downward. ADP tends to be sticky — it lags behind information because many drafters anchor to last year's stats. Your edge is updating faster than the market does.")
+    ),
+    p(
+      t("The framework to apply at every position: What does this player's realistic workload look like? What is the offense built to support? Has their situation improved or degraded since the number the market is quoting? If the honest answers do not justify the cost, move on.")
+    ),
+    h2("Running Back Busts"),
+    h3("The Aging Back Drafted on Reputation"),
+    p(
+      t("Every season, a cohort of veteran backs enters their age-30-or-later campaign still carrying ADP from their prime. The NFL's usage data is unambiguous: rushing efficiency declines measurably after 29, and teams that extend aging backs rarely restore their full early-down role. The market lags this reality. When you see a back in his early 30s drafted in the top three rounds because of career numbers, ask when those numbers were produced — and whether his current offense and snap-share projections support a repeat.")
+    ),
+    h3("The Committee Back Priced as a Workhorse"),
+    p(
+      t("Backfield committees are more common than they have ever been, yet ADP still frequently prices one back in a split situation as if he owns the full workload. The tell is a team with two or three backs who all logged meaningful touches last season, no clear articulation from the coaching staff about a lead role, and yet one back drafted as though he will handle 250-plus carries. Identify the committee early — if two backs share a similar price and you can only own one, neither is worth the cost of the higher-priced one.")
+    ),
+    h3("The Injury-Return Back With Unresolved Workload"),
+    p(
+      t("A back returning from a significant injury — torn ACL, high ankle sprain, Lisfranc — carries two layers of risk: re-injury probability and role uncertainty. Teams routinely bring in a backup during the recovery window who then earns a legitimate split. The market often prices the returning starter as if the incumbent snap-share is waiting for him. It rarely is. Discounted ADP is warranted; full first-round pricing is not.")
+    ),
+    h2("Wide Receiver Busts"),
+    h3("The New-Team Receiver Priced on Potential"),
+    p(
+      t("Free agency and trade volatility create a class of receivers every year who change teams and get drafted as if the new situation is automatically an upgrade. Chemistry with a new quarterback takes time. Learning a new route tree takes time. NFL receivers have a well-documented first-year-with-new-team dip in per-target efficiency. When a receiver is drafted in the top two rounds based primarily on the hope that his new offense unlocks him, and the market has not yet accounted for that adjustment period, you are likely overpaying.")
+    ),
+    h3("The Receiver Losing His Quarterback"),
+    p(
+      t("Quarterback quality and receiver production are closely linked — more so than position-group talent alone. A receiver moving from an elite passer to a middling one should see meaningful ADP compression. Frequently it does not, especially if the receiver was a top-10 finisher the prior year. The position's production was partly a reflection of the quarterback's accuracy, decision-making, and ability to keep drives alive. Discount accordingly.")
+    ),
+    h3("The High-Target-Share Receiver in a Declining Offense"),
+    p(
+      t("Target volume is a function of team passing volume, and team passing volume is a function of game script. A receiver who earned a 30% target share last year on a pass-heavy team that now projects for a run-first approach — either because of a new coordinator, a strong running game addition, or projected regression in win total — will see fewer absolute targets even if his share holds. ADP based on raw targets from last season can significantly overstate forward value.")
+    ),
+    h2("Tight End Busts — The Position to Watch Closest in 2026"),
+    p(
+      t("Search interest in tight end busts is surging in 2026, and for good reason: the position is the most situationally volatile in fantasy football. Unlike running backs, where the offensive line tells part of the story, or receivers, where target share is relatively visible, tight end usage is uniquely dependent on scheme, coordinator philosophy, and week-to-week game plan. A tight end can be a borderline TE1 one year and an afterthought the next with no change in talent — only a change in how his offense uses the position.")
+    ),
+    h3("The TE1 in a Non-TE-Friendly Offense"),
+    p(
+      t("The single most reliable tight end bust archetype is a talented tight end on a team whose coordinator does not scheme routes to the position. Some offenses use tight ends primarily as blockers with token routes; others deploy them as seam-stretchers on 8-plus targets per game. ADP often prices the player without adjusting for the system. Before drafting any tight end in rounds 2 or 3, verify that the scheme historically supports TE production — look at team-level TE target share over the last two seasons under the same coordinator, not just the player's career stats.")
+    ),
+    h3("The Aging Veteran Tight End"),
+    p(
+      t("Unlike running backs, where the decline is physical and well-documented, veteran tight ends decline in a more subtle way: teams stop building plays for them. Younger tight ends who block well and run routes with better separation get worked into the rotation. The veteran TE maintains a starter designation and stays draft-visible, but his target funnel quietly narrows. If a tight end is on the back half of his 30s and a team has invested in younger options, his ADP should carry a meaningful haircut relative to peak-career prices.")
+    ),
+    p(
+      b("The key tight end rule: "),
+      t("never pay TE1 ADP for a player whose offense does not have a TE1 history. The talent can be real. The opportunity has to match.")
+    ),
+    p(
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(" tracks ADP movement and surfaces when a player's situation changes — catch busts before draft day with the "),
+      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      t(", which includes real-time ADP alerts and situation-change briefings all season.")
+    ),
+    h2("Quarterback Busts"),
+    p(
+      t("In single-QB leagues, quarterback ADP is generally more rational than skill positions — the draft community has internalized that you can wait on the position. The bust risk here is specific: the manager who reaches in rounds 3 or 4 for a quarterback because of streaming anxiety, and sacrifices a skill-position edge to do it.")
+    ),
+    p(
+      t("The bust quarterback archetype in single-QB leagues is the mobile signal-caller who posted a huge rushing-touchdown season and is now priced as a top-5 QB. Rushing touchdowns are the most volatile scoring category in fantasy — regression is aggressive and predictable. A quarterback drafted on the strength of a rushing-score outlier will frequently disappoint at that ADP. Wait for the second wave of passers and invest the early capital in positional scarcity at tight end or receiver instead.")
+    ),
+    h2("How to Build a Bust-Resistant Draft Board"),
+    p(
+      t("Bust-proofing your draft is less about identifying specific players and more about installing a process. Before committing to any pick in the first eight rounds, answer three questions:")
+    ),
+    ul(
+      [b("Is the role confirmed? "), t("Not projected — confirmed. Depth chart clarity, coordinator comments, training camp reports. Ambiguous roles warrant discounted ADP.")],
+      [b("Does the scheme support the production? "), t("Team-level target share, run-play percentage, and coordinator history tell you more than a player's name. Scheme is destiny for tight ends and receivers especially.")],
+      [b("Is the price current? "), t("ADP is a lagging indicator. A player whose situation changed in May may still carry an April ADP on the platform you are using. Freshness matters.")]
+    ),
+    p(
+      t("When you cannot answer yes to all three, the player carries bust risk at his current price. That does not mean you cannot draft him — it means you should not draft him at that cost. If the market corrects and he slides, the value equation may change. Patience on bust candidates is its own edge.")
+    ),
+    h2("The Real Bust: Drafting to Your Roster, Not the Value"),
+    p(
+      t("The final bust archetype is strategic rather than player-specific: drafting a \"safe\" high-ADP player in a position you already have covered, at the expense of taking value elsewhere. Roster construction busts happen when managers fill needs instead of taking the best available player and trusting the rest of the draft to fill out the lineup. A player who is a reasonable selection in the abstract can be a bust in the context of your specific team.")
+    ),
+    p(
+      t("Build your board with bust profiles in mind — not as a list of names to avoid, but as a framework for stress-testing every pick. The player is not a bust because you say so; the player is a bust because the situation, price, and realistic ceiling do not line up. Apply that test consistently and you will avoid the most common ways fantasy drafts go wrong.")
+    ),
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "What does 'fantasy football bust' actually mean?",
+      answer: "A bust is a player whose ADP (average draft position) sets an expectation their situation cannot reasonably deliver on. It is not about talent — it is about the gap between what you paid and what their current role, scheme, and opportunity realistically support. The most common busts are players being priced on last year's production in a situation that no longer exists."
+    },
+    {
+      question: "Why are tight end busts so hard to predict in fantasy football?",
+      answer: "Tight end production is more dependent on coordinator scheme than any other position. A tight end can be a top-five finisher one season and a streaming option the next with no change in ability — only a change in how his offense deploys the position. Before drafting any tight end early, verify that the offense has a history of targeting the position heavily under the current coordinator, not just that the player is talented."
+    },
+    {
+      question: "How do I identify running back busts before my draft?",
+      answer: "Look for three archetypes: aging backs priced on peak-career reputation, backs in committee situations priced as if they own a workhorse role, and injury-return backs whose backups earned real snaps during the recovery. In each case, the ADP reflects a role that either no longer exists or has not been confirmed by the current depth chart. Discount any back whose workload is genuinely unresolved."
+    },
+    {
+      question: "Is it worth avoiding bust candidates entirely or just adjusting their value?",
+      answer: "Adjust the value, do not blacklist the player. A bust is always relative to ADP — if the market corrects and a player slides two or three rounds past where you flagged him, the bust risk may disappear. The goal is not to avoid specific players forever but to refuse to pay bust-level prices. Monitor ADP movement as draft day approaches and be ready to take value if it presents itself at the right cost."
+    },
+  ],
+},
+];
+
+// Drafts: held out of the rendered blog until ready to ship.
+export const draftPosts: Post[] = [
+{
+  slug: "who-should-i-draft-fantasy-football-2026",
+  title: "Who Should I Draft in Fantasy Football 2026? Position-by-Position",
+  excerpt: "A pick-by-pick framework for the 2026 fantasy draft: when to take each position, what the right order looks like, and how to adjust for your specific slot.",
+  date: "2026-07-08",
+  updatedAt: "2026-07-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t("The most common fantasy football draft mistake isn't drafting the wrong player — it's asking the wrong question. \"Who should I draft?\" sounds right, but the better question is: \"who gives me the best combination of floor and ceiling at this specific pick, given what my roster already needs?\" Answer that, and the board becomes a lot clearer.")
+    ),
+    p(t("This guide walks through every phase of the draft — rounds 1 through 15 — with a positional framework for each tier, how your draft slot changes the calculus, and the one mindset shift that separates managers who build balanced rosters from those who reach themselves into a corner by round 6.")),
+    p(
+      t("If you want to pair this with a hands-on practice session, start with "),
+      lk("our 2026 fantasy football mock draft guide", "https://scoutcast.ai/blog/fantasy-football-mock-draft-2026/"),
+      t(", then come back here with a few drafts under your belt.")
+    ),
+
+    h2("The Fundamental Draft Question"),
+    p(t("Before diving round by round, one concept to anchor everything: every pick is a trade-off between floor (the minimum reasonable output if things go okay) and ceiling (the upside if things break right). Elite players at scarce positions deliver both. Reaches — taking a player earlier than their position in the consensus — compress your ceiling without improving your floor.")),
+    p(t("The goal in the first four rounds is to build a core that doesn't have a catastrophic weakness. The goal in rounds 5 through 10 is to layer upside on top of that core. The goal in rounds 11 through 15 is to add optionality — depth, lottery tickets, and handcuffs that protect your starters.")),
+    p(t("What changes this entire calculus: your draft slot. We'll come back to that after the round-by-round breakdown.")),
+
+    h2("Rounds 1–2: Build Your Foundation"),
+    p(
+      t("The first two picks set the ceiling on your entire season. If you nail them, you can recover from a bad middle draft. If you miss here — especially by reaching for the wrong position — you spend the rest of the draft patching a leak instead of building upside. See "),
+      lk("our 2026 fantasy football rankings", "https://scoutcast.ai/blog/fantasy-football-rankings-2026/"),
+      t(" for how we tier the top options at each position.")
+    ),
+    p(b("Take elite RBs and WRs. Do not reach for TE or QB.")),
+    p(t("Running back is the most volatile position in fantasy football — elite production is concentrated in the top tier and falls off sharply. When a true workhorse back with a strong offensive line and a clear path to 20+ touches per game is on the board in round 1, you take him. The same goes for a locked-in WR1 on a high-volume passing offense.")),
+    p(t("What you do not do in rounds 1–2: draft a tight end or quarterback. Both positions have viable starters available much later in the draft. Taking a TE or QB before round 8 — no matter how good they are — means skipping over elite RBs and WRs at positions where the tier drop-off is severe. You are compressing your ceiling at a position where the talent gap is enormous, to get a marginal edge at a position where the talent gap is much smaller.")),
+    ul(
+      [b("Round 1 priority:"), t(" Elite RB with workhorse role, or WR1 on a pass-heavy offense")],
+      [b("Round 2 priority:"), t(" Fill your weaker position from round 1 — if you took an RB, lean toward WR here, and vice versa")],
+      [b("Avoid in rounds 1–2:"), t(" TE, QB, and any player you are reaching more than half a round early on the consensus board")]
+    ),
+
+    h2("Rounds 3–4: Fill the Gaps, Stay Disciplined"),
+    p(t("After two picks you should have a clear picture of what your roster lacks. If you took an RB and a WR, rounds 3–4 are where you get your second quality player at each of those positions — building depth at the spots that matter most, not pivoting to TE or QB because a well-known name falls to you.")),
+    p(t("The most common mistake in this range: ADP reach syndrome. A player you liked slips a round, and you're tempted to grab him before someone else does. Resisting this impulse requires knowing the tiers on your board — when there are three functionally similar players at a position grouped together in ADP, taking the first one two picks early costs you a pick at a position you actually need to address.")),
+    p(t("Rounds 3–4 are also where the shape of your draft slot starts to matter most. Early-slot managers (picks 1–4) often find that a top RB falls to their round-3 pick, making it easy to double down at RB. Late-slot managers (picks 9–12) who took back-to-back WRs in rounds 1–2 should be prioritizing RBs aggressively here, because the elite options disappear fast.")),
+    ul(
+      [b("Round 3 priority:"), t(" Upgrade your weaker position from rounds 1–2; stay within one round of consensus ADP")],
+      [b("Round 4 priority:"), t(" True flex — best player available within your two core positions, or a TE if a true elite is still on the board at a reasonable value")],
+      [b("Avoid in rounds 3–4:"), t(" Any pick more than a round ahead of consensus ADP, especially for QB or kicker")],
+      [b("Watch for:"), t(" RBs in committee situations that have vaulted to clear lead-back status — these are where rounds 3–4 value hides")]
+    ),
+
+    h2("Rounds 5–7: Maximize Upside"),
+    p(t("This is the most interesting phase of the draft. Your core is set. Now the question shifts from \"who is reliable?\" to \"who has the highest ceiling relative to where I'm taking them?\"")),
+    p(t("The players available in rounds 5–7 generally fall into three buckets:")),
+    ul(
+      [b("Proven starters with an injury or role concern"), t(" — volume and talent are established, but there's a reason the consensus pushed them out of the first four rounds. These are the highest-floor picks in this range.")],
+      [b("Breakout candidates"), t(" — players entering a new situation, a new role, or a second year in a system. ADP has priced in skepticism. If the situation resolves cleanly — a new starter, a clear pass-game target share, a line upgrade — the upside is first-round caliber at fifth-round cost.")],
+      [b("Situation plays"), t(" — players whose value is almost entirely dependent on a specific scenario: a starter's injury, a depth chart shuffle, a surprise usage decision. High ceiling, but dependent on something outside their control.")]
+    ),
+    p(t("The key in rounds 5–7: draft the situation, not the name. A recognizable player with a diminished role is a worse pick than an unfamiliar player in a featured role. Be honest with yourself about what is being priced in versus what is actually likely.")),
+    p(
+      t("For a deeper look at the under-the-radar names worth targeting in this range, see "),
+      lk("our 2026 fantasy football sleeper picks", "https://scoutcast.ai/blog/fantasy-football-sleeper-picks-2026/"),
+      t(".")
+    ),
+
+    p(
+      t("If you want all of this analysis distilled into a two-minute personalized briefing — injury news, waiver moves, training camp standouts — every morning from now through the Super Bowl, that's what the "),
+      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      t(" from "),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(" does. It's the research layer underneath a draft like this one, running all season.")
+    ),
+
+    h2("Rounds 8–10: QB, TE, and High-Upside Fliers"),
+    p(t("The conventional wisdom has been right about this for years: wait on quarterback. In standard and half-PPR formats, the difference in weekly points between the QB1 and the QB12 is smaller than the difference between the RB1 and RB12 by a wide margin. Spending an early pick on a QB is paying a premium for a shallow advantage.")),
+    p(t("Round 8 or 9 is typically the right window to take your starter at quarterback — after the top tier is gone but before the second tier runs dry. In deeper leagues or two-QB formats, adjust this earlier. In single-QB leagues with a standard 12 teams, patience here pays off.")),
+    p(b("Tight end."), t(" If you passed on a TE in rounds 1–4, rounds 8–10 are your last chance to land a reliable starter rather than a weekly coin flip. The top half-dozen TEs in fantasy are meaningfully more valuable than what's available from pick 7 onward — but the next group down is serviceable if you're consistent about streaming the right matchups.")),
+    p(b("Handcuffs."), t(" If you drafted an RB in the first two rounds, rounds 9–10 are when you want to identify and take his primary backup. The player who steps in when your starter goes down for two weeks is one of the most undervalued picks in the entire draft — and most managers wait too long to secure him.")),
+    ul(
+      [b("Round 8–9:"), t(" Your QB1 — starter-quality passer, mobile or volume-based, from a pass-friendly offense")],
+      [b("Round 9–10:"), t(" TE starter if you don't have one — prioritize weekly floor over ceiling here")],
+      [b("Round 9–10:"), t(" Handcuff for your round-1 or round-2 RB before someone else grabs him")]
+    ),
+
+    h2("Rounds 11–15: Optionality and the Long Game"),
+    p(t("The final third of the draft is about building options, not locking in starters. The best picks here fall into four categories:")),
+    p(b("IR stashes."), t(" Players coming off injury who are unlikely to be available for week 1 but are worth a roster spot at this price. If they return at 80% of their previous form, you've added a top-20 asset for a 13th-round pick. The risk is a wasted spot; the upside is outsized.")),
+    p(b("Training camp standouts."), t(" By the time your draft happens, camp battles are either resolved or very close. A backup who looked impressive against vanilla defenses in August is getting priced as a handcuff; a backup who won the starting job outright should be getting priced as a starter. Know which is which before you sit down.")),
+    p(b("Backup handcuffs for your secondary RBs."), t(" You secured the handcuff for your round-1 back in rounds 9–10. Now do the same for your round-3 or round-4 RBs, if roster space allows. The injury-replacement value of a clear backup is real even for secondary starters.")),
+    p(b("WR lottery tickets."), t(" Young receivers on high-volume passing offenses who might emerge as featured targets if the depth chart shifts. The hit rate is low, but the upside — a waiver-wire WR2 materializing on your bench — is exactly the kind of optionality that separates good teams from great ones by midseason.")),
+    ul(
+      [b("Rounds 11–12:"), t(" IR stash or a second QB for bye-week insurance")],
+      [b("Rounds 12–13:"), t(" Training camp winners at RB who are still being underpriced by consensus boards built before camp concluded")],
+      [b("Rounds 13–14:"), t(" Backup handcuffs for secondary RBs on your roster")],
+      [b("Rounds 14–15:"), t(" WR lottery tickets — young receivers in strong offenses with target upside if the depth chart moves")]
+    ),
+
+    h2("How Your Draft Slot Changes Everything"),
+    p(t("Everything above assumes a general framework. Your actual strategy needs to account for where you are picking.")),
+    p(b("Early slots (picks 1–4)."), t(" You get the best player in the draft, and then you wait a long time for your next pick. The advantage: you know exactly what you're getting in round 1. The challenge: by the time your round-2 pick arrives, a meaningful tier break may have already happened. Scout the board before the draft and identify which tier of players will likely be available when you pick — don't assume the best RB2 or WR2 will still be there.")),
+    p(b("Middle slots (picks 5–8)."), t(" The most flexible position. You're unlikely to land the very top of the first-round tier, but you have the best shot at grabbing two elite players from the same position across your first two picks if a run on the other position happens before you. Watch for position runs early in round 1 and adjust your round-2 strategy accordingly.")),
+    p(b("Late slots (picks 9–12)."), t(" The snake-draft advantage: back-to-back picks at the turn. The best managers in late slots enter the draft knowing exactly which players they expect to see at the turn — because at picks 11 and 14, or 12 and 13, you can often secure two solid picks in the same position window. Know your tiers cold before you draft; the turn is when opportunistic managers gain an edge.")),
+
+    h2("The Real Question Under the Question"),
+    p(t("Most managers who Google \"who should I draft in fantasy football\" are actually asking a more specific question, they just don't know it yet: \"what does my roster need after my first two picks?\"")),
+    p(t("After round 2, the answer to that question changes everything on your board. An RB-heavy manager needs WR depth. A WR-heavy manager needs backfield production. A manager who took two elite players at the same position in rounds 1–2 — which happens — needs to be ruthlessly disciplined about spreading investment across positions for the rest of the draft.")),
+    p(t("The managers who draft well aren't the ones who memorize the top 200. They're the ones who can accurately describe what their roster needs after every pick, and hold that shape against the temptation of a recognizable name falling to them.")),
+    p(
+      t("That's the framework. If you want to go deeper on where to find value pick-by-pick, the "),
+      lk("2026 fantasy football rankings", "https://scoutcast.ai/blog/fantasy-football-rankings-2026/"),
+      t(" and the "),
+      lk("mock draft guide", "https://scoutcast.ai/blog/fantasy-football-mock-draft-2026/"),
+      t(" are the next two reads.")
+    ),
+
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "Who should I draft first in fantasy football 2026?",
+      answer: "In round 1, prioritize elite running backs with a workhorse role or locked-in WR1s on pass-heavy offenses. Do not reach for a tight end or quarterback in the first round — both positions have serviceable options available much later. The best round-1 pick is the player who gives you the highest combination of floor and ceiling at a scarce position, not the biggest name available.",
+    },
+    {
+      question: "When should I draft a quarterback in fantasy football?",
+      answer: "In single-QB leagues, wait until rounds 8–9. The scoring gap between the QB1 and QB12 is much smaller than the equivalent gap at RB or WR, so spending an early pick on quarterback is paying a premium for a shallow advantage. In two-QB or superflex formats, move QB up to rounds 3–5 depending on how quickly the position runs.",
+    },
+    {
+      question: "What are the best mid-round fantasy football targets?",
+      answer: "The best mid-round targets in rounds 5–7 are breakout candidates entering a new situation or featured role, and proven starters who slipped due to an injury or role concern that has since resolved. Draft the situation over the name — a less recognizable player with a clear, high-volume role is a better pick than a well-known player whose usage has shrunk.",
+    },
+    {
+      question: "How does my draft slot affect my fantasy football strategy?",
+      answer: "Early slots (picks 1–4) give you the best player but require patience and tier awareness at the turn. Middle slots (picks 5–8) offer the most flexibility. Late slots (picks 9–12) benefit most from knowing exactly which players will fall to back-to-back picks at the turn — preparation matters more here than anywhere else in the draft.",
+    },
+  ],
+},
+{
+  slug: "fantasy-football-waiver-wire-strategy",
+  title: "Fantasy Football Waiver Wire Strategy: How to Win Your League on Tuesdays",
+  excerpt: "Waiver wire moves win more leagues than draft picks. Here's the weekly process for identifying the right targets before the rest of your league does.",
+  date: "2026-07-08",
+  updatedAt: "2026-07-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t("Your draft is a one-day event. The waiver wire runs for seventeen weeks. Managers who treat Tuesday morning as a competitive advantage — the same way they prep for the draft — consistently outperform those who check the wire as an afterthought. Here's the weekly process for finding the right targets before the rest of your league does.")
+    ),
+    h2("Why the Waiver Wire Matters as Much as Your Draft"),
+    p(
+      t("Every NFL game produces injuries. Starters get hurt, roles shift, and depth players suddenly inherit full-time snaps. The manager who identifies those role changes fastest — before consensus forms on the wire — wins the week and, over a season, wins the league. The draft sets a ceiling. The wire raises the floor and, often enough, creates new ceilings mid-season.")
+    ),
+    p(
+      t("The single biggest gap between average and elite managers is not draft-day preparation. It is the discipline to run a repeatable weekly process for evaluating and acquiring free agents. Everything below is that process.")
+    ),
+    h2("FAAB vs. Waiver Priority: Which System Rewards Skill"),
+    p(
+      t("Most leagues run one of two waiver systems: a rolling priority queue or a free-agent acquisition budget (FAAB). Understanding the difference matters because your strategy should change based on which one your league uses.")
+    ),
+    p(
+      b("Waiver priority "),
+      t("is a zero-sum race. When you use your claim, you drop to the back of the line. That structure rewards whoever is willing to burn priority on a speculative add — which punishes patience and over-rewards urgency. In a priority league, you must decide quickly whether the opportunity is clear enough to spend position.")
+    ),
+    p(
+      b("FAAB "),
+      t("is the better system because it allows you to encode how much you actually believe in an opportunity. You can bid $3 on a handcuff and $45 on a clear RB1 in the same week, and the budget allocation itself is a form of research. The constraint — a fixed season-long budget — forces prioritization and creates real skill expression. Save budget for mid-season injury windfalls. Managers who exhaust FAAB early on speculative adds are routinely outbid in Week 9 when a true starting opportunity opens up.")
+    ),
+    h2("What to Look for Every Monday Morning"),
+    p(
+      t("By the time beat reporters file their Monday injury updates, the best signal has already been available for hours in the box score and play-by-play data. Here is what to pull first:")
+    ),
+    ul(
+      [b("Snap counts"), t(" — A backup logging 60%+ of offensive snaps on Sunday is the first signal of a role change. Don't wait for a coach to announce it.")],
+      [b("Target share"), t(" — A receiver absorbing 20%+ of targets in a game where the starter was absent is an immediate add candidate at the receiver position.")],
+      [b("Route percentages"), t(" — Target share can be noisy week-to-week. Route percentage tells you whether a player is actually being deployed as a starter or just catching targets from garbage time.")],
+      [b("Injury designations"), t(" — Cross-reference the Sunday injury reports against the snap data. If a player was injured and their backup ran full routes in the second half, the role has likely changed before it's officially announced.")],
+      [b("Backfield touch distribution"), t(" — In the running back position, early-down carries and red-zone touches are the key metrics. A back who absorbs both after an injury to the starter is a must-add, not a speculative hold.")],
+    ),
+    h2("The Tuesday Process: Working the Wire Before It Opens"),
+    p(
+      t("Most leagues process waivers Wednesday morning. That means Tuesday is your research window — the hours when information is still being synthesized and consensus hasn't formed. Managers who wait until Wednesday to submit claims are working on stale information.")
+    ),
+    p(
+      b("Monday: "),
+      t("Identify the injury. Pull snap counts and target share from the Sunday box score. Cross-reference with the official injury report. Flag every player whose role may expand.")
+    ),
+    p(
+      b("Tuesday: "),
+      t("Submit your claims before the wire processes. This is when you should be ranking your targets by confidence level and allocating FAAB accordingly. A claim submitted Tuesday morning with a well-reasoned bid beats a claim submitted Wednesday morning when everyone else has read the same beat reporter column.")
+    ),
+    p(
+      b("Wednesday: "),
+      t("Confirm role with practice reports. The Wednesday injury designation — limited, full, or did not practice — is your confirmation signal. If you already own the handcuff or the next receiver in line, this is where you decide whether to start, hold, or sell.")
+    ),
+    h2("The Fantasy Season Pass CTA"),
+    p(
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t("'s "),
+      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      t(" surfaces injury news and role changes for your specific roster every Tuesday morning — so you know who to add before the wire opens. Instead of manually tracking snap counts across every game, you get a briefing built around the players you actually own and the opportunities most relevant to your team.")
+    ),
+    h2("How to Value Your FAAB Budget"),
+    p(
+      t("A common mistake is treating FAAB as a weekly spend. It is a season-long resource, and early-season adds almost never justify the same budget allocation as mid-season injury windfalls.")
+    ),
+    ul(
+      [b("Spend on clear starting roles"), t(" — If a running back is the unambiguous starter after an injury, this is worth a significant bid. Bid to win, not to be competitive.")],
+      [b("Don't overbid on shared backfields"), t(" — Committee situations rarely produce the weekly upside that justifies a large FAAB outlay. Bid modestly and move on if you lose.")],
+      [b("Reserve budget for mid-season"), t(" — The most valuable waiver wire opportunities tend to arrive in Weeks 5–10, when rosters are depleted and the top handcuffs become starters. Managers who spent aggressively in September have nothing left.")],
+      [b("Set a weekly ceiling"), t(" — A useful heuristic: no single claim should exceed 25–30% of your remaining budget unless it is a genuine RB1 or WR1 opportunity.")],
+    ),
+    h2("Streaming vs. Holding: The Mistake Most Managers Make"),
+    p(
+      t("Streaming — dropping a player after one bad week and picking up whatever is available — feels productive. It is usually a trap.")
+    ),
+    p(
+      t("High-upside players with volatile weekly floors are worth holding through bad games. If you acquired a receiver because their target share was legitimate, one quiet week is not a signal to drop them — it is noise. The managers who hold through variance and sell into strength consistently outperform the managers who stream reactively.")
+    ),
+    p(
+      t("The rule: before you drop a player, ask whether the underlying role has changed. If the snap count held steady and the target share held steady, the bad game was weather or game script, not a demotion. Hold. If the snap count fell, the role has changed — that is a real signal, not noise.")
+    ),
+    h2("Using Beat Reporter X Accounts for Real-Time Information"),
+    p(
+      t("Official injury reports are a lagging indicator. Beat reporters on X (Twitter) are a leading one. Most NFL teams have reporters who post practice observations in real time — who is limited, who is absent, who is running with the first team. This information typically hits X hours before it appears in any official designation.")
+    ),
+    p(
+      t("Build a list of the beat reporters covering every team in your league. Check it Wednesday morning when practice opens. A report that a starter is absent from practice on Wednesday is an add opportunity the official report won't confirm until Friday.")
+    ),
+    p(
+      t("The edge is in the gap between real-time beat reporting and official designations. That gap is usually 48–72 hours — long enough to add a player before the rest of your league acts, if you are watching the right sources. For a deeper look at how to build this research workflow, see "),
+      lk("How to Research Fantasy Football", "https://scoutcast.ai/blog/how-to-research-fantasy-football/"),
+      t(".")
+    ),
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "When should I use a high waiver priority claim vs. saving it?",
+      answer: "Use a high priority claim when the opportunity is unambiguous — a running back who is clearly the starter after an injury, or a receiver stepping into a clear starting role. Save it when the situation is murky: committee backfields, injury designations that haven't been confirmed, or players whose role is speculative. The cost of burning a high priority claim on a player who turns out to be part of a committee is that you miss the next clear opportunity."
+    },
+    {
+      question: "How much FAAB should I bid on a handcuff running back?",
+      answer: "If the handcuff is backing up a high-volume starter and the role would be clear in the event of an injury, bid enough to win — typically 10–20% of your remaining budget, depending on how far into the season you are. If it is early in the season and your budget is full, you can afford to bid more aggressively. Mid-season, protect budget for the injury windfalls that are still coming."
+    },
+    {
+      question: "Is the waiver wire more important than the draft in fantasy football?",
+      answer: "Over a full season, yes — for most managers. The draft sets your starting point, but injuries and role changes mean the player pool in Week 12 looks nothing like it did on draft day. The managers who win championships are almost always the ones who identified and acquired two or three waiver wire contributors during the season, not just the ones who drafted well."
+    },
+    {
+      question: "What stats should I check first when evaluating a waiver wire add?",
+      answer: "Start with snap count and target share (for pass catchers) or snap count and touch distribution (for running backs). These tell you whether a player is being deployed in a starting role before the beat reporters confirm it. Route percentage is the next layer for receivers — it filters out players who are logging snaps but running limited routes. The injury report gives you the official designation, but by the time it publishes, the snap data has already told the story."
+    },
+  ],
+},
+{
+  slug: "fantasy-football-start-sit",
+  title: "Fantasy Football Start or Sit: How to Make the Right Call Every Week",
+  excerpt: "The start/sit decision is the most important weekly choice in fantasy football. Here's a repeatable framework for getting it right — and the traps that make managers second-guess good calls.",
+  date: "2026-07-08",
+  updatedAt: "2026-07-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t("Every week, the same anxiety: a borderline starter, a questionable tag on a guy you need, two players and one flex spot. Most managers make this decision on feel — last week's box score, a gut reaction, a friend's hot take. There's a better way, and it doesn't require hours of research. It requires a consistent framework applied in the right order.")
+    ),
+    h2("The Core Principle: Points vs. Risk, Not Gut Feel"),
+    p(
+      t("The start/sit decision is a question about expected value under uncertainty. You're not trying to pick who "), em("will"), t(" score — no one can do that. You're trying to identify which player has the better combination of projected upside and floor given the information available by game time.")
+    ),
+    p(
+      t("That reframe matters. It means last week's performance is mostly irrelevant. A running back who erupted for 28 points last Sunday is not a better start than a healthier player with a better matchup this Sunday. Recency bias is the single biggest mistake fantasy managers make, and it compounds: you chase last week's performer into a trap, then you're gun-shy on the bounce-back you needed.")
+    ),
+    p(t("Build your decisions around forward-looking indicators. Here's the framework.")),
+    h2("The Four-Step Framework"),
+    h3("Step 1 — Injury Status"),
+    p(
+      t("This is the only step that can eliminate a player from consideration entirely. If someone is ruled out, the conversation ends. But "), b("questionable"), t(" is where most managers get into trouble — they assume a practice-limited Wednesday tag will clear by Sunday, and they don't line up an alternative. Rule: by Saturday morning, every questionable player on your roster should have a named backup plan. You need to know who you're starting if they don't suit up. If you're waiting until Sunday afternoon to figure it out, you've already lost time. Watch the Friday injury report and the morning-of active/inactive designations — those are the two most information-dense moments of the week.")
+    ),
+    h3("Step 2 — Matchup Quality"),
+    p(
+      t("Defensive rankings by position tell you more than overall defense rankings. A team that allows the third-most points to wide receivers might be elite against running backs. Go one level deeper: a team that struggles against the slot is a specific opportunity for a slot receiver, not necessarily an outside receiver on the same team. A strong defensive tackle rotation matters for a running back even if the secondary is average. Look at the specific positional matchup, not the team's overall defensive reputation.")
+    ),
+    h3("Step 3 — Projected Usage"),
+    p(
+      t("A healthy starter in a projected high-scoring game — a game stack — will usually outperform a slightly more talented player in a low-total game. Game totals encode the market's best estimate of offensive opportunity. When two games are projected at 47 points and 38 points respectively, that nine-point gap represents real expected touches and yardage. Usage share compounds this: a back who sees 20 carries and 5 targets in a 47-point game is a fundamentally different proposition than a back who splits touches in a 38-point game.")
+    ),
+    h3("Step 4 — Game Flow"),
+    p(
+      t("A team expected to be down by two scores in the fourth quarter passes. A team expected to lead by two scores runs. This affects position groups in predictable ways: in games where a team is a heavy underdog, their receivers and tight end benefit from negative game script — more pass attempts, more opportunity, more targets. Running backs on those same teams get fewer designed carries. Conversely, a team favored by 10+ points will lean on the run in the second half, which is its own kind of volume play for an RB.")
+    ),
+    h2("The Trap: Recency Bias in Both Directions"),
+    p(t("The most expensive mistake in fantasy football is confusing last week's outcome with this week's expectation. There are two failure modes:")),
+    ul(
+      [b("Good start: "), t("A player who underperformed last week due to variance — a dropped target, an early exit from a blowout, a fumble — but now faces a weak secondary in a projected shootout.")],
+      [b("Bad start: "), t("A player who had a career game last week, putting up a monster line in a matchup that won't repeat — now facing a top-three defense in a low-total game.")]
+    ),
+    p(
+      t("The framework above naturally corrects for this. If you work through injury status, matchup, usage, and game flow systematically, last week's numbers don't enter the equation — which is exactly right, because last week's numbers are already priced in by the people who set the lines.")
+    ),
+    h2("Ceiling Plays vs. Floor Plays: When Your Record Changes the Calculus"),
+    p(
+      t("There's a second dimension to the start/sit question: your current situation. The correct play for a 6-1 team and a 1-6 team is not the same, even with identical rosters.")
+    ),
+    p(
+      b("When you need a win to survive: "), t("play the ceiling. The floor is irrelevant if losing ends your season. An injury-risk player with a great matchup, a receiver who runs deep routes in a pass-heavy offense against a weak secondary — take the variance.")
+    ),
+    p(
+      b("When you're comfortably ahead in the standings: "), t("play the floor. The safe, reliable player who gets you 14 points every week is more valuable when you don't need to hit 28. Protect your record against the weekly coin flip.")
+    ),
+    p(
+      t("Calibrate ceiling vs. floor based on your opponent's projected score as well. If your opponent is projected to score 130, you need upside regardless of your record. If they're projected for 85, you can afford to play it conservatively.")
+    ),
+    p(
+      t("One more factor: "), lk("how you've been researching your roster all week", "https://scoutcast.ai/blog/how-to-research-fantasy-football/"), t(" shapes whether you're positioned to make a good call or a desperate one. The framework works best when you've been monitoring injury news and usage trends across the full week, not scrambling Saturday night.")
+    ),
+    h2("Sunday Morning Checklist"),
+    p(t("No matter how thorough your Thursday or Friday prep, Sunday morning is when decisions crystallize. Things change. Here's what to verify before the 1 p.m. slate locks:")),
+    ul(
+      [b("Active/inactive designations: "), t("Teams release official lists roughly 90 minutes before kickoff. Every questionable player on your roster needs to be checked — and your backup plan needs to be in place before the list drops.")],
+      [b("Game-time decisions: "), t("Some players are listed as game-time decisions with no practice history. Check beat reporter accounts and credible injury aggregators on Sunday morning — a player being seen warming up is more actionable than a Friday non-practice report.")],
+      [b("Weather for outdoor stadiums: "), t("Wind above 20 mph suppresses passing games and hurts kickers and receivers. Rain affects fumble rates and changes run/pass ratios. Neither effect is huge, but in close decisions, weather can break the tie.")],
+      [b("Late-breaking injury news: "), t("A starter who tweaked something in warmups won't show up on the injury report until after the game. Follow reporters who cover the teams you have exposure to — they often post warmup observations 30–45 minutes before kickoff.")]
+    ),
+    p(
+      t("This checklist takes less than 15 minutes if you've done your framework work earlier in the week. Most of the decision is already made — you're just confirming no new information has changed it. For a deeper look at building your full research process, see "), lk("how to research fantasy football", "https://scoutcast.ai/blog/how-to-research-fantasy-football/"), t(" and "), lk("waiver wire strategy", "https://scoutcast.ai/blog/fantasy-football-waiver-wire-strategy/"), t(" — the same principles that drive good weekly start/sit decisions also drive good adds throughout the season.")
+    ),
+    p(
+      t("Scoutcast's "), lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" delivers a Sunday morning start/sit brief based on your specific roster and that week's matchups — injury updates, game-flow analysis, and a clear recommendation for every borderline call. It's the framework above, applied to your lineup, every week.")
+    ),
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "How do I decide between two similar players for start/sit in fantasy football?",
+      answer: "Work through the framework in order: injury status first (eliminate anyone who's out), then matchup quality by position, then projected usage in the game context (total, spread, opponent), and finally game flow based on point spread. If two players are genuinely equivalent after all four factors, favor the one whose ceiling fits your current situation — you need points to win, so play the player with more variance if you're the underdog that week.",
+    },
+    {
+      question: "Is matchup really that important for start/sit decisions?",
+      answer: "Matchup is the second most important factor behind injury status, but it matters most when it's position-specific. A strong defense against running backs doesn't necessarily mean their receivers are well-defended. Look at how a defense ranks against the specific position group — and even the specific alignment, like slot vs. outside receiver — rather than their overall defensive ranking or points allowed.",
+    },
+    {
+      question: "Should I start a player who had a big game last week?",
+      answer: "Not necessarily. Last week's performance is largely irrelevant to this week's expected output. What matters is whether this week's matchup, projected usage, and game script support a repeat performance. A big game in a favorable situation often returns to the mean in a harder matchup. Evaluate forward-looking indicators, not backward-looking results.",
+    },
+    {
+      question: "When should I check the injury report for start/sit in fantasy football?",
+      answer: "The two highest-information moments are the Friday injury report (which tells you whether a player practiced at all through the week) and the Sunday morning active/inactive list released roughly 90 minutes before kickoff. Wednesday and Thursday reports matter for trending direction, but Friday is the most reliable predictor of Sunday availability. Always have a backup named before the active list drops — don't wait until the last minute to make a contingency plan.",
+    },
+  ],
+},
+{
+  slug: "best-way-to-follow-sports-news",
+  title: "Best Way to Follow Sports News Every Day (Without the Scroll)",
+  excerpt: "Most sports news apps are designed to keep you there. Here's a system for staying informed on your teams in two minutes a day — without the feed.",
+  date: "2026-07-08",
+  updatedAt: "2026-07-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(t("If you've ever picked up your phone to check the score and looked up fifteen minutes later having read about a team you don't follow, a trade rumor from two weeks ago, and a columnist's hot take about a sport you barely watch — you've experienced the core problem with how sports news is delivered today.")),
+
+    h2("The Real Problem Isn't Staying Informed. It's the System."),
+    p(t("Sports fans don't struggle to find sports news. There's more of it than ever. The problem is that the apps and platforms delivering that news are optimized for engagement, not information delivery. Every major sports app is built to maximize time-on-screen. That means feeds, notifications, autoplay video, and content queues designed to keep you scrolling — not to answer the three questions you actually came to answer.")),
+    p(t("The result is a 30-minute session that surfaces national takes, league-wide controversies, and stories about franchises you have no stake in — all while the injury update you actually needed was buried in a sub-feed you never found. You left knowing more about the sports media cycle and less about your own teams.")),
+
+    h2("Notification Overload Makes It Worse"),
+    p(t("Most fans enable notifications from their team's official app, then from ESPN or another aggregator, then from a fantasy app. Within a week, every buzz from your phone could be anything from a game-winning shot to a parking discount. The signal-to-noise ratio collapses, so you start ignoring all of it. Then you miss the actual news you cared about.")),
+    p(t("The notification problem isn't unique to sports — it's a well-documented pattern across every category of app. But sports is particularly bad because the volume is seasonal and uneven. During the playoffs or trade deadline, there are dozens of meaningful updates per day. During a quiet Tuesday in the regular season, there are almost none. Apps don't modulate for this. They push everything.")),
+
+    h2("What You Actually Need to Know Each Day"),
+    p(t("Strip out the noise and the daily sports information needs of most fans are surprisingly narrow:")),
+    ul(
+      [b("Injury news for your teams — "), t("who's in or out, and what it means for the next game")],
+      [b("Overnight and morning results — "), t("final scores with one or two key notes, not a 600-word recap")],
+      [b("Upcoming schedule — "), t("who you're playing, when, and what's at stake")],
+      [b("Major roster moves — "), t("trades, signings, or cuts that change how you think about your team")]
+    ),
+    p(t("That's it. For most fans, on most days, a 90-second summary of those four things covers everything. The challenge is that the existing infrastructure isn't built to deliver that. It's built to deliver everything, then hope you find what matters.")),
+
+    h2("The Traditional Approach and Its Hidden Time Cost"),
+    p(t("The typical sports fan's morning routine looks something like this: open one app for scores, switch to another for injury reports, check a third for fantasy-relevant news, maybe skim a team-specific site for local beat coverage. If you're watching highlights, you sit through a pre-roll ad to see 30 seconds of footage. If you're reading a recap, the key fact — the injury, the ejection, the late-game decision — is in the fourth paragraph after context you already had.")),
+    p(t("Add it up and you're spending 20 to 30 minutes to consume what could be communicated in two. That's not a complaint about sports journalism, which does important and detailed work. It's a recognition that a full article and a daily briefing serve different needs, and most people's morning routine needs the briefing, not the article.")),
+    p(lk("We covered the app landscape in more depth in our roundup of the best sports news apps", "https://scoutcast.ai/blog/best-sports-news-apps/"), t(" — the short version is that most of them are excellent at what they're designed for, which is not necessarily what you need at 7am.")),
+
+    h2("A Better System: Define Your Teams, Filter Everything Else"),
+    p(t("The solution isn't a better version of the same approach. It's a different approach entirely. Instead of pulling from a general feed and hoping your teams surface, a well-designed sports information system starts with your teams and works outward only when necessary.")),
+    p(t("The principles of that system:")),
+    ul(
+      [b("Team-first filtering — "), t("your teams are the filter, not the lens you apply after the fact")],
+      [b("Summary format, not feed format — "), t("a ranked list of what matters today, not a scroll of everything that happened")],
+      [b("Audio-native for integration into existing routines — "), t("commute, morning coffee, gym warmup — any context where reading isn't practical")],
+      [b("Consistent delivery, not push-driven — "), t("a predictable daily habit beats a notification you may or may not check")]
+    ),
+    p(t("This model — a personalized daily sports briefing — has grown significantly as a category. Search interest in terms like \"sports summary\" is up over 200% in the last two years, which tracks with a broader shift toward summarized, curated content across news, finance, and now sports. People are actively looking for a better way.")),
+
+    h2("The Rise of Personalized Sports Briefings"),
+    p(t("The reason this category is growing isn't that sports fans suddenly have less time. It's that the gap between what existing apps deliver and what fans actually want has become obvious enough that people are searching for alternatives. A personalized sports briefing — something that knows your teams, surfaces what's relevant, and delivers it in a format that fits your day — is a genuinely different product than a sports news app.")),
+    p(t("The audio component matters more than it might seem. Reading sports news requires you to stop and focus. Listening to a two-minute briefing can happen while you're doing something else. That's the difference between a habit you maintain and one you drop after a week.")),
+    p(lk("If you're someone who struggles to keep up with sports at all during busy stretches", "https://scoutcast.ai/blog/how-to-keep-up-with-sports-when-you-dont-have-time/"), t(", the briefing model is especially well-suited — it compresses the essential information into a format that can fit into almost any schedule.")),
+
+    p(lk("Scoutcast.ai", "https://scoutcast.ai"), t(" is a personalized sports briefing built on this system — two minutes, your teams only, every morning. Free on iPhone and Android.")),
+
+    h2("How to Build Your Own Sports News Routine"),
+    p(t("Whether you use a dedicated briefing tool or not, the underlying system applies. A few practical steps:")),
+    ul(
+      [b("Pick your sources intentionally — "), t("one aggregator for scores, one local beat writer per team, one fantasy source if relevant. No more.")],
+      [b("Set a time boundary — "), t("decide you'll spend five minutes on sports news in the morning. When it's up, move on.")],
+      [b("Audit your notifications — "), t("turn off all sports notifications, then selectively re-enable only game-start and game-end alerts for your teams")],
+      [b("Separate deep reading from daily updates — "), t("long-form features, podcasts, and analysis are valuable — but they belong in a different slot in your day, not your morning check-in")]
+    ),
+    p(t("The goal isn't to know less. It's to know what matters, faster, and spend the rest of your attention on things that can't be summarized.")),
+
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "What is the best way to follow sports news without spending too much time?",
+      answer: "The most efficient approach is to start with your teams rather than a general feed, and consume a summary format rather than scrolling through headlines. A personalized sports briefing — audio or text — that filters for your specific teams and delivers key updates in two minutes is significantly faster than checking multiple apps. The goal is to define what you need to know each day (injury news, scores, schedule, roster moves) and find a source that delivers exactly that without everything else."
+    },
+    {
+      question: "Why is the ESPN app not ideal for a quick daily sports update?",
+      answer: "The ESPN app is designed to maximize engagement, which means it surfaces national stories, trending content, and league-wide news rather than filtering for your specific teams. It's excellent for exploring sports broadly, but if you want a fast answer to 'what happened with my teams last night,' you'll typically spend more time than necessary sorting through content that isn't relevant to you. It's a great product — just not optimized for the two-minute daily briefing use case."
+    },
+    {
+      question: "What is a personalized sports briefing and how does it work?",
+      answer: "A personalized sports briefing is a short daily summary — typically audio or text — that covers only the teams you follow. You select your teams once when you set up the service, and each day it generates a briefing covering your teams' recent results, injury news, upcoming schedule, and any major roster moves. The format is designed to be consumed in two minutes or less, making it practical for a commute, morning routine, or any other short window during your day."
+    },
+    {
+      question: "How do I get sports news for only my teams without all the extra content?",
+      answer: "The most direct approach is to use a tool specifically built for team-level filtering rather than a general sports news app. Alternatively, you can manually build a system: follow your teams' official accounts for direct updates, add one local beat reporter per team, and use a single aggregator only for scores. Turn off broad sports notifications and only keep game-start and game-end alerts for your teams. The key shift is moving from a pull model (opening apps and scrolling) to a push model (having a brief, relevant update delivered on a predictable schedule)."
+    },
+  ],
+},
+{
+  slug: "best-apps-for-fantasy-football-season",
+  title: "Best Apps for Fantasy Football Season 2026: Draft to Playoffs",
+  excerpt: "The apps that actually win fantasy leagues aren't all the same app. Here's what to use at each phase — draft prep, draft day, in-season management, and the playoff push.",
+  date: "2026-07-16",
+  updatedAt: "2026-07-16",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t("Fantasy football season doesn't run on one app. The tools that help you dominate your draft are different from the ones that win you weeks 9 through 13. This guide breaks down the best apps by phase — from August training camp through the fantasy playoffs — so you know what to actually have open and when.")
+    ),
+    p(
+      b("Disclosure:"),
+      t(" I'm a co-founder of "),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(". I've written this the way I'd want a competitor to write it — direct about what each tool is good at and where it falls short. If something's wrong, email me at "),
+      lk("nick@scoutcast.ai", "mailto:nick@scoutcast.ai"),
+      t(".")
+    ),
+
+    h2("Phase 1: Draft Prep (Late July – Draft Day)"),
+    p(t("The draft is a one-day event but the edge you carry into it is built over several weeks. The apps that matter here are research tools, not the platform your league runs on.")),
+
+    h3("FantasyPros — Consensus rankings and ADP in one place"),
+    p(t("FantasyPros aggregates rankings from dozens of analysts into a consensus view, which is the most useful thing you can have when you're trying to figure out where the market is on a player. Their ADP tool pulls from real drafts across ESPN, Yahoo, Sleeper, and Underdog — so you can see not just where experts rank a player but where real managers are drafting him. The gap between the two is where value lives.")),
+    p(t("Use it to: build your initial tier list, identify ADP discrepancies worth targeting, and run mock drafts in formats that match your league. For a deeper look at how to read ADP, see "), lk("our guide to ADP in fantasy football", "https://scoutcast.ai/blog/what-is-adp-fantasy-football/"), t(".")),
+
+    h3("Sleeper — Mock drafts and the best draft-day room"),
+    p(t("Even if your league doesn't run on Sleeper, their mock draft tool is the most realistic practice environment available. The pick pacing, the trade interface, and the draft board UI are all closer to a real draft experience than most platform simulators. If you're doing mock drafts to prep — and you should be doing at least three or four before your actual draft — Sleeper is worth installing just for that.")),
+    p(t("For a round-by-round mock draft walkthrough, see "), lk("the 2026 fantasy football mock draft guide", "https://scoutcast.ai/blog/fantasy-football-mock-draft-2026/"), t(".")),
+
+    h3("Scoutcast.ai Fantasy Season Pass — Daily training camp briefings"),
+    p(
+      t("Training camp is where draft boards get made and broken. Depth chart battles resolve, injuries surface, and coaches tip their hand on usage in ways that don't show up in rankings tools until a week after the beat reporters file. The "),
+      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      t(" from "),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(" delivers a daily two-minute audio briefing on your roster from training camp through the Super Bowl — surfacing practice observations, injury updates, and ADP movement for the players you're targeting before your league catches on.")
+    ),
+    p(t("The draft-prep edge here is real: a camp report that confirms a rookie's won the starting role, or flags a veteran who's running limited in practice, changes your draft board in ways that rankings tools update slowly. Hearing it in your morning briefing a week before your draft is the difference between landing the right player and paying the wrong price.")),
+
+    h2("Phase 2: Draft Day"),
+    h3("Your league platform — ESPN, Yahoo, Sleeper, or NFL.com"),
+    p(t("On draft day itself, you're living inside your league's platform. Whichever one your commissioner chose, make sure you know the draft board and pick clock interface before the day arrives. Draft rooms vary: Sleeper has the cleanest interface, ESPN and Yahoo are functional but slower, NFL.com is the most basic. If your league is on a platform you've never used for a draft, do a mock inside that platform before your actual draft so the UI isn't a surprise.")),
+    h3("A cheat sheet — printed or second screen"),
+    p(t("The most underrated draft-day tool is a printed cheat sheet or a second device running FantasyPros with your tier-based rankings already loaded. Draft rooms lag, picks move fast, and you don't want to be tab-switching mid-pick. Having your board visible without being in the draft room UI means you can process the board and act on the draft room independently. See "), lk("who to draft at each position", "https://scoutcast.ai/blog/who-should-i-draft-fantasy-football-2026/"), t(" for the positional priority framework.")),
+
+    h2("Phase 3: Early Season (Weeks 1–5)"),
+    p(t("The first month of the season is where rosters reveal themselves. Depth charts that looked clear in August get reshuffled by injuries and performance. The managers who move fastest on role changes win this phase.")),
+
+    h3("Beat reporter X accounts — fastest injury and usage signal"),
+    p(t("NFL beat reporters post practice observations in real time on X. By the time an injury shows up on the official report, a team's beat reporter has already noted who was absent or limited at Wednesday practice. Building a list of one or two trusted reporters per team you have exposure to — and checking it Wednesday morning when practice opens — is the fastest waiver wire edge available. No app surfaces this faster than the reporters themselves.")),
+
+    h3("Scoutcast.ai Fantasy Season Pass — Tuesday morning waiver intel"),
+    p(
+      t("Every Tuesday morning, the "),
+      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      t(" delivers a briefing built around the specific players on your roster and the waiver opportunities most relevant to your team. Instead of manually pulling snap counts and target share across every game, you get a two-minute summary of who earned a role change Sunday and what it means for your lineup before the wire processes.")
+    ),
+    p(t("For the full process behind making waiver wire decisions, see "), lk("fantasy football waiver wire strategy", "https://scoutcast.ai/blog/fantasy-football-waiver-wire-strategy/"), t(".")),
+
+    h2("Phase 4: The Mid-Season Grind (Weeks 6–13)"),
+    p(t("By mid-season, the roster management questions shift from adding unknowns to calibrating your existing players. Start/sit decisions, trade evaluations, and streaming matchups become the weekly work.")),
+
+    h3("FantasyPros matchup charts — positional matchup data"),
+    p(t("FantasyPros publishes weekly positional matchup charts showing how each NFL defense ranks against each position group. This isn't about overall defensive quality — it's about which defense specifically struggles against running backs out of the backfield, or which allows the most points to tight ends. That granularity is the right lens for flex and TE decisions when you're choosing between two similarly-ranked players.")),
+
+    h3("Scoutcast.ai Fantasy Season Pass — Sunday morning start/sit brief"),
+    p(
+      t("Sunday morning is when start/sit decisions crystallize: active/inactive lists drop, last-minute injury news surfaces, and weather affects outdoor games. The "),
+      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      t(" delivers a Sunday morning briefing covering your specific lineup — injury confirmation, matchup edge, and a clear call on every borderline decision — so you're not scrambling through three different apps 20 minutes before the slate locks.")
+    ),
+    p(t("The framework for making these calls yourself: "), lk("fantasy football start or sit — how to decide every week", "https://scoutcast.ai/blog/fantasy-football-start-sit/"), t(".")),
+
+    h2("Phase 5: The Playoff Push (Weeks 14–17)"),
+    p(t("Fantasy playoffs typically run weeks 15–17 (or 14–16 depending on your league), which means the regular season weeks leading into them are about positioning — and specifically about schedule analysis.")),
+
+    h3("Schedule analysis — matchup stacking for the playoff run"),
+    p(t("A player's regular-season average is irrelevant if their team faces the best run defense in the league during your fantasy playoffs. Reverse-engineer the schedule: identify which of your players have favorable matchups in your specific playoff weeks, and trade or stream toward those matchups before they become obvious. FantasyPros and Sleeper both publish playoff schedule tools in November that make this straightforward.")),
+
+    h3("Streaming calculators — building depth before the deadline"),
+    p(t("Most leagues have a transaction limit. If you've been using adds freely through the season, audit your remaining transactions in week 11 or 12 and project whether you have enough to handle injuries and bye weeks through your playoff run. Running out of moves in week 16 is a preventable problem, and it requires knowing your transaction budget well before the deadline matters.")),
+
+    h2("The Stack That Wins Leagues"),
+    p(t("Most managers use too many apps and get too little from each. The efficient stack:"),),
+    ul(
+      [b("FantasyPros"), t(" — ADP research, rankings consensus, and matchup charts. Use from July through week 17.")],
+      [b("Your league platform"), t(" — ESPN, Yahoo, Sleeper, or NFL.com. You don't choose this one.")],
+      [b("Sleeper"), t(" — mock draft practice tool, even if your league isn't on Sleeper.")],
+      [b("Beat reporter X accounts"), t(" — one or two per team you have exposure to. Wednesday mornings.")],
+      [lk("Scoutcast.ai Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" — daily audio briefing on your specific roster from camp through Super Bowl. Tuesday waiver intel, Sunday start/sit call, and training camp depth chart coverage.")],
+    ),
+    p(t("That's five inputs. Everything else is noise.")),
+
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "What is the best app for managing a fantasy football team during the season?",
+      answer: "The best in-season management app depends on what you need it for. For your actual league roster, you're using whatever platform your commissioner chose (ESPN, Yahoo, Sleeper, or NFL.com). For weekly intel — waiver wire timing, start/sit calls, and injury updates — a combination of FantasyPros for matchup data, beat reporter X accounts for practice news, and a personalized briefing tool like the Scoutcast.ai Fantasy Season Pass covers every weekly decision without requiring you to manually aggregate from a dozen sources.",
+    },
+    {
+      question: "Which fantasy football apps are best for draft prep?",
+      answer: "FantasyPros for consensus rankings and ADP across platforms, Sleeper for mock draft practice (regardless of your league platform), and any source that surfaces training camp news early. ADP from mid-August is significantly more accurate than June ADP because it reflects actual practice observations. Do at least three mocks before your actual draft, in a format that mirrors your league's scoring.",
+    },
+    {
+      question: "Is there an app that gives daily fantasy football updates during the season?",
+      answer: "Yes — the Scoutcast.ai Fantasy Season Pass delivers a daily two-minute audio briefing personalized to your specific roster from training camp through the Super Bowl. Tuesday briefings cover waiver wire targets; Thursday and Sunday briefings cover start/sit decisions and matchup edges. It's built around the players you actually own, not the national storylines everyone is already reading.",
+    },
+    {
+      question: "What fantasy football apps do I need for waiver wire pickups?",
+      answer: "The fastest waiver wire signal comes from beat reporter X accounts on Wednesday morning when practice opens — official injury reports lag by 24–48 hours. FantasyPros surfaces snap count and target share data after each game, which tells you whether a role change is real before the consensus forms. A personalized briefing tool that tracks your specific roster surfaces the most relevant opportunities without requiring you to monitor all 32 teams yourself.",
+    },
+  ],
+},
 ];
 
 export function getPost(slug: string): Post | undefined {

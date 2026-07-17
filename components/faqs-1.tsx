@@ -11,9 +11,24 @@ const faqGroups: FaqGroup[] = [
         group: "Product",
         items: [
             {
-                id: "free",
-                question: "Do I need to pay to try Scoutcast?",
-                answer: "No. Scoutcast is free with one active cast — no credit card, no trial period. Just download and set up your first cast — it drops within a couple of minutes. Upgrade to Unlimited whenever you want to run more than one cast at a time.",
+                id: "cost",
+                question: "How much does Scoutcast cost?",
+                answer: "Everyone starts with a free 7-day trial — no credit card required. After the trial, Scoutcast Plus is $5.99/month and includes up to 7 active casts. The NFL Fantasy Season Pass is a separate $49.99/season add-on.",
+            },
+            {
+                id: "credit-card",
+                question: "Do I need a credit card to try it?",
+                answer: "No. The 7-day trial requires no payment information. You only subscribe if you decide to continue after the trial ends.",
+            },
+            {
+                id: "after-trial",
+                question: "What happens after the trial?",
+                answer: "Your briefings pause until you subscribe to Scoutcast Plus ($5.99/month). Nothing is deleted — your casts, sources, and settings are all saved. You can resubscribe and pick up right where you left off.",
+            },
+            {
+                id: "existing",
+                question: "I already subscribe — does this affect me?",
+                answer: "No. Existing subscribers keep their current price and plan.",
             },
             {
                 id: "vs-espn",
@@ -38,7 +53,7 @@ const faqGroups: FaqGroup[] = [
             {
                 id: "fantasy",
                 question: "Does Scoutcast work for fantasy football?",
-                answer: "Yes. The NFL Fantasy Season Pass ($49.99/season) adds four audio briefings a week personalized to your roster and your head-to-head opponent — waiver bids on Wednesday, start/sit calls on Thursday, and a final call Sunday morning before kickoff. It works with any fantasy platform and with the free app.",
+                answer: "Yes. The NFL Fantasy Season Pass ($49.99/season) adds four audio briefings a week personalized to your roster and your head-to-head opponent — waiver bids on Wednesday, start/sit calls on Thursday, and a final call Sunday morning before kickoff. It works with any fantasy platform and requires Scoutcast Plus.",
             },
             {
                 id: "android",
