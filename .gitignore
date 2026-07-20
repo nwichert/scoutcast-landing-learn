@@ -51,3 +51,8 @@ gsc-service-account*.json
 *.tsbuildinfo
 next-env.d.ts
 ruvector.db
+
+# local research + agent tooling artifacts (not part of the app)
+/Google-Trends-Research/
+*.rvf
+*.rvf.lock
