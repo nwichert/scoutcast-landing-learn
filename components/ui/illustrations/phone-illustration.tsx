@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 import { ArrowUp, MessageSquare, Mic, Wifi } from "lucide-react"
 
 const activeBarHeights = [18, 32, 48, 24, 62, 78, 40, 54, 88, 36, 22, 46, 72, 30, 58, 42, 64, 50]
@@ -108,12 +109,18 @@ export const PhoneIllustration = () => {
                     </span>
                 </span>
                 <div className="flex items-center gap-2">
-                    <span className="text-base leading-none">🏈</span>
+                    <Image
+                        src="/logos/nfl.png"
+                        alt="NFL"
+                        width={20}
+                        height={20}
+                        className="h-[18px] w-auto object-contain"
+                    />
                     <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-foreground/45">NFL Fantasy · Week 1</span>
                 </div>
                 <h3 className="text-[26px] font-semibold leading-[1.15] tracking-tight text-foreground">You vs. Marcus · H2H Brief</h3>
                 <div className="flex items-center gap-2 text-[13px] text-foreground/45">
-                    <span>🏈 Head-to-Head</span>
+                    <span>Head-to-Head</span>
                     <span className="size-[3px] rounded-full bg-foreground/30" />
                     <span>2 min</span>
                 </div>
