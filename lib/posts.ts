@@ -4162,10 +4162,6 @@ export const posts: Post[] = [
     },
   ],
 },
-];
-
-// Drafts: held out of the rendered blog until ready to ship.
-export const draftPosts: Post[] = [
 {
   slug: "who-should-i-draft-fantasy-football-2026",
   title: "Who Should I Draft in Fantasy Football 2026? Position-by-Position",
@@ -4723,6 +4719,9 @@ export const draftPosts: Post[] = [
   ],
 },
 ];
+
+// Drafts: held out of the rendered blog until ready to ship.
+export const draftPosts: Post[] = [];
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
