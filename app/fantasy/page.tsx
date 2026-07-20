@@ -168,6 +168,7 @@ const INCLUDES = [
     "Fantasy playoffs (Wk 15–17) + H2H opponent edge",
     "NFL playoff DFS briefings + Super Bowl preview",
     "Add up to 3 of your leagues — any platform.",
+    "Ask your roster in Claude, ChatGPT, or Gemini (MCP)",
     "Offline downloads. AirPods controls.",
 ]
 
@@ -210,6 +211,7 @@ export default function FantasyPage() {
                 <HowItWorks />
                 <BriefingSample />
                 <Coverage />
+                <AssistantAccess />
                 <Comparison />
                 <Pricing />
                 <FaqSection />
@@ -508,6 +510,48 @@ function Coverage() {
                     title="The whole NFL calendar. Not a half season."
                 />
                 <CoverageTimeline />
+            </div>
+        </section>
+    )
+}
+
+const ASSISTANT_ASKS = [
+    { q: "Who do I start at FLEX to beat my opponent this week?", tool: "get_head_to_head" },
+    { q: "What are my waiver adds, and how much should I bid?", tool: "get_fantasy_leagues" },
+    { q: "Show me every start/sit call for my PPR league.", tool: "get_fantasy_predictions" },
+]
+
+function AssistantAccess() {
+    return (
+        <section className="px-6 py-16 lg:px-12 lg:py-24">
+            <div className="mx-auto max-w-5xl">
+                <SectionHeading
+                    eyebrow="New · Works with your AI"
+                    title="Now ask your assistant, too."
+                />
+                <p className="mt-4 max-w-2xl text-[17px] leading-[1.55] text-[#8B949E]">
+                    Your Season Pass plugs straight into Claude, ChatGPT, and Gemini through Scoutcast&rsquo;s MCP connector. Same roster, same H2H edge, same calls &mdash; now answerable mid-conversation, without opening the app.
+                </p>
+
+                <div className="mt-8 grid gap-3 md:grid-cols-3">
+                    {ASSISTANT_ASKS.map((item) => (
+                        <article
+                            key={item.q}
+                            className="flex flex-col gap-3.5 rounded-2xl border border-[#30363D] bg-[#161B22] p-5">
+                            <p className="text-[15px] font-semibold leading-[1.4] text-[#F0F6FC]">&ldquo;{item.q}&rdquo;</p>
+                            <span className="mt-auto inline-flex w-fit items-center gap-1.5 rounded-md border border-[#0AB17B]/25 bg-[#0AB17B]/[0.06] px-2 py-1 font-mono text-[11px] text-[#0AB17B]">
+                                {item.tool}
+                            </span>
+                        </article>
+                    ))}
+                </div>
+
+                <a
+                    href="/mcp"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#0AB17B] transition hover:text-[#0BC189]">
+                    See how the MCP connector works
+                    <ArrowRight className="size-4" />
+                </a>
             </div>
         </section>
     )

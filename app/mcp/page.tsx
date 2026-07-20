@@ -7,13 +7,18 @@ import { CopyUrlButton } from "@/components/copy-url-button"
 export const metadata: Metadata = {
     title: "MCP Access · Scoutcast.ai",
     description:
-        "Scoutcast's custom MCP connector works with Claude, ChatGPT, Gemini CLI, and any MCP-compatible client. Pull your briefings, your roster, and your casts into the assistant you already use.",
+        "Scoutcast's MCP connector makes your NFL Fantasy Pass work inside Claude, ChatGPT, Gemini CLI, and any MCP client — your leagues, your weekly H2H matchup, your start/sit and waiver calls, plus every briefing and cast.",
 }
 
 const CONNECTOR_URL = "https://mcpserver-hokzq74gea-uc.a.run.app"
 const CONNECTOR_HOST = "mcpserver-hokzq74gea-uc.a.run.app"
 
 const TOOLS = [
+    "get_fantasy_leagues",
+    "get_fantasy_briefings",
+    "get_head_to_head",
+    "get_fantasy_predictions",
+    "get_fantasy_scorecard",
     "get_my_briefings",
     "get_briefing_script",
     "get_briefing_audio_url",
@@ -31,8 +36,8 @@ const PROMPTS = [
         clientPillBorder: "rgba(217,119,87,0.35)",
         clientShape: "rounded",
         n: "01",
-        quote: "Catch me up on this week's Scoutcast briefings — what should I actually care about?",
-        tools: ["get_my_briefings", "get_briefing_script"],
+        quote: "It's Thursday — who do I start at FLEX to beat my opponent this week?",
+        tools: ["get_head_to_head", "get_fantasy_predictions"],
     },
     {
         client: "ChatGPT",
@@ -42,8 +47,8 @@ const PROMPTS = [
         clientPillBorder: "rgba(16,163,127,0.35)",
         clientShape: "round",
         n: "02",
-        quote: "Find the briefing where I covered the Yankees rotation — drop me the audio link.",
-        tools: ["search_briefings", "get_briefing_audio_url"],
+        quote: "What are my waiver adds this week, and how much should I bid in each league?",
+        tools: ["get_fantasy_leagues", "get_fantasy_briefings"],
     },
     {
         client: "Gemini CLI",
@@ -53,8 +58,8 @@ const PROMPTS = [
         clientPillBorder: "rgba(66,133,244,0.35)",
         clientShape: "rounded",
         n: "03",
-        quote: "What casts have I made this season and which one got the most listens?",
-        tools: ["list_my_casts", "get_my_profile"],
+        quote: "Pull up every start/sit and breakout call for my PPR league this week.",
+        tools: ["get_fantasy_predictions", "get_fantasy_briefings"],
     },
 ]
 
@@ -80,10 +85,11 @@ const STEPS = [
 ]
 
 const SHARED = [
+    "Your fantasy leagues, rosters, and weekly H2H matchup",
+    "Start/sit, waiver, and DFS calls — with confidence tiers and graded outcomes",
     "Your briefings list, transcripts, and audio links",
     "Casts you've created, with metadata and listen counts",
-    "Your profile basics (name, teams, plan tier)",
-    "Search across your full briefing history",
+    "Search across your full briefing history, plus profile basics",
 ]
 
 const NOT_SHARED = [
@@ -152,7 +158,7 @@ function Hero() {
                     plugged into Claude, ChatGPT &amp; Gemini.
                 </h1>
                 <p className="max-w-2xl text-base leading-[1.6] text-[#7D8693] sm:text-lg lg:text-xl">
-                    Scoutcast&rsquo;s custom MCP connector works with Claude, ChatGPT, Gemini CLI, and any MCP-compatible client. Pull your briefings, your roster, and your casts into the assistant you already use.
+                    Scoutcast&rsquo;s custom MCP connector works with Claude, ChatGPT, Gemini CLI, and any MCP-compatible client. Pull your fantasy leagues, your weekly matchup, and your start/sit and waiver calls &mdash; plus every briefing and cast &mdash; into the assistant you already use.
                 </p>
                 <div className="mt-2 flex flex-col gap-3 sm:flex-row">
                     <a
@@ -247,8 +253,8 @@ function SourceCard() {
                 {TOOLS.map((tool, i) => (
                     <div
                         key={tool}
-                        className={i === 0 ? "rounded-md bg-[#0AB17B]/10 px-2 py-1.5" : "px-2 py-1.5"}>
-                        <span className={`font-mono text-[11px] ${i === 0 ? "text-[#5DE0A6]" : "text-[#7D8693]"}`}>{tool}</span>
+                        className={i < 5 ? "rounded-md bg-[#0AB17B]/10 px-2 py-1.5" : "px-2 py-1.5"}>
+                        <span className={`font-mono text-[11px] ${i < 5 ? "text-[#5DE0A6]" : "text-[#7D8693]"}`}>{tool}</span>
                     </div>
                 ))}
             </div>
@@ -413,7 +419,7 @@ function Prompts() {
                 <SectionHeading
                     eyebrow="What you can ask"
                     title="Talk to your sports brief like you'd talk to your group chat."
-                    sub="Once Scoutcast is connected, your assistant has direct access to your briefings, your roster, the casts you've made, and your account profile."
+                    sub="Once Scoutcast is connected, your assistant has direct access to your fantasy leagues, your weekly H2H matchup, the start/sit and waiver calls, and every briefing and cast on your account."
                 />
                 <div className="mt-12 grid gap-5 md:grid-cols-3">
                     {PROMPTS.map((p) => (
