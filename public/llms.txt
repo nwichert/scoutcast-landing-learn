@@ -39,9 +39,14 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - X: https://x.com/scoutcastAI
 
 ## Recent posts
+- Best Apps for Fantasy Football Season 2026: Draft to Playoffs (2026-07-16): https://scoutcast.ai/blog/best-apps-for-fantasy-football-season — The apps that actually win fantasy leagues aren't all the same app. Here's what to use at each phase — draft prep, draft day, in-season management, and the playoff push.
+- Best Way to Follow Sports News Every Day (Without the Scroll) (2026-07-08): https://scoutcast.ai/blog/best-way-to-follow-sports-news — Most sports news apps are designed to keep you there. Here's a system for staying informed on your teams in two minutes a day — without the feed.
+- Fantasy Football Start or Sit: How to Make the Right Call Every Week (2026-07-08): https://scoutcast.ai/blog/fantasy-football-start-sit — The start/sit decision is the most important weekly choice in fantasy football. Here's a repeatable framework for getting it right — and the traps that make managers second-guess good calls.
+- Fantasy Football Waiver Wire Strategy: How to Win Your League on Tuesdays (2026-07-08): https://scoutcast.ai/blog/fantasy-football-waiver-wire-strategy — Waiver wire moves win more leagues than draft picks. Here's the weekly process for identifying the right targets before the rest of your league does.
+- Who Should I Draft in Fantasy Football 2026? Position-by-Position (2026-07-08): https://scoutcast.ai/blog/who-should-i-draft-fantasy-football-2026 — A pick-by-pick framework for the 2026 fantasy draft: when to take each position, what the right order looks like, and how to adjust for your specific slot.
 - Fantasy Football Busts 2026: Players to Avoid at Their ADP (2026-07-08): https://scoutcast.ai/blog/fantasy-football-busts-2026 — Bust profiles by position for 2026 — the archetypes being overdrafted relative to their likely output, and how to spot them before your draft.
 - Fantasy Football Rookie Rankings 2026: Best Rookies to Draft (2026-07-08): https://scoutcast.ai/blog/fantasy-football-rookie-rankings-2026 — Best rookie targets by position for the 2026 fantasy football season, with the archetypes most likely to break out and the ones to avoid despite the hype.
-- What Is ADP in Fantasy Football? (And How to Use It) (2026-07-08): https://scoutcast.ai/blog/what-is-adp-fantasy-football — ADP — Average Draft Position — is the single most useful number in fantasy football prep. Here's how it's calculated, where to find it, and how to use it to find value.
+- What Is ADP in Fantasy Football? How to Use It to Win Your Draft (2026-07-08): https://scoutcast.ai/blog/what-is-adp-fantasy-football — ADP is the average pick where a player gets drafted across thousands of leagues. Know it, and you can see exactly when to reach, when to wait, and where real value hides in every round.
 - Fantasy Football Rankings 2026: PPR, Standard, and Half-PPR (2026-07-08): https://scoutcast.ai/blog/fantasy-football-rankings-2026 — Updated fantasy football rankings for 2026 by position and scoring format, with tier breakdowns to help you find value at every pick.
 - 2026 FIFA World Cup Bracket: Round of 32 Results, Schedule & Scores (2026-06-27): https://scoutcast.ai/blog/world-cup-bracket-2026 — The knockout stage starts June 28. Here's the full 2026 World Cup bracket — Round of 32 through the Final — with results updated each round.
 - Fantasy Football Mock Draft 2026: How to Prepare (2026-06-24): https://scoutcast.ai/blog/fantasy-football-mock-draft-2026 — Why mock drafts matter, how many to run, what to learn from each round, and the tools that make mock-draft prep actually useful.
@@ -70,4 +75,4 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - Scoutcast vs Huxe vs BriefingAM: which AI audio briefing app should you use? (2026-05-07): https://scoutcast.ai/blog/scoutcast-vs-huxe-vs-briefingam — An honest comparison of the three best AI audio briefing apps in 2026 — what each one is good at, where each one falls short, and which to pick based on what you actually care about.
 - Why we built Scoutcast.ai (2026-04-28): https://scoutcast.ai/blog/why-we-built-scoutcast — A personalized 2-minute AI sports briefing for your morning — and the morning with my son that started it.
 
-Last updated: 2026-07-08
+Last updated: 2026-07-16

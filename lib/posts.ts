@@ -3838,10 +3838,10 @@ export const posts: Post[] = [
 },
 {
   slug: "what-is-adp-fantasy-football",
-  title: "What Is ADP in Fantasy Football? (And How to Use It)",
-  excerpt: "ADP — Average Draft Position — is the single most useful number in fantasy football prep. Here's how it's calculated, where to find it, and how to use it to find value.",
+  title: "What Is ADP in Fantasy Football? How to Use It to Win Your Draft",
+  excerpt: "ADP is the average pick where a player gets drafted across thousands of leagues. Know it, and you can see exactly when to reach, when to wait, and where real value hides in every round.",
   date: "2026-07-08",
-  updatedAt: "2026-07-08",
+  updatedAt: "2026-07-20",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
