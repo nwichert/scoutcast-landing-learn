@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import {
   posts,
   draftPosts,
+  scheduledPosts,
   getPost,
   formatPostDate,
   type Post,
@@ -15,13 +16,21 @@ import {
 
 const SITE_URL = "https://scoutcast.ai";
 
-// In dev, also render unpublished drafts so they can be previewed at their real
-// URL before shipping. Production (static export) only generates published posts.
+// In dev, also render unpublished drafts and future-dated (scheduled) posts so
+// they can be previewed at their real URL before shipping. Production (static
+// export) only generates published posts.
 const previewDrafts = process.env.NODE_ENV !== "production";
-const renderablePosts = previewDrafts ? [...posts, ...draftPosts] : posts;
+const renderablePosts = previewDrafts
+  ? [...posts, ...scheduledPosts, ...draftPosts]
+  : posts;
 
 function findPost(slug: string): Post | undefined {
-  return getPost(slug) ?? (previewDrafts ? draftPosts.find((p) => p.slug === slug) : undefined);
+  return (
+    getPost(slug) ??
+    (previewDrafts
+      ? [...scheduledPosts, ...draftPosts].find((p) => p.slug === slug)
+      : undefined)
+  );
 }
 
 export function generateStaticParams() {

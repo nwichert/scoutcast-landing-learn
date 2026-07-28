@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>ai.scoutcast.blog-autopublish</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/nickwichert/Documents/dev/scoutcast-landing-learn/scoutcast-landing-learn/scripts/auto-publish.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>8</integer>
+    <key>Minute</key>
+    <integer>30</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/nickwichert/Library/Logs/scoutcast-blog/launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/nickwichert/Library/Logs/scoutcast-blog/launchd.log</string>
+</dict>
+</plist>

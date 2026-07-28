@@ -4,6 +4,47 @@ Track changes here to correlate against GSC in 2–4 weeks.
 
 ---
 
+## 2026-07-21 — Fantasy wave: 17 scheduled posts + auto-publish pipeline
+
+**Strategy:** see content-strategy.md "Fantasy Wave Addendum — 2026-07-21". Research verdict: head terms closed; win on 2026 breakouts (NFL Fantasy→ESPN migration, ESPN Knockout), commissioner/league-culture cluster, beginner Q&A, format explainers, team names.
+
+### Infrastructure
+- **Publish gate** in lib/posts.ts: `posts` now excludes future-dated entries at build time (`scheduledPosts` holds them); dev previews all. Scheduled publishing = future-date the post + daily rebuild.
+- **scripts/auto-publish.sh** + scripts/ai.scoutcast.blog-autopublish.plist (launchd, daily 8:30am): builds+deploys only when a post is due, pings IndexNow/GSC/Bing, macOS notification. INSTALL: `cp scripts/ai.scoutcast.blog-autopublish.plist ~/Library/LaunchAgents/ && launchctl load ~/Library/LaunchAgents/ai.scoutcast.blog-autopublish.plist`
+- **Cloud reminder routine** (trig_016P6365g3V6TabUxqX6Y8St, daily 9:38am CT): verifies publish-day URLs live, emails nick@scoutcast.ai the GSC Request-Indexing checklist; alerts on failure.
+- tsconfig excludes drafts/ (agent staging files).
+
+### Scheduled posts (all spliced into lib/posts.ts; publish = date arrives + daily build)
+| Date | Slug | Play |
+|---|---|---|
+| 07-23 | nfl-fantasy-moving-to-espn | zero-competition breakout |
+| 07-26 | espn-knockout-leagues | zero-competition breakout |
+| 07-29 | when-does-fantasy-football-start | +90% timing query |
+| 07-30 | nfl-offseason-catch-up-2026 | product-fit hub (Reddit VOC #1) |
+| ~~08-01~~ **published 07-21** | fantasy-football-punishment-ideas | culture cluster; feeds video series — pulled forward, live + IndexNow-pinged |
+| 08-05 | fantasy-football-league-constitution-template | weakest SERP found |
+| 08-08 | what-is-ppr / how-does-ff-work / what-is-a-flex / what-is-faab | beginner Q&A batch |
+| 08-13 | draft-order-ideas / draft-party-ideas | culture cluster |
+| 08-18 | fantasy-football-team-names-2026 | biggest crackable term (~49.5K/mo) |
+| 08-19 | best-ball / vampire-league / guillotine-league | format explainers |
+| 08-24 | sleeper-vs-espn-vs-yahoo-fantasy-football | platform choice + migration tie-in |
+
+### Edits to live posts
+- best-fantasy-football-apps-2026: title → "7 Best Fantasy Football Apps for 2026 Drafts, Compared", excerpt rewritten, updatedAt bumped (1,615 impr @ pos 10.2, CTR 0.43% — freshness + snippet play).
+
+### Watch for in GSC (check ~2026-08-05 and ~2026-08-20)
+- Migration/Knockout posts: impressions on "nfl fantasy shutting down", "knockout league" within days (zero-competition SERPs).
+- Beginner batch: "what is ppr/flex/faab" impressions from late Aug.
+- Team names post: impressions spike Aug 25–Sep 7 window.
+- Apps post: CTR uplift from new title; position movement toward page 1.
+
+### Still open (from strategy queue)
+- Keeper-cost calculator tool (#8) + trade analyzer (Sept) — tool-intent SERPs.
+- Position mid-tails (#12, draft mid-Aug when ADP news settles), stats-series next installment.
+- Wave posts NOT drafted yet: none — all 17 through Aug 24 are staged.
+
+---
+
 ## 2026-06-19 — NBA Draft post (timely + evergreen dual play)
 
 **Page:** `/blog/nba-draft-2026/` (new)

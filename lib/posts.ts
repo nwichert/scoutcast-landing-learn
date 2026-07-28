@@ -58,7 +58,7 @@ const img = (
   opts: { caption?: string; width?: number; height?: number } = {}
 ): Block => ({ type: "img", src, alt, ...opts });
 
-export const posts: Post[] = [
+const allPosts: Post[] = [
   {
     slug: "why-we-built-scoutcast",
     title: "Why we built Scoutcast.ai",
@@ -2557,11 +2557,11 @@ export const posts: Post[] = [
 
   {
     slug: "best-fantasy-football-apps-2026",
-    title: "7 Best Fantasy Football Apps in 2026, Ranked by Job",
+    title: "7 Best Fantasy Football Apps for 2026 Drafts, Compared",
     excerpt:
-      "ESPN, Yahoo, and Sleeper run your league. The best research apps are different. Seven apps compared by job — including AI audio briefings for your roster.",
+      "Seven fantasy football apps compared by job for the 2026 draft window: league hosts, research tools, and the one AI audio briefing built for your roster.",
     date: "2026-06-24",
-    updatedAt: "2026-07-16",
+    updatedAt: "2026-07-21",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -4718,10 +4718,3636 @@ export const posts: Post[] = [
     },
   ],
 },
+{
+  slug: "nfl-fantasy-moving-to-espn",
+  title: "NFL Fantasy Is Shutting Down: Move Your League to ESPN",
+  excerpt:
+    "The NFL shut down season-long NFL Fantasy. ESPN is now the official fantasy game, with a league import tool at espn.com/importnfl. Here's how it works.",
+  date: "2026-07-23",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Yes, NFL Fantasy is shutting down. Beginning with the 2026 season, the NFL no longer operates its season-long fantasy football game, and ESPN is now the official fantasy game of the NFL. If you're a commissioner, you migrate your league at "
+      ),
+      lk("espn.com/importnfl", "https://espn.com/importnfl"),
+      t(
+        " — league settings, configuration, and league history come with it, and keeper leagues bring rosters too. There's no published deadline as of July 2026, but you'll want it done well before your draft."
+      )
+    ),
+    p(
+      t(
+        "The announcement came on July 16, 2026, via a joint FAQ from ESPN and the NFL. It's the final step of the deal struck in 2025, in which ESPN took over NFL Network and the NFL's fantasy assets while the league took an equity stake in ESPN. The NFL Fantasy app and site are winding down as a season-long platform; ESPN built a dedicated migration flow so existing leagues don't have to start from zero."
+      )
+    ),
+    p(
+      t(
+        "Here's the whole process, what actually transfers, and what to do if you'd rather use this moment to switch to Sleeper or Yahoo instead. Where the official documentation is vague, I say so — details may change, so treat everything here as accurate as of July 2026."
+      )
+    ),
+
+    h2("Step 1: Know which email your NFL Fantasy account uses"),
+    p(
+      t(
+        "The entire migration keys off email matching. Before you touch anything, confirm the email address on your NFL Fantasy account — it's how ESPN finds your leagues. If you use the same email for ESPN (or don't have an ESPN account yet and create one with that email), the import is nearly automatic."
+      )
+    ),
+    p(
+      t(
+        "If your ESPN account uses a different email, you're not stuck. The flow lets you enter your NFL Fantasy email, and ESPN sends a secure one-time link to that address. Click it, verify you own the account, and your NFL leagues get connected to your ESPN login. This is the step most likely to trip up league members who signed up for NFL Fantasy with an old email — check that you can still receive mail there."
+      )
+    ),
+
+    h2("Step 2: Run the import at espn.com/importnfl"),
+    p(
+      t("Go to "),
+      lk("espn.com/importnfl", "https://espn.com/importnfl"),
+      t(
+        ", or open the ESPN Fantasy app — the migration experience lives in both places, plus ESPN.com/Fantasy. Once your email is matched, ESPN shows you every eligible NFL Fantasy league tied to your account. Select the leagues you want to bring over."
+      )
+    ),
+    p(
+      t(
+        "Any manager can start this process for their own teams, but the league itself needs the commissioner. ESPN notifies commissioners when members of their league begin migrating, and commissioners are walked through league setup and activation."
+      )
+    ),
+
+    h2("Step 3: Commissioners activate and verify the league"),
+    p(
+      t(
+        "Activation is the commissioner's job. Once you activate, the league exists on ESPN Fantasy and members can join, manage rosters, and get ready for the season. Before you tell everyone it's done, verify the details ESPN imported:"
+      )
+    ),
+    ul(
+      [
+        b("Scoring settings."),
+        t(
+          " ESPN says settings and configuration transfer \"where available,\" which means anything NFL Fantasy supported that ESPN structures differently could land as an approximation. Check PPR values, defensive scoring, and any custom point rules line by line."
+        ),
+      ],
+      [
+        b("Roster slots and divisions."),
+        t(
+          " Confirm bench size, IR slots, FLEX configuration, and division assignments match what your league actually ran."
+        ),
+      ],
+      [
+        b("Draft date and type."),
+        t(
+          " The import recreates your league, not your calendar. Set your draft date, time, and format (snake, auction) fresh on ESPN."
+        ),
+      ],
+      [
+        b("Keeper rules."),
+        t(
+          " If you run keepers, your team rosters migrate with the league — but re-confirm the keeper count and any round-cost rules in ESPN's settings, since keeper mechanics differ between platforms."
+        ),
+      ]
+    ),
+
+    h2("Step 4: League members join the migrated league"),
+    p(
+      t(
+        "After the commissioner activates, each member goes through the same email-matching flow — same email, instant access; different email, the one-time verification link. Then they claim their team in the migrated league. Members don't need to do anything before the commissioner activates, but the season goes smoother if everyone sorts out their ESPN login now instead of the week of the draft."
+      )
+    ),
+
+    h2("What transfers and what doesn't"),
+    p(
+      t(
+        "ESPN's own language is \"league settings, league configuration details, and league history, where available.\" The NFL's support FAQ adds that migrated leagues show past standings and league record history, and that keeper leagues bring team rosters. Here's the honest breakdown as of July 2026:"
+      )
+    ),
+    tbl(
+      [[t("Item")], [t("Transfers?")], [t("Notes")]],
+      [
+        [
+          [t("League settings & configuration")],
+          [t("Yes")],
+          [t("\"Where available\" — verify scoring line by line")],
+        ],
+        [
+          [t("League history (standings, records)")],
+          [t("Yes")],
+          [t("Past champions and record history carry over")],
+        ],
+        [
+          [t("Rosters (keeper leagues)")],
+          [t("Yes")],
+          [t("Keeper league rosters migrate with the league")],
+        ],
+        [
+          [t("Rosters (redraft leagues)")],
+          [t("No")],
+          [t("You were drafting fresh anyway — nothing lost")],
+        ],
+        [
+          [t("Draft date & schedule")],
+          [t("No")],
+          [t("Set your draft up fresh on ESPN")],
+        ],
+        [
+          [t("League chat & message boards")],
+          [t("Not confirmed")],
+          [t("Assume gone — screenshot anything you care about")],
+        ],
+        [
+          [t("Custom team logos & avatars")],
+          [t("Not confirmed")],
+          [t("Plan to re-upload on ESPN")],
+        ],
+        [
+          [t("NFL Fantasy account itself")],
+          [t("No")],
+          [t("You'll use an ESPN account going forward")],
+        ],
+      ]
+    ),
+    p(
+      t(
+        "The safe move: before your league disappears from the NFL platform, screenshot your all-time standings, trophy history, and anything sentimental. Migration is designed to preserve history, but \"where available\" is doing real work in that sentence, and nobody has published an exact list of what falls outside it."
+      )
+    ),
+
+    h2("If you're not the commissioner"),
+    p(
+      t(
+        "Three things, in order. First, make sure you know which email your NFL Fantasy account uses and that you can receive mail there. Second, create or dust off your ESPN account — ideally on that same email. Third, nudge your commissioner. The league doesn't move until they activate it, and every year some league dies not from a platform shutdown but from a commissioner who didn't get around to it until Labor Day weekend."
+      )
+    ),
+    p(
+      t(
+        "If your commissioner has genuinely gone dark, your options are to rally the league around a new commissioner on a fresh ESPN league, or to rebuild elsewhere — which brings up the real question."
+      )
+    ),
+
+    h2("If you don't want ESPN: Sleeper and Yahoo"),
+    p(
+      t(
+        "The migration tool only goes one place. But a forced move is also a free decision point — the switching cost you've been avoiding for years just got paid for you. If your league has been curious about other platforms, this is the cheapest moment you'll ever have to switch."
+      )
+    ),
+    p(
+      b("Sleeper"),
+      t(
+        " is the strongest alternative for most leagues. Modern interface, no ads, and built-in league chat that's genuinely better than anything ESPN or Yahoo offers. The trade-off versus ESPN: no automated import, so your commissioner recreates settings by hand and your NFL Fantasy history stays behind. For leagues where the group chat is half the fun, it's worth it."
+      )
+    ),
+    p(
+      b("Yahoo Fantasy"),
+      t(
+        " is the veteran option — 25+ years of refinement, reliable live scoring, and a strong Best Ball product. Same catch: manual setup, no history import. Yahoo makes sense if your league skews toward managers who already live in the Yahoo ecosystem."
+      )
+    ),
+    p(
+      t(
+        "The honest summary: ESPN is the only destination where your league history survives. Sleeper and Yahoo are both good platforms that require starting the record books over. I compared all three in more depth in "
+      ),
+      lk("the best fantasy football apps for 2026", "/blog/best-fantasy-football-apps-2026"),
+      t(".")
+    ),
+
+    h2("Is there a deadline?"),
+    p(
+      t(
+        "As of July 2026, neither ESPN nor the NFL has published a hard migration deadline. The practical deadline is your draft: the league needs to be activated, settings verified, and every member joined before you're on the clock. Draft season concentrates in late August — if you're reading this in July, you have time; if it's mid-August, do it today. ("
+      ),
+      lk("Here's the full preseason timeline", "/blog/when-does-fantasy-football-start"),
+      t(" if you're planning backwards from kickoff.)")
+    ),
+
+    h2("While you're rebuilding your stack"),
+    p(
+      t(
+        "A platform move is when most people rethink the rest of their fantasy setup — the group re-forms, the apps get reinstalled, and you notice which tools you actually used last season and which you just kept around."
+      )
+    ),
+    p(
+      t(
+        "One thing I'd put on the list: Scoutcast.ai, which we built for exactly the person going through this migration — someone who cares about their league but doesn't have an hour a day for research. It generates a personalized audio briefing, about two minutes, covering the teams and leagues you follow. It works alongside any platform, so it doesn't matter whether your league lands on ESPN, Sleeper, or Yahoo."
+      )
+    ),
+    p(
+      t("For fantasy specifically, the "),
+      b("NFL Fantasy Pass ($49.99/season)"),
+      t(
+        " adds per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday — waiver targets after Monday night, injury and practice-report reads midweek, and a final call Sunday morning, all tailored to your actual roster. If you're heading into a draft on a new platform, it pairs well with "
+      ),
+      lk("a solid draft strategy", "/blog/fantasy-football-draft-strategy-2026"),
+      t(".")
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "Is NFL Fantasy shutting down?",
+      answer:
+        "Yes. Beginning with the 2026 season, the NFL no longer operates a season-long fantasy football game. ESPN is now the official fantasy game of the NFL, and existing NFL Fantasy leagues can migrate to ESPN Fantasy through a dedicated import tool at espn.com/importnfl.",
+    },
+    {
+      question: "Do I lose my league history when I move to ESPN?",
+      answer:
+        "Mostly no. The migration preserves league settings, configuration details, and league history — including past standings and record history — where available. Keeper leagues also bring team rosters. Things like league chat threads and custom team logos are not confirmed to transfer, so screenshot anything sentimental before the NFL platform winds down.",
+    },
+    {
+      question: "Is there a deadline to migrate my NFL Fantasy league to ESPN?",
+      answer:
+        "As of July 2026, no official deadline has been published. The practical deadline is your draft: the commissioner needs to activate the migrated league and every member needs to join before draft day, so aim to finish well before late August.",
+    },
+    {
+      question: "Is ESPN Fantasy Football free?",
+      answer:
+        "Yes. Standard ESPN Fantasy Football leagues are free to create, join, and play as of July 2026, on both ESPN.com and the ESPN Fantasy app. Migrating an NFL Fantasy league to ESPN does not cost anything.",
+    },
+    {
+      question: "Can I move my NFL Fantasy league to Sleeper or Yahoo instead?",
+      answer:
+        "You can, but there's no automated import — the migration tool only moves leagues to ESPN. On Sleeper or Yahoo, your commissioner recreates the league settings manually and your NFL Fantasy history stays behind. Many leagues still choose Sleeper for its modern, chat-first experience; ESPN is the only option that preserves league history.",
+    },
+  ],
+},
+{
+  slug: "espn-knockout-leagues",
+  title: "ESPN Knockout Leagues: Rules, Strategy, and How to Win",
+  excerpt:
+    "ESPN’s new Knockout format eliminates the lowest scorer each week and dumps their roster to waivers. The exact rules, guillotine comparison, and how to survive.",
+  date: "2026-07-26",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "A Knockout league is ESPN Fantasy Football’s new elimination format for the 2026 season: every team competes on total points, and the lowest-scoring team each week is eliminated — with its entire roster released to waivers for the surviving managers to bid on. The last manager standing wins."
+      )
+    ),
+    p(
+      t(
+        "ESPN announced Knockout leagues on July 7, 2026, alongside the rest of its fantasy football updates — a big year for the platform, since "
+      ),
+      lk("NFL Fantasy is also moving to ESPN", "/blog/nfl-fantasy-moving-to-espn"),
+      t(
+        ". If you’ve played in a guillotine league before, the concept will feel familiar. If you haven’t, this is one of the most fun (and most brutal) ways to play fantasy football, and ESPN just made it a first-class product instead of a commissioner-run science project. Here’s everything we know about the rules, how it differs from a classic guillotine league, and how to actually win one."
+      )
+    ),
+
+    h2("How ESPN Knockout leagues work"),
+    p(
+      t(
+        "The core loop is simple: no head-to-head matchups, no playoff bracket, no schedule luck. Everyone’s weekly score counts, and the bottom team is gone. Here are the mechanics as ESPN has published them (all details as of July 2026 — settings could shift before draft season):"
+      )
+    ),
+    tbl(
+      [[b("Setting")], [b("How it works")]],
+      [
+        [[t("Format")], [t("Total points, league-wide. No head-to-head matchups.")]],
+        [[t("Elimination")], [t("The lowest-scoring team each week is knocked out. One elimination per week until one manager remains.")]],
+        [[t("Eliminated rosters")], [t("The entire roster is released to waivers. Remaining managers acquire those players by placing bids (or via free pickups once bidding clears).")]],
+        [[t("League size")], [t("ESPN recommends 12+ managers; 12–18 is the sweet spot. Season length scales with size — an 18-team league runs a full 17-week season, smaller leagues end sooner.")]],
+        [[t("Scoring")], [t("PPR by default.")]],
+        [[t("Draft")], [t("Snake by default; linear and salary cap drafts are also supported.")]],
+        [[t("Cost")], [t("Free to enter and play, like all ESPN Fantasy games.")]],
+        [[t("Last words")], [t("Eliminated managers get to send a farewell message to the rest of the league. Use it well.")]],
+      ]
+    ),
+    p(
+      t(
+        "ESPN hasn’t published anything about official prizes as of July 2026 — Knockout looks like a standard free league type you set up with friends, not a cash contest. And to be clear on the big one: once you’re eliminated, you’re out. There’s no buy-back, no resurrection week."
+      )
+    ),
+
+    h2("Knockout vs. guillotine leagues"),
+    p(
+      t(
+        "If “lowest scorer gets eliminated and their roster hits waivers” sounds familiar, that’s because it’s the guillotine league format, popularized by longtime fantasy analyst Paul Charchian in 2017. Knockout is ESPN’s productized version of the same idea. The differences are mostly about who does the work:"
+      )
+    ),
+    ul(
+      [
+        b("Guillotine leagues"),
+        t(
+          " are traditionally 18 teams, 17 weeks, one cut per week — and historically ran on platforms that didn’t support the format natively. Commissioners manually dropped eliminated rosters, policed FAAB, and tracked who was out."
+        ),
+      ],
+      [
+        b("ESPN Knockout leagues"),
+        t(
+          " automate all of it: eliminations, the roster dump to waivers, and the bidding are handled by the platform. ESPN also allows smaller league sizes (with shorter seasons) instead of the rigid 18-team structure."
+        ),
+      ],
+      [
+        b("The strategy is identical."),
+        t(
+          " Everything the guillotine community has learned since 2017 — floor over ceiling early, hoard FAAB, feast on eliminated rosters — applies directly to Knockout."
+        ),
+      ],
+    ),
+    p(
+      t(
+        "So if you see “knockout” and “guillotine” used interchangeably this season, that’s why. One is the genre; the other is ESPN’s official product name for it."
+      )
+    ),
+
+    h2("Strategy: how to be the last one standing"),
+    h3("Draft for floor, not ceiling"),
+    p(
+      t(
+        "In head-to-head leagues you need spike weeks to beat good opponents. In a Knockout league, weeks 1–6 have exactly one goal: don’t finish last. That means consistent, high-floor players — target-hog receivers, three-down backs, quarterbacks who never post a dud — over boom-bust types. A 9th-place finish out of 18 teams is a perfect week. ESPN’s own analysts put it bluntly: safe and boring is the play early. This also changes your "
+      ),
+      lk("start/sit decisions", "/blog/fantasy-football-start-sit"),
+      t(
+        " — the tiebreaker between two similar players is always the safer floor, not the higher ceiling, until the field thins out."
+      )
+    ),
+    h3("The weekly waiver auction is the whole game"),
+    p(
+      t(
+        "This is what makes the format special. Every single week, an entire roster — including whatever studs the eliminated team drafted — hits waivers. In an 18-team league, roughly 196 players are rostered in Week 5, but only about 70 by Week 14. Your draft gets you through September; the waiver auctions decide who wins in December. Treat every elimination like a mini free agency period: know whose roster just dropped, know which of their players fit your bye weeks, and have a bid plan before waivers clear."
+      )
+    ),
+    h3("When to burn FAAB"),
+    p(
+      t(
+        "The classic mistake is blowing your budget on the first big name that hits waivers in September. ESPN’s guidance — and the consensus from years of guillotine play — is to spend conservatively early and aggressively late: avoid putting more than about 25% of your budget on any one player before mid-October. Late-season FAAB is worth far more than early-season FAAB, because the players hitting waivers keep getting better as stronger teams get eliminated. Our general "
+      ),
+      lk("waiver wire strategy guide", "/blog/fantasy-football-waiver-wire-strategy"),
+      t(
+        " covers bidding mechanics in more depth, but the Knockout-specific rule is simple: the manager with budget left in November is shopping at a buffet while everyone else watches."
+      )
+    ),
+    h3("Stream, don’t stash"),
+    p(
+      t(
+        "Injured stashes and “he’ll be good in the playoffs” holds are dead weight in this format. There are no playoffs to plan for if you get knocked out in Week 6, and the free agent pool restocks every single week. Every roster spot should be someone who can score for you now — stream defenses, stream tight ends, and if a player gets hurt, cut him without sentiment. Deep-league streaming instincts translate perfectly here."
+      )
+    ),
+
+    h2("Who should (and shouldn’t) play this format"),
+    p(
+      t(
+        "Play a Knockout league if you love waiver wire chess, want every week to matter, or you’re burned out on schedule luck deciding head-to-head leagues. It’s also a great second league — the total-points format means no matchup prep, just set your best lineup. Skip it if you check your team once a week and forget Thursday inactives, because this format will punish you faster than any other. And if you’re still choosing where to play this season, our "
+      ),
+      lk("roundup of the best fantasy football apps for 2026", "/blog/best-fantasy-football-apps-2026"),
+      t(" covers how ESPN’s app stacks up overall.")
+    ),
+
+    h2("One missed inactive ends your season"),
+    p(
+      t(
+        "Here’s the honest reason we’re writing about this format: elimination leagues are the most news-sensitive version of fantasy football that exists. In a head-to-head league, starting an inactive player costs you one loss out of fourteen. In a Knockout league, one zero in your lineup in a bad week and your season is just over — roster dumped, last words, done."
+      )
+    ),
+    p(
+      t(
+        "That’s exactly the problem we built Scoutcast.ai for. It’s a personalized ~2-minute audio sports briefing every morning — your teams, your players, your leagues — so lineup-relevant news finds you instead of the other way around. For fantasy players, the NFL Fantasy Pass ($49.99/season) adds per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday morning: waiver targets after each elimination, start/sit calls for your actual roster, and a final inactives check before kickoff. In a format where missing one beat report is fatal, a two-minute listen over coffee is cheap insurance."
+      )
+    ),
+    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+  ],
+  faqs: [
+    {
+      question: "What is a Knockout league in ESPN Fantasy Football?",
+      answer:
+        "A Knockout league is ESPN’s elimination-style fantasy football format, introduced for the 2026 season. All teams compete on total points instead of head-to-head matchups, and the lowest-scoring team each week is eliminated. The eliminated team’s entire roster is released to waivers, and the last manager standing wins.",
+    },
+    {
+      question: "What’s the difference between a Knockout league and a guillotine league?",
+      answer:
+        "They’re the same core format. Guillotine leagues — popularized by Paul Charchian in 2017 — traditionally use 18 teams and require commissioners to manually manage eliminations and roster drops. Knockout is ESPN’s official, automated version: the platform handles eliminations, releases rosters to waivers, and supports flexible league sizes.",
+    },
+    {
+      question: "What happens to a team’s roster when it’s eliminated?",
+      answer:
+        "The eliminated team’s entire roster is released to waivers. All remaining managers can bid on those players (or pick them up as free agents once bidding clears), so the player pool gets stronger every week as more teams are knocked out.",
+    },
+    {
+      question: "How many teams are in an ESPN Knockout league?",
+      answer:
+        "ESPN recommends at least 12 managers, with 12–18 considered ideal. Season length scales with league size: an 18-team league eliminates one team per week across a full 17-week season, while smaller leagues finish earlier.",
+    },
+    {
+      question: "Can you rejoin a Knockout league after being eliminated?",
+      answer:
+        "No. As of July 2026, elimination is permanent — there’s no buy-back or re-entry. Eliminated managers get one 'last words' message to send to the rest of the league, and then they’re spectators for the remainder of the season.",
+    },
+  ],
+},
+{
+  slug: "when-does-fantasy-football-start",
+  title: "When Does Fantasy Football Start? 2026 Dates & Draft Timing",
+  excerpt:
+    "Most 2026 fantasy drafts happen Aug 23–Sep 3, with Labor Day weekend busiest. The NFL season kicks off Wednesday, Sept 9. Here's the full timing guide.",
+  date: "2026-07-28",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Fantasy football for 2026 effectively starts when you draft, and most leagues draft between August 23 and September 3 — with Labor Day weekend (September 4–7) the single busiest stretch of the year. The real games begin with the NFL Kickoff game on Wednesday, September 9, 2026, and you can start or join a league any time before your Week 1 lineups lock that weekend."
+      )
+    ),
+    p(
+      t(
+        "That's the short answer. The longer answer depends on what kind of league you're in, how seriously your group takes it, and how much preseason information you want baked into your picks. Here are the dates that matter, then the reasoning behind the ideal draft window."
+      )
+    ),
+
+    h2("2026 fantasy football key dates"),
+    tbl(
+      [[t("Milestone")], [t("2026 date")], [t("Why it matters")]],
+      [
+        [
+          [t("NFL training camps open")],
+          [t("July 22–28")],
+          [t("Camp battles begin; depth charts start taking shape")],
+        ],
+        [
+          [t("Hall of Fame Game")],
+          [t("Thu, Aug 6")],
+          [t("First exhibition football of the year")],
+        ],
+        [
+          [t("Preseason Weeks 1–3")],
+          [t("Aug 13 – Aug 29")],
+          [t("Rookies and backups show their hand; injury news accumulates")],
+        ],
+        [
+          [t("Roster cutdown to 53")],
+          [t("Sun, Aug 30")],
+          [t("Depth charts get real; sleepers get confirmed or cut")],
+        ],
+        [
+          [b("Ideal draft window")],
+          [b("Aug 23 – Sep 3")],
+          [t("Preseason nearly done, injury risk window minimized")],
+        ],
+        [
+          [t("Labor Day weekend (peak drafting)")],
+          [t("Sep 4–7")],
+          [t("The busiest draft days of the year")],
+        ],
+        [
+          [t("NFL Kickoff game")],
+          [t("Wed, Sep 9")],
+          [t("Seahawks host Patriots; season officially begins")],
+        ],
+        [
+          [t("Week 1 Sunday")],
+          [t("Sun, Sep 13")],
+          [t("Most Week 1 lineups lock at 1:00 PM ET")],
+        ],
+        [
+          [t("Typical fantasy trade deadline")],
+          [t("Weeks 10–12 (mid-Nov)")],
+          [t("Varies by platform and league settings")],
+        ],
+        [
+          [t("Fantasy playoffs")],
+          [t("Weeks 15–17 (mid-to-late Dec)")],
+          [t("Championship week is usually Week 17")],
+        ],
+      ]
+    ),
+    p(
+      t("One 2026 quirk worth noting: the Kickoff game is on a "),
+      b("Wednesday"),
+      t(
+        " this year — September 9 — because the league scheduled its first-ever regular-season game in Melbourne, Australia for Thursday the 10th. If your league's drop-dead draft deadline is 'before the first game,' that's a day earlier than usual."
+      )
+    ),
+
+    h2("When do most fantasy leagues draft?"),
+    p(
+      t(
+        "The overwhelming majority of redraft leagues hold their drafts in the final two weeks before the season — roughly August 23 through September 3 — and Labor Day weekend is consistently the busiest drafting window on every major platform, per "
+      ),
+      lk(
+        "RotoWire's analysis of draft timing",
+        "https://www.rotowire.com/football/article/when-does-fantasy-football-start-94855"
+      ),
+      t(". There's a good reason the crowd converges there:")
+    ),
+    ul(
+      [
+        b("Preseason injuries are already priced in."),
+        t(
+          " Draft in early August and a single joint-practice Achilles tear can vaporize your second-round pick before the season starts. Draft after the preseason finale (Aug 29) and you're picking with near-complete information."
+        ),
+      ],
+      [
+        b("Depth charts have settled."),
+        t(
+          " The cutdown to 53-man rosters on August 30 resolves most camp battles. You'll know who actually won the RB2 job instead of guessing."
+        ),
+      ],
+      [
+        b("Rankings and ADP have stabilized."),
+        t(" By late August, "),
+        lk("ADP", "/blog/what-is-adp-fantasy-football"),
+        t(
+          " reflects real preseason performance rather than offseason hype, which makes it far more useful as a draft-day map."
+        ),
+      ],
+    ),
+    p(
+      t(
+        "For 2026, that makes the sweet spot the ten days from roughly August 28 through September 7. If your league can only agree on one date, Saturday or Sunday of Labor Day weekend (September 5–6) is the classic answer — everyone's around, the news cycle is quiet, and kickoff is just days away."
+      )
+    ),
+
+    h2("When is too early — and too late?"),
+    h3("Too early"),
+    p(
+      t(
+        "For standard redraft leagues, anything before mid-August carries real injury and depth-chart risk with no offsetting benefit. Every week you draft before the preseason ends is a week of camp news you're exposed to with a locked roster. July drafts are fine for best ball (more on that below), but in a league with waivers, drafting early just means your first waiver run is bigger."
+      )
+    ),
+    h3("Too late"),
+    p(
+      t(
+        "The hard deadline is your platform's Week 1 lineup lock — for most leagues that's 1:00 PM ET on Sunday, September 13. Practically, though, drafting after the Kickoff game (September 9) gets awkward: one game's results are known, Thursday/Friday players are locked or excluded on some platforms, and scheduling twelve adults on a game week is miserable. Treat "
+      ),
+      b("Tuesday, September 8"),
+      t(" as your realistic last comfortable draft day for 2026.")
+    ),
+
+    h2("Best ball vs. redraft: two different calendars"),
+    p(
+      t(
+        "If you play best ball — draft-only formats like Underdog or DraftKings where there are no waivers or lineup decisions — the calendar shifts earlier. Best-ball drafting peaks from mid-July through mid-August, because volume matters more than late-breaking news and pricing inefficiencies are biggest before ADP stabilizes. Sharp best-ball players are already drafting right now."
+      )
+    ),
+    p(
+      t(
+        "Redraft is the opposite: since you can react to news all season via waivers, the value of drafting early is near zero and the cost of a preseason injury is high. Wait for the information. Best ball early, redraft late is the simplest timing rule in fantasy."
+      )
+    ),
+
+    h2("What to do between now and your draft"),
+    p(
+      t(
+        "If your draft is five to six weeks out, you don't need to grind every day — you need a light, consistent information habit plus one or two focused prep sessions. A reasonable plan:"
+      )
+    ),
+    ul(
+      [
+        b("Follow camp news in low-effort mode."),
+        t(
+          " This is where Scoutcast.ai fits: a ~2-minute daily audio briefing on your teams and players keeps you current on camp battles, injuries, and depth-chart moves without doomscrolling four apps. By draft day you'll just know who's rising and falling."
+        ),
+      ],
+      [
+        b("Pick a draft strategy before you pick players."),
+        t(" Our "),
+        lk(
+          "2026 draft strategy guide",
+          "/blog/fantasy-football-draft-strategy-2026"
+        ),
+        t(" covers Zero RB, Hero RB, and robust RB — and when each makes sense."),
+      ],
+      [
+        b("Run at least two mock drafts from your actual slot."),
+        t(" Here's "),
+        lk(
+          "how to mock draft effectively",
+          "/blog/fantasy-football-mock-draft-2026"
+        ),
+        t(" once your league sets the draft order."),
+      ],
+      [
+        b("Build a cheat sheet in the final week."),
+        t(" Start from our "),
+        lk("2026 rankings", "/blog/fantasy-football-rankings-2026"),
+        t(" and adjust with "),
+        lk(
+          "your own research process",
+          "/blog/how-to-research-fantasy-football"
+        ),
+        t(" — don't print a sheet in July and draft off it in September."),
+      ],
+    ),
+    p(
+      t(
+        "And if you want the habit to continue past draft day, Scoutcast's NFL Fantasy Pass ($49.99/season) delivers in-season briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call) — timed to the actual decisions you make each week."
+      )
+    ),
+
+    h2("When does the fantasy season end?"),
+    p(
+      t(
+        "Most leagues run a 14-week regular season, then playoffs in Weeks 15–17 — mid-to-late December 2026 — with the championship in Week 17. Almost no league uses NFL Week 18, because teams rest starters once playoff seeding is locked and fantasy outcomes get random. So the full arc of your 2026 season: draft around Labor Day, set lineups from September 13 through late December, and hoist the trophy right around the new year."
+      )
+    ),
+    p(
+      t(
+        "The only real deadline is Week 1. Everything else — the perfect draft date, the ideal prep schedule — is optimization. Get your league scheduled for that Aug 28–Sep 7 window, do a couple mocks, keep a light ear on camp news, and you'll walk into your draft more prepared than half your league."
+      )
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "When does fantasy football start in 2026?",
+      answer:
+        "Fantasy football starts when you draft, and most 2026 drafts happen between August 23 and September 3, peaking over Labor Day weekend (September 4–7). Scoring begins with the NFL Kickoff game on Wednesday, September 9, 2026, and most Week 1 lineups lock on Sunday, September 13.",
+    },
+    {
+      question: "When do most fantasy football drafts happen?",
+      answer:
+        "Most redraft leagues draft in the final two weeks before the NFL season — roughly August 23 through September 3 — with Labor Day weekend the busiest drafting window of the year. This timing lets managers draft after the preseason ends (August 29) and after rosters are cut to 53 players (August 30), when depth charts and injury news are settled.",
+    },
+    {
+      question: "When does the 2026 NFL season start?",
+      answer:
+        "The 2026 NFL season begins Wednesday, September 9, 2026, when the Seattle Seahawks host the New England Patriots in the NFL Kickoff game — a Wednesday opener this year to accommodate the league's first regular-season game in Melbourne, Australia on Thursday, September 10. The first full Sunday slate is September 13, 2026.",
+    },
+    {
+      question: "How late can you draft a fantasy football team?",
+      answer:
+        "You can draft any time before your league's Week 1 lineup lock — for most 2026 leagues, that's 1:00 PM ET on Sunday, September 13. Practically, aim to draft by Tuesday, September 8, since the Kickoff game on September 9 complicates drafts on most platforms. Many sites also let you join leagues that draft after Week 1 has started, though it's not ideal.",
+    },
+    {
+      question: "When are the fantasy football playoffs in 2026?",
+      answer:
+        "Most leagues hold fantasy playoffs in NFL Weeks 15–17, which fall in mid-to-late December 2026, with the championship in Week 17. Leagues generally avoid Week 18 because NFL teams rest starters once playoff seeding is decided.",
+    },
+    {
+      question: "When should a beginner join a fantasy football league?",
+      answer:
+        "Beginners should join a league in August 2026 and draft in the late-August-to-Labor-Day window like everyone else — you'll benefit most from settled rankings and stable ADP. Free platforms like ESPN, Yahoo, and Sleeper let you join public leagues right up until early September, and drafting close to the season means less news to track before games count.",
+    },
+  ],
+},
+{
+  slug: "fantasy-football-punishment-ideas",
+  title: "46 Fantasy Football Punishment Ideas, Ranked by Severity",
+  excerpt:
+    "The definitive list of fantasy football loser punishments — from loser trophies to the 24-hour Waffle House — plus commissioner rules to make them stick.",
+  date: "2026-07-21",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "A championship trophy keeps two teams interested in December. A last-place punishment keeps all twelve. If your league has ever watched someone start players on bye in Week 12 because they were mathematically cooked, you don’t have a sandbagging problem — you have a stakes problem. The punishment is the load-bearing wall of league culture: it’s why the 2–9 team still sets a lineup, why the group chat stays alive through the fantasy playoffs, and why your league is still together in year nine while everyone else’s quietly dissolved."
+      )
+    ),
+    p(
+      t(
+        "This is the definitive list: 46 fantasy football punishment ideas organized by severity, from harmless props to life-altering commitments, plus the part almost nobody covers — how a commissioner actually "
+      ),
+      em("enforces"),
+      t(
+        " a punishment when the loser suddenly develops amnesia in January. Steal what fits, write it into your constitution before the draft, and never watch a dead-roster Week 14 again."
+      )
+    ),
+    h2("Classic, entry-level punishments"),
+    p(
+      t(
+        "Start here if your league is new, coworker-heavy, or you’re just testing whether people will actually follow through. Low effort, low embarrassment, still effective."
+      )
+    ),
+    ul(
+      [b("The loser trophy."), t(" A hideous last-place trophy (toilet bowl, dumpster fire, participation ribbon) the loser must display prominently at home until next season.")],
+      [b("Fund next year’s league."), t(" The loser pays everyone’s entry fee — or the whole prize pot — for the following season.")],
+      [b("Draft-day caterer."), t(" The loser buys and serves food and drinks for the entire league at next year’s draft. No cutting corners on the wings.")],
+      [b("Name change season."), t(" The league renames the loser’s team for all of next year. They cannot change it.")],
+      [b("The shame shirt."), t(" A custom “I finished last in my fantasy league” shirt, worn to the next league gathering.")],
+      [b("Loser’s toast."), t(" The loser stands and delivers a formal toast at the draft honoring the champion’s brilliance and cataloging their own failures.")],
+      [b("Chore raffle."), t(" Each league member assigns the loser one reasonable chore — wash a car, mow a lawn, assemble the IKEA dresser.")],
+      [b("Profile picture takeover."), t(" The champion picks the loser’s social media profile photo for one month.")]
+    ),
+    h2("Public humiliation tier"),
+    p(
+      t(
+        "The sweet spot for most leagues: memorable, photographable, and completely survivable. Nobody gets hurt except the loser’s dignity."
+      )
+    ),
+    ul(
+      [b("Airport pickup sign."), t(" The loser stands at arrivals holding a sign with an embarrassing message the league writes — bonus points for a suit.")],
+      [b("The jorts jersey."), t(" Jean shorts, a rival team’s jersey, and a full day out in public. A modern classic.")],
+      [b("Rival gear to work."), t(" Wear the most hated rival team’s jersey to the office, school, or a sports bar during a game.")],
+      [b("Lemonade stand."), t(" The loser runs a roadside lemonade stand with a sign explaining exactly why they’re there.")],
+      [b("Drive-thru serenade."), t(" Order at a fast-food drive-thru entirely in song, windows down, league filming from the back seat.")],
+      [b("Grocery store intercom apology."), t(" Where allowed, the loser asks a store to page a public apology for their draft picks.")],
+      [b("The sandwich board."), t(" One afternoon downtown wearing a sandwich board listing their worst roster decisions.")],
+      [b("Karaoke of shame."), t(" A solo karaoke performance of a song the league picks, at a real bar, on a real Saturday night.")],
+      [b("League-chosen haircut."), t(" The league votes on a haircut (grow-out-able, nothing permanent) and someone films the chair.")],
+      [b("The league logo takeover."), t(" The loser’s least flattering photo becomes the official league avatar until next season.")]
+    ),
+    h2("Endurance tier"),
+    p(
+      t(
+        "Punishments measured in hours, miles, or waffles. These are the ones that become legend — the 24-hour Waffle House sit went viral in 2021 when journalist Lee Sanderlin live-tweeted his 15-hour, nine-waffle sentence, and it’s been the gold standard ever since."
+      )
+    ),
+    ul(
+      [b("The 24-hour Waffle House."), t(" The loser spends 24 hours in a Waffle House; every waffle eaten shaves an hour off the clock. Nine waffles is the known survivable pace.")],
+      [b("The milk mile."), t(" Run a mile on a track — but chug a glass of milk before each of the four laps. Outdoors. Trust us.")],
+      [b("Costume 5K."), t(" The loser runs an actual registered 5K in a full costume the league selects. Mascot heads earn extra credit.")],
+      [b("The hot-dog hour."), t(" A league-set number of hot dogs in sixty minutes, filmed, with commentary.")],
+      [b("Sunrise-to-sunset fishing ban… on the couch."), t(" The loser watches every minute of the next NFL Sunday from a folding chair in the champion’s living room, running snacks on demand.")],
+      [b("The 1,000-word essay… by hand."), t(" A handwritten, footnoted essay on “Why I Lost,” graded by the league and read aloud at the draft.")],
+      [b("Polar plunge."), t(" A December lake, a filmed entry, and full submersion. Regional availability may vary; misery does not.")]
+    ),
+    h2("Skill and embarrassment performances"),
+    p(
+      t(
+        "These require the loser to be bad at something in front of strangers, which is a different flavor of pain than being bad at fantasy in front of friends."
+      )
+    ),
+    ul(
+      [b("The SAT retake."), t(" The loser registers for, studies for (or doesn’t), and sits the full SAT. The score goes in the group chat and on the trophy.")],
+      [b("Standup comedy set."), t(" Five minutes at a real open mic, and at least half the material must be about their fantasy season.")],
+      [b("The dance recital."), t(" Enroll in a beginner dance class and perform in the actual end-of-session recital. Costume included.")],
+      [b("Spelling bee entry."), t(" Enter any open adult spelling bee or trivia night solo, wearing their fantasy team’s name on a shirt.")],
+      [b("The cooking exam."), t(" Cook a full dinner for the league; the league scores it Chopped-style, out loud, to their face.")],
+      [b("Poetry night."), t(" An original poem about the season, performed at a coffee-shop open mic with zero irony allowed.")],
+      [b("The job-interview roleplay."), t(" A mock interview where the champion asks why the loser believes they deserve to stay in the league. Filmed.")],
+      [b("Learn the anthem."), t(" Learn a rival city’s fight song well enough to perform it on request, all year, whenever a league member asks.")]
+    ),
+    h2("Year-long punishments"),
+    p(
+      t(
+        "For leagues that believe eleven months of low-grade humiliation beats one bad afternoon. These compound beautifully."
+      )
+    ),
+    ul(
+      [b("The calendar photoshoot."), t(" Twelve themed photos, one per month, shot in one mortifying afternoon and printed as a real calendar every league member hangs up.")],
+      [b("Last-place license plate frame."), t(" “I finished last in my fantasy league” lives on the loser’s car until next December.")],
+      [b("Group chat signature."), t(" Every message the loser sends in the league chat must end with an agreed shame phrase all season.")],
+      [b("The butler clause."), t(" At every league event next year, the loser fetches drinks, mans the grill, and answers to “the intern.”")],
+      [b("Custom voicemail."), t(" The league writes the loser’s voicemail greeting for the year. Yes, recruiters will hear it.")],
+      [b("The tattoo (with guardrails)."), t(" Small, tasteful, placement and content agreed in writing before the season. The nuclear option — some leagues swear by it, most should not.")],
+      [b("Jersey of the week."), t(" Once a week, all season, the loser wears whatever jersey the previous week’s highest scorer assigns.")]
+    ),
+    h2("The “films well” tier"),
+    p(
+      t(
+        "Punishment videos are their own genre now — TikTok and Instagram are full of milk miles and Waffle House timelapses pulling millions of views. If your league wants content (and we do — this list is feeding our own punishment video series), pick punishments with a clear arc: a countdown, a visible struggle, and a finish line."
+      )
+    ),
+    ul(
+      [b("Waffle House timelapse."), t(" Hour-marker check-ins plus a waffle counter overlay. The single most watchable punishment ever devised.")],
+      [b("The milk mile, multicam."), t(" One camera on the track, one on the milk. The lap-three face is the thumbnail.")],
+      [b("Airport sign reaction cam."), t(" Film the arriving passenger’s face, not the sign. Comedy is in the reactions.")],
+      [b("Calendar shoot behind-the-scenes."), t(" The photoshoot itself is funnier than the calendar. Capture the wardrobe changes.")],
+      [b("The talent show entry."), t(" A real community talent show, a genuinely unrehearsed act, and a slow zoom from the back row.")],
+      [b("Draft-day sentencing ceremony."), t(" Film the moment the punishment is assigned — gavel, robe, and a formal reading of the charges. Sets up next year’s video before this one ends.")]
+    ),
+    hr(),
+    h2("Commissioner rules: how to make punishments actually happen"),
+    p(
+      t(
+        "Search any fantasy forum and you’ll find a hundred punishment lists — and almost nothing about enforcement. Yet the most common commissioner question isn’t “what punishment?” It’s “the loser is ghosting us — now what?” A punishment without enforcement is just a bit. Here’s the framework:"
+      )
+    ),
+    ul(
+      [b("Write it into the constitution before the draft."), t(" The punishment, the deadline, and the proof required (photo, video, receipt) go in writing while everyone still thinks they’ll win. Agreeing after someone loses never works.")],
+      [b("Attach a deadline."), t(" “Before next year’s draft” is enforceable. “Eventually” is a loophole with a calendar attached.")],
+      [b("Collect a punishment deposit."), t(" Everyone puts in an escrow (say $100) alongside the entry fee at the start of the season. Serve your punishment, get it back. Ghost the league, and it funds the champion’s trophy upgrade. This one rule solves 90% of enforcement problems.")],
+      [b("Define the no-show penalty."), t(" A quitter who abandons their roster mid-season should face the same punishment as last place — plus losing their spot next year. Dead rosters wreck playoff races; treat abandonment as the worse crime.")],
+      [b("No commissioner exemption."), t(" If the commish finishes last, the commish does the punishment. Nothing kills a league faster than a two-tier justice system.")],
+      [b("Offer a buyout number."), t(" A pre-set cash buyout (make it hurt — 3–4x the entry fee) gives a genuine out without endless renegotiation.")]
+    ),
+    p(
+      b("What’s off-limits:"),
+      t(
+        " nothing dangerous, nothing illegal, nothing that could threaten someone’s job, relationship, or health. No punishments involving other people who didn’t sign up (spouses, coworkers, kids). And build in a hardship clause — if someone’s year genuinely fell apart, the league votes to defer or commute. The goal is a story everyone retells for a decade, not a friendship you don’t get back."
+      )
+    ),
+    h2("How to pick the right severity for your league"),
+    p(
+      t(
+        "Match the punishment to the league, not to what went viral. A quick decision framework:"
+      )
+    ),
+    tbl(
+      [[t("Your league")], [t("Right tier")], [t("Example")]],
+      [
+        [[t("Coworkers / new league")], [t("Classic")], [t("Loser trophy + draft-day catering")]],
+        [[t("College friends, scattered cities")], [t("Public humiliation")], [t("Airport sign or jorts jersey, filmed for the chat")]],
+        [[t("Decade-old league, high trust")], [t("Endurance")], [t("Waffle House 24 or the milk mile")]],
+        [[t("Content-hungry league")], [t("Films well")], [t("Calendar shoot with behind-the-scenes video")]],
+        [[t("Degenerates with lawyers on retainer")], [t("Year-long")], [t("Butler clause; tattoo only with written guardrails")]]
+      ]
+    ),
+    p(
+      t(
+        "One more calibration tip: severity should scale with how easy your league makes it to compete. If half your league checks in twice a season, a brutal punishment just drives quitters. Fix the effort problem too — a "
+      ),
+      lk("busy-parent-friendly routine", "/blog/fantasy-football-for-busy-parents"),
+      t(" and the "),
+      lk("right apps", "/blog/best-fantasy-football-apps-2026"),
+      t(
+        " make “I didn’t have time” an excuse nobody gets to use. And lock all of this in early — punishments get agreed at the draft, so settle them while you work out "
+      ),
+      lk("your draft strategy", "/blog/fantasy-football-draft-strategy-2026"),
+      t(" and get the constitution ratified before pick 1.01.")
+    ),
+    hr(),
+    h2("The cheaper alternative: don’t be the loser"),
+    p(
+      t(
+        "Here’s the quiet math nobody does in August: the flip side of every punishment on this list is simply not finishing last. That mostly comes down to staying informed when the season gets busy — knowing who’s hurt, who’s trending, and what your matchup actually needs before waivers clear. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee, and the NFL Fantasy Pass ($49.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around your actual fantasy roster. Fifty bucks a season is a lot cheaper than nine waffles, a milk mile, or twelve months of calendar infamy."
+      )
+    ),
+    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+  ],
+  faqs: [
+    {
+      question: "What is the most common fantasy football punishment?",
+      answer:
+        "The most common punishments are the last-place trophy (a toilet bowl or dumpster-fire trophy the loser displays all year), paying for next season’s league or draft-day food, and wearing an embarrassing shirt or rival jersey in public. The most famous punishment is the 24-hour Waffle House sit, where every waffle eaten removes an hour from the clock.",
+    },
+    {
+      question: "What makes a good fantasy football punishment?",
+      answer:
+        "A good punishment is embarrassing but harmless, produces a story (ideally a photo or video) the league retells for years, and is realistic enough that the loser will actually do it. It should be agreed on before the season, have a clear deadline and proof requirement, and never threaten anyone’s health, job, or relationships.",
+    },
+    {
+      question: "How do you enforce a fantasy football punishment?",
+      answer:
+        "Write the punishment, deadline, and proof requirement into your league constitution before the draft, and collect a punishment deposit (escrow) alongside entry fees — the loser gets it back only after serving the punishment. Add a pre-set cash buyout, apply the same rules to the commissioner, and treat mid-season quitters at least as harshly as the last-place finisher.",
+    },
+    {
+      question: "What fantasy football punishments should be banned?",
+      answer:
+        "Ban anything dangerous, illegal, or job-threatening: extreme eating or drinking dares with health risks, anything that could get someone fired or arrested, punishments involving people who didn’t consent (spouses, coworkers, kids), and permanent consequences like tattoos unless the league agrees to strict written guardrails beforehand. Include a hardship clause so genuine life events can defer a punishment.",
+    },
+    {
+      question: "When should a league decide on the punishment?",
+      answer:
+        "Before the season starts — ideally at the draft, written into the league constitution and agreed by every member while everyone still believes they’ll win. Deciding after someone has already lost almost always leads to arguments, watered-down punishments, or the loser refusing entirely.",
+    },
+  ],
+},
+{
+  slug: "nfl-offseason-catch-up-2026",
+  title: "What You Missed This NFL Offseason: 2026 Fantasy Catch-Up",
+  excerpt:
+    "Tuned out since January? The 2026 NFL offseason was chaos. Every trade, tag, injury, and rookie that matters for your fantasy draft — caught up in 10 minutes.",
+  date: "2026-07-30",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Tuned out after the Super Bowl? Smart. Healthy, even. But while you were living your life, the NFL had one of the wildest offseasons in years — the platform half your league plays on shut down, the Super Bowl MVP changed teams, a top-five pick was spent on a running back, and Tyreek Hill still doesn’t have a job. Here’s everything that actually matters for your fantasy draft, in about 10 minutes."
+      )
+    ),
+    p(
+      t(
+        "One note before we start: everything below is as of late July 2026. Camp battles will resolve, injury timelines will shift, and someone will inevitably get traded in August. That’s the nature of a catch-up post — it catches you up to today. (More on how to stay caught up at the end.)"
+      )
+    ),
+
+    h2("The platform shakeup: NFL Fantasy is gone, ESPN is the new home"),
+    p(
+      t(
+        "Let’s start with the news that affects where you actually play. The NFL shut down its own season-long fantasy football game this offseason. Starting with the 2026 season, ESPN Fantasy is the official fantasy game of the NFL, and NFL Fantasy leagues are migrating over through a dedicated migration tool that recreates your league, preserves settings, and carries over league history. If your league lived on NFL.com, "
+      ),
+      lk("here’s the full breakdown of the move and how to migrate", "/blog/nfl-fantasy-moving-to-espn"),
+      t(
+        " — the short version is you’ll need the email tied to your NFL Fantasy account, and the migration lives in the ESPN Fantasy app."
+      )
+    ),
+    p(
+      t("ESPN also launched something genuinely new on July 7: "),
+      lk("Knockout leagues", "/blog/espn-knockout-leagues"),
+      t(
+        ", a productized version of the guillotine format. No head-to-head matchups — the lowest-scoring team each week is eliminated, and its entire roster gets dumped to waivers for the survivors to bid on. Eliminated managers even get official “last words” to the league. If your group chat has been bored of standard leagues, this is the new toy this season."
+      )
+    ),
+
+    h2("The moves that change draft boards"),
+    p(
+      t(
+        "This was a genuinely chaotic player-movement cycle. Three players got the franchise tag in February and March — and all three stories resolved differently. Then free agency and the trade market went sideways from there. The big ones:"
+      )
+    ),
+    tbl(
+      [[b("Player")], [b("What happened")], [b("Fantasy verdict")]],
+      [
+        [
+          [t("A.J. Brown")],
+          [t("Traded from the Eagles to the Patriots in June for a 2028 first-rounder and a 2027 fifth")],
+          [t("Instant WR1 for Drake Maye, whose ADP has already climbed. Reunites with Mike Vrabel. Huge for Maye, painful for the Eagles’ pass game.")],
+        ],
+        [
+          [t("Kenneth Walker III")],
+          [t("The Super Bowl LX MVP left Seattle for Kansas City on a 3-year, $43M deal")],
+          [t("A true lead back landing in the Chiefs offense. Top-15 pick territory, and a big downgrade for whoever inherits Seattle’s backfield.")],
+        ],
+        [
+          [t("George Pickens")],
+          [t("Franchise-tagged by Dallas at $27.3M; the July 15 extension deadline passed with no deal")],
+          [t("Playing a contract year on the tag after a 93/1,429/9 season. Motivated, locked in as Dak’s WR1 — draft with confidence.")],
+        ],
+        [
+          [t("Breece Hall")],
+          [t("Tagged by the Jets, then signed a 3-year, $43.5M extension in May")],
+          [t("Clarity is good. He’s the Jets’ bell cow with no contract drama. Business as usual.")],
+        ],
+        [
+          [t("Kyle Pitts")],
+          [t("Tagged by Atlanta, then extended 3 years, $54M in June after an 88/928/5 season")],
+          [t("The Falcons finally paid him after his best year. A fringe top-5 TE with the long-term deal to back the usage.")],
+        ],
+        [
+          [t("David Montgomery")],
+          [t("Traded from Detroit to Houston for Juice Scruggs plus picks")],
+          [t("Escapes the Detroit committee for a bigger role in Houston. Sneaky value; also frees up work in the Lions backfield.")],
+        ],
+        [
+          [t("Isiah Pacheco")],
+          [t("Signed with the Lions after the Montgomery trade")],
+          [t("Slots into the touches Montgomery left behind in a top offense. Fits the Detroit thunder role.")],
+        ],
+        [
+          [t("Travis Etienne")],
+          [t("Signed with the Saints — 4 years, $52M — in March")],
+          [t("Paid like a lead back in New Orleans, which reshapes the whole Saints backfield (see Kamara below).")],
+        ],
+        [
+          [t("Daniel Jones")],
+          [t("Tagged by the Colts, then extended 2 years, $88M in March")],
+          [t("Indy committed to its QB — which is why the Colts weren’t in the rookie QB market. Stability for the whole Colts passing game.")],
+        ],
+        [
+          [t("Rico Dowdle")],
+          [t("Left Carolina for Pittsburgh in free agency")],
+          [t("Opens up the Panthers backfield — which matters a lot for the camp battle covered below.")],
+        ],
+        [
+          [t("Isaiah Likely")],
+          [t("Signed with the Giants")],
+          [t("The real winner is Mark Andrews, who gets the Ravens’ TE targets back to himself.")],
+        ],
+      ]
+    ),
+    p(
+      t("If you want the full re-ranked landscape after all of this movement, our "),
+      lk("2026 fantasy football rankings", "/blog/fantasy-football-rankings-2026"),
+      t(" bake in every one of these moves.")
+    ),
+
+    h2("Injury and holdout watch"),
+    h3("Malik Nabers’ knee is the scariest storyline in fantasy"),
+    p(
+      t(
+        "Nabers, rehabbing from the torn ACL that ended his 2025 season, needed a second procedure this summer to clean out scar tissue that was blocking full knee extension. The working projection from injury analysts is that he misses roughly the first "
+      ),
+      b("four to five games"),
+      t(
+        " of the season, with a PUP-list stint in play. His ADP is sliding, and the whole Giants pass game — including Jaxson Dart — gets murkier the longer he’s out. He’s a boom-or-bust pick at a discount now, not a first-rounder."
+      )
+    ),
+    h3("Tyreek Hill is still unsigned"),
+    p(
+      t(
+        "Read that again: five months after Miami released him in February (dodging a $51M cap hit), an eight-time Pro Bowler doesn’t have a team. The reason isn’t mystery — it’s the torn ACL and dislocated knee he suffered in Week 4 last season, plus his age (32). Recent reporting says there’s no guarantee he plays at all in 2026. Until he signs, he’s undraftable outside the last round of deep leagues."
+      )
+    ),
+    h3("Kyler Murray vs. J.J. McCarthy is the camp battle of the summer"),
+    p(
+      t(
+        "Yes, you read that right. Arizona released Kyler Murray in March — the same offseason it drafted a running back third overall — and Minnesota scooped him up on a veteran-minimum deal to compete with J.J. McCarthy. Kevin O’Connell says the battle could run through the preseason right up to Week 1. Early camp reports have Murray wrestling with the verbiage of the offense, which cracks the door for McCarthy. Whoever wins inherits Justin Jefferson, so this battle moves real draft capital: neither QB is safely startable until it resolves, and Jefferson drafters are watching nervously."
+      )
+    ),
+    h3("Alvin Kamara took a pay cut to stay"),
+    p(
+      t(
+        "On July 15, Kamara restructured down to $6M (up to $8.5M with incentives) to return for a 10th season in New Orleans — months after the Saints paid Travis Etienne $52M. The signal is clear: this is Etienne’s backfield now, with Kamara in a complementary, likely passing-down role. Adjust both accordingly."
+      )
+    ),
+
+    h2("The rookie class in 90 seconds"),
+    p(
+      t(
+        "The 2026 draft, held in Pittsburgh in April, was a fantasy-relevant bonanza at the top. The headline: a running back went third overall, the highest RB selection since Saquon Barkley in 2018."
+      )
+    ),
+    ul(
+      [
+        b("Jeremiyah Love, RB, Cardinals (No. 3 overall). "),
+        t(
+          "The Notre Dame star (1,372 yards and 18 rushing TDs in 12 games last year, 40 total TDs over two seasons) is the consensus 1.01 in rookie drafts and a locked-in early pick in redraft. Arizona spent historic capital on him; he will get volume immediately."
+        ),
+      ],
+      [
+        b("Fernando Mendoza, QB, Raiders (No. 1 overall). "),
+        t(
+          "The Heisman winner and national champion out of Indiana went first to Las Vegas. Rookie QBs are mostly a superflex/dynasty story, but he resets the value of every Raiders pass-catcher."
+        ),
+      ],
+      [
+        b("Carnell Tate, WR, Titans (No. 4). "),
+        t(
+          "Long, three-level threat from Ohio State who walks into a depth chart with Calvin Ridley and Wan’Dale Robinson. Projection models like him as the rookie-WR yardage leader."
+        ),
+      ],
+      [
+        b("Jordyn Tyson, WR, Saints (No. 8). "),
+        t("The best separator in the class, per most scouting reports. Big target volume available in New Orleans."),
+      ],
+      [
+        b("Kenyon Sadiq, TE, Jets (No. 16). "),
+        t("The class’s top tight end lands with Geno Smith. Rookie TEs rarely smash, but the draft capital is real."),
+      ],
+      [
+        b("Makai Lemon, WR, Eagles (No. 20). "),
+        t(
+          "Philadelphia traded up for the USC receiver — then shipped A.J. Brown to New England in June. Lemon isn’t just a flier; he’s the plan."
+        ),
+      ],
+    ),
+    p(
+      t("For full rookie tiers, landing-spot grades, and where to actually draft them, see our "),
+      lk("2026 rookie rankings", "/blog/fantasy-football-rookie-rankings-2026"),
+      t(".")
+    ),
+
+    h2("The sophomores everyone’s fighting over"),
+    p(
+      t(
+        "Last year’s rookie class is where the loudest draft-room arguments are happening. The names to know:"
+      )
+    ),
+    ul(
+      [
+        b("Ashton Jeanty (RB, Raiders)"),
+        t(
+          " — new coaching staff, a No. 1 overall QB in Mendoza, and a Year 2 leap narrative. He and Hampton are the safest sophomore RB bets."
+        ),
+      ],
+      [
+        b("Omarion Hampton (RB, Chargers)"),
+        t(
+          " — the breakout case writes itself: Joe Alt and Rashawn Slater back healthy plus Tyler Biadasz arriving gives him one of the best offensive lines in football."
+        ),
+      ],
+      [
+        b("Emeka Egbuka (WR, Buccaneers)"),
+        t(" — already a high-end fantasy asset as a rookie. The question is only how high the ceiling goes."),
+      ],
+      [
+        b("Tetairoa McMillan (WR, Panthers)"),
+        t(" — coming off a huge rookie year; the main debate is whether Bryce Young caps his top-five upside."),
+      ],
+      [
+        b("Luther Burden III (WR, Bears)"),
+        t(
+          " — the stealth pick. From Week 10 on last season he cleared a 50% snap share every game and finished that stretch as the WR23. The market is catching on."
+        ),
+      ],
+    ),
+    p(
+      t("Several of these names headline our "),
+      lk("2026 sleeper picks", "/blog/fantasy-football-sleeper-picks-2026"),
+      t(", along with deeper cuts like Adonai Mitchell — the Jets receiver whose ADP spiked nearly three full rounds in July after Aaron Glenn and Geno Smith spent OTAs raving about him — and Jonathon Brooks, who missed all of 2025 rehabbing his ACL and is now drawing “lead back over Chuba Hubbard” reports out of Carolina’s offseason program.")
+    ),
+
+    h2("Bounce-backs: the discount rack"),
+    p(
+      t(
+        "A quick word on last year’s disappointments, because this is where drafts are won. Terry McLaurin (quad injury snapped his five-year 1,000-yard streak, now healthy with Deebo Samuel gone from Washington) is the consensus bounce-back headliner. Jalen Hurts had his worst fantasy season since 2021 in a broken Eagles offense — the OC is gone, and Makai Lemon reloads his arsenal, though losing A.J. Brown cuts both ways. Bucky Irving simply got hurt; the job in Tampa is still his. And Mark Andrews, TE16 a year ago while splitting targets, gets the Ravens tight end room to himself with Isaiah Likely off to the Giants."
+      )
+    ),
+
+    h2("What it means for your draft: 5 takeaways"),
+    ul(
+      [
+        b("Don’t draft off last year’s rosters. "),
+        t(
+          "A.J. Brown is a Patriot, Kenneth Walker is a Chief, David Montgomery is a Texan, Pacheco is a Lion, Etienne is a Saint. If your rankings are from January, they’re wrong."
+        ),
+      ],
+      [
+        b("Fade Nabers to his new price, not his old one. "),
+        t("A four-to-five game absence is priced in only if you draft him as a WR2 with playoff upside, not a first-rounder."),
+      ],
+      [
+        b("Wait on the Vikings until the QB battle resolves. "),
+        t("Murray, McCarthy, and even Justin Jefferson’s ceiling all hinge on a decision that may not come until September."),
+      ],
+      [
+        b("Treat Jeremiyah Love like a top-15 pick, because the market already does. "),
+        t("No. 3 overall draft capital at RB means volume from Week 1. The debate is his ceiling, not his floor."),
+      ],
+      [
+        b("Contract-year Pickens is the safest “angry star” bet on the board. "),
+        t("Dallas declined to extend him; he’s playing for $27.3M and his next contract. That profile has a long history of smash seasons."),
+      ],
+    ),
+    p(
+      t("Still torn at your draft slot? Our guide to "),
+      lk("who you should draft in 2026", "/blog/who-should-i-draft-fantasy-football-2026"),
+      t(" walks through it pick by pick.")
+    ),
+
+    hr(),
+
+    h2("Catching up once is a blog post. Staying caught up is a product."),
+    p(
+      t(
+        "Here’s the uncomfortable part: this post is accurate today, and some of it will be stale by your draft. The Vikings QB battle will resolve. Nabers’ timeline will move. Tyreek Hill will (probably) sign somewhere. The offseason firehose that made you feel out of the loop doesn’t stop — it accelerates into camp, preseason, and cut-down day."
+      )
+    ),
+    p(
+      t("That’s literally why we built "),
+      b("Scoutcast.ai"),
+      t(
+        ": a personalized ~2-minute audio briefing every morning covering only your leagues, your teams, and your players — the trades, injuries, and depth-chart moves that actually affect your roster, and none of the ones that don’t. Listen while you make coffee and you’re never the person asking the group chat “wait, when did that happen?”"
+      )
+    ),
+    p(
+      t("And if fantasy is the whole point for you, "),
+      b("NFL Fantasy Pass"),
+      t(
+        " ($49.99/season) syncs your actual fantasy league and gives you per-league analyst briefings four times a week — waivers Tuesday, matchup preview Wednesday, start/sit Thursday, and a live gameday brief Sunday — from an analyst who knows your roster, your opponent, and your league’s scoring."
+      )
+    ),
+    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+  ],
+  faqs: [
+    {
+      question: "What was the biggest fantasy-relevant move of the 2026 NFL offseason?",
+      answer:
+        "The A.J. Brown trade from the Eagles to the Patriots is the biggest single move for fantasy — it makes Brown the clear No. 1 receiver for Drake Maye and reshapes both offenses. Kenneth Walker III (Super Bowl MVP) signing with the Chiefs and the Cardinals drafting Jeremiyah Love third overall are close behind.",
+    },
+    {
+      question: "Is NFL Fantasy really shutting down?",
+      answer:
+        "Yes. Starting with the 2026 season, the NFL no longer operates its own season-long fantasy football game. ESPN Fantasy is now the official fantasy game of the NFL, and NFL Fantasy managers can migrate their leagues — settings and history included — using a migration tool in the ESPN Fantasy app or at ESPN.com/fantasy.",
+    },
+    {
+      question: "Which rookie goes first in 2026 fantasy drafts?",
+      answer:
+        "Jeremiyah Love, the Notre Dame running back the Cardinals took third overall — the highest a running back has been drafted since Saquon Barkley in 2018. He is the consensus 1.01 in rookie drafts and an early pick in redraft leagues.",
+    },
+    {
+      question: "Is Malik Nabers healthy for Week 1?",
+      answer:
+        "Almost certainly not. Nabers had a second knee procedure this summer to remove scar tissue from his ACL rehab, and injury analysts project he misses roughly the first four to five games of the 2026 season, with a PUP-list stint possible. Monitor his status through camp before drafting him.",
+    },
+    {
+      question: "Where did Tyreek Hill sign?",
+      answer:
+        "Nowhere — as of late July 2026, Tyreek Hill remains an unsigned free agent five months after the Dolphins released him in February. He is recovering from a torn ACL and dislocated knee suffered in Week 4 of 2025, and reports suggest there is no guarantee he plays in 2026.",
+    },
+  ],
+},
+{
+  slug: "fantasy-football-league-constitution-template",
+  title: "Fantasy Football League Constitution Template (Full Guide)",
+  excerpt:
+    "A complete fantasy football league constitution template — dues, FAAB, trade vetoes, punishments, commissioner powers — plus why each rule exists.",
+  date: "2026-08-05",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Every dead fantasy league died the same way. A trade got vetoed out of spite, or a 2–8 team stopped setting lineups in December, or the commissioner changed a rule mid-season and half the league called it rigged. None of those are talent problems — they’re governance problems, and every one of them is preventable with a document your league ratifies before the draft. That document is the league constitution: the written rules that decide arguments before they happen. Below is a complete, copy-ready template — not a PDF download — with a short note on why each rule exists, so your league can argue about it once and never again."
+      )
+    ),
+    p(
+      t(
+        "Copy the articles below into a shared doc, fill in the bracketed values, and put the whole thing to a league vote before draft day. Everything here is a starting point — the numbers matter less than the fact that they’re written down "
+      ),
+      em("before"),
+      t(" anyone knows whether they’re contending or tanking.")
+    ),
+    h2("Article I — League structure"),
+    ul(
+      [b("Name and format."), t(" The [League Name] is a [12]-team [redraft / keeper / dynasty] league using [PPR / half-PPR / standard] scoring, hosted on [platform].")],
+      [b("Season."), t(" The regular season runs Weeks 1–[14]. Playoffs run Weeks [15–17] with [6] teams seeded by record, then total points.")],
+      [b("Membership."), t(" A roster spot belongs to a person, not a seat. Members may not share teams or transfer them without a majority league vote.")],
+      [b("Calendar."), t(" Draft date, keeper deadline, trade deadline, and dues deadline are published by [August 1] each year.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "most league fights trace back to something nobody defined. Writing down format, playoff seeding, and who actually owns each team removes the ambiguity that fuels them — tiebreakers especially belong in August, not Week 15."
+      )
+    ),
+    h2("Article II — Dues, payouts, and escrow"),
+    ul(
+      [b("Entry fee."), t(" Dues are $[X] per team, payable to the league treasurer by [two weeks before the draft]. No payment, no draft pick.")],
+      [b("Escrow."), t(" All dues are collected in full before Week 1 and held by the [commissioner / treasurer / league payment app]. Payouts are never fronted from future promises.")],
+      [b("Payout structure."), t(" 1st place: [60]% of the pot. 2nd: [25]%. 3rd: [10]%. Highest regular-season points: [5]%.")],
+      [b("Points-scored payout."), t(" The regular-season points payout exists so a team that misses the playoffs on tiebreakers still has something to play for.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "chasing money in January ruins friendships. Collecting everything up front means the loser has already paid and the winner never has to invoice anybody. The single biggest source of league drama isn’t trades; it’s a champion trying to collect from a guy who went 3–11 and stopped answering texts."
+      )
+    ),
+    h2("Article III — Rosters and scoring"),
+    ul(
+      [b("Starting lineup."), t(" [1 QB, 2 RB, 2 WR, 1 TE, 1 FLEX, 1 DST, 1 K], with [6] bench spots and [2] IR slots.")],
+      [b("Scoring."), t(" Scoring settings are locked on the platform before the draft and attached to this constitution as an appendix.")],
+      [b("Lineup responsibility."), t(" Every member is responsible for setting a legal, active lineup every week of the season — including after elimination.")],
+      [b("Stat corrections."), t(" Official platform stat corrections stand, even when they flip a matchup. No re-litigating games.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "locking scoring before the draft prevents the classic mid-season discovery that a setting was “wrong” — conveniently noticed by the team it hurt. And the lineup clause is the foundation for Article VIII: an eliminated team starting two players on bye can decide a playoff race, so a real lineup is a duty owed to the whole league."
+      )
+    ),
+    h2("Article IV — Waivers and FAAB"),
+    ul(
+      [b("FAAB budget."), t(" Each team receives $[100] in free-agent acquisition budget for the season. No in-season top-ups, no trading FAAB [unless the league votes to allow it].")],
+      [b("Processing."), t(" Waivers process [Wednesday] overnight. Blind bids; ties broken by [reverse standings].")],
+      [b("Zero-dollar bids."), t(" Teams that exhaust their budget may still place $0 bids and add free agents after waivers clear.")],
+      [b("No collusive bidding."), t(" Coordinating bids with another team to steer a player is a collusion offense under Article VII.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "FAAB replaces waiver-priority arguments with a market. Everyone gets the same budget, every bid is a real decision, and nobody can claim the system favored whoever held first priority the week a starting running back hit waivers."
+      )
+    ),
+    h2("Article V — Trades, vetoes, and the deadline"),
+    ul(
+      [b("Deadline."), t(" The trade deadline is [Tuesday of Week 11] at [11:59 PM ET]. No exceptions, including pending trades.")],
+      [b("Review window."), t(" Accepted trades process after a [24-hour] review window.")],
+      [b("Veto standard."), t(" Trades may be reversed only on evidence of collusion — never because the league thinks one side “won” the trade. Lopsided is legal; dishonest is not.")],
+      [b("Veto mechanism."), t(" A veto requires [a majority vote of non-involved members / a ruling by a three-member ethics panel], recorded in the league chat with a stated reason.")],
+      [b("Future considerations."), t(" Side agreements outside the platform (cash, dinner, “I’ll owe you one”) are unenforceable and treated as collusion evidence.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "veto abuse kills more leagues than bad trades do. Managers are entitled to make bad deals; they are not entitled to make fake ones. Writing the standard as “collusion only” protects trade markets from the loudest guy in the chat, and the deadline stops contenders from renting players from checked-out teams in Week 14."
+      )
+    ),
+    h2("Article VI — Keeper rules [if applicable]"),
+    ul(
+      [b("Keeper count."), t(" Each team may keep [0–3] players year over year.")],
+      [b("Cost."), t(" A kept player costs [a draft pick one round earlier than where he was drafted / his auction value plus $5]. Undrafted players cost a [10th]-round pick.")],
+      [b("Declaration deadline."), t(" Keepers must be declared by [two weeks before the draft]. Late declarations forfeit keeper rights for the year.")],
+      [b("Redraft leagues."), t(" Strike this article and note its removal in the amendment log.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "keeper ambiguity is an August time bomb. Escalating costs stop one lucky waiver pickup from being a free first-rounder forever, and a hard declaration deadline means nobody drafts around information other teams don’t have."
+      )
+    ),
+    h2("Article VII — Tanking and collusion"),
+    ul(
+      [b("Good-faith standard."), t(" Every member must manage their team to win each week’s matchup, all season.")],
+      [b("Tanking."), t(" Deliberately benching healthy starters, dropping useful players for nothing, or throwing matchups to affect standings or draft position is prohibited.")],
+      [b("Collusion."), t(" Any agreement between teams to move players or bids for shared benefit — including “loan” trades — is collusion.")],
+      [b("Penalties."), t(" First offense: formal warning and reversal of the move where possible. Second offense: loss of [next year’s first-round pick / eligibility for payouts]. Egregious cases: expulsion by [two-thirds] vote, with dues forfeited.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "one tanking team distorts every playoff race it touches — the contenders who play the tanker in December get free wins the rest of the field never got. Naming the offense and the penalty in writing lets the commissioner act on it without the ruling looking personal."
+      )
+    ),
+    h2("Article VIII — Punishments and enforcement"),
+    ul(
+      [b("Last-place punishment."), t(" The last-place finisher must complete [the punishment], as ratified by league vote before the draft, no later than [next year’s draft day].")],
+      [b("Proof."), t(" Completion requires [photo / video] evidence posted to the league chat.")],
+      [b("Punishment escrow."), t(" Each member posts a $[25] punishment deposit with their dues, refunded on completion. Skipping the punishment forfeits the deposit and next year’s roster spot.")],
+      [b("No-shows and quitters."), t(" A member who abandons their team mid-season (two consecutive weeks with an illegal or unset lineup, unresponsive to the commissioner) forfeits dues, is replaced at the commissioner’s discretion, and automatically inherits the last-place punishment.")],
+      [b("Buyout."), t(" The league may set a pre-agreed cash buyout of $[X] — decided now, not after someone loses.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "punishments written after the season are negotiations; punishments written before the season are contracts. Every clause here — proof, deposit, buyout — exists because a loser somewhere developed amnesia in January. The quitter clause matters most: the member who abandons ship in November does more damage than the one who finishes last trying. If you still need the punishment itself, we ranked "
+      ),
+      lk("46 fantasy football punishment ideas by severity", "/blog/fantasy-football-punishment-ideas"),
+      t(" — pick one and ratify it with this document.")
+    ),
+    h2("Article IX — Commissioner powers and limits"),
+    ul(
+      [b("Duties."), t(" The commissioner maintains league settings, collects and disburses funds, publishes the calendar, and rules on situations this constitution doesn’t cover.")],
+      [b("Limits."), t(" The commissioner may not change scoring, rosters, payouts, or playoff format mid-season, and may not rule on any matter involving their own team — those go to [a designated co-commissioner / an ethics panel of three uninvolved members].")],
+      [b("Transparency."), t(" Every commissioner ruling is posted in the league chat with a reason within [48 hours].")],
+      [b("Removal."), t(" A commissioner may be replaced mid-season by a [two-thirds] vote of all other members.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "a commissioner with unlimited power is a coup waiting to happen; a commissioner with no power can’t stop a tanker. The recusal clause is the one leagues skip and regret — the first time a commissioner rules on their own trade, trust never fully comes back."
+      )
+    ),
+    h2("Article X — Dispute resolution"),
+    ul(
+      [b("Step one."), t(" Disputes go to the commissioner in writing within [48 hours] of the triggering event.")],
+      [b("Step two."), t(" If the commissioner is involved or the ruling is contested, a [three-member] panel of uninvolved managers decides by majority vote.")],
+      [b("Finality."), t(" Panel rulings are final for the season. Losing parties may propose a rule change under Article XI for future seasons.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "the 48-hour window stops six-week-old grievances from resurfacing during the playoffs, and finality means the league argues about rules once, then moves on."
+      )
+    ),
+    h2("Article XI — Amendments"),
+    ul(
+      [b("Proposal window."), t(" Rule changes may be proposed by any member during the offseason window ([end of season through two weeks before the draft]).")],
+      [b("Vote."), t(" Amendments pass with a [two-thirds] majority and take effect the following season.")],
+      [b("Mid-season freeze."), t(" No rule affecting scoring, rosters, payouts, or playoffs may change during the season — the only exception is a unanimous vote.")],
+      [b("The log."), t(" Every passed amendment is dated and appended to this document.")]
+    ),
+    p(
+      em("Why this rule exists: "),
+      t(
+        "mid-season rule changes always help someone specific, and everyone knows exactly who. The supermajority keeps a 7–5 voting bloc from rewriting the league, and the unanimous-consent exception still lets you fix a genuine emergency."
+      )
+    ),
+    hr(),
+    h2("How to adopt your constitution"),
+    p(
+      t("Don’t email this out and call it ratified. Do it properly, once:")
+    ),
+    ul(
+      [b("Fill in the brackets first."), t(" Circulate a completed draft — real numbers, real deadlines — two weeks before the draft, so people vote on specifics, not vibes.")],
+      [b("Vote before draft day."), t(" Ratify by [two-thirds] vote while everyone still believes they’re winning the title. Nobody negotiates in good faith after Week 10. If you’re not sure how much runway you have, check "), lk("when fantasy football starts", "/blog/when-does-fantasy-football-start"), t(" and work backward.")],
+      [b("Get affirmative agreement."), t(" A thumbs-up emoji from every member in the league chat is your signature page. Silence is not consent — chase the stragglers.")],
+      [b("Pin it where the league lives."), t(" League chat, group doc, or your platform’s league notes. A constitution nobody can find governs nothing.")],
+      [b("Revisit it every offseason."), t(" Open the amendment window, vote on proposals, log the changes. Ten minutes a year keeps the document alive instead of stale.")]
+    ),
+    h2("The rule no document can enforce: engagement"),
+    p(
+      t(
+        "A constitution stops disputes, but it can’t make a casual member care in Week 12 — and disengaged members are where quitters come from. The best commissioners solve that with lower effort, not more rules. Scoutcast.ai turns each member’s teams and players into a ~2-minute daily audio briefing they can play while making coffee, and the NFL Fantasy Pass ($49.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around their actual fantasy roster — waivers, start/sit, matchup stakes. A league where “I didn’t have time to follow football this week” stops being true is a league where Articles VII and VIII rarely get invoked. It also pairs well with the rest of a modern commissioner’s stack — see "
+      ),
+      lk("the best fantasy football apps for 2026", "/blog/best-fantasy-football-apps-2026"),
+      t(".")
+    ),
+    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+  ],
+  faqs: [
+    {
+      question: "What should a fantasy football league constitution include?",
+      answer:
+        "At minimum: league structure and playoff format, dues and payout structure with a payment deadline, roster and scoring settings, waiver/FAAB rules, trade rules with a deadline and veto policy, a tanking and collusion policy with penalties, last-place punishment and quitter enforcement, commissioner powers and limits, a dispute-resolution process, and an amendment procedure. Keeper or dynasty leagues also need keeper costs and declaration deadlines.",
+    },
+    {
+      question: "What is a fair trade veto policy?",
+      answer:
+        "The consensus fair standard is collusion-only: trades are reversed exclusively when there’s evidence of dishonest dealing, never because voters think one side lost the trade. Pair it with a 24-hour review window and require any veto to come from a majority of non-involved members (or an ethics panel) with a stated, recorded reason. Vetoing “bad” trades kills trade markets and is the fastest way to make managers quit.",
+    },
+    {
+      question: "How are fantasy football punishments actually enforced?",
+      answer:
+        "Enforcement has to be written before the season: name the punishment, a completion deadline, and a proof requirement (photo or video to the league chat) in the constitution, then collect a refundable punishment deposit alongside dues. Skipping the punishment forfeits the deposit and next year’s roster spot. A pre-agreed cash buyout, set before anyone loses, removes the January negotiation entirely.",
+    },
+    {
+      question: "When should a league adopt its constitution?",
+      answer:
+        "Before the draft — ideally ratified by a two-thirds vote at least two weeks out, while every member still believes they’re a contender. Rules written after the season starts always look like they target someone. Revisit the document every offseason through a formal amendment window and log any changes.",
+    },
+    {
+      question: "Can fantasy league rules change mid-season?",
+      answer:
+        "They shouldn’t, and a good constitution says so explicitly: no mid-season changes to scoring, rosters, payouts, or playoff format, with a single exception for a unanimous league vote. Mid-season changes always benefit someone specific, which makes even well-intentioned fixes look rigged. Genuine problems get logged and voted on in the offseason amendment window.",
+    },
+  ],
+},
+{
+  slug: "what-is-ppr-in-fantasy-football",
+  title: "What Is PPR in Fantasy Football? PPR Meaning Explained",
+  excerpt:
+    "PPR means ‘point per reception’: every catch is worth 1 fantasy point (0.5 in half PPR, 0 in standard). Here’s how it changes player value and your draft.",
+  date: "2026-08-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "PPR stands for ‘point per reception.’ In a PPR fantasy football league, every catch a player makes is worth one fantasy point on top of whatever yardage and touchdown points he earns. Half PPR awards 0.5 points per catch, and standard (non-PPR) scoring awards nothing for the catch itself. That one setting is the single biggest difference between fantasy leagues, because it decides how valuable pass-catchers are relative to pure runners."
+      )
+    ),
+    p(
+      t(
+        "If a wide receiver catches 8 passes for 80 yards, he scores 8 points in standard, 12 points in half PPR, and 16 points in full PPR — double the standard total, from the exact same real-life game. That’s why the first question to ask about any fantasy league is not ‘who should I draft?’ but ‘what’s the scoring?’"
+      )
+    ),
+
+    h2("PPR vs. half PPR vs. standard: the comparison"),
+    p(
+      t(
+        "All three formats use the same base scoring — typically 1 point per 10 rushing or receiving yards, 1 point per 25 passing yards, 6 points for a rushing or receiving touchdown, and 4 for a passing touchdown. The only difference is what a reception is worth:"
+      )
+    ),
+    tbl(
+      [[t("Format")], [t("Points per catch")], [t("What it rewards")]],
+      [
+        [
+          [b("Full PPR")],
+          [t("1.0")],
+          [t("Volume pass-catchers; possession receivers and receiving backs")],
+        ],
+        [
+          [b("Half PPR")],
+          [t("0.5")],
+          [t("A middle ground; catches matter but yards and TDs still dominate")],
+        ],
+        [
+          [b("Standard (non-PPR)")],
+          [t("0")],
+          [t("Yardage and touchdowns only; favors workhorse runners")],
+        ],
+      ]
+    ),
+    p(
+      t(
+        "The gap compounds over a season. A slot receiver who catches 100 passes gets a 100-point bonus in full PPR — roughly six extra points per week — while a between-the-tackles running back with 20 catches gets almost nothing. Same players, wildly different fantasy value."
+      )
+    ),
+
+    h2("How PPR changes player value"),
+    p(
+      t(
+        "PPR doesn’t change how anyone plays football; it changes which real-world skills your league pays for. The biggest movers:"
+      )
+    ),
+    ul(
+      [
+        b("Pass-catching running backs jump up."),
+        t(
+          " A back who catches 60–80 passes a year can outscore a ‘better’ runner who never sees a target. In full PPR, satellite and third-down backs become legitimate weekly starters instead of desperation plays."
+        ),
+      ],
+      [
+        b("Slot receivers and target hogs get a floor."),
+        t(
+          " High-volume receivers who catch 7–10 short passes a game score respectably even without a touchdown. In standard, those same games can be nearly worthless."
+        ),
+      ],
+      [
+        b("Big-play, low-volume players lose ground."),
+        t(
+          " A deep threat who catches 3 passes for 90 yards is fine in standard but falls behind volume receivers in PPR. Touchdown-dependent players get riskier relative to target-dependent ones."
+        ),
+      ],
+      [
+        b("Elite tight ends gain separation."),
+        t(
+          " The few tight ends who see 100+ targets pull even further ahead of the mid-tier at the position, which changes when the position is worth drafting."
+        ),
+      ],
+    ),
+
+    h2("Which platforms default to which scoring"),
+    p(
+      t(
+        "If you joined a league and never touched the settings, the platform default is almost certainly what you’re playing with:"
+      )
+    ),
+    tbl(
+      [[t("Platform")], [t("Default scoring")]],
+      [
+        [[b("ESPN")], [t("Full PPR (1.0) — the default since 2019")]],
+        [[b("Sleeper")], [t("Full PPR (1.0)")]],
+        [[b("Yahoo")], [t("Half PPR (0.5)")]],
+        [
+          [b("NFL Fantasy")],
+          [
+            t(
+              "Historically full PPR; NFL.com leagues are migrating to ESPN’s platform"
+            ),
+          ],
+        ],
+      ]
+    ),
+    p(
+      t(
+        "Yahoo confirms the 0.5-per-reception default in its "
+      ),
+      lk(
+        "official league settings documentation",
+        "https://help.yahoo.com/kb/default-league-settings-scoring-stats-fantasy-football-sln6489.html"
+      ),
+      t(
+        ". But defaults are only defaults — any commissioner can change the reception value before the season starts, so never assume."
+      )
+    ),
+
+    h2("How to check your league’s scoring"),
+    p(
+      t(
+        "It takes about 30 seconds, and it’s the highest-leverage half-minute of your draft prep:"
+      )
+    ),
+    ul(
+      [
+        b("ESPN:"),
+        t(
+          " open your league, go to League → Settings → Scoring, and look for ‘Each reception’ under receiving."
+        ),
+      ],
+      [
+        b("Sleeper:"),
+        t(
+          " tap your league, then Settings (gear icon) → Scoring Settings, and check the ‘Reception’ value."
+        ),
+      ],
+      [
+        b("Yahoo:"),
+        t(
+          " from your league page, go to League → Settings and scroll to the scoring section; ‘Receptions’ shows the per-catch value."
+        ),
+      ],
+    ),
+    p(
+      t(
+        "While you’re in there, also glance at passing touchdowns (4 vs. 6 points) and whether the league uses bonuses like points per first down — those quietly reshape value too."
+      )
+    ),
+
+    h2("How PPR changes your draft strategy"),
+    p(
+      t(
+        "In full PPR, receivers and pass-catching backs climb the board, so wide receiver–heavy starts and Zero RB builds get much more viable — you can fill running back later with reception-driven backs who have a stable weekly floor. In standard, workhorse running backs who dominate carries and goal-line work are scarcer and more valuable, so grabbing two early tends to be the safer plan. Half PPR sits between the two: still respect the elite backs, but don’t ignore target volume."
+      )
+    ),
+    p(
+      t("Whatever the format, draft from rankings built for it. Our "),
+      lk("2026 fantasy football rankings", "/blog/fantasy-football-rankings-2026"),
+      t(
+        " break out PPR value, and it’s worth understanding "
+      ),
+      lk("how ADP works", "/blog/what-is-adp-fantasy-football"),
+      t(
+        " — a player’s average draft position on a full-PPR platform like Sleeper can be a round different from his cost in a half-PPR Yahoo league. For the bigger picture on roster construction, see our "
+      ),
+      lk(
+        "2026 draft strategy guide",
+        "/blog/fantasy-football-draft-strategy-2026"
+      ),
+      t(".")
+    ),
+
+    h2("The bottom line"),
+    p(
+      t(
+        "PPR is just one number — 1, 0.5, or 0 points per catch — but it quietly decides which players win you your league. Check your league’s setting before you rank a single player, tilt toward target volume as the reception value climbs, and remember that a ‘bad’ real-life game with 9 catches can be a great fantasy day in PPR."
+      )
+    ),
+    p(
+      t(
+        "And if keeping up with target shares, depth charts, and injury news sounds like a lot — that’s the problem Scoutcast.ai exists to solve. It’s a ~2-minute daily audio briefing on your teams and players, so beginners stay current without drowning in research. The NFL Fantasy Pass ($49.99/season) goes further with league-specific briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call)."
+      )
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "What does PPR mean in fantasy football?",
+      answer:
+        "PPR stands for ‘point per reception.’ In PPR leagues, a player earns one fantasy point for every catch he makes, in addition to standard points for yardage and touchdowns. Half PPR awards 0.5 points per catch, and standard (non-PPR) scoring awards nothing for receptions.",
+    },
+    {
+      question: "What is the difference between PPR, half PPR, and standard scoring?",
+      answer:
+        "The only difference is the value of a reception: 1 point in full PPR, 0.5 in half PPR, and 0 in standard. All three formats typically score yardage and touchdowns the same way — about 1 point per 10 rushing or receiving yards, 1 per 25 passing yards, 6 for rushing or receiving touchdowns, and 4 for passing touchdowns.",
+    },
+    {
+      question: "Is PPR or standard scoring better for beginners?",
+      answer:
+        "Most beginners should play PPR or half PPR, because it’s what the major platforms default to — ESPN and Sleeper default to full PPR and Yahoo defaults to half PPR — which means most rankings, ADP data, and advice you’ll find online assume reception points. PPR also produces higher, steadier weekly scores, which makes early lineup decisions less punishing.",
+    },
+    {
+      question: "Which fantasy platforms default to PPR scoring?",
+      answer:
+        "ESPN has defaulted new leagues to full PPR (1 point per reception) since 2019, and Sleeper also defaults to full PPR. Yahoo defaults to half PPR (0.5 points per reception). Commissioners can change the setting on any platform, so always check your specific league’s scoring page before drafting.",
+    },
+    {
+      question: "Who gains the most value in PPR leagues?",
+      answer:
+        "Pass-catching running backs and high-target slot receivers gain the most, because every catch adds a point regardless of yardage. A back who catches 60–80 passes or a receiver who sees 8–10 targets a game becomes far more valuable in PPR, while touchdown-dependent deep threats and pure between-the-tackles runners lose relative value.",
+    },
+  ],
+},
+{
+  slug: "how-does-fantasy-football-work",
+  title: "How Does Fantasy Football Work? A Beginner’s Guide",
+  excerpt:
+    "You draft real NFL players, start a lineup each week, and their real-game stats become your points. Highest score wins. Here’s the full beginner walkthrough.",
+  date: "2026-08-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Fantasy football works like this: you join a league (usually 8–12 people), draft a roster of real NFL players before the season, and each week you start a lineup that scores fantasy points based on those players’ actual game stats — yards, touchdowns, catches. Every week you face one other person in your league head-to-head, the higher score wins, and the best records make the playoffs in December. That’s the whole game."
+      )
+    ),
+    p(
+      t(
+        "Everything else — waivers, trades, PPR, flex spots — is detail layered on top of that loop. Here’s how a full season actually plays out, what your roster looks like, what it costs, and how much time it really takes."
+      )
+    ),
+
+    h2("The season lifecycle: league → draft → lineups → playoffs"),
+    ul(
+      [
+        b("1. Join or start a league (July–August)."),
+        t(
+          " Free on ESPN, Sleeper, or Yahoo. Join friends, coworkers, or a public league. Most leagues have 10 or 12 teams."
+        ),
+      ],
+      [
+        b("2. Draft your team (late August–early September)."),
+        t(
+          " Everyone takes turns picking NFL players until rosters are full — usually 15–16 rounds, snake order (the pick order reverses each round). Most drafts happen in the two weeks before the season; see "
+        ),
+        lk(
+          "when fantasy football starts",
+          "/blog/when-does-fantasy-football-start"
+        ),
+        t(" for exact 2026 timing."),
+      ],
+      [
+        b("3. Set your lineup every week (September–December)."),
+        t(
+          " Before games kick off, you choose which players start and which sit on your bench. Only starters score points for you."
+        ),
+      ],
+      [
+        b("4. Work the waiver wire and make trades."),
+        t(
+          " Undrafted players (and players others drop) sit in a free-agent pool. Each week — typically Tuesday night into Wednesday — you can claim them via ‘waivers’ to replace injured or underperforming players. You can also trade players with other managers."
+        ),
+      ],
+      [
+        b("5. Make the playoffs and win it all."),
+        t(
+          " After a roughly 14-week regular season, the top 4–6 teams enter a single-elimination bracket in NFL Weeks 15–17. Win the championship week and you take the trophy (and the bragging rights)."
+        ),
+      ],
+    ),
+
+    h2("What your roster looks like"),
+    p(
+      t(
+        "A typical starting lineup has 9 slots, plus a bench. Here’s the standard setup on most platforms:"
+      )
+    ),
+    tbl(
+      [[t("Position")], [t("Typical starters")], [t("What it is")]],
+      [
+        [[b("QB")], [t("1")], [t("Quarterback — scores on passing yards and TDs")]],
+        [[b("RB")], [t("2")], [t("Running backs — rushing yards, TDs, catches")]],
+        [[b("WR")], [t("2")], [t("Wide receivers — catches, receiving yards, TDs")]],
+        [[b("TE")], [t("1")], [t("Tight end — scores like a receiver")]],
+        [
+          [b("FLEX")],
+          [t("1")],
+          [t("A wildcard slot: start any extra RB, WR, or TE")],
+        ],
+        [[b("K")], [t("1")], [t("Kicker — field goals and extra points")]],
+        [
+          [b("DST")],
+          [t("1")],
+          [t("A whole team’s defense/special teams — sacks, turnovers, TDs")],
+        ],
+        [
+          [b("Bench")],
+          [t("6–7")],
+          [t("Reserves who don’t score; your injury and bye-week insurance")],
+        ],
+        [
+          [b("IR")],
+          [t("0–2")],
+          [t("Injured reserve slots for players who are officially out")],
+        ],
+      ]
+    ),
+    p(
+      t(
+        "Every NFL team has one bye week (a week off), so part of the weekly job is making sure you’re not starting someone whose team isn’t playing."
+      )
+    ),
+
+    h2("How scoring works"),
+    p(
+      t(
+        "Your players’ real stats convert to points automatically. Typical default values: 1 point per 10 rushing or receiving yards, 1 point per 25 passing yards, 6 points for a rushing or receiving touchdown, 4 points for a passing touchdown, and minus 2 for interceptions or lost fumbles. A good weekly team score lands somewhere around 100–130 points in most formats."
+      )
+    ),
+    p(
+      t(
+        "The setting that varies most between leagues is the value of a catch. Many leagues award 1 point per reception (‘PPR’) or 0.5 (‘half PPR’), which makes pass-catchers significantly more valuable. It’s worth two minutes to understand — here’s our full explainer on "
+      ),
+      lk("what PPR means", "/blog/what-is-ppr-in-fantasy-football"),
+      t(" and how to check your league’s settings.")
+    ),
+
+    h2("Redraft vs. keeper vs. dynasty"),
+    p(
+      t(
+        "In a redraft league — the default, and what beginners should play — everyone starts from scratch with a fresh draft every year. Keeper leagues let each manager carry over a few players (usually 1–3) to next season, adding a light long-term element. Dynasty leagues keep entire rosters year over year and add rookie drafts, which is deeply strategic but a big commitment — save it for year two or three."
+      )
+    ),
+
+    h2("What fantasy football costs"),
+    p(
+      t(
+        "Nothing, if you want. ESPN, Sleeper, and Yahoo are all free to play, including drafts, waivers, trades, and live scoring. Many friend leagues add an entry fee — commonly $20–$100 per person — that pays out to the season’s top finishers, but that’s a league choice, not a platform requirement. Optional extras like premium research tools or draft kits exist, but a beginner needs none of them to play and win."
+      )
+    ),
+
+    h2("How much time does it take?"),
+    p(
+      t(
+        "Honestly: about 1–5 hours a week during the season, and you control where on that range you land. The floor is roughly an hour — set your lineup midweek, put in a waiver claim or two, check for injury news Sunday morning. The ceiling is a genuine hobby: reading matchup analysis, negotiating trades, and watching every game with a scoreboard open. Both versions are fun; the game doesn’t require the ceiling."
+      )
+    ),
+    p(
+      t(
+        "If your life only allows the floor, build a lean routine — we wrote a whole system for "
+      ),
+      lk(
+        "playing fantasy football as a busy parent",
+        "/blog/fantasy-football-for-busy-parents"
+      ),
+      t(
+        " that fits the entire week into about 30 focused minutes. And when you’re ready to go a level deeper, here’s "
+      ),
+      lk(
+        "how to research fantasy football",
+        "/blog/how-to-research-fantasy-football"
+      ),
+      t(" without losing your evenings.")
+    ),
+
+    h2("Your first-season game plan"),
+    p(
+      t(
+        "Join a 10- or 12-team league with people you know, draft in late August, and don’t overthink it: start your studs, check injury reports before kickoff, and make one or two waiver moves a week. Most first-year managers who simply avoid starting injured or bye-week players finish mid-pack or better — the biggest beginner mistake isn’t bad strategy, it’s inattention."
+      )
+    ),
+    p(
+      t(
+        "That’s also exactly the gap Scoutcast.ai covers. It’s a ~2-minute daily audio briefing on your players and teams — injuries, depth-chart moves, who’s trending — so beginners stay sharp without drowning in research or doomscrolling four apps. The NFL Fantasy Pass ($49.99/season) adds briefings built around your actual league: Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call)."
+      )
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+    hr(),
+  ],
+  faqs: [
+    {
+      question: "How does fantasy football work in simple terms?",
+      answer:
+        "You join a league of 8–12 people, draft real NFL players onto your team, and start a lineup each week. Your players’ real-game stats — yards, touchdowns, catches — convert into fantasy points, you face one leaguemate head-to-head each week, and the higher score wins. The best records make the playoffs in December, and the bracket winner is league champion.",
+    },
+    {
+      question: "Is fantasy football free to play?",
+      answer:
+        "Yes. ESPN, Sleeper, and Yahoo all offer completely free leagues with drafts, live scoring, waivers, and trades included. Many private leagues choose to add an entry fee — commonly $20–$100 — that pays out to top finishers, but paying is a league decision, not a requirement.",
+    },
+    {
+      question: "How much time does fantasy football take each week?",
+      answer:
+        "Plan on 1–5 hours per week during the season, depending on how deep you go. The minimum viable routine is about an hour: set your lineup midweek, make a waiver claim, and check injury news before Sunday kickoff. More competitive managers spend extra time on matchup research and trades, but it’s optional.",
+    },
+    {
+      question: "What positions do you start in fantasy football?",
+      answer:
+        "A standard lineup starts 9 players: 1 quarterback, 2 running backs, 2 wide receivers, 1 tight end, 1 FLEX (an extra RB, WR, or TE of your choice), 1 kicker, and 1 team defense/special teams. You’ll also have 6–7 bench spots for reserves and often an IR slot for injured players.",
+    },
+    {
+      question: "How do waivers work in fantasy football?",
+      answer:
+        "Players nobody drafted (or that managers dropped) go into a shared free-agent pool. Each week — typically processing Tuesday night into Wednesday morning — you can submit waiver claims for those players, dropping someone from your roster to make room. Claim priority usually goes to weaker teams first, or via a FAAB bidding budget, depending on league settings.",
+    },
+    {
+      question: "What’s the difference between redraft, keeper, and dynasty leagues?",
+      answer:
+        "Redraft leagues reset completely each year with a fresh draft, and they’re the best format for beginners. Keeper leagues let each manager retain a few players (usually 1–3) into the next season. Dynasty leagues carry over entire rosters year after year and add rookie drafts, making them the most strategic and highest-commitment format.",
+    },
+  ],
+},
+{
+  slug: "what-is-a-flex-in-fantasy-football",
+  title: "What Is a Flex in Fantasy Football? Explained Simply",
+  excerpt:
+    "The flex is a lineup spot you can fill with an RB, WR, or TE — your choice each week. Here's how it works, what superflex means, and who to put in it.",
+  date: "2026-08-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "A flex in fantasy football is a starting lineup spot that can be filled by more than one position — in most leagues, a running back, wide receiver, or tight end. Unlike your RB or WR slots, which lock you into one position, the flex lets you start whichever eligible player you think will score the most points that week."
+      )
+    ),
+    p(
+      t(
+        "That's the whole concept. The default lineup on ESPN, Yahoo, and Sleeper is 1 QB, 2 RB, 2 WR, 1 TE, 1 flex, 1 kicker, and 1 defense — so in a standard league, the flex is effectively your seventh skill-position starter and the one genuine weekly decision your roster forces on you. Here's how eligibility works, what the variants mean, and a simple framework for actually picking the player."
+      )
+    ),
+
+    h2("What positions are flex eligible?"),
+    p(
+      t("In a standard flex ("),
+      t("sometimes labeled "),
+      b("W/R/T"),
+      t(
+        " on Yahoo), you can start a running back, wide receiver, or tight end. Quarterbacks, kickers, and defenses are never eligible for a normal flex spot. Some leagues tweak the eligibility list, and the slot's label tells you exactly what's allowed:"
+      )
+    ),
+    ul(
+      [
+        b("FLEX or W/R/T:"),
+        t(
+          " RB, WR, or TE. This is the default on ESPN, Yahoo, and Sleeper and by far the most common setup."
+        ),
+      ],
+      [
+        b("W/R:"),
+        t(
+          " WR or RB only. Some leagues exclude tight ends to keep elite TEs from being doubled up."
+        ),
+      ],
+      [
+        b("W/T:"),
+        t(" WR or TE only — rarer, usually in older or custom league formats."),
+      ],
+      [
+        b("Superflex (Q/W/R/T):"),
+        t(
+          " any offensive skill player including a quarterback. More on this below, because it changes everything."
+        ),
+      ],
+    ),
+    p(
+      t(
+        "If you're ever unsure, tap the flex slot on your platform — it will only show you players who are eligible to fill it."
+      )
+    ),
+
+    h2("What is a superflex?"),
+    p(
+      t("A "),
+      b("superflex"),
+      t(
+        " is a flex spot that also accepts quarterbacks. Because QBs reliably outscore every other position — a mid-range starting quarterback usually beats a good RB or WR week over week — the correct play in a superflex league is almost always to start a second quarterback in that slot. Only start an RB or WR there if your second QB is on bye, injured, or facing a brutal matchup with no alternative."
+      )
+    ),
+    p(
+      t(
+        "The bigger impact is on draft day: in superflex leagues, quarterbacks get drafted dramatically earlier because every team wants two starters. If you join a superflex league and draft it like a normal league, you'll be starting waiver-wire QBs all season. Check your league's lineup settings "
+      ),
+      em("before"),
+      t(" you draft, not after.")
+    ),
+
+    h2("Flex strategy: who should you actually start?"),
+    p(
+      t(
+        "The flex decision comes down to one question: which eligible player has the highest realistic point expectation this week? A few principles get you most of the way there:"
+      )
+    ),
+    ul(
+      [
+        b("Volume beats talent."),
+        t(
+          " A running back projected for 18 touches or a receiver seeing 8–9 targets is a safer flex than a big-name player in a crowded rotation. Touches and targets are the currency of fantasy points."
+        ),
+      ],
+      [
+        b("In PPR, lean RB/WR over TE."),
+        t(
+          " In leagues that award a point per reception, pass-catching backs and high-target receivers pile up catches that most tight ends simply don't get. Outside the elite few, TEs are low-floor, touchdown-dependent plays — a risky profile for a flex. (New to scoring formats? See "
+        ),
+        lk("what PPR means", "/blog/what-is-ppr-in-fantasy-football"),
+        t(".)"),
+      ],
+      [
+        b("Think matchup, not reputation."),
+        t(
+          " A mediocre receiver facing the league's worst pass defense often outscores a star facing its best. Vegas lines help too: players in games with high point totals tend to score more fantasy points."
+        ),
+      ],
+      [
+        b("Floor vs. ceiling depends on the week."),
+        t(
+          " Favored to win your matchup? Start the safe, high-volume player. A big underdog? Take the boom-or-bust deep threat — you need the ceiling."
+        ),
+      ],
+    ),
+
+    h2("Common beginner mistakes"),
+    ul(
+      [
+        b("Starting a name instead of a role."),
+        t(
+          " Last year's star who lost his job to a rookie is not a flex play, no matter how familiar the name feels."
+        ),
+      ],
+      [
+        b("Flexing a touchdown-dependent TE over a volume WR."),
+        t(
+          " If your tight end needs a touchdown to reach 10 points and your receiver gets there on catches alone, start the receiver."
+        ),
+      ],
+      [
+        b("Ignoring the Thursday trap."),
+        t(
+          " Flexing a Thursday player locks that spot before Sunday's injury news breaks. It's fine — just make sure you're confident, because you can't pivot."
+        ),
+      ],
+      [
+        b("Forgetting byes and game status."),
+        t(
+          " The single most common flex error is leaving a bye-week or inactive player in the slot. Check your lineup Sunday morning, every week."
+        ),
+      ],
+    ),
+
+    h2("Quick decision framework: who do I flex?"),
+    tbl(
+      [[t("Situation")], [t("Flex this")], [t("Why")]],
+      [
+        [
+          [t("PPR league, need a safe floor")],
+          [t("High-target WR or pass-catching RB")],
+          [t("Receptions guarantee points even without a TD")],
+        ],
+        [
+          [t("Standard scoring, close call")],
+          [t("The RB with more projected touches")],
+          [t("Rushing volume is the steadiest path to points")],
+        ],
+        [
+          [t("You're a big underdog this week")],
+          [t("Boom-or-bust deep threat")],
+          [t("You need ceiling, not floor, to pull the upset")],
+        ],
+        [
+          [t("Two similar players, different matchups")],
+          [t("The one facing the weaker defense")],
+          [t("Matchup is the tiebreaker when volume is equal")],
+        ],
+        [
+          [t("Superflex league")],
+          [t("Your second QB, almost always")],
+          [t("Even average QBs outscore good RBs and WRs")],
+        ],
+        [
+          [t("Tempted by a mid-tier TE")],
+          [t("Usually the WR or RB instead")],
+          [t("Non-elite TEs are touchdown-dependent and low-floor")],
+        ],
+      ]
+    ),
+    p(
+      t("Still stuck on a specific pair of players? Our "),
+      lk("start/sit guide", "/blog/fantasy-football-start-sit"),
+      t(" walks through the tiebreakers in more depth, and our "),
+      lk("2026 rankings", "/blog/fantasy-football-rankings-2026"),
+      t(" are a solid baseline when two options feel identical.")
+    ),
+
+    hr(),
+
+    p(
+      t(
+        "One last edge: flex decisions are won with information, and most of it breaks during the week — injury designations, depth-chart shifts, a backup suddenly trending toward a start. Scoutcast.ai turns that into a ~2-minute daily audio briefing built around your teams and players, so you hear the news before your league does. The NFL Fantasy Pass ($49.99/season) goes further with Tuesday, Wednesday, Thursday, and Sunday briefings specific to your actual league — including flex-relevant lineup calls and waiver targets."
+      )
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+  ],
+  faqs: [
+    {
+      question: "What is a flex in fantasy football?",
+      answer:
+        "A flex is a starting lineup spot that can be filled by more than one position — in most leagues a running back, wide receiver, or tight end. It sits alongside your fixed RB, WR, and TE slots and lets you start whichever eligible player you expect to score the most points that week.",
+    },
+    {
+      question: "Should I put a TE in the flex?",
+      answer:
+        "Usually not. Outside the elite tier, tight ends see fewer targets than starting receivers and rely on touchdowns for their points, which makes them low-floor flex plays — especially in PPR leagues, where high-volume WRs and pass-catching RBs rack up reception points. Flex a TE only when he has a genuinely strong target share or an exceptional matchup.",
+    },
+    {
+      question: "What is a superflex in fantasy football?",
+      answer:
+        "A superflex is a flex spot that also accepts quarterbacks (RB, WR, TE, or QB). Because quarterbacks consistently outscore other positions, you should almost always start a second QB in a superflex slot, and QBs get drafted much earlier in superflex leagues as a result.",
+    },
+    {
+      question: "Can you put a quarterback in a normal flex spot?",
+      answer:
+        "No. A standard flex only accepts running backs, wide receivers, and tight ends. Quarterbacks are only flex-eligible in superflex leagues, where the slot is usually labeled Q/W/R/T or SUPERFLEX. Kickers and defenses are never flex-eligible.",
+    },
+    {
+      question: "Who should I put in my flex this week?",
+      answer:
+        "Start the eligible player with the best combination of volume and matchup: projected touches or targets first, opposing defense second. In PPR leagues lean toward high-target WRs and pass-catching RBs; if you're a heavy underdog, favor a high-ceiling player over a safe floor. When it's truly close, the player in the higher-scoring projected game is a good tiebreaker.",
+    },
+  ],
+},
+{
+  slug: "what-is-faab-in-fantasy-football",
+  title: "What Is FAAB in Fantasy Football? Bidding Explained",
+  excerpt:
+    "FAAB (Free Agent Acquisition Budget) is a season-long budget — usually $100 — you spend in blind bids to claim waiver players. Here's how to bid it well.",
+  date: "2026-08-08",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "FAAB stands for Free Agent Acquisition Budget: a fixed pot of fake money — typically $100 for the season — that every manager uses to bid on players on the waiver wire. When waivers process, the highest blind bid wins the player and that amount is deducted from the winner's budget. Spend it all, and you're limited to players nobody else bids on for the rest of the year."
+      )
+    ),
+    p(
+      t(
+        "FAAB has become the preferred waiver system in serious leagues because it rewards judgment instead of luck or a bad record: everyone has the same budget, every bid is sealed, and how much a breakout player is worth to you is a genuine strategic decision. Here's how it compares to the other waiver systems, when claims actually process, and how much to bid."
+      )
+    ),
+
+    h2("FAAB vs. rolling waivers vs. reverse standings"),
+    p(
+      t(
+        "Every league needs a rule for what happens when two managers want the same free agent. There are three common systems:"
+      )
+    ),
+    tbl(
+      [[t("System")], [t("How it decides")], [t("The catch")]],
+      [
+        [
+          [b("FAAB bidding")],
+          [t("Highest blind bid wins; amount comes out of a season-long budget")],
+          [t("Overspend early and you're broke for the stretch run")],
+        ],
+        [
+          [b("Rolling waivers")],
+          [
+            t(
+              "Priority list; win a claim and you drop to the bottom while everyone else moves up"
+            ),
+          ],
+          [t("You hoard your #1 spot and agonize over when to burn it")],
+        ],
+        [
+          [b("Reverse standings")],
+          [t("Worst record gets first pick, resetting every week")],
+          [t("Rewards losing; the best teams almost never land the big adds")],
+        ],
+      ]
+    ),
+    p(
+      t(
+        "Platform defaults vary: Sleeper defaults to rolling waivers, ESPN defaults to a weekly reverse-standings reset, and Yahoo defaults to a continual rolling list — but all three support FAAB, and both Yahoo and Sleeper use a $100 budget as the standard when it's turned on. If you're brand new to leagues and lineups in general, start with "
+      ),
+      lk("how fantasy football works", "/blog/how-does-fantasy-football-work"),
+      t(" and come back.")
+    ),
+
+    h2("When do waivers process?"),
+    p(
+      t(
+        "On default settings, players lock onto waivers when the week's games begin and claims process early "
+      ),
+      b("Wednesday morning, roughly 3–5 AM ET"),
+      t(
+        ", on ESPN, Yahoo, and Sleeper alike. That's why fantasy players talk about “waiver Wednesday”: you submit bids Monday or Tuesday after watching the week's games, the platform resolves every claim overnight, and Wednesday morning you wake up to find out what you won. After waivers clear, unclaimed players become free agents anyone can add instantly — first come, first served — until they lock again at kickoff."
+      )
+    ),
+    p(
+      t(
+        "Two practical notes. First, commissioners can change both the processing day and the lock rules, so check your league settings rather than assuming. Second, submit your bids by Tuesday night — the most common FAAB mistake isn't a bad bid, it's no bid, because you fell asleep before setting your claims."
+      )
+    ),
+
+    h2("How much should you bid?"),
+    p(
+      t(
+        "Think in percentages of your total budget, not dollars, so the guidance works whether your league uses $100 or $1,000. The tiers below assume a $100 budget:"
+      )
+    ),
+    tbl(
+      [[t("Player type")], [t("Bid range")], [t("Example situation")]],
+      [
+        [
+          [b("League-winner")],
+          [t("40–70%+ ($40–$70+)")],
+          [t("A backup RB inherits a full starting workload after an injury")],
+        ],
+        [
+          [b("Solid weekly starter")],
+          [t("15–30% ($15–$30)")],
+          [t("A WR who just moved into a clear every-week role")],
+        ],
+        [
+          [b("Useful flex or upside stash")],
+          [t("5–12% ($5–$12)")],
+          [t("A rookie trending up, a TE with a growing target share")],
+        ],
+        [
+          [b("Streamer or lottery ticket")],
+          [t("1–4% ($1–$4)")],
+          [t("A one-week QB, defense, or kicker streamer")],
+        ],
+        [
+          [b("Everyone else")],
+          [t("$0")],
+          [t("Speculative adds nobody else is likely to bid on")],
+        ],
+      ]
+    ),
+    p(
+      t(
+        "A few rules of thumb sharpen this. Bid odd numbers — $23 beats the crowd sitting at $20, and in most leagues ties are broken by waiver priority, so an extra dollar or two is cheap insurance. Use "
+      ),
+      b("$0 bids"),
+      t(
+        " liberally on speculative players: if nobody else bids, you get them for free and keep your powder dry. And most importantly, "
+      ),
+      b("don't hoard your budget past Week 10"),
+      t(
+        ". Unused FAAB expires worthless at season's end, and by mid-November the pool of league-changing pickups has largely dried up. A manager who ends the year with $60 unspent didn't play it safe — they left real roster upgrades on the table. For which players are actually worth bidding on each week, see our "
+      ),
+      lk(
+        "waiver wire strategy guide",
+        "/blog/fantasy-football-waiver-wire-strategy"
+      ),
+      t(".")
+    ),
+
+    h2("Common FAAB mistakes"),
+    ul(
+      [
+        b("Blowing half the budget in September."),
+        t(
+          " Week 1 overreactions are the classic trap. Injuries guarantee that better opportunities are coming in October — keep at least 50–60% of your budget through the first month."
+        ),
+      ],
+      [
+        b("Hoarding until it's worthless."),
+        t(
+          " The opposite failure. FAAB is a tool for winning this season; a big unspent balance in December is just a scoreboard of missed chances."
+        ),
+      ],
+      [
+        b("Bidding on the player, not the situation."),
+        t(
+          " A famous name in a murky committee deserves $8, not $40. A no-name backup walking into 20 touches a game deserves $40, not $8. Pay for projected volume."
+        ),
+      ],
+      [
+        b("Round-number bids."),
+        t(
+          " $20, $25, and $50 are where bids cluster. $21, $27, and $53 win those players for nearly the same price."
+        ),
+      ],
+      [
+        b("Only submitting one claim."),
+        t(
+          " Platforms let you rank multiple conditional claims. Stack backups behind your primary target so losing one bid doesn't mean winning nothing."
+        ),
+      ],
+      [
+        b("Forgetting the add still has to start."),
+        t(
+          " Winning the bid is half the job — the other half is getting the player into your lineup at the right time. Our "
+        ),
+        lk("start/sit guide", "/blog/fantasy-football-start-sit"),
+        t(" covers that call."),
+      ],
+    ),
+
+    hr(),
+
+    p(
+      t(
+        "FAAB is ultimately an information game: the manager who hears about the injury or depth-chart change first gets to shape their bids before the market catches up. Scoutcast.ai delivers a ~2-minute daily audio briefing built around your teams and players, so waiver-relevant news reaches you before your leaguemates open an app. The NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings tailored to your specific league — including waiver targets worth bidding on and how your roster stacks up."
+      )
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+  ],
+  faqs: [
+    {
+      question: "What does FAAB stand for in fantasy football?",
+      answer:
+        "FAAB stands for Free Agent Acquisition Budget. It's a fixed pot of imaginary money — usually $100 per team for the season — that managers use to place blind bids on waiver-wire players. The highest bid wins the player, and the amount is deducted from that manager's remaining budget.",
+    },
+    {
+      question: "How much FAAB should I bid on a player?",
+      answer:
+        "Think in percentages of your budget: 40–70%+ for a true league-winner (like a backup RB stepping into a full starting job), 15–30% for a solid new weekly starter, 5–12% for flex-worthy upside adds, and $1–$4 for streamers. Bid odd numbers like $21 or $27 to edge out managers clustering at round numbers, and use $0 bids on speculative players nobody else is chasing.",
+    },
+    {
+      question: "When do waivers clear in fantasy football?",
+      answer:
+        "On default settings, ESPN, Yahoo, and Sleeper all process waiver claims early Wednesday morning, roughly between 3 and 5 AM ET. You submit bids after the week's games end, claims resolve overnight Tuesday into Wednesday, and unclaimed players then become first-come, first-served free agents. Commissioners can change the schedule, so check your league settings.",
+    },
+    {
+      question: "What happens to unused FAAB at the end of the season?",
+      answer:
+        "It disappears — unused FAAB has no carryover value and doesn't convert into anything. That's why hoarding is a mistake: by around Week 10 the supply of impact pickups shrinks fast, so a large unspent balance late in the year usually means you passed on upgrades that could have helped you win.",
+    },
+    {
+      question: "Can you trade FAAB in fantasy football?",
+      answer:
+        "In many leagues, yes. Sleeper supports including FAAB dollars in trades natively, and other platforms or league constitutions often allow it as a commissioner-managed option. It's a real strategic lever — a rebuilding team can sell budget to a contender for players — but check your league settings or ask your commissioner, since not every league permits it.",
+    },
+  ],
+},
+{
+  slug: "what-is-best-ball-fantasy-football",
+  title: "What Is Best Ball Fantasy Football? Format Explained",
+  excerpt:
+    "Best ball is draft-and-done fantasy football: you draft a roster and your highest scorers auto-count each week. No waivers, no trades, no lineup setting.",
+  date: "2026-08-19",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Best ball is a fantasy football format where the draft is the entire game. You draft a roster, and every week the scoring engine automatically counts your highest-scoring players at each position. There are no waivers, no trades, and no lineups to set — once the draft ends, your season runs on autopilot."
+      )
+    ),
+    p(
+      t(
+        "That one design choice changes everything. In a normal league, half the skill is in-season management: streaming defenses, timing waiver claims, benching the wrong guy at the worst time. Best ball deletes all of that. Your only job is to draft a roster deep enough and diverse enough that "
+      ),
+      em("someone"),
+      t(
+        " on it spikes every week. Searches for the format have exploded because it scratches a specific itch — people who love drafting but hate the 17-week chore that follows."
+      )
+    ),
+    h2("How Best Ball Works"),
+    ul(
+      [
+        b("You draft a big roster."),
+        t(
+          " Underdog drafts run 18 rounds; DraftKings runs 20. Snake order, usually 12 managers per draft room."
+        ),
+      ],
+      [
+        b("Your optimal lineup is set for you."),
+        t(
+          " After each NFL week, the platform automatically starts your highest scorers at each slot — typically QB, 2 RB, 3 WR, TE, and a flex on Underdog."
+        ),
+      ],
+      [
+        b("There are no in-season moves."),
+        t(
+          " No waivers, no trades, no free agency. If your quarterback tears an ACL in Week 2, your backup plan is whoever you already drafted."
+        ),
+      ],
+      [
+        b("Highest cumulative points wins."),
+        t(
+          " Most contests score Weeks 1–14 as a regular season, then advance the top teams through playoff rounds."
+        ),
+      ],
+    ),
+    h2("Best Ball vs. Redraft"),
+    tbl(
+      [[t("")], [t("Best ball")], [t("Redraft")]],
+      [
+        [[t("Draft")], [t("Everything — your season is decided here")], [t("Important, but recoverable")]],
+        [[t("Lineups")], [t("Set automatically, optimal every week")], [t("You set them (and get them wrong)")]],
+        [[t("Waivers and trades")], [t("None")], [t("Weekly, all season")]],
+        [[t("Roster size")], [t("18–20 players")], [t("Usually 15–16")]],
+        [[t("Time after draft day")], [t("Zero required")], [t("Hours per week")]],
+        [[t("Typical stakes")], [t("Entry-fee tournaments, huge fields")], [t("League dues, 10–12 friends")]],
+      ]
+    ),
+    h2("Where to Play Best Ball"),
+    p(
+      b("Underdog Fantasy"),
+      t(
+        " is the gold standard. Its flagship Best Ball Mania tournament draws hundreds of thousands of entries with a multimillion-dollar prize pool, using 18-round drafts and half-PPR scoring."
+      )
+    ),
+    p(
+      b("DraftKings"),
+      t(
+        " runs the other major tournament scene: 20-round drafts, full-PPR scoring with yardage bonuses, and generally softer draft rooms at low stakes. "
+      ),
+      b("Yahoo"),
+      t(" and "),
+      b("Sleeper"),
+      t(
+        " both support best ball drafts too, though without the massive tournament prize pools. Notably, ESPN does not offer a dedicated best ball product — its new elimination-style format is "
+      ),
+      lk("Knockout leagues", "/blog/espn-knockout-leagues"),
+      t(", which is a different animal entirely."),
+    ),
+    h2("Draft Strategy Basics"),
+    p(
+      t(
+        "Because you can never replace a player, best ball rosters are built around volume and variance, not week-to-week decisions."
+      )
+    ),
+    ul(
+      [
+        b("Roster construction by position."),
+        t(
+          " A common 18-round build is 2–3 QBs, 4–6 RBs, 7–9 WRs, and 2–3 TEs. You need enough bodies at every position to survive byes and injuries with no waiver wire."
+        ),
+      ],
+      [
+        b("Load up on wide receivers."),
+        t(
+          " WR is the deepest position and the best-ball scoring engine rewards spike weeks. A late-round WR who posts three 20-point games is automatically in your lineup those weeks — you never had to guess which ones."
+        ),
+      ],
+      [
+        b("Stack your quarterbacks."),
+        t(
+          " Pairing a QB with his own WR or TE doubles your payoff when they connect. In tournaments, stacks are how you build the ceiling weeks that win playoff rounds."
+        ),
+      ],
+      [
+        b("Chase upside late."),
+        t(
+          " Boring veterans with safe floors are worth less here than in redraft. In the final rounds, draft the rookie or the ambiguous-backfield lottery ticket — if he hits, the algorithm starts him for you."
+        ),
+      ],
+    ),
+    h2("Tournament vs. Season-Long Best Ball"),
+    p(
+      b("Tournaments"),
+      t(
+        " (Best Ball Mania, DraftKings Millionaire) pool enormous fields. You compete against your 12-person draft room for 14 weeks, then advance through elimination rounds toward a Week 17 final. Winning requires ceiling — correlated stacks and league-winning upside picks."
+      )
+    ),
+    p(
+      b("Season-long sit-and-gos"),
+      t(
+        " are single draft rooms where the highest total score over the full season wins. No advancing rounds, so steady weekly production matters more than one monster playoff week."
+      )
+    ),
+    h2("Who Best Ball Is For"),
+    p(
+      t(
+        "Best ball is for people who think draft day is the best day of the fantasy calendar and everything after it is homework. It’s also a great second format: keep your home league for the trash talk, and fire off a handful of best ball drafts in July and August for extra sweat with zero added workload. If you want formats that go the other direction — more chaos, more in-season drama — try a "
+      ),
+      lk("guillotine league", "/blog/guillotine-league-fantasy-football"),
+      t(" or a "),
+      lk("vampire league", "/blog/vampire-league-fantasy-football"),
+      t(".")
+    ),
+    p(
+      t(
+        "One thing best ball doesn’t remove is the value of being informed on draft day — and drafts run from May to September, so news keeps mattering. That’s where Scoutcast.ai fits: a ~2-minute daily audio briefing on your teams and players, so staying current takes minutes instead of hours. During the season, the NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues."
+      )
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+  ],
+  faqs: [
+    {
+      question: "Is best ball the same as daily fantasy (DFS)?",
+      answer: "No. DFS lineups last one week or one slate; a best ball roster lasts the whole season. Best ball is season-long fantasy with the management removed — the only decision you make is the draft.",
+    },
+    {
+      question: "Can you make trades or waiver moves in best ball?",
+      answer: "No. The roster you draft is the roster you finish with. Injuries and busts are covered only by the depth you drafted, which is why rosters run 18–20 players.",
+    },
+    {
+      question: "How much does best ball cost to play?",
+      answer: "Entries on Underdog and DraftKings start around $3–$5, with contests running into the thousands for high stakes. Yahoo and Sleeper also offer free or low-cost best ball drafts.",
+    },
+    {
+      question: "What scoring do best ball sites use?",
+      answer: "Underdog uses half-PPR (0.5 points per reception). DraftKings uses full PPR plus bonuses for 300 passing yards and 100 rushing or receiving yards. Always check scoring before you draft — it changes player values.",
+    },
+    {
+      question: "What is Best Ball Mania?",
+      answer: "Underdog’s flagship tournament: hundreds of thousands of 18-round, 12-person drafts feeding a multimillion-dollar prize pool. Regular-season scoring runs Weeks 1–14, then top teams advance through playoff rounds to a Week 17 final.",
+    },
+  ],
+},
+{
+  slug: "vampire-league-fantasy-football",
+  title: "Vampire League Fantasy Football: Rules and Strategy",
+  excerpt:
+    "A vampire league is fantasy football where one team drafts nothing — then steals a starter from every team it beats. Here are the rules, variants, and strategy.",
+  date: "2026-08-19",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "A vampire league is a fantasy football format where one manager — the vampire — doesn’t draft. The vampire builds a roster entirely from undrafted players, and every time the vampire wins a head-to-head matchup, it gets to steal a starter from the team it just beat. Everyone else spends the season trying not to get bitten."
+      )
+    ),
+    p(
+      t(
+        "It’s one of the best-kept secrets in alternative fantasy formats, and the search results for it are shockingly thin — which is a shame, because the design is brilliant. The vampire starts as the worst team in the league and gets stronger with every victory, turning every matchup against it into a game with real stakes."
+      )
+    ),
+    h2("The Rules"),
+    ul(
+      [
+        b("One team is the vampire."),
+        t(
+          " The vampire sits out the draft entirely. Its roster is built from the undrafted player pool after everyone else has picked."
+        ),
+      ],
+      [
+        b("The vampire owns the waiver wire."),
+        t(
+          " In the classic ruleset, only the vampire can add free agents during the season. Every other team is locked into its drafted roster."
+        ),
+      ],
+      [
+        b("Wins let the vampire bite."),
+        t(
+          " When the vampire beats a team head-to-head, it steals one player from that team’s starting lineup — and sends back one of its own starters at the same position. It’s a forced one-for-one swap, not a pure theft."
+        ),
+      ],
+      [
+        b("Everyone else plays normally."),
+        t(
+          " Standard head-to-head schedule, standard scoring, standard playoffs. The vampire is just another team on the schedule — until it starts winning."
+        ),
+      ],
+    ),
+    h2("Common Variants"),
+    ul(
+      [
+        b("Protected player."),
+        t(
+          " Each week, non-vampire teams designate one starter as bite-proof. This keeps a hot vampire from instantly acquiring the league’s best player."
+        ),
+      ],
+      [
+        b("One bite per victim."),
+        t(
+          " The vampire can’t steal from a team it has already beaten, forcing it to plan which matchups matter most."
+        ),
+      ],
+      [
+        b("Vampire drafts last."),
+        t(
+          " A softer version gives the vampire the final pick of every round instead of no picks at all."
+        ),
+      ],
+      [
+        b("Championship-or-nothing."),
+        t(
+          " Some leagues rule the vampire can only win the title by winning the championship game itself, regardless of record."
+        ),
+      ],
+      [
+        b("Shared waivers."),
+        t(
+          " A milder setup gives everyone waiver access but the vampire top priority every week. Purists consider the exclusive wire the whole point."
+        ),
+      ],
+    ),
+    h2("Why It’s Fun"),
+    p(
+      t(
+        "Regular leagues have dead weeks — Week 11 against the 2–8 team nobody cares about. Vampire leagues don’t, because losing to the vampire costs you a starter. A matchup against the vampire in October can matter more than a playoff game. Meanwhile the vampire is playing a completely different sport: scraping waiver-wire gold, picking which opponents to target, and slowly assembling a monster from other people’s rosters. By December, a good vampire is genuinely scary, and the league has a shared villain. That’s narrative you can’t get from a standard 12-teamer."
+      )
+    ),
+    h2("Commissioner Setup Tips"),
+    ul(
+      [
+        b("Pick your vampire carefully."),
+        t(
+          " The role demands an experienced, hyper-active manager. A checked-out vampire kills the format; a degenerate makes it legendary. Volunteers first, or draw lots among your sickest players."
+        ),
+      ],
+      [
+        b("Expect manual enforcement."),
+        t(
+          " No major platform automates vampire rules. On Sleeper or ESPN, run a normal league, lock waivers for non-vampire teams, and process bites as commissioner-executed trades."
+        ),
+      ],
+      [
+        b("Write the rules down before the draft."),
+        t(
+          " Bite timing (immediately after the game? Tuesday?), the protected-player rule, and injury edge cases should all be settled in writing before Week 1."
+        ),
+      ],
+      [
+        b("Use 12 or more teams."),
+        t(
+          " A deeper league thins the undrafted pool, which keeps the vampire appropriately desperate in September."
+        ),
+      ],
+    ),
+    h2("Strategy for the Vampire"),
+    p(
+      t(
+        "Your September roster will be bad — that’s the design. Attack volume: stream every favorable matchup, churn the wire daily, and treat the early schedule as a scouting mission. When you do win, bite for keeps: steal the best player at your weakest position, not the biggest name. And target teams, not weeks — if your league plays the one-bite-per-victim variant, a win over the league’s stacked contender is worth more than two wins over bottom-feeders. Every waiver-wire breakout of the season belongs to you alone, so know the "
+      ),
+      lk("waiver wire", "/blog/fantasy-football-waiver-wire-strategy"),
+      t(" cold — it’s your entire draft, held every single day.")
+    ),
+    h2("Strategy for Everyone Else"),
+    p(
+      t(
+        "Beat the vampire early, while its roster is still scraps — an 0–4 vampire is harmless, a 5–2 vampire is a problem. When your matchup comes up, play your floor: this is not the week for boom-or-bust fliers, because losing costs you a starter. Use your protection wisely if your league allows it — protect the player the vampire needs, which isn’t always your best player. And draft depth at RB and WR, because a bite hurts far less when you have a real replacement behind the guy you lose."
+      )
+    ),
+    p(
+      t(
+        "Vampire leagues punish managers who tune out, on both sides of the bite. Scoutcast.ai keeps you current in about two minutes a day — an AI audio briefing on your players, your matchup, and the news that moves lineups. The NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues, which is exactly the cadence a vampire grinding the wire needs."
+      )
+    ),
+    p(
+      t("If you like formats with a body count, a "),
+      lk("guillotine league", "/blog/guillotine-league-fantasy-football"),
+      t(
+        " is the vampire league’s bloodier cousin — and if you’d rather delete in-season management entirely, "
+      ),
+      lk("best ball", "/blog/what-is-best-ball-fantasy-football"),
+      t(" is the opposite extreme.")
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+  ],
+  faqs: [
+    {
+      question: "Does the vampire steal a player outright?",
+      answer: "No — in the standard ruleset it’s a forced swap. The vampire takes one player from the beaten team’s starting lineup and sends back one of its own starters at the same position, so the victim is downgraded rather than left with a hole.",
+    },
+    {
+      question: "Can the vampire win the league?",
+      answer: "Yes, and a good one often contends by December. Some leagues add a twist where the vampire can only claim the title by winning the championship game itself, no matter its seed or record.",
+    },
+    {
+      question: "What platform supports vampire leagues?",
+      answer: "None natively. Commissioners run them on Sleeper, ESPN, or Yahoo by locking waivers for non-vampire teams and processing bites manually as trades. It takes an engaged commissioner, but the overhead is one transaction per vampire win.",
+    },
+    {
+      question: "Is being the vampire fun or miserable?",
+      answer: "Fun — if you love waiver wires and scheming. You start with the league’s worst roster and exclusive free agency, and every win upgrades you at an opponent’s expense. Managers who only enjoy drafting should not volunteer.",
+    },
+  ],
+},
+{
+  slug: "guillotine-league-fantasy-football",
+  title: "Guillotine League Fantasy Football: Rules and Strategy",
+  excerpt:
+    "A guillotine league eliminates the lowest-scoring fantasy team every week and dumps its roster to waivers. Last manager standing after Week 17 wins it all.",
+  date: "2026-08-19",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "A guillotine league is a fantasy football format with no head-to-head matchups: every week, the lowest-scoring team in the league is eliminated, and its entire roster is dumped onto waivers for the survivors to bid on. The blade falls every single week until one manager is left standing."
+      )
+    ),
+    p(
+      t(
+        "The format was popularized by Matthew Berry and has become the fastest-growing alternative to standard leagues, because it fixes fantasy football’s two worst problems at once: there are no dead teams (you’re playing for survival every week), and there are no schedule-luck losses (you’re only eliminated if you’re genuinely the worst that week)."
+      )
+    ),
+    h2("The Rules"),
+    ul(
+      [
+        b("No matchups."),
+        t(
+          " You compete against the entire league simultaneously. Your score just has to beat one team: whoever finishes last."
+        ),
+      ],
+      [
+        b("Lowest weekly score is eliminated."),
+        t(
+          " Every week, one team is guillotined. In an 18-team league, that’s one elimination per week across a 17-week season."
+        ),
+      ],
+      [
+        b("The dead team’s roster goes to waivers."),
+        t(
+          " This is the format’s engine. When a team holding a top-five running back gets chopped in Week 6, that running back hits the wire — and a FAAB feeding frenzy begins."
+        ),
+      ],
+      [
+        b("FAAB bidding decides who feasts."),
+        t(
+          " Each manager gets a fixed free-agent budget for the season — commonly $200, with some leagues using $1,000 or more for finer-grained bidding. Blind bids, highest wins, no refills."
+        ),
+      ],
+      [
+        b("Last team standing wins."),
+        t(
+          " Survive every cut through Week 17 and the league is yours."
+        ),
+      ],
+    ),
+    h2("Guillotine vs. ESPN Knockout"),
+    p(
+      t(
+        "In 2026, ESPN launched an official, fully productized version of this format called Knockout leagues: lowest scorer eliminated weekly, roster released to waivers for bidding, 12–18 teams, even a built-in “last words” feature for the fallen. If your league lives on ESPN, Knockout is guillotine with the commissioner overhead removed. The rules are near-identical — “guillotine” is the format’s generic name, “Knockout” is ESPN’s implementation. We break down the differences in our "
+      ),
+      lk("ESPN Knockout leagues explainer", "/blog/espn-knockout-leagues"),
+      t(".")
+    ),
+    h2("Strategy: Surviving the Blade"),
+    h3("Draft floor, not ceiling"),
+    p(
+      t(
+        "Early on, you don’t need to be good — you need to not be last. That inverts normal draft strategy: boring, high-floor veterans and reliable target-hogs are worth more than boom-or-bust upside picks, because one catastrophic week ends your season. Depth matters too. A Week 5 bye-pocalypse that would cost you one matchup in a normal league can cost you everything here."
+      )
+    ),
+    h3("Pace your FAAB across 17 weeks"),
+    p(
+      t(
+        "FAAB is your real currency, and the temptation is to blow it early. Resist. Every week another full roster hits the wire, and the players available in Week 10 — released by teams that were good enough to survive nine cuts — are far better than the Week 2 scraps. A common trap is winning a $190 bidding war in September, then watching a top-three player hit waivers in November while you sit broke. Budget by phases: stay stingy early, keep at least half your budget past midseason, and remember that leftover FAAB on elimination day is worth exactly zero. For the mechanics of blind bidding itself, see our "
+      ),
+      lk("waiver wire strategy guide", "/blog/fantasy-football-waiver-wire-strategy"),
+      t(".")
+    ),
+    h3("Know when to spend big"),
+    p(
+      t(
+        "Two moments justify emptying the wallet: a true difference-maker hits the wire (an elite RB or WR from a chopped team — these players win guillotine leagues), or you’re in visible danger — if your roster keeps flirting with last place, spending big now beats saving for a future you won’t see. Late season, the math flips entirely: with four teams left and $300 in hand, spend it all. There’s nothing to save for."
+      )
+    ),
+    h2("How to Set One Up"),
+    ul(
+      [
+        b("18 teams is the canonical size."),
+        t(
+          " One elimination per week across 17 NFL weeks leaves exactly one champion in Week 17. Smaller leagues work — start eliminations later or end earlier."
+        ),
+      ],
+      [
+        b("Platforms."),
+        t(
+          " Guillotine Leagues™ (Fantasy Life’s dedicated app) supports the format natively, as does ESPN via Knockout. On Sleeper or Yahoo, commissioners run it manually: set league to total-points, remove the eliminated team’s players to free agency each Tuesday."
+        ),
+      ],
+      [
+        b("Use generous FAAB and daily waivers."),
+        t(
+          " The bidding wars are the fun. A bigger budget ($1,000) makes bids more expressive than a $100 one."
+        ),
+      ],
+      [
+        b("Set elimination timing in writing."),
+        t(
+          " Standard is: week locks Monday night, roster hits waivers Tuesday, bids process Wednesday. Ambiguity here causes the only fights this format ever has."
+        ),
+      ],
+    ),
+    p(
+      t(
+        "Guillotine leagues are unforgiving to managers who check out — miss one bad week and you’re gone, miss one big waiver drop and someone else feasts. Scoutcast.ai is built for exactly that: a ~2-minute daily audio briefing that keeps you current on your players in minutes, not hours. The NFL Fantasy Pass ($49.99/season) delivers Tuesday, Wednesday, Thursday, and Sunday briefings around your actual leagues — Tuesday and Wednesday being precisely when guillotine waivers get decided."
+      )
+    ),
+    p(
+      t("Want more formats? See how a "),
+      lk("vampire league", "/blog/vampire-league-fantasy-football"),
+      t(" turns one team into the league villain, or go zero-maintenance with "),
+      lk("best ball", "/blog/what-is-best-ball-fantasy-football"),
+      t(".")
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+  ],
+  faqs: [
+    {
+      question: "How many teams should a guillotine league have?",
+      answer: "18 is the canonical number: one elimination per week over a 17-week NFL season leaves exactly one survivor. Leagues of 12–17 teams work fine — just start the eliminations in a later week so the final cut lands in Week 17.",
+    },
+    {
+      question: "What happens to an eliminated team’s players?",
+      answer: "The entire roster is released to waivers, where surviving managers bid on the players with FAAB. This weekly roster dump is the heart of the format — league-winning players hit the wire all season long.",
+    },
+    {
+      question: "Is a guillotine league the same as ESPN’s Knockout league?",
+      answer: "Functionally yes. Guillotine is the generic format name; Knockout is ESPN’s official 2026 implementation with automated eliminations, waiver releases, and 12–18 team support. The core rules — lowest weekly scorer eliminated, roster to waivers — are the same.",
+    },
+    {
+      question: "How much FAAB should I save in a guillotine league?",
+      answer: "Aim to keep at least half your budget through midseason. The best players hit waivers in the middle and late weeks, when strong teams start getting chopped. But spend aggressively if you’re flirting with last place — unspent FAAB is worthless once you’re eliminated.",
+    },
+  ],
+},
+{
+  slug: "sleeper-vs-espn-vs-yahoo-fantasy-football",
+  title: "Sleeper vs ESPN vs Yahoo: Best Fantasy Platform for 2026",
+  excerpt:
+    "Sleeper, ESPN, and Yahoo compared for 2026 fantasy football: formats, ads, draft tools, app quality, and which platform your league should actually pick.",
+  date: "2026-08-24",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "The short version for 2026: pick Sleeper if your league lives in a group chat or wants dynasty, keeper, or guillotine formats; pick ESPN if you want the NFL’s official ecosystem, the biggest player pool, and the new Knockout format; pick Yahoo if you want the cleanest classic head-to-head experience with the least friction. All three are free. The differences are real, and they matter more this year than usual."
+      )
+    ),
+    p(
+      t(
+        "Why does 2026 matter more than usual? Because the platform map just got redrawn. "
+      ),
+      lk("NFL Fantasy shut down its season-long game and its leagues are migrating to ESPN", "/blog/nfl-fantasy-moving-to-espn"),
+      t(
+        ", which makes ESPN the official fantasy game of the NFL and injects millions of displaced managers into its ecosystem. ESPN also shipped its most interesting product in years — "
+      ),
+      lk("Knockout leagues", "/blog/espn-knockout-leagues"),
+      t(
+        ", a first-class elimination format. Meanwhile Sleeper keeps absorbing the serious-league crowd (browse r/findaleague and it’s Sleeper link after Sleeper link), and Yahoo quietly made all of its Commissioner Plus tools free. If your league is re-evaluating where to play, this is the season to do it. Here’s the honest comparison."
+      )
+    ),
+
+    h2("The comparison at a glance"),
+    tbl(
+      [[b("Platform")], [b("Best for")], [b("Ads")], [b("Formats")], [b("Draft tools")], [b("Weaknesses")]],
+      [
+        [
+          [t("Sleeper")],
+          [t("Group-chat-native leagues; dynasty, keeper, guillotine, best ball")],
+          [t("No display ads, but constant promos for its own Picks/DFS games")],
+          [t("Deepest: dynasty (taxi squads, pick trading, contracts), guillotine, custom scoring galore")],
+          [t("Excellent draft room, unlimited mocks, slow drafts")],
+          [t("Weak projections, no editorial content, occasional Android bugs, gambling-adjacent upsells")],
+        ],
+        [
+          [t("ESPN")],
+          [t("NFL-official ecosystem, biggest public league pool, Knockout format")],
+          [t("Yes — banner ads and heavy cross-promotion throughout the app")],
+          [t("Standard H2H, keeper, plus new Knockout elimination leagues; full PPR default")],
+          [t("Mock lobby is serviceable; expert mock content is strong")],
+          [t("App crashes and lag at peak times, cluttered UI, dated commissioner tools")],
+        ],
+        [
+          [t("Yahoo")],
+          [t("Clean classic head-to-head leagues, office pools, long-running leagues")],
+          [t("Yes, but lighter and less intrusive than ESPN’s")],
+          [t("H2H, keeper, auction, public prize leagues; former premium tools now free")],
+          [t("Best built-in mock lobby: 24/7 live mocks, redesigned draft room")],
+          [t("Few exotic formats, smaller social layer, aging brand")],
+        ],
+      ]
+    ),
+
+    h2("Sleeper: the platform serious leagues keep switching to"),
+    p(
+      t(
+        "Sleeper’s core insight is that a fantasy league is a social product, not a stats product. The in-league chat with GIFs, reactions, polls, and trash-talk threads makes managing a Sleeper league feel like a group chat with rosters attached — and once a league has lived there for a season, it almost never leaves. That’s why Sleeper dominates communities like r/findaleague: when strangers organize competitive leagues from scratch, they overwhelmingly organize them on Sleeper."
+      )
+    ),
+    p(
+      t(
+        "The format depth is the other half of the pitch. Dynasty leagues get taxi squads, multi-year draft pick trading, and contract options that ESPN and Yahoo simply don’t offer. Guillotine leagues, best ball, custom scoring down to individual stat categories — if your league wants to play anything beyond vanilla head-to-head, Sleeper supports it natively instead of making your commissioner duct-tape it together. The draft room is fast and modern, mock drafts are unlimited, and slow drafts (hours per pick, perfect for dynasty startups) are a first-class feature."
+      )
+    ),
+    p(
+      t("Now the honest part. Sleeper markets itself as ad-free, and it’s true you won’t see banner ads for insurance companies. What you will see is relentless promotion of Sleeper’s own real-money products — Sleeper Picks, its DFS-style pick’em game — woven into the app. There’s now a setting to disable Picks notifications, which tells you how many people complained. Its player projections are widely considered the weakest of the big three, so serious managers pull rankings from elsewhere. There’s no editorial content layer — no columns, no analysis, no video — and Android users report more bugs than iOS users, including draft-room freezes at the worst possible moments. None of this is disqualifying. All of it is real.")
+    ),
+
+    h2("ESPN: the official ecosystem, warts and all"),
+    p(
+      t(
+        "ESPN enters 2026 with two genuine trump cards. First, it’s now the official fantasy game of the NFL — "
+      ),
+      lk("NFL Fantasy’s shutdown", "/blog/nfl-fantasy-moving-to-espn"),
+      t(
+        " means millions of managers are migrating in through a dedicated tool that preserves league settings and history. If your league is one of them, the path of least resistance is simply landing on ESPN and staying. Second, "
+      ),
+      lk("Knockout leagues", "/blog/espn-knockout-leagues"),
+      t(
+        " — ESPN’s productized guillotine format where the lowest scorer each week is eliminated and their roster dumps to waivers — is the most fun new thing any major platform has shipped in years, and it’s exclusive to ESPN as a fully automated experience."
+      )
+    ),
+    p(
+      t(
+        "The surrounding ecosystem is unmatched: ESPN’s editorial machine (rankings, projections, injury coverage) is integrated directly into the product, its injury push notifications are the fastest of the three, and its public league pool is the largest, so finding a random league at any skill level takes seconds. It’s also the only one of the three that defaults to full PPR scoring, which most of the industry now treats as standard."
+      )
+    ),
+    p(
+      t(
+        "The complaints are just as consistent. The app has a long-running reputation for lag and crashes exactly when it matters — draft night and Sunday mornings. The interface is cluttered with ads, cross-promotion, and navigation that buries common actions; the Reddit consensus that “ESPN doesn’t seem user friendly at all” has been repeated for years because it keeps being true. Commissioner tools work but feel a generation behind Sleeper’s. ESPN wins on ecosystem and content, not on the app itself — and you should go in knowing that."
+      )
+    ),
+
+    h2("Yahoo: the clean, boring, correct choice"),
+    p(
+      t(
+        "Yahoo is the platform nobody gets excited about and almost nobody regrets. The recurring Reddit line — “Yahoo has much better UI/UX” than ESPN — captures its whole value proposition: it does classic head-to-head fantasy football with less friction than anyone. The 2026 app redesign tightened it further, with condensed player rows, a faster draft room, and mock drafts one tap from the home screen. Yahoo’s live mock draft lobby runs 24/7 against real humans, which remains the best built-in draft practice of the big three."
+      )
+    ),
+    p(
+      t(
+        "The biggest 2026 change: Yahoo discontinued Commissioner Plus and made all of its formerly paid commissioner features free for every league. Trade review controls, custom league branding, advanced settings — features ESPN never had and Sleeper partially matches — now cost nothing. Yahoo also runs low-stakes public prize leagues (around $5 entry) if your group wants skin in the game without a side pool."
+      )
+    ),
+    p(
+      t(
+        "Weaknesses? Yahoo is conservative. No native guillotine or dynasty tooling worth the name, a social layer that’s an afterthought next to Sleeper’s, and a default half-PPR setting your commissioner will probably want to change. It’s the right answer for a 10-year-old work league that just wants everything to work, and the wrong answer for a league that wants to experiment."
+      )
+    ),
+
+    h2("Which should YOUR league pick?"),
+    p(
+      t(
+        "Skip the “which is best overall” framing — the right question is what kind of league you are. A few honest decision rules:"
+      )
+    ),
+    ul(
+      [
+        b("New league of friends who share a group chat: "),
+        t(
+          "Sleeper, and it’s not close. The chat-first design is what keeps casual leagues alive through November."
+        ),
+      ],
+      [
+        b("Migrating from NFL Fantasy: "),
+        t(
+          "just use ESPN’s migration tool and keep your history. Re-forming a 12-person league on a new platform costs more goodwill than ESPN’s UI annoyances do."
+        ),
+      ],
+      [
+        b("Dynasty, keeper-heavy, or guillotine ambitions: "),
+        t("Sleeper for dynasty and custom formats; ESPN if the elimination format specifically is the draw, since Knockout automates it completely."),
+      ],
+      [
+        b("Long-running casual league or office pool: "),
+        t(
+          "Yahoo. The now-free commissioner tools and clean app are exactly what a set-and-forget league needs."
+        ),
+      ],
+      [
+        b("You want random public leagues at any hour: "),
+        t("ESPN’s pool is biggest; Yahoo’s prize leagues are the best cheap-stakes option."),
+      ],
+    ),
+    p(
+      t(
+        "One more practical note: moving an existing league is a real cost. You lose history (except in the NFL-to-ESPN case, where migration preserves it), and you’ll lose one or two members to inertia almost every time. Only switch when the destination platform fixes something your league actually complains about. For a broader look at the whole app landscape beyond the big three, see our "
+      ),
+      lk("roundup of the best fantasy football apps for 2026", "/blog/best-fantasy-football-apps-2026"),
+      t(".")
+    ),
+
+    h2("What none of them do: tell you what changed today"),
+    p(
+      t(
+        "Here’s the gap all three platforms share. Sleeper, ESPN, and Yahoo are league infrastructure — rosters, scoring, waivers, chat. None of them will synthesize the day’s news for your specific team. They’ll push you a headline when your RB1 is ruled out, but nobody connects the dots: what the backup’s workload looked like last time, whether the handcuff is already gone in your league, what it means for the flex decision you were already sweating. You still assemble that picture yourself from beat reporters, podcasts, and three different apps."
+      )
+    ),
+    p(
+      t(
+        "That’s the layer Scoutcast.ai adds, and it works alongside all three platforms rather than replacing any of them. It’s a personalized ~2-minute audio briefing every morning covering your teams and your players — the synthesis, not just the alert. For fantasy managers, the NFL Fantasy Pass ($49.99/season) goes further with per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday mornings: waiver targets after Monday night, start/sit calls for your actual roster, and a final inactives check before kickoff. Whichever platform hosts your league, the two minutes over coffee is what keeps you from being the manager who started an inactive player. We covered how this fits into a full toolkit in our guide to the "
+      ),
+      lk("best apps for fantasy football season", "/blog/best-apps-for-fantasy-football-season"),
+      t(".")
+    ),
+    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+  ],
+  faqs: [
+    {
+      question: "Which fantasy football platform is best overall in 2026?",
+      answer:
+        "There’s no single winner — it depends on your league. Sleeper is best for social leagues and advanced formats like dynasty and guillotine. ESPN is best if you want the NFL’s official ecosystem, the largest public league pool, or the new Knockout elimination format. Yahoo is best for clean, classic head-to-head leagues, especially now that its formerly paid commissioner tools are free.",
+    },
+    {
+      question: "Is Sleeper really free with no ads?",
+      answer:
+        "Sleeper is free to play and shows no third-party display ads, but it heavily promotes its own real-money products — like Sleeper Picks, its pick’em game — inside the app. There’s a setting to disable those promotions. So it’s ad-free in the traditional sense, but not promotion-free.",
+    },
+    {
+      question: "Which platform has the best mock drafts?",
+      answer:
+        "Yahoo has the best built-in mock draft experience, with a 24/7 live lobby against real humans and a redesigned draft room for 2026. Sleeper offers unlimited mocks plus slow drafts, which dynasty players love. ESPN’s mock lobby is serviceable but the weakest of the three. Serious drafters on any platform often add a third-party simulator like FantasyPros’ Draft Wizard, which syncs with all of them.",
+    },
+    {
+      question: "Can I move my league between platforms?",
+      answer:
+        "Yes, but with caveats. Any commissioner can recreate a league’s settings on a new platform, though past history usually doesn’t transfer and you may lose a member or two to inertia. The big exception in 2026: former NFL Fantasy leagues get a dedicated migration tool that moves settings and league history to ESPN automatically.",
+    },
+    {
+      question: "Which fantasy football platform is best for beginners?",
+      answer:
+        "ESPN or Yahoo. ESPN has the most surrounding content — integrated rankings, projections, and analysis that teach you the game as you play — plus the biggest pool of public leagues to join. Yahoo has the cleaner, easier app. Sleeper is beginner-friendly socially, but it assumes you’re bringing your own research, since it has no editorial layer and weaker projections.",
+    },
+  ],
+},
+{
+  slug: "fantasy-football-team-names-2026",
+  title: "200+ Fantasy Football Team Names for 2026 (Actually Funny)",
+  excerpt:
+    "The best fantasy football team names for 2026: original Josh Allen, Ja’Marr Chase, and Jeremiyah Love puns, clean work-league options, and savage trash talk.",
+  date: "2026-08-18",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Let’s be honest about how this goes: you’ll think about your team name for exactly four minutes, at 11:47 PM the night before your draft, while the group chat is already roasting the guy who kept last year’s name. The name matters more than your third-round pick — nobody remembers who you took at 3.07, but everyone remembers a great team name. This is the 2026 list: original player puns built around this season’s actual stars and rookies, clean options that won’t get you a meeting with HR, savage trash talk, and self-deprecating names for the perennially doomed."
+      )
+    ),
+    p(
+      t(
+        "Everything below is organized for skimming, because you’re reading this on your phone at the draft table. Steal a name, tweak it, make it yours. And if you’re the commissioner, pair the name reveal with an actual event — our "
+      ),
+      lk("fantasy football draft party ideas", "/blog/fantasy-football-draft-party-ideas"),
+      t(" guide covers that part.")
+    ),
+    h2("2026 player-pun team names"),
+    p(
+      t(
+        "The golden rule of player-pun names: use a player who’s actually on your roster, or at least actually relevant in 2026. A dated pun ages worse than a Week 1 overreaction. These are built around the guys going in the first few rounds this year."
+      )
+    ),
+    h3("Josh Allen names"),
+    ul(
+      [b("Allen Wrench"), t(" — tightens every loose screw into six points.")],
+      [b("Big Allen Energy")],
+      [b("Say It Ain’t Josh")],
+      [b("Josh Allen You a Question")],
+      [b("Allen the Family")],
+      [b("Joshin’ You Not")],
+      [b("Hurdle Enthusiasm"), t(" — for the man who treats linebackers like speed bumps.")],
+      [b("The Allen Key"), t(" — unlocks any defense, some assembly required.")],
+      [b("Fourth-and-Josh")],
+      [b("Allen You Need Is Love"), t(" — bonus points if you also drafted Jeremiyah Love.")]
+    ),
+    h3("Lamar Jackson names"),
+    ul(
+      [b("Lamar the Merrier")],
+      [b("Truzz Fund Babies")],
+      [b("Lamarvel Cinematic Universe")],
+      [b("Et Tu, Lamar?")],
+      [b("Ooh La Lamar")],
+      [b("New Lamar, Who Dis")],
+      [b("Jackson 5 Touchdowns")],
+      [b("Lamartial Law")],
+      [b("The Lamar Sanction")],
+      [b("Lamar-athon Runners"), t(" — nobody’s catching him, including your linebackers.")]
+    ),
+    h3("Ja’Marr Chase names"),
+    ul(
+      [b("Cut to the Chase")],
+      [b("Wild Ja’Marr Chase")],
+      [b("Chase Direct Deposit"), t(" — points hit the account every Sunday at 1:05.")],
+      [b("The Chase Sapphire Preferred")],
+      [b("Ja’Marrvelous")],
+      [b("Paper Chase")],
+      [b("Ja’Marr Chasing Waterfalls"), t(" — stick to the rivers and the slants that you’re used to.")],
+      [b("Chase Manhattan Project")],
+      [b("Catch Me If You Chase")],
+      [b("Supply Chase Issues"), t(" — your cornerback simply cannot get deliveries there in time.")]
+    ),
+    h3("Bijan Robinson names"),
+    ul(
+      [b("Honey Bijan Mustard"), t(" — the Grey Poupon of team names.")],
+      [b("Bijan Voyage")],
+      [b("The Bijan Identity")],
+      [b("The Bijan Supremacy"), t(" — for year two of the same joke, but stronger.")],
+      [b("Bijan and the Jets")],
+      [b("Bijan Appétit")],
+      [b("Mrs. Robinson’s Backfield")],
+      [b("Robinson Crusoe’s Fantasy Island")],
+      [b("Bijan and the Miracles")],
+      [b("Bijan There, Done That")]
+    ),
+    h3("CeeDee Lamb names"),
+    ul(
+      [b("CeeDee of the Lambs"), t(" — pairs nicely with a nice chianti.")],
+      [b("Burned You a CeeDee")],
+      [b("Lamb Shank Redemption")],
+      [b("CeeDee-ROM Drive")],
+      [b("Hit Me CeeDee One More Time")],
+      [b("Rack of Lamb Attack")],
+      [b("Sacrificial Lambs (Not Mine)")],
+      [b("Mary Had a Little Lamb (and a Bye Week)")],
+      [b("Lamb Chop’s Play-Along")],
+      [b("Mixtape on CeeDee"), t(" — volume one drops Week 1.")]
+    ),
+    h3("Jeremiyah Love names"),
+    p(
+      t(
+        "The No. 3 overall pick landed in Arizona and instantly became the most pun-friendly name in fantasy. If you draft him, one of these is mandatory."
+      )
+    ),
+    ul(
+      [b("Jeremiyah Was a Bellcow"), t(" — was a good friend of mine. Never understood a single word he said, but he carried 25 times a game.")],
+      [b("All You Need Is Love")],
+      [b("Love at First Snap")],
+      [b("Crazy Little Thing Called Love")],
+      [b("What’s Love Got to Do With It (Everything)")],
+      [b("Tainted Love"), t(" — reserved for whoever drafts him one pick ahead of you.")],
+      [b("Whole Lotta Love")],
+      [b("P.S. I Love Yards")],
+      [b("Love Island: Arizona")],
+      [b("Endless Love, Endless Carries")],
+      [b("Love Hurts (Ask the Linebackers)")]
+    ),
+    h3("More 2026 player puns"),
+    ul(
+      [b("Saquon-tum Leap"), t(" — Saquon Barkley, still hurdling people backwards.")],
+      [b("Saquon of a Beach")],
+      [b("Hocus Puka"), t(" — Puka Nacua puts a spell on single coverage.")],
+      [b("Puka Shell All-Stars")],
+      [b("Jayden Believe It"), t(" — Jayden Daniels.")],
+      [b("Daniels-San"), t(" — wax on, waxed defenders.")],
+      [b("A Purdy Big Deal"), t(" — Brock Purdy.")],
+      [b("Purdy in Pink")],
+      [b("Jeanty in a Bottle"), t(" — Ashton Jeanty, year-two breakout szn.")],
+      [b("Aladdin’s Jeanty"), t(" — three wishes, all touchdowns.")],
+      [b("Bee Gibbs: Stayin’ Alive"), t(" — Jahmyr Gibbs, this year’s consensus first pick in a lot of rooms.")],
+      [b("Gibbs Me the Loot")],
+      [b("Brock Lobster"), t(" — Brock Bowers.")],
+      [b("Bowers of Attorney")],
+      [b("Jefferson Starship"), t(" — Justin Jefferson.")],
+      [b("Griddy Up")],
+      [b("Walk Like an Egyptian"), t(" — Amon-Ra St. Brown, obviously.")],
+      [b("Achane Reaction"), t(" — De’Von Achane at full speed is a physics problem.")],
+      [b("Burrow Money"), t(" — Joe Burrow.")],
+      [b("Mayday, Mayday"), t(" — Drake Maye, a distress call for AFC East defenses.")],
+      [b("Love Thy Nabers"), t(" — Malik Nabers.")],
+      [b("Nico Suave"), t(" — Nico Collins.")],
+      [b("Runaway McBride"), t(" — Trey McBride.")],
+      [b("There’s No Place Like Mahomes")]
+    ),
+    h2("2026 rookie-class names"),
+    p(
+      t(
+        "Nothing signals “I actually watched the draft” like a rookie pun in August. Beyond Love, this class delivered some genuinely nameable rookies."
+      )
+    ),
+    ul(
+      [b("Tate of the Union"), t(" — Carnell Tate, the No. 4 pick, already Cam Ward’s favorite target in Tennessee.")],
+      [b("Tate Modern Offense")],
+      [b("Tate-r Tots")],
+      [b("Tyson’s Punch-Out!!"), t(" — Jordyn Tyson landed with the Saints; your secondary is Glass Joe.")],
+      [b("Iron Mike’s Saints")],
+      [b("When Life Gives You Lemons"), t(" — Makai Lemon, Philadelphia’s first-round slot weapon.")],
+      [b("Easy Peasy Lemon Squeezy")],
+      [b("Philly Lemonade Stand")],
+      [b("Immaculate Concepcion"), t(" — KC Concepcion, Cleveland’s big-play rookie.")],
+      [b("KC and the Sunshine Band")],
+      [b("The Price Is Right"), t(" — Jadarian Price walked into a wide-open Seattle backfield.")],
+      [b("Price Check in Seattle")]
+    ),
+    h2("Funny all-timers (no expiration date)"),
+    p(
+      t(
+        "Player puns age. These don’t. If you want a name you can keep for a decade without it turning into a museum piece, pick from here."
+      )
+    ),
+    ul(
+      [b("Roster? I Hardly Know Her")],
+      [b("Autodraft Champions")],
+      [b("The FAAB Four")],
+      [b("Vibes-Based Analytics Dept.")],
+      [b("Commissioner’s Least Favorite")],
+      [b("Zero RB, Zero Regrets")],
+      [b("Statistically Irrelevant")],
+      [b("Projected to Lose by 2")],
+      [b("Started From the Waiver Now We’re Here")],
+      [b("Garbage Time Gods")],
+      [b("My Kicker Outscored Your QB")],
+      [b("Bye Week Believers")],
+      [b("Injury Report Enjoyers")],
+      [b("Boom-or-Bust Economics")],
+      [b("Analytics Said Otherwise")],
+      [b("The Regression Candidates")],
+      [b("Monday Night Miracle Merchants")],
+      [b("Slightly Above Replacement")],
+      [b("The Point Chasers")],
+      [b("Sunday Scaries")],
+      [b("Red Zone Renegades")],
+      [b("Trust the Projections (Never)")],
+      [b("Championship or Group Chat Silence")],
+      [b("Fourth Place Trophy Case")],
+      [b("Draft Day Decisions Were Made")],
+      [b("Group Chat Muted")]
+    ),
+    h2("Clean team names for work leagues"),
+    p(
+      t(
+        "Funny enough for the league, safe enough for the all-hands screen share. Corporate-flavored on purpose — lean into it."
+      )
+    ),
+    ul(
+      [b("Per My Last Trade Offer")],
+      [b("Out of Office (Sundays)")],
+      [b("Circle Back Champs")],
+      [b("The Synergy Squad")],
+      [b("Low-Hanging Touchdowns")],
+      [b("Quarterly Projections")],
+      [b("Reply-All Raiders")],
+      [b("KPI: Key Points Inflated")],
+      [b("The Deliverables")],
+      [b("Touchdown There, Boss")],
+      [b("HR-Approved Huddle")],
+      [b("Casual Friday Blitz")],
+      [b("The Water Cooler All-Stars")],
+      [b("PTO: Points Taking Off")],
+      [b("End-of-Quarter Push")],
+      [b("This Meeting Could’ve Been a Trade")],
+      [b("The Org Chart Toppers")],
+      [b("Overtime Exempt")],
+      [b("Direct Deposit Playmakers")],
+      [b("Spreadsheet Warriors")]
+    ),
+    h2("Savage trash-talk names"),
+    p(
+      t(
+        "For leagues where the smack talk is the product and the football is the delivery mechanism. If your league runs a last-place punishment — and it should, here are "
+      ),
+      lk("46 fantasy football punishment ideas", "/blog/fantasy-football-punishment-ideas"),
+      t(" — these names are the opening bid.")
+    ),
+    ul(
+      [b("Your Team Is My Bye Week")],
+      [b("Scoreboard Doesn’t Lie (You Do)")],
+      [b("First Place, Last Word")],
+      [b("I Read Your Trade Offer Out Loud"), t(" — at dinner. Everyone laughed.")],
+      [b("Certified League Bully")],
+      [b("The Consolation Bracket Awaits You")],
+      [b("Sit Down, I’ll Explain PPR")],
+      [b("Autodrafted and Still Beating You")],
+      [b("Rent Free in Your Group Chat")],
+      [b("Your Waiver Claim Got Denied")],
+      [b("Free Square on the Schedule")],
+      [b("The Punishment Committee")],
+      [b("Built Different, Drafted Better")],
+      [b("Talk to My Bench")],
+      [b("Your RB1 Is My Flex")],
+      [b("Skill Issue FC")],
+      [b("Undefeated in Trash Talk")],
+      [b("Losers Pay My Buy-In")],
+      [b("The Commissioner Fears Me")],
+      [b("Trade Offer Declined (Again)")],
+      [b("My Kicker Could Beat Your Whole Team")],
+      [b("You’ve Been Muted")],
+      [b("Championship Belt Collector")],
+      [b("Veto This")]
+    ),
+    h2("2026 pop-culture crossover names"),
+    p(
+      t(
+        "Timestamped to this exact cultural moment: Nolan’s Odyssey owning the summer box office, House of the Dragon back on Sunday nights, and Avengers: Doomsday looming in December. Use these now — they have a shelf life."
+      )
+    ),
+    ul(
+      [b("The Waiver Wire Odyssey"), t(" — a ten-year journey home, or one season in the consolation bracket.")],
+      [b("Call Me Nobody (Ask the Cyclops)")],
+      [b("To Infinity and the Bye Week")],
+      [b("You’ve Got a Flex in Me")],
+      [b("You’re Welcome (For the Win)"), t(" — live-action Moana energy.")],
+      [b("How Far I’ll Go (Probably Fourth)")],
+      [b("House of the Flagon")],
+      [b("Fire and Blood and Byes")],
+      [b("Avengers: Draft Day")],
+      [b("Doomsday Prep School")],
+      [b("Brand New Draft Day"), t(" — for the Spider-Man fans.")],
+      [b("The Running Back Man")],
+      [b("Defying Gravity (and Projections)")],
+      [b("Golden (Like My Roster)")],
+      [b("K-Pop Waiver Hunters")],
+      [b("The Upside-Down Standings")],
+      [b("The Life of a Showdown")],
+      [b("The Severance Package"), t(" — my bench self never has to know what my starters did.")],
+      [b("Praise Kier, Bench Kittle")],
+      [b("Yes, Chef, Start Him")],
+      [b("Waiting on GTA VI (and a Trade)")],
+      [b("Baked Potato in Ski Goggles"), t(" — if your league knows, they know.")],
+      [b("Six-Seven Points From Victory"), t(" — the meme refuses to die, and so does your playoff hope.")]
+    ),
+    h2("Self-deprecating names for losers"),
+    p(
+      t(
+        "Sometimes the strongest move is calling your shot in the other direction. If you finish last, at least you saw it coming — and named it."
+      )
+    ),
+    ul(
+      [b("Drafted With My Eyes Closed")],
+      [b("The Toilet Bowl Titans")],
+      [b("Last Place, Best Snacks")],
+      [b("0-5 and Thriving")],
+      [b("My Team Peaked in August")],
+      [b("Projected Points Truthers")],
+      [b("Doomed From the Draft")],
+      [b("The Moral Victory Machine")],
+      [b("Benched My Best Player Again")],
+      [b("Running Out of Waiver Money")],
+      [b("It’s a Rebuilding Year (Week 3)")],
+      [b("Points Left on My Bench: 47")],
+      [b("The Sacko Contenders")],
+      [b("My Autodraft Betrayed Me")],
+      [b("Fading My Own Picks")],
+      [b("Down Bad and Downgraded")],
+      [b("The Injury Magnet Collective")],
+      [b("One Win From Relevance")],
+      [b("My Kicker Is My MVP")],
+      [b("Vibes Over Wins")],
+      [b("Trusted the Wrong Podcast")],
+      [b("Next Year’s Champion (Since 2019)")],
+      [b("Punished by My Own Punishment Idea")],
+      [b("Emotional Support Franchise")]
+    ),
+    h2("How to pick the right name: the 3-second rule"),
+    p(
+      t(
+        "One filter beats every listicle: if a leaguemate doesn’t laugh within three seconds of reading it, it’s dead. A name you have to explain is a name that failed. Beyond that, three quick checks: "
+      ),
+      b("ownership"),
+      t(
+        " (pun a player you actually roster — nothing sadder than a Bijan name with no Bijan), "
+      ),
+      b("shelf life"),
+      t(
+        " (meme names are great in September and fossils by Thanksgiving — commit to updating or go evergreen), and "
+      ),
+      b("audience"),
+      t(
+        " (the college friends league and the league with your boss in it are different rooms). And remember the name is the accessory, not the outfit — if you’re still deciding "
+      ),
+      lk("who to actually draft in 2026", "/blog/who-should-i-draft-fantasy-football-2026"),
+      t(", solve that first.")
+    ),
+    hr(),
+    p(
+      t(
+        "A great name wins the draft party. Winning December takes actually knowing what’s happening with your roster — which is what Scoutcast.ai is for: a personalized AI audio briefing on your teams, your players, and your fantasy matchup, delivered daily in the time it takes to make coffee. Your leaguemates read one waiver article a week; you’ll have already heard the news on your commute."
+      )
+    ),
+    p(
+      lk(
+        "Download Scoutcast on the App Store →",
+        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      )
+    ),
+  ],
+  faqs: [
+    {
+      question: "What are the funniest fantasy football team names for 2026?",
+      answer:
+        "The best 2026 names pun on this season’s biggest fantasy players: Jeremiyah Love (“Jeremiyah Was a Bellcow,” “Love at First Snap”), Josh Allen (“Allen Wrench,” “Big Allen Energy”), Ja’Marr Chase (“Chase Direct Deposit”), and Bijan Robinson (“Honey Bijan Mustard”). The rule of thumb: pun a player who’s actually on your roster, and make sure the joke lands in three seconds without explanation.",
+    },
+    {
+      question: "How do I change my fantasy football team name on ESPN or Sleeper?",
+      answer:
+        "On ESPN, open the Fantasy app, go to your team page, tap the pencil/edit icon next to your team name (on the web, it’s under Team Settings). On Sleeper, open your league, tap your team avatar, then tap the edit icon to change your team name. Both platforms let you update your name and logo at any time, including mid-season.",
+    },
+    {
+      question: "What are good clean fantasy team names for a work league?",
+      answer:
+        "Lean into office humor instead of away from it: “Per My Last Trade Offer,” “Circle Back Champs,” “This Meeting Could’ve Been a Trade,” “Out of Office (Sundays),” and “Quarterly Projections” all get laughs without risking an HR conversation. The safest funny names joke about work culture or fantasy football itself rather than any person.",
+    },
+    {
+      question: "Can I change my fantasy team name mid-season?",
+      answer:
+        "Yes. ESPN, Sleeper, Yahoo, and NFL Fantasy all allow team name changes at any point in the season. Some leagues add house rules — commissioners can lock names, and punishment leagues often force the last-place team to use a name the league picks. A mid-season name change after a big win is a time-honored trash-talk move.",
+    },
+  ],
+},
+{
+  slug: "fantasy-football-draft-order-ideas",
+  title: "24 Fantasy Football Draft Order Ideas (Lazy to Legendary)",
+  excerpt:
+    "24 fun ways to set your fantasy football draft order — randomizer apps, closest-to-pin contests, lottery ball reveals, and options for online-only leagues.",
+  date: "2026-08-13",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Every fantasy season starts twice: once when the draft begins, and once — weeks earlier — when the draft order drops. Most leagues waste that second moment. The commissioner presses a randomize button on a Tuesday night, screenshots the result into the group chat, and one of the best hype opportunities of the year dies in eleven seconds. Your draft order is a free holiday. Here are 24 ways to celebrate it, sorted from zero-effort to full production, with notes on which ones work when your league is scattered across five time zones."
+      )
+    ),
+    p(
+      t(
+        "One rule before the fun: pick the method "
+      ),
+      em("before"),
+      t(
+        " any results exist, and put it in the league constitution. A draft order chosen after someone already won the cornhole tournament is just an argument with extra steps."
+      )
+    ),
+    h2("Quick and lazy: press a button, get an order"),
+    p(
+      t(
+        "No shame here. If your league drafts in six days and nobody has planned anything, these get the job done in minutes — and every one of them works for online-only leagues."
+      )
+    ),
+    ul(
+      [b("Your platform’s randomizer."), t(" Sleeper, ESPN, and Yahoo all shuffle the order with one tap. Zero theater, zero disputes. Works online.")],
+      [b("A draft lottery website."), t(" Free lottery sites animate a bingo-cage ball draw or card-flip reveal and let you share a link so the whole league watches the same drawing live. Works online.")],
+      [b("Deck of cards."), t(" Everyone draws one card, ace high takes pick 1.01. Ties re-draw. Total elapsed time: ninety seconds.")],
+      [b("Ping-pong balls in a hat."), t(" Number the balls, pull them on a video call, and you’ve accidentally created a tradition.")],
+      [b("The group-chat dice roll."), t(" Everyone rolls live on camera or via a chat bot, highest roll picks first. Works online.")]
+    ),
+    h2("Competition tier: earn your pick"),
+    p(
+      t(
+        "The philosophy shift: the first pick shouldn’t be given, it should be won. These turn draft-order day into its own event — often the best hangout of the summer."
+      )
+    ),
+    ul(
+      [b("Golf closest-to-the-pin."), t(" One shot each on a par 3 (or a simulator bay). Nearest ball drafts first, water balls draft last. Pairs perfectly with a golf-trip draft weekend.")],
+      [b("The league mini-Olympics."), t(" Three or four backyard events — cornhole, beer pong, a football toss through a tire — with points across all of them. Total points set the full order.")],
+      [b("Video game tournament."), t(" Mario Kart and Madden are the classics. This is the best competition option for remote leagues, since everyone can play online from their own couch.")],
+      [b("The 40-yard dash."), t(" A footrace at a local field, filmed in slow motion. Someone will pull a hamstring. That person gets a bye to last pick.")],
+      [b("The football throw."), t(" Paint or chalk the nose of a ball, everyone throws from the same line, and the farthest mark takes pick one.")],
+      [b("Trivia night."), t(" Twenty NFL questions, hardest score picks first. Run it on a quiz app for remote leagues. Works online.")]
+    ),
+    h2("Luck theater: make randomness a show"),
+    p(
+      t(
+        "Still pure chance — the fairest thing there is — but staged so it feels like the NBA lottery instead of a coin flip in the dark."
+      )
+    ),
+    ul(
+      [b("A real bingo cage."), t(" Numbered balls, a cheap hand-crank cage, and a commissioner in a suit reading picks from last to first. Film it for the chat.")],
+      [b("Scratch-off tickets."), t(" Everyone gets an identical lottery ticket; highest winnings picks first, zeroes draw cards to break ties. The rare method where losing the lottery can still win you money.")],
+      [b("Envelope reveal."), t(" Sealed envelopes, one per manager, opened one at a time on camera. Slow, dramatic, and extremely rewatchable. Works online if the commish opens them on a call.")],
+      [b("The wheel spin."), t(" A physical prize wheel or a shared spinner site on a video call. Works online.")],
+      [b("Kids and pets draw."), t(" A toddler pulls names from a bowl, or the commissioner’s dog picks between tennis balls. Nobody can be mad at a dog. Well — one person can.")],
+      [b("The event draw."), t(" Assign each manager a random golfer, horse, or preseason team; a real-world event that weekend decides your order for you.")],
+      [b("March Madness carryover."), t(" Your league’s bracket-pool standings from the spring set the fall draft order. One entry fee, two sweats, six months of relevance.")]
+    ),
+    h2("Degenerate tier: for leagues that keep score of everything"),
+    p(
+      t(
+        "These methods have opinions. They reward suffering, punish complacency, or extract money — sometimes all three."
+      )
+    ),
+    ul(
+      [b("Inverted standings."), t(" Last place picks first, champion picks last, no lottery, no mercy. The classic argument for it: the loser is already serving a "),
+        lk("punishment", "/blog/fantasy-football-punishment-ideas"),
+        t(" — the 1.01 is their rehabilitation program.")],
+      [b("The weighted lottery."), t(" NBA-style odds — worse record, more balls — via a weighted draft lottery site. Bad teams get hope; nobody gets a guarantee, so tanking never fully pays. Works online.")],
+      [b("Survivor pool."), t(" Run a quick survivor-style pool across the preseason slate; each week you pick one winner, and the last manager standing takes pick one, first eliminated picks last.")],
+      [b("Auction the slots."), t(" Bid real money on draft positions, proceeds feed the prize pool. The manager who pays $40 for the 1.01 and drafts a bust becomes league folklore forever.")],
+      [b("The long-shot card."), t(" Everyone submits one bold preseason prediction; the league grades them after Week 1 of preseason, and the most audacious correct call earns the top pick.")]
+    ),
+    h2("Best options for online-only leagues"),
+    p(
+      t(
+        "If your league never shares a room, prioritize methods where everyone watches the same moment live: an animated lottery link with a scheduled reveal, a wheel spin or envelope opening on a video call, an online Mario Kart bracket, or a quiz-app trivia night. The goal is a shared 20 minutes, not a screenshot. Whatever you choose, have the commissioner record it — the reaction clips carry the group chat for a week."
+      )
+    ),
+    hr(),
+    h2("When to do the reveal: 2–3 weeks before the draft"),
+    p(
+      t(
+        "Timing matters more than method. Reveal the order two to three weeks before draft night. Any earlier and the hype evaporates before it matters; any later and you’ve stolen prep time from your most engaged managers. Knowing you hold the 1.01 versus the 12th pick changes everything — keeper decisions, pick trades, and which players you even bother researching. It also means everyone can "
+      ),
+      lk("run mock drafts from their actual slot", "/blog/fantasy-football-mock-draft-2026"),
+      t(
+        " instead of practicing from a random one. If you love the idea of a live drawing at the draft itself, split the difference: do the real reveal early, then re-enact it as the opening ceremony of your "
+      ),
+      lk("draft party", "/blog/fantasy-football-draft-party-ideas"),
+      t(" — envelopes, suit, gavel, the works.")
+    ),
+    p(
+      t(
+        "The other advantage of the two-to-three-week window: it’s exactly when draft prep should start anyway. Cramming rankings the night before the draft is how you end up reaching for a player who lost his starting job in camp. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — camp battles, injuries, depth-chart moves — so by draft night the knowledge is already in your head. And once the season kicks off, the NFL Fantasy Pass ($49.99/season) adds analyst briefings built around your actual fantasy roster."
+      )
+    ),
+    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+  ],
+  faqs: [
+    {
+      question: "What is the fairest way to determine fantasy football draft order?",
+      answer:
+        "Pure randomization — your platform’s built-in randomizer or a free draft lottery site with a visible, shareable drawing — is the fairest method because no skill, record, or negotiation influences the result. The key to perceived fairness is process: agree on the method in writing before any results exist, and run the drawing live where the whole league can watch.",
+    },
+    {
+      question: "When should you reveal the fantasy draft order?",
+      answer:
+        "Two to three weeks before the draft. That window keeps hype alive while giving managers real prep time — keeper decisions, draft-pick trades, and mock drafts from their actual slot all depend on knowing the order. Revealing at the draft itself feels dramatic but robs your league of strategic planning.",
+    },
+    {
+      question: "How do you run an NBA-style draft lottery for fantasy football?",
+      answer:
+        "Use a free weighted draft lottery generator: enter each team, assign more lottery balls to teams with worse records from last season, and run the animated drawing on a shared link or screen share. Worse teams get better odds at the first pick but no guarantee, which discourages tanking while still helping struggling franchises.",
+    },
+    {
+      question: "What are the best draft order ideas for online-only leagues?",
+      answer:
+        "The best remote-friendly options are an animated lottery site with a scheduled live reveal, a wheel spin or sealed-envelope opening on a video call, an online video game tournament like Mario Kart, and a quiz-app trivia night. Pick something everyone watches or plays simultaneously so the reveal is a shared event, and record it for the group chat.",
+    },
+  ],
+},
+{
+  slug: "fantasy-football-draft-party-ideas",
+  title: "How to Host a Fantasy Football Draft Party (2026 Guide)",
+  excerpt:
+    "The complete draft party playbook: venues, the sticker-board debate, food themes, punishment ceremonies, hybrid setups for remote members, and a run-of-show.",
+  date: "2026-08-13",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Draft night is the one day a year your entire league is guaranteed to care at the same time. Twelve people, one room (or one video call), four hours of trash talk, and decisions everyone will relitigate until December. Treating it like a calendar invite instead of an event is the most common unforced error in fantasy football. This is the full playbook for hosting a draft party people actually clear their schedule for — venue, equipment, food, ceremonies, and a minute-by-minute run of show."
+      )
+    ),
+    h2("Pick your venue format"),
+    h3("The backyard or basement classic"),
+    p(
+      t(
+        "The default for a reason: free, no time limit, and nobody gets cut off. You control the food, the volume, and the TV situation. The only requirements are seating for every manager — nobody drafts well from the floor in hour three — and a table big enough for laptops, wings, and at least one spilled drink."
+      )
+    ),
+    h3("The bar buyout"),
+    p(
+      t(
+        "Plenty of sports bars now offer draft party packages: a reserved back room, a food and drink minimum instead of a rental fee, and screens you can commandeer for the board. Call two weeks ahead, confirm the wifi actually works, and ask for a room with a door — an open patio next to a bachelorette party is how picks get missed."
+      )
+    ),
+    h3("The destination draft"),
+    p(
+      t(
+        "The endgame for long-running leagues. Vegas draft weekends are a genuine tradition at this point — Strip venues have hosted thousands of league drafts, and late August is peak season — but the format travels: a golf-trip draft (36 holes, then draft at the rental house that night), a lake cabin, or any city with a cheap flight and a big Airbnb. The draft becomes the anchor of an annual guys’ or girls’ trip, which is the single best league-retention tool ever invented."
+      )
+    ),
+    h2("The equipment list"),
+    ul(
+      [b("The draft board — do both."), t(" The giant sticker board is theater: a wall-sized record of every pick that photographs beautifully. The TV mirroring a laptop is logistics: the real clock and player pool. Run the platform as the source of truth and assign one non-drafting friend (or the rookie member) to keep stickers current.")],
+      [b("A timer everyone can see."), t(" Use the platform clock — 60 to 90 seconds per pick is the sweet spot. Four hours is a party; six is a hostage situation.")],
+      [b("A dedicated command laptop."), t(" One machine that stays on the draft room, plugged in, separate from anyone’s personal screen.")],
+      [b("Backup internet."), t(" One phone hotspot tested in advance. The router will pick round three to die; it always does.")],
+      [b("Power strips and chargers."), t(" Twelve phones, twelve laptops, one outlet behind the couch. Do the math before Saturday.")],
+      [b("Printouts."), t(" A few paper cheat sheets for when screens die, plus one printed league constitution for settling arguments on the spot.")],
+      [b("Seating by draft order."), t(" Name cards arranged in snake order around the table. Small touch, absurdly satisfying.")]
+    ),
+    h2("Food and drink: pick a theme"),
+    p(
+      t(
+        "Wings and pizza never fail, but a theme upgrades the party from hangout to event. The best ones we’ve seen: the "
+      ),
+      b("NFL city menu"),
+      t(
+        " (Buffalo wings, Philly cheesesteaks, KC burnt ends, Chicago dogs — one dish per division rival); the "
+      ),
+      b("potluck draft"),
+      t(
+        " (everyone brings a dish themed to their team name, league votes on a winner); and the "
+      ),
+      b("loser caters"),
+      t(
+        " rule, where last season’s last-place finisher funds and serves the entire spread as part of their sentence. Serve the heavy food before the clock starts — rounds one through three deserve everyone’s full attention — and stock real non-alcoholic options, because somebody is driving and somebody else is on pick 8.12 of a dynasty rebuild and needs to concentrate."
+      )
+    ),
+    h2("Ceremonies that make it an event"),
+    ul(
+      [b("The punishment ceremony."), t(" Open the night by sentencing last season’s loser: formal reading of the charges, gavel optional but encouraged. If the "),
+        lk("punishment", "/blog/fantasy-football-punishment-ideas"),
+        t(" was already served, premiere the video on the big screen instead.")],
+      [b("The trophy handoff."), t(" The outgoing champion returns the trophy, delivers a short, insufferable speech, and adds their name plate. Boo accordingly.")],
+      [b("Rookie initiation — hazing-lite."), t(" New members read a league oath, present one hot take for the room to shred, and handle sticker-board duty for the first hour. Embarrassing, harmless, and it bonds them to the league immediately. Nothing meaner — you want them back next year.")],
+      [b("The draft order re-enactment."), t(" If you revealed the "),
+        lk("draft order", "/blog/fantasy-football-draft-order-ideas"),
+        t(" two weeks early (you should — managers need the prep time), re-stage it as the opening ceremony: envelopes, drumroll, seat assignments.")],
+      [b("Superlatives."), t(" Quick awards for last season — Best Pick, Worst Pick, Most Points Left on Bench. Ninety seconds each, maximum damage.")]
+    ),
+    h2("Running a hybrid draft for remote members"),
+    p(
+      t(
+        "Most leagues eventually scatter, and nothing kills a draft party faster than the remote member who can’t hear anything and misses two picks. The fix is treating remote drafters as first-class citizens: a dedicated laptop on a video call with the camera aimed at the room and the sticker board, cast to a TV so the room sees their faces at full size. Assign each remote member an on-site buddy who relays trash talk and confirms their picks landed. Enforce one-speaker audio — a single conference mic or phone in the middle of the table beats twelve open laptop mics creating a feedback apocalypse. Keep the platform as the official clock so remote picks count the instant they’re made, and double-check time zones before you schedule; a 7 p.m. Eastern start is a 4 p.m. desk-escape problem for your Pacific manager."
+      )
+    ),
+    h2("The run of show"),
+    p(
+      t(
+        "Steal this schedule. The single biggest party-killer is starting the actual draft 90 minutes late, so put times on it and appoint the commissioner as the bad guy who enforces them."
+      )
+    ),
+    tbl(
+      [[t("Time")], [t("Segment")], [t("Notes")]],
+      [
+        [[t("T–60 min")], [t("Arrivals, food, setup")], [t("Board on the wall, command laptop tested, hotspot verified")]],
+        [[t("T–30 min")], [t("Punishment ceremony")], [t("Sentencing or video premiere for last season’s loser")]],
+        [[t("T–15 min")], [t("Trophy handoff + rookie oath")], [t("Champion speech capped at two minutes")]],
+        [[t("T–0")], [t("Rounds 1–8")], [t("60–90 second clock, phones down for round one")]],
+        [[t("+90 min")], [t("Halftime")], [t("Refills, dessert, superlative awards")]],
+        [[t("+105 min")], [t("Rounds 9–16")], [t("Autopick tightens the late rounds — embrace it")]],
+        [[t("+3 hours")], [t("Post-draft")], [t("Instant grades read aloud, side bets, next year’s venue argument")]]
+      ]
+    ),
+    hr(),
+    h2("Scheduling it (and showing up ready)"),
+    p(
+      t(
+        "The sweet spot is the last two weekends of August — late enough that preseason has settled most camp battles, early enough that nobody drafts a player who gets hurt in the finale. Work backwards from "
+      ),
+      lk("when fantasy football starts", "/blog/when-does-fantasy-football-start"),
+      t(
+        " and send a date poll in July; a draft party only works if all twelve people are actually there."
+      )
+    ),
+    p(
+      t(
+        "And a hosting tip that doubles as a competitive edge: don’t spend draft week cramming rankings at midnight. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — the week of the draft, that’s injury news, depth-chart moves, and camp risers arriving in daily doses instead of one frantic night-before binge. Once the season starts, the NFL Fantasy Pass ($49.99/season) adds analyst briefings built around your actual roster, so the manager who hosted the party is also the one who wins the league."
+      )
+    ),
+    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+  ],
+  faqs: [
+    {
+      question: "How long does a fantasy football draft party last?",
+      answer:
+        "Plan for four to five hours total: about an hour of arrivals, food, and ceremonies, then two and a half to three and a half hours for a 16-round, 12-team snake draft on a 60–90 second clock, plus post-draft trash talk. Keeping the pick clock tight is the difference between a party and an endurance event.",
+    },
+    {
+      question: "Do you need a physical draft board or just a laptop?",
+      answer:
+        "Use both. The draft platform on a laptop mirrored to a TV is the source of truth — it runs the clock, the player pool, and remote picks. The giant sticker board is the theater: a wall-sized record of the night that photographs well and keeps the room engaged. Assign one person to keep the stickers current so drafters never have to.",
+    },
+    {
+      question: "How do you include remote league members in a draft party?",
+      answer:
+        "Run a hybrid setup: a dedicated laptop on a video call with the camera aimed at the room, cast to a TV so remote members are visible at full size. Give each remote drafter an on-site buddy to relay conversation and confirm picks, use one central microphone instead of open laptop mics, and let the draft platform serve as the official clock so remote picks register instantly.",
+    },
+    {
+      question: "When should you schedule a fantasy football draft party?",
+      answer:
+        "The last two weekends of August are the sweet spot — after most preseason position battles are settled but before final roster cuts and Week 1. Send a date poll in July so all managers can attend, and reveal the draft order two to three weeks before the party so everyone has time to prep from their actual slot.",
+    },
+  ],
+},
 ];
 
 // Drafts: held out of the rendered blog until ready to ship.
 export const draftPosts: Post[] = [];
+
+// Publish gate: a post whose date is still in the future stays out of the
+// production build (pages, sitemap, llms.txt) until a build runs on/after that
+// date. Scheduled publishing = future-date the post + rebuild daily.
+// PUBLISH_AS_OF=YYYY-MM-DD overrides the gate date (e.g. to test-render
+// every scheduled post: PUBLISH_AS_OF=2026-09-01 npm run build).
+const buildDate = process.env.PUBLISH_AS_OF ?? new Date().toISOString().slice(0, 10);
+export const posts: Post[] = allPosts.filter((p) => p.date <= buildDate);
+export const scheduledPosts: Post[] = allPosts.filter((p) => p.date > buildDate);
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
