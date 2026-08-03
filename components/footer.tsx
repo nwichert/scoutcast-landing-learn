@@ -1,6 +1,9 @@
+"use client"
+
 import Link from "next/link"
 import { Logo, LogoIcon } from "@/components/logo"
 import { cn } from "@/lib/utils"
+import posthog from "posthog-js"
 
 const navLinks = [
     { label: "Blog", href: "/blog" },
@@ -49,17 +52,20 @@ export default function Footer({ variant = "dark" }: { variant?: "dark" | "light
                     <div className="flex items-center gap-6">
                         <SocialLink
                             href="https://www.instagram.com/scoutcast.ai/"
-                            label="Instagram">
+                            label="Instagram"
+                            platform="instagram">
                             <InstagramIcon />
                         </SocialLink>
                         <SocialLink
                             href="https://www.linkedin.com/company/109072371"
-                            label="LinkedIn">
+                            label="LinkedIn"
+                            platform="linkedin">
                             <LinkedInIcon />
                         </SocialLink>
                         <SocialLink
                             href="https://x.com/scoutcastAI"
-                            label="X">
+                            label="X"
+                            platform="x">
                             <XIcon />
                         </SocialLink>
                     </div>
@@ -69,12 +75,13 @@ export default function Footer({ variant = "dark" }: { variant?: "dark" | "light
     )
 }
 
-const SocialLink = ({ href, label, children }: { href: string; label: string; children: React.ReactNode }) => (
+const SocialLink = ({ href, label, platform, children }: { href: string; label: string; platform: string; children: React.ReactNode }) => (
     <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={label}
+        onClick={() => posthog.capture("social_link_clicked", { platform })}
         className="flex size-5 items-center justify-center text-foreground transition hover:text-foreground/70">
         {children}
     </a>

@@ -11,6 +11,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 import { Menu, X } from 'lucide-react'
 import { useMedia } from '@/hooks/use-media'
 import { cn } from '@/lib/utils'
+import posthog from 'posthog-js'
 
 interface NavLink {
     name: string
@@ -71,8 +72,8 @@ export default function HeaderEight() {
 
                                 <div className="max-lg:in-data-[state=active]:mt-6 in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
                                     <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                        <DownloadButton label="iOS" />
-                                        <PlayStoreButton label="Android" />
+                                        <DownloadButton label="iOS" placement="header" />
+                                        <PlayStoreButton label="Android" placement="header" />
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +95,10 @@ const MobileMenu = ({ closeMenu }: { closeMenu: () => void }) => {
                 <Link
                     key={link.name}
                     href={link.href}
-                    onClick={closeMenu}
+                    onClick={() => {
+                        posthog.capture('nav_link_clicked', { link: link.name, location: 'mobile' })
+                        closeMenu()
+                    }}
                     className="block border-b border-white/10 py-4 text-lg text-white">
                     {link.name}
                 </Link>
@@ -110,7 +114,11 @@ const NavMenu = () => {
                 {navLinks.map((link) => (
                     <NavigationMenuItem key={link.name}>
                         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                            <Link href={link.href}>{link.name}</Link>
+                            <Link
+                                href={link.href}
+                                onClick={() => posthog.capture('nav_link_clicked', { link: link.name, location: 'desktop' })}>
+                                {link.name}
+                            </Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                 ))}

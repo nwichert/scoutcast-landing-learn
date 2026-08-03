@@ -1,6 +1,9 @@
+"use client"
+
 import Link from "next/link"
 import { Check } from "lucide-react"
 import { DownloadButton } from "@/components/download-button"
+import posthog from "posthog-js"
 
 const TRIAL_INCLUDES = [
     "Up to 7 active Scoutcasts",
@@ -62,6 +65,7 @@ export default function Pricing() {
                         <DownloadButton
                             label="Start free trial"
                             showIcon={false}
+                            placement="pricing_trial"
                             className="h-12 justify-center rounded-xl border-white/15 bg-white/[0.06] px-5 text-base hover:bg-white/[0.1]"
                         />
                     </article>
@@ -99,6 +103,7 @@ export default function Pricing() {
                         <DownloadButton
                             label="Try free for 7 days"
                             showIcon={false}
+                            placement="pricing_plus"
                             className="h-12 justify-center rounded-xl border-transparent bg-[#0AB17B] px-5 text-base font-semibold text-[#0D1117] hover:bg-[#0BC189]"
                         />
                     </article>
@@ -131,6 +136,7 @@ export default function Pricing() {
                         </ul>
                         <Link
                             href="/fantasy"
+                            onClick={() => posthog.capture("fantasy_pass_cta_clicked", { placement: "pricing_card" })}
                             className="inline-flex h-12 items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.06] px-5 text-base font-semibold text-foreground transition hover:bg-white/[0.1]">
                             See the Fantasy pass
                         </Link>

@@ -1,5 +1,9 @@
+"use client"
+
+import { useRef } from "react"
 import Link from "next/link"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import posthog from "posthog-js"
 
 type FaqGroup = {
     group: string
@@ -85,6 +89,19 @@ const faqGroups: FaqGroup[] = [
 ]
 
 export default function FAQs() {
+    const openedRef = useRef<Record<string, string[]>>({})
+
+    const handleValueChange = (groupName: string, value: string[], items: FaqGroup["items"]) => {
+        const prev = openedRef.current[groupName] ?? []
+        value
+            .filter((id) => !prev.includes(id))
+            .forEach((id) => {
+                const item = items.find((i) => i.id === id)
+                if (item) posthog.capture("faq_question_expanded", { question: item.question, group: groupName })
+            })
+        openedRef.current[groupName] = value
+    }
+
     return (
         <section id="faq" className="dark bg-background scroll-mt-20">
             <div className="mx-auto max-w-6xl px-6 py-24">
@@ -115,7 +132,9 @@ export default function FAQs() {
                                 key={group.group}
                                 className="flex flex-col gap-4">
                                 <h3 className="pl-6 text-lg font-semibold text-foreground">{group.group}</h3>
-                                <Accordion className="flex flex-col">
+                                <Accordion
+                                    className="flex flex-col"
+                                    onValueChange={(value) => handleValueChange(group.group, value as string[], group.items)}>
                                     {group.items.map((item) => (
                                         <AccordionItem
                                             key={item.id}

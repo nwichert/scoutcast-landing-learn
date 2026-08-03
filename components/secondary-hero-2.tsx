@@ -28,8 +28,8 @@ export default function HeroSection() {
                         A personalized audio briefing on the leagues, teams, and players you actually follow — generated fresh every morning. Tap to ask follow-ups, hands-free.
                     </p>
                     <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                        <DownloadButton label="App Store" />
-                        <PlayStoreButton label="Google Play" />
+                        <DownloadButton label="App Store" placement="hero" />
+                        <PlayStoreButton label="Google Play" placement="hero" />
                     </div>
                 </div>
 

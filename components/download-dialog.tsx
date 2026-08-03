@@ -6,7 +6,7 @@ import { DownloadCard } from "@/components/contact"
 import { APP_STORE_URL } from "@/lib/urls"
 import posthog from "posthog-js"
 
-export function DownloadDialog({ className, children }: { className?: string; children: React.ReactNode }) {
+export function DownloadDialog({ className, children, placement }: { className?: string; children: React.ReactNode; placement?: string }) {
     return (
         <>
             <a
@@ -14,7 +14,7 @@ export function DownloadDialog({ className, children }: { className?: string; ch
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${className ?? ""} sm:hidden`}
-                onClick={() => posthog.capture("app_store_link_clicked")}>
+                onClick={() => posthog.capture("app_store_link_clicked", { placement })}>
                 {children}
             </a>
             <div className="hidden sm:contents">
@@ -24,7 +24,7 @@ export function DownloadDialog({ className, children }: { className?: string; ch
                             <button
                                 type="button"
                                 className={className}
-                                onClick={() => posthog.capture("download_dialog_opened")}
+                                onClick={() => posthog.capture("download_dialog_opened", { placement })}
                             />
                         }>
                         {children}
@@ -44,7 +44,7 @@ export function DownloadDialog({ className, children }: { className?: string; ch
                                 }>
                                 <X className="size-4" />
                             </DialogClose>
-                            <DownloadCard />
+                            <DownloadCard placement={placement ?? "download_dialog"} />
                         </div>
                     </DialogContent>
                 </Dialog>

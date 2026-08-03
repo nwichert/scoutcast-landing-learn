@@ -1,6 +1,9 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { SeasonCountdown } from "@/components/season-countdown"
+import posthog from "posthog-js"
 
 export default function FantasyStrip() {
     return (
@@ -8,6 +11,7 @@ export default function FantasyStrip() {
             <div className="mx-auto max-w-6xl px-6 pb-24">
                 <Link
                     href="/fantasy"
+                    onClick={() => posthog.capture("fantasy_pass_cta_clicked", { placement: "homepage_strip" })}
                     className="group relative flex flex-col gap-5 overflow-hidden rounded-[20px] border border-[#0AB17B]/40 p-8 transition hover:border-[#0AB17B]/70 sm:flex-row sm:items-center sm:justify-between"
                     style={{
                         backgroundImage: "linear-gradient(135deg, rgba(10,177,123,0.10) 0%, rgba(255,255,255,0.02) 55%)",
