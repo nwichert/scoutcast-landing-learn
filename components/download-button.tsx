@@ -5,6 +5,7 @@ import { Dialog, DialogClose, DialogContent, DialogTitle, DialogTrigger } from "
 import { DownloadCard } from "@/components/contact"
 import { APP_STORE_URL } from "@/lib/urls"
 import { cn } from "@/lib/utils"
+import posthog from "posthog-js"
 
 const buttonClass = "inline-flex h-9 items-center gap-2 rounded-lg border border-white/15 bg-white/[0.04] px-3.5 text-sm font-medium text-foreground transition hover:bg-white/[0.08]"
 
@@ -15,7 +16,8 @@ export function DownloadButton({ label = "Download Free", className, showIcon = 
                 href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={cn(buttonClass, "sm:hidden", className)}>
+                className={cn(buttonClass, "sm:hidden", className)}
+                onClick={() => posthog.capture("app_store_link_clicked")}>
                 {showIcon && <AppleGlyph />}
                 {label}
             </a>
@@ -26,6 +28,7 @@ export function DownloadButton({ label = "Download Free", className, showIcon = 
                             <button
                                 type="button"
                                 className={cn(buttonClass, className)}
+                                onClick={() => posthog.capture("download_dialog_opened")}
                             />
                         }>
                         {showIcon && <AppleGlyph />}

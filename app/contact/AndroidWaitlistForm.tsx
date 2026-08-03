@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import posthog from "posthog-js";
 
 const ENDPOINT = "https://us-central1-scoutcast-ios.cloudfunctions.net/androidWaitlist";
 
@@ -18,6 +19,7 @@ export default function AndroidWaitlistForm() {
         body: JSON.stringify({ email }),
       });
       if (!res.ok) throw new Error();
+      posthog.capture("android_waitlist_joined");
       setStatus("success");
     } catch {
       setStatus("error");
