@@ -3838,10 +3838,10 @@ const allPosts: Post[] = [
 },
 {
   slug: "what-is-adp-fantasy-football",
-  title: "What Is ADP in Fantasy Football? How to Use It to Win Your Draft",
-  excerpt: "ADP is the average pick where a player gets drafted across thousands of leagues. Know it, and you can see exactly when to reach, when to wait, and where real value hides in every round.",
+  title: "What Does ADP Mean in Fantasy Football?",
+  excerpt: "ADP means Average Draft Position: the average pick where a player gets drafted across thousands of leagues. Know it to see when to reach, wait, or find value.",
   date: "2026-07-08",
-  updatedAt: "2026-07-20",
+  updatedAt: "2026-08-03",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -5143,10 +5143,11 @@ const allPosts: Post[] = [
 },
 {
   slug: "when-does-fantasy-football-start",
-  title: "When Does Fantasy Football Start? 2026 Dates & Draft Timing",
+  title: "When Does Fantasy Football Start? 2026 Draft Dates",
   excerpt:
-    "Most 2026 fantasy drafts happen Aug 23–Sep 3, with Labor Day weekend busiest. The NFL season kicks off Wednesday, Sept 9. Here's the full timing guide.",
+    "Fantasy football drafts happen Aug 23–Sep 3, 2026 (Labor Day weekend busiest). NFL season kicks off Wed, Sept 9 — full draft and season dates inside.",
   date: "2026-07-28",
+  updatedAt: "2026-08-03",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
