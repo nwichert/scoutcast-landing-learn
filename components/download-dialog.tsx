@@ -4,6 +4,7 @@ import { X } from "lucide-react"
 import { Dialog, DialogClose, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { DownloadCard } from "@/components/contact"
 import { APP_STORE_URL } from "@/lib/urls"
+import posthog from "posthog-js"
 
 export function DownloadDialog({ className, children }: { className?: string; children: React.ReactNode }) {
     return (
@@ -12,7 +13,8 @@ export function DownloadDialog({ className, children }: { className?: string; ch
                 href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${className ?? ""} sm:hidden`}>
+                className={`${className ?? ""} sm:hidden`}
+                onClick={() => posthog.capture("app_store_link_clicked")}>
                 {children}
             </a>
             <div className="hidden sm:contents">
@@ -22,6 +24,7 @@ export function DownloadDialog({ className, children }: { className?: string; ch
                             <button
                                 type="button"
                                 className={className}
+                                onClick={() => posthog.capture("download_dialog_opened")}
                             />
                         }>
                         {children}

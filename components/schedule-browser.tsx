@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { type SportEvent, formatEventDateRange } from "@/lib/events"
 import { cn } from "@/lib/utils"
+import posthog from "posthog-js"
 
 const ALL = "All sports"
 
@@ -30,7 +31,10 @@ export function ScheduleBrowser({
               type="button"
               role="tab"
               aria-selected={isActive}
-              onClick={() => setActive(sport)}
+              onClick={() => {
+                setActive(sport)
+                posthog.capture("schedule_sport_filtered", { sport })
+              }}
               className={cn(
                 "rounded-full border px-4 py-1.5 text-sm font-medium transition",
                 isActive

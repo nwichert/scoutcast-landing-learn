@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Check, Copy } from "lucide-react"
+import posthog from "posthog-js"
 
 export function CopyUrlButton({ url }: { url: string }) {
     const [copied, setCopied] = useState(false)
@@ -15,6 +16,7 @@ export function CopyUrlButton({ url }: { url: string }) {
     const onClick = async () => {
         try {
             await navigator.clipboard.writeText(url)
+            posthog.capture("share_url_copied")
             setCopied(true)
         } catch {
             const ta = document.createElement("textarea")
@@ -26,6 +28,7 @@ export function CopyUrlButton({ url }: { url: string }) {
             ta.select()
             document.execCommand("copy")
             document.body.removeChild(ta)
+            posthog.capture("share_url_copied")
             setCopied(true)
         }
     }

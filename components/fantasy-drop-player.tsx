@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { Play, Pause } from "lucide-react"
+import posthog from "posthog-js"
 
 // Fires when any player starts, carrying its own id, so the others pause —
 // only one drop sample plays at a time across the section.
@@ -37,6 +38,7 @@ export function FantasyDropPlayer({
         if (!a) return
         if (a.paused) {
             window.dispatchEvent(new CustomEvent(PLAY_EVENT, { detail: idRef.current }))
+            posthog.capture("fantasy_audio_sample_started", { sample_label: label })
             void a.play().catch(() => setPlaying(false))
         } else {
             a.pause()
