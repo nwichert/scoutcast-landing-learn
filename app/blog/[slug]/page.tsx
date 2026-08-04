@@ -3,6 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { DownloadButton } from "@/components/download-button";
+import { PlayStoreButton } from "@/components/play-store-button";
+import { QrCornerWidget } from "@/components/qr-corner-widget";
 import {
   posts,
   draftPosts,
@@ -269,6 +272,23 @@ function buildItemListLd(post: Post) {
   };
 }
 
+function BlogInlineCta({ id, placement }: { id?: string; placement: string }) {
+  return (
+    <div
+      id={id}
+      className="flex flex-col items-start gap-4 rounded-md border border-[#30363D] bg-[#161B22] p-5 sm:flex-row sm:items-center sm:justify-between"
+    >
+      <p className="text-[17px] font-semibold leading-[1.4] text-[#F0F6FC]">
+        Get your team&apos;s 2-minute briefing every morning
+      </p>
+      <div className="flex flex-shrink-0 flex-wrap items-center gap-3">
+        <DownloadButton placement={placement} />
+        <PlayStoreButton placement={placement} />
+      </div>
+    </div>
+  );
+}
+
 function JsonLd({ data }: { data: object }) {
   return (
     <script
@@ -317,6 +337,8 @@ export default async function BlogPostPage({
             <p className="text-[17px] leading-[1.55] text-[#C9D1D9]">{post.excerpt}</p>
           </header>
 
+          <BlogInlineCta id="blog-cta-top" placement="blog_inline_top" />
+
           <div className="flex flex-col gap-5 border-t border-[#30363D] pt-8">
             {post.body.map(renderBlock)}
 
@@ -335,6 +357,8 @@ export default async function BlogPostPage({
                 ))}
               </>
             ) : null}
+
+            <BlogInlineCta id="blog-cta-bottom" placement="blog_inline_bottom" />
           </div>
 
           <p className="text-sm text-[#8B949E]">
@@ -344,6 +368,7 @@ export default async function BlogPostPage({
       </main>
 
       <Footer />
+      <QrCornerWidget topId="blog-cta-top" bottomId="blog-cta-bottom" placement="blog_qr_widget" />
     </div>
   );
 }

@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { CheckCircle2 } from "lucide-react"
-import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/urls"
+import { APP_STORE_URL, buildPlayStoreUrl } from "@/lib/urls"
 import posthog from "posthog-js"
 
 const benefits = ["Only your teams and players", "About two minutes — not twenty-five", "Tap to ask follow-ups, hands-free", "Ad-free and ends when the news ends"]
@@ -68,7 +68,7 @@ export function DownloadCard({ placement = "download_dialog" }: { placement?: st
                         />
                     </div>
                     <a
-                        href={PLAY_STORE_URL}
+                        href={buildPlayStoreUrl(placement)}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => posthog.capture("play_store_link_clicked", { placement })}

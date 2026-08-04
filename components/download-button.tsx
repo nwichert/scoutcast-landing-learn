@@ -9,7 +9,7 @@ import posthog from "posthog-js"
 
 const buttonClass = "inline-flex h-9 items-center gap-2 rounded-lg border border-white/15 bg-white/[0.04] px-3.5 text-sm font-medium text-foreground transition hover:bg-white/[0.08]"
 
-export function DownloadButton({ label = "Download Free", className, showIcon = true, placement }: { label?: string; className?: string; showIcon?: boolean; placement?: string }) {
+export function DownloadButton({ label = "Download Free", className, showIcon = true, placement, onClick }: { label?: string; className?: string; showIcon?: boolean; placement?: string; onClick?: () => void }) {
     return (
         <>
             <a
@@ -17,7 +17,10 @@ export function DownloadButton({ label = "Download Free", className, showIcon = 
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(buttonClass, "sm:hidden", className)}
-                onClick={() => posthog.capture("app_store_link_clicked", { placement, label })}>
+                onClick={() => {
+                    posthog.capture("app_store_link_clicked", { placement, label })
+                    onClick?.()
+                }}>
                 {showIcon && <AppleGlyph />}
                 {label}
             </a>
@@ -28,7 +31,10 @@ export function DownloadButton({ label = "Download Free", className, showIcon = 
                             <button
                                 type="button"
                                 className={cn(buttonClass, className)}
-                                onClick={() => posthog.capture("download_dialog_opened", { placement, label })}
+                                onClick={() => {
+                                    posthog.capture("download_dialog_opened", { placement, label })
+                                    onClick?.()
+                                }}
                             />
                         }>
                         {showIcon && <AppleGlyph />}

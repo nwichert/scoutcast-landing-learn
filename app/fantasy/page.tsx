@@ -3,7 +3,7 @@ import { Check, Play, Camera, ArrowRight } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { DownloadDialog } from "@/components/download-dialog"
-import { PLAY_STORE_URL } from "@/lib/urls"
+import { PlayStoreBadge } from "@/components/play-store-badge"
 import { CoverageTimeline } from "@/components/fantasy-coverage-timeline"
 import { FantasyDropPlayer } from "@/components/fantasy-drop-player"
 import { SeasonCountdown } from "@/components/season-countdown"
@@ -687,18 +687,7 @@ function FinalCta() {
                         <span className="text-lg font-bold leading-tight tracking-[-0.01em] text-[#0D1117]">App Store</span>
                     </div>
                 </DownloadDialog>
-                <a
-                    href={PLAY_STORE_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex h-14 items-center transition hover:opacity-90">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                        src="/google-play-badge.svg"
-                        alt="Get it on Google Play"
-                        className="h-14 w-auto"
-                    />
-                </a>
+                <PlayStoreBadge placement="fantasy_hero" />
             </div>
         </section>
     )

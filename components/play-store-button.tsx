@@ -1,19 +1,22 @@
 "use client"
 
-import { PLAY_STORE_URL } from "@/lib/urls"
+import { buildPlayStoreUrl } from "@/lib/urls"
 import { cn } from "@/lib/utils"
 import posthog from "posthog-js"
 
 const buttonClass = "inline-flex h-9 items-center gap-2 rounded-lg border border-white/15 bg-white/[0.04] px-3.5 text-sm font-medium text-foreground transition hover:bg-white/[0.08]"
 
-export function PlayStoreButton({ label = "Android", className, placement }: { label?: string; className?: string; placement?: string }) {
+export function PlayStoreButton({ label = "Android", className, placement, onClick }: { label?: string; className?: string; placement?: string; onClick?: () => void }) {
     return (
         <a
-            href={PLAY_STORE_URL}
+            href={buildPlayStoreUrl(placement)}
             target="_blank"
             rel="noopener noreferrer"
             className={cn(buttonClass, className)}
-            onClick={() => posthog.capture("play_store_link_clicked", { placement, label })}>
+            onClick={() => {
+                posthog.capture("play_store_link_clicked", { placement, label })
+                onClick?.()
+            }}>
             <PlayGlyph />
             {label}
         </a>
