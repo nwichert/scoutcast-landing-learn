@@ -6,6 +6,9 @@ import Footer from "@/components/footer";
 import { DownloadButton } from "@/components/download-button";
 import { PlayStoreButton } from "@/components/play-store-button";
 import { QrCornerWidget } from "@/components/qr-corner-widget";
+import { AndroidInstallBar } from "@/components/android-install-bar";
+import { APP_STORE_ID, appleCampaignToken } from "@/lib/urls";
+import { ctaForSlug, type BlogCta } from "@/lib/ctas";
 import {
   posts,
   draftPosts,
@@ -53,6 +56,15 @@ export async function generateMetadata({
     title: post.title,
     description: post.excerpt,
     alternates: { canonical },
+    // iOS Smart App Banner. Safari-only — desktop and Android render nothing, so this
+    // costs non-iOS visitors a single meta tag and no layout. `affiliate-data` carries
+    // the per-article ct token so banner installs stay separable from in-body CTAs.
+    other: {
+      "apple-itunes-app": `app-id=${APP_STORE_ID}, affiliate-data=ct=${appleCampaignToken({
+        campaign: post.slug,
+        content: "smart-banner",
+      })}, app-argument=${canonical}/`,
+    },
     openGraph: {
       type: "article",
       title: post.title,
@@ -106,7 +118,9 @@ function renderInline(node: InlineNode, key: number) {
   }
 }
 
-function renderBlock(block: Block, i: number) {
+type BlockContext = { cta: BlogCta; campaign: string };
+
+function renderBlock(block: Block, i: number, ctx: BlockContext) {
   switch (block.type) {
     case "lead":
       return (
@@ -151,6 +165,17 @@ function renderBlock(block: Block, i: number) {
             <li key={j}>{item.map(renderInline)}</li>
           ))}
         </ul>
+      );
+    case "ol":
+      return (
+        <ol
+          key={i}
+          className="ml-6 flex list-decimal flex-col gap-3 text-[17px] leading-[1.7] text-[#C9D1D9] marker:font-semibold marker:text-[#0AB17B]"
+        >
+          {block.items.map((item, j) => (
+            <li key={j}>{item.map(renderInline)}</li>
+          ))}
+        </ol>
       );
     case "img":
       return (
@@ -203,6 +228,16 @@ function renderBlock(block: Block, i: number) {
             </tbody>
           </table>
         </div>
+      );
+    case "cta":
+      return (
+        <BlogInlineCta
+          key={i}
+          placement={`blog_inline_${block.content.replace(/^cta-/, "")}`}
+          cta={ctx.cta}
+          campaign={ctx.campaign}
+          content={block.content}
+        />
       );
     case "hr":
       return <hr key={i} className="my-4 border-[#30363D]" />;
@@ -272,18 +307,40 @@ function buildItemListLd(post: Post) {
   };
 }
 
-function BlogInlineCta({ id, placement }: { id?: string; placement: string }) {
+function BlogInlineCta({
+  id,
+  placement,
+  cta,
+  campaign,
+  content,
+}: {
+  id?: string;
+  placement: string;
+  cta: BlogCta;
+  campaign: string;
+  content: string;
+}) {
+  const attribution = { campaign, content };
   return (
     <div
       id={id}
       className="flex flex-col items-start gap-4 rounded-md border border-[#30363D] bg-[#161B22] p-5 sm:flex-row sm:items-center sm:justify-between"
     >
-      <p className="text-[17px] font-semibold leading-[1.4] text-[#F0F6FC]">
-        Get your team&apos;s 2-minute briefing every morning
-      </p>
+      <div className="flex flex-col gap-1.5">
+        <p className="text-[17px] font-semibold leading-[1.4] text-[#F0F6FC]">
+          {cta.headline}
+        </p>
+        {cta.sub ? (
+          <p className="text-[15px] leading-[1.5] text-[#C9D1D9]">{cta.sub}</p>
+        ) : null}
+      </div>
       <div className="flex flex-shrink-0 flex-wrap items-center gap-3">
-        <DownloadButton placement={placement} />
-        <PlayStoreButton placement={placement} />
+        <DownloadButton
+          label={cta.label}
+          placement={placement}
+          attribution={attribution}
+        />
+        <PlayStoreButton placement={placement} attribution={attribution} />
       </div>
     </div>
   );
@@ -310,6 +367,8 @@ export default async function BlogPostPage({
   const articleLd = buildArticleLd(post);
   const faqLd = buildFaqLd(post);
   const itemListLd = buildItemListLd(post);
+  const cta = ctaForSlug(post.slug);
+  const blockCtx = { cta, campaign: post.slug };
 
   return (
     <div className="dark min-h-screen bg-[#0D1117] text-[#F0F6FC] antialiased">
@@ -337,10 +396,16 @@ export default async function BlogPostPage({
             <p className="text-[17px] leading-[1.55] text-[#C9D1D9]">{post.excerpt}</p>
           </header>
 
-          <BlogInlineCta id="blog-cta-top" placement="blog_inline_top" />
+          <BlogInlineCta
+            id="blog-cta-top"
+            placement="blog_inline_top"
+            cta={cta}
+            campaign={post.slug}
+            content="cta-hero"
+          />
 
           <div className="flex flex-col gap-5 border-t border-[#30363D] pt-8">
-            {post.body.map(renderBlock)}
+            {post.body.map((block, i) => renderBlock(block, i, blockCtx))}
 
             {post.faqs?.length ? (
               <>
@@ -358,7 +423,13 @@ export default async function BlogPostPage({
               </>
             ) : null}
 
-            <BlogInlineCta id="blog-cta-bottom" placement="blog_inline_bottom" />
+            <BlogInlineCta
+              id="blog-cta-bottom"
+              placement="blog_inline_bottom"
+              cta={cta}
+              campaign={post.slug}
+              content="cta-footer"
+            />
           </div>
 
           <p className="text-sm text-[#8B949E]">
@@ -369,6 +440,7 @@ export default async function BlogPostPage({
 
       <Footer />
       <QrCornerWidget topId="blog-cta-top" bottomId="blog-cta-bottom" placement="blog_qr_widget" />
+      <AndroidInstallBar attribution={{ campaign: post.slug }} />
     </div>
   );
 }

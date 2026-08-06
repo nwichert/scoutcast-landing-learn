@@ -2,12 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { AndroidInstallBar } from "@/components/android-install-bar";
+import { APP_STORE_ID, appleCampaignToken } from "@/lib/urls";
 import { posts, formatPostDate } from "@/lib/posts";
+
+const BLOG_INDEX_CAMPAIGN = "blog-index";
 
 export const metadata: Metadata = {
   title: "Blog · Scoutcast.ai",
   description:
     "Notes from the Scoutcast team on personalized audio briefings, sports media, and what we're learning shipping a five-minute show.",
+  other: {
+    "apple-itunes-app": `app-id=${APP_STORE_ID}, affiliate-data=ct=${appleCampaignToken({
+      campaign: BLOG_INDEX_CAMPAIGN,
+      content: "smart-banner",
+    })}, app-argument=https://scoutcast.ai/blog/`,
+  },
 };
 
 export default function BlogIndexPage() {
@@ -56,6 +66,7 @@ export default function BlogIndexPage() {
       </main>
 
       <Footer />
+      <AndroidInstallBar attribution={{ campaign: BLOG_INDEX_CAMPAIGN }} />
     </div>
   );
 }

@@ -2,12 +2,12 @@
 
 import Image from "next/image"
 import { CheckCircle2 } from "lucide-react"
-import { APP_STORE_URL, buildPlayStoreUrl } from "@/lib/urls"
-import posthog from "posthog-js"
+import { buildAppStoreUrl, buildPlayStoreUrl, type Attribution } from "@/lib/urls"
+import { trackInstallClick } from "@/lib/track"
 
 const benefits = ["Only your teams and players", "About two minutes — not twenty-five", "Tap to ask follow-ups, hands-free", "Ad-free and ends when the news ends"]
 
-export function DownloadCard({ placement = "download_dialog" }: { placement?: string }) {
+export function DownloadCard({ placement = "download_dialog", attribution }: { placement?: string; attribution?: Attribution }) {
     return (
         <div className="grid w-full overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] lg:grid-cols-2">
             <div className="flex flex-col gap-6 border-b border-white/[0.08] p-12 lg:border-b-0 lg:border-r">
@@ -43,10 +43,10 @@ export function DownloadCard({ placement = "download_dialog" }: { placement?: st
                         />
                     </div>
                     <a
-                        href={APP_STORE_URL}
+                        href={buildAppStoreUrl(attribution, placement)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={() => posthog.capture("app_store_link_clicked", { placement })}
+                        onClick={() => trackInstallClick("app_store", { placement, ...attribution })}
                         className="flex h-12 w-[176px] items-center justify-center gap-2.5 rounded-[10px] border border-white/20 bg-black transition hover:bg-zinc-900">
                         <AppleGlyph />
                         <div className="flex flex-col leading-tight">
@@ -68,10 +68,10 @@ export function DownloadCard({ placement = "download_dialog" }: { placement?: st
                         />
                     </div>
                     <a
-                        href={buildPlayStoreUrl(placement)}
+                        href={buildPlayStoreUrl(placement, attribution)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={() => posthog.capture("play_store_link_clicked", { placement })}
+                        onClick={() => trackInstallClick("play_store", { placement, ...attribution })}
                         className="flex h-12 items-center transition hover:opacity-90">
                         <Image
                             src="/google-play-badge.svg"

@@ -20,6 +20,11 @@ export function QrCornerWidget({
     const hasTrackedShow = useRef(false)
 
     useEffect(() => {
+        // A QR code is unscannable on the device displaying it. The `sm:flex` breakpoint
+        // alone let this through on tablets, where it also collided with the Android
+        // install bar; those devices get a real tappable install path instead.
+        if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) return
+
         const top = document.getElementById(topId)
         const bottom = document.getElementById(bottomId)
         if (!top || !bottom) return

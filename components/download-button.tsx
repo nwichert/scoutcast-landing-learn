@@ -3,22 +3,23 @@
 import { X } from "lucide-react"
 import { Dialog, DialogClose, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { DownloadCard } from "@/components/contact"
-import { APP_STORE_URL } from "@/lib/urls"
+import { buildAppStoreUrl, type Attribution } from "@/lib/urls"
 import { cn } from "@/lib/utils"
+import { trackInstallClick } from "@/lib/track"
 import posthog from "posthog-js"
 
 const buttonClass = "inline-flex h-9 items-center gap-2 rounded-lg border border-white/15 bg-white/[0.04] px-3.5 text-sm font-medium text-foreground transition hover:bg-white/[0.08]"
 
-export function DownloadButton({ label = "Download Free", className, showIcon = true, placement, onClick }: { label?: string; className?: string; showIcon?: boolean; placement?: string; onClick?: () => void }) {
+export function DownloadButton({ label = "Download Free", className, showIcon = true, placement, attribution, onClick }: { label?: string; className?: string; showIcon?: boolean; placement?: string; attribution?: Attribution; onClick?: () => void }) {
     return (
         <>
             <a
-                href={APP_STORE_URL}
+                href={buildAppStoreUrl(attribution, placement)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(buttonClass, "sm:hidden", className)}
                 onClick={() => {
-                    posthog.capture("app_store_link_clicked", { placement, label })
+                    trackInstallClick("app_store", { placement, label, ...attribution })
                     onClick?.()
                 }}>
                 {showIcon && <AppleGlyph />}
@@ -32,7 +33,7 @@ export function DownloadButton({ label = "Download Free", className, showIcon = 
                                 type="button"
                                 className={cn(buttonClass, className)}
                                 onClick={() => {
-                                    posthog.capture("download_dialog_opened", { placement, label })
+                                    posthog.capture("download_dialog_opened", { placement, label, ...attribution })
                                     onClick?.()
                                 }}
                             />
@@ -55,7 +56,7 @@ export function DownloadButton({ label = "Download Free", className, showIcon = 
                                 }>
                                 <X className="size-4" />
                             </DialogClose>
-                            <DownloadCard placement={placement ?? "download_dialog"} />
+                            <DownloadCard placement={placement ?? "download_dialog"} attribution={attribution} />
                         </div>
                     </DialogContent>
                 </Dialog>

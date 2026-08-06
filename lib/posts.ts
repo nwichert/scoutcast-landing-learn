@@ -10,8 +10,12 @@ export type Block =
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
   | { type: "ul"; items: InlineNode[][] }
+  | { type: "ol"; items: InlineNode[][] }
   | { type: "table"; headers: InlineNode[][]; rows: InlineNode[][][] }
   | { type: "img"; src: string; alt: string; caption?: string; width?: number; height?: number }
+  // Install CTA placed mid-article, at the point in the argument where the reader has a
+  // reason to act. `content` becomes the utm_content / ct token for that slot.
+  | { type: "cta"; content: string }
   | { type: "hr" };
 
 export type FAQ = { question: string; answer: string };
@@ -45,8 +49,10 @@ const p = (...content: InlineNode[]): Block => ({ type: "p", content });
 const h2 = (text: string): Block => ({ type: "h2", text });
 const h3 = (text: string): Block => ({ type: "h3", text });
 const ul = (...items: InlineNode[][]): Block => ({ type: "ul", items });
+const ol = (...items: InlineNode[][]): Block => ({ type: "ol", items });
 const lead = (...content: InlineNode[]): Block => ({ type: "lead", content });
 const hr = (): Block => ({ type: "hr" });
+const cta = (content: string): Block => ({ type: "cta", content });
 const tbl = (headers: InlineNode[][], rows: InlineNode[][][]): Block => ({
   type: "table",
   headers,
@@ -3841,16 +3847,20 @@ const allPosts: Post[] = [
   title: "What Does ADP Mean in Fantasy Football?",
   excerpt: "ADP means Average Draft Position: the average pick where a player gets drafted across thousands of leagues. Know it to see when to reach, wait, or find value.",
   date: "2026-07-08",
-  updatedAt: "2026-08-03",
+  updatedAt: "2026-08-06",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
   body: [
-    lead(t("If you've spent more than five minutes preparing for your fantasy football draft, you've seen the acronym ADP. Average Draft Position is the single most actionable number in fantasy prep — and once you understand how to read it, your draft strategy changes entirely.")),
+    lead(
+      b("ADP stands for Average Draft Position — the average pick number where a player gets selected across thousands of fantasy football drafts."),
+      t(" A player with an ADP of 14 is, on average, the 14th pick off the board. Think of it as the market price for a player: the gap between a player's ADP and your own ranking of him is where draft-day value is created.")
+    ),
 
     h2("What Does ADP Mean in Fantasy Football?"),
-    p(t("ADP stands for "), b("Average Draft Position"), t(". It tells you, on average, at what pick number a player gets selected across thousands of real and mock drafts. If a running back has an ADP of 14, that means the average drafter is taking him with the 14th overall pick.")),
-    p(t("Think of ADP as the market price for a player. Just like a stock's price reflects what buyers and sellers agree a company is worth right now, a player's ADP reflects what the fantasy-playing public collectively believes that player is worth entering the season.")),
+    p(t("The acronym expands to "), b("Average Draft Position"), t(", and the word doing the work is "), em("average"), t(". No single drafter took that running back 14th; some took him 8th, some watched him fall to 22nd, and 14 is where the middle landed. That distinction matters on draft day, because you're never picking against the average — you're picking against eleven specific people.")),
+    p(t("The stock-price analogy holds up well. A share price reflects what buyers and sellers currently agree a company is worth; a player's ADP reflects what the fantasy-playing public collectively believes that player is worth entering the season. Neither number tells you whether the thing is actually worth that — only what everyone else thinks.")),
+    p(t("Which is exactly why ADP is useful. You are not trying to agree with it. You are trying to find the places where it's wrong.")),
 
     h2("How Is ADP Calculated?"),
     p(t("ADP is an aggregate of millions of drafts conducted on major platforms — ESPN, Yahoo, Sleeper, NFFC, Underdog, and more. Data providers like FantasyPros collect draft results from these platforms, filter out outliers, and compute a weighted average pick number for every draftable player.")),
@@ -4724,6 +4734,7 @@ const allPosts: Post[] = [
   excerpt:
     "The NFL shut down season-long NFL Fantasy. ESPN is now the official fantasy game, with a league import tool at espn.com/importnfl. Here's how it works.",
   date: "2026-07-23",
+  updatedAt: "2026-08-06",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -4734,7 +4745,7 @@ const allPosts: Post[] = [
       ),
       lk("espn.com/importnfl", "https://espn.com/importnfl"),
       t(
-        " — league settings, configuration, and league history come with it, and keeper leagues bring rosters too. There's no published deadline as of July 2026, but you'll want it done well before your draft."
+        " — league settings, configuration, and league history come with it, and keeper leagues bring rosters too. There's no published deadline as of August 2026, but draft season is here, so do it now rather than the week of your draft."
       )
     ),
     p(
@@ -4744,7 +4755,48 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "Here's the whole process, what actually transfers, and what to do if you'd rather use this moment to switch to Sleeper or Yahoo instead. Where the official documentation is vague, I say so — details may change, so treat everything here as accurate as of July 2026."
+        "Here's the whole process, what actually transfers, and what to do if you'd rather use this moment to switch to Sleeper or Yahoo instead. Where the official documentation is vague, I say so — details may change, so treat everything here as accurate as of August 2026."
+      )
+    ),
+
+    h2("Your 3-step migration checklist"),
+    p(
+      t(
+        "Everything below expands into detail, but this is the whole job. If you do these three things before your draft, nothing about the shutdown costs you anything:"
+      )
+    ),
+    ol(
+      [
+        b("Save your league history before it goes."),
+        t(
+          " Screenshot your all-time standings, champions, and record book now, while the NFL platform is still up. ESPN's import preserves history \"where available\" — that qualifier is doing real work, and no one has published what falls outside it."
+        ),
+      ],
+      [
+        b("Decide where your league lands."),
+        t(
+          " ESPN is the only destination that carries your history over, via the import tool. Sleeper and Yahoo mean starting the record books fresh. Decide as a league, then have your commissioner run it — "
+        ),
+        t("the league doesn't move until they activate it."),
+      ],
+      [
+        b("Set up your in-season news source."),
+        t(
+          " This is the one people skip. The league survives the move; the daily habit doesn't. You opened the NFL app to check your guys — that's the piece ESPN's import doesn't replace, and the piece you'll miss in Week 2."
+        ),
+      ]
+    ),
+    cta("cta-checklist"),
+
+    h2("Is the NFL Fantasy app going away too?"),
+    p(
+      t(
+        "Yes — the NFL Fantasy app is winding down as a season-long fantasy platform alongside the website. If you have been opening it every morning to check your roster, injuries, and matchup, that daily habit is what actually ends here. The league itself is recoverable in about ten minutes through the import tool; the routine is what needs replacing."
+      )
+    ),
+    p(
+      t(
+        "The NFL's main app continues to exist for scores, news, and video — it's the season-long fantasy game that moved to ESPN, not the NFL's entire app portfolio. But your league, your roster, and your matchup now live in ESPN Fantasy."
       )
     ),
 
@@ -4817,7 +4869,7 @@ const allPosts: Post[] = [
     h2("What transfers and what doesn't"),
     p(
       t(
-        "ESPN's own language is \"league settings, league configuration details, and league history, where available.\" The NFL's support FAQ adds that migrated leagues show past standings and league record history, and that keeper leagues bring team rosters. Here's the honest breakdown as of July 2026:"
+        "ESPN's own language is \"league settings, league configuration details, and league history, where available.\" The NFL's support FAQ adds that migrated leagues show past standings and league record history, and that keeper leagues bring team rosters. Here's the honest breakdown as of August 2026:"
       )
     ),
     tbl(
@@ -4912,38 +4964,45 @@ const allPosts: Post[] = [
     h2("Is there a deadline?"),
     p(
       t(
-        "As of July 2026, neither ESPN nor the NFL has published a hard migration deadline. The practical deadline is your draft: the league needs to be activated, settings verified, and every member joined before you're on the clock. Draft season concentrates in late August — if you're reading this in July, you have time; if it's mid-August, do it today. ("
+        "As of August 2026, neither ESPN nor the NFL has published a hard migration deadline. The practical deadline is your draft: the league needs to be activated, settings verified, and every member joined before you're on the clock. Draft season concentrates in late August, which means the window is now — if you're reading this in early August you have a couple of weeks; if it's past the 20th, do it today. ("
       ),
       lk("Here's the full preseason timeline", "/blog/when-does-fantasy-football-start"),
       t(" if you're planning backwards from kickoff.)")
     ),
 
-    h2("While you're rebuilding your stack"),
+    h2("Step 3: Set up your in-season news source"),
     p(
       t(
-        "A platform move is when most people rethink the rest of their fantasy setup — the group re-forms, the apps get reinstalled, and you notice which tools you actually used last season and which you just kept around."
+        "Steps 1 and 2 are a one-afternoon job. This one decides how your season actually feels."
       )
     ),
     p(
       t(
-        "One thing I'd put on the list: Scoutcast.ai, which we built for exactly the person going through this migration — someone who cares about their league but doesn't have an hour a day for research. It generates a personalized audio briefing, about two minutes, covering the teams and leagues you follow. It works alongside any platform, so it doesn't matter whether your league lands on ESPN, Sleeper, or Yahoo."
+        "Be honest about what you used the NFL app for. Not the draft — the draft happens once. You opened it on the walk to the car, in line for coffee, before you set your lineup: is my guy practicing, did that ankle thing turn into something, who just got the start. ESPN's import moves your league. It does not move that habit, and nothing about migrating your settings gives you back the thirty-second check-in you'd built into your day."
+      )
+    ),
+    p(
+      t("That's the gap "),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(
+        " fills. It's a personalized audio briefing — about two minutes — covering only the teams and players you actually follow. You listen while you're doing something else, which is the point: it replaces the check-in without adding another app to open. And it sits alongside your league rather than inside it, so it works the same whether you land on ESPN, Sleeper, or Yahoo."
       )
     ),
     p(
       t("For fantasy specifically, the "),
-      b("NFL Fantasy Pass ($49.99/season)"),
+      b("NFL Fantasy Season Pass ($49.99/season)"),
       t(
-        " adds per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday — waiver targets after Monday night, injury and practice-report reads midweek, and a final call Sunday morning, all tailored to your actual roster. If you're heading into a draft on a new platform, it pairs well with "
+        " adds per-league briefings on the days you make decisions: waiver targets Tuesday after Monday night, injury and practice-report reads Wednesday and Thursday, and a final start/sit call Sunday morning — all against your actual roster, in whichever platform your league ended up on. If you're heading into a draft on a new platform, it pairs well with "
       ),
       lk("a solid draft strategy", "/blog/fantasy-football-draft-strategy-2026"),
       t(".")
     ),
     p(
-      lk(
-        "Download Scoutcast on the App Store →",
-        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
+      t(
+        "Set it up in the same sitting as the migration. The leagues that lose a season to this move aren't the ones that picked the wrong platform — they're the ones where everybody stopped paying attention in September because the app they used to check was gone."
       )
     ),
+    cta("cta-inbody"),
 
     hr(),
   ],
@@ -4954,6 +5013,11 @@ const allPosts: Post[] = [
         "Yes. Beginning with the 2026 season, the NFL no longer operates a season-long fantasy football game. ESPN is now the official fantasy game of the NFL, and existing NFL Fantasy leagues can migrate to ESPN Fantasy through a dedicated import tool at espn.com/importnfl.",
     },
     {
+      question: "Is the NFL Fantasy app shutting down?",
+      answer:
+        "Yes. The NFL Fantasy app and website are winding down as a season-long fantasy football platform for the 2026 season, and ESPN Fantasy is now the official game of the NFL. Your league can migrate to ESPN at espn.com/importnfl. The NFL's main app still exists for scores, news, and video — it is the season-long fantasy game that moved, not the NFL's whole app.",
+    },
+    {
       question: "Do I lose my league history when I move to ESPN?",
       answer:
         "Mostly no. The migration preserves league settings, configuration details, and league history — including past standings and record history — where available. Keeper leagues also bring team rosters. Things like league chat threads and custom team logos are not confirmed to transfer, so screenshot anything sentimental before the NFL platform winds down.",
@@ -4961,12 +5025,12 @@ const allPosts: Post[] = [
     {
       question: "Is there a deadline to migrate my NFL Fantasy league to ESPN?",
       answer:
-        "As of July 2026, no official deadline has been published. The practical deadline is your draft: the commissioner needs to activate the migrated league and every member needs to join before draft day, so aim to finish well before late August.",
+        "As of August 2026, no official deadline has been published. The practical deadline is your draft: the commissioner needs to activate the migrated league and every member needs to join before draft day. Since most 2026 drafts land between August 23 and Labor Day weekend, finish the migration in the next week or two.",
     },
     {
       question: "Is ESPN Fantasy Football free?",
       answer:
-        "Yes. Standard ESPN Fantasy Football leagues are free to create, join, and play as of July 2026, on both ESPN.com and the ESPN Fantasy app. Migrating an NFL Fantasy league to ESPN does not cost anything.",
+        "Yes. Standard ESPN Fantasy Football leagues are free to create, join, and play as of August 2026, on both ESPN.com and the ESPN Fantasy app. Migrating an NFL Fantasy league to ESPN does not cost anything.",
     },
     {
       question: "Can I move my NFL Fantasy league to Sleeper or Yahoo instead?",
@@ -5143,11 +5207,11 @@ const allPosts: Post[] = [
 },
 {
   slug: "when-does-fantasy-football-start",
-  title: "When Does Fantasy Football Start? 2026 Draft Dates",
+  title: "When Do Fantasy Football Drafts Start? 2026 Dates",
   excerpt:
-    "Fantasy football drafts happen Aug 23–Sep 3, 2026 (Labor Day weekend busiest). NFL season kicks off Wed, Sept 9 — full draft and season dates inside.",
+    "Most 2026 fantasy football drafts start Aug 23–Sep 3, peaking Labor Day weekend. Kickoff is Wed, Sept 9. Every date that matters, and the window to pick.",
   date: "2026-07-28",
-  updatedAt: "2026-08-03",
+  updatedAt: "2026-08-06",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -5227,7 +5291,7 @@ const allPosts: Post[] = [
       )
     ),
 
-    h2("When do most fantasy leagues draft?"),
+    h2("When do fantasy football drafts start?"),
     p(
       t(
         "The overwhelming majority of redraft leagues hold their drafts in the final two weeks before the season — roughly August 23 through September 3 — and Labor Day weekend is consistently the busiest drafting window on every major platform, per "
@@ -5354,15 +5418,15 @@ const allPosts: Post[] = [
         "The only real deadline is Week 1. Everything else — the perfect draft date, the ideal prep schedule — is optimization. Get your league scheduled for that Aug 28–Sep 7 window, do a couple mocks, keep a light ear on camp news, and you'll walk into your draft more prepared than half your league."
       )
     ),
-    p(
-      lk(
-        "Download Scoutcast on the App Store →",
-        "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
-      )
-    ),
+    cta("cta-inbody"),
     hr(),
   ],
   faqs: [
+    {
+      question: "When do fantasy football drafts start in 2026?",
+      answer:
+        "Most 2026 fantasy football drafts start between August 23 and September 3, with Labor Day weekend (September 4–7) the busiest drafting stretch of the year. Best-ball drafts start much earlier, peaking from mid-July through mid-August. The practical last comfortable draft day is Tuesday, September 8, the day before the NFL Kickoff game.",
+    },
     {
       question: "When does fantasy football start in 2026?",
       answer:
