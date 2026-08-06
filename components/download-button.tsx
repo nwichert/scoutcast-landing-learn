@@ -14,7 +14,7 @@ export function DownloadButton({ label = "Download Free", className, showIcon = 
     return (
         <>
             <a
-                href={buildAppStoreUrl(attribution, placement)}
+                href={buildAppStoreUrl(attribution)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(buttonClass, "sm:hidden", className)}

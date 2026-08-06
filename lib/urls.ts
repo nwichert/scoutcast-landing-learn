@@ -21,7 +21,18 @@ export type Attribution = {
     content?: string
     source?: string
     medium?: string
+    /**
+     * Coarse, pre-registered App Store Connect campaign name. Separate from `campaign`
+     * because Apple and Google have incompatible constraints — see buildAppStoreUrl.
+     */
+    appleCampaign?: string
 }
+
+/**
+ * Apple campaign for CTAs that aren't tied to an article (header, homepage, dialog).
+ * Must exist as a campaign in App Store Connect to report.
+ */
+export const SITE_APPLE_CAMPAIGN = "Download"
 
 function buildReferrer(placement?: string, attribution?: Attribution): string {
     if (attribution?.campaign) {
@@ -61,15 +72,18 @@ export function appleCampaignToken({ campaign, content }: Attribution): string {
 // with no code change. Until then, iOS per-page numbers come from PostHog/GA4 clicks.
 const APPLE_PROVIDER_TOKEN = process.env.NEXT_PUBLIC_APPLE_PROVIDER_TOKEN
 
-export function buildAppStoreUrl(attribution?: Attribution, placement?: string) {
-    // Blog CTAs key off campaign+content; site-wide CTAs (header, homepage) only have a
-    // placement, but they still deserve a token — otherwise every non-blog iOS install
-    // lands in one undifferentiated bucket.
-    const token = attribution?.campaign
-        ? appleCampaignToken(attribution)
-        : placement
-          ? appleCampaignToken({ campaign: placement })
-          : ""
+/**
+ * Apple campaigns must be created by hand in App Store Connect, and one only surfaces in
+ * App Analytics after five distinct users install through it. So `ct` is always a coarse,
+ * pre-registered campaign — never the page slug, and never suffixed with the CTA position,
+ * either of which would produce unregistered campaigns that silently report nothing.
+ *
+ * Play (buildPlayStoreUrl) keeps full per-page, per-position UTMs; it has no such limits.
+ */
+export function buildAppStoreUrl(attribution?: Attribution) {
+    const token = appleCampaignToken({
+        campaign: attribution?.appleCampaign ?? SITE_APPLE_CAMPAIGN,
+    })
     if (!token) return APP_STORE_URL
     const url = new URL(APP_STORE_URL)
     url.searchParams.set("ct", token)

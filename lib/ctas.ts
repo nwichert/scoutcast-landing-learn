@@ -108,3 +108,32 @@ const BY_SLUG: Record<string, BlogCta> = Object.fromEntries(
 export function ctaForSlug(slug: string): BlogCta {
     return BY_SLUG[slug] ?? DEFAULT_CTA
 }
+
+/**
+ * Apple campaign token for a page — deliberately coarse.
+ *
+ * Google Play's Install Referrer accepts arbitrary UTMs, so Play keeps full per-page,
+ * per-CTA-position granularity. Apple does not: campaigns must be created by hand in
+ * App Store Connect, and one only appears in App Analytics after it has produced
+ * first-time downloads from at least five distinct users. At this site's volume a
+ * per-page token would never clear that floor, so iOS rolls up to three buckets that
+ * plausibly will. Per-page and per-position iOS detail comes from PostHog/GA4 clicks.
+ *
+ * Each value here must exist as a campaign in App Store Connect to report.
+ */
+const APPLE_CAMPAIGN_BY_GROUP: Partial<Record<CtaGroup, string>> = {
+    migration: "blog-espn-migration",
+    "draft-timing": "blog-draft-timing",
+}
+
+const APPLE_CAMPAIGN_FALLBACK = "blog-other"
+
+const APPLE_CAMPAIGN_BY_SLUG: Record<string, string> = Object.fromEntries(
+    (Object.entries(SLUG_GROUPS) as [CtaGroup, string[]][]).flatMap(([group, slugs]) =>
+        slugs.map((slug) => [slug, APPLE_CAMPAIGN_BY_GROUP[group] ?? APPLE_CAMPAIGN_FALLBACK]),
+    ),
+)
+
+export function appleCampaignForSlug(slug: string): string {
+    return APPLE_CAMPAIGN_BY_SLUG[slug] ?? APPLE_CAMPAIGN_FALLBACK
+}

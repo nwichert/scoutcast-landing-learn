@@ -43,7 +43,7 @@ export function DownloadCard({ placement = "download_dialog", attribution }: { p
                         />
                     </div>
                     <a
-                        href={buildAppStoreUrl(attribution, placement)}
+                        href={buildAppStoreUrl(attribution)}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => trackInstallClick("app_store", { placement, ...attribution })}

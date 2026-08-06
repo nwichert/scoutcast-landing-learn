@@ -3,20 +3,20 @@ import Link from "next/link";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { AndroidInstallBar } from "@/components/android-install-bar";
-import { APP_STORE_ID, appleCampaignToken } from "@/lib/urls";
+import { APP_STORE_ID } from "@/lib/urls";
+import { appleCampaignForSlug } from "@/lib/ctas";
 import { posts, formatPostDate } from "@/lib/posts";
 
 const BLOG_INDEX_CAMPAIGN = "blog-index";
+// The index isn't a post, so it falls through to the catch-all Apple campaign.
+const BLOG_INDEX_APPLE_CAMPAIGN = appleCampaignForSlug(BLOG_INDEX_CAMPAIGN);
 
 export const metadata: Metadata = {
   title: "Blog · Scoutcast.ai",
   description:
     "Notes from the Scoutcast team on personalized audio briefings, sports media, and what we're learning shipping a five-minute show.",
   other: {
-    "apple-itunes-app": `app-id=${APP_STORE_ID}, affiliate-data=ct=${appleCampaignToken({
-      campaign: BLOG_INDEX_CAMPAIGN,
-      content: "smart-banner",
-    })}, app-argument=https://scoutcast.ai/blog/`,
+    "apple-itunes-app": `app-id=${APP_STORE_ID}, affiliate-data=ct=${BLOG_INDEX_APPLE_CAMPAIGN}, app-argument=https://scoutcast.ai/blog/`,
   },
 };
 
@@ -66,7 +66,12 @@ export default function BlogIndexPage() {
       </main>
 
       <Footer />
-      <AndroidInstallBar attribution={{ campaign: BLOG_INDEX_CAMPAIGN }} />
+      <AndroidInstallBar
+        attribution={{
+          campaign: BLOG_INDEX_CAMPAIGN,
+          appleCampaign: BLOG_INDEX_APPLE_CAMPAIGN,
+        }}
+      />
     </div>
   );
 }

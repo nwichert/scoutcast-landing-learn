@@ -7,8 +7,8 @@ import { DownloadButton } from "@/components/download-button";
 import { PlayStoreButton } from "@/components/play-store-button";
 import { QrCornerWidget } from "@/components/qr-corner-widget";
 import { AndroidInstallBar } from "@/components/android-install-bar";
-import { APP_STORE_ID, appleCampaignToken } from "@/lib/urls";
-import { ctaForSlug, type BlogCta } from "@/lib/ctas";
+import { APP_STORE_ID } from "@/lib/urls";
+import { ctaForSlug, appleCampaignForSlug, type BlogCta } from "@/lib/ctas";
 import {
   posts,
   draftPosts,
@@ -58,12 +58,11 @@ export async function generateMetadata({
     alternates: { canonical },
     // iOS Smart App Banner. Safari-only — desktop and Android render nothing, so this
     // costs non-iOS visitors a single meta tag and no layout. `affiliate-data` carries
-    // the per-article ct token so banner installs stay separable from in-body CTAs.
+    // the same coarse, pre-registered campaign the in-body CTAs use.
     other: {
-      "apple-itunes-app": `app-id=${APP_STORE_ID}, affiliate-data=ct=${appleCampaignToken({
-        campaign: post.slug,
-        content: "smart-banner",
-      })}, app-argument=${canonical}/`,
+      "apple-itunes-app": `app-id=${APP_STORE_ID}, affiliate-data=ct=${appleCampaignForSlug(
+        post.slug,
+      )}, app-argument=${canonical}/`,
     },
     openGraph: {
       type: "article",
@@ -320,7 +319,12 @@ function BlogInlineCta({
   campaign: string;
   content: string;
 }) {
-  const attribution = { campaign, content };
+  // Play/PostHog get page + position; Apple gets the coarse pre-registered campaign.
+  const attribution = {
+    campaign,
+    content,
+    appleCampaign: appleCampaignForSlug(campaign),
+  };
   return (
     <div
       id={id}
