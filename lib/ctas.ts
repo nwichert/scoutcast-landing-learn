@@ -28,9 +28,12 @@ const GROUP_COPY: Record<CtaGroup, BlogCta> = {
         headline: "New to fantasy? Learn it 2 minutes at a time",
         sub: "A short daily briefing in plain language — the terms, the moves, and what actually matters this week.",
     },
+    // Scoutcast is not a fantasy platform and doesn't replace one. Your league app runs
+    // the league; Scoutcast is the news-and-insight layer on top of it. Copy here must
+    // read as "win more weeks in the platform you're on", never as a substitute for it.
     migration: {
-        headline: "Your app is going away. Here's your replacement.",
-        sub: "The daily check-in on your guys that the NFL app used to be — 2 minutes, your roster, any platform.",
+        headline: "New platform. Same weekly decisions.",
+        sub: "Scoutcast.ai layers on top of whatever platform your league lands on — 2 minutes of news and insight, so you win more weeks.",
         label: "Get Scoutcast",
     },
     "world-cup": {

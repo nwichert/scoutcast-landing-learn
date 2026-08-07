@@ -4985,7 +4985,7 @@ const allPosts: Post[] = [
       t("That's the gap "),
       lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(
-        " fills. It's a personalized audio briefing — about two minutes — covering only the teams and players you actually follow. You listen while you're doing something else, which is the point: it replaces the check-in without adding another app to open. And it sits alongside your league rather than inside it, so it works the same whether you land on ESPN, Sleeper, or Yahoo."
+        " fills. To be clear about what it is: it doesn't run your league. ESPN, Sleeper, or Yahoo still does that — rosters, scoring, waivers, matchups. Scoutcast is the layer on top. It's a personalized audio briefing, about two minutes, covering only the players you actually roster: the injury, practice, and usage reads that decide who you start. You listen while you're doing something else, and it works the same whichever platform your league lands on."
       )
     ),
     p(
@@ -5031,6 +5031,11 @@ const allPosts: Post[] = [
       question: "Is ESPN Fantasy Football free?",
       answer:
         "Yes. Standard ESPN Fantasy Football leagues are free to create, join, and play as of August 2026, on both ESPN.com and the ESPN Fantasy app. Migrating an NFL Fantasy league to ESPN does not cost anything.",
+    },
+    {
+      question: "Does Scoutcast replace ESPN Fantasy?",
+      answer:
+        "No, and it isn't trying to. ESPN Fantasy runs your league — rosters, scoring, waivers, matchups, and the record book you just migrated. Scoutcast.ai is an enrichment layer on top of it: a roughly two-minute personalized audio briefing covering the injury, practice-report, and usage news that decides your weekly lineup calls. You keep your league where it is and use Scoutcast to win more weeks in it.",
     },
     {
       question: "Can I move my NFL Fantasy league to Sleeper or Yahoo instead?",
