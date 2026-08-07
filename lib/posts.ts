@@ -8410,7 +8410,9 @@ export const draftPosts: Post[] = [];
 // date. Scheduled publishing = future-date the post + rebuild daily.
 // PUBLISH_AS_OF=YYYY-MM-DD overrides the gate date (e.g. to test-render
 // every scheduled post: PUBLISH_AS_OF=2026-09-01 npm run build).
-const buildDate = process.env.PUBLISH_AS_OF ?? new Date().toISOString().slice(0, 10);
+// `||`, not `??`: CI passes an unset workflow input as "" rather than undefined,
+// and an empty buildDate would fail every `p.date <= buildDate` and ship an empty blog.
+const buildDate = process.env.PUBLISH_AS_OF || new Date().toISOString().slice(0, 10);
 export const posts: Post[] = allPosts.filter((p) => p.date <= buildDate);
 export const scheduledPosts: Post[] = allPosts.filter((p) => p.date > buildDate);
 

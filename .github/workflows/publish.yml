@@ -1,0 +1,130 @@
+name: Publish blog
+
+# Replaces the launchd job ai.scoutcast.blog-autopublish, which fired at 08:30
+# while this Mac was in DarkWake (lid closed, on battery) and failed to run on
+# most days. lib/posts.ts date-gates future posts out of the build, so
+# "publishing" a scheduled post is just: rebuild + redeploy on/after its date.
+# A hosted runner is always awake, so the date is actually honoured.
+
+on:
+  schedule:
+    # 13:30 UTC = 08:30 America/Chicago under CDT (07:30 under CST — the drift is
+    # harmless). The gate in lib/posts.ts compares against the UTC date, which has
+    # already rolled over by this hour, so a post dated YYYY-MM-DD ships that day.
+    - cron: "30 13 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      publish_as_of:
+        description: "Override the publish-gate date (YYYY-MM-DD) to ship scheduled posts early. Leave blank for today."
+        required: false
+        type: string
+
+# Never let a push-triggered deploy and the daily cron deploy race each other.
+concurrency:
+  group: publish-blog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # >= 23.6, where TypeScript type-stripping is on by default: the .mjs
+          # scripts import lib/posts.ts directly with no build step.
+          node-version: "24"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Regenerate sitemap.xml + llms.txt
+        env:
+          PUBLISH_AS_OF: ${{ inputs.publish_as_of }}
+        run: node scripts/generate-seo-files.mjs
+
+      - name: Determine which URLs this deploy makes public
+        id: new_urls
+        run: |
+          NEW="$(node scripts/newly-live-urls.mjs | tr '\n' ' ')"
+          echo "urls=${NEW}" >> "$GITHUB_OUTPUT"
+          echo "Newly live:${NEW:- (none — content-only deploy)}"
+
+      - name: Build static export
+        env:
+          PUBLISH_AS_OF: ${{ inputs.publish_as_of }}
+          # Inlined into the client bundle at build time. Without these the
+          # deployed site loses analytics and install attribution, so CI must
+          # supply the same values as the local .env.local.
+          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
+          NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN: ${{ secrets.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN }}
+          NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
+          NEXT_PUBLIC_TRACKER_URL: ${{ secrets.NEXT_PUBLIC_TRACKER_URL }}
+          NEXT_PUBLIC_APPLE_PROVIDER_TOKEN: ${{ secrets.NEXT_PUBLIC_APPLE_PROVIDER_TOKEN }}
+        run: npm run build
+
+      - name: Deploy to Firebase Hosting
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/firebase-sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/firebase-sa.json"
+          npx --yes firebase-tools@15 deploy \
+            --only hosting \
+            --project scoutcast-8d5fa \
+            --non-interactive
+          rm -f "$RUNNER_TEMP/firebase-sa.json"
+
+      # Submission steps are non-fatal: the pages are already live, and a failed
+      # ping should not turn a successful publish into a red build.
+      # NEW_URLS goes through env rather than direct ${{ }} interpolation into the
+      # shell — the values are our own slugs, but expression-into-run is the
+      # documented injection footgun and env costs nothing. Left unquoted on
+      # purpose: the scripts take one URL per argument.
+      - name: Ping IndexNow (Bing, Copilot, Yandex, Seznam, Naver)
+        if: steps.new_urls.outputs.urls != ''
+        continue-on-error: true
+        env:
+          NEW_URLS: ${{ steps.new_urls.outputs.urls }}
+        run: node scripts/indexnow-ping.mjs $NEW_URLS
+
+      - name: Submit sitemap + inspect URLs in Search Console
+        if: steps.new_urls.outputs.urls != ''
+        continue-on-error: true
+        env:
+          NEW_URLS: ${{ steps.new_urls.outputs.urls }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: sc-domain:scoutcast.ai
+        run: node scripts/gsc-submit.mjs $NEW_URLS
+
+      - name: Submit to Bing Webmaster Tools
+        if: steps.new_urls.outputs.urls != ''
+        continue-on-error: true
+        env:
+          NEW_URLS: ${{ steps.new_urls.outputs.urls }}
+          BING_WEBMASTER_API_KEY: ${{ secrets.BING_WEBMASTER_API_KEY }}
+          BING_SITE_URL: https://scoutcast.ai
+        run: node scripts/bing-submit.mjs $NEW_URLS
+
+      # "Request Indexing" has no public API, so that stays manual. Surface the
+      # URLs in the run summary instead of the macOS notification the old script
+      # used, which nobody saw when the Mac was closed anyway.
+      - name: Summarise
+        if: always()
+        env:
+          NEW_URLS: ${{ steps.new_urls.outputs.urls }}
+        run: |
+          {
+            echo "### Blog publish"
+            if [ -n "$NEW_URLS" ]; then
+              echo "Newly live — now Request Indexing for each in Search Console:"
+              for u in $NEW_URLS; do echo "- $u"; done
+            else
+              echo "No new URLs (content-only deploy)."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
