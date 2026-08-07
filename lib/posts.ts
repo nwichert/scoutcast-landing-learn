@@ -6209,7 +6209,7 @@ const allPosts: Post[] = [
   title: "What Is PPR in Fantasy Football? PPR Meaning Explained",
   excerpt:
     "PPR means ‘point per reception’: every catch is worth 1 fantasy point (0.5 in half PPR, 0 in standard). Here’s how it changes player value and your draft.",
-  date: "2026-08-08",
+  date: "2026-08-07",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -6432,7 +6432,7 @@ const allPosts: Post[] = [
   title: "How Does Fantasy Football Work? A Beginner’s Guide",
   excerpt:
     "You draft real NFL players, start a lineup each week, and their real-game stats become your points. Highest score wins. Here’s the full beginner walkthrough.",
-  date: "2026-08-08",
+  date: "2026-08-07",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -6638,7 +6638,7 @@ const allPosts: Post[] = [
   title: "What Is a Flex in Fantasy Football? Explained Simply",
   excerpt:
     "The flex is a lineup spot you can fill with an RB, WR, or TE — your choice each week. Here's how it works, what superflex means, and who to put in it.",
-  date: "2026-08-08",
+  date: "2026-08-07",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -6863,7 +6863,7 @@ const allPosts: Post[] = [
   title: "What Is FAAB in Fantasy Football? Bidding Explained",
   excerpt:
     "FAAB (Free Agent Acquisition Budget) is a season-long budget — usually $100 — you spend in blind bids to claim waiver players. Here's how to bid it well.",
-  date: "2026-08-08",
+  date: "2026-08-07",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
