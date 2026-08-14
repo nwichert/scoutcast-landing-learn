@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// Self-hosted via the `geist` package rather than next/font/google: the Google
+// variant fetches from fonts.googleapis.com at BUILD time, so the scheduled
+// 08:30 publish failed outright on 2026-08-13 when the Mac had woken but not
+// yet reconnected to wifi ("Failed to fetch `Geist` from Google Fonts"). These
+// exports are the same families wired through next/font/local, exposing the
+// same --font-geist-sans / --font-geist-mono variables, with the woff2 files on
+// disk — so the build no longer depends on the network.
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://scoutcast.ai"),
@@ -51,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${GeistSans.variable} ${GeistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}
