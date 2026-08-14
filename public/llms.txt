@@ -39,6 +39,8 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - X: https://x.com/scoutcastAI
 
 ## Recent posts
+- How to Host a Fantasy Football Draft Party (2026 Guide) (2026-08-13): https://scoutcast.ai/blog/fantasy-football-draft-party-ideas — The complete draft party playbook: venues, the sticker-board debate, food themes, punishment ceremonies, hybrid setups for remote members, and a run-of-show.
+- 24 Fantasy Football Draft Order Ideas (Lazy to Legendary) (2026-08-13): https://scoutcast.ai/blog/fantasy-football-draft-order-ideas — 24 fun ways to set your fantasy football draft order — randomizer apps, closest-to-pin contests, lottery ball reveals, and options for online-only leagues.
 - What Is FAAB in Fantasy Football? Bidding Explained (2026-08-07): https://scoutcast.ai/blog/what-is-faab-in-fantasy-football — FAAB (Free Agent Acquisition Budget) is a season-long budget — usually $100 — you spend in blind bids to claim waiver players. Here's how to bid it well.
 - What Is a Flex in Fantasy Football? Explained Simply (2026-08-07): https://scoutcast.ai/blog/what-is-a-flex-in-fantasy-football — The flex is a lineup spot you can fill with an RB, WR, or TE — your choice each week. Here's how it works, what superflex means, and who to put in it.
 - How Does Fantasy Football Work? A Beginner’s Guide (2026-08-07): https://scoutcast.ai/blog/how-does-fantasy-football-work — You draft real NFL players, start a lineup each week, and their real-game stats become your points. Highest score wins. Here’s the full beginner walkthrough.
@@ -85,4 +87,4 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - Scoutcast vs Huxe vs BriefingAM: which AI audio briefing app should you use? (2026-05-07): https://scoutcast.ai/blog/scoutcast-vs-huxe-vs-briefingam — An honest comparison of the three best AI audio briefing apps in 2026 — what each one is good at, where each one falls short, and which to pick based on what you actually care about.
 - Why we built Scoutcast.ai (2026-04-28): https://scoutcast.ai/blog/why-we-built-scoutcast — A personalized 2-minute AI sports briefing for your morning — and the morning with my son that started it.
 
-Last updated: 2026-08-07
+Last updated: 2026-08-13
