@@ -4,6 +4,125 @@ Track changes here to correlate against GSC in 2–4 weeks.
 
 ---
 
+## 2026-08-14 — RESULTS: fantasy wave measured; Jul 21 checkpoints closed
+
+**Data:** `Google-Trends-Research/scoutcast.ai-Performance-on-Search-2026-08-14.xlsx`
+(GSC, Web, last 3 months = 2026-05-13 → 2026-08-12; final day partial due to reporting lag).
+No measurement had been taken since the Jul 16 export — this entry closes both the
+Aug 5 and Aug 20 checkpoints set on 2026-07-21, plus the Jul 23 podcast-title checkpoint.
+
+### Headline: the wave worked, and CTR recovered
+
+Trailing 28 days at each of the three exports:
+
+| Window | Impressions | Clicks | CTR |
+|---|---|---|---|
+| May 21 – Jun 17 | 5,438 | 65 | 1.20% |
+| Jun 17 – Jul 14 | 52,692 | 196 | 0.37% |
+| **Jul 16 – Aug 12** | **197,507** | **2,401** | **1.22%** |
+
+36× impressions and 37× clicks in eight weeks, with CTR back to the pre-World-Cup level.
+The 0.37% trough was dilution from `world-cup-bracket-2026` (22,268 impr @ 0.05% — bracket
+intent is answered in-SERP), not a sitewide problem; it washed out as fantasy volume arrived.
+
+Monthly: Jun 28,196 impr / 104 clicks · Jul 90,169 / 790 · **Aug 1–12 139,221 / 1,785 @ 1.28%**.
+Peak day Aug 5 (213 clicks). 90-day total 258,624 impr / 2,686 clicks / 1.04%.
+Mobile CTR 1.33% vs desktop 0.62% — mobile is 2.1× and is where installs come from.
+
+### Checkpoint verdicts (against "Watch for in GSC", 2026-07-21)
+
+| Checkpoint | Verdict | Evidence |
+|---|---|---|
+| Migration post → impressions within days | ✅ **Beat** | `nfl-fantasy-moving-to-espn` 38,072 impr / 439 clicks / pos 5.89; cluster at pos 2.3–3.5 |
+| Knockout post → impressions | ⚠️ **Right call, small** | `espn-knockout-leagues` 990 impr / 10 clicks / pos 7.09 — real but ~2% of migration |
+| Beginner batch → "what is ppr/flex/faab" from late Aug | ❌ **Impressions only** | 17,896 impr across the 5 definitional pages → **20 clicks total** |
+| Team-names spike Aug 25 – Sep 7 | ⏳ Not yet live | publishes 08-18; still ahead of the window |
+| Apps post CTR + position from retitle | ✅ **Confirmed** | pos 10.19 → **8.89**, clicks 7 → 24, impr 1,615 → 4,849 |
+
+### What produced the clicks
+
+- **`fantasy-football-punishment-ideas` — 1,431 clicks / 20,635 impr / 6.93% CTR / pos 7.80.**
+  53% of all site clicks from one post. Cluster: 69 queries, 1,091 clicks, 11,484 impr, **9.50% CTR**.
+  Head term "fantasy football punishments" runs **11.54% CTR at position 5.61** — above-normal
+  for that position, i.e. the title/snippet is taking clicks from pages ranked above it.
+  Validates the culture-cluster thesis (no publisher on page 1 + demand displaced by Reddit mods).
+- **`nfl-fantasy-moving-to-espn` — 439 clicks / 38,072 impr / pos 5.89.** Zero-competition
+  breakout confirmed; published 2 days after the research call, top-3 on the query cluster.
+- **Earlier interventions compounded rather than plateaued:** `best-sports-news-apps`
+  72 → 194 clicks (6,780 → 16,013 impr, pos 6.88 → 6.14); `espn-app-alternatives` 12 → 37
+  (1,056 → 3,576, pos 7.67 → 6.39); `how-many-people-play-fantasy-football` 11 → 36 (pos 6.48 → 5.80).
+
+### What didn't work — and the standing rules that follow
+
+1. **Date/definitional queries return impressions, not clicks. Stop treating them as traffic plays.**
+   `when-does-fantasy-football-start` is the site's biggest impression driver — **83,750 impr, 217
+   clicks, 0.26%** — and the head term alone is 11,538 impr / 4 clicks / 0.03% @ pos 7.62. The
+   definitional batch: `what-is-adp` 8,827 impr / 7 clicks, `what-is-ppr` 3,581 / 3,
+   `what-is-faab` 2,763 / 4, `what-is-a-flex` 1,725 / 4, `how-does-ff-work` 1,119 / 2.
+   Google answers these in-SERP. **New rule:** 3c pages are AI-citation and authority surface
+   only; never counted toward click targets, and no more of them until a citation-side
+   measurement exists to justify the slot.
+2. **Orphaned pages don't rank — and the two most strategically important pages are orphans.**
+   `nfl-offseason-catch-up-2026`, called in the strategy "the purest product-fit page we can
+   write" and the page that sells the Pass hardest: **10 impressions, 0 clicks in 3 weeks**
+   (pos 8.40, 0 inbound internal links). `fantasy-football-league-constitution-template`
+   ("weakest SERP found"): **68 impr, 3 clicks**, also 0 inbound. Across the blog: ~57 internal
+   links over 52 posts, 12 posts with 0 inbound and 8 with 1.
+3. **Prompt-shaped queries are visibility, not traffic.** 55 natural-language queries →
+   2,860 impr, **2 clicks** ("what apps give fastest world cup match updates?" 803 impr / 0 clicks
+   / pos 6.14). Some carry agent scaffolding verbatim (`context: location: viet nam…` @ pos 2.00),
+   which is real evidence AI systems are reading the pages. Track separately from click goals.
+4. **`/schedules/` has no traction.** ~24 pages, near-zero clicks, positions 8–46
+   (`wimbledon-2026` 36.4, `us-open-tennis-2026` 46.7). Either commit to it or stop generating it.
+5. **`/fantasy/` gets nothing from search** — 63 impr, 0 clicks, pos 10.17. The money page is
+   reached only via in-post links (31 posts link to it), never via Google.
+
+### Actions taken from this read
+
+- (none yet — this entry is the measurement; fixes below are queued)
+
+### Next actions, in priority order
+
+1. **Pricing correction, site-wide (blocking).** `public/pricing.md` (last touched 2026-04-27)
+   and `public/llms.txt` still state a permanently free tier and "Season Pass is not a
+   subscription," while `components/pricing.tsx` charges $5.99/mo Plus after a 7-day trial.
+   16 posts repeat the free claim, **14 inside `faqs`** → shipped as FAQPage JSON-LD, i.e. the
+   exact strings Google and LLMs quote. Worst on the best pages (`best-sports-news-apps`,
+   `best-free-nba-news-apps-2026`, where "free + ad-free" *is* the differentiator argument).
+   Only `scoutcast-vs-huxe-vs-briefingam` is correct. Fix, redeploy, re-ping IndexNow.
+2. **OG images.** 35 of 52 posts have none and `generateMetadata` has no fallback
+   (`images: post.ogImage ? … : undefined`) — including the punishment post, the single most
+   shareable asset on the site. Add the fallback, batch-run `scripts/generate-og-images.mjs`.
+3. **Internal-link pass on the 12 orphans**, `nfl-offseason-catch-up-2026` first (link in from
+   the punishment post, the migration post, and `when-does-fantasy-football-start` — all three
+   have traffic and none link to it). Normalize hrefs to relative `/blog/…` while in there.
+4. **Snippet-recapture pass on the impression giants.** `when-does-fantasy-football-start`
+   (83,750 impr @ 0.26%) and `what-is-adp` (8,827 @ 0.08%): restructure so the answer is a
+   scannable block Google must click through for (dated table per platform, not a prose answer).
+   If CTR doesn't move by ~2 weeks, accept these as citation-only per rule 1.
+5. **Replicate the punishment pattern, don't extend it.** The win came from SERP structure
+   (no publisher on page 1 + community-displaced demand), not from the topic. `draft-order-ideas`
+   and `draft-party-ideas` shipped 08-13 with 0 days of data — they are the direct test.
+6. **Tool play still unbuilt** (#3e, "biggest structural unlock"): no calculator/generator route
+   exists. Keeper calculator was due 08-14.
+
+### Watch for in GSC (check ~2026-09-01 and ~2026-09-22)
+
+- `draft-order-ideas` / `draft-party-ideas` (live 08-13): do they reproduce the punishment CTR
+  profile? This is the cleanest test of whether the culture-cluster thesis generalizes.
+- `fantasy-football-team-names-2026` (live 08-18): impressions in the Aug 25 – Sep 7 window;
+  ~49.5K/mo head term, so watch position more than clicks.
+- `sleeper-vs-espn-vs-yahoo` (live 08-24) + format explainers (08-19).
+- Post-pricing-fix: any CTR change on `best-sports-news-apps` / `best-free-nba-news-apps-2026`
+  once the free-tier claim is corrected (hypothesis: neutral to slightly negative on CTR,
+  positive on install→retain — check store conversion, not just GSC).
+- Orphan fix: does `nfl-offseason-catch-up-2026` clear 100 impressions once linked?
+- Season-start inflection: fantasy interest peaks the week of Labor Day (Sep 7). Expect the
+  Aug curve to continue through Sep 7, then decay on draft-timing terms and shift to
+  waiver/start-sit intent — the Sept pivot (#14) should be queued before then.
+
+---
+
 ## 2026-07-21 — Fantasy wave: 17 scheduled posts + auto-publish pipeline
 
 **Strategy:** see content-strategy.md "Fantasy Wave Addendum — 2026-07-21". Research verdict: head terms closed; win on 2026 breakouts (NFL Fantasy→ESPN migration, ESPN Knockout), commissioner/league-culture cluster, beginner Q&A, format explainers, team names.
