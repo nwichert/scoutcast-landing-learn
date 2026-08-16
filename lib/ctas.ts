@@ -20,9 +20,16 @@ export type BlogCta = {
 type CtaGroup = "draft-timing" | "learn" | "migration" | "world-cup" | "league-social"
 
 const GROUP_COPY: Record<CtaGroup, BlogCta> = {
+    // Rewritten 2026-08-16 on the `migration` frame. The previous copy ("Draft
+    // season moves fast — don't get caught off guard") converted 0 of 409
+    // visitors over 30 days. It sold urgency about a date the reader had just
+    // looked up, then offered a habit. This names the season-long decision
+    // instead and answers the compatibility objection up front, which is what
+    // the 4.5% migration CTA does.
     "draft-timing": {
-        headline: "Draft season moves fast — don't get caught off guard",
-        sub: "A 2-minute morning briefing on your players, so you never miss the camp news that changes your board.",
+        headline: "Your draft is the easy part. The 17 weeks after aren't.",
+        sub: "Scoutcast.ai layers on top of ESPN, Yahoo, Sleeper, or NFL.com — 2 minutes each morning on your roster and the news that changes your lineup.",
+        label: "Get Scoutcast",
     },
     learn: {
         headline: "New to fantasy? Learn it 2 minutes at a time",
@@ -40,9 +47,16 @@ const GROUP_COPY: Record<CtaGroup, BlogCta> = {
         headline: "Know what happened while you were working",
         sub: "Goals, lineups, and knockout scenarios in a 2-minute briefing — the fastest way to catch up.",
     },
+    // Rewritten 2026-08-16. The previous copy ("Running the league is the easy
+    // part") converted 1 of 1,473 visitors over 30 days — the site's largest
+    // traffic source and its worst-converting message. This is the hardest
+    // group to convert: the reader came for a laugh, not a tool. So the copy
+    // stops selling commissioner convenience and instead ties the punishment
+    // they're reading about to the outcome, on the same layers-on-top frame.
     "league-social": {
-        headline: "Running the league is the easy part",
-        sub: "Keep the group chat fed: a 2-minute daily briefing on everyone's teams, so you're always the one who knew first.",
+        headline: "Same league. Same platform. Fewer excuses.",
+        sub: "Scoutcast.ai layers on top of your league app — 2 minutes a morning on your roster and your opponent, so you're not the one taking the punishment.",
+        label: "Get Scoutcast",
     },
 }
 

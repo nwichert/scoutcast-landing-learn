@@ -1,54 +1,35 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import posthog from "posthog-js"
 import { PhoneIllustration } from "@/components/ui/illustrations/phone-illustration"
 import { DownloadButton } from "@/components/download-button"
 import { PlayStoreButton } from "@/components/play-store-button"
 
-const HERO_COPY_FLAG = "hero-copy-test"
-
-type Variant = "control" | "test"
-
-const COPY = {
-    control: {
-        eyebrow: "For fans with two minutes, not twenty-five",
-        headlineLine1: "Only your teams.",
-        headlineLine2: "No scrolling.",
-        body: "A personalized audio briefing on the leagues, teams, and players you actually follow — generated fresh every morning. Tap to ask follow-ups, hands-free.",
-        ctaLabel: (store: "App Store" | "Google Play") => store,
-    },
-    test: {
-        eyebrow: "For fans with two minutes, not twenty-five",
-        headlineLine1: "Your teams. 2 minutes.",
-        headlineLine2: "Every morning.",
-        body: "Skip the scroll. Get a personalized audio briefing on your teams, leagues, and players — fresh every morning, with hands-free follow-up questions built in.",
-        ctaLabel: (_store: "App Store" | "Google Play") => "Start Free Trial",
-    },
-} as const satisfies Record<Variant, {
-    eyebrow: string
-    headlineLine1: string
-    headlineLine2: string
-    body: string
-    ctaLabel: (store: "App Store" | "Google Play") => string
-}>
+/**
+ * Hero copy, v2 — "layer on top of your league", not "save time".
+ *
+ * The previous copy ("For fans with two minutes, not twenty-five" / "Only your
+ * teams. No scrolling.") pitched a better daily habit. The blog CTAs in
+ * lib/ctas.ts run that same time-savings frame against real traffic and it does
+ * not convert: 0/409 on when-does-fantasy-football-start, 1/1473 on
+ * punishment-ideas. The frame that does convert — 27/603, 4.5% — names a
+ * decision the reader is already in and promises to sit on top of the platform
+ * they already use ("New platform. Same weekly decisions.").
+ *
+ * So the hero now leads with the compatibility answer and the outcome, not the
+ * time saved. `copy_version` rides along on the CTA event so the before/after
+ * is comparable without a flag.
+ *
+ * The `hero-copy-test` A/B test this replaced was removed rather than concluded:
+ * at ~13 assigned homepage visitors per arm per month against an ~8% baseline,
+ * it needed years to reach power. Homepage reach, not homepage copy, is the
+ * binding constraint — see the blog/mobile CTA surfaces for the volume.
+ */
+const COPY_VERSION = "v2-layer-on-top"
 
 export default function HeroSection() {
-    const [variant, setVariant] = useState<Variant>("control")
-
-    useEffect(() => {
-        const applyFlag = () => {
-            const value = posthog.getFeatureFlag(HERO_COPY_FLAG)
-            if (value === "test" || value === "control") setVariant(value)
-        }
-        applyFlag()
-        posthog.onFeatureFlags(applyFlag)
-    }, [])
-
-    const copy = COPY[variant]
-
     const trackCtaClick = (store: "App Store" | "Google Play") => {
-        posthog.capture("hero_cta_clicked", { variant, store })
+        posthog.capture("hero_cta_clicked", { copy_version: COPY_VERSION, store })
     }
 
     return (
@@ -65,24 +46,26 @@ export default function HeroSection() {
 
                 <div className="relative mx-auto mb-12 flex max-w-5xl flex-col items-center px-6 text-center">
                     <span className="mb-5 inline-block text-[11px] font-semibold uppercase tracking-[0.14em] text-[#0AB17B]">
-                        {copy.eyebrow}
+                        Works with ESPN, Yahoo, Sleeper, and NFL.com
                     </span>
                     <h1 className="max-w-2xl text-balance text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-[56px] lg:text-[64px]">
-                        {copy.headlineLine1}
+                        Win more weeks.
                         <br />
-                        {copy.headlineLine2}
+                        Two minutes a morning.
                     </h1>
                     <p className="mt-6 max-w-2xl text-balance text-lg leading-7 text-foreground/70 sm:text-xl">
-                        {copy.body}
+                        Scoutcast.ai layers on top of your league — a personalized audio
+                        briefing on your roster, your opponent, and the news that actually
+                        changes your lineup. Tap to ask follow-ups, hands-free.
                     </p>
                     <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                         <DownloadButton
-                            label={copy.ctaLabel("App Store")}
+                            label="Start Free Trial"
                             placement="hero"
                             onClick={() => trackCtaClick("App Store")}
                         />
                         <PlayStoreButton
-                            label={copy.ctaLabel("Google Play")}
+                            label="Start Free Trial"
                             placement="hero"
                             onClick={() => trackCtaClick("Google Play")}
                         />

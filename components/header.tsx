@@ -32,7 +32,14 @@ export default function HeaderEight() {
     const [isScrolled, setIsScrolled] = React.useState(false)
     const isLarge = useMedia('(min-width: 64rem)')
     const pathname = usePathname()
-    const showBanner = pathname !== '/mcp'
+    // `trailingSlash: true` means usePathname() yields '/mcp/', so the bare
+    // '/mcp' comparison this replaced never matched and the banner rendered
+    // there anyway. Normalise before comparing.
+    const route = pathname.replace(/\/+$/, '') || '/'
+    // /fantasy is the banner's own destination. In the 30 days to 2026-08-16,
+    // 87 of 125 banner clicks came from 15 people already on /fantasy tapping
+    // through to the page they were on — ~6 dead clicks each.
+    const showBanner = route !== '/mcp' && route !== '/fantasy'
 
     const { scrollY } = useScroll()
 
