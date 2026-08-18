@@ -4732,7 +4732,7 @@ const allPosts: Post[] = [
   slug: "nfl-fantasy-moving-to-espn",
   title: "NFL Fantasy Is Shutting Down: Move Your League to ESPN",
   excerpt:
-    "The NFL shut down season-long NFL Fantasy. ESPN is now the official fantasy game, with a league import tool at espn.com/importnfl. Here's how it works.",
+    "Yes, NFL Fantasy is shutting down. History and keepers follow your league to ESPN — custom scoring may not. Here's the migration checklist, step by step.",
   date: "2026-07-23",
   updatedAt: "2026-08-06",
   author: "Nick Wichert",
@@ -5016,6 +5016,11 @@ const allPosts: Post[] = [
       question: "Is the NFL Fantasy app shutting down?",
       answer:
         "Yes. The NFL Fantasy app and website are winding down as a season-long fantasy football platform for the 2026 season, and ESPN Fantasy is now the official game of the NFL. Your league can migrate to ESPN at espn.com/importnfl. The NFL's main app still exists for scores, news, and video — it is the season-long fantasy game that moved, not the NFL's whole app.",
+    },
+    {
+      question: "How do I transfer my NFL Fantasy league to ESPN?",
+      answer:
+        "Start at espn.com/importnfl or the ESPN Fantasy app. The migration keys off email matching: confirm the email on your NFL Fantasy account first, and if your ESPN account uses a different one, ESPN sends a one-time verification link to the NFL Fantasy address. Once matched, ESPN lists every eligible league tied to your account and you select the ones to bring over. Any manager can start the transfer for their own teams, but the commissioner has to activate the league before members can join — and should verify imported scoring settings line by line, since custom rules can come across as approximations.",
     },
     {
       question: "Do I lose my league history when I move to ESPN?",
