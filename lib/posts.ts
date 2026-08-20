@@ -5225,18 +5225,18 @@ const allPosts: Post[] = [
 },
 {
   slug: "when-does-fantasy-football-start",
-  title: "When Do Fantasy Football Drafts Start? 2026 Dates",
+  title: "When Does Fantasy Football Start? 2026 Dates & Deadlines",
   excerpt:
-    "Most 2026 fantasy football drafts start Aug 23–Sep 3, peaking Labor Day weekend. Kickoff is Wed, Sept 9. Every date that matters, and the window to pick.",
+    "Draft season is open now: most 2026 drafts run Aug 23–Sep 3, peaking Labor Day weekend. Kickoff is Wed, Sept 9. Every key date, the last day to draft, and when the season ends.",
   date: "2026-07-28",
-  updatedAt: "2026-08-06",
+  updatedAt: "2026-08-20",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
   body: [
     lead(
       t(
-        "Fantasy football for 2026 effectively starts when you draft, and most leagues draft between August 23 and September 3 — with Labor Day weekend (September 4–7) the single busiest stretch of the year. The real games begin with the NFL Kickoff game on Wednesday, September 9, 2026, and you can start or join a league any time before your Week 1 lineups lock that weekend."
+        "Fantasy football for 2026 effectively starts when you draft — and draft season is now open. Most leagues draft between August 23 and September 3, with Labor Day weekend (September 4–7) the single busiest stretch of the year. The real games begin with the NFL Kickoff game on Wednesday, September 9, 2026, and you can start or join a league any time before your Week 1 lineups lock that weekend."
       )
     ),
     p(
@@ -5348,14 +5348,14 @@ const allPosts: Post[] = [
       )
     ),
 
-    h2("When is too early — and too late?"),
+    h2("When is too early — and what's the last day to draft?"),
     h3("Too early"),
     p(
       t(
         "For standard redraft leagues, anything before mid-August carries real injury and depth-chart risk with no offsetting benefit. Every week you draft before the preseason ends is a week of camp news you're exposed to with a locked roster. July drafts are fine for best ball (more on that below), but in a league with waivers, drafting early just means your first waiver run is bigger."
       )
     ),
-    h3("Too late"),
+    h3("The last day to draft in 2026"),
     p(
       t(
         "The hard deadline is your platform's Week 1 lineup lock — for most leagues that's 1:00 PM ET on Sunday, September 13. Practically, though, drafting after the Kickoff game (September 9) gets awkward: one game's results are known, Thursday/Friday players are locked or excluded on some platforms, and scheduling twelve adults on a game week is miserable. Treat "
@@ -5367,7 +5367,7 @@ const allPosts: Post[] = [
     h2("Best ball vs. redraft: two different calendars"),
     p(
       t(
-        "If you play best ball — draft-only formats like Underdog or DraftKings where there are no waivers or lineup decisions — the calendar shifts earlier. Best-ball drafting peaks from mid-July through mid-August, because volume matters more than late-breaking news and pricing inefficiencies are biggest before ADP stabilizes. Sharp best-ball players are already drafting right now."
+        "If you play best ball — draft-only formats like Underdog or DraftKings where there are no waivers or lineup decisions — the calendar shifts earlier. Best-ball drafting peaks from mid-July through mid-August, because volume matters more than late-breaking news and pricing inefficiencies are biggest before ADP stabilizes. Sharp best-ball players have been drafting since July; if you're starting now, you're in the final window before pricing fully locks in."
       )
     ),
     p(
@@ -5379,7 +5379,7 @@ const allPosts: Post[] = [
     h2("What to do between now and your draft"),
     p(
       t(
-        "If your draft is five to six weeks out, you don't need to grind every day — you need a light, consistent information habit plus one or two focused prep sessions. A reasonable plan:"
+        "For most leagues the draft is now one to two weeks out. You don't need to grind every day — you need a light, consistent information habit plus one or two focused prep sessions. A reasonable plan:"
       )
     ),
     ul(
@@ -5425,10 +5425,10 @@ const allPosts: Post[] = [
       )
     ),
 
-    h2("When does the fantasy season end?"),
+    h2("When does fantasy football end?"),
     p(
       t(
-        "Most leagues run a 14-week regular season, then playoffs in Weeks 15–17 — mid-to-late December 2026 — with the championship in Week 17. Almost no league uses NFL Week 18, because teams rest starters once playoff seeding is locked and fantasy outcomes get random. So the full arc of your 2026 season: draft around Labor Day, set lineups from September 13 through late December, and hoist the trophy right around the new year."
+        "Most leagues run a 14-week regular season, then playoffs in Weeks 15–17 — mid-to-late December 2026 — with the championship in Week 17. Almost no league uses NFL Week 18, because teams rest starters once playoff seeding is locked and fantasy outcomes get random. So the full arc of your 2026 season: draft around Labor Day, set lineups from September 13 through late December, and hoist the trophy right around the new year. If you're asking how long the commitment runs: about 15 weeks of in-season management from Week 1 lineup lock to the Week 17 championship."
       )
     ),
     p(
@@ -5469,6 +5469,16 @@ const allPosts: Post[] = [
       question: "When are the fantasy football playoffs in 2026?",
       answer:
         "Most leagues hold fantasy playoffs in NFL Weeks 15–17, which fall in mid-to-late December 2026, with the championship in Week 17. Leagues generally avoid Week 18 because NFL teams rest starters once playoff seeding is decided.",
+    },
+    {
+      question: "When does fantasy football end in 2026?",
+      answer:
+        "Most fantasy leagues end with the championship in NFL Week 17, in late December 2026. The typical arc is a 14-week regular season starting September 13, then playoffs in Weeks 15–17. Almost no league uses NFL Week 18, because teams rest starters once playoff seeding is locked.",
+    },
+    {
+      question: "Is it too late to start fantasy football for 2026?",
+      answer:
+        "No. You can start or join a league any time before your Week 1 lineup lock — 1:00 PM ET on Sunday, September 13 for most leagues. Public leagues on ESPN, Yahoo, and Sleeper run drafts daily through early September, and the busiest drafting weekend of the year (Labor Day, September 4–7) is still ahead.",
     },
     {
       question: "When should a beginner join a fantasy football league?",
