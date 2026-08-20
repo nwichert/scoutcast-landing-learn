@@ -163,3 +163,71 @@ Every 3a/3b/3c page ends: install CTA + one-line Season Pass bridge ("your leagu
 - Ship FAQ/HowTo schema on every 3c page; these are the LLM-citation surface.
 - Stats series continues 1/mo ("money spent on fantasy football", "average league size / platform market share").
 - Refresh cadence: bump `updatedAt` + one substantive section on fantasy posts every ~3 weeks through September (freshness beat stale 2022–2025 competitors in every weak SERP we found).
+
+---
+
+# Answer-Era Addendum — 2026-08-20
+
+Inputs: GSC Jul 23–Aug 19 (28d), quick-wins detection (185 opportunities), and the
+Gravitary "Answer Era" thesis applied to Scoutcast: **the unit of visibility is the
+citation, not the ranking** — pages are source material for AI answers, so factual
+consistency and machine-quotable structure now rank alongside SERP position.
+
+## GSC snapshot (28d, vs Aug baseline 197K impr @ 1.22%)
+
+- ~221K impressions (+12%), CTR ~1.3%. Fantasy wave still building — drafts Aug 23–Sep 3.
+- **ALERT — `when-does-fantasy-football-start` collapsed Aug 12**: 4.6–8.7K impr/day → ~500/day
+  overnight, position steady (~6–7). It stopped being served on the head query
+  ("when does fantasy football start", 11.5K impr @ pos 7.6) — not a rank slide, an
+  eligibility loss (likely AI Overview / PAA reshuffle). Partial recovery Aug 16–18 (2K/day).
+  This page is 41% of site impressions and holds 119 of the 185 quick wins
+  (+1,797 potential clicks/mo). Diagnose + refresh is the single biggest lever.
+- `nfl-fantasy-moving-to-espn`: 48.6K impr @ 1.04%, pos 6.1 — and it converts 63× better
+  than the punishment post. Highest-value page on the site. SERP fix deployed Aug 20.
+- `fantasy-football-punishment-ideas`: 27.9K impr @ 6.4% CTR — traffic engine, 0.07%
+  store-click. Its job is authority + internal-link equity, not installs. Stop optimizing
+  it for conversion; start routing its readers.
+- Four posts shipped Aug 20 after the publish outage (team names, best ball, vampire,
+  guillotine) — currently orphaned. Orphans don't rank (proven rule).
+- World Cup traffic is dead as predicted. `sports news notifications` @ pos 5 (540 impr)
+  is a Pillar-1 query with install intent worth a dedicated section.
+
+## The answer-era layer (what the article changes here)
+
+1. **Answer hygiene outranks new content.** The stale "free" pricing claims (14 of them,
+   sitting inside FAQPage schema + llms.txt) are exactly what answer engines quote.
+   Every week they stand, AI answers describe a product that doesn't exist. This is now
+   P0 — ahead of any new post.
+2. **Citation infrastructure**: the stats series is the AI-visibility play (stat roundups
+   earn ~4× the citations of any other format). Keep 1/mo cadence and refresh the six
+   live stats posts with current-season numbers so the quotable one-liners stay current.
+3. FAQ schema on every 3c page stays a standing rule — it's the machine-parseable surface.
+4. Consistency sweep: "Scoutcast.ai" hyperlinked everywhere, no Apple-only language,
+   $5.99/mo + Season Pass pricing stated identically on page, schema, and llms.txt.
+
+## Schedule (Aug 20 → early Oct)
+
+| When | Item | Why (data) |
+|---|---|---|
+| **Aug 20–21 (P0)** | Pricing-claim sweep: kill all 14 "free" claims across blog/FAQPage schema/llms.txt/pricing.md | Answer-era hygiene; machine-quoted surface is lying |
+| Aug 20–21 | GSC Request Indexing on the 4 new URLs + internal-link pass: punishment post & when-does-start → the 4 new posts, ESPN-migration, Season Pass | Orphans don't rank; route 28K-impr page to converting pages |
+| **Aug 21–22** | Diagnose + refresh `when-does-fantasy-football-start`: new title/meta, add "last day to draft" (369 impr) + "when does fantasy football end" (352 impr) sections, bump updatedAt, re-request indexing | The Aug 12 collapse; +1,797 clicks/mo upside |
+| Aug 22–23 | CTR title/snippet pass on `what-is-adp` (pos 10.1, 8.3K impr), `what-is-ppr` ("ppr" @ pos 6.4), `what-is-faab` (pos 8.3) | 3 pages, +200 clicks/mo, one afternoon |
+| **Aug 24** | `sleeper-vs-espn-vs-yahoo` auto-publishes — verify live same day (publish path just repaired) | Draft-week platform-choice demand |
+| Aug 25–28 | Freshness bump on ESPN-migration + Knockout + offseason-catch-up posts (updatedAt + one substantive section each) | Freshness beat stale competitors in every weak SERP; migration post is the installs engine |
+| Aug 28–31 | Monthly stats post: "How much money do people spend on fantasy football? (2026)" — citable one-liners up top | Citation infrastructure; drafts week = peak journalist demand |
+| Sep 1–7 | "Sports news notifications: how to get only the alerts you care about" (Pillar 1/2) | Query already @ pos 5 with install intent |
+| **Sep 8–11 (week 1)** | Ship #5 from June list at last: "The fastest way to set your lineup (Tue/Wed/Thu/Sun workflow)" — the purest Season Pass page. Same week: "when do waivers process (ESPN/Sleeper/Yahoo)" 3c page w/ FAQ schema | Season starts ~Sep 10; implementation demand begins |
+| Sep 8+ | Weekly refresh cadence on `waiver-wire-strategy` (pos 14.4, striking distance) and `start-sit` | In-season freshness loop |
+| Sep 15–30 | Trade analyzer tool (3e) | Tool-intent SERPs are indie-winnable; trade demand peaks Oct–Nov |
+| Oct 1+ | "When are fantasy football playoffs" 3c page; stats series continues | Query season starts; "when does ff end" data already showing |
+
+## Standing rules (carried forward + one new)
+
+- No head-term article plays. Long-tail, tools, or nothing.
+- Judge pages by installs, not traffic (punishment vs ESPN-migration, 63×).
+- FAQ/HowTo schema on every 3c page.
+- ~3-week refresh cadence on fantasy posts through September.
+- **NEW: factual-claim freshness is a P0 class.** Any user-facing claim that also lives in
+  schema or llms.txt (pricing, platforms, features) gets fixed before new content ships —
+  wrong answers compound in AI citations the same way right ones do.
