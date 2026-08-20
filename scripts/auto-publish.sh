@@ -44,7 +44,7 @@ if [[ -z "${NEW_URLS// /}" && "${1:-}" != "--force" ]]; then
 fi
 echo "Publishing:${NEW_URLS:- (forced run, no new URLs)}"
 npm run build || { echo "Build FAILED"; osascript -e 'display notification "Blog auto-publish BUILD FAILED — check ~/Library/Logs/scoutcast-blog" with title "Scoutcast blog"'; exit 1; }
-firebase deploy --only hosting --project scoutcast-8d5fa --non-interactive || {
+firebase deploy --only hosting --project scoutcast-8d5fa --account nick@scoutcast.ai --non-interactive || {
   echo "Deploy FAILED"
   osascript -e 'display notification "Blog auto-publish DEPLOY FAILED — check ~/Library/Logs/scoutcast-blog" with title "Scoutcast blog"'
   exit 1
