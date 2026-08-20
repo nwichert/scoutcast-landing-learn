@@ -125,7 +125,7 @@ const allPosts: Post[] = [
       p(t("There are great AI briefing apps (Huxe and BriefingAM are both excellent), but they’re built for general news with sports as one tab. Scoutcast is sports-first, and these two features only make sense in a product that knows you well enough to know who "), em("your guys"), t(" are.")),
 
       h2("Pricing, in one paragraph"),
-      p(t("Scoutcast is free. All leagues, all teams, the daily briefing, follow-up questions, custom sources — all free. There is one paid add-on: an NFL Fantasy Season Pass at $49.99 per season for fantasy-specific briefings (Tue/Wed/Thu/Sun, head-to-head edge, waiver picks, start/sit calls, Sunday morning final call). That’s it. No ads, ever.")),
+      p(t("Scoutcast starts with a 7-day free trial — no credit card required. After that, Scoutcast Plus is $5.99/month: all leagues, all teams, the daily briefing, follow-up questions, custom sources, up to 7 active casts. There is one add-on: an NFL Fantasy Season Pass at $49.99 per season for fantasy-specific briefings (Tue/Wed/Thu/Sun, head-to-head edge, waiver picks, start/sit calls, Sunday morning final call). That’s it. No ads, ever.")),
 
       h2("What’s next"),
       p(t("College football this fall. International soccer expansion. More languages. And we’re publicly working on live-game segments — short bursts during big moments, not just the morning recap.")),
@@ -161,9 +161,9 @@ const allPosts: Post[] = [
           "NFL, NBA, MLB, NHL, MLS, WNBA, Premier League, La Liga, Bundesliga, Serie A, Ligue 1, UEFA Champions League, NCAA football, NCAA basketball, NCAA baseball, NCAA hockey, PGA Tour, LIV Golf, Formula 1, ATP, and WTA. New leagues are added based on listener demand.",
       },
       {
-        question: "Is Scoutcast free?",
+        question: "How much does Scoutcast cost?",
         answer:
-          "Yes. All daily briefings across every league are free, with no ads. There is one paid in-app purchase: an NFL Fantasy Season Pass at $49.99 per season, which adds fantasy-specific briefings (Tue/Wed/Thu/Sun) tailored to your roster.",
+          "Scoutcast starts with a 7-day free trial, no credit card required. After the trial, Scoutcast Plus is $5.99/month — every league, daily briefings, follow-up questions, custom sources, no ads. The one add-on is an NFL Fantasy Season Pass at $49.99 per season, which adds fantasy-specific briefings (Tue/Wed/Thu/Sun) tailored to your roster.",
       },
       {
         question: "What platforms is Scoutcast on?",
@@ -209,7 +209,7 @@ const allPosts: Post[] = [
         [b("3. Format length."), t(" Scoutcast delivers ~2-minute briefings; Huxe runs ~5 minutes. If your morning window is tight, that gap matters.")],
         [b("4. Interactivity."), t(" Scoutcast (tap-to-ask) and Huxe (tap-and-hold) both let you interrupt mid-briefing to ask follow-up questions. BriefingAM is listen-only.")],
         [b("5. Integrations."), t(" If you live inside an AI assistant (Claude, ChatGPT, Gemini), only Scoutcast has an MCP connector. If you want a briefing that pulls your calendar and email, Huxe and BriefingAM both do that — Scoutcast doesn't.")],
-        [b("6. Output quality."), t(" Voice naturalness, summarization accuracy, source transparency, and behavior on a slow-news day vary. The best test is to install all three free tiers and listen on the same morning.")],
+        [b("6. Output quality."), t(" Voice naturalness, summarization accuracy, source transparency, and behavior on a slow-news day vary. The best test is to install all three — Huxe’s and BriefingAM’s free tiers, Scoutcast’s 7-day free trial — and listen on the same morning.")],
       ),
 
       h2("What is an AI audio briefing app?"),
@@ -247,7 +247,7 @@ const allPosts: Post[] = [
           [[t("Live “stations” / topic tracking")], [t("✗")], [t("✓")], [t("✗")]],
           [[t("Fantasy football mode")], [t("✓ ($49.99/season)")], [t("✗")], [t("✗")]],
           [[t("MCP connector for Claude / ChatGPT / Gemini")], [t("✓")], [t("✗")], [t("✗")]],
-          [[t("Free tier")], [t("✓ (full features, no ads)")], [t("✓ (entirely free)")], [t("✓ (paid tier available)")]],
+          [[t("Free tier / trial")], [t("7-day free trial, then $5.99/mo")], [t("✓ (entirely free)")], [t("✓ (paid tier available)")]],
           [[t("Years in market")], [t("<1 year")], [t("<1 year (public Sept 2025)")], [t("<1 year")]],
         ]
       ),
@@ -284,16 +284,16 @@ const allPosts: Post[] = [
       p(t("If you live inside an AI assistant during the day, this is the row that matters. None of the general-purpose briefing apps advertises an MCP server.")),
 
       h2("Pricing, clearly"),
-      p(t("All three apps have free tiers. Here's what you get at each level:")),
+      p(t("Huxe and BriefingAM have free tiers; Scoutcast has a 7-day free trial. Here's what you get at each level:")),
       tbl(
         [[t("")], [t("Free tier includes")], [t("Paid tier")], [t("Paid price")]],
         [
-          [[t("Scoutcast.ai")], [t("Full app — all leagues, teams, beat-writer sources, MCP connector, tap-to-ask, no ads")], [t("NFL Fantasy Season Pass")], [t("$49.99/season")]],
+          [[t("Scoutcast.ai")], [t("7-day free trial of the full app — all leagues, teams, beat-writer sources, MCP connector, tap-to-ask, no ads")], [t("Scoutcast Plus (+ optional NFL Fantasy Season Pass)")], [t("$5.99/month (+ $49.99/season)")]],
           [[t("Huxe")], [t("Everything — Huxe has no paid tier as of this writing")], [t("—")], [t("Free")]],
           [[t("BriefingAM")], [t("Core briefing (news, weather, calendar, sports)")], [t("Premium features")], [t("See current App Store listing")]],
         ]
       ),
-      p(t("The only upsell in this field is Scoutcast's Fantasy Season Pass, which is sports-specific. If fantasy football isn't your use case, all three apps are effectively free.")),
+      p(t("Scoutcast is the only one of the three with a flat subscription — $5.99/month after the trial. Huxe is entirely free, and BriefingAM has a free tier. The one sports-specific upsell is Scoutcast's Fantasy Season Pass.")),
 
       h2("Decision matrix — which one should you pick?"),
       tbl(
@@ -332,7 +332,7 @@ const allPosts: Post[] = [
       ),
 
       h2("Try them"),
-      p(t("All three have free tiers. The honest move is to install all three for a week and pick what fits your morning.")),
+      p(t("The honest move is to install all three for a week — two free tiers and one free trial — and pick what fits your morning.")),
       ul(
         [lk("Scoutcast.ai on the App Store", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")],
         [lk("Scoutcast.ai on Google Play (Android)", "https://play.google.com/store/apps/details?id=ai.scoutcast.android")],
@@ -393,7 +393,7 @@ const allPosts: Post[] = [
       {
         question: "What should I look for in an AI audio briefing app?",
         answer:
-          "Six things: (1) platform — BriefingAM is Apple-only, while Huxe and Scoutcast.ai also run on Android; (2) primary content — sports-first, general, or both; (3) format length — ~2 minutes (Scoutcast) vs ~5 minutes (Huxe); (4) interactivity — Scoutcast and Huxe both allow mid-briefing questions, BriefingAM doesn't; (5) integrations — email/calendar (Huxe, BriefingAM) or MCP for AI assistants (Scoutcast only); (6) output quality — the only real way to judge is to run all three free tiers on the same morning.",
+          "Six things: (1) platform — BriefingAM is Apple-only, while Huxe and Scoutcast.ai also run on Android; (2) primary content — sports-first, general, or both; (3) format length — ~2 minutes (Scoutcast) vs ~5 minutes (Huxe); (4) interactivity — Scoutcast and Huxe both allow mid-briefing questions, BriefingAM doesn't; (5) integrations — email/calendar (Huxe, BriefingAM) or MCP for AI assistants (Scoutcast only); (6) output quality — the only real way to judge is to run all three on the same morning.",
       },
       {
         question: "Is NotebookLM Audio Overviews a competitor to these apps?",
@@ -425,7 +425,7 @@ const allPosts: Post[] = [
     excerpt:
       "40M US players, 6.9 hrs/week, $653 in annual spending. Sourced breakdown of fantasy football participation — who plays, how much, and on which platform.",
     date: "2026-05-07",
-    updatedAt: "2026-07-16",
+    updatedAt: "2026-08-20",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -438,6 +438,8 @@ const allPosts: Post[] = [
       ul(
         [b("~40 million"), t(" Americans play fantasy football annually")],
         [b("53 million"), t(" Americans played some form of fantasy sports in the past 12 months (FSGA, 2025)")],
+        [b("2.8 leagues"), t(" — the average number of leagues per player in 2025, up from 2.3 in 2021: engagement is deepening, not just widening")],
+        [b("2.1 million"), t(" Canadians play fantasy football, up 12% year over year")],
         [b("74.92%"), t(" of all fantasy sports activity is American football (by market share)")],
         [b("245 million"), t(" people play fantasy sports globally as of 2025")],
         [t("Fantasy football is the "), b("#1 fantasy sport"), t(" in the United States by participation")]
@@ -505,7 +507,7 @@ const allPosts: Post[] = [
         [lk("How Fantasy Football Rankings Shape the NFL’s Multi-Billion Dollar Industry — CEO Today", "https://www.ceotodaymagazine.com/2025/08/how-fantasy-football-rankings-shape-the-nfls-multi-billion-dollar-industry/")]
       ),
 
-      p(em("Last updated: May 2026. Stats are updated annually before the start of NFL training camp.")),
+      p(em("Last updated: August 2026, ahead of the 2026 NFL season. The FSGA presented its latest participation research at its Summer Conference on July 8–9, 2026; figures above reflect the most recent published data.")),
       p(
         t("If you play fantasy football, "),
         lk("Scoutcast.ai", "https://scoutcast.ai/fantasy/"),
@@ -566,7 +568,7 @@ const allPosts: Post[] = [
     excerpt:
       "The average fantasy football player spends 6.9 hours per week managing their team during the NFL season — fragmented across apps, podcasts, and beat writers. The data on time spent, where it goes, and the workplace impact.",
     date: "2026-05-19",
-    updatedAt: "2026-05-19",
+    updatedAt: "2026-08-20",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -574,6 +576,7 @@ const allPosts: Post[] = [
     body: [
       lead(t("The average fantasy football player spends 6.9 hours per week managing their team during the NFL season.")),
       p(t("That figure comes from a nationwide survey of over 650 fantasy football players conducted by OppLoans. Other studies have put the number higher — a separate survey of active owners found an average closer to "), b("7.94 hours per week"), t(", with a significant portion of that time happening during work hours.")),
+      p(t("Heading into the 2026 season, the time commitment is likely rising, not falling: FSGA research shows the average fantasy player was in "), b("2.8 leagues in 2025, up from 2.3 in 2021"), t(" — and every additional league multiplies the weekly workload of waiver research, start/sit decisions, and injury monitoring across a mostly overlapping set of hours.")),
 
       h2("Fantasy Football Time Commitment: Quick Stats"),
       ul(
@@ -678,7 +681,7 @@ const allPosts: Post[] = [
     excerpt:
       "Roughly 17% of NFL fans play fantasy football — but over 60% of fans aged 18–29 do, the highest crossover rate of any major US sport. The data on participation, the age divide, and the viewership feedback loop.",
     date: "2026-05-19",
-    updatedAt: "2026-05-19",
+    updatedAt: "2026-08-20",
     author: "Nick Wichert",
     authorRole: "Co-founder, Scoutcast.ai",
     authorUrl: "https://x.com/scoutcastAI",
@@ -698,6 +701,11 @@ const allPosts: Post[] = [
         [b("18.7 million"), t(" average viewers per NFL game in the 2025 season — highest since 1989")],
         [b("~1 in 4"), t(" fantasy sports players say they watch the NFL "), em("primarily"), t(" to follow their fantasy teams")]
       ),
+
+      h2("2026 Update: The Crossover Is Deepening"),
+      p(t("Heading into the 2026 season, the FSGA"), (
+        lk("’s most recent research", "https://thefsga.org/industry-research/")
+      ), t(" points to intensifying engagement rather than just growth in headcount: the average fantasy player was in "), b("2.8 leagues in 2025, up from 2.3 in 2021"), t(". For the NFL-fan crossover, that means the fantasy-playing fan is not just present — they are managing multiple rosters, following more players across more teams, and consuming more football content per week than at any point in the data. Canadian participation is rising too ("), b("2.1 million"), t(" fantasy football players, up 12% year over year), extending the crossover pattern beyond the US audience.")),
 
       h2("How Many NFL Fans Are There?"),
       p(t("Before calculating the crossover rate, it helps to understand the denominator. The NFL is the most-watched sports league in the United States by a wide margin:")),
@@ -756,7 +764,7 @@ const allPosts: Post[] = [
         [lk("The Immense Impact of Fantasy Football on the NFL — Medium / The Press Box", "https://medium.com/the-press-box/the-immense-impact-of-fantasy-football-on-the-nfl-18efe1a0ab6d")],
         [lk("FSGA Industry Research", "https://thefsga.org/industry-research/")]
       ),
-      p(em("Last updated: May 2026. Stats updated annually before NFL training camp.")),
+      p(em("Last updated: August 2026, ahead of the 2026 NFL season.")),
 
       hr(),
     ],
@@ -1045,7 +1053,7 @@ const allPosts: Post[] = [
 
       h2("Notable AI Sports Apps (2026)"),
       h3("Personalized Audio & Briefings"),
-      p(b("Scoutcast.ai"), t(" — Daily ~2-minute AI audio briefings personalized to your teams, leagues, and fantasy roster. Tap-to-ask follow-up questions. NFL Fantasy Season Pass available. Free on iOS. "), lk("Scoutcast.ai", "https://scoutcast.ai")),
+      p(b("Scoutcast.ai"), t(" — Daily ~2-minute AI audio briefings personalized to your teams, leagues, and fantasy roster. Tap-to-ask follow-up questions. NFL Fantasy Season Pass available. iOS and Android, 7-day free trial. "), lk("Scoutcast.ai", "https://scoutcast.ai")),
       p(b("Huxe"), t(" — General AI audio briefing app (not sports-specific) from former Google NotebookLM developers. Users can create sports-focused briefings among other topics.")),
       h3("Fantasy & Betting AI"),
       p(b("Sleeper"), t(" — Fantasy platform with built-in AI trade evaluator, waiver wire recommendations, and predictive player projections. The fastest-growing major fantasy platform.")),
@@ -1230,7 +1238,7 @@ const allPosts: Post[] = [
           [[t("SofaScore")], [t("Global leagues + stats")], [t("5–15 min")], [t("✓ teams and players")], [t("Moderate")], [t("Free; paid tier")]],
           [[t("Yahoo Sports")], [t("News + Yahoo fantasy")], [t("5–15 min scroll")], [t("Partial")], [t("Heavy")], [t("Free")]],
           [[t("The Athletic")], [t("Long-form journalism")], [t("10–30 min reading")], [t("✓ follows your teams’ beats")], [t("None (paywalled)")], [t("Subscription")]],
-          [[t("Scoutcast.ai")], [t("2-min audio catch-up")], [t("~2 min, hands-free")], [t("✓ teams, players, and your chosen writers")], [t("None")], [t("Free; fantasy add-on $49.99/season")]],
+          [[t("Scoutcast.ai")], [t("2-min audio catch-up")], [t("~2 min, hands-free")], [t("✓ teams, players, and your chosen writers")], [t("None")], [t("$5.99/mo after 7-day trial; fantasy add-on $49.99/season")]],
         ]
       ),
 
@@ -1266,12 +1274,12 @@ const allPosts: Post[] = [
       {
         question: "What’s the best free sport news app?",
         answer:
-          "The two best free sport news apps are Apple Sports and Scoutcast.ai — the only two on this list that are free with no ads. Apple Sports is the best free scoreboard on iPhone; Scoutcast.ai is the best free pick for a personalized ~2-minute audio catch-up on your teams. ESPN, theScore, Yahoo Sports, and free-tier SofaScore are also free but carry ads.",
+          "Apple Sports is the best fully free sports news app — no ads, no account required. Scoutcast.ai is the best ad-free pick for a personalized ~2-minute audio catch-up on your teams (7-day free trial, then $5.99/month). ESPN, theScore, Yahoo Sports, and free-tier SofaScore are free but carry ads.",
       },
       {
         question: "What is the best sports app without ads or betting promos?",
         answer:
-          "Apple Sports (free, no ads, scores only), The Athletic (paywalled journalism, no ads), and Scoutcast.ai (free personalized audio briefings, no ads) are the three apps on this list with no ad load. theScore, ESPN, Yahoo Sports, and free-tier SofaScore all carry ads, and theScore is owned by a betting company.",
+          "Apple Sports (free, no ads, scores only), The Athletic (paywalled journalism, no ads), and Scoutcast.ai (personalized audio briefings, no ads, $5.99/month after a 7-day free trial) are the three apps on this list with no ad load. theScore, ESPN, Yahoo Sports, and free-tier SofaScore all carry ads, and theScore is owned by a betting company.",
       },
       {
         question: "What is the best sports app for busy people?",
@@ -1289,9 +1297,9 @@ const allPosts: Post[] = [
           "SofaScore covers more leagues and countries than any other app on this list, with deep stats like player ratings and heat maps. Scoutcast.ai also covers global competitions (Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Champions League, F1, ATP/WTA) in audio briefing form.",
       },
       {
-        question: "Is Scoutcast.ai free?",
+        question: "How much does Scoutcast.ai cost?",
         answer:
-          "Yes. Scoutcast.ai is free with no ads — all leagues, teams, daily briefings, custom beat-writer sources, and tap-to-ask follow-ups. The one paid add-on is an NFL Fantasy Season Pass at $49.99 per season for roster-aware fantasy briefings.",
+          "Scoutcast.ai has a 7-day free trial (no credit card required), then costs $5.99/month — all leagues, teams, daily briefings, custom beat-writer sources, and tap-to-ask follow-ups, with no ads. The one add-on is an NFL Fantasy Season Pass at $49.99 per season for roster-aware fantasy briefings.",
       },
     ],
     comparedItems: {
@@ -1341,7 +1349,7 @@ const allPosts: Post[] = [
         [b("Yahoo Sports"), t(" — NBA news plus fantasy if your league is on Yahoo")],
         [b("NBA App"), t(" — official content, official stats, League Pass gateway")],
         [b("Bleacher Report"), t(" — fast NBA news and short-form video")],
-        [b("Scoutcast.ai"), t(" — free, no ads, personalized 2-minute NBA audio briefing every morning")],
+        [b("Scoutcast.ai"), t(" — ad-free personalized 2-minute NBA audio briefing every morning (7-day free trial, then $5.99/mo)")],
       ),
 
       h2("Side-by-side comparison"),
@@ -1391,7 +1399,7 @@ const allPosts: Post[] = [
       p(t("Bleacher Report (part of Warner Bros. Discovery's sports portfolio) is optimized for quick-hit NBA coverage: breaking news cards, highlight clips, and short takes. Its breaking-news alerts are fast and the format is easy to scan in under a minute.")),
       p(t("The trade-off: heavier on takes and entertainment than on depth. For beat-writer analysis or tactical context, The Athletic is the better (paid) option.")),
 
-      h2("7. Scoutcast.ai — best free NBA briefing, no ads"),
+      h2("7. Scoutcast.ai — best personalized NBA briefing, no ads"),
       p(
         t("Every app above assumes you come to it and scroll. "),
         lk("Scoutcast.ai", "https://scoutcast.ai"),
@@ -1412,7 +1420,7 @@ const allPosts: Post[] = [
         [t("Your fantasy basketball league is on Yahoo: "), b("Yahoo Sports")],
         [t("Want official NBA content and stats: "), b("NBA App")],
         [t("Want fast NBA breaking news: "), b("Bleacher Report")],
-        [t("Want a 2-minute NBA audio brief every morning, free, no ads: "), b("Scoutcast.ai")],
+        [t("Want a 2-minute NBA audio brief every morning, no ads: "), b("Scoutcast.ai")],
       ),
       p(t("For the NBA Draft specifically, see "), lk("how to follow the 2026 NBA Draft", "/blog/nba-draft-2026"), t(" — including a results section updated after draft night.")),
       p(t("Scoutcast.ai is iOS-only for now. On Android? "), lk("Get notified when Android launches", "/contact"), t(".")),
@@ -1424,7 +1432,7 @@ const allPosts: Post[] = [
       {
         question: "What's the best free NBA news app in 2026?",
         answer:
-          "It depends on the job. ESPN is best for highlights and browsing everything. theScore is best for score alerts. Apple Sports is the best free no-ads scoreboard. Yahoo Sports is best if your fantasy league is on Yahoo. The NBA App is best for official content and stats. Bleacher Report is best for fast news. And Scoutcast.ai is best for a free, ad-free 2-minute personalized audio briefing on your NBA teams each morning.",
+          "It depends on the job. ESPN is best for highlights and browsing everything. theScore is best for score alerts. Apple Sports is the best free no-ads scoreboard. Yahoo Sports is best if your fantasy league is on Yahoo. The NBA App is best for official content and stats. Bleacher Report is best for fast news. And Scoutcast.ai is best for an ad-free 2-minute personalized audio briefing on your NBA teams each morning.",
       },
       {
         question: "Is there a free NBA app with no ads?",
@@ -1439,7 +1447,7 @@ const allPosts: Post[] = [
       {
         question: "What's the best NBA app with no paywall?",
         answer:
-          "All seven apps on this list give full free access to their core NBA news and scores. ESPN, theScore, Apple Sports, Yahoo Sports, the NBA App, Bleacher Report, and Scoutcast.ai are all free with no article paywall. The NBA App's League Pass is the one paid tier -- that covers live game streaming, not the news-and-scores layer, which is free.",
+          "Six of the seven apps give full free access to their core NBA news and scores -- ESPN, theScore, Apple Sports, Yahoo Sports, the NBA App, and Bleacher Report, none with an article paywall. Scoutcast.ai is subscription-based: $5.99/month after a 7-day free trial. The NBA App's League Pass covers live game streaming, not the news-and-scores layer, which is free.",
       },
       {
         question: "Is Scoutcast.ai a good app for NBA fans?",
@@ -1498,7 +1506,7 @@ const allPosts: Post[] = [
       ul(
         [b("Watch live."), t(" ESPN app or ABC. The only option with real-time commentary, prospect interviews, and picks announced on stage. Requires a TV provider login to stream.")],
         [b("Pick-by-pick push alerts."), t(" theScore and the official NBA app both send a push notification the moment each pick is made. Set your teams in either app before draft night and your lock screen covers it in real time. No commentary, just the pick.")],
-        [b("Next-morning audio recap."), t(" If draft night is not an option, "), lk("Scoutcast.ai", "https://scoutcast.ai"), t(" generates a personalized 2-minute audio briefing covering your teams' picks, what analysts said about each selection, and what the moves mean for next season. Free, no ads.")],
+        [b("Next-morning audio recap."), t(" If draft night is not an option, "), lk("Scoutcast.ai", "https://scoutcast.ai"), t(" generates a personalized 2-minute audio briefing covering your teams' picks, what analysts said about each selection, and what the moves mean for next season. Ad-free, with a 7-day free trial.")],
       ),
 
       h2("Best apps for draft-night alerts and catch-up"),
@@ -1515,7 +1523,7 @@ const allPosts: Post[] = [
           [[t("ESPN app")], [t("Watching live")], [t("Yes (TV login)")], [t("Yes")], [t("No")], [t("Free w/ TV login")]],
           [[t("theScore")], [t("Lock-screen pick alerts")], [t("No")], [t("Yes")], [t("No")], [t("Free")]],
           [[t("NBA app")], [t("Official clips and picks")], [t("No")], [t("Yes")], [t("No")], [t("Free")]],
-          [[t("Scoutcast.ai")], [t("Morning audio recap")], [t("No")], [t("No")], [t("Yes (2 min, no ads)")], [t("Free")]],
+          [[t("Scoutcast.ai")], [t("Morning audio recap")], [t("No")], [t("No")], [t("Yes (2 min, no ads)")], [t("7-day trial, then $5.99/mo")]],
         ]
       ),
 
@@ -1563,7 +1571,7 @@ const allPosts: Post[] = [
       {
         question: "How can I get 2026 NBA Draft results without watching live?",
         answer:
-          "theScore and the NBA app both send real-time push notifications per pick. For a next-morning recap covering your specific teams' picks with analyst context, Scoutcast.ai sends a personalized 2-minute audio briefing the morning after the draft. Free, no ads.",
+          "theScore and the NBA app both send real-time push notifications per pick. For a next-morning recap covering your specific teams' picks with analyst context, Scoutcast.ai sends a personalized 2-minute audio briefing the morning after the draft. Ad-free, with a 7-day free trial.",
       },
       {
         question: "What are the 2026 NBA Draft results?",
@@ -1690,7 +1698,7 @@ const allPosts: Post[] = [
       {
         question: "What is Scoutcast.ai?",
         answer:
-          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS, iPadOS, macOS, and Android. You pick your leagues, teams, players, and optionally the X handles of beat writers you trust, and every morning it generates a ~2-minute audio briefing. You can tap the mic mid-briefing to ask follow-up questions. It’s free with no ads.",
+          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS, iPadOS, macOS, and Android. You pick your leagues, teams, players, and optionally the X handles of beat writers you trust, and every morning it generates a ~2-minute audio briefing. You can tap the mic mid-briefing to ask follow-up questions. It has a 7-day free trial, then costs $5.99/month, with no ads.",
       },
     ],
   },
@@ -1793,7 +1801,7 @@ const allPosts: Post[] = [
       {
         question: "What is the Scoutcast.ai NFL Fantasy Season Pass?",
         answer:
-          "A $49.99-per-season add-on to the free Scoutcast.ai app that syncs to your fantasy roster on Yahoo, ESPN, Sleeper, or NFL.com (up to 3 leagues) and delivers audio briefings on Tue/Wed/Thu/Sun all season: personalized waiver picks, start/sit calls, head-to-head opponent analysis, and a Sunday-morning final call. It’s a one-time purchase per season, not a subscription.",
+          "A $49.99-per-season add-on to the Scoutcast.ai app that syncs to your fantasy roster on Yahoo, ESPN, Sleeper, or NFL.com (up to 3 leagues) and delivers audio briefings on Tue/Wed/Thu/Sun all season: personalized waiver picks, start/sit calls, head-to-head opponent analysis, and a Sunday-morning final call. It’s a one-time purchase per season, not a subscription.",
       },
       {
         question: "Can I win my fantasy league spending only 10 minutes a week?",
@@ -1878,7 +1886,7 @@ const allPosts: Post[] = [
           [[t("Weak international coverage")], [t("SofaScore")], [t("Free / paid tier")], [t("US-style storytelling")]],
           [[t("Headline-depth writing")], [t("The Athletic")], [t("Subscription")], [t("Free access, video")]],
           [[t("Two apps for fantasy + news")], [t("Yahoo Sports")], [t("Free")], [t("ESPN’s video depth")]],
-          [[t("The 20-minute doomscroll")], [t("Scoutcast.ai")], [t("Free (fantasy add-on $49.99/season)")], [t("Video, browsing — by design")]],
+          [[t("The 20-minute doomscroll")], [t("Scoutcast.ai")], [t("$5.99/mo after 7-day trial (fantasy add-on $49.99/season)")], [t("Video, browsing — by design")]],
         ]
       ),
 
@@ -1902,7 +1910,7 @@ const allPosts: Post[] = [
       {
         question: "Is there a sports app without ads or betting promos?",
         answer:
-          "Yes. Apple Sports (free scoreboard), The Athletic (paid journalism), and Scoutcast.ai (free personalized audio briefings) all have zero ads and zero betting content. theScore and SofaScore are free but carry betting promos or ads.",
+          "Yes. Apple Sports (free scoreboard), The Athletic (paid journalism), and Scoutcast.ai (ad-free personalized audio briefings, $5.99/month after a 7-day trial) all have zero ads and zero betting content. theScore and SofaScore are free but carry betting promos or ads.",
       },
       {
         question: "How do I stop wasting time on the ESPN app?",
@@ -1994,7 +2002,7 @@ const allPosts: Post[] = [
       p(t("If you're reading this during the group stage: the round of 32 begins June 28 — 13 days from now. Use the rest of the group stage to finalize which of those knockout matches make your must-watch list before the bracket locks.")),
 
       h2("The honest summary"),
-      p(t("Ten matches live. One lunch kickoff a week. Two minutes of audio catch-up every morning. That’s a working fan’s World Cup — fully current for five and a half weeks, no 20-minute scroll, no guilt about the 90 matches you didn’t see. If the morning-briefing slot is the piece you’re missing, "), lk("Scoutcast.ai is free on the App Store", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"), t(".")),
+      p(t("Ten matches live. One lunch kickoff a week. Two minutes of audio catch-up every morning. That’s a working fan’s World Cup — fully current for five and a half weeks, no 20-minute scroll, no guilt about the 90 matches you didn’t see. If the morning-briefing slot is the piece you’re missing, "), lk("Scoutcast.ai has a 7-day free trial on the App Store", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"), t(".")),
 
       hr(),
     ],
@@ -2205,7 +2213,7 @@ const allPosts: Post[] = [
           [[t("FIFA official app")], [t("Schedule, brackets, tickets")], [t("Free")], [t("iOS, Android")], [t("Match start (skew promotional)")], [t("Multiple")]],
           [[t("Apple Sports")], [t("Live scores")], [t("Free")], [t("iOS, iPadOS, macOS only")], [t("Live Activities, lock-screen scores")], [t("Device language")]],
           [[t("SofaScore")], [t("Stats depth")], [t("Free; paid tier")], [t("iOS, Android, web")], [t("Goals, match start, match end")], [t("Multiple")]],
-          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("Free")], [t("iOS, iPadOS, macOS, Android")], [t("Daily briefing")], [t("English")]],
+          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("7-day trial, then $5.99/mo")], [t("iOS, iPadOS, macOS, Android")], [t("Daily briefing")], [t("English")]],
         ]
       ),
 
@@ -2333,7 +2341,7 @@ const allPosts: Post[] = [
         lk("four-plus matches a day during the group stage", "/blog/world-cup-2026-by-the-numbers"),
         t(", you won't watch most of them. Scoutcast.ai covers the ones you missed: set the USMNT — and any other teams you follow — and every morning you get a ~2-minute personalized audio briefing covering yesterday's results, what mattered, and who plays today, while you make coffee. Tap the mic to ask a follow-up (\"did Pulisic start?\") and it answers and resumes.")
       ),
-      p(t("Free, no ads, iOS only. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+      p(t("Ad-free, 7-day free trial, iOS and Android. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
       h2("Quick comparison"),
       tbl(
@@ -2343,7 +2351,7 @@ const allPosts: Post[] = [
           [[t("Apple Sports")], [t("Live scores, no ads")], [t("Free")]],
           [[t("SofaScore")], [t("USMNT stats depth")], [t("Free; paid tier")]],
           [[t("FIFA official app")], [t("Schedule and bracket")], [t("Free")]],
-          [[t("Scoutcast.ai")], [t("2-min daily audio catch-up")], [t("Free")]],
+          [[t("Scoutcast.ai")], [t("2-min daily audio catch-up")], [t("7-day trial, then $5.99/mo")]],
         ]
       ),
 
@@ -2372,7 +2380,7 @@ const allPosts: Post[] = [
       {
         question: "Can I watch the World Cup for free in the US?",
         answer:
-          "The opening matches streamed free on Tubi. FOX broadcasts are free with a cable or satellite subscription or live-TV streaming service. Scores and schedule apps (Apple Sports, SofaScore, FIFA app) are free, and Scoutcast.ai's daily audio briefings are free.",
+          "The opening matches streamed free on Tubi. FOX broadcasts are free with a cable or satellite subscription or live-TV streaming service. Scores and schedule apps (Apple Sports, SofaScore, FIFA app) are free, and Scoutcast.ai has a 7-day free trial (then $5.99/month).",
       },
       {
         question: "How do I keep up with USMNT results if I can't watch?",
@@ -2416,7 +2424,7 @@ const allPosts: Post[] = [
       p(
         t("104 matches over 39 days means most end while you're asleep or at work. Scoutcast.ai picks up the ones you missed: set El Tri — and any other teams you follow — and every morning you get a ~2-minute personalized audio briefing covering yesterday's results, what mattered, and who plays today, while you make coffee. Tap the mic for a follow-up and it answers and resumes.")
       ),
-      p(t("Free, no ads, iOS only. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+      p(t("Ad-free, 7-day free trial, iOS and Android. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
       h2("Quick comparison"),
       tbl(
@@ -2426,7 +2434,7 @@ const allPosts: Post[] = [
           [[t("FIFA official app")], [t("Schedule, fixtures, group table")], [t("Free")]],
           [[t("Apple Sports")], [t("Live scores, no ads")], [t("Free")]],
           [[t("Marca / AS")], [t("Mexican football news in Spanish")], [t("Free")]],
-          [[t("Scoutcast.ai")], [t("2-min morning audio catch-up on El Tri")], [t("Free")]],
+          [[t("Scoutcast.ai")], [t("2-min morning audio catch-up on El Tri")], [t("7-day trial, then $5.99/mo")]],
         ]
       ),
 
@@ -2460,7 +2468,7 @@ const allPosts: Post[] = [
       {
         question: "What is the best app for keeping up with El Tri?",
         answer:
-          "For streaming in Spanish: Peacock with Telemundo. For live scores: Apple Sports. For Spanish football journalism: Marca or AS. For a personalized morning audio catch-up on Mexico's results: Scoutcast.ai (free, iOS).",
+          "For streaming in Spanish: Peacock with Telemundo. For live scores: Apple Sports. For Spanish football journalism: Marca or AS. For a personalized morning audio catch-up on Mexico's results: Scoutcast.ai (iOS and Android, 7-day free trial).",
       },
     ],
   },
@@ -2507,7 +2515,7 @@ const allPosts: Post[] = [
         lk("most World Cup matches kicking off between noon and 9 p.m. ET", "/blog/how-to-follow-the-2026-world-cup-when-you-work"),
         t(" — that's 5 p.m. to 2 a.m. UK time — some England matches finish at a reasonable hour for UK fans, others much later. Scoutcast.ai covers the overnight gap: set England (and any other teams you follow) and every morning you get a ~2-minute personalized audio briefing — results, what mattered, who plays today — with tap-to-ask follow-ups.")
       ),
-      p(t("Free, no ads, iOS only. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+      p(t("Ad-free, 7-day free trial, iOS and Android. "), lk("Download on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
       h2("Quick comparison"),
       tbl(
@@ -2517,7 +2525,7 @@ const allPosts: Post[] = [
           [[t("BBC Sport app")], [t("UK fans")], [t("Live text and England news")], [t("Free")]],
           [[t("FOX Sports")], [t("US-based fans")], [t("Watch every match")], [t("TV subscription")]],
           [[t("SofaScore")], [t("All fans")], [t("Player stats and heat maps")], [t("Free; paid tier")]],
-          [[t("Scoutcast.ai")], [t("All fans")], [t("2-min daily audio catch-up")], [t("Free")]],
+          [[t("Scoutcast.ai")], [t("All fans")], [t("2-min daily audio catch-up")], [t("7-day trial, then $5.99/mo")]],
         ]
       ),
 
@@ -2546,7 +2554,7 @@ const allPosts: Post[] = [
       {
         question: "What is the best app for England fans at the World Cup?",
         answer:
-          "It depends on where you're watching. UK fans: ITVX or BBC iPlayer for free streaming, BBC Sport app for news and live text. US-based fans: FOX Sports for streaming. All fans: SofaScore for player stats and heat maps, and Scoutcast.ai for a free personalized morning audio briefing covering England's results.",
+          "It depends on where you're watching. UK fans: ITVX or BBC iPlayer for free streaming, BBC Sport app for news and live text. US-based fans: FOX Sports for streaming. All fans: SofaScore for player stats and heat maps, and Scoutcast.ai for a personalized morning audio briefing covering England's results (7-day free trial).",
       },
       {
         question: "What time are England's World Cup matches in UK time?",
@@ -2556,7 +2564,7 @@ const allPosts: Post[] = [
       {
         question: "Is there an app to catch up on England results without scrolling?",
         answer:
-          "Scoutcast.ai delivers a ~2-minute personalized audio briefing each morning covering the teams you follow — results, what mattered, who plays today — with tap-to-ask voice follow-ups. Free, no ads, iOS.",
+          "Scoutcast.ai delivers a ~2-minute personalized audio briefing each morning covering the teams you follow — results, what mattered, who plays today — with tap-to-ask voice follow-ups. Ad-free, 7-day free trial, iOS and Android.",
       },
     ],
   },
@@ -2674,7 +2682,7 @@ const allPosts: Post[] = [
       ),
       p(
         t(
-          "iOS only. Free tier includes daily briefings for every league you follow. Fantasy Season Pass is the paid add-on."
+          "iOS and Android. 7-day free trial, then $5.99/month for daily briefings across every league you follow. Fantasy Season Pass is the optional add-on."
         )
       ),
 
@@ -3638,7 +3646,7 @@ const allPosts: Post[] = [
       ),
       p(
         lk(
-          "Download Scoutcast free →",
+          "Try Scoutcast free for 7 days →",
           "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
         )
       ),
@@ -4577,7 +4585,7 @@ const allPosts: Post[] = [
     p(t("The audio component matters more than it might seem. Reading sports news requires you to stop and focus. Listening to a two-minute briefing can happen while you're doing something else. That's the difference between a habit you maintain and one you drop after a week.")),
     p(lk("If you're someone who struggles to keep up with sports at all during busy stretches", "https://scoutcast.ai/blog/how-to-keep-up-with-sports-when-you-dont-have-time/"), t(", the briefing model is especially well-suited — it compresses the essential information into a format that can fit into almost any schedule.")),
 
-    p(lk("Scoutcast.ai", "https://scoutcast.ai"), t(" is a personalized sports briefing built on this system — two minutes, your teams only, every morning. Free on iPhone and Android.")),
+    p(lk("Scoutcast.ai", "https://scoutcast.ai"), t(" is a personalized sports briefing built on this system — two minutes, your teams only, every morning. On iPhone and Android, with a 7-day free trial.")),
 
     h2("How to Build Your Own Sports News Routine"),
     p(t("Whether you use a dedicated briefing tool or not, the underlying system applies. A few practical steps:")),
@@ -7570,7 +7578,7 @@ const allPosts: Post[] = [
   title: "Sleeper vs ESPN vs Yahoo: Best Fantasy Platform for 2026",
   excerpt:
     "Sleeper, ESPN, and Yahoo compared for 2026 fantasy football: formats, ads, draft tools, app quality, and which platform your league should actually pick.",
-  date: "2026-08-24",
+  date: "2026-08-20",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
