@@ -3852,10 +3852,10 @@ const allPosts: Post[] = [
 },
 {
   slug: "what-is-adp-fantasy-football",
-  title: "What Does ADP Mean in Fantasy Football?",
-  excerpt: "ADP means Average Draft Position: the average pick where a player gets drafted across thousands of leagues. Know it to see when to reach, wait, or find value.",
+  title: "What ADP Means in Fantasy Football (And How to Beat It)",
+  excerpt: "ADP = Average Draft Position \u2014 the market price of every player. How to read ESPN, Sleeper, and Yahoo ADP, and find the 2026 picks the market has wrong.",
   date: "2026-07-08",
-  updatedAt: "2026-08-06",
+  updatedAt: "2026-08-24",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -6229,10 +6229,11 @@ const allPosts: Post[] = [
 },
 {
   slug: "what-is-ppr-in-fantasy-football",
-  title: "What Is PPR in Fantasy Football? PPR Meaning Explained",
+  title: "What Is PPR in Fantasy Football? (+ Half PPR vs. Standard)",
   excerpt:
-    "PPR means ‘point per reception’: every catch is worth 1 fantasy point (0.5 in half PPR, 0 in standard). Here’s how it changes player value and your draft.",
+    "PPR = 1 point per catch (0.5 in half PPR, 0 in standard). Same game, double the points — see the scoring comparison and who gains value in 2026 drafts.",
   date: "2026-08-07",
+  updatedAt: "2026-08-24",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -6883,10 +6884,11 @@ const allPosts: Post[] = [
 },
 {
   slug: "what-is-faab-in-fantasy-football",
-  title: "What Is FAAB in Fantasy Football? Bidding Explained",
+  title: "What Is FAAB in Fantasy Football? (+ How Much to Bid)",
   excerpt:
-    "FAAB (Free Agent Acquisition Budget) is a season-long budget — usually $100 — you spend in blind bids to claim waiver players. Here's how to bid it well.",
+    "FAAB is your season-long blind-bid waiver budget (usually $100). When claims process, how much to bid on a breakout, and the mistakes that drain budgets.",
   date: "2026-08-07",
+  updatedAt: "2026-08-24",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",

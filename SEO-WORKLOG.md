@@ -4,6 +4,30 @@ Track changes here to correlate against GSC in 2–4 weeks.
 
 ---
 
+## 2026-08-24 — CTR title/snippet pass: ADP, PPR, FAAB (Aug 22–23 schedule item)
+
+Per the Answer-Era addendum schedule: three definitional pages served at pos 6–10 on
+big impression volume with ~zero clicks (GSC Jul 27–Aug 23). The answer box eats the
+definition, so each title now keeps the query tokens but adds the promise the post
+already delivers beyond it. Excerpts (= meta description + on-page intro) rewritten
+the same way; `updatedAt` bumped since title/excerpt render on-page.
+
+| Page | 28d data | New title |
+|---|---|---|
+| `what-is-adp-fantasy-football` | ~1.4K impr on "adp … meaning" cluster @ pos ~9–11, 1 click | What ADP Means in Fantasy Football (And How to Beat It) |
+| `what-is-ppr-in-fantasy-football` | "ppr" 936 impr @ 6.3, "what is ppr" 255 @ 8.2, 1 click total | What Is PPR in Fantasy Football? (+ Half PPR vs. Standard) |
+| `what-is-faab-in-fantasy-football` | "faab fantasy football" 548 @ 7.5, "faab" 336 @ 9.4, 0 clicks | What Is FAAB in Fantasy Football? (+ How Much to Bid) |
+
+No body changes. FAQPage schema untouched.
+
+### Watch for in GSC (check ~2026-09-07)
+- Strategy estimate for this pass: +200 clicks/mo across the three pages
+- PPR: CTR on "ppr" head query (0.1% → anything >0.5% is a win at pos 6)
+- FAAB: "faab fantasy football" @ pos 7.5 is the volume query — CTR from 0%
+- ADP: watch position too — title dropped exact "What does ADP mean" phrasing
+
+---
+
 ## 2026-08-14 — RESULTS: fantasy wave measured; Jul 21 checkpoints closed
 
 **Data:** `Google-Trends-Research/scoutcast.ai-Performance-on-Search-2026-08-14.xlsx`
