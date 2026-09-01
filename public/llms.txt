@@ -39,6 +39,10 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - X: https://x.com/scoutcastAI
 
 ## Recent posts
+- The NFL Killed the Chain Gang — It Still Can't Spot the Ball (2026-09-01): https://scoutcast.ai/blog/nfl-hawk-eye-virtual-measurement — Sony's Hawk-Eye cameras now measure every first down in about 30 seconds. But the spot they're measuring from is still a human guess — and the league says solving that is five years away.
+- Robot Umpires Are About to Call Their First MLB Postseason (2026-09-01): https://scoutcast.ai/blog/mlb-robot-umpires-2026-postseason — The ABS challenge system ran all season with less drama than anyone predicted. October is different: two challenges, elimination games, and the first playoff moment decided by a camera array.
+- What It Actually Costs to Watch Your Team in 2026 (2026-09-01): https://scoutcast.ai/blog/cost-of-watching-sports-2026 — U.S. households now spend an average of $122.93 a month — $1,475 a year — on streaming to watch sports. The per-league math, why it got this way, and the one part of fandom that shouldn't cost anything close to that.
+- How to Follow College Football in 2026 Without Five Streaming Subscriptions (2026-09-01): https://scoutcast.ai/blog/follow-college-football-without-five-streaming-services — College football's 2026 TV map spans ABC, FOX, CBS, NBC, The CW, and four streaming ecosystems. Here's the conference-by-conference map, what full coverage really costs, and the cheaper way to stay caught up.
 - Sleeper vs ESPN vs Yahoo: Best Fantasy Platform for 2026 (2026-08-20): https://scoutcast.ai/blog/sleeper-vs-espn-vs-yahoo-fantasy-football — Sleeper, ESPN, and Yahoo compared for 2026 fantasy football: formats, ads, draft tools, app quality, and which platform your league should actually pick.
 - Guillotine League Fantasy Football: Rules and Strategy (2026-08-19): https://scoutcast.ai/blog/guillotine-league-fantasy-football — A guillotine league eliminates the lowest-scoring fantasy team every week and dumps its roster to waivers. Last manager standing after Week 17 wins it all.
 - Vampire League Fantasy Football: Rules and Strategy (2026-08-19): https://scoutcast.ai/blog/vampire-league-fantasy-football — A vampire league is fantasy football where one team drafts nothing — then steals a starter from every team it beats. Here are the rules, variants, and strategy.
@@ -92,4 +96,4 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 - Scoutcast vs Huxe vs BriefingAM: which AI audio briefing app should you use? (2026-05-07): https://scoutcast.ai/blog/scoutcast-vs-huxe-vs-briefingam — An honest comparison of the three best AI audio briefing apps in 2026 — what each one is good at, where each one falls short, and which to pick based on what you actually care about.
 - Why we built Scoutcast.ai (2026-04-28): https://scoutcast.ai/blog/why-we-built-scoutcast — A personalized 2-minute AI sports briefing for your morning — and the morning with my son that started it.
 
-Last updated: 2026-08-20
+Last updated: 2026-09-01

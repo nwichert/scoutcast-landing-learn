@@ -5229,7 +5229,7 @@ const allPosts: Post[] = [
   excerpt:
     "Draft season is open now: most 2026 drafts run Aug 23–Sep 3, peaking Labor Day weekend. Kickoff is Wed, Sept 9. Every key date, the last day to draft, and when the season ends.",
   date: "2026-07-28",
-  updatedAt: "2026-08-20",
+  updatedAt: "2026-09-01",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -5384,6 +5384,12 @@ const allPosts: Post[] = [
     ),
     ul(
       [
+        b("If your league lived on NFL Fantasy, move it first."),
+        t(" The NFL shut down its season-long game and handed leagues to ESPN — "),
+        lk("here's what changes and how to import your league", "/blog/nfl-fantasy-moving-to-espn"),
+        t(". Do this before you schedule the draft, not the night of."),
+      ],
+      [
         b("Follow camp news in low-effort mode."),
         t(
           " This is where Scoutcast.ai fits: a ~2-minute daily audio briefing on your teams and players keeps you current on camp battles, injuries, and depth-chart moves without doomscrolling four apps. By draft day you'll just know who's rising and falling."
@@ -5424,6 +5430,10 @@ const allPosts: Post[] = [
         "And if you want the habit to continue past draft day, Scoutcast's NFL Fantasy Pass ($49.99/season) delivers in-season briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call) — timed to the actual decisions you make each week."
       )
     ),
+    // Moved up from the end of the body, where it rendered directly above the automatic
+    // bottom CTA (two identical blocks back to back). This is the point in the argument
+    // where the reader has just been told what to do between now and their draft.
+    cta("cta-inbody"),
 
     h2("When does fantasy football end?"),
     p(
@@ -5436,7 +5446,6 @@ const allPosts: Post[] = [
         "The only real deadline is Week 1. Everything else — the perfect draft date, the ideal prep schedule — is optimization. Get your league scheduled for that Aug 28–Sep 7 window, do a couple mocks, keep a light ear on camp news, and you'll walk into your draft more prepared than half your league."
       )
     ),
-    cta("cta-inbody"),
     hr(),
   ],
   faqs: [
@@ -5493,6 +5502,7 @@ const allPosts: Post[] = [
   excerpt:
     "The definitive list of fantasy football loser punishments — from loser trophies to the 24-hour Waffle House — plus commissioner rules to make them stick.",
   date: "2026-07-21",
+  updatedAt: "2026-09-01",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -5510,6 +5520,13 @@ const allPosts: Post[] = [
       t(
         " a punishment when the loser suddenly develops amnesia in January. Steal what fits, write it into your constitution before the draft, and never watch a dead-roster Week 14 again."
       )
+    ),
+    p(
+      t(
+        "One piece of 2026 housekeeping before the list: if your league played on NFL Fantasy, it's being moved to ESPN this season. "
+      ),
+      lk("Here's what changes and how to import your league", "/blog/nfl-fantasy-moving-to-espn"),
+      t(" — settle where the league lives, then settle the sentencing.")
     ),
     h2("Classic, entry-level punishments"),
     p(
@@ -5626,6 +5643,10 @@ const allPosts: Post[] = [
         " nothing dangerous, nothing illegal, nothing that could threaten someone’s job, relationship, or health. No punishments involving other people who didn’t sign up (spouses, coworkers, kids). And build in a hardship clause — if someone’s year genuinely fell apart, the league votes to defer or commute. The goal is a story everyone retells for a decade, not a friendship you don’t get back."
       )
     ),
+    // Placed at the end of the enforcement section deliberately: a reader who made it
+    // through commissioner rules is the invested league-runner, not the drive-by
+    // listicle skimmer — the only persona on this page with any install intent.
+    cta("cta-commissioner"),
     h2("How to pick the right severity for your league"),
     p(
       t(
@@ -5662,7 +5683,9 @@ const allPosts: Post[] = [
         "Here’s the quiet math nobody does in August: the flip side of every punishment on this list is simply not finishing last. That mostly comes down to staying informed when the season gets busy — knowing who’s hurt, who’s trending, and what your matchup actually needs before waivers clear. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee, and the NFL Fantasy Pass ($49.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around your actual fantasy roster. Fifty bucks a season is a lot cheaper than nine waffles, a milk mile, or twelve months of calendar infamy."
       )
     ),
-    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+    // The styled CTA with store buttons, not a bare text link — this is the one
+    // paragraph on the page that earns the pitch.
+    cta("cta-loser"),
   ],
   faqs: [
     {
@@ -8427,6 +8450,445 @@ const allPosts: Post[] = [
       question: "When should you schedule a fantasy football draft party?",
       answer:
         "The last two weekends of August are the sweet spot — after most preseason position battles are settled but before final roster cuts and Week 1. Send a date poll in July so all managers can attend, and reveal the draft order two to three weeks before the party so everyone has time to prep from their actual slot.",
+    },
+  ],
+},
+{
+  slug: "follow-college-football-without-five-streaming-services",
+  title: "How to Follow College Football in 2026 Without Five Streaming Subscriptions",
+  excerpt:
+    "College football's 2026 TV map spans ABC, FOX, CBS, NBC, The CW, and four streaming ecosystems. Here's the conference-by-conference map, what full coverage really costs, and the cheaper way to stay caught up.",
+  date: "2026-09-01",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "The short version: watching every meaningful college football game in 2026 requires four separate media ecosystems — ESPN’s, FOX’s, NBC’s, and CBS’s — and a single Saturday can send you to ABC, FOX, CBS, NBC, The CW, and at least three streaming apps. Households that try to cover it all now average about $123 a month on sports streaming. You almost certainly don’t need all of it. This guide maps who airs what, prices the realistic bundles, and covers the cheapest option of all: not paying to stream games you were never going to watch."
+      )
+    ),
+
+    h2("The 2026 college football TV map, by conference"),
+    p(
+      t(
+        "College football’s rights are more scattered in 2026 than they have ever been. Every major conference sold its games to multiple partners, and every partner holds back some games as streaming-only exclusives to push app subscriptions. Here’s where each conference actually lives:"
+      )
+    ),
+    tbl(
+      [[b("Conference")], [b("TV networks")], [b("Streaming you may also need")]],
+      [
+        [
+          [t("SEC")],
+          [t("ABC, ESPN networks")],
+          [t("ESPN app for select exclusives")],
+        ],
+        [
+          [t("Big Ten")],
+          [t("FOX, CBS, NBC, FS1, Big Ten Network")],
+          [t("Peacock (weekly exclusives), Paramount+")],
+        ],
+        [
+          [t("Big 12")],
+          [t("ESPN networks, FOX, FS1, TNT")],
+          [t("ESPN app, FOX One")],
+        ],
+        [
+          [t("ACC")],
+          [t("ESPN networks, The CW")],
+          [t("ESPN app")],
+        ],
+        [
+          [t("Notre Dame (home)")],
+          [t("NBC")],
+          [t("Peacock")],
+        ],
+      ]
+    ),
+    p(
+      t("The Big Ten is the worst case: one conference split across three broadcast networks plus two cable channels plus a streamer with weekly exclusive games. If your team plays in it, there is no single subscription that shows you every game. That’s not an accident — it’s the business model. "),
+      lk("Fans now use an average of 2.4 paid services to watch sports", "https://www.cabletv.com/news/cost-of-watching-live-sports-2026"),
+      t(", and nearly three in four use at least two.")
+    ),
+
+    h2("What full coverage actually costs"),
+    p(
+      t(
+        "If you want genuinely national coverage — every ranked matchup, every conference — the realistic 2026 routes are:"
+      )
+    ),
+    ul(
+      [
+        b("A live-TV bundle. "),
+        t(
+          "YouTube TV’s sports-focused plan runs $54.99/month for the first year and includes the broadcast networks plus ESPN Unlimited — the single-subscription ceiling, and still short of Peacock and Paramount+ exclusives."
+        ),
+      ],
+      [
+        b("The à la carte stack. "),
+        t(
+          "ESPN’s unlimited app tier ($29.99/month) plus Peacock plus Paramount+ plus FOX One. This is how households end up at the $123/month average — about $1,475 a year."
+        ),
+      ],
+      [
+        b("An antenna plus one app. "),
+        t(
+          "ABC, CBS, NBC, FOX, and The CW are free over the air. A $30 antenna plus your conference’s dominant app covers most of one team’s schedule in many markets — the most underrated setup on this list."
+        ),
+      ],
+    ),
+    p(
+      t("The scale of this has started drawing government attention — the FCC chairman has "),
+      lk("publicly questioned sports leagues’ push of games onto paid streaming platforms", "https://www.foxnews.com/sports/fcc-chairman-questions-nfls-antitrust-protection-league-shifts-streaming-services.amp"),
+      t(". Nobody designed this system for fans. It was designed for subscriber counts.")
+    ),
+
+    h2("Match the spend to the fan you actually are"),
+    h3("You watch your team, every week, start to finish"),
+    p(
+      t(
+        "Buy the ecosystem your conference lives in and stop there. SEC and ACC fans mostly need ESPN. Notre Dame fans need Peacock. Big Ten fans should check which network carries most of their team’s slate this season before paying for all three — the schedule is public in August, and most teams skew heavily toward one partner."
+      )
+    ),
+    h3("You watch whatever the best game is"),
+    p(
+      t(
+        "This is the fan the $55/month bundle is for. If Saturday is a six-hour couch commitment regardless of who’s playing, a live-TV bundle with ESPN included is cheaper than stacking four apps and less annoying than hunting for which one has the 3:30 kickoff."
+      )
+    ),
+    h3("You mostly need to keep up — the game is on while life happens"),
+    p(
+      t(
+        "Then here’s the honest question: how many of those subscriptions are you paying just to feel caught up? Following a team and watching every snap are different jobs. If most of your college football consumption is checking what happened, reading the aftermath, and being ready for the group chat, you can do that job well without paying streaming prices at all."
+      )
+    ),
+
+    cta("cta-streaming"),
+
+    h2("Following without watching: the briefing layer"),
+    p(
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(
+        " approaches this from the other side. Instead of another place to watch, it’s a ~2-minute personalized audio briefing every morning: you pick your school, your conference, individual players, and even specific beat writers on X, and it covers what actually happened — the result, the storylines, the injury news, what next week means. Mid-briefing, you can tap the mic and ask a follow-up (“what happened in the fourth quarter?”) and get an instant answer. It’s $5.99/month after a 7-day free trial — against a $123/month streaming stack, it’s the part of fandom that shouldn’t be expensive."
+      )
+    ),
+    p(
+      t("It layers on top of whatever you already pay for rather than replacing it — keep the one subscription your team’s games actually live on, drop the three you bought to avoid missing something, and let the briefing cover the rest of the sport. For the full landscape of catch-up options, see "),
+      lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"),
+      t(".")
+    ),
+
+    h2("Free ways to fill the gaps"),
+    ul(
+      [b("Over-the-air broadcasts. "), t("The biggest games still land on ABC, CBS, NBC, and FOX — free with an antenna in most markets.")],
+      [b("Team radio streams. "), t("Nearly every program streams its radio broadcast free through the school’s athletics site or app — the classic answer for games buried on a service you don’t have.")],
+      [b("Condensed replays and highlights. "), t("Conference and school YouTube channels post extended highlights within hours, free.")],
+    ),
+  ],
+  faqs: [
+    {
+      question: "What streaming service has the most college football games in 2026?",
+      answer:
+        "ESPN's ecosystem carries the most games by volume — the full SEC and ACC slates plus a share of the Big 12 — with its unlimited app tier at $29.99/month. But no single service carries everything: Big Ten games split across FOX, CBS, NBC, and Peacock, and several partners hold streaming-only exclusives each week.",
+    },
+    {
+      question: "Can you watch college football without cable in 2026?",
+      answer:
+        "Yes. Every network airing college football has a streaming path: ESPN's app, Peacock (NBC), Paramount+ (CBS), and FOX One. The catch is cost — covering all four ecosystems à la carte typically exceeds $100/month. A live-TV bundle like YouTube TV's $54.99/month sports plan, or a free antenna for over-the-air broadcast games, are the usual ways to cut that down.",
+    },
+    {
+      question: "What's the best app to follow college football without watching every game?",
+      answer:
+        "For staying informed rather than streaming, Scoutcast.ai delivers a ~2-minute personalized audio briefing each morning covering your school, conference, and players, with tap-to-ask follow-up questions — at $5.99/month after a 7-day free trial. For streaming the games themselves, match the app to your conference: ESPN for SEC/ACC, Peacock for Big Ten exclusives and Notre Dame.",
+    },
+    {
+      question: "Why are college football games on so many different channels now?",
+      answer:
+        "Conferences maximized rights revenue by selling their schedules to multiple partners instead of one — the Big Ten alone sold packages to FOX, CBS, and NBC. Each partner then reserves some games as streaming-only exclusives to drive app subscriptions. The result is the most fragmented broadcast map in the sport's history.",
+    },
+  ],
+},
+{
+  slug: "cost-of-watching-sports-2026",
+  title: "What It Actually Costs to Watch Your Team in 2026",
+  excerpt:
+    "U.S. households now spend an average of $122.93 a month — $1,475 a year — on streaming to watch sports. The per-league math, why it got this way, and the one part of fandom that shouldn't cost anything close to that.",
+  date: "2026-09-01",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t("American households that stream sports now spend an average of "),
+      lk("$122.93 a month — $1,475.16 a year", "https://www.cabletv.com/news/cost-of-watching-live-sports-2026"),
+      t(
+        " — and the typical fan juggles 2.4 paid services to do it. Following a single league in full has quietly become a four-figure annual line item. Here’s the honest per-league math for 2026, how it got this way, and the distinction worth drawing before you re-subscribe to everything this fall: watching your team and staying informed about your team are different jobs, and only one of them has to be expensive."
+      )
+    ),
+
+    h2("The per-league math"),
+    tbl(
+      [[b("To follow…")], [b("What it takes")], [b("Realistic cost")]],
+      [
+        [
+          [t("NFL (full slate)")],
+          [t("Sunday networks + ESPN + Amazon Prime (Thursday) + Peacock and Netflix exclusives + NFL+")],
+          [
+            lk("~$58/month in streaming alone; all-in packages exceed $1,500/year", "https://cordcuttersnews.com/streaming-makes-up-most-of-the-cost-of-following-the-nfl-new-study-finds/"),
+          ],
+        ],
+        [
+          [t("NBA (one team, out of market)")],
+          [t("League Pass ($13.99–$24.99/month) + ESPN app ($29.99/month) for national games")],
+          [t("~$44–$55/month in season")],
+        ],
+        [
+          [t("College football (national)")],
+          [t("ESPN + Peacock + Paramount+ + FOX One ecosystems, or a live-TV bundle")],
+          [
+            lk("Four ecosystems à la carte, or ~$55/month bundled", "/blog/follow-college-football-without-five-streaming-services"),
+          ],
+        ],
+        [
+          [t("Multiple leagues")],
+          [t("Whatever combination of the above your household follows")],
+          [t("The $122.93/month average — often more")],
+        ],
+      ]
+    ),
+    p(
+      t("These aren’t worst-case numbers; they’re the advertised paths. The worst case is the fan who buys all of it and "),
+      lk("still hits blackouts, buffering, and games on services they don’t have", "https://awfulannouncing.com/streaming/how-much-cost-streaming-sports-mlb-nfl-nba-nhl-mls.html"),
+      t(" — paying more than a cable bill ever was for a less reliable product.")
+    ),
+
+    h2("How it got this way"),
+    p(
+      t(
+        "Every league discovered the same thing at the same time: an exclusive game is worth more as subscriber bait than as a broadcast. So the NFL put Thursdays on Amazon, a playoff game on Peacock, and Christmas on Netflix. The Big Ten split itself across three networks. The NBA moved a marquee package to a streamer. Each deal was individually rational and collectively produced a system where being a complete fan of one team requires an ecosystem map."
+      )
+    ),
+    p(
+      t("It’s reached the point of federal attention: the Department of Justice has "),
+      lk("fielded complaints alleging anticompetitive behavior in the NFL’s shift of games to streaming platforms", "https://www.foxnews.com/sports/fcc-chairman-questions-nfls-antitrust-protection-league-shifts-streaming-services.amp"),
+      t(", and the FCC chairman has openly questioned the league’s antitrust protection in light of it. When regulators start doing your streaming math for you, the math is bad.")
+    ),
+
+    h2("The math nobody does: cost per game actually watched"),
+    p(
+      t(
+        "Be honest about the denominator. If you watch your NFL team’s 17 games plus a dozen others, a $1,500 all-in year is roughly $50 per game watched. If you’re a college football fan who catches maybe half your team’s games live because Saturdays are Saturdays, a four-app stack can run north of $80 per game. Most fans don’t buy subscriptions to watch games — they buy them to avoid missing games. That’s an insurance product, and it’s priced like one."
+      )
+    ),
+
+    cta("cta-cost"),
+
+    h2("The part that shouldn’t cost $1,475"),
+    p(
+      t(
+        "Here’s the distinction the streaming bundle blurs: most of fandom is not watching live. It’s knowing what happened, understanding what it means, and being current when the group chat lights up. The live game is three hours a week; being an informed fan is a daily job — and it’s the job most of those subscriptions are quietly being paid to do."
+      )
+    ),
+    p(
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(
+        " exists for exactly that daily job. It’s a personalized ~2-minute audio briefing every morning — your teams, your players, your leagues, even specific X beat writers you trust — with the option to tap the mic and ask a follow-up question mid-briefing. It’s $5.99/month after a 7-day free trial. It doesn’t stream games and doesn’t pretend to; it makes the keeping-up half of fandom cost pocket change, so the only subscriptions you keep are the ones you genuinely watch."
+      )
+    ),
+    p(
+      t("A sane 2026 setup for most households: one streaming service chosen deliberately (the one your most-watched team actually lives on), an antenna for broadcast games, and a briefing layer for everything else. For how the catch-up options compare, see "),
+      lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"),
+      t(" and "),
+      lk("the best way to follow sports news", "/blog/best-way-to-follow-sports-news"),
+      t(".")
+    ),
+  ],
+  faqs: [
+    {
+      question: "How much does the average sports fan spend on streaming in 2026?",
+      answer:
+        "U.S. households average $122.93 per month — $1,475.16 per year — on streaming subscriptions used to watch sports, according to 2026 viewership research, with the typical fan paying for 2.4 services and nearly three in four fans using at least two.",
+    },
+    {
+      question: "Why is watching sports so expensive now?",
+      answer:
+        "Leagues learned that exclusive games drive subscriptions, so they split their schedules across competing platforms — Amazon, Peacock, Netflix, ESPN, and others each bought slices. Fans who once needed one cable package now need several services to see the same schedule, and the combined cost frequently exceeds what cable cost.",
+    },
+    {
+      question: "What's the cheapest way to follow your team without paying for every streaming service?",
+      answer:
+        "Keep one deliberately chosen streaming service (the one carrying most of your team's games), use a free antenna for broadcast-network games, stream your team's free radio broadcast for the rest, and use a daily briefing app like Scoutcast.ai ($5.99/month) to stay informed on everything you didn't watch live.",
+    },
+  ],
+},
+{
+  slug: "mlb-robot-umpires-2026-postseason",
+  title: "Robot Umpires Are About to Call Their First MLB Postseason",
+  excerpt:
+    "The ABS challenge system ran all season with less drama than anyone predicted. October is different: two challenges, elimination games, and the first playoff moment decided by a camera array.",
+  date: "2026-09-01",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "Baseball spent two decades arguing about robot umpires, and when they finally arrived this season, the sport mostly shrugged. The Automated Ball-Strike challenge system has run in every ballpark all year: humans still call every pitch, teams get two challenges a game, and a camera network settles the disputed ones in seconds. The apocalypse didn’t come. But the regular season was the easy part — October is when a challenge, held or burned, will decide an elimination game, and the first robot-ump postseason will tell us what this system actually changed."
+      )
+    ),
+
+    h2("How the ABS challenge system works"),
+    p(
+      t("Despite the nickname, there are no robots — ABS is "),
+      lk("a network of specialized cameras in every ballpark tracking each pitch’s exact location", "https://www.espn.com/mlb/story/_/id/46357017/mlb-approves-robot-umpires-2026-part-challenge-system"),
+      t(". The human umpire calls every pitch, same as always. What’s new:")
+    ),
+    ul(
+      [t("Each team starts the game with two challenges, and keeps a challenge if it’s successful")],
+      [t("Only the pitcher, catcher, or batter can challenge — a tap of the cap or helmet, immediately, with no help from the dugout")],
+      [t("The pitch track goes up on the videoboard, the call is confirmed or overturned in seconds, and play resumes")],
+    ),
+    p(
+      t("The challenge format was itself the compromise. When MLB tested full ABS — the computer calling every pitch — in the minors, "),
+      lk("players and fans consistently preferred keeping a human element", "https://www.cbssports.com/mlb/news/mlb-robot-umpires-abs-challenge-system-2026-season/"),
+      t(", and players especially objected to killing pitch framing, a genuine defensive skill. Even so, the competition committee vote wasn’t unanimous — player representatives voted no.")
+    ),
+
+    h2("What fans were afraid of, and what actually happened"),
+    p(
+      t(
+        "The fear was baseball losing its human texture — the strike zone as negotiation, the catcher’s craft, the manager’s ejection-worthy tantrum. The reality has been quieter: a handful of challenges a game, most of them over in less time than a mound visit, with the videoboard reveal becoming its own small piece of theater. Framing survived, because framing was never about fooling a camera on two pitches a game — it’s about the other 290 pitches a human still calls."
+      )
+    ),
+    p(
+      t(
+        "What did change is subtler: the worst version of a blown call — the game-deciding strike three that everyone in the park except one person knows was a ball — now has a release valve. The system isn’t designed to perfect the strike zone. It’s designed to make the unforgivable call correctable."
+      )
+    ),
+
+    h2("October changes the calculus"),
+    p(
+      t(
+        "The regular season never really stress-tested the strategy, because a wasted challenge in June costs almost nothing. A postseason challenge is a different asset. Burn both by the fourth inning and a ninth-inning strike three is final no matter what the cameras saw. Hold them too long and you may never cash them. Every October managerial decision tree just grew a new branch, and the first team eliminated with an unused challenge in its pocket — or saved by its last one — will define how the sport talks about this system for years."
+      )
+    ),
+    p(
+      t(
+        "Somewhere in the next few Octobers, a pennant or a World Series will turn on a pitch track on a videoboard. That moment was inevitable from the day the cameras went in. The interesting question was never whether technology would decide a playoff game — human eyes were deciding them before, just without replay — it’s whether the sport will feel the decision was fairer. The minor-league evidence says yes."
+      )
+    ),
+
+    cta("cta-abs"),
+
+    p(
+      t("If you follow a contender, October moves fast — challenge controversies, roster moves, and starter decisions land daily. "),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(" briefs you on your team every morning in about two minutes, and you can tap the mic to ask exactly what happened with last night’s overturned call. It’s the postseason catch-up without the hour of scrolling — see also "),
+      lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"),
+      t(".")
+    ),
+  ],
+  faqs: [
+    {
+      question: "How do robot umpires work in MLB in 2026?",
+      answer:
+        "Human umpires still call every pitch. The Automated Ball-Strike (ABS) system — Hawk-Eye-style cameras in every ballpark — comes into play only on challenges: each team gets two per game, initiated immediately by only the pitcher, catcher, or batter with a tap of the cap. The pitch track is shown on the videoboard and the call is confirmed or overturned in seconds. Successful challenges are retained.",
+    },
+    {
+      question: "Will the ABS challenge system be used in the 2026 MLB playoffs?",
+      answer:
+        "Yes — ABS was approved for the full 2026 season at every ballpark, making this October the first postseason where ball-strike challenges are part of playoff strategy, including when managers' players choose to hold or use their two challenges in elimination games.",
+    },
+    {
+      question: "Why didn't MLB let the computer call every pitch?",
+      answer:
+        "Testing full ABS in the minor leagues showed players and fans preferred keeping the human element, and players strongly objected to eliminating pitch framing. The challenge system was the compromise: humans call the game, technology corrects the calls that matter most. Even then, the competition committee's approval vote was not unanimous — player representatives voted against it.",
+    },
+  ],
+},
+{
+  slug: "nfl-hawk-eye-virtual-measurement",
+  title: "The NFL Killed the Chain Gang — It Still Can't Spot the Ball",
+  excerpt:
+    "Sony's Hawk-Eye cameras now measure every first down in about 30 seconds. But the spot they're measuring from is still a human guess — and the league says solving that is five years away.",
+  date: "2026-09-01",
+  author: "Nick Wichert",
+  authorRole: "Co-founder, Scoutcast.ai",
+  authorUrl: "https://x.com/scoutcastAI",
+  body: [
+    lead(
+      t(
+        "The chains are gone. Every NFL first-down measurement this season is made by Sony’s Hawk-Eye system — six 8K cameras that locate the ball and render the measurement on stadium screens in about 30 seconds, roughly 40 seconds faster than two guys walking sticks onto the field. It works, it’s accurate, and it has surfaced the more uncomfortable truth it was never designed to fix: the spot being measured with millimeter precision is still an eyeballed guess by an official looking through a pile of bodies. The NFL calls automated ball spotting the hardest problem in sports — and doesn’t expect to solve it until around 2030."
+      )
+    ),
+
+    h2("What Hawk-Eye actually does"),
+    p(
+      t("The virtual measurement system "),
+      lk("debuted at the 2025 Hall of Fame Game", "https://sports.yahoo.com/nfl/breaking-news/article/no-more-chains-nfl-debuts-new-virtual-measurement-at-hall-of-fame-game-011737098.html"),
+      t(
+        " after 2024 testing and ran league-wide through 2025. Once the official places the ball, the cameras determine whether its tip crossed the line to gain, and a virtual recreation goes up for the stadium and broadcast audience — tennis’s line-call graphic, imported to football. The chain crew still stands on the sideline as a backup, a nice piece of institutional humility."
+      )
+    ),
+    p(
+      t(
+        "As a piece of theater, something real was lost — the tense huddle around the sticks, the referee stretching the chain taut, the crowd reading the gap. As a piece of officiating, nothing was: the chains were never more accurate than the spot they started from either. They just took longer to be wrong."
+      )
+    ),
+
+    h2("The part fans keep asking for"),
+    p(
+      t("Which is the point "),
+      lk("fans and commentators keep raising", "https://gizmodo.com/sonys-hawk-eye-cameras-still-arent-giving-football-fans-the-one-thing-they-want-2000717879"),
+      t(
+        ": Hawk-Eye measures from the spot; it doesn’t determine the spot. The system is precision layered on top of a guess. When a running back is stood up at the goal line under eight bodies, the cameras that can resolve a ball’s tip to the millimeter are looking at the same wall of humanity the official is. The league is measuring the wrong variable exquisitely."
+      )
+    ),
+    p(
+      t("The NFL knows it. The league has framed automated ball spotting — knowing where the ball is when the knee hits, through a pile — as "),
+      lk("“the hardest problem in sports,” with a target of solving it within five years", "https://frontofficesports.com/nfl-wants-hardest-problem-in-sports-solved-by-2030/"),
+      t(
+        ". It’s genuinely hard: the ball is hidden, forward progress is a judgment call rather than a coordinate, and a chip in the ball tells you where the ball is but not whether the runner was down. Anyone selling a quick fix is selling."
+      )
+    ),
+
+    h2("Meanwhile, AI moves to the sideline"),
+    p(
+      t(
+        "The other quiet change this season: Microsoft Copilot is embedded in the league’s Sideline Viewing System, letting coaches filter game footage with natural-language queries between series. None of it calls plays, but the direction is unmistakable — the NFL is wiring intelligence into every layer of the game except the one fans argue about at Thanksgiving. The spot, the catch, forward progress: still human, still Sunday’s argument."
+      )
+    ),
+    p(
+      t(
+        "Which is probably the right way to understand this era of sports technology. The easy automations — measuring, timing, line calls — are done or nearly done. What’s left are the judgment calls, and every league is discovering the same thing baseball did with its challenge system: fans don’t actually want the humans removed. They want the humans backstopped."
+      )
+    ),
+
+    cta("cta-hawkeye"),
+
+    p(
+      t("Rule changes, tech rollouts, and the weekly officiating controversy are exactly the stuff that’s easy to half-hear and hard to catch up on. "),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(" covers your teams in a ~2-minute morning audio briefing — and when a call decides your team’s game, you can tap the mic and ask what actually happened. If you’re rebuilding your sports-app setup for the season, start with "),
+      lk("the best sports news apps in 2026", "/blog/best-sports-news-apps"),
+      t(".")
+    ),
+  ],
+  faqs: [
+    {
+      question: "Does the NFL still use chains to measure first downs?",
+      answer:
+        "Not as the primary method. Since 2025, Sony's Hawk-Eye virtual measurement system — six 8K cameras tracking the ball's position — makes every line-to-gain measurement in about 30 seconds. A chain crew remains on the sideline strictly as a backup.",
+    },
+    {
+      question: "Does Hawk-Eye determine where the ball is spotted?",
+      answer:
+        "No — and that's the system's key limitation. Officials still place the ball by eye, including on pile-ups and goal-line plays. Hawk-Eye only measures whether that human-placed spot reaches the line to gain. The NFL has called automated ball spotting 'the hardest problem in sports' and targets solving it by around 2030.",
+    },
+    {
+      question: "What AI technology is the NFL using in 2026?",
+      answer:
+        "Beyond Hawk-Eye's virtual measurements, the NFL embedded Microsoft Copilot into its Sideline Viewing System for 2026, letting coaches use natural-language filters to pull specific game footage between series. No AI system calls or officiates plays.",
     },
   ],
 },

@@ -17,7 +17,14 @@ export type BlogCta = {
     label?: string
 }
 
-type CtaGroup = "draft-timing" | "learn" | "migration" | "world-cup" | "league-social"
+type CtaGroup =
+    | "draft-timing"
+    | "learn"
+    | "migration"
+    | "world-cup"
+    | "league-social"
+    | "cost-of-watching"
+    | "tech-news"
 
 const GROUP_COPY: Record<CtaGroup, BlogCta> = {
     // Rewritten 2026-08-16 on the `migration` frame. The previous copy ("Draft
@@ -46,6 +53,23 @@ const GROUP_COPY: Record<CtaGroup, BlogCta> = {
     "world-cup": {
         headline: "Know what happened while you were working",
         sub: "Goals, lineups, and knockout scenarios in a 2-minute briefing — the fastest way to catch up.",
+    },
+    // The reader just did (or is doing) the streaming-cost math and is annoyed.
+    // Scoutcast is NOT a streaming service and must never read as "cancel your
+    // subscriptions" — the honest frame is that watching and staying informed are
+    // different jobs, and only one of them costs $100+/month.
+    "cost-of-watching": {
+        headline: "You can’t stream every game. You can still know everything that happened.",
+        sub: "Scoutcast.ai is a ~2-minute morning audio briefing on your teams and players — the games you couldn’t watch, covered by the time you pour coffee. $5.99/mo after a 7-day free trial.",
+        label: "Get Scoutcast",
+    },
+    // Tech-take posts (robot umps, Hawk-Eye). The reader is a general sports fan
+    // following how the game itself is changing, not shopping for an app — keep it
+    // to the news-layer pitch, no fantasy framing.
+    "tech-news": {
+        headline: "The game keeps changing. Your morning catch-up shouldn’t.",
+        sub: "Scoutcast.ai briefs you on your teams and players every morning — including the rule and tech changes that actually affect how you watch.",
+        label: "Get Scoutcast",
     },
     // Rewritten 2026-08-16. The previous copy ("Running the league is the easy
     // part") converted 1 of 1,473 visitors over 30 days — the site's largest
@@ -98,6 +122,14 @@ const SLUG_GROUPS: Record<CtaGroup, string[]> = {
         "best-world-cup-apps-mexico-fans",
         "best-world-cup-apps-england-fans",
         "world-cup-bracket-2026",
+    ],
+    "cost-of-watching": [
+        "follow-college-football-without-five-streaming-services",
+        "cost-of-watching-sports-2026",
+    ],
+    "tech-news": [
+        "mlb-robot-umpires-2026-postseason",
+        "nfl-hawk-eye-virtual-measurement",
     ],
     // Entertainment/listicle intent: the reader is usually a commissioner or an active
     // member of a social league — the one person who drags ten others onto a platform.
