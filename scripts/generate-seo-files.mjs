@@ -23,6 +23,7 @@ const STATIC_ROUTES = [
   "/contact/",
   "/copyright/",
   "/fantasy/",
+  "/league/",
   "/listen/",
   "/mcp/",
   "/privacy/",

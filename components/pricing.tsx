@@ -138,12 +138,12 @@ export default function Pricing() {
                                 </li>
                             ))}
                         </ul>
-                        <DownloadButton
-                            label="Get the League Pass"
-                            showIcon={false}
-                            placement="pricing_league"
-                            className="h-12 justify-center rounded-xl border-white/15 bg-white/[0.06] px-5 text-base hover:bg-white/[0.1]"
-                        />
+                        <Link
+                            href="/league"
+                            onClick={() => posthog.capture("league_pass_cta_clicked", { placement: "pricing_card" })}
+                            className="inline-flex h-12 items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.06] px-5 text-base font-semibold text-foreground transition hover:bg-white/[0.1]">
+                            See the League Pass
+                        </Link>
                     </article>
                 </div>
             </div>

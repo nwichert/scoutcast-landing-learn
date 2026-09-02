@@ -631,6 +631,14 @@ function Pricing() {
                     </DownloadDialog>
                     <p className="self-center text-center text-xs text-[#8B949E]">One-time charge per season on the App Store or Google Play. Auto-renews each August unless you cancel.</p>
                 </article>
+                <p className="mt-5 text-center text-sm leading-[1.6] text-[#8B949E]">
+                    Running the whole league?{" "}
+                    <a
+                        href="/league"
+                        className="font-semibold text-[#0AB17B] transition hover:text-[#0BC189]">
+                        One League Pass covers all 10&ndash;14 members — $39.99/season &rarr;
+                    </a>
+                </p>
             </div>
         </section>
     )
