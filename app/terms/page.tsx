@@ -15,7 +15,7 @@ export default function TermsPage() {
 
             <main className="mx-auto max-w-3xl px-6 pb-32 pt-16">
                 <h1 className="text-balance text-5xl font-bold tracking-tight sm:text-[56px] sm:leading-[1.05]">Terms of Service</h1>
-                <p className="mt-3 text-base text-foreground/55">Effective date: May 22, 2026</p>
+                <p className="mt-3 text-base text-foreground/55">Effective date: September 2, 2026</p>
 
                 <div className="mt-14 space-y-5 text-[17px] leading-[1.7] text-foreground/80">
                     <p>Welcome to Scoutcast! Please read on to learn the rules for using our application, website, and services (collectively, &ldquo;Scoutcast&rdquo; or the &ldquo;App&rdquo;).</p>
@@ -97,7 +97,7 @@ export default function TermsPage() {
                     </LegalSubsection>
 
                     <LegalSubsection title="Billing, Auto-Renewal, and Cancellation">
-                        <p>Paid subscriptions are billed through Apple&rsquo;s App Store via StoreKit. Each paid subscription &mdash; Scoutcast Plus (Monthly or Annual), the NFL Fantasy Pass, and the League Pass &mdash; automatically renews at the then-current price for an additional period of the same length (monthly, annual, or per season, respectively) unless you cancel at least 24 hours before the end of the current period. Your payment method will be charged for renewal within 24 hours before the current period ends. You can view, manage, or cancel any subscription, and turn off auto-renewal, in your Apple ID account settings. Cancellation takes effect at the end of the current billing period, and you will keep access until then. If the price of a subscription increases, Apple will notify you and, where required, will request your consent before the new price takes effect; if you do not provide consent where it is required, the subscription will not automatically renew at the increased price.</p>
+                        <p>Paid subscriptions are billed through the app store for the platform you use: Apple&rsquo;s App Store (via StoreKit) on iOS, or Google Play (via Google Play Billing) on Android. Each paid subscription &mdash; Scoutcast Plus (Monthly or Annual), the NFL Fantasy Pass, and the League Pass &mdash; automatically renews at the then-current price for an additional period of the same length (monthly, annual, or per season, respectively) unless you cancel at least 24 hours before the end of the current period. Your payment method will be charged for renewal within 24 hours before the current period ends. You can view, manage, or cancel any subscription, and turn off auto-renewal, in your Apple ID account settings (iOS) or in the Subscriptions section of the Google Play app (Android). Cancellation takes effect at the end of the current billing period, and you will keep access until then. If the price of a subscription increases, Apple or Google (as applicable) will notify you and, where required, will request your consent before the new price takes effect; if you do not provide consent where it is required, the subscription will not automatically renew at the increased price. Subscriptions purchased through one platform are managed, renewed, and cancelled only through that platform; Scoutcast cannot cancel or refund a purchase made through Apple or Google on your behalf.</p>
                     </LegalSubsection>
 
                     <LegalSubsection title="NFL Fantasy Content">
@@ -105,13 +105,13 @@ export default function TermsPage() {
                     </LegalSubsection>
 
                     <LegalSubsection title="Account Deletion and Termination">
-                        <p>You can delete your account at any time by logging into the App and following the instructions in the settings. If you delete your account, your subscription will continue until the end of the subscription period you have already paid for, and you may also need to cancel any recurring subscriptions directly through Apple.</p>
+                        <p>You can delete your account at any time by logging into the App and following the instructions in the settings. If you delete your account, your subscription will continue until the end of the subscription period you have already paid for, and you may also need to cancel any recurring subscriptions directly through Apple or Google Play, depending on where you purchased them.</p>
                         <p>Scoutcast can terminate or suspend your account at any time for any reason, including if you breach these Terms. After termination, certain provisions of these Terms will continue to apply. This includes any payment obligations or indemnification requirements you have, limitations on our liability, terms about ownership or intellectual property rights, and dispute resolution terms.</p>
                     </LegalSubsection>
                 </LegalSection>
 
                 <LegalSection title="Fees and Payment">
-                    <p>Scoutcast offers a free 7-day trial and paid subscriptions, as described under &ldquo;Your Subscription&rdquo; above. All purchases and subscription payments are processed through Apple&rsquo;s App Store. The current price, billing period, and included features for each plan are displayed in the App at the point of purchase, and those in-App details govern. Prices may vary by region and may change over time. Apple&rsquo;s standard terms and refund policies apply to all purchases. We reserve the right to change pricing, plans, or subscription terms on a going-forward basis, with advance notice through the App, email, or our website where required by applicable law.</p>
+                    <p>Scoutcast offers a free 7-day trial and paid subscriptions, as described under &ldquo;Your Subscription&rdquo; above. All purchases and subscription payments are processed through Apple&rsquo;s App Store (iOS) or Google Play (Android); Scoutcast does not collect or store your payment card details. The current price, billing period, and included features for each plan are displayed in the App at the point of purchase, and those in-App details govern. Prices may vary by region and may change over time. Apple&rsquo;s or Google&rsquo;s standard terms and refund policies, as applicable, apply to all purchases, and refund requests must be submitted to the platform through which you made the purchase. We reserve the right to change pricing, plans, or subscription terms on a going-forward basis, with advance notice through the App, email, or our website where required by applicable law.</p>
                 </LegalSection>
 
                 <LegalSection title="Gambling, Wagering, and Betting Disclaimer">
@@ -268,7 +268,7 @@ export default function TermsPage() {
                     </LegalSubsection>
 
                     <LegalSubsection title="App Platform Requirements">
-                        <p>In connection with your use of the App downloaded via the App Store:</p>
+                        <p>In connection with your use of the App downloaded via the Apple App Store:</p>
                         <LegalList
                             items={[
                                 "Both you and Scoutcast acknowledge that the Terms of Service are concluded between you and Scoutcast only, and not with Apple, and that Apple is not responsible for the App or your Content;",
@@ -281,6 +281,15 @@ export default function TermsPage() {
                                 "You represent and warrant that you are not located in a country subject to a US Government embargo, or that has been designated by the US Government as a “terrorist supporting” country, and that you are not listed on any US Government list of prohibited or restricted parties;",
                                 "Both you and Scoutcast acknowledge and agree that, in your use of the App, you will comply with any applicable third-party terms of agreement which may affect or be affected by such use; and",
                                 "Both you and Scoutcast acknowledge and agree that Apple and Apple’s subsidiaries are third-party beneficiaries of these Terms of Service, and that upon your acceptance of these Terms of Service, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms of Service against you as the third-party beneficiary hereof.",
+                            ]}
+                        />
+                        <p>In connection with your use of the App downloaded via Google Play:</p>
+                        <LegalList
+                            items={[
+                                "These Terms of Service are concluded between you and Scoutcast only, and not with Google LLC or its affiliates (“Google”). Google is not a party to these Terms and is not responsible for the App or your Content;",
+                                "Your download and use of the App are also subject to the Google Play Terms of Service and any other applicable Google policies, and purchases made through Google Play are subject to Google Play’s payment, refund, and subscription-management terms;",
+                                "Google has no obligation to furnish any maintenance and support services with respect to the App, and Scoutcast, not Google, is responsible for addressing any claims relating to the App, including product liability, legal or regulatory compliance, consumer protection, and intellectual property claims; and",
+                                "Google may be deemed a third-party beneficiary of these Terms to the extent necessary to enforce the provisions of this section.",
                             ]}
                         />
                     </LegalSubsection>
