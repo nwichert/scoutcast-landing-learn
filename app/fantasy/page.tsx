@@ -254,10 +254,10 @@ function Hero() {
                     <div className="mt-2 flex flex-col gap-3">
                         <DownloadDialog className="inline-flex h-13 w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[#0AB17B] px-5 text-base font-semibold text-[#0D1117] transition hover:bg-[#0BC189] sm:w-fit">
                             <AppleGlyph />
-                            Get the Season Pass — $49.99
+                            Get the Season Pass — $39.99
                         </DownloadDialog>
                         <div className="flex items-center gap-2 text-[13px] text-[#8B949E]">
-                            <span>About $3 a week in-season</span>
+                            <span>Under $2.50 a week in-season</span>
                             <span className="size-[3px] rounded-full bg-[#30363D]" />
                             <span>iOS &amp; Android · Cancel anytime</span>
                         </div>
@@ -506,7 +506,7 @@ function Coverage() {
         <section className="px-6 py-16 lg:px-12 lg:py-24">
             <div className="mx-auto max-w-3xl">
                 <SectionHeading
-                    eyebrow="What $49.99 actually buys"
+                    eyebrow="What $39.99 actually buys"
                     title="The whole NFL calendar. Not a half season."
                 />
                 <CoverageTimeline />
@@ -607,10 +607,10 @@ function Pricing() {
                     <div className="flex flex-col gap-2">
                         <Eyebrow>NFL Season Pass</Eyebrow>
                         <div className="flex items-baseline gap-2.5">
-                            <span className="text-[56px] font-bold leading-none tracking-[-0.03em] text-[#F0F6FC] lg:text-[64px]">$49.99</span>
+                            <span className="text-[56px] font-bold leading-none tracking-[-0.03em] text-[#F0F6FC] lg:text-[64px]">$39.99</span>
                             <span className="text-[15px] text-[#8B949E]">/ season</span>
                         </div>
-                        <p className="text-[13px] text-[#8B949E]">~$3 a week across the 17-week regular season.</p>
+                        <p className="text-[13px] text-[#8B949E]">Under $2.50 a week across the 17-week regular season.</p>
                     </div>
                     <ul className="flex flex-col gap-2.5 border-t border-[#30363D] py-4">
                         {INCLUDES.map((item) => (

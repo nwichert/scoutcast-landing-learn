@@ -125,7 +125,7 @@ const allPosts: Post[] = [
       p(t("There are great AI briefing apps (Huxe and BriefingAM are both excellent), but they’re built for general news with sports as one tab. Scoutcast is sports-first, and these two features only make sense in a product that knows you well enough to know who "), em("your guys"), t(" are.")),
 
       h2("Pricing, in one paragraph"),
-      p(t("Scoutcast starts with a 7-day free trial — no credit card required. After that, Scoutcast Plus is $5.99/month: all leagues, all teams, the daily briefing, follow-up questions, custom sources, up to 7 active casts. There is one add-on: an NFL Fantasy Season Pass at $49.99 per season for fantasy-specific briefings (Tue/Wed/Thu/Sun, head-to-head edge, waiver picks, start/sit calls, Sunday morning final call). That’s it. No ads, ever.")),
+      p(t("Scoutcast starts with a 7-day free trial — no credit card required. After that, Scoutcast Plus is $4.99/month: all leagues, all teams, the daily briefing, follow-up questions, custom sources, unlimited casts. There is one add-on: an NFL Fantasy Pass at $39.99 per season for fantasy-specific briefings (Tue/Wed/Thu/Sun, head-to-head edge, waiver picks, start/sit calls, Sunday morning final call). That’s it. No ads, ever.")),
 
       h2("What’s next"),
       p(t("College football this fall. International soccer expansion. More languages. And we’re publicly working on live-game segments — short bursts during big moments, not just the morning recap.")),
@@ -163,7 +163,7 @@ const allPosts: Post[] = [
       {
         question: "How much does Scoutcast cost?",
         answer:
-          "Scoutcast starts with a 7-day free trial, no credit card required. After the trial, Scoutcast Plus is $5.99/month — every league, daily briefings, follow-up questions, custom sources, no ads. The one add-on is an NFL Fantasy Season Pass at $49.99 per season, which adds fantasy-specific briefings (Tue/Wed/Thu/Sun) tailored to your roster.",
+          "Scoutcast starts with a 7-day free trial, no credit card required. After the trial, Scoutcast Plus is $4.99/month — every league, daily briefings, follow-up questions, custom sources, no ads. The one add-on is an NFL Fantasy Pass at $39.99 per season, which adds fantasy-specific briefings (Tue/Wed/Thu/Sun) tailored to your roster.",
       },
       {
         question: "What platforms is Scoutcast on?",
@@ -245,9 +245,9 @@ const allPosts: Post[] = [
           [[t("Tap-to-ask follow-up questions")], [t("✓")], [t("✓ (“tap and hold to speak”)")], [t("✗")]],
           [[t("Integrates email & calendar")], [t("✗")], [t("✓")], [t("✓")]],
           [[t("Live “stations” / topic tracking")], [t("✗")], [t("✓")], [t("✗")]],
-          [[t("Fantasy football mode")], [t("✓ ($49.99/season)")], [t("✗")], [t("✗")]],
+          [[t("Fantasy football mode")], [t("✓ ($39.99/season)")], [t("✗")], [t("✗")]],
           [[t("MCP connector for Claude / ChatGPT / Gemini")], [t("✓")], [t("✗")], [t("✗")]],
-          [[t("Free tier / trial")], [t("7-day free trial, then $5.99/mo")], [t("✓ (entirely free)")], [t("✓ (paid tier available)")]],
+          [[t("Free tier / trial")], [t("7-day free trial, then $4.99/mo")], [t("✓ (entirely free)")], [t("✓ (paid tier available)")]],
           [[t("Years in market")], [t("<1 year")], [t("<1 year (public Sept 2025)")], [t("<1 year")]],
         ]
       ),
@@ -273,7 +273,7 @@ const allPosts: Post[] = [
       ul(
         [b("Specific team and player tracking."), t(" The briefing is built around your leagues, teams, and players — not “Sports” as a topic category.")],
         [b("Custom beat-writer sources."), t(" Add the X handles of writers you trust — your team’s beat reporter, your favorite analyst — and their takes blend into the briefing alongside league news. Genuinely unique.")],
-        [b("Fantasy football roster awareness."), t(" A $49.99/season add-on adds Tue/Wed/Thu/Sun briefings tailored to your roster: head-to-head edge, waiver picks, start/sit calls, Sunday-morning final call. Genuinely unique.")],
+        [b("Fantasy football roster awareness."), t(" A $39.99/season add-on adds Tue/Wed/Thu/Sun briefings tailored to your roster: head-to-head edge, waiver picks, start/sit calls, Sunday-morning final call. Genuinely unique.")],
         [b("MCP connector for Claude / ChatGPT / Gemini."), t(" Plug your Scoutcast account into any MCP-compatible AI client and ask the model directly about your briefings. The only row in the table no other app matches.")],
         [b("Tighter format."), t(" ~2 minutes vs the ~5 minutes the general-purpose apps default to. If your morning is already full, the shorter format is the point.")],
         [b("Global sports coverage."), t(" The league list goes well past the US majors — Premier League, La Liga, Bundesliga, Serie A, Ligue 1, UEFA Champions League, Formula 1, PGA, LIV, ATP, WTA, and NCAA baseball and hockey on top of football and basketball. If the team or driver you follow isn’t on national TV in your country, this is where the depth shows up.")],
@@ -288,12 +288,12 @@ const allPosts: Post[] = [
       tbl(
         [[t("")], [t("Free tier includes")], [t("Paid tier")], [t("Paid price")]],
         [
-          [[t("Scoutcast.ai")], [t("7-day free trial of the full app — all leagues, teams, beat-writer sources, MCP connector, tap-to-ask, no ads")], [t("Scoutcast Plus (+ optional NFL Fantasy Season Pass)")], [t("$5.99/month (+ $49.99/season)")]],
+          [[t("Scoutcast.ai")], [t("7-day free trial of the full app — all leagues, teams, beat-writer sources, MCP connector, tap-to-ask, no ads")], [t("Scoutcast Plus (+ optional NFL Fantasy Pass)")], [t("$4.99/month (+ $39.99/season)")]],
           [[t("Huxe")], [t("Everything — Huxe has no paid tier as of this writing")], [t("—")], [t("Free")]],
           [[t("BriefingAM")], [t("Core briefing (news, weather, calendar, sports)")], [t("Premium features")], [t("See current App Store listing")]],
         ]
       ),
-      p(t("Scoutcast is the only one of the three with a flat subscription — $5.99/month after the trial. Huxe is entirely free, and BriefingAM has a free tier. The one sports-specific upsell is Scoutcast's Fantasy Season Pass.")),
+      p(t("Scoutcast is the only one of the three with a flat subscription — $4.99/month after the trial. Huxe is entirely free, and BriefingAM has a free tier. The one sports-specific upsell is Scoutcast's NFL Fantasy Pass.")),
 
       h2("Decision matrix — which one should you pick?"),
       tbl(
@@ -373,12 +373,12 @@ const allPosts: Post[] = [
       {
         question: "Are these apps free?",
         answer:
-          "Scoutcast.ai offers a 7-day free trial (no credit card required), then $5.99/month for Scoutcast Plus, plus an optional NFL Fantasy Season Pass at $49.99 per season. Huxe is entirely free. BriefingAM has a free tier and a paid tier; the vendor describes the paid tier as roughly the price of a daily Starbucks run.",
+          "Scoutcast.ai offers a 7-day free trial (no credit card required), then $4.99/month for Scoutcast Plus, plus an optional NFL Fantasy Pass at $39.99 per season. Huxe is entirely free. BriefingAM has a free tier and a paid tier; the vendor describes the paid tier as roughly the price of a daily Starbucks run.",
       },
       {
         question: "Which AI audio briefing app has the best fantasy football coverage?",
         answer:
-          "Scoutcast.ai is the only one of the three with a dedicated fantasy football mode. The $49.99/season add-on delivers Tue/Wed/Thu/Sun briefings tailored to your roster — head-to-head edge, waiver picks, start/sit calls, and a Sunday-morning final call. Huxe and BriefingAM cover the NFL but not at the roster level.",
+          "Scoutcast.ai is the only one of the three with a dedicated fantasy football mode. The $39.99/season add-on delivers Tue/Wed/Thu/Sun briefings tailored to your roster — head-to-head edge, waiver picks, start/sit calls, and a Sunday-morning final call. Huxe and BriefingAM cover the NFL but not at the roster level.",
       },
       {
         question: "Is there an Android version of any of these apps?",
@@ -478,7 +478,7 @@ const allPosts: Post[] = [
       h2("What Fantasy Football Players Are Actually Looking For Every Day"),
       p(t("The 6.9 hours per week fantasy football players spend on their teams isn’t going into one app — it’s fragmented across ESPN, Yahoo, Twitter/X, Reddit (r/fantasyfootball has over 2 million members), podcasts, and beat writers’ columns.")),
       p(t("The core daily need is simple: "), em("what happened yesterday, how does it affect my lineup, and what do I need to know before Sunday?")),
-      p(t("That’s the problem "), lk("Scoutcast.ai", "https://scoutcast.ai/fantasy/"), t(" was built to solve. The NFL Fantasy Season Pass delivers personalized Tuesday–Sunday audio briefings focused on your specific roster — injury updates, matchup edges, waiver wire targets — in about two minutes, hands-free. For fantasy players spending 6.9 hours a week across a dozen fragmented sources, that’s a meaningful compression of the research loop.")),
+      p(t("That’s the problem "), lk("Scoutcast.ai", "https://scoutcast.ai/fantasy/"), t(" was built to solve. The NFL Fantasy Pass delivers personalized Tuesday–Sunday audio briefings focused on your specific roster — injury updates, matchup edges, waiver wire targets — in about two minutes, hands-free. For fantasy players spending 6.9 hours a week across a dozen fragmented sources, that’s a meaningful compression of the research loop.")),
 
       h2("Summary: Fantasy Football by the Numbers (2026)"),
       tbl(
@@ -622,7 +622,7 @@ const allPosts: Post[] = [
 
       h2("Why 6.9 Hours Feels Like More"),
       p(t("One reason the time commitment feels high is that it’s fragmented. A player checking injury reports over breakfast, listening to a fantasy podcast during their commute, making lineup adjustments at lunch, and watching RedZone on Sunday has easily accumulated 6+ hours without a single dedicated “research session.”")),
-      p(t("This fragmentation is the core problem "), lk("Scoutcast.ai’s NFL Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" addresses — replacing the scattered multi-app research loop with a single ~2-minute personalized audio briefing that covers injury news, matchup edges, and waiver targets for your specific roster. For the average player spending 6.9 hours across 8 different sources, that’s a meaningful compression.")),
+      p(t("This fragmentation is the core problem "), lk("Scoutcast.ai’s NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"), t(" addresses — replacing the scattered multi-app research loop with a single ~2-minute personalized audio briefing that covers injury news, matchup edges, and waiver targets for your specific roster. For the average player spending 6.9 hours across 8 different sources, that’s a meaningful compression.")),
 
       h2("Summary: Fantasy Football Time Stats (2026)"),
       tbl(
@@ -671,7 +671,7 @@ const allPosts: Post[] = [
       {
         question: "How can fantasy football players spend less time on research?",
         answer:
-          "Consolidating the fragmented research loop is the main lever. Scoutcast.ai’s NFL Fantasy Season Pass delivers a ~2-minute personalized audio briefing covering injury news, matchup edges, and waiver targets for your specific roster, compressing what would otherwise be hours across multiple apps.",
+          "Consolidating the fragmented research loop is the main lever. Scoutcast.ai’s NFL Fantasy Pass delivers a ~2-minute personalized audio briefing covering injury news, matchup edges, and waiver targets for your specific roster, compressing what would otherwise be hours across multiple apps.",
       },
     ],
   },
@@ -740,7 +740,7 @@ const allPosts: Post[] = [
 
       h2("What Fantasy Football Fans Actually Want Every Morning"),
       p(t("The stats above paint a consistent picture: fantasy football players are high-engagement NFL fans who need a daily flow of personalized information — not a generic news feed, and not a 45-minute podcast covering the whole league.")),
-      p(lk("Scoutcast.ai’s NFL Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" is built specifically for this audience: Tuesday–Sunday audio briefings personalized to your specific roster, covering the injury reports, matchup edges, and waiver targets that matter for your lineup. For the 60% of young NFL fans whose engagement with the league runs directly through their fantasy team, it’s the morning brief the ESPN app was never designed to deliver.")),
+      p(lk("Scoutcast.ai’s NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"), t(" is built specifically for this audience: Tuesday–Sunday audio briefings personalized to your specific roster, covering the injury reports, matchup edges, and waiver targets that matter for your lineup. For the 60% of young NFL fans whose engagement with the league runs directly through their fantasy team, it’s the morning brief the ESPN app was never designed to deliver.")),
 
       h2("Summary Table"),
       tbl(
@@ -792,7 +792,7 @@ const allPosts: Post[] = [
       {
         question: "How does fantasy football change what fans want from sports media?",
         answer:
-          "Fantasy players need a daily flow of personalized, roster-relevant information rather than a generic feed or a long league-wide podcast. That demand is what products like Scoutcast.ai’s NFL Fantasy Season Pass — a ~2-minute briefing tailored to your roster — are built to serve.",
+          "Fantasy players need a daily flow of personalized, roster-relevant information rather than a generic feed or a long league-wide podcast. That demand is what products like Scoutcast.ai’s NFL Fantasy Pass — a ~2-minute briefing tailored to your roster — are built to serve.",
       },
     ],
   },
@@ -1053,7 +1053,7 @@ const allPosts: Post[] = [
 
       h2("Notable AI Sports Apps (2026)"),
       h3("Personalized Audio & Briefings"),
-      p(b("Scoutcast.ai"), t(" — Daily ~2-minute AI audio briefings personalized to your teams, leagues, and fantasy roster. Tap-to-ask follow-up questions. NFL Fantasy Season Pass available. iOS and Android, 7-day free trial. "), lk("Scoutcast.ai", "https://scoutcast.ai")),
+      p(b("Scoutcast.ai"), t(" — Daily ~2-minute AI audio briefings personalized to your teams, leagues, and fantasy roster. Tap-to-ask follow-up questions. NFL Fantasy Pass available. iOS and Android, 7-day free trial. "), lk("Scoutcast.ai", "https://scoutcast.ai")),
       p(b("Huxe"), t(" — General AI audio briefing app (not sports-specific) from former Google NotebookLM developers. Users can create sports-focused briefings among other topics.")),
       h3("Fantasy & Betting AI"),
       p(b("Sleeper"), t(" — Fantasy platform with built-in AI trade evaluator, waiver wire recommendations, and predictive player projections. The fastest-growing major fantasy platform.")),
@@ -1219,7 +1219,7 @@ const allPosts: Post[] = [
         lk("sports is the fastest-growing podcast genre", "/blog/how-many-people-listen-to-sports-podcasts"),
         t(", with 85+ million Americans listening monthly.")),
       p(t("Three things the others on this list don’t do: you can add the X handles of beat writers you trust as "), b("custom sources"), t(", so their takes are blended into your briefing; you can "), b("tap Ask mid-briefing"), t(" to voice a follow-up question (“what’s his stat line?”) and get an instant audio answer; and it’s the only sports app with an "), b("MCP connector"), t(", so you can plug your briefings into Claude or ChatGPT and ask questions there.")),
-      p(t("The trade-offs, honestly: it’s a morning recap rather than live play-by-play, and there’s no video. It runs on iOS, iPadOS, macOS, and Android. It’s free with no ads; the one paid add-on is an NFL Fantasy Season Pass ($49.99/season) with roster-aware briefings.")),
+      p(t("The trade-offs, honestly: it’s a morning recap rather than live play-by-play, and there’s no video. It runs on iOS, iPadOS, macOS, and Android. It’s $4.99/month (or $39.99/year) after a 7-day free trial, with no ads; the NFL Fantasy Pass ($39.99/season) adds roster-aware briefings and is sold separately.")),
 
       h2("Side-by-side comparison"),
       tbl(
@@ -1238,7 +1238,7 @@ const allPosts: Post[] = [
           [[t("SofaScore")], [t("Global leagues + stats")], [t("5–15 min")], [t("✓ teams and players")], [t("Moderate")], [t("Free; paid tier")]],
           [[t("Yahoo Sports")], [t("News + Yahoo fantasy")], [t("5–15 min scroll")], [t("Partial")], [t("Heavy")], [t("Free")]],
           [[t("The Athletic")], [t("Long-form journalism")], [t("10–30 min reading")], [t("✓ follows your teams’ beats")], [t("None (paywalled)")], [t("Subscription")]],
-          [[t("Scoutcast.ai")], [t("2-min audio catch-up")], [t("~2 min, hands-free")], [t("✓ teams, players, and your chosen writers")], [t("None")], [t("$5.99/mo after 7-day trial; fantasy add-on $49.99/season")]],
+          [[t("Scoutcast.ai")], [t("2-min audio catch-up")], [t("~2 min, hands-free")], [t("✓ teams, players, and your chosen writers")], [t("None")], [t("$4.99/mo after 7-day trial; fantasy add-on $39.99/season")]],
         ]
       ),
 
@@ -1274,12 +1274,12 @@ const allPosts: Post[] = [
       {
         question: "What’s the best free sport news app?",
         answer:
-          "Apple Sports is the best fully free sports news app — no ads, no account required. Scoutcast.ai is the best ad-free pick for a personalized ~2-minute audio catch-up on your teams (7-day free trial, then $5.99/month). ESPN, theScore, Yahoo Sports, and free-tier SofaScore are free but carry ads.",
+          "Apple Sports is the best fully free sports news app — no ads, no account required. Scoutcast.ai is the best ad-free pick for a personalized ~2-minute audio catch-up on your teams (7-day free trial, then $4.99/month). ESPN, theScore, Yahoo Sports, and free-tier SofaScore are free but carry ads.",
       },
       {
         question: "What is the best sports app without ads or betting promos?",
         answer:
-          "Apple Sports (free, no ads, scores only), The Athletic (paywalled journalism, no ads), and Scoutcast.ai (personalized audio briefings, no ads, $5.99/month after a 7-day free trial) are the three apps on this list with no ad load. theScore, ESPN, Yahoo Sports, and free-tier SofaScore all carry ads, and theScore is owned by a betting company.",
+          "Apple Sports (free, no ads, scores only), The Athletic (paywalled journalism, no ads), and Scoutcast.ai (personalized audio briefings, no ads, $4.99/month after a 7-day free trial) are the three apps on this list with no ad load. theScore, ESPN, Yahoo Sports, and free-tier SofaScore all carry ads, and theScore is owned by a betting company.",
       },
       {
         question: "What is the best sports app for busy people?",
@@ -1299,7 +1299,7 @@ const allPosts: Post[] = [
       {
         question: "How much does Scoutcast.ai cost?",
         answer:
-          "Scoutcast.ai has a 7-day free trial (no credit card required), then costs $5.99/month — all leagues, teams, daily briefings, custom beat-writer sources, and tap-to-ask follow-ups, with no ads. The one add-on is an NFL Fantasy Season Pass at $49.99 per season for roster-aware fantasy briefings.",
+          "Scoutcast.ai has a 7-day free trial (no credit card required), then costs $4.99/month — all leagues, teams, daily briefings, custom beat-writer sources, and tap-to-ask follow-ups, with no ads. The one add-on is an NFL Fantasy Pass at $39.99 per season for roster-aware fantasy briefings.",
       },
     ],
     comparedItems: {
@@ -1349,7 +1349,7 @@ const allPosts: Post[] = [
         [b("Yahoo Sports"), t(" — NBA news plus fantasy if your league is on Yahoo")],
         [b("NBA App"), t(" — official content, official stats, League Pass gateway")],
         [b("Bleacher Report"), t(" — fast NBA news and short-form video")],
-        [b("Scoutcast.ai"), t(" — ad-free personalized 2-minute NBA audio briefing every morning (7-day free trial, then $5.99/mo)")],
+        [b("Scoutcast.ai"), t(" — ad-free personalized 2-minute NBA audio briefing every morning (7-day free trial, then $4.99/mo)")],
       ),
 
       h2("Side-by-side comparison"),
@@ -1447,7 +1447,7 @@ const allPosts: Post[] = [
       {
         question: "What's the best NBA app with no paywall?",
         answer:
-          "Six of the seven apps give full free access to their core NBA news and scores -- ESPN, theScore, Apple Sports, Yahoo Sports, the NBA App, and Bleacher Report, none with an article paywall. Scoutcast.ai is subscription-based: $5.99/month after a 7-day free trial. The NBA App's League Pass covers live game streaming, not the news-and-scores layer, which is free.",
+          "Six of the seven apps give full free access to their core NBA news and scores -- ESPN, theScore, Apple Sports, Yahoo Sports, the NBA App, and Bleacher Report, none with an article paywall. Scoutcast.ai is subscription-based: $4.99/month after a 7-day free trial. The NBA App's League Pass covers live game streaming, not the news-and-scores layer, which is free.",
       },
       {
         question: "Is Scoutcast.ai a good app for NBA fans?",
@@ -1523,7 +1523,7 @@ const allPosts: Post[] = [
           [[t("ESPN app")], [t("Watching live")], [t("Yes (TV login)")], [t("Yes")], [t("No")], [t("Free w/ TV login")]],
           [[t("theScore")], [t("Lock-screen pick alerts")], [t("No")], [t("Yes")], [t("No")], [t("Free")]],
           [[t("NBA app")], [t("Official clips and picks")], [t("No")], [t("Yes")], [t("No")], [t("Free")]],
-          [[t("Scoutcast.ai")], [t("Morning audio recap")], [t("No")], [t("No")], [t("Yes (2 min, no ads)")], [t("7-day trial, then $5.99/mo")]],
+          [[t("Scoutcast.ai")], [t("Morning audio recap")], [t("No")], [t("No")], [t("Yes (2 min, no ads)")], [t("7-day trial, then $4.99/mo")]],
         ]
       ),
 
@@ -1698,7 +1698,7 @@ const allPosts: Post[] = [
       {
         question: "What is Scoutcast.ai?",
         answer:
-          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS, iPadOS, macOS, and Android. You pick your leagues, teams, players, and optionally the X handles of beat writers you trust, and every morning it generates a ~2-minute audio briefing. You can tap the mic mid-briefing to ask follow-up questions. It has a 7-day free trial, then costs $5.99/month, with no ads.",
+          "Scoutcast.ai is a personalized AI sports audio briefing app for iOS, iPadOS, macOS, and Android. You pick your leagues, teams, players, and optionally the X handles of beat writers you trust, and every morning it generates a ~2-minute audio briefing. You can tap the mic mid-briefing to ask follow-up questions. It has a 7-day free trial, then costs $4.99/month, with no ads.",
       },
     ],
   },
@@ -1757,7 +1757,7 @@ const allPosts: Post[] = [
       ul(
         [b("Your league app (Sleeper, Yahoo, ESPN, NFL.com)"), t(" — for executing moves. Set notifications to “my players only” and mute the league chat’s game threads.")],
         [b("FantasyPros consensus rankings"), t(" — one page of verdicts for waivers and start/sit. The whole Tuesday step lives here.")],
-        [b("Scoutcast.ai with the NFL Fantasy Season Pass"), t(" — this is the audio layer of the system, and yes, it’s the app I co-founded. It syncs to your actual roster on Yahoo, ESPN, Sleeper, or NFL.com and delivers short audio briefings on Tuesday (waiver picks), Wednesday and Thursday (start/sit calls, injury news on your players), and Sunday morning (a final-call briefing with inactives). You listen during breakfast — hands on the pancakes, not the phone. The pass is $49.99 per NFL season, about $3 a week; the rest of "),
+        [b("Scoutcast.ai with the NFL Fantasy Pass"), t(" — this is the audio layer of the system, and yes, it’s the app I co-founded. It syncs to your actual roster on Yahoo, ESPN, Sleeper, or NFL.com and delivers short audio briefings on Tuesday (waiver picks), Wednesday and Thursday (start/sit calls, injury news on your players), and Sunday morning (a final-call briefing with inactives). You listen during breakfast — hands on the pancakes, not the phone. The pass is $39.99 per NFL season, under $2.50 a week; the rest of "),
           lk("Scoutcast.ai", "https://scoutcast.ai"),
           t(" is free, including daily briefings on your real teams.")],
       ),
@@ -1776,7 +1776,7 @@ const allPosts: Post[] = [
 
       h2("The honest pitch"),
       p(t("If you’re a parent who loves fantasy but keeps finishing 8th because Sunday mornings belong to your kids: the system above is free and works with any apps. If you want the information to come to you as audio, timed to the decision points, aware of your actual roster — that’s exactly what we built the "),
-        lk("Fantasy Season Pass", "/fantasy"),
+        lk("NFL Fantasy Pass", "/fantasy"),
         t(" for.")),
       p(lk("Download Scoutcast.ai on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
 
@@ -1796,12 +1796,12 @@ const allPosts: Post[] = [
       {
         question: "What’s the best fantasy football tool for busy managers?",
         answer:
-          "Use your league app (Sleeper, Yahoo, ESPN, NFL.com) for moves, FantasyPros consensus rankings for fast verdicts, and Scoutcast.ai’s NFL Fantasy Season Pass ($49.99/season) for roster-aware audio briefings on Tuesday, Wednesday, Thursday, and Sunday — including waiver picks, start/sit calls, and a Sunday-morning final-call briefing you can listen to hands-free.",
+          "Use your league app (Sleeper, Yahoo, ESPN, NFL.com) for moves, FantasyPros consensus rankings for fast verdicts, and Scoutcast.ai’s NFL Fantasy Pass ($39.99/season) for roster-aware audio briefings on Tuesday, Wednesday, Thursday, and Sunday — including waiver picks, start/sit calls, and a Sunday-morning final-call briefing you can listen to hands-free.",
       },
       {
-        question: "What is the Scoutcast.ai NFL Fantasy Season Pass?",
+        question: "What is the Scoutcast.ai NFL Fantasy Pass?",
         answer:
-          "A $49.99-per-season add-on to the Scoutcast.ai app that syncs to your fantasy roster on Yahoo, ESPN, Sleeper, or NFL.com (up to 3 leagues) and delivers audio briefings on Tue/Wed/Thu/Sun all season: personalized waiver picks, start/sit calls, head-to-head opponent analysis, and a Sunday-morning final call. It’s a one-time purchase per season, not a subscription.",
+          "A $39.99-per-year pass for the Scoutcast.ai app that syncs to your fantasy roster on Yahoo, ESPN, Sleeper, or NFL.com (up to 3 leagues) and delivers audio briefings on Tue/Wed/Thu/Sun all season: personalized waiver picks, start/sit calls, head-to-head opponent analysis, and a Sunday-morning final call. It’s an independent purchase — it doesn’t require a Scoutcast Plus subscription.",
       },
       {
         question: "Can I win my fantasy league spending only 10 minutes a week?",
@@ -1869,7 +1869,7 @@ const allPosts: Post[] = [
       h2("Scoutcast.ai — if the problem is the time sink"),
       p(t("Every app above still assumes the same posture: you open it, you scroll, you decide when to stop. If your actual complaint is the 20-minute morning scroll, the fix isn’t a better feed — it’s no feed. Plenty of fans already get their sports by ear: "), lk("85+ million Americans listen to sports podcasts every month", "/blog/how-many-people-listen-to-sports-podcasts"), t(", yet no app has claimed the personalized-audio slot.")),
       p(lk("Scoutcast.ai", "https://scoutcast.ai"),
-        t(" flips the posture: you pick your leagues, teams, and players once, and every morning it generates a ~2-minute audio briefing — your scores, your storylines, what’s next — that you listen to while making coffee. It ends on its own. You can add the X handles of beat writers you trust as custom sources, tap the mic mid-briefing to ask follow-ups (“what’s his stat line?”), and even plug your briefings into Claude or ChatGPT via its MCP connector. Free, no ads, with one optional add-on (an NFL Fantasy Season Pass, $49.99/season).")),
+        t(" flips the posture: you pick your leagues, teams, and players once, and every morning it generates a ~2-minute audio briefing — your scores, your storylines, what’s next — that you listen to while making coffee. It ends on its own. You can add the X handles of beat writers you trust as custom sources, tap the mic mid-briefing to ask follow-ups (“what’s his stat line?”), and even plug your briefings into Claude or ChatGPT via its MCP connector. No ads, $4.99/month (or $39.99/year) after a 7-day free trial, with one optional extra (an NFL Fantasy Pass, $39.99/season).")),
       p(b("Keep ESPN if:"), t(" you want video highlights or live streaming — Scoutcast.ai is audio-first morning catch-up, not play-by-play.")),
 
       h2("Side-by-side"),
@@ -1886,7 +1886,7 @@ const allPosts: Post[] = [
           [[t("Weak international coverage")], [t("SofaScore")], [t("Free / paid tier")], [t("US-style storytelling")]],
           [[t("Headline-depth writing")], [t("The Athletic")], [t("Subscription")], [t("Free access, video")]],
           [[t("Two apps for fantasy + news")], [t("Yahoo Sports")], [t("Free")], [t("ESPN’s video depth")]],
-          [[t("The 20-minute doomscroll")], [t("Scoutcast.ai")], [t("$5.99/mo after 7-day trial (fantasy add-on $49.99/season)")], [t("Video, browsing — by design")]],
+          [[t("The 20-minute doomscroll")], [t("Scoutcast.ai")], [t("$4.99/mo after 7-day trial (fantasy add-on $39.99/season)")], [t("Video, browsing — by design")]],
         ]
       ),
 
@@ -1910,7 +1910,7 @@ const allPosts: Post[] = [
       {
         question: "Is there a sports app without ads or betting promos?",
         answer:
-          "Yes. Apple Sports (free scoreboard), The Athletic (paid journalism), and Scoutcast.ai (ad-free personalized audio briefings, $5.99/month after a 7-day trial) all have zero ads and zero betting content. theScore and SofaScore are free but carry betting promos or ads.",
+          "Yes. Apple Sports (free scoreboard), The Athletic (paid journalism), and Scoutcast.ai (ad-free personalized audio briefings, $4.99/month after a 7-day trial) all have zero ads and zero betting content. theScore and SofaScore are free but carry betting promos or ads.",
       },
       {
         question: "How do I stop wasting time on the ESPN app?",
@@ -2213,7 +2213,7 @@ const allPosts: Post[] = [
           [[t("FIFA official app")], [t("Schedule, brackets, tickets")], [t("Free")], [t("iOS, Android")], [t("Match start (skew promotional)")], [t("Multiple")]],
           [[t("Apple Sports")], [t("Live scores")], [t("Free")], [t("iOS, iPadOS, macOS only")], [t("Live Activities, lock-screen scores")], [t("Device language")]],
           [[t("SofaScore")], [t("Stats depth")], [t("Free; paid tier")], [t("iOS, Android, web")], [t("Goals, match start, match end")], [t("Multiple")]],
-          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("7-day trial, then $5.99/mo")], [t("iOS, iPadOS, macOS, Android")], [t("Daily briefing")], [t("English")]],
+          [[t("Scoutcast.ai")], [t("Daily 2-min audio catch-up")], [t("7-day trial, then $4.99/mo")], [t("iOS, iPadOS, macOS, Android")], [t("Daily briefing")], [t("English")]],
         ]
       ),
 
@@ -2351,7 +2351,7 @@ const allPosts: Post[] = [
           [[t("Apple Sports")], [t("Live scores, no ads")], [t("Free")]],
           [[t("SofaScore")], [t("USMNT stats depth")], [t("Free; paid tier")]],
           [[t("FIFA official app")], [t("Schedule and bracket")], [t("Free")]],
-          [[t("Scoutcast.ai")], [t("2-min daily audio catch-up")], [t("7-day trial, then $5.99/mo")]],
+          [[t("Scoutcast.ai")], [t("2-min daily audio catch-up")], [t("7-day trial, then $4.99/mo")]],
         ]
       ),
 
@@ -2380,7 +2380,7 @@ const allPosts: Post[] = [
       {
         question: "Can I watch the World Cup for free in the US?",
         answer:
-          "The opening matches streamed free on Tubi. FOX broadcasts are free with a cable or satellite subscription or live-TV streaming service. Scores and schedule apps (Apple Sports, SofaScore, FIFA app) are free, and Scoutcast.ai has a 7-day free trial (then $5.99/month).",
+          "The opening matches streamed free on Tubi. FOX broadcasts are free with a cable or satellite subscription or live-TV streaming service. Scores and schedule apps (Apple Sports, SofaScore, FIFA app) are free, and Scoutcast.ai has a 7-day free trial (then $4.99/month).",
       },
       {
         question: "How do I keep up with USMNT results if I can't watch?",
@@ -2434,7 +2434,7 @@ const allPosts: Post[] = [
           [[t("FIFA official app")], [t("Schedule, fixtures, group table")], [t("Free")]],
           [[t("Apple Sports")], [t("Live scores, no ads")], [t("Free")]],
           [[t("Marca / AS")], [t("Mexican football news in Spanish")], [t("Free")]],
-          [[t("Scoutcast.ai")], [t("2-min morning audio catch-up on El Tri")], [t("7-day trial, then $5.99/mo")]],
+          [[t("Scoutcast.ai")], [t("2-min morning audio catch-up on El Tri")], [t("7-day trial, then $4.99/mo")]],
         ]
       ),
 
@@ -2525,7 +2525,7 @@ const allPosts: Post[] = [
           [[t("BBC Sport app")], [t("UK fans")], [t("Live text and England news")], [t("Free")]],
           [[t("FOX Sports")], [t("US-based fans")], [t("Watch every match")], [t("TV subscription")]],
           [[t("SofaScore")], [t("All fans")], [t("Player stats and heat maps")], [t("Free; paid tier")]],
-          [[t("Scoutcast.ai")], [t("All fans")], [t("2-min daily audio catch-up")], [t("7-day trial, then $5.99/mo")]],
+          [[t("Scoutcast.ai")], [t("All fans")], [t("2-min daily audio catch-up")], [t("7-day trial, then $4.99/mo")]],
         ]
       ),
 
@@ -2665,12 +2665,12 @@ const allPosts: Post[] = [
         )
       ),
 
-      h3("Scoutcast.ai (NFL Fantasy Season Pass)"),
+      h3("Scoutcast.ai (NFL Fantasy Pass)"),
       p(
         t(
           "Scoutcast.ai is an AI sports briefing app that generates a personalized ~2-minute audio brief each morning. The "
         ),
-        b("NFL Fantasy Season Pass ($49.99/season)"),
+        b("NFL Fantasy Pass ($39.99/season)"),
         t(
           " adds a roster-aware layer: Tuesday through Sunday briefings tailored to your specific lineup — injury news for your players, waiver targets your roster needs, head-to-head matchup edges for the current week, and a Sunday morning final call."
         )
@@ -2682,7 +2682,7 @@ const allPosts: Post[] = [
       ),
       p(
         t(
-          "iOS and Android. 7-day free trial, then $5.99/month for daily briefings across every league you follow. Fantasy Season Pass is the optional add-on."
+          "iOS and Android. 7-day free trial, then $4.99/month for daily briefings across every league you follow. NFL Fantasy Pass is the optional add-on."
         )
       ),
 
@@ -2743,7 +2743,7 @@ const allPosts: Post[] = [
             [t("Research")],
             [t("Roster-specific audio brief")],
             [t("No")],
-            [t("Free + $49.99/season pass")],
+            [t("Free + $39.99/season pass")],
           ],
         ]
       ),
@@ -2770,7 +2770,7 @@ const allPosts: Post[] = [
       ),
       p(
         lk(
-          "Try the NFL Fantasy Season Pass on Scoutcast.ai →",
+          "Try the NFL Fantasy Pass on Scoutcast.ai →",
           "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
         )
       ),
@@ -2802,12 +2802,12 @@ const allPosts: Post[] = [
       {
         question: "Are there AI fantasy football apps?",
         answer:
-          "Scoutcast.ai uses AI to generate personalized daily audio briefings for your exact roster — injury updates, waiver targets, matchup edges, and a Sunday morning final call. The NFL Fantasy Season Pass ($49.99) is the dedicated fantasy add-on. It's the only audio-first, roster-aware product in the category.",
+          "Scoutcast.ai uses AI to generate personalized daily audio briefings for your exact roster — injury updates, waiver targets, matchup edges, and a Sunday morning final call. The NFL Fantasy Pass ($39.99/year) is the dedicated fantasy add-on. It's the only audio-first, roster-aware product in the category.",
       },
       {
         question: "What fantasy football app has the best injury news?",
         answer:
-          "Rotoworld (NBC Sports Edge) is the standard for speed and coverage on NFL injury updates. ESPN also has strong push notifications. For personalized injury news filtered to your specific roster, Scoutcast.ai's Fantasy Season Pass surfaces only the updates that affect your lineup.",
+          "Rotoworld (NBC Sports Edge) is the standard for speed and coverage on NFL injury updates. ESPN also has strong push notifications. For personalized injury news filtered to your specific roster, Scoutcast.ai's NFL Fantasy Pass surfaces only the updates that affect your lineup.",
       },
     ],
     comparedItems: {
@@ -3132,12 +3132,12 @@ const allPosts: Post[] = [
         ),
         lk("Scoutcast.ai", "https://scoutcast.ai"),
         t(
-          " to solve: a personalized 2-minute audio briefing each morning with the news that matters for your exact roster. The NFL Fantasy Season Pass ($49.99) runs Tuesday through Sunday during the NFL season."
+          " to solve: a personalized 2-minute audio briefing each morning with the news that matters for your exact roster. The NFL Fantasy Pass ($39.99/year) runs Tuesday through Sunday during the NFL season."
         )
       ),
       p(
         lk(
-          "Try the NFL Fantasy Season Pass →",
+          "Try the NFL Fantasy Pass →",
           "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
         )
       ),
@@ -3276,7 +3276,7 @@ const allPosts: Post[] = [
       p(
         lk("Scoutcast.ai", "https://scoutcast.ai"),
         t("'s "),
-        b("NFL Fantasy Season Pass"),
+        b("NFL Fantasy Pass"),
         t(
           " delivers a roster-specific audio brief every morning from Tuesday through Sunday. Instead of checking 4 apps at the right times, you open Scoutcast and get a 2-minute audio rundown of: which of your players have injury news, who to target on waivers, your head-to-head matchup edges this week, and a Sunday morning final call."
         )
@@ -3288,7 +3288,7 @@ const allPosts: Post[] = [
       ),
       p(
         lk(
-          "Try the NFL Fantasy Season Pass →",
+          "Try the NFL Fantasy Pass →",
           "https://scoutcast.ai/fantasy/"
         )
       ),
@@ -3333,13 +3333,13 @@ const allPosts: Post[] = [
         question:
           "What is the best way to track fantasy football injuries?",
         answer:
-          "Rotoworld (NBC Sports Edge) posts real-time updates from beat reporters. ESPN sends push notifications for significant injuries. For a roster-filtered approach, Scoutcast.ai's Fantasy Season Pass surfaces injury news only for the players on your team, delivered as a personalized daily audio brief.",
+          "Rotoworld (NBC Sports Edge) posts real-time updates from beat reporters. ESPN sends push notifications for significant injuries. For a roster-filtered approach, Scoutcast.ai's NFL Fantasy Pass surfaces injury news only for the players on your team, delivered as a personalized daily audio brief.",
       },
       {
         question:
           "Is there an app that tells me who to start in fantasy football?",
         answer:
-          "Most league platforms (ESPN, Yahoo, Sleeper) include start/sit tools. For a personalized approach, Scoutcast.ai's Fantasy Season Pass delivers weekly matchup edges and start/sit guidance tailored to your exact roster — not generic rankings.",
+          "Most league platforms (ESPN, Yahoo, Sleeper) include start/sit tools. For a personalized approach, Scoutcast.ai's NFL Fantasy Pass delivers weekly matchup edges and start/sit guidance tailored to your exact roster — not generic rankings.",
       },
     ],
   },
@@ -3470,11 +3470,11 @@ const allPosts: Post[] = [
         lk("Scoutcast.ai", "https://scoutcast.ai"),
         t(" tracks practice reports and depth chart moves daily. During the NFL season, the "),
         lk(
-          "Fantasy Season Pass",
+          "NFL Fantasy Pass",
           "https://scoutcast.ai/fantasy/"
         ),
         t(
-          " ($49.99) delivers this as a roster-specific audio brief every morning — so when your sleeper's situation changes, you hear it first."
+          " ($39.99/year) delivers this as a roster-specific audio brief every morning — so when your sleeper's situation changes, you hear it first."
         )
       ),
 
@@ -3637,11 +3637,11 @@ const allPosts: Post[] = [
           "Scoutcast.ai tracks daily practice reports, depth chart moves, and injury designations. During the NFL season, the "
         ),
         lk(
-          "Fantasy Season Pass",
+          "NFL Fantasy Pass",
           "https://apps.apple.com/us/app/scoutcast-ai/id6761558329"
         ),
         t(
-          " ($49.99) delivers roster-specific audio briefings from Tuesday through Sunday. But even pre-season, the free daily briefing keeps you current on the training camp situations that affect your target list."
+          " ($39.99/year) delivers roster-specific audio briefings from Tuesday through Sunday. But even pre-season, the free daily briefing keeps you current on the training camp situations that affect your target list."
         )
       ),
       p(
@@ -3784,7 +3784,7 @@ const allPosts: Post[] = [
 
     p(
       t("If you want these adjustments delivered to your ears every morning during draft season — format-aware takes on your specific roster — the "),
-      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"),
       t(" on "),
       lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(" delivers Tuesday–Sunday audio briefings tailored to your team: waiver targets, start/sit calls, and matchup edges, hands-free in about two minutes.")
@@ -3931,7 +3931,7 @@ const allPosts: Post[] = [
 
     h2("How Scoutcast Makes ADP Work Harder for You"),
     p(lk("Scoutcast.ai", "https://scoutcast.ai"), t(" tracks ADP movement and practice reports simultaneously, surfacing when a player's situation improves before their ADP catches up. When a receiver gets a significant target share bump in training camp but their ADP hasn't moved yet, that's the exact window where you gain an edge — and Scoutcast flags it in your morning briefing so you're ready before your leaguemates are.")),
-    p(t("Get the daily intelligence you need to draft with confidence this season with the "), lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(".")),
+    p(t("Get the daily intelligence you need to draft with confidence this season with the "), lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"), t(".")),
 
     hr(),
   ],
@@ -4021,7 +4021,7 @@ const allPosts: Post[] = [
       [b("Snap count patterns in preseason games:"), t(" A rookie playing 60 percent of snaps in a preseason game while starters rest tells you almost nothing. A rookie playing alongside the first-team offense in a joint practice tells you a lot.")]
     ),
 
-    p(lk("Scoutcast.ai", "https://scoutcast.ai"), t(" tracks camp reports and depth chart changes for rookies daily — the "), lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" surfaces every signal that matters from July through the regular season so you can update your board as situations shift, not after your draft has already locked them in.")),
+    p(lk("Scoutcast.ai", "https://scoutcast.ai"), t(" tracks camp reports and depth chart changes for rookies daily — the "), lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"), t(" surfaces every signal that matters from July through the regular season so you can update your board as situations shift, not after your draft has already locked them in.")),
 
     p(t("For context on how rookies fit into the broader picture, see the full "), lk("fantasy football rankings 2026", "https://scoutcast.ai/blog/fantasy-football-rankings-2026/"), t(" and the deeper look at high-upside targets in the "), lk("fantasy football sleeper picks 2026", "https://scoutcast.ai/blog/fantasy-football-sleeper-picks-2026/"), t(" guide.")),
 
@@ -4130,7 +4130,7 @@ const allPosts: Post[] = [
     p(
       lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(" tracks ADP movement and surfaces when a player's situation changes — catch busts before draft day with the "),
-      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"),
       t(", which includes real-time ADP alerts and situation-change briefings all season.")
     ),
     h2("Quarterback Busts"),
@@ -4248,7 +4248,7 @@ const allPosts: Post[] = [
 
     p(
       t("If you want all of this analysis distilled into a two-minute personalized briefing — injury news, waiver moves, training camp standouts — every morning from now through the Super Bowl, that's what the "),
-      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"),
       t(" from "),
       lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(" does. It's the research layer underneath a draft like this one, running all season.")
@@ -4376,11 +4376,11 @@ const allPosts: Post[] = [
       b("Wednesday: "),
       t("Confirm role with practice reports. The Wednesday injury designation — limited, full, or did not practice — is your confirmation signal. If you already own the handcuff or the next receiver in line, this is where you decide whether to start, hold, or sell.")
     ),
-    h2("The Fantasy Season Pass CTA"),
+    h2("The NFL Fantasy Pass CTA"),
     p(
       lk("Scoutcast.ai", "https://scoutcast.ai"),
       t("'s "),
-      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"),
       t(" surfaces injury news and role changes for your specific roster every Tuesday morning — so you know who to add before the wire opens. Instead of manually tracking snap counts across every game, you get a briefing built around the players you actually own and the opportunities most relevant to your team.")
     ),
     h2("How to Value Your FAAB Budget"),
@@ -4511,7 +4511,7 @@ const allPosts: Post[] = [
       t("This checklist takes less than 15 minutes if you've done your framework work earlier in the week. Most of the decision is already made — you're just confirming no new information has changed it. For a deeper look at building your full research process, see "), lk("how to research fantasy football", "https://scoutcast.ai/blog/how-to-research-fantasy-football/"), t(" and "), lk("waiver wire strategy", "https://scoutcast.ai/blog/fantasy-football-waiver-wire-strategy/"), t(" — the same principles that drive good weekly start/sit decisions also drive good adds throughout the season.")
     ),
     p(
-      t("Scoutcast's "), lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" delivers a Sunday morning start/sit brief based on your specific roster and that week's matchups — injury updates, game-flow analysis, and a clear recommendation for every borderline call. It's the framework above, applied to your lineup, every week.")
+      t("Scoutcast's "), lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"), t(" delivers a Sunday morning start/sit brief based on your specific roster and that week's matchups — injury updates, game-flow analysis, and a clear recommendation for every borderline call. It's the framework above, applied to your lineup, every week.")
     ),
     hr(),
   ],
@@ -4651,10 +4651,10 @@ const allPosts: Post[] = [
     p(t("Even if your league doesn't run on Sleeper, their mock draft tool is the most realistic practice environment available. The pick pacing, the trade interface, and the draft board UI are all closer to a real draft experience than most platform simulators. If you're doing mock drafts to prep — and you should be doing at least three or four before your actual draft — Sleeper is worth installing just for that.")),
     p(t("For a round-by-round mock draft walkthrough, see "), lk("the 2026 fantasy football mock draft guide", "https://scoutcast.ai/blog/fantasy-football-mock-draft-2026/"), t(".")),
 
-    h3("Scoutcast.ai Fantasy Season Pass — Daily training camp briefings"),
+    h3("Scoutcast.ai NFL Fantasy Pass — Daily training camp briefings"),
     p(
       t("Training camp is where draft boards get made and broken. Depth chart battles resolve, injuries surface, and coaches tip their hand on usage in ways that don't show up in rankings tools until a week after the beat reporters file. The "),
-      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"),
       t(" from "),
       lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(" delivers a daily two-minute audio briefing on your roster from training camp through the Super Bowl — surfacing practice observations, injury updates, and ADP movement for the players you're targeting before your league catches on.")
@@ -4673,10 +4673,10 @@ const allPosts: Post[] = [
     h3("Beat reporter X accounts — fastest injury and usage signal"),
     p(t("NFL beat reporters post practice observations in real time on X. By the time an injury shows up on the official report, a team's beat reporter has already noted who was absent or limited at Wednesday practice. Building a list of one or two trusted reporters per team you have exposure to — and checking it Wednesday morning when practice opens — is the fastest waiver wire edge available. No app surfaces this faster than the reporters themselves.")),
 
-    h3("Scoutcast.ai Fantasy Season Pass — Tuesday morning waiver intel"),
+    h3("Scoutcast.ai NFL Fantasy Pass — Tuesday morning waiver intel"),
     p(
       t("Every Tuesday morning, the "),
-      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"),
       t(" delivers a briefing built around the specific players on your roster and the waiver opportunities most relevant to your team. Instead of manually pulling snap counts and target share across every game, you get a two-minute summary of who earned a role change Sunday and what it means for your lineup before the wire processes.")
     ),
     p(t("For the full process behind making waiver wire decisions, see "), lk("fantasy football waiver wire strategy", "https://scoutcast.ai/blog/fantasy-football-waiver-wire-strategy/"), t(".")),
@@ -4687,10 +4687,10 @@ const allPosts: Post[] = [
     h3("FantasyPros matchup charts — positional matchup data"),
     p(t("FantasyPros publishes weekly positional matchup charts showing how each NFL defense ranks against each position group. This isn't about overall defensive quality — it's about which defense specifically struggles against running backs out of the backfield, or which allows the most points to tight ends. That granularity is the right lens for flex and TE decisions when you're choosing between two similarly-ranked players.")),
 
-    h3("Scoutcast.ai Fantasy Season Pass — Sunday morning start/sit brief"),
+    h3("Scoutcast.ai NFL Fantasy Pass — Sunday morning start/sit brief"),
     p(
       t("Sunday morning is when start/sit decisions crystallize: active/inactive lists drop, last-minute injury news surfaces, and weather affects outdoor games. The "),
-      lk("Fantasy Season Pass", "https://scoutcast.ai/fantasy/"),
+      lk("NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"),
       t(" delivers a Sunday morning briefing covering your specific lineup — injury confirmation, matchup edge, and a clear call on every borderline decision — so you're not scrambling through three different apps 20 minutes before the slate locks.")
     ),
     p(t("The framework for making these calls yourself: "), lk("fantasy football start or sit — how to decide every week", "https://scoutcast.ai/blog/fantasy-football-start-sit/"), t(".")),
@@ -4711,7 +4711,7 @@ const allPosts: Post[] = [
       [b("Your league platform"), t(" — ESPN, Yahoo, Sleeper, or NFL.com. You don't choose this one.")],
       [b("Sleeper"), t(" — mock draft practice tool, even if your league isn't on Sleeper.")],
       [b("Beat reporter X accounts"), t(" — one or two per team you have exposure to. Wednesday mornings.")],
-      [lk("Scoutcast.ai Fantasy Season Pass", "https://scoutcast.ai/fantasy/"), t(" — daily audio briefing on your specific roster from camp through Super Bowl. Tuesday waiver intel, Sunday start/sit call, and training camp depth chart coverage.")],
+      [lk("Scoutcast.ai NFL Fantasy Pass", "https://scoutcast.ai/fantasy/"), t(" — daily audio briefing on your specific roster from camp through Super Bowl. Tuesday waiver intel, Sunday start/sit call, and training camp depth chart coverage.")],
     ),
     p(t("That's five inputs. Everything else is noise.")),
 
@@ -4720,7 +4720,7 @@ const allPosts: Post[] = [
   faqs: [
     {
       question: "What is the best app for managing a fantasy football team during the season?",
-      answer: "The best in-season management app depends on what you need it for. For your actual league roster, you're using whatever platform your commissioner chose (ESPN, Yahoo, Sleeper, or NFL.com). For weekly intel — waiver wire timing, start/sit calls, and injury updates — a combination of FantasyPros for matchup data, beat reporter X accounts for practice news, and a personalized briefing tool like the Scoutcast.ai Fantasy Season Pass covers every weekly decision without requiring you to manually aggregate from a dozen sources.",
+      answer: "The best in-season management app depends on what you need it for. For your actual league roster, you're using whatever platform your commissioner chose (ESPN, Yahoo, Sleeper, or NFL.com). For weekly intel — waiver wire timing, start/sit calls, and injury updates — a combination of FantasyPros for matchup data, beat reporter X accounts for practice news, and a personalized briefing tool like the Scoutcast.ai NFL Fantasy Pass covers every weekly decision without requiring you to manually aggregate from a dozen sources.",
     },
     {
       question: "Which fantasy football apps are best for draft prep?",
@@ -4728,7 +4728,7 @@ const allPosts: Post[] = [
     },
     {
       question: "Is there an app that gives daily fantasy football updates during the season?",
-      answer: "Yes — the Scoutcast.ai Fantasy Season Pass delivers a daily two-minute audio briefing personalized to your specific roster from training camp through the Super Bowl. Tuesday briefings cover waiver wire targets; Thursday and Sunday briefings cover start/sit decisions and matchup edges. It's built around the players you actually own, not the national storylines everyone is already reading.",
+      answer: "Yes — the Scoutcast.ai NFL Fantasy Pass delivers a daily two-minute audio briefing personalized to your specific roster from training camp through the Super Bowl. Tuesday briefings cover waiver wire targets; Thursday and Sunday briefings cover start/sit decisions and matchup edges. It's built around the players you actually own, not the national storylines everyone is already reading.",
     },
     {
       question: "What fantasy football apps do I need for waiver wire pickups?",
@@ -4998,7 +4998,7 @@ const allPosts: Post[] = [
     ),
     p(
       t("For fantasy specifically, the "),
-      b("NFL Fantasy Season Pass ($49.99/season)"),
+      b("NFL Fantasy Pass ($39.99/season)"),
       t(
         " adds per-league briefings on the days you make decisions: waiver targets Tuesday after Monday night, injury and practice-report reads Wednesday and Thursday, and a final start/sit call Sunday morning — all against your actual roster, in whichever platform your league ended up on. If you're heading into a draft on a new platform, it pairs well with "
       ),
@@ -5190,7 +5190,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "That’s exactly the problem we built Scoutcast.ai for. It’s a personalized ~2-minute audio sports briefing every morning — your teams, your players, your leagues — so lineup-relevant news finds you instead of the other way around. For fantasy players, the NFL Fantasy Pass ($49.99/season) adds per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday morning: waiver targets after each elimination, start/sit calls for your actual roster, and a final inactives check before kickoff. In a format where missing one beat report is fatal, a two-minute listen over coffee is cheap insurance."
+        "That’s exactly the problem we built Scoutcast.ai for. It’s a personalized ~2-minute audio sports briefing every morning — your teams, your players, your leagues — so lineup-relevant news finds you instead of the other way around. For fantasy players, the NFL Fantasy Pass ($39.99/season) adds per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday morning: waiver targets after each elimination, start/sit calls for your actual roster, and a final inactives check before kickoff. In a format where missing one beat report is fatal, a two-minute listen over coffee is cheap insurance."
       )
     ),
     p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
@@ -5427,7 +5427,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "And if you want the habit to continue past draft day, Scoutcast's NFL Fantasy Pass ($49.99/season) delivers in-season briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call) — timed to the actual decisions you make each week."
+        "And if you want the habit to continue past draft day, Scoutcast's NFL Fantasy Pass ($39.99/season) delivers in-season briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call) — timed to the actual decisions you make each week."
       )
     ),
     // Moved up from the end of the body, where it rendered directly above the automatic
@@ -5680,7 +5680,7 @@ const allPosts: Post[] = [
     h2("The cheaper alternative: don’t be the loser"),
     p(
       t(
-        "Here’s the quiet math nobody does in August: the flip side of every punishment on this list is simply not finishing last. That mostly comes down to staying informed when the season gets busy — knowing who’s hurt, who’s trending, and what your matchup actually needs before waivers clear. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee, and the NFL Fantasy Pass ($49.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around your actual fantasy roster. Fifty bucks a season is a lot cheaper than nine waffles, a milk mile, or twelve months of calendar infamy."
+        "Here’s the quiet math nobody does in August: the flip side of every punishment on this list is simply not finishing last. That mostly comes down to staying informed when the season gets busy — knowing who’s hurt, who’s trending, and what your matchup actually needs before waivers clear. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee, and the NFL Fantasy Pass ($39.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around your actual fantasy roster. Fifty bucks a season is a lot cheaper than nine waffles, a milk mile, or twelve months of calendar infamy."
       )
     ),
     // The styled CTA with store buttons, not a bare text link — this is the one
@@ -5999,7 +5999,7 @@ const allPosts: Post[] = [
       t("And if fantasy is the whole point for you, "),
       b("NFL Fantasy Pass"),
       t(
-        " ($49.99/season) syncs your actual fantasy league and gives you per-league analyst briefings four times a week — waivers Tuesday, matchup preview Wednesday, start/sit Thursday, and a live gameday brief Sunday — from an analyst who knows your roster, your opponent, and your league’s scoring."
+        " ($39.99/season) syncs your actual fantasy league and gives you per-league analyst briefings four times a week — waivers Tuesday, matchup preview Wednesday, start/sit Thursday, and a live gameday brief Sunday — from an analyst who knows your roster, your opponent, and your league’s scoring."
       )
     ),
     p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
@@ -6215,7 +6215,7 @@ const allPosts: Post[] = [
     h2("The rule no document can enforce: engagement"),
     p(
       t(
-        "A constitution stops disputes, but it can’t make a casual member care in Week 12 — and disengaged members are where quitters come from. The best commissioners solve that with lower effort, not more rules. Scoutcast.ai turns each member’s teams and players into a ~2-minute daily audio briefing they can play while making coffee, and the NFL Fantasy Pass ($49.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around their actual fantasy roster — waivers, start/sit, matchup stakes. A league where “I didn’t have time to follow football this week” stops being true is a league where Articles VII and VIII rarely get invoked. It also pairs well with the rest of a modern commissioner’s stack — see "
+        "A constitution stops disputes, but it can’t make a casual member care in Week 12 — and disengaged members are where quitters come from. The best commissioners solve that with lower effort, not more rules. Scoutcast.ai turns each member’s teams and players into a ~2-minute daily audio briefing they can play while making coffee, and the NFL Fantasy Pass ($39.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around their actual fantasy roster — waivers, start/sit, matchup stakes. A league where “I didn’t have time to follow football this week” stops being true is a league where Articles VII and VIII rarely get invoked. It also pairs well with the rest of a modern commissioner’s stack — see "
       ),
       lk("the best fantasy football apps for 2026", "/blog/best-fantasy-football-apps-2026"),
       t(".")
@@ -6435,7 +6435,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "And if keeping up with target shares, depth charts, and injury news sounds like a lot — that’s the problem Scoutcast.ai exists to solve. It’s a ~2-minute daily audio briefing on your teams and players, so beginners stay current without drowning in research. The NFL Fantasy Pass ($49.99/season) goes further with league-specific briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call)."
+        "And if keeping up with target shares, depth charts, and injury news sounds like a lot — that’s the problem Scoutcast.ai exists to solve. It’s a ~2-minute daily audio briefing on your teams and players, so beginners stay current without drowning in research. The NFL Fantasy Pass ($39.99/season) goes further with league-specific briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call)."
       )
     ),
     p(
@@ -6636,7 +6636,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "That’s also exactly the gap Scoutcast.ai covers. It’s a ~2-minute daily audio briefing on your players and teams — injuries, depth-chart moves, who’s trending — so beginners stay sharp without drowning in research or doomscrolling four apps. The NFL Fantasy Pass ($49.99/season) adds briefings built around your actual league: Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call)."
+        "That’s also exactly the gap Scoutcast.ai covers. It’s a ~2-minute daily audio briefing on your players and teams — injuries, depth-chart moves, who’s trending — so beginners stay sharp without drowning in research or doomscrolling four apps. The NFL Fantasy Pass ($39.99/season) adds briefings built around your actual league: Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call)."
       )
     ),
     p(
@@ -6867,7 +6867,7 @@ const allPosts: Post[] = [
 
     p(
       t(
-        "One last edge: flex decisions are won with information, and most of it breaks during the week — injury designations, depth-chart shifts, a backup suddenly trending toward a start. Scoutcast.ai turns that into a ~2-minute daily audio briefing built around your teams and players, so you hear the news before your league does. The NFL Fantasy Pass ($49.99/season) goes further with Tuesday, Wednesday, Thursday, and Sunday briefings specific to your actual league — including flex-relevant lineup calls and waiver targets."
+        "One last edge: flex decisions are won with information, and most of it breaks during the week — injury designations, depth-chart shifts, a backup suddenly trending toward a start. Scoutcast.ai turns that into a ~2-minute daily audio briefing built around your teams and players, so you hear the news before your league does. The NFL Fantasy Pass ($39.99/season) goes further with Tuesday, Wednesday, Thursday, and Sunday briefings specific to your actual league — including flex-relevant lineup calls and waiver targets."
       )
     ),
     p(
@@ -7082,7 +7082,7 @@ const allPosts: Post[] = [
 
     p(
       t(
-        "FAAB is ultimately an information game: the manager who hears about the injury or depth-chart change first gets to shape their bids before the market catches up. Scoutcast.ai delivers a ~2-minute daily audio briefing built around your teams and players, so waiver-relevant news reaches you before your leaguemates open an app. The NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings tailored to your specific league — including waiver targets worth bidding on and how your roster stacks up."
+        "FAAB is ultimately an information game: the manager who hears about the injury or depth-chart change first gets to shape their bids before the market catches up. Scoutcast.ai delivers a ~2-minute daily audio briefing built around your teams and players, so waiver-relevant news reaches you before your leaguemates open an app. The NFL Fantasy Pass ($39.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings tailored to your specific league — including waiver targets worth bidding on and how your roster stacks up."
       )
     ),
     p(
@@ -7261,7 +7261,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "One thing best ball doesn’t remove is the value of being informed on draft day — and drafts run from May to September, so news keeps mattering. That’s where Scoutcast.ai fits: a ~2-minute daily audio briefing on your teams and players, so staying current takes minutes instead of hours. During the season, the NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues."
+        "One thing best ball doesn’t remove is the value of being informed on draft day — and drafts run from May to September, so news keeps mattering. That’s where Scoutcast.ai fits: a ~2-minute daily audio briefing on your teams and players, so staying current takes minutes instead of hours. During the season, the NFL Fantasy Pass ($39.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues."
       )
     ),
     p(
@@ -7423,7 +7423,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "Vampire leagues punish managers who tune out, on both sides of the bite. Scoutcast.ai keeps you current in about two minutes a day — an AI audio briefing on your players, your matchup, and the news that moves lineups. The NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues, which is exactly the cadence a vampire grinding the wire needs."
+        "Vampire leagues punish managers who tune out, on both sides of the bite. Scoutcast.ai keeps you current in about two minutes a day — an AI audio briefing on your players, your matchup, and the news that moves lineups. The NFL Fantasy Pass ($39.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues, which is exactly the cadence a vampire grinding the wire needs."
       )
     ),
     p(
@@ -7572,7 +7572,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "Guillotine leagues are unforgiving to managers who check out — miss one bad week and you’re gone, miss one big waiver drop and someone else feasts. Scoutcast.ai is built for exactly that: a ~2-minute daily audio briefing that keeps you current on your players in minutes, not hours. The NFL Fantasy Pass ($49.99/season) delivers Tuesday, Wednesday, Thursday, and Sunday briefings around your actual leagues — Tuesday and Wednesday being precisely when guillotine waivers get decided."
+        "Guillotine leagues are unforgiving to managers who check out — miss one bad week and you’re gone, miss one big waiver drop and someone else feasts. Scoutcast.ai is built for exactly that: a ~2-minute daily audio briefing that keeps you current on your players in minutes, not hours. The NFL Fantasy Pass ($39.99/season) delivers Tuesday, Wednesday, Thursday, and Sunday briefings around your actual leagues — Tuesday and Wednesday being precisely when guillotine waivers get decided."
       )
     ),
     p(
@@ -7775,7 +7775,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "That’s the layer Scoutcast.ai adds, and it works alongside all three platforms rather than replacing any of them. It’s a personalized ~2-minute audio briefing every morning covering your teams and your players — the synthesis, not just the alert. For fantasy managers, the NFL Fantasy Pass ($49.99/season) goes further with per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday mornings: waiver targets after Monday night, start/sit calls for your actual roster, and a final inactives check before kickoff. Whichever platform hosts your league, the two minutes over coffee is what keeps you from being the manager who started an inactive player. We covered how this fits into a full toolkit in our guide to the "
+        "That’s the layer Scoutcast.ai adds, and it works alongside all three platforms rather than replacing any of them. It’s a personalized ~2-minute audio briefing every morning covering your teams and your players — the synthesis, not just the alert. For fantasy managers, the NFL Fantasy Pass ($39.99/season) goes further with per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday mornings: waiver targets after Monday night, start/sit calls for your actual roster, and a final inactives check before kickoff. Whichever platform hosts your league, the two minutes over coffee is what keeps you from being the manager who started an inactive player. We covered how this fits into a full toolkit in our guide to the "
       ),
       lk("best apps for fantasy football season", "/blog/best-apps-for-fantasy-football-season"),
       t(".")
@@ -8286,7 +8286,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "The other advantage of the two-to-three-week window: it’s exactly when draft prep should start anyway. Cramming rankings the night before the draft is how you end up reaching for a player who lost his starting job in camp. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — camp battles, injuries, depth-chart moves — so by draft night the knowledge is already in your head. And once the season kicks off, the NFL Fantasy Pass ($49.99/season) adds analyst briefings built around your actual fantasy roster."
+        "The other advantage of the two-to-three-week window: it’s exactly when draft prep should start anyway. Cramming rankings the night before the draft is how you end up reaching for a player who lost his starting job in camp. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — camp battles, injuries, depth-chart moves — so by draft night the knowledge is already in your head. And once the season kicks off, the NFL Fantasy Pass ($39.99/season) adds analyst briefings built around your actual fantasy roster."
       )
     ),
     p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
@@ -8425,7 +8425,7 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "And a hosting tip that doubles as a competitive edge: don’t spend draft week cramming rankings at midnight. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — the week of the draft, that’s injury news, depth-chart moves, and camp risers arriving in daily doses instead of one frantic night-before binge. Once the season starts, the NFL Fantasy Pass ($49.99/season) adds analyst briefings built around your actual roster, so the manager who hosted the party is also the one who wins the league."
+        "And a hosting tip that doubles as a competitive edge: don’t spend draft week cramming rankings at midnight. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — the week of the draft, that’s injury news, depth-chart moves, and camp risers arriving in daily doses instead of one frantic night-before binge. Once the season starts, the NFL Fantasy Pass ($39.99/season) adds analyst briefings built around your actual roster, so the manager who hosted the party is also the one who wins the league."
       )
     ),
     p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
@@ -8569,7 +8569,7 @@ const allPosts: Post[] = [
     p(
       lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(
-        " approaches this from the other side. Instead of another place to watch, it’s a ~2-minute personalized audio briefing every morning: you pick your school, your conference, individual players, and even specific beat writers on X, and it covers what actually happened — the result, the storylines, the injury news, what next week means. Mid-briefing, you can tap the mic and ask a follow-up (“what happened in the fourth quarter?”) and get an instant answer. It’s $5.99/month after a 7-day free trial — against a $123/month streaming stack, it’s the part of fandom that shouldn’t be expensive."
+        " approaches this from the other side. Instead of another place to watch, it’s a ~2-minute personalized audio briefing every morning: you pick your school, your conference, individual players, and even specific beat writers on X, and it covers what actually happened — the result, the storylines, the injury news, what next week means. Mid-briefing, you can tap the mic and ask a follow-up (“what happened in the fourth quarter?”) and get an instant answer. It’s $4.99/month after a 7-day free trial — against a $123/month streaming stack, it’s the part of fandom that shouldn’t be expensive."
       )
     ),
     p(
@@ -8599,7 +8599,7 @@ const allPosts: Post[] = [
     {
       question: "What's the best app to follow college football without watching every game?",
       answer:
-        "For staying informed rather than streaming, Scoutcast.ai delivers a ~2-minute personalized audio briefing each morning covering your school, conference, and players, with tap-to-ask follow-up questions — at $5.99/month after a 7-day free trial. For streaming the games themselves, match the app to your conference: ESPN for SEC/ACC, Peacock for Big Ten exclusives and Notre Dame.",
+        "For staying informed rather than streaming, Scoutcast.ai delivers a ~2-minute personalized audio briefing each morning covering your school, conference, and players, with tap-to-ask follow-up questions — at $4.99/month after a 7-day free trial. For streaming the games themselves, match the app to your conference: ESPN for SEC/ACC, Peacock for Big Ten exclusives and Notre Dame.",
     },
     {
       question: "Why are college football games on so many different channels now?",
@@ -8692,7 +8692,7 @@ const allPosts: Post[] = [
     p(
       lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(
-        " exists for exactly that daily job. It’s a personalized ~2-minute audio briefing every morning — your teams, your players, your leagues, even specific X beat writers you trust — with the option to tap the mic and ask a follow-up question mid-briefing. It’s $5.99/month after a 7-day free trial. It doesn’t stream games and doesn’t pretend to; it makes the keeping-up half of fandom cost pocket change, so the only subscriptions you keep are the ones you genuinely watch."
+        " exists for exactly that daily job. It’s a personalized ~2-minute audio briefing every morning — your teams, your players, your leagues, even specific X beat writers you trust — with the option to tap the mic and ask a follow-up question mid-briefing. It’s $4.99/month after a 7-day free trial. It doesn’t stream games and doesn’t pretend to; it makes the keeping-up half of fandom cost pocket change, so the only subscriptions you keep are the ones you genuinely watch."
       )
     ),
     p(
@@ -8717,7 +8717,7 @@ const allPosts: Post[] = [
     {
       question: "What's the cheapest way to follow your team without paying for every streaming service?",
       answer:
-        "Keep one deliberately chosen streaming service (the one carrying most of your team's games), use a free antenna for broadcast-network games, stream your team's free radio broadcast for the rest, and use a daily briefing app like Scoutcast.ai ($5.99/month) to stay informed on everything you didn't watch live.",
+        "Keep one deliberately chosen streaming service (the one carrying most of your team's games), use a free antenna for broadcast-network games, stream your team's free radio broadcast for the rest, and use a daily briefing app like Scoutcast.ai ($4.99/month) to stay informed on everything you didn't watch live.",
     },
   ],
 },

@@ -71,7 +71,7 @@ export default function DeleteAccountPage() {
 
                 <LegalSection title="Cancel your subscription separately">
                     <p>
-                        Deleting your account does not cancel an active paid subscription. To stop auto-renewing charges for Scoutcast Unlimited or the NFL Fantasy Season Pass, cancel in Google Play (Android) or your Apple ID settings (iOS) in addition to deleting your account.
+                        Deleting your account does not cancel an active paid subscription. To stop auto-renewing charges for Scoutcast Plus, the NFL Fantasy Pass, or the League Pass, cancel in Google Play (Android) or your Apple ID settings (iOS) in addition to deleting your account.
                     </p>
                 </LegalSection>
 

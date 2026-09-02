@@ -24,7 +24,7 @@ export default function FantasyStrip() {
                         <p className="max-w-xl text-balance text-2xl font-semibold tracking-tight text-foreground sm:text-[28px] sm:leading-[1.15]">
                             Four audio briefings a week, personalized to your roster and your H2H opponent.
                         </p>
-                        <p className="text-[15px] text-foreground/55">Waiver bids Wednesday. Start/sit Thursday. Final call Sunday. $49.99 per season — about $3 a week.</p>
+                        <p className="text-[15px] text-foreground/55">Waiver bids Wednesday. Start/sit Thursday. Final call Sunday. $39.99 per season — under $2.50 a week.</p>
                     </div>
                     <span className="inline-flex shrink-0 items-center gap-2 text-base font-semibold text-[#0AB17B]">
                         See the Season Pass

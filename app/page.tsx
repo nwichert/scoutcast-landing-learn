@@ -38,23 +38,43 @@ const mobileApplicationLd = {
   offers: [
     {
       "@type": "Offer",
-      name: "Scoutcast Plus",
-      price: "5.99",
+      name: "Scoutcast Plus (monthly)",
+      price: "4.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing monthly subscription. Includes up to 7 active Scoutcasts, daily ~2-minute personalized audio briefings, scores/injuries/odds/storylines, and tap-to-ask audio follow-ups. Starts with a free 7-day trial — no credit card required. Cancel anytime.",
+        "Auto-renewing monthly subscription. Unlimited casts, daily ~2-minute personalized audio briefings, scores/injuries/odds/storylines, and tap-to-ask audio follow-ups. Starts with a free 7-day trial — no credit card required. Cancel anytime.",
     },
     {
       "@type": "Offer",
-      name: "NFL Fantasy Season Pass",
-      price: "49.99",
+      name: "Scoutcast Plus (annual)",
+      price: "39.99",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing per-NFL-season subscription, sold separately from Scoutcast Plus. Tue/Wed/Thu/Sun briefings, H2H opponent edge, fantasy playoffs, NFL playoff DFS insights, Super Bowl preview. Up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.",
+        "Auto-renewing annual subscription — about $3.33/month, roughly 33% less than monthly. Same features as monthly Scoutcast Plus, starting with a free 7-day trial.",
+    },
+    {
+      "@type": "Offer",
+      name: "NFL Fantasy Pass",
+      price: "39.99",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      category: "InAppPurchase",
+      description:
+        "Auto-renewing yearly subscription, sold separately — does not require Scoutcast Plus. Tue/Wed/Thu/Sun briefings, H2H opponent edge, fantasy playoffs, NFL playoff DFS insights, Super Bowl preview. Up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.",
+    },
+    {
+      "@type": "Offer",
+      name: "League Pass",
+      price: "39.99",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      category: "InAppPurchase",
+      description:
+        "One season pass for an entire fantasy league: the commissioner pays, all 10–14 members listen free via invite code. Weekly 'Recap + Roast' episode every Tuesday built from the league's Sleeper account. Sleeper leagues only at launch.",
     },
   ],
   featureList: [
@@ -125,7 +145,23 @@ const faqPageLd = {
       name: "Does Scoutcast work for fantasy football?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. The NFL Fantasy Season Pass ($49.99/season) adds four audio briefings a week personalized to your roster and your head-to-head opponent — waiver bids on Wednesday, start/sit calls on Thursday, and a final call Sunday morning before kickoff. It works with any fantasy platform and requires Scoutcast Plus.",
+        text: "Yes, two ways. The NFL Fantasy Pass ($39.99/year) is your personal AI fantasy analyst — start/sit calls, waiver bids, weekly matchup briefings, and a Sunday-morning final call, synced to your roster on Yahoo, ESPN, Sleeper, or NFL.com. The League Pass ($39.99/season) covers your entire league: the commissioner pays once, all 10–14 members listen free, and everyone gets a weekly “Recap + Roast” episode every Tuesday (Sleeper leagues at launch). Both are independent purchases — no Scoutcast Plus required.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the Scoutcast League Pass?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "One pass for your whole fantasy league: the commissioner pays $39.99 for the season, and all 10–14 members listen free via an invite code. Every Tuesday the league gets a “Recap + Roast” episode — exact scores, bench disasters, and season-long storylines, built from your Sleeper league. Sleeper leagues only at launch, more platforms coming.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is there a limit on how many casts I can follow?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No — Scoutcast Plus includes unlimited casts, so every team, league, and player you follow gets briefed every morning. To keep your library clutter-free, a cast you stop listening to naps itself after a few skipped episodes and resumes with one tap.",
       },
     },
     {
@@ -157,7 +193,7 @@ const faqPageLd = {
       name: "How much does Scoutcast cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Everyone starts with a free 7-day trial — no credit card required. After the trial, Scoutcast Plus is $5.99/month and includes up to 7 active casts. The NFL Fantasy Season Pass is a separate $49.99/season add-on.",
+        text: "Everyone starts with a free 7-day trial — no credit card required. After the trial, Scoutcast Plus is $4.99/month or $39.99/year (about $3.33/month) with unlimited casts. The NFL Fantasy Pass ($39.99/year) and League Pass ($39.99/season) are separate purchases — neither requires Plus. Cut Line and betting odds stay free.",
       },
     },
     {
@@ -173,7 +209,7 @@ const faqPageLd = {
       name: "What happens after the free trial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Your briefings pause until you subscribe to Scoutcast Plus ($5.99/month). Nothing is deleted — your casts, sources, and settings are all saved.",
+        text: "Your briefings stop until you subscribe to Scoutcast Plus ($4.99/month or $39.99/year). Nothing is deleted — your casts, sources, and settings are all saved.",
       },
     },
   ],

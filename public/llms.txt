@@ -18,8 +18,10 @@ A native app for iPhone and Android (with iPad and macOS support on Apple Silico
 NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NCAA hockey, Premier League, La Liga, Bundesliga, Serie A, Ligue 1, UEFA Champions League, PGA Tour, LIV Golf, Formula 1, ATP, WTA.
 
 ## Pricing
-- Scoutcast Plus ($5.99/month; 7-day free trial, no credit card required): daily ~2-minute personalized briefing across all leagues, follow-up questions, custom sources, up to 7 active casts, CarPlay, lock-screen controls, ad-free.
-- NFL Fantasy Season Pass: $49.99/season (~$3/week across the 17-week regular season). Tuesday / Wednesday / Thursday / Sunday briefings for all 18 weeks, head-to-head opponent edge, fantasy playoffs, NFL playoff DFS, Super Bowl preview. Connects up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.
+- Scoutcast Plus ($4.99/month or $39.99/year, about $3.33/month; 7-day free trial, no credit card required): daily ~2-minute personalized briefing across all leagues, follow-up questions, custom sources, unlimited casts (idle casts nap after a few skipped episodes and resume with one tap), CarPlay, lock-screen controls, ad-free.
+- NFL Fantasy Pass: $39.99/year (under $2.50/week across the 17-week regular season). Independent purchase — does not require Scoutcast Plus. Tuesday / Wednesday / Thursday / Sunday briefings for all 18 weeks, head-to-head opponent edge, fantasy playoffs, NFL playoff DFS, Super Bowl preview. Connects up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.
+- League Pass: $39.99/season, one pass for an entire fantasy league — the commissioner pays, all 10–14 members listen free via invite code. Weekly "Recap + Roast" episode every Tuesday with exact scores, bench disasters, and season-long storylines, built from the league's Sleeper account. Sleeper leagues only at launch.
+- Free: Cut Line and betting odds.
 
 ## Platforms
 - iOS 17.0 or later (iPhone)

@@ -60,7 +60,7 @@ const GROUP_COPY: Record<CtaGroup, BlogCta> = {
     // different jobs, and only one of them costs $100+/month.
     "cost-of-watching": {
         headline: "You can’t stream every game. You can still know everything that happened.",
-        sub: "Scoutcast.ai is a ~2-minute morning audio briefing on your teams and players — the games you couldn’t watch, covered by the time you pour coffee. $5.99/mo after a 7-day free trial.",
+        sub: "Scoutcast.ai is a ~2-minute morning audio briefing on your teams and players — the games you couldn’t watch, covered by the time you pour coffee. $4.99/mo after a 7-day free trial.",
         label: "Get Scoutcast",
     },
     // Tech-take posts (robot umps, Hawk-Eye). The reader is a general sports fan
