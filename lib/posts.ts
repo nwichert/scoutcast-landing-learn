@@ -1759,7 +1759,9 @@ const allPosts: Post[] = [
         [b("FantasyPros consensus rankings"), t(" — one page of verdicts for waivers and start/sit. The whole Tuesday step lives here.")],
         [b("Scoutcast.ai with the NFL Fantasy Pass"), t(" — this is the audio layer of the system, and yes, it’s the app I co-founded. You connect a Sleeper league read-only, or screenshot and paste your lineup from any other platform — and it delivers short audio briefings on Tuesday (waiver picks), Wednesday and Thursday (start/sit calls, injury news on your players), and Sunday morning (a final-call briefing with inactives). You listen during breakfast — hands on the pancakes, not the phone. The pass is $39.99 per NFL season, under $2.50 a week; the rest of "),
           lk("Scoutcast.ai", "https://scoutcast.ai"),
-          t(" is free, including daily briefings on your real teams.")],
+          t(" is free, including daily briefings on your real teams. Sleeper leagues can "),
+          lk("connect read-only", "/blog/connect-sleeper-league-fantasy-football-briefings"),
+          t(" so the roster stays current on its own.")],
       ),
       p(t("Each briefing also supports tap-to-ask follow-ups — mid-briefing, ask “who should I start, Pollard or Gibbs?” out loud and get an audio answer that knows your roster. That’s the Sunday-morning panic scroll, replaced.")),
 
@@ -2635,6 +2637,11 @@ const allPosts: Post[] = [
         t(
           "Sleeper has expanded into sports-betting overlays and Best Ball. For commissioners who want a more modern, social feel, Sleeper is the default recommendation."
         )
+      ),
+      p(
+        t("Sleeper is also the one platform with a public read-only API, which is why third-party tools can read a Sleeper league directly \u2014 including "),
+        lk("connecting a Sleeper league for audio start/sit briefings", "/blog/connect-sleeper-league-fantasy-football-briefings"),
+        t(".")
       ),
 
       h3("NFL Fantasy"),
@@ -7082,7 +7089,7 @@ const allPosts: Post[] = [
 
     p(
       t(
-        "FAAB is ultimately an information game: the manager who hears about the injury or depth-chart change first gets to shape their bids before the market catches up. Scoutcast.ai delivers a ~2-minute daily audio briefing built around your teams and players, so waiver-relevant news reaches you before your leaguemates open an app. The NFL Fantasy Pass ($39.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings tailored to your specific league — including waiver targets worth bidding on and how your roster stacks up."
+        "FAAB is ultimately an information game: the manager who hears about the injury or depth-chart change first gets to shape their bids before the market catches up. Scoutcast.ai delivers a ~2-minute daily audio briefing built around your teams and players, so waiver-relevant news reaches you before your leaguemates open an app. The NFL Fantasy Pass ($39.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings tailored to your specific league — including waiver targets worth bidding on and how your roster stacks up. If your league is on Sleeper you can connect it read-only, so Tuesday’s bids are ranked against your actual bench and remaining budget."
       )
     ),
     p(
@@ -8892,6 +8899,149 @@ const allPosts: Post[] = [
     },
   ],
 },
+  {
+    slug: "connect-sleeper-league-fantasy-football-briefings",
+    title: "How to Connect Your Sleeper League for Audio Fantasy Football Briefings",
+    excerpt:
+      "Scoutcast.ai now reads your Sleeper league directly, read-only. Your roster, your weekly matchup, and your league\u2019s scoring settings feed four audio briefings a week \u2014 with no screenshot to redo after every waiver claim.",
+    date: "2026-09-09",
+    author: "Nick Wichert",
+    authorRole: "Co-founder, Scoutcast.ai",
+    authorUrl: "https://x.com/scoutcastAI",
+    body: [
+      lead(
+        t("The NFL Fantasy Pass in "),
+        lk("Scoutcast.ai", "https://scoutcast.ai"),
+        t(
+          " can now connect directly to your Sleeper league. Link it once, read-only, and every briefing knows your exact roster, who you\u2019re playing this week, and how your league scores \u2014 without you screenshotting a lineup again. Sleeper is the only fantasy platform we connect to. Everything else still works by screenshot or paste, and that is not going away."
+        )
+      ),
+
+      h2("What connecting actually does"),
+      p(
+        t(
+          "A connected Sleeper league gives your briefings three things they previously had to be handed manually:"
+        )
+      ),
+      ul(
+        [b("Your roster, current as of this morning"), t(" \u2014 starters, bench, and every mid-week add. A Tuesday waiver claim is in Wednesday\u2019s briefing without you doing anything.")],
+        [b("Your weekly head-to-head matchup"), t(" \u2014 your opponent\u2019s starting lineup, which is what makes the edge analysis specific instead of generic.")],
+        [b("Your league\u2019s scoring settings"), t(" \u2014 standard, half-PPR, or full-PPR, plus your roster slots. A start/sit call that ignores scoring format is a coin flip.")],
+      ),
+      p(
+        t("The connection is "),
+        b("read-only"),
+        t(
+          ", and that is a hard boundary rather than a promise. Scoutcast.ai can read your league; it cannot set your lineup, submit a waiver claim, propose a trade, or post in your league chat. There is no scenario where the app makes a move on your behalf, because it has no ability to write to your league at all."
+        )
+      ),
+
+      h2("How to connect your Sleeper league"),
+      ol(
+        [t("Open the Fantasy tab in the Scoutcast.ai app with an active NFL Fantasy Pass.")],
+        [t("Choose to add a league, and pick Sleeper as the platform.")],
+        [t("Enter your Sleeper username and select which of your leagues to add.")],
+        [t("Confirm your team in that league, so the app knows which roster is yours.")],
+      ),
+      p(
+        t(
+          "You can add up to three leagues total, mixed however you like \u2014 three connected Sleeper leagues, or one Sleeper league plus two you add by screenshot. The cap is on leagues, not on how they got in."
+        )
+      ),
+
+      cta("cta-sleeper-connect"),
+
+      h2("What changes in your briefings"),
+      p(
+        t(
+          "The Fantasy Pass delivers four briefings a week, and each one gets sharper when the roster underneath it is live rather than a snapshot from whenever you last uploaded one:"
+        )
+      ),
+      tbl(
+        [[b("Briefing")], [b("What a connected league changes")]],
+        [
+          [[t("Tuesday \u2014 waivers")], [t("Bids are ranked against your actual bench and your remaining FAAB, not a generic waiver list.")]],
+          [[t("Wednesday & Thursday \u2014 start/sit")], [t("Calls reflect adds you made yesterday, and injury news is filtered to players you actually roster.")]],
+          [[t("Sunday morning \u2014 final call")], [t("Inactives are checked against your starting lineup as it stands an hour before kickoff, including anyone you moved overnight.")]],
+        ]
+      ),
+      p(
+        t(
+          "The practical difference is the failure mode. With a screenshot, the briefing is only as current as the last time you remembered to send one \u2014 and the week you forget is usually the week you dropped someone. A connected league removes the step you can forget."
+        )
+      ),
+
+      h2("Sleeper connect or screenshot: which should you use"),
+      p(
+        t("If your league is on Sleeper, connect it. If it is anywhere else, screenshot it. That is genuinely the whole decision, but here is the comparison in full:")
+      ),
+      tbl(
+        [[b("")], [b("Connected Sleeper league")], [b("Screenshot or paste")]],
+        [
+          [[t("Platforms")], [t("Sleeper only")], [t("ESPN, Yahoo, NFL.com, custom, offline \u2014 anything")]],
+          [[t("Setup")], [t("Once, then never again")], [t("Whenever your lineup changes")]],
+          [[t("Stays current")], [t("Automatically")], [t("Only as current as your last upload")]],
+          [[t("Sees your opponent")], [t("Yes, automatically")], [t("Only if you add them")]],
+          [[t("Knows your scoring")], [t("Read from league settings")], [t("You tell it once")]],
+        ]
+      ),
+
+      h2("What about ESPN, Yahoo, and NFL.com?"),
+      p(
+        t(
+          "There is no connection to them, and we are not going to imply otherwise. ESPN has no supported public API, NFL.com\u2019s developer API no longer exists, and CBS\u2019s is effectively dead. Yahoo has a real one, and it is the most likely next integration, but it is not built yet."
+        )
+      ),
+      p(
+        t(
+          "So if your league lives on any of those, the screenshot path is the product, not a downgrade path \u2014 and it has one genuine advantage worth naming: it works for leagues no API can reach. Custom scoring, an office league run in a spreadsheet, a dynasty setup with house rules. You paste the lineup and the briefing works the same way."
+        )
+      ),
+
+      cta("cta-sleeper-briefings"),
+
+      h2("Read-only, in plain terms"),
+      p(
+        t(
+          "Connecting a league means Scoutcast.ai reads your roster, your matchup, and your league settings, and uses them to write your briefings. It does not read your Sleeper password, because it never asks for one. It does not touch your league chat, your trades, or your waiver claims. If you disconnect a league, the app stops reading it and the briefings fall back to whatever you add manually."
+        )
+      ),
+      p(
+        t("The full breakdown of what the pass includes across the season is on the "),
+        lk("NFL Fantasy Season Pass page", "/fantasy"),
+        t(", and if you are still deciding where your league should live next year, we compared the platforms in "),
+        lk("the best fantasy football apps of 2026", "/blog/best-fantasy-football-apps-2026"),
+        t(".")
+      ),
+    ],
+    faqs: [
+      {
+        question: "Does Scoutcast.ai connect to Sleeper?",
+        answer:
+          "Yes. The NFL Fantasy Pass connects to Sleeper leagues with read-only access, so your roster, weekly matchup, and league scoring settings feed your briefings automatically. Sleeper is the only fantasy platform Scoutcast.ai connects to; ESPN, Yahoo, NFL.com, and custom leagues are added by screenshot or paste instead.",
+      },
+      {
+        question: "Can Scoutcast.ai change my Sleeper lineup or submit waiver claims?",
+        answer:
+          "No. The connection is read-only. Scoutcast.ai can read your roster, opponent, and league settings, but it cannot set a lineup, submit a waiver claim, propose a trade, or post in your league chat.",
+      },
+      {
+        question: "How many fantasy leagues can I add to the NFL Fantasy Pass?",
+        answer:
+          "Up to three leagues total, in any combination \u2014 three connected Sleeper leagues, or a mix of connected Sleeper leagues and leagues you add by screenshot or paste from any other platform.",
+      },
+      {
+        question: "Does Scoutcast.ai work with ESPN or Yahoo fantasy football?",
+        answer:
+          "It works for leagues on those platforms, but not by connecting to them. You screenshot or paste your lineup and the briefings work the same way. There is no ESPN, Yahoo, or NFL.com integration \u2014 Sleeper is the only platform Scoutcast.ai reads directly.",
+      },
+      {
+        question: "Do I need to re-upload my roster after a waiver claim?",
+        answer:
+          "Not with a connected Sleeper league \u2014 the roster is read fresh for each briefing, so Tuesday\u2019s add is reflected in Wednesday\u2019s start/sit call. If you added your league by screenshot, you send an updated lineup when it changes.",
+      },
+    ],
+  },
 ];
 
 // Drafts: held out of the rendered blog until ready to ship.

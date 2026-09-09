@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Check, Play, Camera, ArrowRight } from "lucide-react"
+import { Check, Play, Camera, ArrowRight, Link2, Lock } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { DownloadDialog } from "@/components/download-dialog"
@@ -209,6 +209,7 @@ export default function FantasyPage() {
                 <Rhythm />
                 <HeadToHead />
                 <HowItWorks />
+                <SleeperConnect />
                 <BriefingSample />
                 <Coverage />
                 <AssistantAccess />
@@ -442,6 +443,74 @@ function HowItWorks() {
                         </article>
                     ))}
                 </div>
+            </div>
+        </section>
+    )
+}
+
+const SLEEPER_READS = [
+    "Your starters and bench, re-read before every briefing",
+    "Your weekly head-to-head opponent's starting lineup",
+    "Your league's scoring format and roster slots",
+]
+
+function SleeperConnect() {
+    return (
+        <section className="px-6 py-16 lg:px-12 lg:py-24">
+            <div className="mx-auto max-w-6xl">
+                <SectionHeading
+                    eyebrow="New"
+                    title={<>Connect your Sleeper league. Read-only.</>}
+                />
+                <p className="mt-4 max-w-2xl text-[17px] leading-[1.55] text-[#8B949E]">
+                    Link a Sleeper league once and every briefing reads your live roster &mdash; including the waiver claim you made yesterday. On any other platform, screenshot your lineup and nothing else changes.
+                </p>
+
+                <div className="mt-8 grid gap-3.5 md:grid-cols-2">
+                    <article className="flex flex-col gap-4 rounded-2xl border border-[#0AB17B]/40 bg-[#0AB17B]/[0.06] p-6">
+                        <div className="flex items-center gap-3">
+                            <div className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#0AB17B]/40 bg-[#0AB17B]/10">
+                                <Link2 className="size-4 text-[#0AB17B]" />
+                            </div>
+                            <h3 className="text-[17px] font-semibold leading-tight text-[#F0F6FC]">Sleeper leagues: connect</h3>
+                        </div>
+                        <ul className="flex flex-col gap-2.5">
+                            {SLEEPER_READS.map((item) => (
+                                <li key={item} className="flex items-start gap-2.5 text-sm leading-[1.55] text-[#8B949E]">
+                                    <Check className="mt-[3px] size-4 shrink-0 text-[#0AB17B]" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                        <p className="mt-auto flex items-start gap-2 rounded-xl border border-[#30363D] bg-[#0D1117] p-3 text-xs leading-[1.5] text-[#8B949E]">
+                            <Lock className="mt-[1px] size-3.5 shrink-0 text-[#8B949E]" />
+                            <span>Read-only. Scoutcast can&rsquo;t set your lineup, submit a waiver claim, propose a trade, or post in your league chat.</span>
+                        </p>
+                    </article>
+
+                    <article className="flex flex-col gap-4 rounded-2xl border border-[#30363D] bg-[#161B22] p-6">
+                        <div className="flex items-center gap-3">
+                            <div className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#30363D] bg-[#0D1117]">
+                                <Camera className="size-4 text-[#8B949E]" />
+                            </div>
+                            <h3 className="text-[17px] font-semibold leading-tight text-[#F0F6FC]">Every other platform: screenshot</h3>
+                        </div>
+                        <p className="text-sm leading-[1.55] text-[#8B949E]">
+                            ESPN, Yahoo, NFL.com, custom scoring, or a league run in a spreadsheet &mdash; screenshot or paste your lineup and the briefings work the same way. There&rsquo;s no connection to those platforms, which is exactly why every one of them works.
+                        </p>
+                        <p className="mt-auto text-xs leading-[1.5] text-[#8B949E]">
+                            Up to 3 leagues total, mixed however you like.
+                        </p>
+                    </article>
+                </div>
+
+                <p className="mt-5 text-sm leading-[1.6] text-[#8B949E]">
+                    Step-by-step:{" "}
+                    <a href="/blog/connect-sleeper-league-fantasy-football-briefings/" className="text-[#0AB17B] underline underline-offset-4 transition hover:text-[#0BC189]">
+                        how to connect your Sleeper league
+                    </a>
+                    .
+                </p>
             </div>
         </section>
     )
