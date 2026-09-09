@@ -17,7 +17,7 @@ const FANTASY_INCLUDES = [
     "Start/sit calls, waiver bids, and weekly matchup briefings",
     "Sunday-morning final call before kickoff",
     "H2H opponent edge + fantasy playoffs",
-    "Up to 3 leagues — screenshot or paste your lineup from any platform",
+    "Up to 3 leagues — connect Sleeper read-only, or screenshot any platform",
 ]
 
 const LEAGUE_INCLUDES = [
@@ -110,7 +110,7 @@ export default function Pricing() {
                             className="inline-flex h-12 items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.06] px-5 text-base font-semibold text-foreground transition hover:bg-white/[0.1]">
                             See the Fantasy pass
                         </Link>
-                        <p className="self-center text-center text-xs text-foreground/50">No account linking &mdash; you screenshot your lineup. We never touch your fantasy account.</p>
+                        <p className="self-center text-center text-xs text-foreground/50">Connect Sleeper read-only, or screenshot any other platform. We read your league; we never make a move in it.</p>
                     </article>
 
                     {/* League Pass */}

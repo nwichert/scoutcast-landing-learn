@@ -64,7 +64,7 @@ const mobileApplicationLd = {
       availability: "https://schema.org/InStock",
       category: "InAppPurchase",
       description:
-        "Auto-renewing yearly subscription, sold separately — does not require Scoutcast Plus. Tue/Wed/Thu/Sun briefings, H2H opponent edge, fantasy playoffs, NFL playoff DFS insights, Super Bowl preview. Up to 3 leagues from any fantasy platform via screenshot or paste — no account connection required.",
+        "Auto-renewing yearly subscription, sold separately — does not require Scoutcast Plus. Tue/Wed/Thu/Sun briefings, H2H opponent edge, fantasy playoffs, NFL playoff DFS insights, Super Bowl preview. Up to 3 leagues: connect a Sleeper league read-only, or add any other platform by screenshot or paste.",
     },
     {
       "@type": "Offer",
@@ -145,7 +145,7 @@ const faqPageLd = {
       name: "Does Scoutcast work for fantasy football?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, two ways. The NFL Fantasy Pass ($39.99/year) is your personal AI fantasy analyst — start/sit calls, waiver bids, weekly matchup briefings, and a Sunday-morning final call, built from the lineup you screenshot or paste. There is no account connection, so it works with any platform and any scoring — including custom and offline leagues. The League Pass ($39.99/season) covers your entire league: the commissioner pays once, all 10–14 members listen free, and everyone gets a weekly “Recap + Roast” episode every Tuesday, read directly from your Sleeper league (Sleeper only at launch — League Pass is the one pass that connects to a platform). Both are independent purchases — no Scoutcast Plus required.",
+        text: "Yes, two ways. The NFL Fantasy Pass ($39.99/year) is your personal AI fantasy analyst — start/sit calls, waiver bids, weekly matchup briefings, and a Sunday-morning final call. Connect a Sleeper league read-only, or screenshot and paste your lineup from any other platform — ESPN, Yahoo, NFL.com, and custom or offline leagues all work, up to 3 leagues total. The League Pass ($39.99/season) covers your entire league: the commissioner pays once, all 10–14 members listen free, and everyone gets a weekly “Recap + Roast” episode every Tuesday, read directly from your Sleeper league (Sleeper only at launch). Both are independent purchases — no Scoutcast Plus required.",
       },
     },
     {

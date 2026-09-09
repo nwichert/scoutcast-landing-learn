@@ -1757,7 +1757,7 @@ const allPosts: Post[] = [
       ul(
         [b("Your league app (Sleeper, Yahoo, ESPN, NFL.com)"), t(" — for executing moves. Set notifications to “my players only” and mute the league chat’s game threads.")],
         [b("FantasyPros consensus rankings"), t(" — one page of verdicts for waivers and start/sit. The whole Tuesday step lives here.")],
-        [b("Scoutcast.ai with the NFL Fantasy Pass"), t(" — this is the audio layer of the system, and yes, it’s the app I co-founded. You screenshot or paste your actual lineup — there’s no account to link, so any platform works — and it delivers short audio briefings on Tuesday (waiver picks), Wednesday and Thursday (start/sit calls, injury news on your players), and Sunday morning (a final-call briefing with inactives). You listen during breakfast — hands on the pancakes, not the phone. The pass is $39.99 per NFL season, under $2.50 a week; the rest of "),
+        [b("Scoutcast.ai with the NFL Fantasy Pass"), t(" — this is the audio layer of the system, and yes, it’s the app I co-founded. You connect a Sleeper league read-only, or screenshot and paste your lineup from any other platform — and it delivers short audio briefings on Tuesday (waiver picks), Wednesday and Thursday (start/sit calls, injury news on your players), and Sunday morning (a final-call briefing with inactives). You listen during breakfast — hands on the pancakes, not the phone. The pass is $39.99 per NFL season, under $2.50 a week; the rest of "),
           lk("Scoutcast.ai", "https://scoutcast.ai"),
           t(" is free, including daily briefings on your real teams.")],
       ),
@@ -1801,7 +1801,7 @@ const allPosts: Post[] = [
       {
         question: "What is the Scoutcast.ai NFL Fantasy Pass?",
         answer:
-          "A $39.99-per-year pass for the Scoutcast.ai app. You screenshot or paste your lineup from any fantasy platform (up to 3 leagues) — there is no account connection — and it delivers audio briefings on Tue/Wed/Thu/Sun all season: personalized waiver picks, start/sit calls, head-to-head opponent analysis, and a Sunday-morning final call. It’s an independent purchase — it doesn’t require a Scoutcast Plus subscription.",
+          "A $39.99-per-year pass for the Scoutcast.ai app. You connect a Sleeper league read-only, or screenshot and paste your lineup from any other platform (up to 3 leagues either way), and it delivers audio briefings on Tue/Wed/Thu/Sun all season: personalized waiver picks, start/sit calls, head-to-head opponent analysis, and a Sunday-morning final call. It’s an independent purchase — it doesn’t require a Scoutcast Plus subscription.",
       },
       {
         question: "Can I win my fantasy league spending only 10 minutes a week?",
