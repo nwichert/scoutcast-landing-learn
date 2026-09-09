@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { Check, Play, Camera, ArrowRight, Link2, Lock } from "lucide-react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -448,58 +449,119 @@ function HowItWorks() {
     )
 }
 
+const SLEEPER_STEPS = [
+    { n: "1", label: "Tap Connect Sleeper", detail: "In the Fantasy tab, with an active Season Pass." },
+    { n: "2", label: "Enter your Sleeper username", detail: "No password, and nothing to authorize." },
+    { n: "3", label: "Pick the league", detail: "Scoutcast finds your team in it automatically." },
+]
+
 const SLEEPER_READS = [
     "Your starters and bench, re-read before every briefing",
     "Your weekly head-to-head opponent's starting lineup",
     "Your league's scoring format and roster slots",
 ]
 
+const SCREENSHOT_WORKS = [
+    "ESPN, Yahoo, and NFL.com leagues",
+    "Custom scoring and house rules no API exposes",
+    "Offline leagues run in a spreadsheet",
+]
+
 function SleeperConnect() {
     return (
         <section className="px-6 py-16 lg:px-12 lg:py-24">
             <div className="mx-auto max-w-6xl">
-                <SectionHeading
-                    eyebrow="New"
-                    title={<>Connect your Sleeper league. Read-only.</>}
-                />
+                <div className="flex flex-col gap-3">
+                    <div className="flex items-center gap-2.5">
+                        <Eyebrow>New</Eyebrow>
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-[#30363D] bg-[#161B22] py-1 pl-1 pr-2.5">
+                            <Image src="/logos/sleeper.png" alt="" width={18} height={18} className="rounded-[5px]" aria-hidden />
+                            <span className="text-[11px] font-semibold tracking-[0.02em] text-[#8B949E]">Sleeper</span>
+                        </span>
+                    </div>
+                    <h2 className="text-balance text-[32px] font-bold leading-[1.1] tracking-[-0.02em] text-[#F0F6FC] sm:text-[40px] lg:text-[48px]">
+                        Connect your Sleeper league. Read-only.
+                    </h2>
+                </div>
+
                 <p className="mt-4 max-w-2xl text-[17px] leading-[1.55] text-[#8B949E]">
                     Link a Sleeper league once and every briefing reads your live roster &mdash; including the waiver claim you made yesterday. On any other platform, screenshot your lineup and nothing else changes.
                 </p>
 
-                <div className="mt-8 grid gap-3.5 md:grid-cols-2">
-                    <article className="flex flex-col gap-4 rounded-2xl border border-[#0AB17B]/40 bg-[#0AB17B]/[0.06] p-6">
+                <div className="mt-8 grid gap-3.5 lg:grid-cols-[1.15fr_1fr]">
+                    <article className="flex flex-col gap-5 rounded-2xl border border-[#0AB17B]/40 bg-[#0AB17B]/[0.06] p-6">
                         <div className="flex items-center gap-3">
-                            <div className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#0AB17B]/40 bg-[#0AB17B]/10">
-                                <Link2 className="size-4 text-[#0AB17B]" />
+                            <Image
+                                src="/logos/sleeper.png"
+                                alt="Sleeper"
+                                width={36}
+                                height={36}
+                                className="rounded-[10px] ring-1 ring-white/10"
+                            />
+                            <div className="flex flex-col">
+                                <h3 className="text-[17px] font-semibold leading-tight text-[#F0F6FC]">Sleeper leagues: connect</h3>
+                                <p className="text-xs text-[#8B949E]">About 30 seconds, once a season.</p>
                             </div>
-                            <h3 className="text-[17px] font-semibold leading-tight text-[#F0F6FC]">Sleeper leagues: connect</h3>
                         </div>
-                        <ul className="flex flex-col gap-2.5">
-                            {SLEEPER_READS.map((item) => (
-                                <li key={item} className="flex items-start gap-2.5 text-sm leading-[1.55] text-[#8B949E]">
-                                    <Check className="mt-[3px] size-4 shrink-0 text-[#0AB17B]" />
-                                    <span>{item}</span>
+
+                        <ol className="flex flex-col gap-2.5">
+                            {SLEEPER_STEPS.map((step) => (
+                                <li key={step.n} className="flex items-start gap-3 rounded-xl border border-[#30363D] bg-[#0D1117] p-3">
+                                    <span className="flex size-6 shrink-0 items-center justify-center rounded-full border border-[#0AB17B]/40 bg-[#0AB17B]/10 font-mono text-[11px] font-semibold text-[#0AB17B]">
+                                        {step.n}
+                                    </span>
+                                    <span className="flex flex-col gap-0.5">
+                                        <span className="text-sm font-semibold leading-tight text-[#F0F6FC]">{step.label}</span>
+                                        <span className="text-xs leading-[1.5] text-[#8B949E]">{step.detail}</span>
+                                    </span>
                                 </li>
                             ))}
-                        </ul>
+                        </ol>
+
+                        <div className="flex flex-col gap-2.5 border-t border-[#0AB17B]/20 pt-4">
+                            <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8B949E]">What it reads</p>
+                            <ul className="flex flex-col gap-2">
+                                {SLEEPER_READS.map((item) => (
+                                    <li key={item} className="flex items-start gap-2.5 text-sm leading-[1.55] text-[#8B949E]">
+                                        <Check className="mt-[3px] size-4 shrink-0 text-[#0AB17B]" />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
                         <p className="mt-auto flex items-start gap-2 rounded-xl border border-[#30363D] bg-[#0D1117] p-3 text-xs leading-[1.5] text-[#8B949E]">
                             <Lock className="mt-[1px] size-3.5 shrink-0 text-[#8B949E]" />
                             <span>Read-only. Scoutcast can&rsquo;t set your lineup, submit a waiver claim, propose a trade, or post in your league chat.</span>
                         </p>
                     </article>
 
-                    <article className="flex flex-col gap-4 rounded-2xl border border-[#30363D] bg-[#161B22] p-6">
+                    <article className="flex flex-col gap-5 rounded-2xl border border-[#30363D] bg-[#161B22] p-6">
                         <div className="flex items-center gap-3">
-                            <div className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#30363D] bg-[#0D1117]">
+                            <div className="flex size-9 shrink-0 items-center justify-center rounded-[10px] border border-[#30363D] bg-[#0D1117]">
                                 <Camera className="size-4 text-[#8B949E]" />
                             </div>
-                            <h3 className="text-[17px] font-semibold leading-tight text-[#F0F6FC]">Every other platform: screenshot</h3>
+                            <div className="flex flex-col">
+                                <h3 className="text-[17px] font-semibold leading-tight text-[#F0F6FC]">Every other platform: screenshot</h3>
+                                <p className="text-xs text-[#8B949E]">Unchanged, and not going away.</p>
+                            </div>
                         </div>
+
                         <p className="text-sm leading-[1.55] text-[#8B949E]">
-                            ESPN, Yahoo, NFL.com, custom scoring, or a league run in a spreadsheet &mdash; screenshot or paste your lineup and the briefings work the same way. There&rsquo;s no connection to those platforms, which is exactly why every one of them works.
+                            Screenshot or paste your lineup and the briefings work the same way. There&rsquo;s no connection to those platforms, which is exactly why every one of them works:
                         </p>
-                        <p className="mt-auto text-xs leading-[1.5] text-[#8B949E]">
-                            Up to 3 leagues total, mixed however you like.
+
+                        <ul className="flex flex-col gap-2">
+                            {SCREENSHOT_WORKS.map((item) => (
+                                <li key={item} className="flex items-start gap-2.5 text-sm leading-[1.55] text-[#8B949E]">
+                                    <Check className="mt-[3px] size-4 shrink-0 text-[#8B949E]" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+
+                        <p className="mt-auto rounded-xl border border-[#30363D] bg-[#0D1117] p-3 text-xs leading-[1.5] text-[#8B949E]">
+                            Up to 3 leagues total, mixed however you like &mdash; three connected Sleeper leagues, or one Sleeper league plus two you screenshot.
                         </p>
                     </article>
                 </div>

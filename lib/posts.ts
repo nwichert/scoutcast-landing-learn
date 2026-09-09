@@ -8939,9 +8939,9 @@ const allPosts: Post[] = [
       h2("How to connect your Sleeper league"),
       ol(
         [t("Open the Fantasy tab in the Scoutcast.ai app with an active NFL Fantasy Pass.")],
-        [t("Choose to add a league, and pick Sleeper as the platform.")],
-        [t("Enter your Sleeper username and select which of your leagues to add.")],
-        [t("Confirm your team in that league, so the app knows which roster is yours.")],
+        [t("Tap "), b("Connect Sleeper"), t(".")],
+        [t("Enter your Sleeper username and tap "), b("Find my leagues"), t(". There is no password to hand over and nothing to authorize \u2014 Sleeper\u2019s league data is public and read-only.")],
+        [t("Pick the league. Scoutcast.ai finds your team in it automatically and tells you how many players it synced, along with this week\u2019s opponent.")],
       ),
       p(
         t(
@@ -9034,6 +9034,11 @@ const allPosts: Post[] = [
         question: "Does Scoutcast.ai work with ESPN or Yahoo fantasy football?",
         answer:
           "It works for leagues on those platforms, but not by connecting to them. You screenshot or paste your lineup and the briefings work the same way. There is no ESPN, Yahoo, or NFL.com integration \u2014 Sleeper is the only platform Scoutcast.ai reads directly.",
+      },
+      {
+        question: "How much does the Scoutcast.ai NFL Fantasy Pass cost?",
+        answer:
+          "$39.99 per year. It is an independent purchase and does not require a Scoutcast Plus subscription. Connecting a Sleeper league is included \u2014 there is no separate charge for the integration.",
       },
       {
         question: "Do I need to re-upload my roster after a waiver claim?",
