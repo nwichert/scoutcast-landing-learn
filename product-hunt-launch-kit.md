@@ -32,9 +32,9 @@ Optional 60–90s video: setup → first brief → tap Ask follow-up → MCP con
 
 ---
 
-## Listing description (478 / 500)
+## Listing description (490 / 500)
 
-Scoutcast turns scores, news, and storylines into a personalized 2-minute audio briefing for the teams you actually care about. Pick your teams, leagues, and the X writers whose takes you trust. Tap Ask to interrupt with a hands-free voice follow-up: stat lines, trade context, injury updates. The brief pauses, answers, and resumes. Free forever. NFL Fantasy Season Pass adds Tue/Wed/Thu/Sun briefings built from a screenshot or paste of your lineup, from any fantasy platform.
+Scoutcast turns scores, news, and storylines into a personalized 2-minute audio briefing for the teams you actually care about. Pick your teams, leagues, and the X writers whose takes you trust. Tap Ask to interrupt with a hands-free voice follow-up: stat lines, trade context, injury updates. The brief pauses, answers, and resumes. Free forever. NFL Fantasy Season Pass adds Tue/Wed/Thu/Sun briefings. Connect a Sleeper league read-only, or screenshot your lineup from any other platform.
 
 ---
 
@@ -50,7 +50,7 @@ Who it's for: people who used to be obsessive sports fans but life got in the wa
 
 What it doesn't do yet (the honest part): live in-game commentary isn't here; this is morning catch-up, not play-by-play. And our X writer integration depends on whoever is still actually posting on X.
 
-It's free forever. The one paid thing is an NFL Fantasy Season Pass for $39.99 if you want lineup-aware briefings: screenshot or paste your lineup from any fantasy platform.
+It's free forever. The one paid thing is an NFL Fantasy Season Pass for $39.99 if you want lineup-aware briefings: connect a Sleeper league read-only, or screenshot your lineup from any other platform.
 
 I'd love your honest take on the audio length. We hover around two minutes because that's a stoplight, a kettle, an elevator. Some folks want 90 seconds, others want five. What's your morning sports window, and what would make you replace your current habit?
 
@@ -87,7 +87,7 @@ It's live on Product Hunt today.
 
 **3/7** — If something catches your ear, tap Ask. "What's his stat line tonight?" "More on the trade." The briefing pauses, answers in your headphones, and picks up where it left off. Fully hands-free. No other sports product does this.
 
-**4/7** — It's free forever. The only paid thing is an NFL Fantasy Season Pass ($39.99) for lineup-aware briefings from a screenshot or paste of your lineup, on any fantasy platform. The daily brief and follow-ups stay free.
+**4/7** — It's free forever. The only paid thing is an NFL Fantasy Season Pass ($39.99) for lineup-aware briefings. Connect a Sleeper league read-only, or screenshot your lineup from any other platform. The daily brief and follow-ups stay free.
 
 **5/7** — There's also an MCP connector. You can ask Claude, ChatGPT, or Gemini about your sports world directly. Same personalized data, conversational interface.
 

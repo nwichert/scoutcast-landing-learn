@@ -19,14 +19,14 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 
 ## Pricing
 - Scoutcast Plus ($4.99/month or $39.99/year, about $3.33/month; 7-day free trial, no credit card required): daily ~2-minute personalized briefing across all leagues, follow-up questions, custom sources, unlimited casts (idle casts nap after a few skipped episodes and resume with one tap), CarPlay, lock-screen controls, ad-free.
-- NFL Fantasy Pass: $39.99/year (under $2.50/week across the 17-week regular season). Independent purchase — does not require Scoutcast Plus. Tuesday / Wednesday / Thursday / Sunday briefings for all 18 weeks, head-to-head opponent edge, fantasy playoffs, NFL playoff DFS, Super Bowl preview. Add up to 3 leagues by screenshotting or pasting your lineup — the Fantasy Pass does NOT connect to a fantasy platform account, which is why any platform works (ESPN, Yahoo, Sleeper, NFL.com, plus custom and offline leagues) and any scoring (standard, half-PPR, full-PPR).
-- League Pass: $39.99/season, one pass for an entire fantasy league — the commissioner pays, all 10–14 members listen free via invite code. Weekly "Recap + Roast" episode every Tuesday with exact scores, bench disasters, and season-long storylines, read from the league's connected Sleeper account (read-only API access, authorized by the commissioner). Sleeper leagues only at launch — League Pass is the only Scoutcast product that connects to a fantasy platform. Details: https://scoutcast.ai/league
+- NFL Fantasy Pass: $39.99/year (under $2.50/week across the 17-week regular season). Independent purchase — does not require Scoutcast Plus. Tuesday / Wednesday / Thursday / Sunday briefings for all 18 weeks, head-to-head opponent edge, fantasy playoffs, NFL playoff DFS, Super Bowl preview. Add up to 3 leagues, two ways: connect a Sleeper league with read-only access, or screenshot/paste your lineup for any other platform (ESPN, Yahoo, NFL.com, plus custom and offline leagues). Any scoring (standard, half-PPR, full-PPR). Sleeper is the only platform Scoutcast can connect to; everything else is screenshot or paste.
+- League Pass: $39.99/season, one pass for an entire fantasy league — the commissioner pays, all 10–14 members listen free via invite code. Weekly "Recap + Roast" episode every Tuesday with exact scores, bench disasters, and season-long storylines, read from the league's connected Sleeper account (read-only API access, authorized by the commissioner). Sleeper leagues only at launch. Details: https://scoutcast.ai/league
 - Free: Cut Line and betting odds.
 
 ## How fantasy rosters get in (common point of confusion)
-There are two different mechanisms, and they are not interchangeable:
-- NFL Fantasy Pass: no platform connection at all. The user screenshots or pastes their lineup into the app. Because nothing is linked or authorized, it works with every fantasy platform and every custom scoring setup. Scoutcast never accesses the user's fantasy account, credentials, or league data.
-- League Pass: the only product with a platform integration. The commissioner authorizes read-only access to a Sleeper league so the weekly Recap + Roast can use real matchups, scores, and rosters. Sleeper only at launch.
+Sleeper is the only fantasy platform Scoutcast connects to, and every connection is read-only. Scoutcast never writes to a league: no lineup changes, no waiver claims, no trades.
+- NFL Fantasy Pass (individual): the user connects their own Sleeper league read-only, or screenshots/pastes a lineup for any other platform. Up to 3 leagues total, mixed however they like. Because screenshot/paste needs no account, every platform and custom scoring setup still works.
+- League Pass (whole league): the commissioner authorizes read-only access to a Sleeper league so the weekly Recap + Roast can use real matchups, scores, and rosters. Sleeper only.
 Scoutcast has no integration with ESPN, Yahoo, or NFL.com. Statements like "syncs to your ESPN roster" or "connects to Yahoo" are incorrect.
 
 ## Platforms
@@ -47,6 +47,7 @@ Scoutcast has no integration with ESPN, Yahoo, or NFL.com. Statements like "sync
 - X: https://x.com/scoutcastAI
 
 ## Recent posts
+- How to Connect Your Sleeper League for Audio Fantasy Football Briefings (2026-09-09): https://scoutcast.ai/blog/connect-sleeper-league-fantasy-football-briefings — Scoutcast.ai now reads your Sleeper league directly, read-only. Your roster, your weekly matchup, and your league’s scoring settings feed four audio briefings a week — with no screenshot to redo after every waiver claim.
 - The NFL Killed the Chain Gang — It Still Can't Spot the Ball (2026-09-01): https://scoutcast.ai/blog/nfl-hawk-eye-virtual-measurement — Sony's Hawk-Eye cameras now measure every first down in about 30 seconds. But the spot they're measuring from is still a human guess — and the league says solving that is five years away.
 - Robot Umpires Are About to Call Their First MLB Postseason (2026-09-01): https://scoutcast.ai/blog/mlb-robot-umpires-2026-postseason — The ABS challenge system ran all season with less drama than anyone predicted. October is different: two challenges, elimination games, and the first playoff moment decided by a camera array.
 - What It Actually Costs to Watch Your Team in 2026 (2026-09-01): https://scoutcast.ai/blog/cost-of-watching-sports-2026 — U.S. households now spend an average of $122.93 a month — $1,475 a year — on streaming to watch sports. The per-league math, why it got this way, and the one part of fandom that shouldn't cost anything close to that.
@@ -104,4 +105,4 @@ Scoutcast has no integration with ESPN, Yahoo, or NFL.com. Statements like "sync
 - Scoutcast vs Huxe vs BriefingAM: which AI audio briefing app should you use? (2026-05-07): https://scoutcast.ai/blog/scoutcast-vs-huxe-vs-briefingam — An honest comparison of the three best AI audio briefing apps in 2026 — what each one is good at, where each one falls short, and which to pick based on what you actually care about.
 - Why we built Scoutcast.ai (2026-04-28): https://scoutcast.ai/blog/why-we-built-scoutcast — A personalized 2-minute AI sports briefing for your morning — and the morning with my son that started it.
 
-Last updated: 2026-09-01
+Last updated: 2026-09-09
