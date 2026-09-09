@@ -32,9 +32,9 @@ Optional 60–90s video: setup → first brief → tap Ask follow-up → MCP con
 
 ---
 
-## Listing description (425 / 500)
+## Listing description (478 / 500)
 
-Scoutcast turns scores, news, and storylines into a personalized 2-minute audio briefing for the teams you actually care about. Pick your teams, leagues, and the X writers whose takes you trust. Tap Ask to interrupt with a hands-free voice follow-up: stat lines, trade context, injury updates. The brief pauses, answers, and resumes. Free forever. NFL Fantasy Season Pass adds Tue/Wed/Thu/Sun briefings synced to Yahoo, ESPN, Sleeper, and NFL.com lineups.
+Scoutcast turns scores, news, and storylines into a personalized 2-minute audio briefing for the teams you actually care about. Pick your teams, leagues, and the X writers whose takes you trust. Tap Ask to interrupt with a hands-free voice follow-up: stat lines, trade context, injury updates. The brief pauses, answers, and resumes. Free forever. NFL Fantasy Season Pass adds Tue/Wed/Thu/Sun briefings built from a screenshot or paste of your lineup, from any fantasy platform.
 
 ---
 
@@ -48,21 +48,21 @@ That's what Scoutcast does. You pick your teams, your leagues, and a few X write
 
 Who it's for: people who used to be obsessive sports fans but life got in the way. Commuters. Parents. Fantasy players who don't want to read three Reddit threads to set a lineup. People who like sports media but hate sports media's attention economy.
 
-What it doesn't do yet (the honest part): we're Apple-only for now (iOS, iPadOS, macOS). Android is on the roadmap but isn't built. Live in-game commentary isn't here either; this is morning catch-up, not play-by-play. And our X writer integration depends on whoever is still actually posting on X.
+What it doesn't do yet (the honest part): live in-game commentary isn't here; this is morning catch-up, not play-by-play. And our X writer integration depends on whoever is still actually posting on X.
 
-It's free forever. The one paid thing is an NFL Fantasy Season Pass for $49.99 per season if you want lineup-aware briefings synced to your Yahoo, ESPN, Sleeper, or NFL.com leagues.
+It's free forever. The one paid thing is an NFL Fantasy Season Pass for $39.99 if you want lineup-aware briefings: screenshot or paste your lineup from any fantasy platform.
 
 I'd love your honest take on the audio length. We hover around two minutes because that's a stoplight, a kettle, an elevator. Some folks want 90 seconds, others want five. What's your morning sports window, and what would make you replace your current habit?
 
 ---
 
-## First-comment promo (post within 5 minutes of launch, replies to the maker comment)
+## First comment (post within 5 minutes of launch, replies to the maker comment)
 
 Quick context for everyone here:
 
 We don't have ads, paywalls, or "premium" tiers on the briefing. The daily personalized rundown is just free, no card required.
 
-The one paid thing is an NFL Fantasy Season Pass at $49.99 for the full 17 weeks. For Product Hunt today only: first 100 redemptions get it at $24.99 with offer code **PHUNT50** (redeem in-app under Settings → Redeem). Valid through [LAUNCH_DATE + 7 days].
+The one paid thing is an NFL Fantasy Season Pass at $39.99. No launch discount; the price is the price.
 
 If you're not a fantasy player, that's irrelevant. The daily brief is the actual product.
 
@@ -87,11 +87,11 @@ It's live on Product Hunt today.
 
 **3/7** — If something catches your ear, tap Ask. "What's his stat line tonight?" "More on the trade." The briefing pauses, answers in your headphones, and picks up where it left off. Fully hands-free. No other sports product does this.
 
-**4/7** — It's free forever. The only paid thing is an NFL Fantasy Season Pass ($49.99/season) for lineup-aware briefings synced to Yahoo, ESPN, Sleeper, and NFL.com. The daily brief and follow-ups stay free.
+**4/7** — It's free forever. The only paid thing is an NFL Fantasy Season Pass ($39.99) for lineup-aware briefings from a screenshot or paste of your lineup, on any fantasy platform. The daily brief and follow-ups stay free.
 
 **5/7** — There's also an MCP connector. You can ask Claude, ChatGPT, or Gemini about your sports world directly. Same personalized data, conversational interface.
 
-**6/7** — Honest caveats: Apple-only for now (iOS, iPadOS, macOS). Android is on the roadmap. This is morning catch-up, not live play-by-play. And the X writer feature depends on whoever is still posting on X.
+**6/7** — Honest caveats: this is morning catch-up, not live play-by-play. And the X writer feature depends on whoever is still posting on X.
 
 **7/7** — If you're a sports fan tired of the doom-scroll, give it a look. Would love feedback, especially on audio length and which leagues we should add next.
 
@@ -115,7 +115,7 @@ Three things I'm proud of:
 
 3. It's free forever. The only paid add-on is an NFL Fantasy Season Pass for people whose lineup decisions need it.
 
-Apple-only for now (iOS, iPadOS, macOS). Android is on the roadmap.
+Available on iPhone, iPad, Mac, and Android.
 
 If you used to be an obsessive sports fan but life got in the way (commute, kids, work), this is built for you. Would love your support on Product Hunt today, and even more, your honest feedback.
 
@@ -135,7 +135,7 @@ Quick context, no ask yet: I'm Nick, founder of Scoutcast.ai. We turn scores, ne
 
 We're launching on Product Hunt on **[LAUNCH_DATE]** and I'm trying to find a hunter who actually uses sports/audio products, not just one with high follower counts.
 
-If you want to try it before deciding, the App Store link is here: https://apps.apple.com/us/app/scoutcast-ai/id6761558329. Pick your teams in setup, your first brief generates in about 90 seconds, and tomorrow morning you'll see what a "your-teams-only" rundown feels like in your headphones.
+If you want to try it before deciding, it's on both stores. App Store: https://apps.apple.com/us/app/scoutcast-ai/id6761558329 · Google Play: https://play.google.com/store/apps/details?id=ai.scoutcast.android&referrer=utm_source%3Dproducthunt%26utm_medium%3Ddm%26utm_campaign%3Dph_launch. Pick your teams in setup, your first brief generates in about 90 seconds, and tomorrow morning you'll see what a "your-teams-only" rundown feels like in your headphones.
 
 If you'd be open to hunting it, I'll send the assets, the launch timeline, and a calendar hold. If it's not a fit, no worries at all — I'd still love any honest feedback you'd give me.
 
@@ -243,7 +243,7 @@ Nick
 |---|---|
 | 12:01 AM | Post goes live. Click manually — do not schedule. |
 | 12:02 AM | Maker comment pasted from clipboard, submitted. |
-| 12:05 AM | First-comment promo (PHUNT50) posted as reply to maker comment. |
+| 12:05 AM | First comment posted as reply to maker comment. |
 | 12:15 AM | Tweet thread live. |
 | 12:30 AM | LinkedIn post live. |
 | 12:30 AM | Personal DMs to top 10 most-engaged supporters. |
@@ -259,13 +259,12 @@ Nick
 ## Pre-launch checklist (still to do)
 
 - [ ] Confirm exact launch date and lock it in across email schedules and hunter outreach
-- [ ] Confirm App Store Connect offer code **PHUNT50** ($24.99 NFL Fantasy Season Pass, 100 redemptions, 7-day window)
 - [ ] Identify and reach out to a sports-tech or consumer-audio top hunter (500+ PH followers) at least 2 weeks before launch
 - [ ] Capture 5 gallery images at 1270×760 (hero is the single most important asset)
 - [ ] Record 60–90s demo video (optional but high-impact)
 - [ ] Build supporter list of 200+ ready to personally DM on launch day
 - [ ] Schedule Emails 1, 2, 3, 4 at the right send times
-- [ ] Test App Store offer code redemption flow end-to-end on a real device
+- [ ] Verify Fantasy Season Pass purchase flow end-to-end on a real device, iOS and Android
 
 ---
 

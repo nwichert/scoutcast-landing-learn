@@ -114,7 +114,7 @@ const RHYTHM = [
 const STEPS = [
     {
         n: "01",
-        title: "Upload your roster",
+        title: "Screenshot your roster",
         body: "Screenshot or paste your lineup from any fantasy platform. Add your H2H opponent if you want the edge analysis.",
     },
     {
@@ -167,7 +167,7 @@ const INCLUDES = [
     "Tue / Wed / Thu / Sun briefings, all 18 weeks",
     "Fantasy playoffs (Wk 15–17) + H2H opponent edge",
     "NFL playoff DFS briefings + Super Bowl preview",
-    "Add up to 3 of your leagues — any platform.",
+    "Add up to 3 leagues — screenshot or paste, any platform",
     "Ask your roster in Claude, ChatGPT, or Gemini (MCP)",
     "Offline downloads. AirPods controls.",
 ]
@@ -179,7 +179,7 @@ const FAQ = [
     },
     {
         q: "What leagues and platforms do you support?",
-        a: "Any fantasy platform — just screenshot or paste your lineup. Standard, half-PPR, and full-PPR scoring. Up to 3 leagues per account.",
+        a: "Any fantasy platform — because there is no platform connection. You screenshot or paste your lineup instead of linking an account, so ESPN, Yahoo, Sleeper, NFL.com, and custom or offline leagues all work the same way. Standard, half-PPR, and full-PPR scoring. Up to 3 leagues per account. The separate League Pass is the only product that reads a platform directly — Sleeper, read-only.",
     },
     {
         q: "Do I have to upload my roster?",
@@ -249,7 +249,7 @@ function Hero() {
                         Start Winning.
                     </h1>
                     <p className="max-w-xl text-[17px] leading-[1.55] text-[#8B949E] lg:text-lg">
-                        Four audio briefings a week, personalized to your roster and your H2H opponent. Conviction calls in five minutes — not a 90-minute podcast.
+                        Four audio briefings a week, personalized to your roster and your H2H opponent. Conviction calls in five minutes — not a 90-minute podcast. Screenshot your lineup to set it up; there&rsquo;s no account to link.
                     </p>
                     <div className="mt-2 flex flex-col gap-3">
                         <DownloadDialog className="inline-flex h-13 w-full cursor-pointer items-center justify-center gap-2.5 rounded-xl bg-[#0AB17B] px-5 text-base font-semibold text-[#0D1117] transition hover:bg-[#0BC189] sm:w-fit">
@@ -629,7 +629,7 @@ function Pricing() {
                         <AppleGlyph />
                         Get the Season Pass
                     </DownloadDialog>
-                    <p className="self-center text-center text-xs text-[#8B949E]">One-time charge per season on the App Store or Google Play. Auto-renews each August unless you cancel.</p>
+                    <p className="self-center text-center text-xs text-[#8B949E]">No account linking &mdash; you screenshot your lineup. One-time charge per season on the App Store or Google Play. Auto-renews each August unless you cancel.</p>
                 </article>
                 <p className="mt-5 text-center text-sm leading-[1.6] text-[#8B949E]">
                     Running the whole league?{" "}

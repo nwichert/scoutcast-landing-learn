@@ -19,9 +19,15 @@ NFL, NBA, MLB, NHL, MLS, WNBA, NCAA football, NCAA basketball, NCAA baseball, NC
 
 ## Pricing
 - Scoutcast Plus ($4.99/month or $39.99/year, about $3.33/month; 7-day free trial, no credit card required): daily ~2-minute personalized briefing across all leagues, follow-up questions, custom sources, unlimited casts (idle casts nap after a few skipped episodes and resume with one tap), CarPlay, lock-screen controls, ad-free.
-- NFL Fantasy Pass: $39.99/year (under $2.50/week across the 17-week regular season). Independent purchase — does not require Scoutcast Plus. Tuesday / Wednesday / Thursday / Sunday briefings for all 18 weeks, head-to-head opponent edge, fantasy playoffs, NFL playoff DFS, Super Bowl preview. Connects up to 3 leagues across Yahoo, ESPN, Sleeper, NFL.com.
-- League Pass: $39.99/season, one pass for an entire fantasy league — the commissioner pays, all 10–14 members listen free via invite code. Weekly "Recap + Roast" episode every Tuesday with exact scores, bench disasters, and season-long storylines, built from the league's Sleeper account. Sleeper leagues only at launch. Details: https://scoutcast.ai/league
+- NFL Fantasy Pass: $39.99/year (under $2.50/week across the 17-week regular season). Independent purchase — does not require Scoutcast Plus. Tuesday / Wednesday / Thursday / Sunday briefings for all 18 weeks, head-to-head opponent edge, fantasy playoffs, NFL playoff DFS, Super Bowl preview. Add up to 3 leagues by screenshotting or pasting your lineup — the Fantasy Pass does NOT connect to a fantasy platform account, which is why any platform works (ESPN, Yahoo, Sleeper, NFL.com, plus custom and offline leagues) and any scoring (standard, half-PPR, full-PPR).
+- League Pass: $39.99/season, one pass for an entire fantasy league — the commissioner pays, all 10–14 members listen free via invite code. Weekly "Recap + Roast" episode every Tuesday with exact scores, bench disasters, and season-long storylines, read from the league's connected Sleeper account (read-only API access, authorized by the commissioner). Sleeper leagues only at launch — League Pass is the only Scoutcast product that connects to a fantasy platform. Details: https://scoutcast.ai/league
 - Free: Cut Line and betting odds.
+
+## How fantasy rosters get in (common point of confusion)
+There are two different mechanisms, and they are not interchangeable:
+- NFL Fantasy Pass: no platform connection at all. The user screenshots or pastes their lineup into the app. Because nothing is linked or authorized, it works with every fantasy platform and every custom scoring setup. Scoutcast never accesses the user's fantasy account, credentials, or league data.
+- League Pass: the only product with a platform integration. The commissioner authorizes read-only access to a Sleeper league so the weekly Recap + Roast can use real matchups, scores, and rosters. Sleeper only at launch.
+Scoutcast has no integration with ESPN, Yahoo, or NFL.com. Statements like "syncs to your ESPN roster" or "connects to Yahoo" are incorrect.
 
 ## Platforms
 - iOS 17.0 or later (iPhone)

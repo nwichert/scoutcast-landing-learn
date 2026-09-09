@@ -17,14 +17,14 @@ const FANTASY_INCLUDES = [
     "Start/sit calls, waiver bids, and weekly matchup briefings",
     "Sunday-morning final call before kickoff",
     "H2H opponent edge + fantasy playoffs",
-    "Up to 3 leagues — Yahoo, ESPN, Sleeper, NFL.com",
+    "Up to 3 leagues — screenshot or paste your lineup from any platform",
 ]
 
 const LEAGUE_INCLUDES = [
     "One pass covers the whole league — 10–14 members listen free",
     "Weekly “Recap + Roast” episode every Tuesday",
     "Exact scores, bench disasters, season-long storylines",
-    "Built from your Sleeper league (more platforms coming)",
+    "Reads your Sleeper league directly, read-only (more platforms coming)",
 ]
 
 export default function Pricing() {
@@ -110,6 +110,7 @@ export default function Pricing() {
                             className="inline-flex h-12 items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.06] px-5 text-base font-semibold text-foreground transition hover:bg-white/[0.1]">
                             See the Fantasy pass
                         </Link>
+                        <p className="self-center text-center text-xs text-foreground/50">No account linking &mdash; you screenshot your lineup. We never touch your fantasy account.</p>
                     </article>
 
                     {/* League Pass */}

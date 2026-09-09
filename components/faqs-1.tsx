@@ -57,12 +57,12 @@ const faqGroups: FaqGroup[] = [
             {
                 id: "fantasy",
                 question: "Does Scoutcast work for fantasy football?",
-                answer: "Yes, two ways. The NFL Fantasy Pass ($39.99/year) is your personal AI fantasy analyst — start/sit calls, waiver bids, weekly matchup briefings, and a Sunday-morning final call, synced to your roster on Yahoo, ESPN, Sleeper, or NFL.com. The League Pass ($39.99/season) covers your entire league: the commissioner pays once, all 10–14 members listen free, and everyone gets a weekly “Recap + Roast” episode every Tuesday (Sleeper leagues at launch). Both are independent purchases — no Scoutcast Plus required.",
+                answer: "Yes, two ways. The NFL Fantasy Pass ($39.99/year) is your personal AI fantasy analyst — start/sit calls, waiver bids, weekly matchup briefings, and a Sunday-morning final call, built from the lineup you screenshot or paste. There is no account connection, so it works with any platform and any scoring — including custom and offline leagues. The League Pass ($39.99/season) covers your entire league: the commissioner pays once, all 10–14 members listen free, and everyone gets a weekly “Recap + Roast” episode every Tuesday, read directly from your Sleeper league (Sleeper only at launch — League Pass is the one pass that connects to a platform). Both are independent purchases — no Scoutcast Plus required.",
             },
             {
                 id: "league-pass",
                 question: "What is the League Pass?",
-                answer: "One pass for your whole fantasy league: the commissioner pays $39.99 for the season, and all 10–14 members listen free via an invite code. Every Tuesday the league gets a “Recap + Roast” episode — exact scores, bench disasters, and season-long storylines, built from your Sleeper league. Sleeper leagues only at launch, more platforms coming.",
+                answer: "One pass for your whole fantasy league: the commissioner pays $39.99 for the season, and all 10–14 members listen free via an invite code. Every Tuesday the league gets a “Recap + Roast” episode — exact scores, bench disasters, and season-long storylines, read directly from your Sleeper league, which the commissioner connects read-only. Sleeper leagues only at launch, more platforms coming.",
             },
             {
                 id: "cast-limit",

@@ -46,7 +46,7 @@ export default function HeroSection() {
 
                 <div className="relative mx-auto mb-12 flex max-w-5xl flex-col items-center px-6 text-center">
                     <span className="mb-5 inline-block text-[11px] font-semibold uppercase tracking-[0.14em] text-[#0AB17B]">
-                        Works with ESPN, Yahoo, Sleeper, and NFL.com
+                        Screenshot your lineup &mdash; any platform, no account linking
                     </span>
                     <h1 className="max-w-2xl text-balance text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-[56px] lg:text-[64px]">
                         Win more weeks.
