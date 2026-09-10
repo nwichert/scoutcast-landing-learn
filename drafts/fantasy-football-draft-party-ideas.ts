@@ -109,7 +109,7 @@ export const draft = {
     ),
     p(
       t(
-        "And a hosting tip that doubles as a competitive edge: don’t spend draft week cramming rankings at midnight. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — the week of the draft, that’s injury news, depth-chart moves, and camp risers arriving in daily doses instead of one frantic night-before binge. Once the season starts, the NFL Fantasy Pass ($49.99/season) adds analyst briefings built around your actual roster, so the manager who hosted the party is also the one who wins the league."
+        "And a hosting tip that doubles as a competitive edge: don’t spend draft week cramming rankings at midnight. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — the week of the draft, that’s injury news, depth-chart moves, and camp risers arriving in daily doses instead of one frantic night-before binge. Once the season starts, the NFL Fantasy Pass ($39.99/season) adds analyst briefings built around your actual roster, so the manager who hosted the party is also the one who wins the league."
       )
     ),
     p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),

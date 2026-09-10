@@ -97,6 +97,7 @@ const SLUG_GROUPS: Record<CtaGroup, string[]> = {
         "how-to-research-fantasy-football",
         "best-apps-for-fantasy-football-season",
         "best-fantasy-football-apps-2026",
+        "nfl-offseason-catch-up-2026",
     ],
     learn: [
         "what-is-adp-fantasy-football",

@@ -185,7 +185,7 @@ export const draft = {
 
     p(
       t(
-        "One last edge: flex decisions are won with information, and most of it breaks during the week — injury designations, depth-chart shifts, a backup suddenly trending toward a start. Scoutcast.ai turns that into a ~2-minute daily audio briefing built around your teams and players, so you hear the news before your league does. The NFL Fantasy Pass ($49.99/season) goes further with Tuesday, Wednesday, Thursday, and Sunday briefings specific to your actual league — including flex-relevant lineup calls and waiver targets."
+        "One last edge: flex decisions are won with information, and most of it breaks during the week — injury designations, depth-chart shifts, a backup suddenly trending toward a start. Scoutcast.ai turns that into a ~2-minute daily audio briefing built around your teams and players, so you hear the news before your league does. The NFL Fantasy Pass ($39.99/season) goes further with Tuesday, Wednesday, Thursday, and Sunday briefings specific to your actual league — including flex-relevant lineup calls and waiver targets."
       )
     ),
     p(

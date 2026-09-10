@@ -195,7 +195,7 @@ export const draft = {
     ),
     p(
       t(
-        "And if you want the habit to continue past draft day, Scoutcast's NFL Fantasy Pass ($49.99/season) delivers in-season briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call) — timed to the actual decisions you make each week."
+        "And if you want the habit to continue past draft day, Scoutcast's NFL Fantasy Pass ($39.99/season) delivers in-season briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call) — timed to the actual decisions you make each week."
       )
     ),
 

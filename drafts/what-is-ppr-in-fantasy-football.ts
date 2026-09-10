@@ -182,7 +182,7 @@ export const draft = {
     ),
     p(
       t(
-        "And if keeping up with target shares, depth charts, and injury news sounds like a lot — that’s the problem Scoutcast.ai exists to solve. It’s a ~2-minute daily audio briefing on your teams and players, so beginners stay current without drowning in research. The NFL Fantasy Pass ($49.99/season) goes further with league-specific briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call)."
+        "And if keeping up with target shares, depth charts, and injury news sounds like a lot — that’s the problem Scoutcast.ai exists to solve. It’s a ~2-minute daily audio briefing on your teams and players, so beginners stay current without drowning in research. The NFL Fantasy Pass ($39.99/season) goes further with league-specific briefings on Tuesday (waivers), Wednesday (matchup edge), Thursday (start/sit), and Sunday morning (final call)."
       )
     ),
     p(

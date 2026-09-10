@@ -181,7 +181,7 @@ export const draft = {
     h2("The rule no document can enforce: engagement"),
     p(
       t(
-        "A constitution stops disputes, but it can’t make a casual member care in Week 12 — and disengaged members are where quitters come from. The best commissioners solve that with lower effort, not more rules. Scoutcast.ai turns each member’s teams and players into a ~2-minute daily audio briefing they can play while making coffee, and the NFL Fantasy Pass ($49.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around their actual fantasy roster — waivers, start/sit, matchup stakes. A league where “I didn’t have time to follow football this week” stops being true is a league where Articles VII and VIII rarely get invoked. It also pairs well with the rest of a modern commissioner’s stack — see "
+        "A constitution stops disputes, but it can’t make a casual member care in Week 12 — and disengaged members are where quitters come from. The best commissioners solve that with lower effort, not more rules. Scoutcast.ai turns each member’s teams and players into a ~2-minute daily audio briefing they can play while making coffee, and the NFL Fantasy Pass ($39.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around their actual fantasy roster — waivers, start/sit, matchup stakes. A league where “I didn’t have time to follow football this week” stops being true is a league where Articles VII and VIII rarely get invoked. It also pairs well with the rest of a modern commissioner’s stack — see "
       ),
       lk("the best fantasy football apps for 2026", "/blog/best-fantasy-football-apps-2026"),
       t(".")

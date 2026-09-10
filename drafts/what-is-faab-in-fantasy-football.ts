@@ -174,7 +174,7 @@ export const draft = {
 
     p(
       t(
-        "FAAB is ultimately an information game: the manager who hears about the injury or depth-chart change first gets to shape their bids before the market catches up. Scoutcast.ai delivers a ~2-minute daily audio briefing built around your teams and players, so waiver-relevant news reaches you before your leaguemates open an app. The NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings tailored to your specific league — including waiver targets worth bidding on and how your roster stacks up."
+        "FAAB is ultimately an information game: the manager who hears about the injury or depth-chart change first gets to shape their bids before the market catches up. Scoutcast.ai delivers a ~2-minute daily audio briefing built around your teams and players, so waiver-relevant news reaches you before your leaguemates open an app. The NFL Fantasy Pass ($39.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings tailored to your specific league — including waiver targets worth bidding on and how your roster stacks up."
       )
     ),
     p(

@@ -170,7 +170,7 @@ export const draft = {
     h2("The cheaper alternative: don’t be the loser"),
     p(
       t(
-        "Here’s the quiet math nobody does in August: the flip side of every punishment on this list is simply not finishing last. That mostly comes down to staying informed when the season gets busy — knowing who’s hurt, who’s trending, and what your matchup actually needs before waivers clear. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee, and the NFL Fantasy Pass ($49.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around your actual fantasy roster. Fifty bucks a season is a lot cheaper than nine waffles, a milk mile, or twelve months of calendar infamy."
+        "Here’s the quiet math nobody does in August: the flip side of every punishment on this list is simply not finishing last. That mostly comes down to staying informed when the season gets busy — knowing who’s hurt, who’s trending, and what your matchup actually needs before waivers clear. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee, and the NFL Fantasy Pass ($39.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around your actual fantasy roster. Forty bucks a season is a lot cheaper than nine waffles, a milk mile, or twelve months of calendar infamy."
       )
     ),
     p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),

@@ -127,7 +127,7 @@ export const draft = {
     ),
     p(
       t(
-        "Vampire leagues punish managers who tune out, on both sides of the bite. Scoutcast.ai keeps you current in about two minutes a day — an AI audio briefing on your players, your matchup, and the news that moves lineups. The NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues, which is exactly the cadence a vampire grinding the wire needs."
+        "Vampire leagues punish managers who tune out, on both sides of the bite. Scoutcast.ai keeps you current in about two minutes a day — an AI audio briefing on your players, your matchup, and the news that moves lineups. The NFL Fantasy Pass ($39.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues, which is exactly the cadence a vampire grinding the wire needs."
       )
     ),
     p(

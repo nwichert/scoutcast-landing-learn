@@ -131,7 +131,7 @@ export const draft = {
     ),
     p(
       t(
-        "That’s exactly the problem we built Scoutcast.ai for. It’s a personalized ~2-minute audio sports briefing every morning — your teams, your players, your leagues — so lineup-relevant news finds you instead of the other way around. For fantasy players, the NFL Fantasy Pass ($49.99/season) adds per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday morning: waiver targets after each elimination, start/sit calls for your actual roster, and a final inactives check before kickoff. In a format where missing one beat report is fatal, a two-minute listen over coffee is cheap insurance."
+        "That’s exactly the problem we built Scoutcast.ai for. It’s a personalized ~2-minute audio sports briefing every morning — your teams, your players, your leagues — so lineup-relevant news finds you instead of the other way around. For fantasy players, the NFL Fantasy Pass ($39.99/season) adds per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday morning: waiver targets after each elimination, start/sit calls for your actual roster, and a final inactives check before kickoff. In a format where missing one beat report is fatal, a two-minute listen over coffee is cheap insurance."
       )
     ),
     p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),

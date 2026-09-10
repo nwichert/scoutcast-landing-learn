@@ -5687,7 +5687,7 @@ const allPosts: Post[] = [
     h2("The cheaper alternative: don’t be the loser"),
     p(
       t(
-        "Here’s the quiet math nobody does in August: the flip side of every punishment on this list is simply not finishing last. That mostly comes down to staying informed when the season gets busy — knowing who’s hurt, who’s trending, and what your matchup actually needs before waivers clear. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee, and the NFL Fantasy Pass ($39.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around your actual fantasy roster. Fifty bucks a season is a lot cheaper than nine waffles, a milk mile, or twelve months of calendar infamy."
+        "Here’s the quiet math nobody does in August: the flip side of every punishment on this list is simply not finishing last. That mostly comes down to staying informed when the season gets busy — knowing who’s hurt, who’s trending, and what your matchup actually needs before waivers clear. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee, and the NFL Fantasy Pass ($39.99/season) adds analyst briefings on Tuesday, Wednesday, Thursday, and Sunday built around your actual fantasy roster. Forty bucks a season is a lot cheaper than nine waffles, a milk mile, or twelve months of calendar infamy."
       )
     ),
     // The styled CTA with store buttons, not a bare text link — this is the one
@@ -5997,7 +5997,7 @@ const allPosts: Post[] = [
     ),
     p(
       t("That’s literally why we built "),
-      b("Scoutcast.ai"),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(
         ": a personalized ~2-minute audio briefing every morning covering only your leagues, your teams, and your players — the trades, injuries, and depth-chart moves that actually affect your roster, and none of the ones that don’t. Listen while you make coffee and you’re never the person asking the group chat “wait, when did that happen?”"
       )
@@ -6005,11 +6005,13 @@ const allPosts: Post[] = [
     p(
       t("And if fantasy is the whole point for you, "),
       b("NFL Fantasy Pass"),
+      t(" ($39.99/season) "),
+      lk("connects read-only to your Sleeper league", "/blog/connect-sleeper-league-fantasy-football-briefings"),
       t(
-        " ($39.99/season) syncs your actual fantasy league and gives you per-league analyst briefings four times a week — waivers Tuesday, matchup preview Wednesday, start/sit Thursday, and a live gameday brief Sunday — from an analyst who knows your roster, your opponent, and your league’s scoring."
+        " — or reads a lineup you screenshot or paste from ESPN, Yahoo, NFL.com, or anywhere else — and gives you per-league analyst briefings four times a week: waivers Tuesday, matchup preview Wednesday, start/sit Thursday, and a live gameday brief Sunday, from an analyst who knows your roster, your opponent, and your league’s scoring."
       )
     ),
-    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+    cta("cta-inbody"),
   ],
   faqs: [
     {
@@ -7621,6 +7623,7 @@ const allPosts: Post[] = [
   excerpt:
     "Sleeper, ESPN, and Yahoo compared for 2026 fantasy football: formats, ads, draft tools, app quality, and which platform your league should actually pick.",
   date: "2026-08-20",
+  updatedAt: "2026-09-09",
   author: "Nick Wichert",
   authorRole: "Co-founder, Scoutcast.ai",
   authorUrl: "https://x.com/scoutcastAI",
@@ -7685,6 +7688,15 @@ const allPosts: Post[] = [
       t(
         "The format depth is the other half of the pitch. Dynasty leagues get taxi squads, multi-year draft pick trading, and contract options that ESPN and Yahoo simply don’t offer. Guillotine leagues, best ball, custom scoring down to individual stat categories — if your league wants to play anything beyond vanilla head-to-head, Sleeper supports it natively instead of making your commissioner duct-tape it together. The draft room is fast and modern, mock drafts are unlimited, and slow drafts (hours per pick, perfect for dynasty startups) are a first-class feature."
       )
+    ),
+    p(
+      t(
+        "One Sleeper advantage that rarely makes these comparisons: it’s the only one of the three with a public, read-only league API. ESPN and Yahoo keep league data behind a login, which is why outside tools either ask for your credentials or make you screenshot your lineup. On Sleeper, a tool you trust can read your roster, your weekly matchup, and your league’s scoring settings from your username alone — no password to hand over, nothing to authorize, and nothing the tool can change. If you use anything beyond your league app — rankings aggregators, trade calculators, briefing tools — Sleeper is the platform where they actually plug in. "
+      ),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(" uses exactly this: you "),
+      lk("connect a Sleeper league read-only", "/blog/connect-sleeper-league-fantasy-football-briefings"),
+      t(" and your briefings track your real roster all season, with no screenshot to redo after every waiver claim."),
     ),
     p(
       t("Now the honest part. Sleeper markets itself as ad-free, and it’s true you won’t see banner ads for insurance companies. What you will see is relentless promotion of Sleeper’s own real-money products — Sleeper Picks, its DFS-style pick’em game — woven into the app. There’s now a setting to disable Picks notifications, which tells you how many people complained. Its player projections are widely considered the weakest of the big three, so serious managers pull rankings from elsewhere. There’s no editorial content layer — no columns, no analysis, no video — and Android users report more bugs than iOS users, including draft-room freezes at the worst possible moments. None of this is disqualifying. All of it is real.")
@@ -7782,12 +7794,20 @@ const allPosts: Post[] = [
     ),
     p(
       t(
-        "That’s the layer Scoutcast.ai adds, and it works alongside all three platforms rather than replacing any of them. It’s a personalized ~2-minute audio briefing every morning covering your teams and your players — the synthesis, not just the alert. For fantasy managers, the NFL Fantasy Pass ($39.99/season) goes further with per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday mornings: waiver targets after Monday night, start/sit calls for your actual roster, and a final inactives check before kickoff. Whichever platform hosts your league, the two minutes over coffee is what keeps you from being the manager who started an inactive player. We covered how this fits into a full toolkit in our guide to the "
+        "That’s the layer "
+      ),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
+      t(
+        " adds, and it works alongside all three platforms rather than replacing any of them. It’s a personalized ~2-minute audio briefing every morning covering your teams and your players — the synthesis, not just the alert. For fantasy managers, the NFL Fantasy Pass ($39.99/season) goes further with per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday mornings: waiver targets after Monday night, start/sit calls for your actual roster, and a final inactives check before kickoff. Setup depends on where your league lives: Sleeper leagues "
+      ),
+      lk("connect directly and read-only", "/blog/connect-sleeper-league-fantasy-football-briefings"),
+      t(
+        ", so every briefing already knows your roster, your opponent, and your scoring settings — Sleeper is the only platform Scoutcast.ai connects to. ESPN, Yahoo, NFL.com, and custom leagues are added by screenshotting or pasting your lineup, and the briefings are the same either way. Whichever platform hosts your league, the two minutes over coffee is what keeps you from being the manager who started an inactive player. We covered how this fits into a full toolkit in our guide to the "
       ),
       lk("best apps for fantasy football season", "/blog/best-apps-for-fantasy-football-season"),
       t(".")
     ),
-    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+    cta("cta-inbody"),
   ],
   faqs: [
     {
@@ -7809,6 +7829,11 @@ const allPosts: Post[] = [
       question: "Can I move my league between platforms?",
       answer:
         "Yes, but with caveats. Any commissioner can recreate a league’s settings on a new platform, though past history usually doesn’t transfer and you may lose a member or two to inertia. The big exception in 2026: former NFL Fantasy leagues get a dedicated migration tool that moves settings and league history to ESPN automatically.",
+    },
+    {
+      question: "Does Scoutcast.ai work with Sleeper, ESPN, and Yahoo?",
+      answer:
+        "Yes, all three — but setup differs by platform. Sleeper is the only one Scoutcast.ai connects to directly: enter your Sleeper username and it reads your roster, weekly matchup, and league scoring settings read-only, with no password to hand over and nothing it can change in your league. ESPN, Yahoo, NFL.com, and custom leagues are added by screenshotting or pasting your lineup instead. The Tuesday, Wednesday, Thursday, and Sunday briefings are the same either way.",
     },
     {
       question: "Which fantasy football platform is best for beginners?",

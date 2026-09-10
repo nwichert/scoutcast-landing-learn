@@ -273,7 +273,7 @@ export const draft = {
     ),
     p(
       t("That’s literally why we built "),
-      b("Scoutcast.ai"),
+      lk("Scoutcast.ai", "https://scoutcast.ai"),
       t(
         ": a personalized ~2-minute audio briefing every morning covering only your leagues, your teams, and your players — the trades, injuries, and depth-chart moves that actually affect your roster, and none of the ones that don’t. Listen while you make coffee and you’re never the person asking the group chat “wait, when did that happen?”"
       )
@@ -281,11 +281,13 @@ export const draft = {
     p(
       t("And if fantasy is the whole point for you, "),
       b("NFL Fantasy Pass"),
+      t(" ($39.99/season) "),
+      lk("connects read-only to your Sleeper league", "/blog/connect-sleeper-league-fantasy-football-briefings"),
       t(
-        " ($49.99/season) syncs your actual fantasy league and gives you per-league analyst briefings four times a week — waivers Tuesday, matchup preview Wednesday, start/sit Thursday, and a live gameday brief Sunday — from an analyst who knows your roster, your opponent, and your league’s scoring."
+        " — or reads a lineup you screenshot or paste from ESPN, Yahoo, NFL.com, or anywhere else — and gives you per-league analyst briefings four times a week: waivers Tuesday, matchup preview Wednesday, start/sit Thursday, and a live gameday brief Sunday, from an analyst who knows your roster, your opponent, and your league’s scoring."
       )
     ),
-    p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),
+    cta("cta-inbody"),
   ],
   faqs: [
     {

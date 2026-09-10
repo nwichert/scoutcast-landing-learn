@@ -211,7 +211,7 @@ export const draft = {
     ),
     p(
       t("For fantasy specifically, the "),
-      b("NFL Fantasy Pass ($49.99/season)"),
+      b("NFL Fantasy Pass ($39.99/season)"),
       t(
         " adds per-league analyst briefings on Tuesday, Wednesday, Thursday, and Sunday — waiver targets after Monday night, injury and practice-report reads midweek, and a final call Sunday morning, all tailored to your actual roster. If you're heading into a draft on a new platform, it pairs well with "
       ),

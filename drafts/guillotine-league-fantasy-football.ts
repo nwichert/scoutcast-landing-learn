@@ -109,7 +109,7 @@ export const draft = {
     ),
     p(
       t(
-        "Guillotine leagues are unforgiving to managers who check out — miss one bad week and you’re gone, miss one big waiver drop and someone else feasts. Scoutcast.ai is built for exactly that: a ~2-minute daily audio briefing that keeps you current on your players in minutes, not hours. The NFL Fantasy Pass ($49.99/season) delivers Tuesday, Wednesday, Thursday, and Sunday briefings around your actual leagues — Tuesday and Wednesday being precisely when guillotine waivers get decided."
+        "Guillotine leagues are unforgiving to managers who check out — miss one bad week and you’re gone, miss one big waiver drop and someone else feasts. Scoutcast.ai is built for exactly that: a ~2-minute daily audio briefing that keeps you current on your players in minutes, not hours. The NFL Fantasy Pass ($39.99/season) delivers Tuesday, Wednesday, Thursday, and Sunday briefings around your actual leagues — Tuesday and Wednesday being precisely when guillotine waivers get decided."
       )
     ),
     p(

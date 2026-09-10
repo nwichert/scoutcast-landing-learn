@@ -100,7 +100,7 @@ export const draft = {
     ),
     p(
       t(
-        "The other advantage of the two-to-three-week window: it’s exactly when draft prep should start anyway. Cramming rankings the night before the draft is how you end up reaching for a player who lost his starting job in camp. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — camp battles, injuries, depth-chart moves — so by draft night the knowledge is already in your head. And once the season kicks off, the NFL Fantasy Pass ($49.99/season) adds analyst briefings built around your actual fantasy roster."
+        "The other advantage of the two-to-three-week window: it’s exactly when draft prep should start anyway. Cramming rankings the night before the draft is how you end up reaching for a player who lost his starting job in camp. Scoutcast.ai’s ~2-minute daily audio briefings cover your teams and players while you make coffee — camp battles, injuries, depth-chart moves — so by draft night the knowledge is already in your head. And once the season kicks off, the NFL Fantasy Pass ($39.99/season) adds analyst briefings built around your actual fantasy roster."
       )
     ),
     p(lk("Download Scoutcast on the App Store →", "https://apps.apple.com/us/app/scoutcast-ai/id6761558329")),

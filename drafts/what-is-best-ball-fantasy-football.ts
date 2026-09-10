@@ -139,7 +139,7 @@ export const draft = {
     ),
     p(
       t(
-        "One thing best ball doesn’t remove is the value of being informed on draft day — and drafts run from May to September, so news keeps mattering. That’s where Scoutcast.ai fits: a ~2-minute daily audio briefing on your teams and players, so staying current takes minutes instead of hours. During the season, the NFL Fantasy Pass ($49.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues."
+        "One thing best ball doesn’t remove is the value of being informed on draft day — and drafts run from May to September, so news keeps mattering. That’s where Scoutcast.ai fits: a ~2-minute daily audio briefing on your teams and players, so staying current takes minutes instead of hours. During the season, the NFL Fantasy Pass ($39.99/season) adds Tuesday, Wednesday, Thursday, and Sunday briefings built around your actual leagues."
       )
     ),
     p(
